@@ -1,0 +1,21 @@
+M	WAR IN ZONE.exe
+M	data/Engine_Settings.ini
+M	data/campanings/scop/1Story/groups/monolith.ini
+M	data/campanings/scop/2Freeplay/groups/monolith.ini
+M	data/campanings/scop/3OneTerritory/groups/monolith.ini
+M	data/campanings/scop/4Pripyat/groups/monolith.ini
+M	data/campanings/scs/1story/groups/monolith.ini
+M	data/campanings/scs/2Freeplay/groups/monolith.ini
+M	data/campanings/scs/3OneTerritory/groups/monolith.ini
+M	data/campanings/scs/4Border/groups/monolith.ini
+M	data/campanings/scs/5Limansk/groups/monolith.ini
+M	data/campanings/shoc/4Monolith/groups/monolith.ini
+M	data/campanings/snet/1-2players/Advisors.ini
+M	data/campanings/snet/1-2players/Settings.ini
+A	data/campanings/snet/1-2players/SpecialEvents/BrainPsy.ini
+A	data/campanings/snet/1-2players/SpecialEvents/BrainPsyStatus.ini
+M	data/campanings/snet/2-3players/Advisors.ini
+M	data/campanings/snet/2-3players/Settings.ini
+A	data/campanings/snet/2-3players/SpecialEvents/BrainPsy.ini
+A	data/campanings/snet/2-3players/SpecialEvents/BrainPsyStatus.ini
+M	data/default/scenario/Groups/Monolith.ini
