@@ -1,0 +1,53 @@
+M	data/Engine_Settings.ini
+A	data/campanings/snet/1-2players/Difficulty.Ini
+A	data/campanings/snet/2-3players/Difficulty.Ini
+A	data/campanings/snet/3-4players/AI.ini
+A	data/campanings/snet/3-4players/Achievements.ini
+A	data/campanings/snet/3-4players/Advisors.ini
+A	data/campanings/snet/3-4players/Difficulty.Ini
+A	data/campanings/snet/3-4players/Events_Story.ini
+A	data/campanings/snet/3-4players/Main.ini
+A	data/campanings/snet/3-4players/Settings.ini
+A	data/campanings/snet/3-4players/SpecialEvents/BrainPsy.ini
+A	data/campanings/snet/3-4players/SpecialEvents/BrainPsyStatus.ini
+A	data/campanings/snet/3-4players/SpecialEvents/Burst.ini
+A	data/campanings/snet/3-4players/TraderGoods.ini
+A	data/campanings/snet/3-4players/Traders.ini
+A	data/campanings/snet/3-4players/gfx/Scenario_Logo-Active.png
+A	data/campanings/snet/3-4players/gfx/Scenario_Logo.png
+A	data/default/scenario/Groups/FourthGroup.ini
+M	data/default/scenario/Groups/ThirdGroup.ini
+R100	data/gfx/icons/map/Brow-Balance-Alliance.png	data/gfx/icons/map/Brown-Balance-Alliance.png
+R100	data/gfx/icons/map/Brow-Balance-Neutral.png	data/gfx/icons/map/Brown-Balance-Neutral.png
+R100	data/gfx/icons/map/Brow-Balance-Player.png	data/gfx/icons/map/Brown-Balance-Player.png
+R100	data/gfx/icons/map/Brow-Balance-War.png	data/gfx/icons/map/Brown-Balance-War.png
+R100	data/gfx/icons/map/Brow-Combat-Alliance.png	data/gfx/icons/map/Brown-Combat-Alliance.png
+R100	data/gfx/icons/map/Brow-Combat-Neutral.png	data/gfx/icons/map/Brown-Combat-Neutral.png
+R100	data/gfx/icons/map/Brow-Combat-Player.png	data/gfx/icons/map/Brown-Combat-Player.png
+R100	data/gfx/icons/map/Brow-Combat-War.png	data/gfx/icons/map/Brown-Combat-War.png
+R100	data/gfx/icons/map/Brow-Economic-Alliance.png	data/gfx/icons/map/Brown-Economic-Alliance.png
+R100	data/gfx/icons/map/Brow-Economic-Neutral.png	data/gfx/icons/map/Brown-Economic-Neutral.png
+R100	data/gfx/icons/map/Brow-Economic-Player.png	data/gfx/icons/map/Brown-Economic-Player.png
+R100	data/gfx/icons/map/Brow-Economic-War.png	data/gfx/icons/map/Brown-Economic-War.png
+M	data/gfx/icons/territories/SoC/Escape/backup_170.3.png
+M	data/gfx/icons/territories/SoC/Escape/backup_174.1.png
+M	data/gfx/icons/territories/SoC/Military/backup_61.png
+D	data/gfx/icons/territories/SoC/Pripyat/backup_35 (2).png
+A	data/gfx/icons/territories/SoC/Pripyat/backup_35.2.png
+M	data/gfx/icons/territories/SoC/Pripyat/backup_35.png
+D	data/gfx/icons/territories/SoC/Pripyat/backup_37 (2).png
+A	data/gfx/icons/territories/SoC/Pripyat/backup_37.2.png
+M	data/gfx/icons/territories/SoC/Pripyat/backup_37.png
+M	data/maps/SNET_2players/TerritoriesInfo.ini
+M	data/maps/SNET_3players/1x1x1-ColorMap.bmp
+M	data/maps/SNET_3players/Links.ini
+M	data/maps/SNET_3players/TerritoriesInfo.ini
+M	data/maps/SNET_3players/map.bt
+A	data/maps/SNET_4players/4x-ColorMap.bmp
+A	data/maps/SNET_4players/Links.ini
+A	data/maps/SNET_4players/Territories.ini
+A	data/maps/SNET_4players/TerritoriesInfo.ini
+A	data/maps/SNET_4players/Territories_Icon_Coordinates.ini
+A	data/maps/SNET_4players/map.bmp
+A	data/maps/SNET_4players/map.bt
+A	data/maps/SNET_4players/settings.ini
