@@ -1,0 +1,118 @@
+M	WAR IN ZONE.exe
+M	data/Engine_Settings.ini
+M	"data/FAQ \320\277\320\276 \321\201\320\276\320\267\320\264\320\260\320\275\320\270\321\216 \320\274\320\276\320\264\320\276\320\262 \320\272 \320\270\320\263\321\200\320\265.rtf"
+M	data/campanings/snet/1-2players/Advisors.ini
+M	data/campanings/snet/1-2players/gfx/Scenario_Logo-Active.png
+M	data/campanings/snet/1-2players/gfx/Scenario_Logo.png
+M	data/campanings/snet/2-3players/Advisors.ini
+M	data/campanings/snet/2-3players/gfx/Scenario_Logo-Active.png
+M	data/campanings/snet/2-3players/gfx/Scenario_Logo.png
+M	data/campanings/snet/3-4players/Advisors.ini
+M	data/campanings/snet/3-4players/gfx/Scenario_Logo-Active.png
+M	data/campanings/snet/3-4players/gfx/Scenario_Logo.png
+A	data/campanings/snet/4-4players/AI.ini
+A	data/campanings/snet/4-4players/Achievements.ini
+A	data/campanings/snet/4-4players/Advisors.ini
+A	data/campanings/snet/4-4players/Difficulty.Ini
+A	data/campanings/snet/4-4players/Events_Story.ini
+A	data/campanings/snet/4-4players/Main.ini
+A	data/campanings/snet/4-4players/Settings.ini
+A	data/campanings/snet/4-4players/SpecialEvents/BrainPsy.ini
+A	data/campanings/snet/4-4players/SpecialEvents/BrainPsyStatus.ini
+A	data/campanings/snet/4-4players/SpecialEvents/Burst.ini
+A	data/campanings/snet/4-4players/TraderGoods.ini
+A	data/campanings/snet/4-4players/Traders.ini
+A	data/campanings/snet/4-4players/gfx/Scenario_Logo-Active.png
+A	data/campanings/snet/4-4players/gfx/Scenario_Logo.png
+A	data/campanings/snet/5-5players/AI.ini
+A	data/campanings/snet/5-5players/Achievements.ini
+A	data/campanings/snet/5-5players/Advisors.ini
+A	data/campanings/snet/5-5players/Difficulty.Ini
+A	data/campanings/snet/5-5players/Events_Story.ini
+A	data/campanings/snet/5-5players/Main.ini
+A	data/campanings/snet/5-5players/Settings.ini
+A	data/campanings/snet/5-5players/SpecialEvents/BrainPsy.ini
+A	data/campanings/snet/5-5players/SpecialEvents/BrainPsyStatus.ini
+A	data/campanings/snet/5-5players/SpecialEvents/Burst.ini
+A	data/campanings/snet/5-5players/TraderGoods.ini
+A	data/campanings/snet/5-5players/Traders.ini
+A	data/campanings/snet/5-5players/gfx/Scenario_Logo-Active.png
+A	data/campanings/snet/5-5players/gfx/Scenario_Logo.png
+A	data/campanings/snet/6-6players/AI.ini
+A	data/campanings/snet/6-6players/Achievements.ini
+A	data/campanings/snet/6-6players/Advisors.ini
+A	data/campanings/snet/6-6players/Difficulty.Ini
+A	data/campanings/snet/6-6players/Events_Story.ini
+A	data/campanings/snet/6-6players/Main.ini
+A	data/campanings/snet/6-6players/Settings.ini
+A	data/campanings/snet/6-6players/SpecialEvents/BrainPsy.ini
+A	data/campanings/snet/6-6players/SpecialEvents/BrainPsyStatus.ini
+A	data/campanings/snet/6-6players/SpecialEvents/Burst.ini
+A	data/campanings/snet/6-6players/TraderGoods.ini
+A	data/campanings/snet/6-6players/Traders.ini
+A	data/campanings/snet/6-6players/gfx/Scenario_Logo-Active.png
+A	data/campanings/snet/6-6players/gfx/Scenario_Logo.png
+A	data/default/scenario/AI.ini
+A	data/default/scenario/Groups/FifthGroup.ini
+A	data/default/scenario/Groups/SixthGroup.ini
+A	data/default/scenario/Main.ini
+R100	data/default/scenario/TypeLands/BarRostok.ini	data/default/scenario/Map/TypeLands/BarRostok.ini
+R100	data/default/scenario/TypeLands/BaseArmStorage.ini	data/default/scenario/Map/TypeLands/BaseArmStorage.ini
+R100	data/default/scenario/TypeLands/BaseMillitaryAgroprom.ini	data/default/scenario/Map/TypeLands/BaseMillitaryAgroprom.ini
+R100	data/default/scenario/TypeLands/BaseRadar.ini	data/default/scenario/Map/TypeLands/BaseRadar.ini
+R100	data/default/scenario/TypeLands/BaseRostok.ini	data/default/scenario/Map/TypeLands/BaseRostok.ini
+R100	data/default/scenario/TypeLands/Blockpost.ini	data/default/scenario/Map/TypeLands/Blockpost.ini
+R100	data/default/scenario/TypeLands/Border.ini	data/default/scenario/Map/TypeLands/Border.ini
+R100	data/default/scenario/TypeLands/Bridge.ini	data/default/scenario/Map/TypeLands/Bridge.ini
+R100	data/default/scenario/TypeLands/Buildings.ini	data/default/scenario/Map/TypeLands/Buildings.ini
+R100	data/default/scenario/TypeLands/BuildingsAndCatacombs.ini	data/default/scenario/Map/TypeLands/BuildingsAndCatacombs.ini
+R100	data/default/scenario/TypeLands/Catacomb.ini	data/default/scenario/Map/TypeLands/Catacomb.ini
+R100	data/default/scenario/TypeLands/City.ini	data/default/scenario/Map/TypeLands/City.ini
+R100	data/default/scenario/TypeLands/Cordon.ini	data/default/scenario/Map/TypeLands/Cordon.ini
+R100	data/default/scenario/TypeLands/FlatTerrain.ini	data/default/scenario/Map/TypeLands/FlatTerrain.ini
+R100	data/default/scenario/TypeLands/Forest.ini	data/default/scenario/Map/TypeLands/Forest.ini
+R100	data/default/scenario/TypeLands/FortifiedBlockpost.ini	data/default/scenario/Map/TypeLands/FortifiedBlockpost.ini
+R100	data/default/scenario/TypeLands/FortifiedBunker.ini	data/default/scenario/Map/TypeLands/FortifiedBunker.ini
+R100	data/default/scenario/TypeLands/Hills.ini	data/default/scenario/Map/TypeLands/Hills.ini
+R100	data/default/scenario/TypeLands/Hutor.ini	data/default/scenario/Map/TypeLands/Hutor.ini
+R100	data/default/scenario/TypeLands/NarrowPassage.ini	data/default/scenario/Map/TypeLands/NarrowPassage.ini
+R100	data/default/scenario/TypeLands/None.ini	data/default/scenario/Map/TypeLands/None.ini
+R100	data/default/scenario/TypeLands/Ruins.ini	data/default/scenario/Map/TypeLands/Ruins.ini
+R100	data/default/scenario/TypeLands/SectorArmStorage.ini	data/default/scenario/Map/TypeLands/SectorArmStorage.ini
+R100	data/default/scenario/TypeLands/Swamp.ini	data/default/scenario/Map/TypeLands/Swamp.ini
+R100	data/default/scenario/TypeLands/SwampBase.ini	data/default/scenario/Map/TypeLands/SwampBase.ini
+R100	data/default/scenario/TypeLands/Tunnel.ini	data/default/scenario/Map/TypeLands/Tunnel.ini
+R100	data/default/scenario/TypeLands/Village.ini	data/default/scenario/Map/TypeLands/Village.ini
+R100	data/default/scenario/TypeLands/VillageWithBunker.ini	data/default/scenario/Map/TypeLands/VillageWithBunker.ini
+M	data/gfx/icons/territories/SoC/Escape/backup_170.1.png
+M	data/gfx/icons/territories/SoC/Escape/backup_172.png
+M	data/gfx/icons/territories/SoC/Escape/backup_174.3.png
+M	data/gfx/icons/territories/SoC/Escape/backup_175.1.png
+M	data/gfx/icons/territories/SoC/Escape/backup_183.png
+M	data/gfx/icons/territories/SoC/Escape/backup_184.3.png
+M	data/gfx/icons/territories/SoC/Escape/backup_189.3.png
+M	data/gfx/icons/territories/SoC/Escape/backup_193.1.png
+A	data/maps/SNET_4playersV2/4x-ColorMapV2.bmp
+A	data/maps/SNET_4playersV2/Links.ini
+A	data/maps/SNET_4playersV2/Territories.ini
+A	data/maps/SNET_4playersV2/TerritoriesInfo.ini
+A	data/maps/SNET_4playersV2/Territories_Icon_Coordinates.ini
+A	data/maps/SNET_4playersV2/map.bmp
+A	data/maps/SNET_4playersV2/map.bt
+A	data/maps/SNET_4playersV2/settings.ini
+A	data/maps/SNET_5players/5x-ColorMap.bmp
+A	data/maps/SNET_5players/Links.ini
+A	data/maps/SNET_5players/Territories.ini
+A	data/maps/SNET_5players/TerritoriesInfo.ini
+A	data/maps/SNET_5players/Territories_Icon_Coordinates.ini
+A	data/maps/SNET_5players/map.bmp
+A	data/maps/SNET_5players/map.bt
+A	data/maps/SNET_5players/settings.ini
+A	data/maps/SNET_6players/6x-ColorMap.bmp
+A	data/maps/SNET_6players/Links.ini
+A	data/maps/SNET_6players/Territories.ini
+A	data/maps/SNET_6players/TerritoriesInfo.ini
+A	data/maps/SNET_6players/Territories_Icon_Coordinates.ini
+A	data/maps/SNET_6players/map.bmp
+A	data/maps/SNET_6players/map.bt
+A	data/maps/SNET_6players/settings.ini
