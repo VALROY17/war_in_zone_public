@@ -1,0 +1,17 @@
+M	ScenarioEditorTools.exe
+M	WAR IN ZONE.exe
+M	data/Engine_Settings.ini
+M	data/default/Messages.ini
+M	data/default/interface.ini
+M	data/gfx/Elements/GlobalMap/enemyMove/0.png
+M	data/gfx/Elements/GlobalMap/enemyMove/1.png
+M	data/gfx/Elements/GlobalMap/enemyMove/2.png
+M	data/gfx/Elements/GlobalMap/enemyMove/3.png
+M	data/gfx/Elements/GlobalMap/enemyMove/4.png
+M	data/gfx/Elements/GlobalMap/enemyMove/5.png
+M	data/gfx/Elements/GlobalMap/enemyMove/6.png
+M	data/gfx/Elements/GlobalMap/enemyMove/7.png
+M	data/gfx/Elements/GlobalMap/enemyMove/8.png
+M	data/gfx/Elements/GlobalMap/enemyMove/9.png
+R100	data/gfx/btnsActive/notifications_full-Active.png	data/gfx/btnsActive/notifications_full.png
+R100	data/gfx/btnsActive/notifications_null-Active.png	data/gfx/btnsActive/notifications_null.png
