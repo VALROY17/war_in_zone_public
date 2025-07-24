@@ -1,2 +1,21 @@
+A	.upgrade/7ef8996ee657d9f12d00076567efe3da7e99f8f3
 M	ScenarioEditorTools.exe
 M	WAR IN ZONE.exe
+M	data/campanings/scop/1Story/groups/monolith.ini
+M	data/campanings/scop/2Freeplay/groups/monolith.ini
+M	data/campanings/scop/3OneTerritory/groups/monolith.ini
+M	data/campanings/scop/4Pripyat/groups/monolith.ini
+M	data/campanings/scop/6Fragmentation/groups/monolith.ini
+M	data/campanings/st/01Tutorial/Tutorial.ini
+M	data/campanings/st/02Tutorial/Tutorial.ini
+M	data/campanings/st/05Tutorial/Tutorial.ini
+M	data/default/scenario/Groups/SixthGroup.ini
+M	data/default/scenario/Groups/ThirdGroup.ini
+M	data/maps/CS_Battle_For_Limansk/Territories_Icon_Coordinates.ini
+M	data/maps/CS_Border/Territories_icon_coordinates.ini
+M	data/maps/CS_Standard/Territories_Icon_Coordinates.ini
+M	data/maps/CoP_Map_Classic/Territories_icon_Coordinates.ini
+M	data/maps/CoP_Map_Pripyat/Territories_icon_Coordinates.ini
+M	data/maps/CoP_Map_Zaton/Territories_icon_Coordinates.ini
+M	data/maps/SHOC_Monolith/Territories_Icon_Coordinates.ini
+M	data/maps/SHOC_Standard/Territories_Icon_Coordinates.ini
