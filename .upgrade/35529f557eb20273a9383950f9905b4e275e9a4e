@@ -1,0 +1,24 @@
+M	ScenarioEditorTools.exe
+M	WAR IN ZONE.exe
+M	data/campanings/st/01Tutorial/AI.ini
+M	data/campanings/st/01Tutorial/Tutorial.ini
+M	data/campanings/st/01Tutorial/gfx/Tutorial/tutorial_img4.png
+D	data/campanings/st/01Tutorial/gfx/Tutorial/tutorial_img5.png
+M	data/campanings/st/02Tutorial/AI.ini
+M	data/campanings/st/02Tutorial/Tutorial.ini
+M	data/campanings/st/02Tutorial/gfx/Tutorial/tutorial_img5.png
+M	data/campanings/st/03Tutorial/AI.ini
+M	data/campanings/st/03Tutorial/Tutorial.ini
+M	data/campanings/st/03Tutorial/gfx/Tutorial/tutorial_img1.png
+M	data/campanings/st/03Tutorial/gfx/Tutorial/tutorial_img2.png
+M	data/campanings/st/03Tutorial/gfx/Tutorial/tutorial_img3.png
+M	data/campanings/st/03Tutorial/gfx/Tutorial/tutorial_img4.png
+A	data/campanings/st/03Tutorial/gfx/Tutorial/tutorial_img5.png
+M	data/campanings/st/04Tutorial/AI.ini
+M	data/campanings/st/04Tutorial/Tutorial.ini
+M	data/campanings/st/05Tutorial/AI.ini
+M	data/campanings/st/05Tutorial/Tutorial.ini
+M	data/campanings/st/06Tutorial/AI.ini
+M	data/campanings/st/06Tutorial/Tutorial.ini
+M	data/campanings/st/07Tutorial/Tutorial.ini
+M	data/campanings/st/08Tutorial/AI.ini
