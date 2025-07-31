@@ -42,7 +42,6 @@ div:target {
 <li><a href="#RandomEvents"><сценарий>\RandomEvents</a>
 <li><a href="#Receipts"><сценарий>\Receipts</a>
 <li><a href="#SpecialEvents"><сценарий>\SpecialEvents</a>
-<li><a href="#TypeLands"><сценарий>\TypeLands</a>
 <li><a href="#upgrades"><сценарий>\upgrades</a>
 <li><a href="#Achievements"><сценарий>\Achievements.ini</a>
 <li><a href="#Advisors"><сценарий>\Advisors.ini</a>
@@ -52,12 +51,15 @@ div:target {
 <li><a href="#Settings"><сценарий>\Settings.ini</a>
 <li><a href="#TraderGoods"><сценарий>\TraderGoods.ini</a>
 <li><a href="#Traders"><сценарий>\Traders.ini</a>
+<li><a href="#Tutorial"><сценарий>\Tutorial.ini</a>
 </ul>
 Файлы карты можно переопредилить создав папку map в сценарии и положив туда одноимённые файлы
 <ul>
 <li><a href="#mapLinks"><карта>\Links.ini</a>
 <li><a href="#mapSettings"><карта>\settings.ini</a>
 <li><a href="#mapTerritories"><карта>\Territories.ini</a>
+<li><a href="#mapTypeLands"><карта>\TypeLands</a>
+<li><a href="#mapLocations"><карта>\Locations</a>
 <li><a href="#mapTerritories_Icon_Coordinates"><карта>\Territories_Icon_Coordinates.ini</a>
 <li><a href="#mapTerritoriesInfo"><карта>\TerritoriesInfo.ini</a>
 <li><a href="#mapBT"><карта>\map.bt</a>
@@ -131,10 +133,12 @@ div:target {
 
 
 <div id="Buildings">
+<p>Папка состоит из ini файлов, каждый из которых представляет одну постройку
 <p><i>Название файла</i> - техническое название постройки, которое используется в других файлах, например, в <a href="#Main">Main.ini</a> сценария<br>
 Фал содержит один блок <i>[Main]</i>
 <p><b>Name</b> - название отображаемое в игре
 <p><b>SortOrder</b> - порядок в списке, чем меньше значение, тем раньше идёт
+<p><b>CanBeDestroyed</b> - флаг разрешающий снос постройки, по умолчанию True
 <p><b>Logo-NonActive</b> - изображение без наведения курсора
 <p><b>Type</b> - тип постройки. <i>None</i> - обычная, <i>Workshop</i> - мастерская по модификации амуниции, <i>Production</i> - производит что-то из чего-либо (или из воздуха)
 <p><b>BonusForSpy</b> - бонус своим разведчикам % !ВНИМАНИЕ! Данный параметр пока что не используется движком игры (он не работает!)
@@ -177,6 +181,7 @@ div:target {
 
 
 <div id="Goods">
+<p>Папка состоит из ini файлов, каждый из которых представляет один товар
 <p>Конфиги ресурсов и товаров<br>
 <i>Название файла</i> - техническое название товара<br>
 Фал содержит один блок <i>[Main]</i><br>
@@ -204,6 +209,7 @@ div:target {
 
 
 <div id="Groups">
+<p>Папка состоит из ini файлов, каждый из которых представляет одину группировку
 <p><i>Название файла</i> - техническое название группировки<br>
 Категория <b>[:main]</b> используется как основные настройки группировки
 <p><b>Name</b> - Название группировки отображаемое в игре
@@ -302,6 +308,7 @@ div:target {
 
 
 <div id="ideologies">
+<p>Папка состоит из ini файлов, каждый из которых представляет одину идеологию
 <p><i>Название файла</i> - техническое название идеологии, которое используется в других файлах<br>
 Фал содержит один блок <i>[Main]</i>
 <p><b>Name</b> - название отображаемое в игре
@@ -341,6 +348,7 @@ div:target {
 
 
 <div id="leaders">
+<p>Папка состоит из ini файлов, каждый из которых представляет одного лидера
 <p><i>Название файла</i> - техническое название лидера, которое используется в других файлах<br>
 Фал содержит один блок <i>[Main]</i>
 <p><b>Name</b> - название отображаемое в игре
@@ -377,6 +385,7 @@ div:target {
 
 
 <div id="RandomEvents">
+<p>Папка состоит из ini файлов, каждый из которых представляет одно случайное событие
 <p>Описание случайных событий которые могут произойти в игре<br>
 Фал содержит один блок <i>[Main]</i>
 <p><b>Type</b> - Тип ивента, их всего 22:<br>
@@ -436,8 +445,9 @@ div:target {
 
 
 <div id="Receipts">
+<p>Папка состоит из ini файлов, каждый из которых представляет один рецепт для мастерской
 <p>Конфиги рецептов<br>
-Фал содержит один блок <i>[Main]</i>
+Файл содержит один блок <i>[Main]</i>
 <p><b>Upgrade0-Resource</b> - техническое название ресурса, которое требуется для улучшения
 <p><b>Upgrade0-Quantity</b> - сколько нужно ресурса для улучшения (ТОЛЬКО ЦЕЛЫЕ ЧИСЛА!), можно не указывать, по умолчанию 1
 <p><b>Upgrade1-Resource</b> - техническое название ресурса, которое требуется для улучшения
@@ -470,7 +480,7 @@ div:target {
 
 
 
-<div id="TypeLands">
+<div id="mapTypeLands">
 <p>Папка содержит типы местности. Название файла - техническое название типа местности, который используется в <a href="#mapTerritories">Territories.ini</a><br>
 Фал содержит один блок <i>[Main]</i>
 <p><b>Name</b> - название отображаемое в игре
@@ -486,7 +496,8 @@ div:target {
 
 
 <div id="upgrades">
-<p>Описание улучшение<br>
+<p>Папка состоит из ini файлов, каждый из которых представляет одно улучшение
+<p>Описание улучшения<br>
 Фал содержит один блок <i>[Main]</i>
 <p><b>Type</b> - тип улучшения. Бывают:<br>
     <i>UpRecruitsCountComming</i> - это + к приросту каждого рекрута<br>
@@ -687,7 +698,7 @@ div:target {
 
 
 <div id="Events_Story">
-<p>Список типов ивентов. Всего 28
+<p>Список типов ивентов. Всего 34
     <br><i>info</i> - просто информационный ивент
 <br>
     <br><i>RemoveUnits</i> - убирает указаные числа юнитов
@@ -713,12 +724,17 @@ div:target {
     <br><i>ChangeStatusUpgrade</i> - изучить бесплатно указанное в <i>TargetUpgradeIndex</i> индекс улучшения
     <br><i>ChangeStatusBrainPsy</i> - изменить состояние пси излучателя вкл (Status=True) или выкл (Status=False)
     <br><i>ChangeStatusBrainMixer</i> - изменить состояние выжигателя мозгов вкл (Status=True) или выкл (Status=False)
-    <br><i>ChangePatternUnit</i> - ивент по бесплатному перевооружению указанного (цифрой) ранга (<i>TargetNumRangUnit</i>) на указанный (техническое название) шаблон (<i>NameNewPatternUnit</i>) без возврата амуниции на склад и без требований на ее наличие, и без траты КР
     <br><i>ChangeIdeologyPercent</i> - добавить % какой-либо идеологии группировке (<i>IdeologyName</i> - название, <i>CountParam</i> - число. НЕ ИСПОЛЬЗОВАТЬ ОТРИЦАТЕЛЬНЫЕ ЧИСЛА!!!)
     <br><i>ChangeIdeology</i> - меняет идеологию владельцу территории на указаннуб в <i>IdeologyName</i>
     <br><i>MCMove</i> - работает как и <i>Info</i>, но используется для перемещения ГГ (Меченый, Шрам, Дегтярёв)
     <br><i>MCAttack</i> - работает как и <i>RemoveUnits</i>, но используется для перемещения ГГ (Меченый, Шрам, Дегтярёв)
-    <br><i>CheckBuilding</i> - проверяет наличие указанной в <i>BuildingName</i> постройки на территории. Если она есть, то указанный флаг в <i>EventFlagResult</i> будет=True, иначе False;;
+    <br><i>CheckBuilding</i> - проверяет наличие указанной в <i>BuildingName</i> постройки на территории. Если она есть, то указанный флаг в <i>EventFlagResult</i> будет=True, иначе False
+    <br><i>CheckEqualResources</i> - проверяет кол-во <i>CountResources</i> ресурсов <i>NameResources</i> у группировки. Если совпадает, то указанный флаг в <i>EventFlagResult</i> будет=True, иначе False
+    <br><i>CheckNotEqualResources</i> - проверяет кол-во <i>CountResources</i> ресурсов <i>NameResources</i> у группировки. Если не совпадает, то указанный флаг в <i>EventFlagResult</i> будет=True, иначе False
+    <br><i>CheckGreaterOrEqualResources</i> - проверяет кол-во <i>CountResources</i> ресурсов <i>NameResources</i> у группировки. Если больше или совпадает, то указанный флаг в <i>EventFlagResult</i> будет=True, иначе False
+    <br><i>CheckLessOrEqualResources</i> - проверяет кол-во <i>CountResources</i> ресурсов <i>NameResources</i> у группировки. Если меньше или совпадает, то указанный флаг в <i>EventFlagResult</i> будет=True, иначе False
+    <br><i>CheckGreaterResources</i> - проверяет кол-во <i>CountResources</i> ресурсов <i>NameResources</i> у группировки. Если больше, то указанный флаг в <i>EventFlagResult</i> будет=True, иначе False
+    <br><i>CheckLessResources</i> - проверяет кол-во <i>CountResources</i> ресурсов <i>NameResources</i> у группировки. Если меньше, то указанный флаг в <i>EventFlagResult</i> будет=True, иначе False
     <br><i>Build</i> - строит бесплатно постройку из <i>BuildingName</i> на указанной территории
     <br><i>Destroy</i> - уничтожает бесплатно постройку из <i>BuildingName</i> на указанной территории
 <br><br>
@@ -830,10 +846,17 @@ div:target {
 
 
 <div id="Settings">
-<p>Описание что за что отвечает в данном файле
+<p>Основной файл настроек сценария
+<p><i>[Main]</i> основные настройки
+<p><b>isTutorial</b> - если True, то после старта сценария сразу открывается окно обучения, по умолчанию False
 <p><b>Map</b> - название файла/папки глобальной карты
 <p><b>ScenarioName</b> - отображаемое название сценария
 <p><b>ScenarioDescription</b> - описание
+<p><b>ScenarioVictoryDescription</b> - описание условий победы
+<p><b>ScenarioLoseDescription</b> - описание условий поражения
+<p><b>MedicName</b> - название ресурса используемого вместо медикаментов, по умолчанию medic
+<p><b>SuppliesName</b> - название ресурса используемого вместо боеприпасов, по умолчанию Supplies
+<p><b>FoodName</b> - название ресурса используемого вместо еды, по умолчанию Food
 <p><b>ScenarioLogo</b> - изображение
 <p><b>Achievements</b> - включены ли достижения
 <p><b>AchievementsCount</b> - число достижений в сценарии
@@ -902,6 +925,8 @@ div:target {
 <p><b>DisabledZonesForMainBase</b> - перечисление индексов территорий на которых невозможно усановить главную базу группировки
 <p><b>FogOfWar</b> - туман войны (бета версия). Включить True, выключить False
 <p><b>NoBaseNeeded</b> - У каких группировок иммунитет к принудительной автоматической установки базы при нажатии конец хода. Перечислять через запятую технические названия группировок
+<p><i>[Music]</i> список файлов используемой музыки в сценарии (одна строчка - один файл)
+<p><i>[AmbientSounds]</i> список файлов фоновых звуков в сценарии (одна строчка - один файл)
 </div>
 
 
@@ -934,7 +959,15 @@ div:target {
 
 
 
-<div id="">
+<div id="Tutorial">
+<p>Файл отвечает за обучение
+<p><i>[Main]</i> - основные параметры
+<p><b>CountPages</b> - число страниц в обучении
+<p><b>Face</b> - портрет персонажа в окне обучения. Можно на каждой странице указывать отдельно своего
+<p><b>Img</b> - Изображение. Если пусто или отсутсвует, то изображения не будет
+<p><i>[Page-X]</i> - описание страницы обучения X - номер страницы
+<p><b>Text</b> - отображаемый текст
+<p>Можно указать <b>Face</b> и <b>Img</b> тогда вместо стандартных изображений для страницы будут использоваться указанные
 </div>
 
 
