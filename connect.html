@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div id="work" style="display:none"><p>Если приложение не открылось, <a id="redirectHref" href="/">перейдите по ссылке</a>.</p></div>
+    <div id="broken">Данная страница используется для автоматического подключения к лобби игры. Ссылка на подключение сейчас отсутствует.</div>
+    <script>
+        ( ()=>{
+        var str = window.location.search;
+        if (str.startsWith("?")) {
+            str = "wiz://connect/" + str.substring("?".length);
+            setTimeout(function() {
+                window.location.href = str;
+            }, 500);
+            document.getElementById("redirectHref").href = str;
+            document.getElementById("work").style.display="";
+            document.getElementById("broken").style.display="none";
+        } else {
+            document.getElementById("work").style.display="none";
+            document.getElementById("broken").style.display="";
+        }
+        })();
+    </script>
+</body>
+</html>
