@@ -17,6 +17,7 @@
 [Form_Options].Text.Part;Все, кроме буйств
 [Form_Options].Text.All;Все
 [Form_Options].Text.No;Нет
+[frmOptionsBase].Message1;Вы уверены что хотите сбросить все настройки?||Некоторые настройки вступят в силу только после перезапуска.
 [Form_ScenarioSettings].TitleText;Выберите настройки сценария
 [Form_ScenarioSettings].Text1;Выберите уровень сложности:
 [Form_ScenarioSettings].Text2;Случайные события:
@@ -522,6 +523,11 @@
 [Window_ErrorMsg].Multiplayer_YouNotKick;Вас решили оставить
 [Window_ErrorMsg].Multiplayer_YouKick;Вас исключили
 [Window_ErrorMsg].Multiplayer_YouBan;Вас забанил сервер
+[Window_SaveList].Title;Список сохранений
+[Window_SaveList].Message1;Игра сохранена!
+[Window_SaveList].Message2;Сохранения от старой версии игры не поддерживаются!
+[Window_SaveList].Message3;Сохранение не найдено!
+[fServerInfo].Message1;Скопировано!
 [Window_StartStep].Title;Начало хода игрока
 [Window_StartStep].Text1;Теперь ходит игрок выбравший указанную группировку. Для начала хода нажмите Продолжить.
 [Window_StartStep].Text2;Ход автоматически начнется через
@@ -626,6 +632,8 @@
 [Common_Strings].RuleEnclave4;Отправить в атаку
 [Common_Strings].RuleEnclave5;Передислокация
 [Common_Strings].RuleEnclave6;Найм бойцов
+[Common_Strings].Unknown;Неизвестно
+[Common_Strings].13;||
 [Discord].Hotseat;Хот-сит
 [Discord].Singleplayer;Одиночная игра
 [Discord].MultiPlayer;Сетевая игра
@@ -716,6 +724,7 @@
 [Buttons].BTN_LocalHost.Text;Создать
 [Buttons].BTN_LocalClient.Text;Подключиться
 [Buttons].BTN_ResetSettings.Text;Сбросить все
+[Buttons].BTN_Reset.Text;Сбросить
 [Other].Exeption_1;Данный тип битвы не поддерживается!
 [Other].Exeption_2;Произошло ошибка в обработке параметров достижения № %s ! Указан неизвестный тип достижения
 [Other].Exeption_3;Ошибка параметра выброса. Прописан 0 в BurstEverySteps
