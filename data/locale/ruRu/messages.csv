@@ -19,6 +19,24 @@
 [Form_Options].Text.Part;Все, кроме буйств
 [Form_Options].Text.All;Все
 [Form_Options].Text.No;Нет
+[Form_OptionsOther].Text1;Игровой никнейм:
+[Form_OptionsOther].Text2;Таймер ограничения частоты отправки сообщений в игровой чат
+[Form_OptionsOther].Off;Выкл
+[Form_OptionsSound].Text1;Общая громкость звука:
+[Form_OptionsSound].Text2;Фоновые звуки:
+[Form_OptionsSound].Text3;Музыка:
+[Form_OptionsSound].Text4;Звуки событий:
+[Form_OptionsSound].Text5;Звуки интерфейса:
+[Form_OptionsSound].Text6;Речь:
+[Form_OptionsVideo].Text1;Разрешение экрана:
+[Form_OptionsVideo].Text2;Использовать новый шрифт:
+[Form_OptionsVideo].Text3;Показ границ соседних территорий:
+[Form_OptionsVideo].Text4;Фокус камеры на источник события:
+[Form_OptionsVideo].Text5;Возврат камеры после события:
+[Form_OptionsVideo].Text6;Фокус камеры при клике в логе:
+[Form_OptionsVideo].Text7;Скорость анимации событий:
+[Form_OptionsVideo].Text8;Скорость анимации боя:
+[Form_OptionsVideo].TextNeedRestart;Для активации шрифта требуется перезапуск игры!
 [frmOptionsBase].Message1;Вы уверены что хотите сбросить все настройки?||Некоторые настройки вступят в силу только после перезапуска.
 [Form_ScenarioSettings].TitleText;Выберите настройки сценария
 [Form_ScenarioSettings].Text1;Выберите уровень сложности:
