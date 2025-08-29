@@ -1,4 +1,8 @@
-﻿[Form_OtherProjects].TitleText;Другие наши проекты
+﻿[Form_MainMenu].Update.NewVersion.Text;Вышла новая версия игры. Скачать ее можно через лаунчер игры!
+[Form_MainMenu].Version.Part.Text;Версия
+[Form_Campanings].TitleText;Выберите кампанию
+[Form_Campanings].Tutorial.Text;Сначала ознакомьтесь с обучением! || У игры не самый низкий порог входа, поэтому обучение поможет быстрее освоиться! Всё обучение проходить необязательно. Достаточно пройти 1 любой сценарий.
+[Form_OtherProjects].TitleText;Другие наши проекты
 [Form_OtherProjects].GMBText;G.M.B. MOD - глобальная модификация для игры Stronghold Crusader. Цель мода - улучшить игру по всем возможным параметрам, но не трогать оригинальную концепцию игры, за которую ее и полюбили игроки по всему миру!
 [Form_Options].TitleText;Опции
 [Form_Options].Text.TabVideo;Изображение
@@ -19,9 +23,13 @@
 [Form_Options].Text.Part;Все, кроме буйств
 [Form_Options].Text.All;Все
 [Form_Options].Text.No;Нет
+[Form_OptionsInterface].Text1;Подробный вывод в игровой лог:
+[Form_OptionsInterface].Text2;Отображение отчетов о обоях поле начала хода:
+[Form_OptionsInterface].Text3;Показ игрового лога в конце хода:
+[Form_OptionsInterface].Text4;Авто смена фона главного меню:
+[Form_OptionsInterface].Text.NeedRestart;Для активации масштабирования требуется перезапуск игры!
 [Form_OptionsOther].Text1;Игровой никнейм:
 [Form_OptionsOther].Text2;Таймер ограничения частоты отправки сообщений в игровой чат
-[Form_OptionsOther].Off;Выкл
 [Form_OptionsSound].Text1;Общая громкость звука:
 [Form_OptionsSound].Text2;Фоновые звуки:
 [Form_OptionsSound].Text3;Музыка:
@@ -479,12 +487,27 @@
 [Form_AboutScenario].Status2;Выключены
 [Form_AboutScenario].Status3;Только передислокация
 [Form_AboutScenario].Status4;Передислокация и атака
+[Form_MultiplayerSettings].TitleText;Настройки многопользовательской игры
+[Form_MultiplayerSettings].Text1;Пароль для сохранения
+[Form_MultiplayerSettings].Text2;Выберите число игроков
+[Form_MultiplayerSettings].Text3;Таймер хода - количество минут, по истечению которых принудительно закончится ход игрока
+[Form_MultiplayerSettings].Text4;Таймер начала хода - количество минут, которое дается игроку, чтобы начать ход. По истечению таймера ход начинается автоматически
+[Form_MultiplayerSettings].Text5;Никнейм игрока, отображаемого в игре. Максимум 11 символов
+[Form_MultiplayerSettings].Text6;Таймер ограничения частоты отправки сообщений в игровой чат
 [Form_MultiplayerSettings].Message_1;Введите пароль для сохранений игры!
 [Form_MultiplayerSettings].Message_2;Пустые ники запрещены!
 [Form_MultiplayerSettings].Message_3;Ники должны отличаться друг от друга!
+[Form_MultiplayerTypeSelect].Text1;Хотсит - возможность играть нескольким игрокам за одним компьютером по очереди
+[Form_MultiplayerTypeSelect].Text2;Для игры через Steam, необходимо запустить клиент Steam до запуска игры
+[Form_MultiplayerTypeSelect].Text3;Если предполагается игры без Steam, но через интернет, то необходимо использовать Radmin или Hamachi, или их аналоги
+[Form_MultiplayerTypeSelect].Text4;Если Вы будете хостом (сервером)
+[Form_MultiplayerTypeSelect].Text5;Укажите порт к которому буут подключаться другие игроки:
+[Form_MultiplayerTypeSelect].Text6;Если Вы будете подключаться к другому игроку (серверу)
+[Form_MultiplayerTypeSelect].Text7;Укажите ссылку или адрес подключения:
 [Form_MultiplayerTypeSelect].PartMessage_1;Попробовать переподключиться?
 [Form_MultiplayerTypeSelect].Message_1;Переподключение...
 [Form_MultiplayerTypeSelect].Message_2;Подключение...
+[Form_MultiplayerTypeSelect].ShowMessage.Button.Text;Переподключиться
 [Window_ServerInfo].Text1;Скопируйте ссылку и отправьте её другу, чтобы он подключился с помощью нее (рекомендуется). С помощью ссылки игра автоматически вычислит подходящий IP для подключения из списка ниже. Способ подключения по IP по прежнему доступен в случае непредвиденных проблем с ссылкой.
 [Window_ServerInfo].Text2;Альтернативная ссылка:
 [Window_ServerInfo].Text3;Список ваших IP адресов, на основе которых сформировались ссылки:
@@ -657,9 +680,12 @@
 [Common_Strings].Unknown;Неизвестно
 [Common_Strings].AchivTake;Достижение получено
 [Common_Strings].AchivNoTake;Достижение не получено
-[Discord].Hotseat;Хот-сит
-[Discord].Singleplayer;Одиночная игра
-[Discord].MultiPlayer;Сетевая игра
+[Common_Strings].Cancel;Отмена
+[Common_Strings].Hotseat;Хотсит
+[Common_Strings].Singleplayer;Одиночная игра
+[Common_Strings].MultiPlayer;Мультиплеер
+[Common_Strings].Network;Интернет
+[Common_Strings].OffShort;Выкл
 [GameLog].LT_1;Ход %d Группировка %s : %s
 [GameLog].LT_2;Ход %d Общее : %s
 [GameLog].LT_3;Из %s локации %s напала на территорию
@@ -815,6 +841,10 @@
 [Other].Exception_66;Построка %s для ИИ не найдена
 [Other].Exception_67;При попытке установить главную базу вызвана ошибка:
 [Other].Exception_68;На найден файл:
+[Other].Exception_69;Неверный адрес подключения!
+[Other].Exception_70;Брандмауэр Windows не настроен, что может привести к проблемам в сетевой игре!
+[Other].Exception_71;Ошибка получения адресу интерфеса "%s": %d
+[Other].Exception_72;Не верный адрес!
 [Rules.Rule-1].Name;Максимальная децентрализация
 [Rules.Rule-2].Name;Децентрализация
 [Rules.Rule-3].Name;Сбалансированное управление
