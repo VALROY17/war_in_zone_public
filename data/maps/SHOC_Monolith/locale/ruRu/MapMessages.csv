@@ -1,0 +1,57 @@
+﻿[Territories.Name].Zona1;Задворки станции
+[Territories.Name].Zona2;Служебные здания
+[Territories.Name].Zona3;Генераторы
+[Territories.Name].Zona4;Северные постройки
+[Territories.Name].Zona5;Подстанции
+[Territories.Name].Zona6;Западная постройка
+[Territories.Name].Zona7;Катакомбы
+[Territories.Name].Zona8;Северные подходы
+[Territories.Name].Zona9;Восточные строения
+[Territories.Name].Zona10;Западный лагерь
+[Territories.Name].Zona11;Крыши
+[Territories.Name].Zona12;Северный вход
+[Territories.Name].Zona13;Саркофаг
+[Territories.Name].Zona14;Западные ворота
+[Territories.Name].Zona15;Подходы к станции
+[Territories.Name].Zona16;Дорога у входа
+[Territories.Name].Zona17;Дорога
+[Territories.Name].Zona18;Блокпост
+[Territories.Name].Zona19;Главная аллея
+[Territories.Name].Zona20;Юго-запад
+[Territories.Name].Zona21;Стоянка Монолита
+[Territories.Name].Zona22;Дорога к блокпосту
+[Territories.Name].Zona23;Южная территория
+[Territories.Name].Zona24;Мост
+[Territories.Name].Zona25;Стадион Авангард
+[Territories.Name].Zona26;Вход на стадион
+[Territories.Name].Zona27;Западные многоэтажки
+[Territories.Name].Zona28;Колесо обозрения
+[Territories.Name].Zona29;ДК Энергетик
+[Territories.Name].Zona30;Гостиница Полесье
+[Territories.Name].Zona31;Автовокзал
+[Territories.Name].Zona32;Площадь
+[Territories.Name].Zona33;Подземная автостоянка
+[Territories.Name].Zona34;Детский сад
+[Territories.Name].Zona35;Юго-запад
+[Territories.Name].Zona36;Аллея
+[Territories.Name].Zona37;Юго-восток
+[Territories.Name].Zona38;Северный КПП
+[Territories.Name].Zona39;Тупик
+[Territories.Name].Zona40;Лаборатория
+[Territories.Name].Zona41;Подъем к антеннам
+[Territories.Name].Zona42;Антенны
+[Territories.Name].Zona43;Развилка
+[Territories.Name].Zona44;Перекресток
+[Territories.Name].Zona45;Дорога к перекрестку
+[Territories.Name].Zona46;Северный Мертвый лес
+[Territories.Name].Zona47;Петляющая дорога
+[Territories.Name].Zona48;Мертвый лес
+[Territories.Name].Zona49;Восточный Мертвый лес
+[Territories.Name].Zona50;Смотровой пункт
+[Territories.Name].Zona51;Южный КПП
+[Locations.BunkerMonolith].Name;Бункер управления Монолитом
+[Locations.CHAES1].Name;ЧАЭС-1
+[Locations.LabX10].Name;Лаборатория X-10
+[Locations.PripyatCentral].Name;Припять
+[Locations.Radar].Name;Радар
+[Locations.Sarcophagus].Name;Саркофаг
