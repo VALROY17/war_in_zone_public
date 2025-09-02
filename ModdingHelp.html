@@ -1,19 +1,40 @@
 ﻿<html>
 <header></header>
 <style>
+body {
+ color:#c0c0c0;
+ background-color:#070909;
+}
+a:visited {
+ color:#ff1aff;
+}
+a:link {
+ color:#9fd8ff;
+}
+a:hover {
+ color:#ffffff;
+}
+a:visited:hover {
+ color:#ffc4ff;
+}
 .leftpannel {
  height: 100%;
  overflow: auto;
  float: left;
  width: 350px;
+ border:#c0c0c0 1px solid;
+ padding: 2px;
 }
 .rightpannel {
- margin-left: 355px;
+ margin-left: 360px;
  overflow: auto;
  height: 100%;
 }
 .rightpannel div {
  display: none;
+}
+.rightpannel div b,.rightpannel div i{
+ color: #ffffff;
 }
 .rightpannel div p{
  text-indent: -10px;
@@ -553,7 +574,7 @@ div:target {
 <p><b>AddMoney</b> - деньги
 <p><b>AddComands</b> - КР
 <p><b>AddSupplies</b> - боеприпасы
-<p><b>Medic</b> - медицина
+<p><b>AddMedic</b> - медицина
 <p><b>AddFood</b> - продукты
 <p><b>AddLowArts</b> - дешевые арты
 <p><b>AddMediumArts</b> - дорогие арты
