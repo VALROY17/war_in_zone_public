@@ -1,0 +1,2068 @@
+D	.upgrade/7fa869cb46fc456a092de46bced0687a2f549024
+M	Launcher.exe
+M	ModdingHelp.html
+M	ScenarioEditorTools.exe
+M	WAR IN ZONE.exe
+M	data/campanings/scop/1Story/Achievements.ini
+M	data/campanings/scop/1Story/Advisors.ini
+M	data/campanings/scop/1Story/Events_Story.ini
+D	data/campanings/scop/1Story/Messages.ini
+M	data/campanings/scop/1Story/Settings.ini
+M	data/campanings/scop/1Story/Traders.ini
+M	data/campanings/scop/1Story/groups/Duty.ini
+M	data/campanings/scop/1Story/groups/Mercenaries.ini
+M	data/campanings/scop/1Story/groups/bandits.ini
+M	data/campanings/scop/1Story/groups/freedom.ini
+M	data/campanings/scop/1Story/groups/monolith.ini
+M	data/campanings/scop/1Story/groups/scientists.ini
+M	data/campanings/scop/1Story/groups/soldiers.ini
+M	data/campanings/scop/1Story/groups/stalkers.ini
+R100	data/campanings/scop/1Story/gfx/Scenario_Logo_Story-Active.png	data/campanings/scop/1Story/locale/ruRu/gfx/Scenario_Logo_Story-Active.png
+R100	data/campanings/scop/1Story/gfx/Scenario_Logo_Story.png	data/campanings/scop/1Story/locale/ruRu/gfx/Scenario_Logo_Story.png
+A	data/campanings/scop/1Story/locale/ruRu/messages.csv
+M	data/campanings/scop/2Freeplay/Achievements.ini
+M	data/campanings/scop/2Freeplay/Advisors.ini
+M	data/campanings/scop/2Freeplay/Events_Story.ini
+D	data/campanings/scop/2Freeplay/Messages.ini
+M	data/campanings/scop/2Freeplay/Settings.ini
+M	data/campanings/scop/2Freeplay/Traders.ini
+M	data/campanings/scop/2Freeplay/groups/Duty.ini
+M	data/campanings/scop/2Freeplay/groups/Mercenaries.ini
+M	data/campanings/scop/2Freeplay/groups/bandits.ini
+M	data/campanings/scop/2Freeplay/groups/freedom.ini
+M	data/campanings/scop/2Freeplay/groups/monolith.ini
+M	data/campanings/scop/2Freeplay/groups/scientists.ini
+M	data/campanings/scop/2Freeplay/groups/soldiers.ini
+M	data/campanings/scop/2Freeplay/groups/stalkers.ini
+R100	data/campanings/scop/2Freeplay/gfx/Scenario_Logo_Non_Story-Active.png	data/campanings/scop/2Freeplay/locale/ruRu/gfx/Scenario_Logo_Non_Story-Active.png
+R100	data/campanings/scop/2Freeplay/gfx/Scenario_Logo_Non_Story.png	data/campanings/scop/2Freeplay/locale/ruRu/gfx/Scenario_Logo_Non_Story.png
+A	data/campanings/scop/2Freeplay/locale/ruRu/messages.csv
+M	data/campanings/scop/3OneTerritory/Achievements.ini
+M	data/campanings/scop/3OneTerritory/Advisors.ini
+M	data/campanings/scop/3OneTerritory/Events_Story.ini
+D	data/campanings/scop/3OneTerritory/Messages.ini
+M	data/campanings/scop/3OneTerritory/Settings.ini
+M	data/campanings/scop/3OneTerritory/Traders.ini
+M	data/campanings/scop/3OneTerritory/groups/Duty.ini
+M	data/campanings/scop/3OneTerritory/groups/Mercenaries.ini
+M	data/campanings/scop/3OneTerritory/groups/bandits.ini
+M	data/campanings/scop/3OneTerritory/groups/freedom.ini
+M	data/campanings/scop/3OneTerritory/groups/monolith.ini
+M	data/campanings/scop/3OneTerritory/groups/scientists.ini
+M	data/campanings/scop/3OneTerritory/groups/soldiers.ini
+M	data/campanings/scop/3OneTerritory/groups/stalkers.ini
+A	data/campanings/scop/3OneTerritory/locale/ruRu/messages.csv
+M	data/campanings/scop/4Pripyat/Achievements.ini
+M	data/campanings/scop/4Pripyat/Advisors.ini
+M	data/campanings/scop/4Pripyat/Events_Story.ini
+M	data/campanings/scop/4Pripyat/Rules.ini
+M	data/campanings/scop/4Pripyat/Settings.ini
+M	data/campanings/scop/4Pripyat/Traders.ini
+M	data/campanings/scop/4Pripyat/groups/monolith.ini
+M	data/campanings/scop/4Pripyat/groups/soldiers.ini
+R100	data/campanings/scop/4Pripyat/gfx/Scenario_Logo_Story-Active.png	data/campanings/scop/4Pripyat/locale/ruRu/gfx/Scenario_Logo_Story-Active.png
+R100	data/campanings/scop/4Pripyat/gfx/Scenario_Logo_Story.png	data/campanings/scop/4Pripyat/locale/ruRu/gfx/Scenario_Logo_Story.png
+A	data/campanings/scop/4Pripyat/locale/ruRu/messages.csv
+M	data/campanings/scop/5Zaton/Achievements.ini
+M	data/campanings/scop/5Zaton/Advisors.ini
+M	data/campanings/scop/5Zaton/Events_Story.ini
+D	data/campanings/scop/5Zaton/Messages.ini
+M	data/campanings/scop/5Zaton/Settings.ini
+M	data/campanings/scop/5Zaton/Traders.ini
+M	data/campanings/scop/5Zaton/groups/Mercenaries.ini
+M	data/campanings/scop/5Zaton/groups/bandits.ini
+M	data/campanings/scop/5Zaton/groups/stalkers.ini
+R100	data/campanings/scop/5Zaton/gfx/Scenario_Logo_Story-Active.png	data/campanings/scop/5Zaton/locale/ruRU/gfx/Scenario_Logo_Story-Active.png
+R100	data/campanings/scop/5Zaton/gfx/Scenario_Logo_Story.png	data/campanings/scop/5Zaton/locale/ruRU/gfx/Scenario_Logo_Story.png
+A	data/campanings/scop/5Zaton/locale/ruRU/messages.csv
+M	data/campanings/scop/6Fragmentation/Achievements.ini
+M	data/campanings/scop/6Fragmentation/Advisors.ini
+M	data/campanings/scop/6Fragmentation/Events_Story.ini
+D	data/campanings/scop/6Fragmentation/Messages.ini
+M	data/campanings/scop/6Fragmentation/Settings.ini
+M	data/campanings/scop/6Fragmentation/Traders.ini
+M	data/campanings/scop/6Fragmentation/groups/Duty.ini
+M	data/campanings/scop/6Fragmentation/groups/Mercenaries.ini
+M	data/campanings/scop/6Fragmentation/groups/Noon.ini
+M	data/campanings/scop/6Fragmentation/groups/bandits.ini
+M	data/campanings/scop/6Fragmentation/groups/banditsKillers.ini
+M	data/campanings/scop/6Fragmentation/groups/banditsShishak.ini
+M	data/campanings/scop/6Fragmentation/groups/banditsValet.ini
+M	data/campanings/scop/6Fragmentation/groups/freedom.ini
+M	data/campanings/scop/6Fragmentation/groups/monolith.ini
+M	data/campanings/scop/6Fragmentation/groups/scientists.ini
+M	data/campanings/scop/6Fragmentation/groups/soldiers.ini
+M	data/campanings/scop/6Fragmentation/groups/stalkers.ini
+M	data/campanings/scop/6Fragmentation/groups/stalkersNoy.ini
+M	data/campanings/scop/6Fragmentation/groups/stalkersSpartak.ini
+M	data/campanings/scop/6Fragmentation/groups/stalkersYanov.ini
+M	data/campanings/scop/6Fragmentation/leaders/Leader-Killers.ini
+M	data/campanings/scop/6Fragmentation/leaders/Leader-Noon.ini
+M	data/campanings/scop/6Fragmentation/leaders/Leader-Noy.ini
+M	data/campanings/scop/6Fragmentation/leaders/Leader-Shishak.ini
+M	data/campanings/scop/6Fragmentation/leaders/Leader-Spartak.ini
+M	data/campanings/scop/6Fragmentation/leaders/Leader-Sultan.ini
+M	data/campanings/scop/6Fragmentation/leaders/Leader-Valet.ini
+A	data/campanings/scop/6Fragmentation/locale/ruRU/messages.csv
+M	data/campanings/scs/1story/Achievements.ini
+M	data/campanings/scs/1story/Advisors.ini
+M	data/campanings/scs/1story/Events_Story.ini
+M	data/campanings/scs/1story/Settings.ini
+M	data/campanings/scs/1story/Traders.ini
+M	data/campanings/scs/1story/groups/Duty.ini
+M	data/campanings/scs/1story/groups/Mercenaries.ini
+M	data/campanings/scs/1story/groups/bandits.ini
+M	data/campanings/scs/1story/groups/freedom.ini
+M	data/campanings/scs/1story/groups/monolith.ini
+M	data/campanings/scs/1story/groups/scientists.ini
+M	data/campanings/scs/1story/groups/soldiers.ini
+M	data/campanings/scs/1story/groups/stalkers.ini
+R100	data/campanings/scs/1story/gfx/Scenario_Logo_Story-Active.png	data/campanings/scs/1story/locale/ruRU/gfx/Scenario_Logo_Story-Active.png
+R100	data/campanings/scs/1story/gfx/Scenario_Logo_Story.png	data/campanings/scs/1story/locale/ruRU/gfx/Scenario_Logo_Story.png
+A	data/campanings/scs/1story/locale/ruRU/messages.csv
+M	data/campanings/scs/2Freeplay/Achievements.ini
+M	data/campanings/scs/2Freeplay/Advisors.ini
+M	data/campanings/scs/2Freeplay/Events_Story.ini
+D	data/campanings/scs/2Freeplay/Messages.ini
+M	data/campanings/scs/2Freeplay/Settings.ini
+M	data/campanings/scs/2Freeplay/Traders.ini
+M	data/campanings/scs/2Freeplay/groups/Duty.ini
+M	data/campanings/scs/2Freeplay/groups/Mercenaries.ini
+M	data/campanings/scs/2Freeplay/groups/bandits.ini
+M	data/campanings/scs/2Freeplay/groups/freedom.ini
+M	data/campanings/scs/2Freeplay/groups/monolith.ini
+M	data/campanings/scs/2Freeplay/groups/scientists.ini
+M	data/campanings/scs/2Freeplay/groups/soldiers.ini
+M	data/campanings/scs/2Freeplay/groups/stalkers.ini
+R100	data/campanings/scs/2Freeplay/gfx/Scenario_Logo_Non_Story-Active.png	data/campanings/scs/2Freeplay/locale/ruRU/gfx/Scenario_Logo_Non_Story-Active.png
+R100	data/campanings/scs/2Freeplay/gfx/Scenario_Logo_Non_Story.png	data/campanings/scs/2Freeplay/locale/ruRU/gfx/Scenario_Logo_Non_Story.png
+A	data/campanings/scs/2Freeplay/locale/ruRU/messages.csv
+M	data/campanings/scs/3OneTerritory/Achievements.ini
+M	data/campanings/scs/3OneTerritory/Advisors.ini
+M	data/campanings/scs/3OneTerritory/Events_Story.ini
+D	data/campanings/scs/3OneTerritory/Messages.ini
+M	data/campanings/scs/3OneTerritory/Settings.ini
+M	data/campanings/scs/3OneTerritory/Traders.ini
+M	data/campanings/scs/3OneTerritory/groups/Duty.ini
+M	data/campanings/scs/3OneTerritory/groups/Mercenaries.ini
+M	data/campanings/scs/3OneTerritory/groups/bandits.ini
+M	data/campanings/scs/3OneTerritory/groups/freedom.ini
+M	data/campanings/scs/3OneTerritory/groups/monolith.ini
+M	data/campanings/scs/3OneTerritory/groups/scientists.ini
+M	data/campanings/scs/3OneTerritory/groups/soldiers.ini
+M	data/campanings/scs/3OneTerritory/groups/stalkers.ini
+A	data/campanings/scs/3OneTerritory/locale/ruRU/messages.csv
+M	data/campanings/scs/4Border/Achievements.ini
+M	data/campanings/scs/4Border/Advisors.ini
+M	data/campanings/scs/4Border/Events_Story.ini
+M	data/campanings/scs/4Border/Rules.ini
+M	data/campanings/scs/4Border/Settings.ini
+M	data/campanings/scs/4Border/Traders.ini
+M	data/campanings/scs/4Border/groups/Duty.ini
+M	data/campanings/scs/4Border/groups/Mercenaries.ini
+M	data/campanings/scs/4Border/groups/freedom.ini
+M	data/campanings/scs/4Border/groups/monolith.ini
+M	data/campanings/scs/4Border/groups/mutants.ini
+M	data/campanings/scs/4Border/groups/soldiers.ini
+M	data/campanings/scs/4Border/groups/stalkers.ini
+R100	data/campanings/scs/4Border/gfx/Scenario_Logo_Border-Active.png	data/campanings/scs/4Border/locale/ruRU/gfx/Scenario_Logo_Border-Active.png
+R100	data/campanings/scs/4Border/gfx/Scenario_Logo_Border.png	data/campanings/scs/4Border/locale/ruRU/gfx/Scenario_Logo_Border.png
+A	data/campanings/scs/4Border/locale/ruRU/messages.csv
+M	data/campanings/scs/5Limansk/Achievements.ini
+M	data/campanings/scs/5Limansk/Advisors.ini
+M	data/campanings/scs/5Limansk/Events_Story.ini
+M	data/campanings/scs/5Limansk/Settings.ini
+M	data/campanings/scs/5Limansk/Traders.ini
+M	data/campanings/scs/5Limansk/groups/Duty.ini
+M	data/campanings/scs/5Limansk/groups/Mercenaries.ini
+M	data/campanings/scs/5Limansk/groups/bandits.ini
+M	data/campanings/scs/5Limansk/groups/clearsky.ini
+M	data/campanings/scs/5Limansk/groups/freedom.ini
+M	data/campanings/scs/5Limansk/groups/monolith.ini
+M	data/campanings/scs/5Limansk/groups/soldiers.ini
+M	data/campanings/scs/5Limansk/leaders/Leader-0.ini
+M	data/campanings/scs/5Limansk/leaders/Leader-10.ini
+M	data/campanings/scs/5Limansk/leaders/Leader-7.ini
+M	data/campanings/scs/5Limansk/leaders/Leader-Chehov.ini
+M	data/campanings/scs/5Limansk/leaders/Leader-General.ini
+M	data/campanings/scs/5Limansk/leaders/Leader-Krylov.ini
+M	data/campanings/scs/5Limansk/leaders/Leader-Monolith.ini
+M	data/campanings/scs/5Limansk/leaders/Leader-Spectator.ini
+M	data/campanings/scs/5Limansk/leaders/Leader-Yoga.ini
+R100	data/campanings/scs/5Limansk/gfx/Scenario_Logo_Limansk-Active.png	data/campanings/scs/5Limansk/locale/ruRU/gfx/Scenario_Logo_Limansk-Active.png
+R100	data/campanings/scs/5Limansk/gfx/Scenario_Logo_Limansk.png	data/campanings/scs/5Limansk/locale/ruRU/gfx/Scenario_Logo_Limansk.png
+A	data/campanings/scs/5Limansk/locale/ruRU/messages.csv
+A	data/campanings/scs/6Fragmentation/AI.ini
+A	data/campanings/scs/6Fragmentation/Achievements.ini
+A	data/campanings/scs/6Fragmentation/Advisors.ini
+A	data/campanings/scs/6Fragmentation/Events_Story.ini
+A	data/campanings/scs/6Fragmentation/Main.ini
+A	data/campanings/scs/6Fragmentation/Settings.ini
+A	data/campanings/scs/6Fragmentation/TraderGoods.ini
+A	data/campanings/scs/6Fragmentation/Traders.ini
+A	data/campanings/scs/6Fragmentation/groups/BlackHand.ini
+A	data/campanings/scs/6Fragmentation/groups/Duty.ini
+A	data/campanings/scs/6Fragmentation/groups/Mercenaries.ini
+A	data/campanings/scs/6Fragmentation/groups/RenegatsKosoy.ini
+A	data/campanings/scs/6Fragmentation/groups/RenegatsKruk.ini
+A	data/campanings/scs/6Fragmentation/groups/SoldiersMilitary.ini
+A	data/campanings/scs/6Fragmentation/groups/bandits.ini
+A	data/campanings/scs/6Fragmentation/groups/freedom.ini
+A	data/campanings/scs/6Fragmentation/groups/monolith.ini
+A	data/campanings/scs/6Fragmentation/groups/scientists.ini
+A	data/campanings/scs/6Fragmentation/groups/soldiers.ini
+A	data/campanings/scs/6Fragmentation/groups/stalkers.ini
+A	data/campanings/scs/6Fragmentation/groups/stalkersDiggers.ini
+A	data/campanings/scs/6Fragmentation/groups/stalkersMilitary.ini
+A	data/campanings/scs/6Fragmentation/groups/stalkersOrest.ini
+A	data/campanings/scs/6Fragmentation/groups/stalkersWolf.ini
+A	data/campanings/scs/6Fragmentation/leaders/Leader-Diggers.ini
+A	data/campanings/scs/6Fragmentation/leaders/Leader-Kosoy.ini
+A	data/campanings/scs/6Fragmentation/leaders/Leader-Kruk.ini
+A	data/campanings/scs/6Fragmentation/leaders/Leader-Orest.ini
+A	data/campanings/scs/6Fragmentation/leaders/Leader-Soldiers1.ini
+A	data/campanings/scs/6Fragmentation/leaders/Leader-Soldiers2.ini
+A	data/campanings/scs/6Fragmentation/leaders/Leader-StalkersMilitary.ini
+A	data/campanings/scs/6Fragmentation/leaders/Leader-Wolf.ini
+A	data/campanings/scs/6Fragmentation/locale/ruRU/messages.csv
+M	data/campanings/shoc/1story/Achievements.ini
+M	data/campanings/shoc/1story/Advisors.ini
+M	data/campanings/shoc/1story/Events_Story.ini
+M	data/campanings/shoc/1story/Settings.ini
+M	data/campanings/shoc/1story/SpecialEvents/Burst.ini
+M	data/campanings/shoc/1story/Traders.ini
+R100	data/campanings/shoc/1story/gfx/Scenario_Logo_Story-Active.png	data/campanings/shoc/1story/locale/ruRU/gfx/Scenario_Logo_Story-Active.png
+R100	data/campanings/shoc/1story/gfx/Scenario_Logo_Story.png	data/campanings/shoc/1story/locale/ruRU/gfx/Scenario_Logo_Story.png
+A	data/campanings/shoc/1story/locale/ruRU/messages.csv
+M	data/campanings/shoc/2Freeplay/Achievements.ini
+M	data/campanings/shoc/2Freeplay/Advisors.ini
+M	data/campanings/shoc/2Freeplay/Events_Story.ini
+D	data/campanings/shoc/2Freeplay/Messages.ini
+M	data/campanings/shoc/2Freeplay/Settings.ini
+M	data/campanings/shoc/2Freeplay/Traders.ini
+R100	data/campanings/shoc/2Freeplay/gfx/Scenario_Logo_Non_Story-Active.png	data/campanings/shoc/2Freeplay/locale/ruRU/gfx/Scenario_Logo_Non_Story-Active.png
+R100	data/campanings/shoc/2Freeplay/gfx/Scenario_Logo_Non_Story.png	data/campanings/shoc/2Freeplay/locale/ruRU/gfx/Scenario_Logo_Non_Story.png
+A	data/campanings/shoc/2Freeplay/locale/ruRU/messages.csv
+M	data/campanings/shoc/3OneTerritory/Achievements.ini
+M	data/campanings/shoc/3OneTerritory/Advisors.ini
+M	data/campanings/shoc/3OneTerritory/Events_Story.ini
+D	data/campanings/shoc/3OneTerritory/Messages.ini
+M	data/campanings/shoc/3OneTerritory/Settings.ini
+M	data/campanings/shoc/3OneTerritory/SpecialEvents/Burst.ini
+M	data/campanings/shoc/3OneTerritory/Traders.ini
+A	data/campanings/shoc/3OneTerritory/locale/ruRU/messages.csv
+M	data/campanings/shoc/4Monolith/Achievements.ini
+M	data/campanings/shoc/4Monolith/Advisors.ini
+M	data/campanings/shoc/4Monolith/Events_Story.ini
+M	data/campanings/shoc/4Monolith/Settings.ini
+M	data/campanings/shoc/4Monolith/SpecialEvents/Burst.ini
+M	data/campanings/shoc/4Monolith/Traders.ini
+M	data/campanings/shoc/4Monolith/groups/Duty.ini
+M	data/campanings/shoc/4Monolith/groups/freedom.ini
+M	data/campanings/shoc/4Monolith/groups/monolith.ini
+M	data/campanings/shoc/4Monolith/groups/soldiers.ini
+M	data/campanings/shoc/4Monolith/groups/stalkers.ini
+M	data/campanings/shoc/4Monolith/leaders/Leader-4.ini
+M	data/campanings/shoc/4Monolith/leaders/Leader-5.ini
+M	data/campanings/shoc/4Monolith/leaders/Leader-6.ini
+R100	data/campanings/shoc/4Monolith/gfx/Scenario_Logo_OpMonolith-Active.png	data/campanings/shoc/4Monolith/locale/ruRU/gfx/Scenario_Logo_OpMonolith-Active.png
+R100	data/campanings/shoc/4Monolith/gfx/Scenario_Logo_OpMonolith.png	data/campanings/shoc/4Monolith/locale/ruRU/gfx/Scenario_Logo_OpMonolith.png
+A	data/campanings/shoc/4Monolith/locale/ruRU/messages.csv
+M	data/campanings/shoc/5Garbage/Achievements.ini
+M	data/campanings/shoc/5Garbage/Advisors.ini
+M	data/campanings/shoc/5Garbage/Events_Story.ini
+D	data/campanings/shoc/5Garbage/Messages.ini
+M	data/campanings/shoc/5Garbage/Settings.ini
+M	data/campanings/shoc/5Garbage/SpecialEvents/Burst.ini
+M	data/campanings/shoc/5Garbage/Traders.ini
+M	data/campanings/shoc/5Garbage/groups/Duty.ini
+M	data/campanings/shoc/5Garbage/groups/bandits.ini
+M	data/campanings/shoc/5Garbage/groups/stalkers.ini
+R100	data/campanings/shoc/5Garbage/gfx/Scenario_Logo_Story-Active.png	data/campanings/shoc/5Garbage/locale/ruRU/gfx/Scenario_Logo_Story-Active.png
+R100	data/campanings/shoc/5Garbage/gfx/Scenario_Logo_Story.png	data/campanings/shoc/5Garbage/locale/ruRU/gfx/Scenario_Logo_Story.png
+A	data/campanings/shoc/5Garbage/locale/ruRU/messages.csv
+M	data/campanings/snet/1-2players/Achievements.ini
+M	data/campanings/snet/1-2players/Advisors.ini
+M	data/campanings/snet/1-2players/Events_Story.ini
+M	data/campanings/snet/1-2players/Settings.ini
+M	data/campanings/snet/1-2players/SpecialEvents/BrainPsy.ini
+M	data/campanings/snet/1-2players/SpecialEvents/BrainPsyStatus.ini
+M	data/campanings/snet/1-2players/Traders.ini
+R100	data/campanings/snet/1-2players/gfx/Scenario_Logo-Active.png	data/campanings/snet/1-2players/locale/ruRU/gfx/Scenario_Logo-Active.png
+R100	data/campanings/snet/1-2players/gfx/Scenario_Logo.png	data/campanings/snet/1-2players/locale/ruRU/gfx/Scenario_Logo.png
+A	data/campanings/snet/1-2players/locale/ruRU/messages.csv
+M	data/campanings/snet/2-3players/Achievements.ini
+M	data/campanings/snet/2-3players/Advisors.ini
+M	data/campanings/snet/2-3players/Events_Story.ini
+M	data/campanings/snet/2-3players/Settings.ini
+M	data/campanings/snet/2-3players/SpecialEvents/BrainPsy.ini
+M	data/campanings/snet/2-3players/SpecialEvents/BrainPsyStatus.ini
+M	data/campanings/snet/2-3players/Traders.ini
+R100	data/campanings/snet/2-3players/gfx/Scenario_Logo-Active.png	data/campanings/snet/2-3players/locale/ruRU/gfx/Scenario_Logo-Active.png
+R100	data/campanings/snet/2-3players/gfx/Scenario_Logo.png	data/campanings/snet/2-3players/locale/ruRU/gfx/Scenario_Logo.png
+A	data/campanings/snet/2-3players/locale/ruRU/messages.csv
+M	data/campanings/snet/3-4players/Achievements.ini
+M	data/campanings/snet/3-4players/Advisors.ini
+M	data/campanings/snet/3-4players/Events_Story.ini
+M	data/campanings/snet/3-4players/Settings.ini
+M	data/campanings/snet/3-4players/SpecialEvents/BrainPsy.ini
+M	data/campanings/snet/3-4players/SpecialEvents/BrainPsyStatus.ini
+M	data/campanings/snet/3-4players/Traders.ini
+R100	data/campanings/snet/3-4players/gfx/Scenario_Logo-Active.png	data/campanings/snet/3-4players/locale/ruRU/gfx/Scenario_Logo-Active.png
+R100	data/campanings/snet/3-4players/gfx/Scenario_Logo.png	data/campanings/snet/3-4players/locale/ruRU/gfx/Scenario_Logo.png
+A	data/campanings/snet/3-4players/locale/ruRU/messages.csv
+M	data/campanings/snet/4-4players/Achievements.ini
+M	data/campanings/snet/4-4players/Advisors.ini
+M	data/campanings/snet/4-4players/Events_Story.ini
+M	data/campanings/snet/4-4players/Settings.ini
+M	data/campanings/snet/4-4players/SpecialEvents/BrainPsy.ini
+M	data/campanings/snet/4-4players/SpecialEvents/BrainPsyStatus.ini
+M	data/campanings/snet/4-4players/Traders.ini
+R100	data/campanings/snet/4-4players/gfx/Scenario_Logo-Active.png	data/campanings/snet/4-4players/locale/ruRU/gfx/Scenario_Logo-Active.png
+R100	data/campanings/snet/4-4players/gfx/Scenario_Logo.png	data/campanings/snet/4-4players/locale/ruRU/gfx/Scenario_Logo.png
+A	data/campanings/snet/4-4players/locale/ruRU/messages.csv
+M	data/campanings/snet/5-5players/Achievements.ini
+M	data/campanings/snet/5-5players/Advisors.ini
+M	data/campanings/snet/5-5players/Events_Story.ini
+M	data/campanings/snet/5-5players/Settings.ini
+M	data/campanings/snet/5-5players/SpecialEvents/BrainPsy.ini
+M	data/campanings/snet/5-5players/SpecialEvents/BrainPsyStatus.ini
+M	data/campanings/snet/5-5players/Traders.ini
+R100	data/campanings/snet/5-5players/gfx/Scenario_Logo-Active.png	data/campanings/snet/5-5players/locale/ruRU/gfx/Scenario_Logo-Active.png
+R100	data/campanings/snet/5-5players/gfx/Scenario_Logo.png	data/campanings/snet/5-5players/locale/ruRU/gfx/Scenario_Logo.png
+A	data/campanings/snet/5-5players/locale/ruRU/messages.csv
+M	data/campanings/snet/6-6players/Achievements.ini
+M	data/campanings/snet/6-6players/Advisors.ini
+M	data/campanings/snet/6-6players/Events_Story.ini
+M	data/campanings/snet/6-6players/Settings.ini
+M	data/campanings/snet/6-6players/SpecialEvents/BrainPsy.ini
+M	data/campanings/snet/6-6players/SpecialEvents/BrainPsyStatus.ini
+M	data/campanings/snet/6-6players/Traders.ini
+R100	data/campanings/snet/6-6players/gfx/Scenario_Logo-Active.png	data/campanings/snet/6-6players/locale/ruRU/gfx/Scenario_Logo-Active.png
+R100	data/campanings/snet/6-6players/gfx/Scenario_Logo.png	data/campanings/snet/6-6players/locale/ruRU/gfx/Scenario_Logo.png
+A	data/campanings/snet/6-6players/locale/ruRU/messages.csv
+M	data/campanings/snet/7-7players/Achievements.ini
+M	data/campanings/snet/7-7players/Advisors.ini
+M	data/campanings/snet/7-7players/Events_Story.ini
+M	data/campanings/snet/7-7players/Settings.ini
+M	data/campanings/snet/7-7players/SpecialEvents/BrainPsy.ini
+M	data/campanings/snet/7-7players/SpecialEvents/BrainPsyStatus.ini
+M	data/campanings/snet/7-7players/Traders.ini
+R100	data/campanings/snet/7-7players/gfx/Scenario_Logo-Active.png	data/campanings/snet/7-7players/locale/ruRU/gfx/Scenario_Logo-Active.png
+R100	data/campanings/snet/7-7players/gfx/Scenario_Logo.png	data/campanings/snet/7-7players/locale/ruRU/gfx/Scenario_Logo.png
+A	data/campanings/snet/7-7players/locale/ruRU/messages.csv
+M	data/campanings/snet/8-8players/Achievements.ini
+M	data/campanings/snet/8-8players/Advisors.ini
+M	data/campanings/snet/8-8players/Events_Story.ini
+M	data/campanings/snet/8-8players/Settings.ini
+M	data/campanings/snet/8-8players/SpecialEvents/BrainPsy.ini
+M	data/campanings/snet/8-8players/SpecialEvents/BrainPsyStatus.ini
+M	data/campanings/snet/8-8players/Traders.ini
+R100	data/campanings/snet/8-8players/gfx/Scenario_Logo-Active.png	data/campanings/snet/8-8players/locale/ruRU/gfx/Scenario_Logo-Active.png
+R100	data/campanings/snet/8-8players/gfx/Scenario_Logo.png	data/campanings/snet/8-8players/locale/ruRU/gfx/Scenario_Logo.png
+A	data/campanings/snet/8-8players/locale/ruRU/messages.csv
+M	data/campanings/st/01Tutorial/Achievements.ini
+M	data/campanings/st/01Tutorial/Advisors.ini
+M	data/campanings/st/01Tutorial/Events_Story.ini
+M	data/campanings/st/01Tutorial/Groups/Bandits.ini
+M	data/campanings/st/01Tutorial/Groups/Soldiers.ini
+M	data/campanings/st/01Tutorial/Groups/Stalkers.ini
+M	data/campanings/st/01Tutorial/Groups/zombie.ini
+D	data/campanings/st/01Tutorial/Messages.ini
+M	data/campanings/st/01Tutorial/Settings.ini
+M	data/campanings/st/01Tutorial/Traders.ini
+M	data/campanings/st/01Tutorial/Tutorial.ini
+R100	data/campanings/st/01Tutorial/gfx/Scenario_Logo.png	data/campanings/st/01Tutorial/locale/ruRU/gfx/Scenario_Logo.png
+R100	data/campanings/st/01Tutorial/gfx/Scenario_Logo_Active.png	data/campanings/st/01Tutorial/locale/ruRU/gfx/Scenario_Logo_Active.png
+R100	data/campanings/st/01Tutorial/gfx/Tutorial/tutorial_img1.png	data/campanings/st/01Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img1.png
+R100	data/campanings/st/01Tutorial/gfx/Tutorial/tutorial_img2.png	data/campanings/st/01Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img2.png
+R100	data/campanings/st/01Tutorial/gfx/Tutorial/tutorial_img3.png	data/campanings/st/01Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img3.png
+R100	data/campanings/st/01Tutorial/gfx/Tutorial/tutorial_img4.png	data/campanings/st/01Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img4.png
+A	data/campanings/st/01Tutorial/locale/ruRU/messages.csv
+M	data/campanings/st/02Tutorial/Achievements.ini
+M	data/campanings/st/02Tutorial/Advisors.ini
+M	data/campanings/st/02Tutorial/Events_Story.ini
+M	data/campanings/st/02Tutorial/Groups/Bandits.ini
+M	data/campanings/st/02Tutorial/Groups/Mercenaries.ini
+M	data/campanings/st/02Tutorial/Groups/Monolith.ini
+M	data/campanings/st/02Tutorial/Groups/Soldiers.ini
+M	data/campanings/st/02Tutorial/Groups/Stalkers.ini
+M	data/campanings/st/02Tutorial/Groups/zombie.ini
+D	data/campanings/st/02Tutorial/Messages.ini
+M	data/campanings/st/02Tutorial/Settings.ini
+M	data/campanings/st/02Tutorial/Traders.ini
+M	data/campanings/st/02Tutorial/Tutorial.ini
+R100	data/campanings/st/02Tutorial/gfx/Scenario_Logo.png	data/campanings/st/02Tutorial/locale/ruRU/gfx/Scenario_Logo.png
+R100	data/campanings/st/02Tutorial/gfx/Scenario_Logo_Active.png	data/campanings/st/02Tutorial/locale/ruRU/gfx/Scenario_Logo_Active.png
+R100	data/campanings/st/02Tutorial/gfx/Tutorial/tutorial_img1.png	data/campanings/st/02Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img1.png
+R100	data/campanings/st/02Tutorial/gfx/Tutorial/tutorial_img2.png	data/campanings/st/02Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img2.png
+R100	data/campanings/st/02Tutorial/gfx/Tutorial/tutorial_img3.png	data/campanings/st/02Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img3.png
+R100	data/campanings/st/02Tutorial/gfx/Tutorial/tutorial_img4.png	data/campanings/st/02Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img4.png
+R100	data/campanings/st/02Tutorial/gfx/Tutorial/tutorial_img5.png	data/campanings/st/02Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img5.png
+R100	data/campanings/st/02Tutorial/gfx/Tutorial/tutorial_img6.png	data/campanings/st/02Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img6.png
+R100	data/campanings/st/02Tutorial/gfx/Tutorial/tutorial_img7.png	data/campanings/st/02Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img7.png
+A	data/campanings/st/02Tutorial/locale/ruRU/messages.csv
+M	data/campanings/st/03Tutorial/Achievements.ini
+M	data/campanings/st/03Tutorial/Advisors.ini
+M	data/campanings/st/03Tutorial/Events_Story.ini
+M	data/campanings/st/03Tutorial/Groups/Bandits.ini
+M	data/campanings/st/03Tutorial/Groups/Mercenaries.ini
+M	data/campanings/st/03Tutorial/Groups/Monolith.ini
+M	data/campanings/st/03Tutorial/Groups/Soldiers.ini
+M	data/campanings/st/03Tutorial/Groups/Stalkers.ini
+M	data/campanings/st/03Tutorial/Groups/zombie.ini
+D	data/campanings/st/03Tutorial/Messages.ini
+M	data/campanings/st/03Tutorial/Settings.ini
+M	data/campanings/st/03Tutorial/Traders.ini
+M	data/campanings/st/03Tutorial/Tutorial.ini
+R100	data/campanings/st/03Tutorial/gfx/Scenario_Logo.png	data/campanings/st/03Tutorial/locale/ruRU/gfx/Scenario_Logo.png
+R100	data/campanings/st/03Tutorial/gfx/Scenario_Logo_Active.png	data/campanings/st/03Tutorial/locale/ruRU/gfx/Scenario_Logo_Active.png
+R100	data/campanings/st/03Tutorial/gfx/Tutorial/tutorial_img1.png	data/campanings/st/03Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img1.png
+R100	data/campanings/st/03Tutorial/gfx/Tutorial/tutorial_img2.png	data/campanings/st/03Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img2.png
+R100	data/campanings/st/03Tutorial/gfx/Tutorial/tutorial_img3.png	data/campanings/st/03Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img3.png
+R100	data/campanings/st/03Tutorial/gfx/Tutorial/tutorial_img4.png	data/campanings/st/03Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img4.png
+R100	data/campanings/st/03Tutorial/gfx/Tutorial/tutorial_img5.png	data/campanings/st/03Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img5.png
+A	data/campanings/st/03Tutorial/locale/ruRU/messages.csv
+M	data/campanings/st/04Tutorial/Achievements.ini
+M	data/campanings/st/04Tutorial/Advisors.ini
+M	data/campanings/st/04Tutorial/Events_Story.ini
+M	data/campanings/st/04Tutorial/Groups/Bandits.ini
+M	data/campanings/st/04Tutorial/Groups/Mercenaries.ini
+M	data/campanings/st/04Tutorial/Groups/Monolith.ini
+M	data/campanings/st/04Tutorial/Groups/Soldiers.ini
+M	data/campanings/st/04Tutorial/Groups/Stalkers.ini
+M	data/campanings/st/04Tutorial/Groups/zombie.ini
+D	data/campanings/st/04Tutorial/Messages.ini
+M	data/campanings/st/04Tutorial/Settings.ini
+M	data/campanings/st/04Tutorial/Traders.ini
+M	data/campanings/st/04Tutorial/Tutorial.ini
+R100	data/campanings/st/04Tutorial/gfx/Scenario_Logo.png	data/campanings/st/04Tutorial/locale/ruRU/gfx/Scenario_Logo.png
+R100	data/campanings/st/04Tutorial/gfx/Scenario_Logo_Active.png	data/campanings/st/04Tutorial/locale/ruRU/gfx/Scenario_Logo_Active.png
+R100	data/campanings/st/04Tutorial/gfx/Tutorial/tutorial_img1.png	data/campanings/st/04Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img1.png
+R100	data/campanings/st/04Tutorial/gfx/Tutorial/tutorial_img2.png	data/campanings/st/04Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img2.png
+A	data/campanings/st/04Tutorial/locale/ruRU/messages.csv
+M	data/campanings/st/05Tutorial/Achievements.ini
+M	data/campanings/st/05Tutorial/Advisors.ini
+M	data/campanings/st/05Tutorial/Events_Story.ini
+M	data/campanings/st/05Tutorial/Groups/Bandits.ini
+M	data/campanings/st/05Tutorial/Groups/Mercenaries.ini
+M	data/campanings/st/05Tutorial/Groups/Monolith.ini
+M	data/campanings/st/05Tutorial/Groups/Soldiers.ini
+M	data/campanings/st/05Tutorial/Groups/Stalkers.ini
+M	data/campanings/st/05Tutorial/Groups/zombie.ini
+D	data/campanings/st/05Tutorial/Messages.ini
+M	data/campanings/st/05Tutorial/Settings.ini
+M	data/campanings/st/05Tutorial/Traders.ini
+M	data/campanings/st/05Tutorial/Tutorial.ini
+R100	data/campanings/st/05Tutorial/gfx/Scenario_Logo.png	data/campanings/st/05Tutorial/locale/ruRU/gfx/Scenario_Logo.png
+R100	data/campanings/st/05Tutorial/gfx/Scenario_Logo_Active.png	data/campanings/st/05Tutorial/locale/ruRU/gfx/Scenario_Logo_Active.png
+R100	data/campanings/st/05Tutorial/gfx/Tutorial/tutorial_img1.png	data/campanings/st/05Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img1.png
+R100	data/campanings/st/05Tutorial/gfx/Tutorial/tutorial_img2.png	data/campanings/st/05Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img2.png
+R100	data/campanings/st/05Tutorial/gfx/Tutorial/tutorial_img3.png	data/campanings/st/05Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img3.png
+R100	data/campanings/st/05Tutorial/gfx/Tutorial/tutorial_img4.png	data/campanings/st/05Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img4.png
+R100	data/campanings/st/05Tutorial/gfx/Tutorial/tutorial_img5.png	data/campanings/st/05Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img5.png
+A	data/campanings/st/05Tutorial/locale/ruRU/messages.csv
+M	data/campanings/st/06Tutorial/Achievements.ini
+M	data/campanings/st/06Tutorial/Advisors.ini
+M	data/campanings/st/06Tutorial/Events_Story.ini
+M	data/campanings/st/06Tutorial/Groups/Bandits.ini
+M	data/campanings/st/06Tutorial/Groups/Soldiers.ini
+M	data/campanings/st/06Tutorial/Groups/Stalkers.ini
+D	data/campanings/st/06Tutorial/Messages.ini
+M	data/campanings/st/06Tutorial/Settings.ini
+M	data/campanings/st/06Tutorial/Traders.ini
+M	data/campanings/st/06Tutorial/Tutorial.ini
+R100	data/campanings/st/06Tutorial/gfx/Scenario_Logo.png	data/campanings/st/06Tutorial/locale/ruRU/gfx/Scenario_Logo.png
+R100	data/campanings/st/06Tutorial/gfx/Scenario_Logo_Active.png	data/campanings/st/06Tutorial/locale/ruRU/gfx/Scenario_Logo_Active.png
+R100	data/campanings/st/06Tutorial/gfx/Tutorial/tutorial_img1.png	data/campanings/st/06Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img1.png
+R100	data/campanings/st/06Tutorial/gfx/Tutorial/tutorial_img2.png	data/campanings/st/06Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img2.png
+R100	data/campanings/st/06Tutorial/gfx/Tutorial/tutorial_img3.png	data/campanings/st/06Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img3.png
+A	data/campanings/st/06Tutorial/locale/ruRU/messages.csv
+M	data/campanings/st/07Tutorial/Achievements.ini
+M	data/campanings/st/07Tutorial/Advisors.ini
+M	data/campanings/st/07Tutorial/Events_Story.ini
+M	data/campanings/st/07Tutorial/Groups/Bandits.ini
+M	data/campanings/st/07Tutorial/Groups/Mercenaries.ini
+M	data/campanings/st/07Tutorial/Groups/Monolith.ini
+M	data/campanings/st/07Tutorial/Groups/Soldiers.ini
+M	data/campanings/st/07Tutorial/Groups/Stalkers.ini
+M	data/campanings/st/07Tutorial/Groups/zombie.ini
+D	data/campanings/st/07Tutorial/Messages.ini
+M	data/campanings/st/07Tutorial/Settings.ini
+M	data/campanings/st/07Tutorial/Traders.ini
+M	data/campanings/st/07Tutorial/Tutorial.ini
+R100	data/campanings/st/07Tutorial/gfx/Scenario_Logo.png	data/campanings/st/07Tutorial/locale/ruRU/gfx/Scenario_Logo.png
+R100	data/campanings/st/07Tutorial/gfx/Scenario_Logo_Active.png	data/campanings/st/07Tutorial/locale/ruRU/gfx/Scenario_Logo_Active.png
+R100	data/campanings/st/07Tutorial/gfx/Tutorial/tutorial_img1.png	data/campanings/st/07Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img1.png
+R100	data/campanings/st/07Tutorial/gfx/Tutorial/tutorial_img2.png	data/campanings/st/07Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img2.png
+R100	data/campanings/st/07Tutorial/gfx/Tutorial/tutorial_img3.png	data/campanings/st/07Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img3.png
+A	data/campanings/st/07Tutorial/locale/ruRU/messages.csv
+M	data/campanings/st/08Tutorial/Achievements.ini
+M	data/campanings/st/08Tutorial/Advisors.ini
+M	data/campanings/st/08Tutorial/Events_Story.ini
+M	data/campanings/st/08Tutorial/Groups/Bandits.ini
+M	data/campanings/st/08Tutorial/Groups/Soldiers.ini
+M	data/campanings/st/08Tutorial/Groups/Stalkers.ini
+M	data/campanings/st/08Tutorial/Groups/zombie.ini
+D	data/campanings/st/08Tutorial/Messages.ini
+M	data/campanings/st/08Tutorial/Settings.ini
+M	data/campanings/st/08Tutorial/Traders.ini
+M	data/campanings/st/08Tutorial/Tutorial.ini
+R100	data/campanings/st/08Tutorial/gfx/Scenario_Logo.png	data/campanings/st/08Tutorial/locale/ruRU/gfx/Scenario_Logo.png
+R100	data/campanings/st/08Tutorial/gfx/Scenario_Logo_Active.png	data/campanings/st/08Tutorial/locale/ruRU/gfx/Scenario_Logo_Active.png
+R100	data/campanings/st/08Tutorial/gfx/Tutorial/tutorial_img1.png	data/campanings/st/08Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img1.png
+R100	data/campanings/st/08Tutorial/gfx/Tutorial/tutorial_img2.png	data/campanings/st/08Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img2.png
+R100	data/campanings/st/08Tutorial/gfx/Tutorial/tutorial_img3.png	data/campanings/st/08Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img3.png
+R100	data/campanings/st/08Tutorial/gfx/Tutorial/tutorial_img4.png	data/campanings/st/08Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img4.png
+R100	data/campanings/st/08Tutorial/gfx/Tutorial/tutorial_img5.png	data/campanings/st/08Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img5.png
+R100	data/campanings/st/08Tutorial/gfx/Tutorial/tutorial_img6.png	data/campanings/st/08Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img6.png
+R100	data/campanings/st/08Tutorial/gfx/Tutorial/tutorial_img7.png	data/campanings/st/08Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img7.png
+A	data/campanings/st/08Tutorial/locale/ruRU/messages.csv
+R100	data/default/scenario/AI.ini	data/default/AI.ini
+A	data/default/Buildings/building1.ini
+A	data/default/Buildings/building10.ini
+A	data/default/Buildings/building11.ini
+A	data/default/Buildings/building12.ini
+A	data/default/Buildings/building2.ini
+A	data/default/Buildings/building3.ini
+A	data/default/Buildings/building4.ini
+A	data/default/Buildings/building5.ini
+A	data/default/Buildings/building6.ini
+A	data/default/Buildings/building7.ini
+A	data/default/Buildings/building8.ini
+A	data/default/Buildings/building9.ini
+R100	data/default/scenario/Difficulty.Ini	data/default/Difficulty.Ini
+A	data/default/Goods/AKM-Modified.ini
+A	data/default/Goods/AKM.ini
+A	data/default/Goods/AKU-Modified.ini
+A	data/default/Goods/AKU.ini
+A	data/default/Goods/Abakan-Modified.ini
+A	data/default/Goods/Abakan.ini
+A	data/default/Goods/Bandits-1-Modified.ini
+A	data/default/Goods/Bandits-1.ini
+A	data/default/Goods/Bandits-2-Modified.ini
+A	data/default/Goods/Bandits-2.ini
+A	data/default/Goods/Bandits-3-Modified.ini
+A	data/default/Goods/Bandits-3.ini
+A	data/default/Goods/Black-Modified.ini
+A	data/default/Goods/Black.ini
+A	data/default/Goods/Buldog.ini
+A	data/default/Goods/CS-1-Modified.ini
+A	data/default/Goods/CS-1.ini
+A	data/default/Goods/CS-2-Modified.ini
+A	data/default/Goods/CS-2.ini
+A	data/default/Goods/CS-3A-Modified.ini
+A	data/default/Goods/CS-3A.ini
+A	data/default/Goods/CS-4-Modified.ini
+A	data/default/Goods/CS-4.ini
+A	data/default/Goods/Cheser-Modified.ini
+A	data/default/Goods/Cheser.ini
+A	data/default/Goods/Comands.ini
+A	data/default/Goods/Compact-Modified.ini
+A	data/default/Goods/Compact.ini
+A	data/default/Goods/Doga.ini
+A	data/default/Goods/Dogw.ini
+A	data/default/Goods/Duty-1-Modified.ini
+A	data/default/Goods/Duty-1.ini
+A	data/default/Goods/Duty-2-Modified.ini
+A	data/default/Goods/Duty-2.ini
+A	data/default/Goods/Duty-3A-Modified.ini
+A	data/default/Goods/Duty-3A.ini
+A	data/default/Goods/Duty-3B-Modified.ini
+A	data/default/Goods/Duty-3B.ini
+A	data/default/Goods/Duty-4-Modified.ini
+A	data/default/Goods/Duty-4.ini
+A	data/default/Goods/FN-Modified.ini
+A	data/default/Goods/FN.ini
+A	data/default/Goods/Food.ini
+A	data/default/Goods/Fora-Modified.ini
+A	data/default/Goods/Fora.ini
+A	data/default/Goods/Freedom-1-Modified.ini
+A	data/default/Goods/Freedom-1.ini
+A	data/default/Goods/Freedom-2-Modified.ini
+A	data/default/Goods/Freedom-2.ini
+A	data/default/Goods/Freedom-3A-Modified.ini
+A	data/default/Goods/Freedom-3A.ini
+A	data/default/Goods/Freedom-3B-Modified.ini
+A	data/default/Goods/Freedom-3B.ini
+A	data/default/Goods/Freedom-3C-Modified.ini
+A	data/default/Goods/Freedom-3C.ini
+A	data/default/Goods/Freedom-4-Modified.ini
+A	data/default/Goods/Freedom-4.ini
+A	data/default/Goods/GP-Modified.ini
+A	data/default/Goods/GP.ini
+A	data/default/Goods/Gauss.ini
+A	data/default/Goods/Grom-Modified.ini
+A	data/default/Goods/Grom.ini
+A	data/default/Goods/Gun-Modified.ini
+A	data/default/Goods/Gun.ini
+A	data/default/Goods/HPSS-Modified.ini
+A	data/default/Goods/HPSS.ini
+A	data/default/Goods/HighQualityBuildingMaterials.ini
+A	data/default/Goods/HighQualityComponents.ini
+A	data/default/Goods/HightArts.ini
+A	data/default/Goods/HightParts.ini
+A	data/default/Goods/Il-Modified.ini
+A	data/default/Goods/Il.ini
+A	data/default/Goods/Kabana.ini
+A	data/default/Goods/Kabanw.ini
+A	data/default/Goods/Kontrolera.ini
+A	data/default/Goods/Kontrolerw.ini
+A	data/default/Goods/Kora-Modified.ini
+A	data/default/Goods/Kora.ini
+A	data/default/Goods/Krovososa.ini
+A	data/default/Goods/Krovososw.ini
+A	data/default/Goods/LowArts.ini
+A	data/default/Goods/LowParts.ini
+A	data/default/Goods/LowQualityBuildingMaterials.ini
+A	data/default/Goods/LowQualityComponents.ini
+A	data/default/Goods/MP5-Modified.ini
+A	data/default/Goods/MP5.ini
+A	data/default/Goods/Marta-Modified.ini
+A	data/default/Goods/Marta.ini
+A	data/default/Goods/Master.ini
+A	data/default/Goods/Medic.ini
+A	data/default/Goods/MediumArts.ini
+A	data/default/Goods/MediumParts.ini
+A	data/default/Goods/MediumQualityBuildingMaterials.ini
+A	data/default/Goods/MediumQualityComponents.ini
+A	data/default/Goods/Mercenaries-1-Modified.ini
+A	data/default/Goods/Mercenaries-1.ini
+A	data/default/Goods/Mercenaries-2-Modified.ini
+A	data/default/Goods/Mercenaries-2.ini
+A	data/default/Goods/Mercenaries-3A-Modified.ini
+A	data/default/Goods/Mercenaries-3A.ini
+A	data/default/Goods/Mercenaries-3B-Modified.ini
+A	data/default/Goods/Mercenaries-3B.ini
+A	data/default/Goods/Mercenaries-4-Modified.ini
+A	data/default/Goods/Mercenaries-4.ini
+A	data/default/Goods/Money.ini
+A	data/default/Goods/Monolith-1-Modified.ini
+A	data/default/Goods/Monolith-1.ini
+A	data/default/Goods/Monolith-2-Modified.ini
+A	data/default/Goods/Monolith-2.ini
+A	data/default/Goods/Monolith-3A-Modified.ini
+A	data/default/Goods/Monolith-3A.ini
+A	data/default/Goods/Monolith-3B-Modified.ini
+A	data/default/Goods/Monolith-3B.ini
+A	data/default/Goods/Novice.ini
+A	data/default/Goods/Obrez-Modified.ini
+A	data/default/Goods/Obrez.ini
+A	data/default/Goods/Otboynik-Modified.ini
+A	data/default/Goods/Otboynik.ini
+A	data/default/Goods/PB-Modified.ini
+A	data/default/Goods/PB.ini
+A	data/default/Goods/PM-Modified.ini
+A	data/default/Goods/PM.ini
+A	data/default/Goods/RP-74-Modified.ini
+A	data/default/Goods/RP-74.ini
+A	data/default/Goods/Renegats-3A-Modified.ini
+A	data/default/Goods/Renegats-3A.ini
+A	data/default/Goods/Renegats-3B-Modified.ini
+A	data/default/Goods/Renegats-3B.ini
+A	data/default/Goods/Renegats-4-Modified.ini
+A	data/default/Goods/Renegats-4.ini
+A	data/default/Goods/Rpg.ini
+A	data/default/Goods/SGI-Modified.ini
+A	data/default/Goods/SGI.ini
+A	data/default/Goods/SIP-Modified.ini
+A	data/default/Goods/SIP.ini
+A	data/default/Goods/SPSA-Modified.ini
+A	data/default/Goods/SPSA.ini
+A	data/default/Goods/SVD-Modified.ini
+A	data/default/Goods/SVD.ini
+A	data/default/Goods/SVU-Modified.ini
+A	data/default/Goods/SVU.ini
+A	data/default/Goods/Scientists-1-Modified.ini
+A	data/default/Goods/Scientists-1.ini
+A	data/default/Goods/Scientists-2-Modified.ini
+A	data/default/Goods/Scientists-2.ini
+A	data/default/Goods/Scientists-3A-Modified.ini
+A	data/default/Goods/Scientists-3A.ini
+A	data/default/Goods/Scientists-4-Modified.ini
+A	data/default/Goods/Scientists-4.ini
+A	data/default/Goods/Skilled.ini
+A	data/default/Goods/Soldiers-1-Modified.ini
+A	data/default/Goods/Soldiers-1.ini
+A	data/default/Goods/Soldiers-1B-Modified.ini
+A	data/default/Goods/Soldiers-1B.ini
+A	data/default/Goods/Soldiers-2-Modified.ini
+A	data/default/Goods/Soldiers-2.ini
+A	data/default/Goods/Soldiers-3-Modified.ini
+A	data/default/Goods/Soldiers-3.ini
+A	data/default/Goods/Soldiers-4-Modified.ini
+A	data/default/Goods/Soldiers-4.ini
+A	data/default/Goods/Stalker-1-Modified.ini
+A	data/default/Goods/Stalker-1.ini
+A	data/default/Goods/Stalker-2-Modified.ini
+A	data/default/Goods/Stalker-2.ini
+A	data/default/Goods/Stalker-3A-Modified.ini
+A	data/default/Goods/Stalker-3A.ini
+A	data/default/Goods/Stalker-3B-Modified.ini
+A	data/default/Goods/Stalker-3B.ini
+A	data/default/Goods/Stalker-4-Modified.ini
+A	data/default/Goods/Stalker-4.ini
+A	data/default/Goods/Supplies.ini
+A	data/default/Goods/TPC-Modified.ini
+A	data/default/Goods/TPC.ini
+A	data/default/Goods/Val-Modified.ini
+A	data/default/Goods/Val.ini
+A	data/default/Goods/Veteran.ini
+A	data/default/Goods/Vintarez-Modified.ini
+A	data/default/Goods/Vintarez.ini
+A	data/default/Goods/Volker-Modified.ini
+A	data/default/Goods/Volker.ini
+A	data/default/Groups/Bandits.ini
+A	data/default/Groups/ClearSky.ini
+A	data/default/Groups/Duty.ini
+A	data/default/Groups/EighthGroup.ini
+A	data/default/Groups/FifthGroup.ini
+A	data/default/Groups/FirstGroup.ini
+A	data/default/Groups/FourthGroup.ini
+A	data/default/Groups/Freedom.ini
+A	data/default/Groups/Mercenaries.ini
+A	data/default/Groups/Monolith.ini
+A	data/default/Groups/Renegats.ini
+A	data/default/Groups/Scientists.ini
+A	data/default/Groups/SecondGroup.ini
+A	data/default/Groups/SeventhGroup.ini
+A	data/default/Groups/SixthGroup.ini
+A	data/default/Groups/Soldiers.ini
+A	data/default/Groups/Stalkers.ini
+A	data/default/Groups/ThirdGroup.ini
+A	data/default/Groups/mutants.ini
+A	data/default/Groups/zombie.ini
+R100	data/default/scenario/Main.ini	data/default/Main.ini
+A	data/default/Map/Locations/Agroprom.ini
+A	data/default/Map/Locations/AgropromUnderground.ini
+A	data/default/Map/Locations/BaseLocation.ini
+A	data/default/Map/Locations/CHAES2.ini
+A	data/default/Map/Locations/DarkVallery.ini
+A	data/default/Map/Locations/Escape.ini
+A	data/default/Map/Locations/Garbage.ini
+A	data/default/Map/Locations/Military.ini
+A	data/default/Map/Locations/None.ini
+A	data/default/Map/Locations/Yantar.ini
+A	data/default/Map/TypeLands/BarRostok.ini
+A	data/default/Map/TypeLands/BaseArmStorage.ini
+A	data/default/Map/TypeLands/BaseMillitaryAgroprom.ini
+A	data/default/Map/TypeLands/BaseRadar.ini
+A	data/default/Map/TypeLands/BaseRostok.ini
+A	data/default/Map/TypeLands/Blockpost.ini
+A	data/default/Map/TypeLands/Border.ini
+A	data/default/Map/TypeLands/Bridge.ini
+A	data/default/Map/TypeLands/Buildings.ini
+A	data/default/Map/TypeLands/BuildingsAndCatacombs.ini
+A	data/default/Map/TypeLands/Catacomb.ini
+A	data/default/Map/TypeLands/City.ini
+A	data/default/Map/TypeLands/Cordon.ini
+A	data/default/Map/TypeLands/FlatTerrain.ini
+A	data/default/Map/TypeLands/Forest.ini
+A	data/default/Map/TypeLands/FortifiedBlockpost.ini
+A	data/default/Map/TypeLands/FortifiedBunker.ini
+A	data/default/Map/TypeLands/Hills.ini
+A	data/default/Map/TypeLands/Hutor.ini
+A	data/default/Map/TypeLands/NarrowPassage.ini
+A	data/default/Map/TypeLands/None.ini
+A	data/default/Map/TypeLands/Ruins.ini
+A	data/default/Map/TypeLands/SectorArmStorage.ini
+A	data/default/Map/TypeLands/Swamp.ini
+A	data/default/Map/TypeLands/SwampBase.ini
+A	data/default/Map/TypeLands/Tunnel.ini
+A	data/default/Map/TypeLands/Village.ini
+A	data/default/Map/TypeLands/VillageWithBunker.ini
+D	data/default/Messages.ini
+A	data/default/RandomEvents/event1.ini
+A	data/default/RandomEvents/event10.ini
+A	data/default/RandomEvents/event11.ini
+A	data/default/RandomEvents/event12.ini
+A	data/default/RandomEvents/event13.ini
+A	data/default/RandomEvents/event14.ini
+A	data/default/RandomEvents/event15.ini
+A	data/default/RandomEvents/event16.ini
+A	data/default/RandomEvents/event17.ini
+A	data/default/RandomEvents/event18.ini
+A	data/default/RandomEvents/event19.ini
+A	data/default/RandomEvents/event2.ini
+A	data/default/RandomEvents/event20.ini
+A	data/default/RandomEvents/event21.ini
+A	data/default/RandomEvents/event22.ini
+A	data/default/RandomEvents/event3.ini
+A	data/default/RandomEvents/event4.ini
+A	data/default/RandomEvents/event5.ini
+A	data/default/RandomEvents/event6.ini
+A	data/default/RandomEvents/event7.ini
+A	data/default/RandomEvents/event8.ini
+A	data/default/RandomEvents/event9.ini
+R100	data/default/scenario/Receipts/FromAKM.ini	data/default/Receipts/FromAKM.ini
+R100	data/default/scenario/Receipts/FromAKU.ini	data/default/Receipts/FromAKU.ini
+R100	data/default/scenario/Receipts/FromAbakan.ini	data/default/Receipts/FromAbakan.ini
+R100	data/default/scenario/Receipts/FromBandits-1.ini	data/default/Receipts/FromBandits-1.ini
+R100	data/default/scenario/Receipts/FromBandits-2.ini	data/default/Receipts/FromBandits-2.ini
+R100	data/default/scenario/Receipts/FromBandits-3.ini	data/default/Receipts/FromBandits-3.ini
+R100	data/default/scenario/Receipts/FromBlack.ini	data/default/Receipts/FromBlack.ini
+R100	data/default/scenario/Receipts/FromCS-1.ini	data/default/Receipts/FromCS-1.ini
+R100	data/default/scenario/Receipts/FromCS-2.ini	data/default/Receipts/FromCS-2.ini
+R100	data/default/scenario/Receipts/FromCS-3A.ini	data/default/Receipts/FromCS-3A.ini
+R100	data/default/scenario/Receipts/FromCS-4.ini	data/default/Receipts/FromCS-4.ini
+R100	data/default/scenario/Receipts/FromCheser.ini	data/default/Receipts/FromCheser.ini
+R100	data/default/scenario/Receipts/FromCompact.ini	data/default/Receipts/FromCompact.ini
+R100	data/default/scenario/Receipts/FromDuty-1.ini	data/default/Receipts/FromDuty-1.ini
+R100	data/default/scenario/Receipts/FromDuty-2.ini	data/default/Receipts/FromDuty-2.ini
+R100	data/default/scenario/Receipts/FromDuty-3A.ini	data/default/Receipts/FromDuty-3A.ini
+R100	data/default/scenario/Receipts/FromDuty-3B.ini	data/default/Receipts/FromDuty-3B.ini
+R100	data/default/scenario/Receipts/FromDuty-4.ini	data/default/Receipts/FromDuty-4.ini
+R100	data/default/scenario/Receipts/FromFN.ini	data/default/Receipts/FromFN.ini
+R100	data/default/scenario/Receipts/FromFora.ini	data/default/Receipts/FromFora.ini
+R100	data/default/scenario/Receipts/FromFreedom-1.ini	data/default/Receipts/FromFreedom-1.ini
+R100	data/default/scenario/Receipts/FromFreedom-2.ini	data/default/Receipts/FromFreedom-2.ini
+R100	data/default/scenario/Receipts/FromFreedom-3A.ini	data/default/Receipts/FromFreedom-3A.ini
+R100	data/default/scenario/Receipts/FromFreedom-3B.ini	data/default/Receipts/FromFreedom-3B.ini
+R100	data/default/scenario/Receipts/FromFreedom-3C.ini	data/default/Receipts/FromFreedom-3C.ini
+R100	data/default/scenario/Receipts/FromFreedom-4.ini	data/default/Receipts/FromFreedom-4.ini
+R100	data/default/scenario/Receipts/FromGP.ini	data/default/Receipts/FromGP.ini
+R100	data/default/scenario/Receipts/FromGrom.ini	data/default/Receipts/FromGrom.ini
+R100	data/default/scenario/Receipts/FromGun.ini	data/default/Receipts/FromGun.ini
+R100	data/default/scenario/Receipts/FromHPSS.ini	data/default/Receipts/FromHPSS.ini
+R100	data/default/scenario/Receipts/FromIl.ini	data/default/Receipts/FromIl.ini
+R100	data/default/scenario/Receipts/FromKora.ini	data/default/Receipts/FromKora.ini
+R100	data/default/scenario/Receipts/FromMP5.ini	data/default/Receipts/FromMP5.ini
+R100	data/default/scenario/Receipts/FromMarta.ini	data/default/Receipts/FromMarta.ini
+R100	data/default/scenario/Receipts/FromMercenaries-2.ini	data/default/Receipts/FromMercenaries-2.ini
+R100	data/default/scenario/Receipts/FromMercenaries-3A.ini	data/default/Receipts/FromMercenaries-3A.ini
+R100	data/default/scenario/Receipts/FromMercenaries-3B.ini	data/default/Receipts/FromMercenaries-3B.ini
+R100	data/default/scenario/Receipts/FromMercenaries-4.ini	data/default/Receipts/FromMercenaries-4.ini
+R100	data/default/scenario/Receipts/FromMercenaries.ini	data/default/Receipts/FromMercenaries.ini
+R100	data/default/scenario/Receipts/FromMonolith-1.ini	data/default/Receipts/FromMonolith-1.ini
+R100	data/default/scenario/Receipts/FromMonolith-2.ini	data/default/Receipts/FromMonolith-2.ini
+R100	data/default/scenario/Receipts/FromMonolith-3A.ini	data/default/Receipts/FromMonolith-3A.ini
+R100	data/default/scenario/Receipts/FromMonolith-3B.ini	data/default/Receipts/FromMonolith-3B.ini
+R100	data/default/scenario/Receipts/FromObrez.ini	data/default/Receipts/FromObrez.ini
+R100	data/default/scenario/Receipts/FromOtboynik.ini	data/default/Receipts/FromOtboynik.ini
+R100	data/default/scenario/Receipts/FromPB.ini	data/default/Receipts/FromPB.ini
+R100	data/default/scenario/Receipts/FromPM.ini	data/default/Receipts/FromPM.ini
+R100	data/default/scenario/Receipts/FromRP-74.ini	data/default/Receipts/FromRP-74.ini
+R100	data/default/scenario/Receipts/FromRenegats-3A.ini	data/default/Receipts/FromRenegats-3A.ini
+R100	data/default/scenario/Receipts/FromRenegats-3B.ini	data/default/Receipts/FromRenegats-3B.ini
+R100	data/default/scenario/Receipts/FromRenegats-4.ini	data/default/Receipts/FromRenegats-4.ini
+R100	data/default/scenario/Receipts/FromSGI.ini	data/default/Receipts/FromSGI.ini
+R100	data/default/scenario/Receipts/FromSIP.ini	data/default/Receipts/FromSIP.ini
+R100	data/default/scenario/Receipts/FromSPSA.ini	data/default/Receipts/FromSPSA.ini
+R100	data/default/scenario/Receipts/FromSVD.ini	data/default/Receipts/FromSVD.ini
+R100	data/default/scenario/Receipts/FromSVU.ini	data/default/Receipts/FromSVU.ini
+R100	data/default/scenario/Receipts/FromScientists-1.ini	data/default/Receipts/FromScientists-1.ini
+R100	data/default/scenario/Receipts/FromScientists-2.ini	data/default/Receipts/FromScientists-2.ini
+R100	data/default/scenario/Receipts/FromScientists-3A.ini	data/default/Receipts/FromScientists-3A.ini
+R100	data/default/scenario/Receipts/FromScientists-4.ini	data/default/Receipts/FromScientists-4.ini
+R100	data/default/scenario/Receipts/FromSoldiers-1.ini	data/default/Receipts/FromSoldiers-1.ini
+R100	data/default/scenario/Receipts/FromSoldiers-1B.ini	data/default/Receipts/FromSoldiers-1B.ini
+R100	data/default/scenario/Receipts/FromSoldiers-2.ini	data/default/Receipts/FromSoldiers-2.ini
+R100	data/default/scenario/Receipts/FromSoldiers-3.ini	data/default/Receipts/FromSoldiers-3.ini
+R100	data/default/scenario/Receipts/FromSoldiers-4.ini	data/default/Receipts/FromSoldiers-4.ini
+R100	data/default/scenario/Receipts/FromStalker-1.ini	data/default/Receipts/FromStalker-1.ini
+R100	data/default/scenario/Receipts/FromStalker-2.ini	data/default/Receipts/FromStalker-2.ini
+R100	data/default/scenario/Receipts/FromStalker-3A.ini	data/default/Receipts/FromStalker-3A.ini
+R100	data/default/scenario/Receipts/FromStalker-3B.ini	data/default/Receipts/FromStalker-3B.ini
+R100	data/default/scenario/Receipts/FromStalker-4.ini	data/default/Receipts/FromStalker-4.ini
+R100	data/default/scenario/Receipts/FromTPC.ini	data/default/Receipts/FromTPC.ini
+R100	data/default/scenario/Receipts/FromVal.ini	data/default/Receipts/FromVal.ini
+R100	data/default/scenario/Receipts/FromVintarez.ini	data/default/Receipts/FromVintarez.ini
+R100	data/default/scenario/Receipts/FromVolker.ini	data/default/Receipts/FromVolker.ini
+A	data/default/Rules.ini
+A	data/default/SpecialEvents/Biohazard.ini
+A	data/default/SpecialEvents/BiohazardStatus.ini
+A	data/default/SpecialEvents/BrainMixer.ini
+A	data/default/SpecialEvents/BrainMixerStatus.ini
+A	data/default/SpecialEvents/BrainPsy.ini
+A	data/default/SpecialEvents/BrainPsyStatus.ini
+A	data/default/SpecialEvents/BrainPsyStatus2.ini
+A	data/default/SpecialEvents/Burst.ini
+A	data/default/SpecialEvents/IdeologyUnitsLeave.ini
+A	data/default/SpecialEvents/LocalBrainPsy1.ini
+A	data/default/SpecialEvents/LocalBrainPsy2.ini
+A	data/default/SpecialEvents/LocalBrainPsyStatus1.ini
+A	data/default/SpecialEvents/LocalBrainPsyStatus2.ini
+A	data/default/SpecialEvents/MaxAutoSearchArts.ini
+A	data/default/SpecialEvents/MoneySend.ini
+A	data/default/SpecialEvents/NoFood.ini
+A	data/default/SpecialEvents/PartAutoSearchArts.ini
+A	data/default/ideologies/Anarchy.ini
+A	data/default/ideologies/AntiZone.ini
+A	data/default/ideologies/Balance.ini
+A	data/default/ideologies/Combat.ini
+A	data/default/ideologies/Control.ini
+A	data/default/ideologies/Crime.ini
+A	data/default/ideologies/Economic.ini
+A	data/default/ideologies/Exploring.ini
+A	data/default/ideologies/Growth.ini
+A	data/default/ideologies/Mercenary.ini
+A	data/default/ideologies/Sectarianism.ini
+A	data/default/ideologies/Stability.ini
+A	data/default/ideologies/Stalkers.ini
+A	data/default/ideologies/Unknow.ini
+A	data/default/ideologies/Zombie.ini
+A	data/default/leaders/Leader-0.ini
+A	data/default/leaders/Leader-1-BG.ini
+A	data/default/leaders/Leader-1-COP.ini
+A	data/default/leaders/Leader-1.ini
+A	data/default/leaders/Leader-10-BL.ini
+A	data/default/leaders/Leader-10.ini
+A	data/default/leaders/Leader-17.ini
+A	data/default/leaders/Leader-18.ini
+A	data/default/leaders/Leader-2-BG.ini
+A	data/default/leaders/Leader-2-BZ.ini
+A	data/default/leaders/Leader-2-COP.ini
+A	data/default/leaders/Leader-2-Second.ini
+A	data/default/leaders/Leader-2.ini
+A	data/default/leaders/Leader-3.ini
+A	data/default/leaders/Leader-4-BG.ini
+A	data/default/leaders/Leader-4.ini
+A	data/default/leaders/Leader-5.ini
+A	data/default/leaders/Leader-6-COP.ini
+A	data/default/leaders/Leader-6.ini
+A	data/default/leaders/Leader-7-BL.ini
+A	data/default/leaders/Leader-7.ini
+A	data/default/leaders/Leader-8.ini
+A	data/default/leaders/Leader-9.ini
+A	data/default/leaders/Leader-Chehov-BL.ini
+A	data/default/leaders/Leader-Chehov.ini
+A	data/default/leaders/Leader-General-BL.ini
+A	data/default/leaders/Leader-General.ini
+A	data/default/leaders/Leader-German-COP.ini
+A	data/default/leaders/Leader-Hog.ini
+A	data/default/leaders/Leader-Kovalskiy-COP.ini
+A	data/default/leaders/Leader-Krylov-BL.ini
+A	data/default/leaders/Leader-Krylov.ini
+A	data/default/leaders/Leader-Loki-COP.ini
+A	data/default/leaders/Leader-Monolith-BL.ini
+A	data/default/leaders/Leader-Monolith.ini
+A	data/default/leaders/Leader-Multi.ini
+A	data/default/leaders/Leader-Shakal-COP.ini
+A	data/default/leaders/Leader-Shulga-COP.ini
+A	data/default/leaders/Leader-Spectator.ini
+A	data/default/leaders/Leader-Valerian.ini
+A	data/default/leaders/Leader-Yoga-BL.ini
+A	data/default/leaders/Leader-Yoga.ini
+D	data/default/scenario/Buildings/building1.ini
+D	data/default/scenario/Buildings/building10.ini
+D	data/default/scenario/Buildings/building11.ini
+D	data/default/scenario/Buildings/building12.ini
+D	data/default/scenario/Buildings/building2.ini
+D	data/default/scenario/Buildings/building3.ini
+D	data/default/scenario/Buildings/building4.ini
+D	data/default/scenario/Buildings/building5.ini
+D	data/default/scenario/Buildings/building6.ini
+D	data/default/scenario/Buildings/building7.ini
+D	data/default/scenario/Buildings/building8.ini
+D	data/default/scenario/Buildings/building9.ini
+D	data/default/scenario/Goods/AKM-Modified.ini
+D	data/default/scenario/Goods/AKM.ini
+D	data/default/scenario/Goods/AKU-Modified.ini
+D	data/default/scenario/Goods/AKU.ini
+D	data/default/scenario/Goods/Abakan-Modified.ini
+D	data/default/scenario/Goods/Abakan.ini
+D	data/default/scenario/Goods/Bandits-1-Modified.ini
+D	data/default/scenario/Goods/Bandits-1.ini
+D	data/default/scenario/Goods/Bandits-2-Modified.ini
+D	data/default/scenario/Goods/Bandits-2.ini
+D	data/default/scenario/Goods/Bandits-3-Modified.ini
+D	data/default/scenario/Goods/Bandits-3.ini
+D	data/default/scenario/Goods/Black-Modified.ini
+D	data/default/scenario/Goods/Black.ini
+D	data/default/scenario/Goods/Buldog.ini
+D	data/default/scenario/Goods/CS-1-Modified.ini
+D	data/default/scenario/Goods/CS-1.ini
+D	data/default/scenario/Goods/CS-2-Modified.ini
+D	data/default/scenario/Goods/CS-2.ini
+D	data/default/scenario/Goods/CS-3A-Modified.ini
+D	data/default/scenario/Goods/CS-3A.ini
+D	data/default/scenario/Goods/CS-4-Modified.ini
+D	data/default/scenario/Goods/CS-4.ini
+D	data/default/scenario/Goods/Cheser-Modified.ini
+D	data/default/scenario/Goods/Cheser.ini
+D	data/default/scenario/Goods/Comands.ini
+D	data/default/scenario/Goods/Compact-Modified.ini
+D	data/default/scenario/Goods/Compact.ini
+D	data/default/scenario/Goods/Doga.ini
+D	data/default/scenario/Goods/Dogw.ini
+D	data/default/scenario/Goods/Duty-1-Modified.ini
+D	data/default/scenario/Goods/Duty-1.ini
+D	data/default/scenario/Goods/Duty-2-Modified.ini
+D	data/default/scenario/Goods/Duty-2.ini
+D	data/default/scenario/Goods/Duty-3A-Modified.ini
+D	data/default/scenario/Goods/Duty-3A.ini
+D	data/default/scenario/Goods/Duty-3B-Modified.ini
+D	data/default/scenario/Goods/Duty-3B.ini
+D	data/default/scenario/Goods/Duty-4-Modified.ini
+D	data/default/scenario/Goods/Duty-4.ini
+D	data/default/scenario/Goods/FN-Modified.ini
+D	data/default/scenario/Goods/FN.ini
+D	data/default/scenario/Goods/Food.ini
+D	data/default/scenario/Goods/Fora-Modified.ini
+D	data/default/scenario/Goods/Fora.ini
+D	data/default/scenario/Goods/Freedom-1-Modified.ini
+D	data/default/scenario/Goods/Freedom-1.ini
+D	data/default/scenario/Goods/Freedom-2-Modified.ini
+D	data/default/scenario/Goods/Freedom-2.ini
+D	data/default/scenario/Goods/Freedom-3A-Modified.ini
+D	data/default/scenario/Goods/Freedom-3A.ini
+D	data/default/scenario/Goods/Freedom-3B-Modified.ini
+D	data/default/scenario/Goods/Freedom-3B.ini
+D	data/default/scenario/Goods/Freedom-3C-Modified.ini
+D	data/default/scenario/Goods/Freedom-3C.ini
+D	data/default/scenario/Goods/Freedom-4-Modified.ini
+D	data/default/scenario/Goods/Freedom-4.ini
+D	data/default/scenario/Goods/GP-Modified.ini
+D	data/default/scenario/Goods/GP.ini
+D	data/default/scenario/Goods/Gauss.ini
+D	data/default/scenario/Goods/Grom-Modified.ini
+D	data/default/scenario/Goods/Grom.ini
+D	data/default/scenario/Goods/Gun-Modified.ini
+D	data/default/scenario/Goods/Gun.ini
+D	data/default/scenario/Goods/HPSS-Modified.ini
+D	data/default/scenario/Goods/HPSS.ini
+D	data/default/scenario/Goods/HighQualityBuildingMaterials.ini
+D	data/default/scenario/Goods/HighQualityComponents.ini
+D	data/default/scenario/Goods/HightArts.ini
+D	data/default/scenario/Goods/HightParts.ini
+D	data/default/scenario/Goods/Il-Modified.ini
+D	data/default/scenario/Goods/Il.ini
+D	data/default/scenario/Goods/Kabana.ini
+D	data/default/scenario/Goods/Kabanw.ini
+D	data/default/scenario/Goods/Kontrolera.ini
+D	data/default/scenario/Goods/Kontrolerw.ini
+D	data/default/scenario/Goods/Kora-Modified.ini
+D	data/default/scenario/Goods/Kora.ini
+D	data/default/scenario/Goods/Krovososa.ini
+D	data/default/scenario/Goods/Krovososw.ini
+D	data/default/scenario/Goods/LowArts.ini
+D	data/default/scenario/Goods/LowParts.ini
+D	data/default/scenario/Goods/LowQualityBuildingMaterials.ini
+D	data/default/scenario/Goods/LowQualityComponents.ini
+D	data/default/scenario/Goods/MP5-Modified.ini
+D	data/default/scenario/Goods/MP5.ini
+D	data/default/scenario/Goods/Marta-Modified.ini
+D	data/default/scenario/Goods/Marta.ini
+D	data/default/scenario/Goods/Master.ini
+D	data/default/scenario/Goods/Medic.ini
+D	data/default/scenario/Goods/MediumArts.ini
+D	data/default/scenario/Goods/MediumParts.ini
+D	data/default/scenario/Goods/MediumQualityBuildingMaterials.ini
+D	data/default/scenario/Goods/MediumQualityComponents.ini
+D	data/default/scenario/Goods/Mercenaries-1-Modified.ini
+D	data/default/scenario/Goods/Mercenaries-1.ini
+D	data/default/scenario/Goods/Mercenaries-2-Modified.ini
+D	data/default/scenario/Goods/Mercenaries-2.ini
+D	data/default/scenario/Goods/Mercenaries-3A-Modified.ini
+D	data/default/scenario/Goods/Mercenaries-3A.ini
+D	data/default/scenario/Goods/Mercenaries-3B-Modified.ini
+D	data/default/scenario/Goods/Mercenaries-3B.ini
+D	data/default/scenario/Goods/Mercenaries-4-Modified.ini
+D	data/default/scenario/Goods/Mercenaries-4.ini
+D	data/default/scenario/Goods/Money.ini
+D	data/default/scenario/Goods/Monolith-1-Modified.ini
+D	data/default/scenario/Goods/Monolith-1.ini
+D	data/default/scenario/Goods/Monolith-2-Modified.ini
+D	data/default/scenario/Goods/Monolith-2.ini
+D	data/default/scenario/Goods/Monolith-3A-Modified.ini
+D	data/default/scenario/Goods/Monolith-3A.ini
+D	data/default/scenario/Goods/Monolith-3B-Modified.ini
+D	data/default/scenario/Goods/Monolith-3B.ini
+D	data/default/scenario/Goods/Novice.ini
+D	data/default/scenario/Goods/Obrez-Modified.ini
+D	data/default/scenario/Goods/Obrez.ini
+D	data/default/scenario/Goods/Otboynik-Modified.ini
+D	data/default/scenario/Goods/Otboynik.ini
+D	data/default/scenario/Goods/PB-Modified.ini
+D	data/default/scenario/Goods/PB.ini
+D	data/default/scenario/Goods/PM-Modified.ini
+D	data/default/scenario/Goods/PM.ini
+D	data/default/scenario/Goods/RP-74-Modified.ini
+D	data/default/scenario/Goods/RP-74.ini
+D	data/default/scenario/Goods/Renegats-3A-Modified.ini
+D	data/default/scenario/Goods/Renegats-3A.ini
+D	data/default/scenario/Goods/Renegats-3B-Modified.ini
+D	data/default/scenario/Goods/Renegats-3B.ini
+D	data/default/scenario/Goods/Renegats-4-Modified.ini
+D	data/default/scenario/Goods/Renegats-4.ini
+D	data/default/scenario/Goods/Rpg.ini
+D	data/default/scenario/Goods/SGI-Modified.ini
+D	data/default/scenario/Goods/SGI.ini
+D	data/default/scenario/Goods/SIP-Modified.ini
+D	data/default/scenario/Goods/SIP.ini
+D	data/default/scenario/Goods/SPSA-Modified.ini
+D	data/default/scenario/Goods/SPSA.ini
+D	data/default/scenario/Goods/SVD-Modified.ini
+D	data/default/scenario/Goods/SVD.ini
+D	data/default/scenario/Goods/SVU-Modified.ini
+D	data/default/scenario/Goods/SVU.ini
+D	data/default/scenario/Goods/Scientists-1-Modified.ini
+D	data/default/scenario/Goods/Scientists-1.ini
+D	data/default/scenario/Goods/Scientists-2-Modified.ini
+D	data/default/scenario/Goods/Scientists-2.ini
+D	data/default/scenario/Goods/Scientists-3A-Modified.ini
+D	data/default/scenario/Goods/Scientists-3A.ini
+D	data/default/scenario/Goods/Scientists-4-Modified.ini
+D	data/default/scenario/Goods/Scientists-4.ini
+D	data/default/scenario/Goods/Skilled.ini
+D	data/default/scenario/Goods/Soldiers-1-Modified.ini
+D	data/default/scenario/Goods/Soldiers-1.ini
+D	data/default/scenario/Goods/Soldiers-1B-Modified.ini
+D	data/default/scenario/Goods/Soldiers-1B.ini
+D	data/default/scenario/Goods/Soldiers-2-Modified.ini
+D	data/default/scenario/Goods/Soldiers-2.ini
+D	data/default/scenario/Goods/Soldiers-3-Modified.ini
+D	data/default/scenario/Goods/Soldiers-3.ini
+D	data/default/scenario/Goods/Soldiers-4-Modified.ini
+D	data/default/scenario/Goods/Soldiers-4.ini
+D	data/default/scenario/Goods/Stalker-1-Modified.ini
+D	data/default/scenario/Goods/Stalker-1.ini
+D	data/default/scenario/Goods/Stalker-2-Modified.ini
+D	data/default/scenario/Goods/Stalker-2.ini
+D	data/default/scenario/Goods/Stalker-3A-Modified.ini
+D	data/default/scenario/Goods/Stalker-3A.ini
+D	data/default/scenario/Goods/Stalker-3B-Modified.ini
+D	data/default/scenario/Goods/Stalker-3B.ini
+D	data/default/scenario/Goods/Stalker-4-Modified.ini
+D	data/default/scenario/Goods/Stalker-4.ini
+D	data/default/scenario/Goods/Supplies.ini
+D	data/default/scenario/Goods/TPC-Modified.ini
+D	data/default/scenario/Goods/TPC.ini
+D	data/default/scenario/Goods/Val-Modified.ini
+D	data/default/scenario/Goods/Val.ini
+D	data/default/scenario/Goods/Veteran.ini
+D	data/default/scenario/Goods/Vintarez-Modified.ini
+D	data/default/scenario/Goods/Vintarez.ini
+D	data/default/scenario/Goods/Volker-Modified.ini
+D	data/default/scenario/Goods/Volker.ini
+D	data/default/scenario/Groups/Bandits.ini
+D	data/default/scenario/Groups/ClearSky.ini
+D	data/default/scenario/Groups/Duty.ini
+D	data/default/scenario/Groups/EighthGroup.ini
+D	data/default/scenario/Groups/FifthGroup.ini
+D	data/default/scenario/Groups/FirstGroup.ini
+D	data/default/scenario/Groups/FourthGroup.ini
+D	data/default/scenario/Groups/Freedom.ini
+D	data/default/scenario/Groups/Mercenaries.ini
+D	data/default/scenario/Groups/Monolith.ini
+D	data/default/scenario/Groups/Renegats.ini
+D	data/default/scenario/Groups/Scientists.ini
+D	data/default/scenario/Groups/SecondGroup.ini
+D	data/default/scenario/Groups/SeventhGroup.ini
+D	data/default/scenario/Groups/SixthGroup.ini
+D	data/default/scenario/Groups/Soldiers.ini
+D	data/default/scenario/Groups/Stalkers.ini
+D	data/default/scenario/Groups/ThirdGroup.ini
+D	data/default/scenario/Groups/mutants.ini
+D	data/default/scenario/Groups/zombie.ini
+D	data/default/scenario/Map/Locations/Agroprom.ini
+D	data/default/scenario/Map/Locations/AgropromUnderground.ini
+D	data/default/scenario/Map/Locations/BaseLocation.ini
+D	data/default/scenario/Map/Locations/CHAES2.ini
+D	data/default/scenario/Map/Locations/DarkVallery.ini
+D	data/default/scenario/Map/Locations/Escape.ini
+D	data/default/scenario/Map/Locations/Garbage.ini
+D	data/default/scenario/Map/Locations/Military.ini
+D	data/default/scenario/Map/Locations/None.ini
+D	data/default/scenario/Map/Locations/Yantar.ini
+D	data/default/scenario/Map/TypeLands/BarRostok.ini
+D	data/default/scenario/Map/TypeLands/BaseArmStorage.ini
+D	data/default/scenario/Map/TypeLands/BaseMillitaryAgroprom.ini
+D	data/default/scenario/Map/TypeLands/BaseRadar.ini
+D	data/default/scenario/Map/TypeLands/BaseRostok.ini
+D	data/default/scenario/Map/TypeLands/Blockpost.ini
+D	data/default/scenario/Map/TypeLands/Border.ini
+D	data/default/scenario/Map/TypeLands/Bridge.ini
+D	data/default/scenario/Map/TypeLands/Buildings.ini
+D	data/default/scenario/Map/TypeLands/BuildingsAndCatacombs.ini
+D	data/default/scenario/Map/TypeLands/Catacomb.ini
+D	data/default/scenario/Map/TypeLands/City.ini
+D	data/default/scenario/Map/TypeLands/Cordon.ini
+D	data/default/scenario/Map/TypeLands/FlatTerrain.ini
+D	data/default/scenario/Map/TypeLands/Forest.ini
+D	data/default/scenario/Map/TypeLands/FortifiedBlockpost.ini
+D	data/default/scenario/Map/TypeLands/FortifiedBunker.ini
+D	data/default/scenario/Map/TypeLands/Hills.ini
+D	data/default/scenario/Map/TypeLands/Hutor.ini
+D	data/default/scenario/Map/TypeLands/NarrowPassage.ini
+D	data/default/scenario/Map/TypeLands/None.ini
+D	data/default/scenario/Map/TypeLands/Ruins.ini
+D	data/default/scenario/Map/TypeLands/SectorArmStorage.ini
+D	data/default/scenario/Map/TypeLands/Swamp.ini
+D	data/default/scenario/Map/TypeLands/SwampBase.ini
+D	data/default/scenario/Map/TypeLands/Tunnel.ini
+D	data/default/scenario/Map/TypeLands/Village.ini
+D	data/default/scenario/Map/TypeLands/VillageWithBunker.ini
+D	data/default/scenario/RandomEvents/event1.ini
+D	data/default/scenario/RandomEvents/event10.ini
+D	data/default/scenario/RandomEvents/event11.ini
+D	data/default/scenario/RandomEvents/event12.ini
+D	data/default/scenario/RandomEvents/event13.ini
+D	data/default/scenario/RandomEvents/event14.ini
+D	data/default/scenario/RandomEvents/event15.ini
+D	data/default/scenario/RandomEvents/event16.ini
+D	data/default/scenario/RandomEvents/event17.ini
+D	data/default/scenario/RandomEvents/event18.ini
+D	data/default/scenario/RandomEvents/event19.ini
+D	data/default/scenario/RandomEvents/event2.ini
+D	data/default/scenario/RandomEvents/event20.ini
+D	data/default/scenario/RandomEvents/event21.ini
+D	data/default/scenario/RandomEvents/event22.ini
+D	data/default/scenario/RandomEvents/event3.ini
+D	data/default/scenario/RandomEvents/event4.ini
+D	data/default/scenario/RandomEvents/event5.ini
+D	data/default/scenario/RandomEvents/event6.ini
+D	data/default/scenario/RandomEvents/event7.ini
+D	data/default/scenario/RandomEvents/event8.ini
+D	data/default/scenario/RandomEvents/event9.ini
+D	data/default/scenario/Rules.ini
+D	data/default/scenario/SpecialEvents/Biohazard.ini
+D	data/default/scenario/SpecialEvents/BiohazardStatus.ini
+D	data/default/scenario/SpecialEvents/BrainMixer.ini
+D	data/default/scenario/SpecialEvents/BrainMixerStatus.ini
+D	data/default/scenario/SpecialEvents/BrainPsy.ini
+D	data/default/scenario/SpecialEvents/BrainPsyStatus.ini
+D	data/default/scenario/SpecialEvents/BrainPsyStatus2.ini
+D	data/default/scenario/SpecialEvents/Burst.ini
+D	data/default/scenario/SpecialEvents/IdeologyUnitsLeave.ini
+D	data/default/scenario/SpecialEvents/LocalBrainPsy1.ini
+D	data/default/scenario/SpecialEvents/LocalBrainPsy2.ini
+D	data/default/scenario/SpecialEvents/LocalBrainPsyStatus1.ini
+D	data/default/scenario/SpecialEvents/LocalBrainPsyStatus2.ini
+D	data/default/scenario/SpecialEvents/MaxAutoSearchArts.ini
+D	data/default/scenario/SpecialEvents/MoneySend.ini
+D	data/default/scenario/SpecialEvents/NoFood.ini
+D	data/default/scenario/SpecialEvents/PartAutoSearchArts.ini
+D	data/default/scenario/ideologies/Anarchy.ini
+D	data/default/scenario/ideologies/AntiZone.ini
+D	data/default/scenario/ideologies/Balance.ini
+D	data/default/scenario/ideologies/Combat.ini
+D	data/default/scenario/ideologies/Control.ini
+D	data/default/scenario/ideologies/Crime.ini
+D	data/default/scenario/ideologies/Economic.ini
+D	data/default/scenario/ideologies/Exploring.ini
+D	data/default/scenario/ideologies/Growth.ini
+D	data/default/scenario/ideologies/Mercenary.ini
+D	data/default/scenario/ideologies/Sectarianism.ini
+D	data/default/scenario/ideologies/Stability.ini
+D	data/default/scenario/ideologies/Stalkers.ini
+D	data/default/scenario/ideologies/Unknow.ini
+D	data/default/scenario/ideologies/Zombie.ini
+D	data/default/scenario/leaders/Leader-0.ini
+D	data/default/scenario/leaders/Leader-1-BG.ini
+D	data/default/scenario/leaders/Leader-1-COP.ini
+D	data/default/scenario/leaders/Leader-1.ini
+D	data/default/scenario/leaders/Leader-10-BL.ini
+D	data/default/scenario/leaders/Leader-10.ini
+D	data/default/scenario/leaders/Leader-17.ini
+D	data/default/scenario/leaders/Leader-18.ini
+D	data/default/scenario/leaders/Leader-2-BG.ini
+D	data/default/scenario/leaders/Leader-2-BZ.ini
+D	data/default/scenario/leaders/Leader-2-COP.ini
+D	data/default/scenario/leaders/Leader-2-Second.ini
+D	data/default/scenario/leaders/Leader-2.ini
+D	data/default/scenario/leaders/Leader-3.ini
+D	data/default/scenario/leaders/Leader-4-BG.ini
+D	data/default/scenario/leaders/Leader-4.ini
+D	data/default/scenario/leaders/Leader-5.ini
+D	data/default/scenario/leaders/Leader-6-COP.ini
+D	data/default/scenario/leaders/Leader-6.ini
+D	data/default/scenario/leaders/Leader-7-BL.ini
+D	data/default/scenario/leaders/Leader-7.ini
+D	data/default/scenario/leaders/Leader-8.ini
+D	data/default/scenario/leaders/Leader-9.ini
+D	data/default/scenario/leaders/Leader-Chehov-BL.ini
+D	data/default/scenario/leaders/Leader-Chehov.ini
+D	data/default/scenario/leaders/Leader-General-BL.ini
+D	data/default/scenario/leaders/Leader-General.ini
+D	data/default/scenario/leaders/Leader-German-COP.ini
+D	data/default/scenario/leaders/Leader-Hog.ini
+D	data/default/scenario/leaders/Leader-Kovalskiy-COP.ini
+D	data/default/scenario/leaders/Leader-Krylov-BL.ini
+D	data/default/scenario/leaders/Leader-Krylov.ini
+D	data/default/scenario/leaders/Leader-Loki-COP.ini
+D	data/default/scenario/leaders/Leader-Monolith-BL.ini
+D	data/default/scenario/leaders/Leader-Monolith.ini
+D	data/default/scenario/leaders/Leader-Multi.ini
+D	data/default/scenario/leaders/Leader-Shakal-COP.ini
+D	data/default/scenario/leaders/Leader-Shulga-COP.ini
+D	data/default/scenario/leaders/Leader-Spectator.ini
+D	data/default/scenario/leaders/Leader-Valerian.ini
+D	data/default/scenario/leaders/Leader-Yoga-BL.ini
+D	data/default/scenario/leaders/Leader-Yoga.ini
+D	data/default/scenario/upgrades/Upgrade-1.ini
+D	data/default/scenario/upgrades/Upgrade-10.ini
+D	data/default/scenario/upgrades/Upgrade-11.ini
+D	data/default/scenario/upgrades/Upgrade-12.ini
+D	data/default/scenario/upgrades/Upgrade-13.ini
+D	data/default/scenario/upgrades/Upgrade-14.ini
+D	data/default/scenario/upgrades/Upgrade-15.ini
+D	data/default/scenario/upgrades/Upgrade-16.ini
+D	data/default/scenario/upgrades/Upgrade-17.ini
+D	data/default/scenario/upgrades/Upgrade-18.ini
+D	data/default/scenario/upgrades/Upgrade-19.ini
+D	data/default/scenario/upgrades/Upgrade-2.ini
+D	data/default/scenario/upgrades/Upgrade-20.ini
+D	data/default/scenario/upgrades/Upgrade-21.ini
+D	data/default/scenario/upgrades/Upgrade-22.ini
+D	data/default/scenario/upgrades/Upgrade-23.ini
+D	data/default/scenario/upgrades/Upgrade-24.ini
+D	data/default/scenario/upgrades/Upgrade-25.ini
+D	data/default/scenario/upgrades/Upgrade-26.ini
+D	data/default/scenario/upgrades/Upgrade-27.ini
+D	data/default/scenario/upgrades/Upgrade-28.ini
+D	data/default/scenario/upgrades/Upgrade-29.ini
+D	data/default/scenario/upgrades/Upgrade-3.ini
+D	data/default/scenario/upgrades/Upgrade-30.ini
+D	data/default/scenario/upgrades/Upgrade-31.ini
+D	data/default/scenario/upgrades/Upgrade-32.ini
+D	data/default/scenario/upgrades/Upgrade-33.ini
+D	data/default/scenario/upgrades/Upgrade-34.ini
+D	data/default/scenario/upgrades/Upgrade-35.ini
+D	data/default/scenario/upgrades/Upgrade-36.ini
+D	data/default/scenario/upgrades/Upgrade-4.ini
+D	data/default/scenario/upgrades/Upgrade-5.ini
+D	data/default/scenario/upgrades/Upgrade-6.ini
+D	data/default/scenario/upgrades/Upgrade-7.ini
+D	data/default/scenario/upgrades/Upgrade-8.ini
+D	data/default/scenario/upgrades/Upgrade-9.ini
+A	data/default/upgrades/Upgrade-1.ini
+A	data/default/upgrades/Upgrade-10.ini
+A	data/default/upgrades/Upgrade-11.ini
+A	data/default/upgrades/Upgrade-12.ini
+A	data/default/upgrades/Upgrade-13.ini
+A	data/default/upgrades/Upgrade-14.ini
+A	data/default/upgrades/Upgrade-15.ini
+A	data/default/upgrades/Upgrade-16.ini
+A	data/default/upgrades/Upgrade-17.ini
+A	data/default/upgrades/Upgrade-18.ini
+A	data/default/upgrades/Upgrade-19.ini
+A	data/default/upgrades/Upgrade-2.ini
+A	data/default/upgrades/Upgrade-20.ini
+A	data/default/upgrades/Upgrade-21.ini
+A	data/default/upgrades/Upgrade-22.ini
+A	data/default/upgrades/Upgrade-23.ini
+A	data/default/upgrades/Upgrade-24.ini
+A	data/default/upgrades/Upgrade-25.ini
+A	data/default/upgrades/Upgrade-26.ini
+A	data/default/upgrades/Upgrade-27.ini
+A	data/default/upgrades/Upgrade-28.ini
+A	data/default/upgrades/Upgrade-29.ini
+A	data/default/upgrades/Upgrade-3.ini
+A	data/default/upgrades/Upgrade-30.ini
+A	data/default/upgrades/Upgrade-31.ini
+A	data/default/upgrades/Upgrade-32.ini
+A	data/default/upgrades/Upgrade-33.ini
+A	data/default/upgrades/Upgrade-34.ini
+A	data/default/upgrades/Upgrade-35.ini
+A	data/default/upgrades/Upgrade-36.ini
+A	data/default/upgrades/Upgrade-4.ini
+A	data/default/upgrades/Upgrade-5.ini
+A	data/default/upgrades/Upgrade-6.ini
+A	data/default/upgrades/Upgrade-7.ini
+A	data/default/upgrades/Upgrade-8.ini
+A	data/default/upgrades/Upgrade-9.ini
+A	data/gfx/icons/groups/BlackHand-Sectarianism.png
+A	data/gfx/icons/groups/RenegatsKruk-Anarchy.png
+A	data/gfx/icons/groups/RenegatsKruk-AntiZone.png
+A	data/gfx/icons/groups/RenegatsKruk-Control.png
+A	data/gfx/icons/groups/RenegatsKruk-Crime.png
+A	data/gfx/icons/groups/RenegatsKruk-Exploring.png
+A	data/gfx/icons/groups/RenegatsKruk-Mercenary.png
+A	data/gfx/icons/groups/RenegatsKruk-Sectarianism.png
+A	data/gfx/icons/groups/RenegatsKruk-Stability.png
+A	data/gfx/icons/groups/RenegatsKruk-Stalkers.png
+A	data/gfx/icons/groups/SoldiersMilitary-Control.png
+A	data/gfx/icons/groups/SoldiersMilitary-Exploring.png
+A	data/gfx/icons/groups/StalkersDiggers-Anarchy.png
+A	data/gfx/icons/groups/StalkersDiggers-AntiZone.png
+A	data/gfx/icons/groups/StalkersDiggers-Control.png
+A	data/gfx/icons/groups/StalkersDiggers-Crime.png
+A	data/gfx/icons/groups/StalkersDiggers-Exploring.png
+A	data/gfx/icons/groups/StalkersDiggers-Mercenary.png
+A	data/gfx/icons/groups/StalkersDiggers-Sectarianism.png
+A	data/gfx/icons/groups/StalkersDiggers-Stability.png
+A	data/gfx/icons/groups/StalkersDiggers-Stalkers.png
+A	data/gfx/icons/groups/StalkersMilitary-Anarchy.png
+A	data/gfx/icons/groups/StalkersMilitary-AntiZone.png
+A	data/gfx/icons/groups/StalkersMilitary-Control.png
+A	data/gfx/icons/groups/StalkersMilitary-Crime.png
+A	data/gfx/icons/groups/StalkersMilitary-Exploring.png
+A	data/gfx/icons/groups/StalkersMilitary-Mercenary.png
+A	data/gfx/icons/groups/StalkersMilitary-Sectarianism.png
+A	data/gfx/icons/groups/StalkersMilitary-Stability.png
+A	data/gfx/icons/groups/StalkersMilitary-Stalkers.png
+A	data/gfx/icons/groups/StalkersOrest-Anarchy.png
+A	data/gfx/icons/groups/StalkersOrest-AntiZone.png
+A	data/gfx/icons/groups/StalkersOrest-Control.png
+A	data/gfx/icons/groups/StalkersOrest-Crime.png
+A	data/gfx/icons/groups/StalkersOrest-Exploring.png
+A	data/gfx/icons/groups/StalkersOrest-Mercenary.png
+A	data/gfx/icons/groups/StalkersOrest-Sectarianism.png
+A	data/gfx/icons/groups/StalkersOrest-Stability.png
+A	data/gfx/icons/groups/StalkersOrest-Stalkers.png
+A	data/gfx/icons/groups/StalkersYanov-Control.png
+M	data/gfx/icons/groups/StalkersYanov-Crime.png
+A	data/gfx/icons/groups/StalkersYanov-Sectarianism.png
+A	data/gfx/icons/map/BlackHand-Sectarianism-Neutral.png
+A	data/gfx/icons/map/RenegatsKruk-Anarchy-Neutral.png
+A	data/gfx/icons/map/RenegatsKruk-AntiZone-Neutral.png
+A	data/gfx/icons/map/RenegatsKruk-Control-Neutral.png
+A	data/gfx/icons/map/RenegatsKruk-Crime-Neutral.png
+A	data/gfx/icons/map/RenegatsKruk-Exploring-Neutral.png
+A	data/gfx/icons/map/RenegatsKruk-Mercenary-Neutral.png
+A	data/gfx/icons/map/RenegatsKruk-Sectarianism-Neutral.png
+A	data/gfx/icons/map/RenegatsKruk-Stability-Neutral.png
+A	data/gfx/icons/map/RenegatsKruk-Stalkers-Neutral.png
+A	data/gfx/icons/map/SoldiersMilitary-Control-Neutral.png
+A	data/gfx/icons/map/SoldiersMilitary-Exploring-Neutral.png
+A	data/gfx/icons/map/StalkersDiggers-Anarchy-Neutral.png
+A	data/gfx/icons/map/StalkersDiggers-AntiZone-Neutral.png
+A	data/gfx/icons/map/StalkersDiggers-Control-Neutral.png
+A	data/gfx/icons/map/StalkersDiggers-Crime-Neutral.png
+A	data/gfx/icons/map/StalkersDiggers-Exploring-Neutral.png
+A	data/gfx/icons/map/StalkersDiggers-Mercenary-Neutral.png
+A	data/gfx/icons/map/StalkersDiggers-Sectarianism-Neutral.png
+A	data/gfx/icons/map/StalkersDiggers-Stability-Neutral.png
+A	data/gfx/icons/map/StalkersDiggers-Stalkers-Neutral.png
+A	data/gfx/icons/map/StalkersMilitary-Anarchy-Neutral.png
+A	data/gfx/icons/map/StalkersMilitary-AntiZone-Neutral.png
+A	data/gfx/icons/map/StalkersMilitary-Control-Neutral.png
+A	data/gfx/icons/map/StalkersMilitary-Crime-Neutral.png
+A	data/gfx/icons/map/StalkersMilitary-Exploring-Neutral.png
+A	data/gfx/icons/map/StalkersMilitary-Mercenary-Neutral.png
+A	data/gfx/icons/map/StalkersMilitary-Sectarianism-Neutral.png
+A	data/gfx/icons/map/StalkersMilitary-Stability-Neutral.png
+A	data/gfx/icons/map/StalkersMilitary-Stalkers-Neutral.png
+A	data/gfx/icons/map/StalkersOrest-Anarchy-Neutral.png
+A	data/gfx/icons/map/StalkersOrest-AntiZone-Neutral.png
+A	data/gfx/icons/map/StalkersOrest-Control-Neutral.png
+A	data/gfx/icons/map/StalkersOrest-Crime-Neutral.png
+A	data/gfx/icons/map/StalkersOrest-Exploring-Neutral.png
+A	data/gfx/icons/map/StalkersOrest-Mercenary-Neutral.png
+A	data/gfx/icons/map/StalkersOrest-Sectarianism-Neutral.png
+A	data/gfx/icons/map/StalkersOrest-Stability-Neutral.png
+A	data/gfx/icons/map/StalkersOrest-Stalkers-Neutral.png
+M	data/gfx/icons/map/StalkersYanov-Anarchy-Neutral.png
+M	data/gfx/icons/map/StalkersYanov-AntiZone-Neutral.png
+A	data/gfx/icons/map/StalkersYanov-Control-Neutral.png
+M	data/gfx/icons/map/StalkersYanov-Crime-Neutral.png
+M	data/gfx/icons/map/StalkersYanov-Exploring-Neutral.png
+M	data/gfx/icons/map/StalkersYanov-Mercenary-Neutral.png
+A	data/gfx/icons/map/StalkersYanov-Sectarianism-Neutral.png
+M	data/gfx/icons/map/StalkersYanov-Stability-Neutral.png
+M	data/gfx/icons/map/StalkersYanov-Stalkers-Neutral.png
+D	data/gfx/old/10.png
+D	data/gfx/old/15.png
+D	data/gfx/old/20.png
+D	data/gfx/old/25.png
+D	data/gfx/old/30.png
+D	data/gfx/old/35.png
+D	data/gfx/old/40.png
+D	data/gfx/old/45.png
+D	data/gfx/old/5.png
+D	data/gfx/old/50.png
+D	data/gfx/old/55.png
+D	data/gfx/old/60.png
+D	data/gfx/old/65.png
+D	data/gfx/old/70.png
+D	data/gfx/old/75.png
+D	data/gfx/old/80.png
+D	data/gfx/old/85.png
+D	data/gfx/old/90.png
+D	data/gfx/old/95.png
+D	data/gfx/old/Mutants.png
+A	data/gfx/old/NoData_30x30.png
+D	data/gfx/old/Readme.txt
+D	data/gfx/old/Spectator.png
+D	data/gfx/old/btns-active/1280x1024.png
+D	data/gfx/old/btns-active/1280x768.png
+D	data/gfx/old/btns-active/1366x768.png
+D	data/gfx/old/btns-active/1440x900.png
+D	data/gfx/old/btns-active/1600x900.png
+D	data/gfx/old/btns-active/1920x1080.png
+D	data/gfx/old/btns-active/Accept.png
+D	data/gfx/old/btns-active/Advisor.png
+D	data/gfx/old/btns-active/All.png
+D	data/gfx/old/btns-active/Alliance_Break.png
+D	data/gfx/old/btns-active/Alliance_Offer.png
+D	data/gfx/old/btns-active/Ammunition.png
+D	data/gfx/old/btns-active/Appoint.png
+D	data/gfx/old/btns-active/Authors.png
+D	data/gfx/old/btns-active/Back.png
+D	data/gfx/old/btns-active/BuyUnits.png
+D	data/gfx/old/btns-active/Conquest.png
+D	data/gfx/old/btns-active/Diplomacy.png
+D	data/gfx/old/btns-active/Exit.png
+D	data/gfx/old/btns-active/FAQ.png
+D	data/gfx/old/btns-active/FAQ2.png
+D	data/gfx/old/btns-active/GMEditor.png
+D	data/gfx/old/btns-active/HelpProject.png
+D	data/gfx/old/btns-active/Ideology.png
+D	data/gfx/old/btns-active/KillMutants.png
+D	data/gfx/old/btns-active/LoadSave.png
+D	data/gfx/old/btns-active/MainMenu.png
+D	data/gfx/old/btns-active/Master.png
+D	data/gfx/old/btns-active/Modding.png
+D	data/gfx/old/btns-active/Modding_Manual.png
+D	data/gfx/old/btns-active/MoreInfo.png
+D	data/gfx/old/btns-active/Move.png
+D	data/gfx/old/btns-active/MoveArmy.png
+D	data/gfx/old/btns-active/MultiPlayer.png
+D	data/gfx/old/btns-active/Neutral_Offer.png
+D	data/gfx/old/btns-active/Next.png
+D	data/gfx/old/btns-active/No.png
+D	data/gfx/old/btns-active/NoData_BTN.png
+D	data/gfx/old/btns-active/Novice.png
+D	data/gfx/old/btns-active/OptionsLarge.png
+D	data/gfx/old/btns-active/Other.png
+D	data/gfx/old/btns-active/OtherProjects.png
+D	data/gfx/old/btns-active/PsyControl.png
+D	data/gfx/old/btns-active/Quests.png
+D	data/gfx/old/btns-active/Rating.png
+D	data/gfx/old/btns-active/Rating_2.png
+D	data/gfx/old/btns-active/Rearm.png
+D	data/gfx/old/btns-active/Reject.png
+D	data/gfx/old/btns-active/Report.png
+D	data/gfx/old/btns-active/Request.png
+D	data/gfx/old/btns-active/Request2.png
+D	data/gfx/old/btns-active/Resources.png
+D	data/gfx/old/btns-active/Rules.png
+D	data/gfx/old/btns-active/Save.png
+D	data/gfx/old/btns-active/SearchArts.png
+D	data/gfx/old/btns-active/Send.png
+D	data/gfx/old/btns-active/SendMoney.png
+D	data/gfx/old/btns-active/Shelling.png
+D	data/gfx/old/btns-active/SinglePlayer.png
+D	data/gfx/old/btns-active/Skilled.png
+D	data/gfx/old/btns-active/Spy.png
+D	data/gfx/old/btns-active/Step.png
+D	data/gfx/old/btns-active/Total.png
+D	data/gfx/old/btns-active/Trade.png
+D	data/gfx/old/btns-active/Trading.png
+D	data/gfx/old/btns-active/Tutorial.png
+D	data/gfx/old/btns-active/Upgrades.png
+D	data/gfx/old/btns-active/War.png
+D	data/gfx/old/btns-active/War_Declare.png
+D	data/gfx/old/btns-active/WindowWithBorder.png
+D	data/gfx/old/btns-active/WindowWithoutBorder.png
+D	data/gfx/old/btns-active/Yes.png
+D	data/gfx/old/btns-active/off.png
+D	data/gfx/old/btns-active/on.png
+D	data/gfx/old/btns-standart/1280x1024.png
+D	data/gfx/old/btns-standart/1280x768.png
+D	data/gfx/old/btns-standart/1366x768.png
+D	data/gfx/old/btns-standart/1440x900.png
+D	data/gfx/old/btns-standart/1600x900.png
+D	data/gfx/old/btns-standart/1920x1080.png
+D	data/gfx/old/btns-standart/Accept.png
+D	data/gfx/old/btns-standart/Advisor.png
+D	data/gfx/old/btns-standart/All.png
+D	data/gfx/old/btns-standart/Alliance_Break.png
+D	data/gfx/old/btns-standart/Alliance_Offer.png
+D	data/gfx/old/btns-standart/Ammunition.png
+D	data/gfx/old/btns-standart/Appoint.png
+D	data/gfx/old/btns-standart/Authors.png
+D	data/gfx/old/btns-standart/Back.png
+D	data/gfx/old/btns-standart/BuyUnits.png
+D	data/gfx/old/btns-standart/Conquest.png
+D	data/gfx/old/btns-standart/Diplomacy.png
+D	data/gfx/old/btns-standart/Exit.png
+D	data/gfx/old/btns-standart/FAQ.png
+D	data/gfx/old/btns-standart/FAQ2.png
+D	data/gfx/old/btns-standart/GMEditor.png
+D	data/gfx/old/btns-standart/HelpProject.png
+D	data/gfx/old/btns-standart/Ideology.png
+D	data/gfx/old/btns-standart/KillMutants.png
+D	data/gfx/old/btns-standart/LoadSave.png
+D	data/gfx/old/btns-standart/Mainmenu.png
+D	data/gfx/old/btns-standart/Master.png
+D	data/gfx/old/btns-standart/Modding.png
+D	data/gfx/old/btns-standart/Modding_Manual.png
+D	data/gfx/old/btns-standart/MoreInfo.png
+D	data/gfx/old/btns-standart/Move.png
+D	data/gfx/old/btns-standart/MoveArmy.png
+D	data/gfx/old/btns-standart/MultiPlayer.png
+D	data/gfx/old/btns-standart/Neutral_Offer.png
+D	data/gfx/old/btns-standart/Next.png
+D	data/gfx/old/btns-standart/No.png
+D	data/gfx/old/btns-standart/NoData_BTN.png
+D	data/gfx/old/btns-standart/Novice.png
+D	data/gfx/old/btns-standart/OptionsLarge.png
+D	data/gfx/old/btns-standart/Other.png
+D	data/gfx/old/btns-standart/OtherProjects.png
+D	data/gfx/old/btns-standart/PsyControl.png
+D	data/gfx/old/btns-standart/Quests.png
+D	data/gfx/old/btns-standart/Rating.png
+D	data/gfx/old/btns-standart/Rating_2.png
+D	data/gfx/old/btns-standart/Rearm.png
+D	data/gfx/old/btns-standart/Reject.png
+D	data/gfx/old/btns-standart/Report.png
+D	data/gfx/old/btns-standart/Request.png
+D	data/gfx/old/btns-standart/Request2.png
+D	data/gfx/old/btns-standart/Resources.png
+D	data/gfx/old/btns-standart/Rules.png
+D	data/gfx/old/btns-standart/Save.png
+D	data/gfx/old/btns-standart/Send.png
+D	data/gfx/old/btns-standart/SendMoney.png
+D	data/gfx/old/btns-standart/Shelling.png
+D	data/gfx/old/btns-standart/SinglePlayer.png
+D	data/gfx/old/btns-standart/Skilled.png
+D	data/gfx/old/btns-standart/Spy.png
+D	data/gfx/old/btns-standart/Stock.png
+D	data/gfx/old/btns-standart/Total.png
+D	data/gfx/old/btns-standart/Trade.png
+D	data/gfx/old/btns-standart/Trading.png
+D	data/gfx/old/btns-standart/Tutorial.png
+D	data/gfx/old/btns-standart/Upgrades.png
+D	data/gfx/old/btns-standart/Veteran.png
+D	data/gfx/old/btns-standart/War.png
+D	data/gfx/old/btns-standart/War_Declare.png
+D	data/gfx/old/btns-standart/WindowWithBorder.png
+D	data/gfx/old/btns-standart/WindowWithoutBorder.png
+D	data/gfx/old/btns-standart/Yes.png
+D	data/gfx/old/btns-standart/off.png
+D	data/gfx/old/btns-standart/on.png
+D	data/gfx/old/territories/Arm_Sklady/38.png
+D	data/gfx/old/territories/Arm_Sklady/39.png
+D	data/gfx/old/territories/Arm_Sklady/40.png
+D	data/gfx/old/territories/Arm_Sklady/41.png
+D	data/gfx/old/territories/Arm_Sklady/42.png
+D	data/gfx/old/territories/Arm_Sklady/43.png
+D	data/gfx/old/territories/Arm_Sklady/44.png
+D	data/gfx/old/territories/Arm_Sklady/45.png
+D	data/gfx/old/territories/Arm_Sklady/46.png
+D	data/gfx/old/territories/Arm_Sklady/47.png
+D	data/gfx/old/territories/Arm_Sklady/48.png
+D	data/gfx/old/territories/Arm_Sklady/49.png
+D	data/gfx/old/territories/Arm_Sklady/50.png
+D	data/gfx/old/territories/Arm_Sklady/51.png
+D	data/gfx/old/territories/Arm_Sklady/52.png
+D	data/gfx/old/territories/Boloto/121.png
+D	data/gfx/old/territories/Boloto/97.png
+D	data/gfx/old/territories/CHAES/1.png
+D	data/gfx/old/territories/CHAES/10.png
+D	data/gfx/old/territories/CHAES/11.png
+D	data/gfx/old/territories/CHAES/12.png
+D	data/gfx/old/territories/CHAES/13.png
+D	data/gfx/old/territories/CHAES/14.png
+D	data/gfx/old/territories/CHAES/15.png
+D	data/gfx/old/territories/CHAES/16.png
+D	data/gfx/old/territories/CHAES/2.png
+D	data/gfx/old/territories/CHAES/3.png
+D	data/gfx/old/territories/CHAES/4.png
+D	data/gfx/old/territories/CHAES/5.png
+D	data/gfx/old/territories/CHAES/6.png
+D	data/gfx/old/territories/CHAES/7.png
+D	data/gfx/old/territories/CHAES/8.png
+D	data/gfx/old/territories/CHAES/9.png
+D	data/gfx/old/territories/Gospital/9.png
+D	data/gfx/old/territories/Kordon/112.png
+D	data/gfx/old/territories/Kordon/113.png
+D	data/gfx/old/territories/Kordon/114.png
+D	data/gfx/old/territories/Kordon/115.png
+D	data/gfx/old/territories/Kordon/116.png
+D	data/gfx/old/territories/Kordon/117.png
+D	data/gfx/old/territories/Kordon/118.png
+D	data/gfx/old/territories/Kordon/119.png
+D	data/gfx/old/territories/Kordon/120.png
+D	data/gfx/old/territories/Kordon/121.png
+D	data/gfx/old/territories/Kordon/122.png
+D	data/gfx/old/territories/Kordon/123.png
+D	data/gfx/old/territories/Limansk/10.png
+D	data/gfx/old/territories/Limansk/11.png
+D	data/gfx/old/territories/Limansk/15.png
+D	data/gfx/old/territories/NII_Agroprom/101.png
+D	data/gfx/old/territories/NII_Agroprom/102.png
+D	data/gfx/old/territories/NII_Agroprom/104.png
+D	data/gfx/old/territories/NII_Agroprom/105.png
+D	data/gfx/old/territories/NII_Agroprom/107.png
+D	data/gfx/old/territories/NII_Agroprom/109.png
+D	data/gfx/old/territories/NII_Agroprom/110.png
+D	data/gfx/old/territories/NII_Agroprom/111.png
+D	data/gfx/old/territories/NII_Agroprom/85.png
+D	data/gfx/old/territories/NII_Agroprom/87.png
+D	data/gfx/old/territories/NII_Agroprom/88.png
+D	data/gfx/old/territories/NII_Agroprom/96.png
+D	data/gfx/old/territories/NII_Agroprom/99.png
+D	data/gfx/old/territories/Ryzhiy_Les/16.png
+D	data/gfx/old/territories/Svalka/100.png
+D	data/gfx/old/territories/Svalka/106.png
+D	data/gfx/old/territories/Svalka/78.png
+D	data/gfx/old/territories/Svalka/81.png
+D	data/gfx/old/territories/Svalka/84.png
+D	data/gfx/old/territories/Svalka/89.png
+D	data/gfx/old/territories/Svalka/90.png
+D	data/gfx/old/territories/Svalka/91.png
+D	data/gfx/old/territories/Svalka/93.png
+D	data/gfx/old/territories/Svalka/95.png
+D	data/gfx/old/territories/Svalka/97.png
+D	data/gfx/old/territories/Temnaya_Dolina/103.png
+D	data/gfx/old/territories/Temnaya_Dolina/108.png
+D	data/gfx/old/territories/Temnaya_Dolina/74.png
+D	data/gfx/old/territories/Temnaya_Dolina/75.png
+D	data/gfx/old/territories/Temnaya_Dolina/77.png
+D	data/gfx/old/territories/Temnaya_Dolina/79.png
+D	data/gfx/old/territories/Temnaya_Dolina/80.png
+D	data/gfx/old/territories/Temnaya_Dolina/82.png
+D	data/gfx/old/territories/Temnaya_Dolina/83.png
+D	data/gfx/old/territories/Temnaya_Dolina/86.png
+D	data/gfx/old/territories/Temnaya_Dolina/92.png
+D	data/gfx/old/territories/Temnaya_Dolina/94.png
+D	data/gfx/old/territories/Temnaya_Dolina/98.png
+D	data/gfx/old/territories/Yantar/54.png
+D	data/gfx/old/territories/Yantar/60.png
+D	data/gfx/old/territories/Yantar/62.png
+D	data/gfx/old/territories/Yantar/64.png
+D	data/gfx/old/territories/Yantar/67.png
+D	data/gfx/old/territories/Yantar/70.png
+D	data/gfx/old/territories/Yantar/71.png
+D	data/gfx/old/territories/Yantar/72.png
+D	data/gfx/old/territories/Yantar/73.png
+D	data/gfx/old/territories/Yantar/76.png
+D	"data/gfx/old/\320\232\320\275\320\276\320\277\320\272\320\260 PSD.psd"
+D	"data/gfx/old/\320\232\320\275\320\276\320\277\320\272\320\260.psd"
+R100	data/gfx/Camp_CS-Active.png	data/locale/ruRu/gfx/Camp_CS-Active.png
+R100	data/gfx/Camp_CS.png	data/locale/ruRu/gfx/Camp_CS.png
+R100	data/gfx/Camp_MODS-Active.png	data/locale/ruRu/gfx/Camp_MODS-Active.png
+R100	data/gfx/Camp_MODS.png	data/locale/ruRu/gfx/Camp_MODS.png
+R100	data/gfx/Camp_SAC-Active.png	data/locale/ruRu/gfx/Camp_SAC-Active.png
+R100	data/gfx/Camp_SAC.png	data/locale/ruRu/gfx/Camp_SAC.png
+R100	data/gfx/Camp_SCOP-Active.png	data/locale/ruRu/gfx/Camp_SCOP-Active.png
+R100	data/gfx/Camp_SCOP.png	data/locale/ruRu/gfx/Camp_SCOP.png
+R100	data/gfx/Camp_SHOC-Active.png	data/locale/ruRu/gfx/Camp_SHOC-Active.png
+R100	data/gfx/Camp_SHOC.png	data/locale/ruRu/gfx/Camp_SHOC.png
+R100	data/gfx/Camp_SNET-Active.png	data/locale/ruRu/gfx/Camp_SNET-Active.png
+R100	data/gfx/Camp_SNET.png	data/locale/ruRu/gfx/Camp_SNET.png
+R100	data/gfx/Camp_ST-Active.png	data/locale/ruRu/gfx/Camp_ST-Active.png
+R100	data/gfx/Camp_ST.png	data/locale/ruRu/gfx/Camp_ST.png
+R100	data/gfx/Scenario_Logo_Fragmentation-Active.png	data/locale/ruRu/gfx/Scenario_Logo_Fragmentation-Active.png
+R100	data/gfx/Scenario_Logo_Fragmentation.png	data/locale/ruRu/gfx/Scenario_Logo_Fragmentation.png
+R100	data/gfx/Scenario_Logo_LatsFrontier-Active.png	data/locale/ruRu/gfx/Scenario_Logo_LatsFrontier-Active.png
+R100	data/gfx/Scenario_Logo_LatsFrontier.png	data/locale/ruRu/gfx/Scenario_Logo_LatsFrontier.png
+A	data/locale/ruRu/messages.csv
+R100	data/sfx/voices/Bandits/Bandits-main-01.wav	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-01.wav
+R100	data/sfx/voices/Bandits/Bandits-main-02.wav	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-02.wav
+R100	data/sfx/voices/Bandits/Bandits-main-03.wav	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-03.wav
+R100	data/sfx/voices/Bandits/Bandits-main-04.wav	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-04.wav
+R100	data/sfx/voices/Bandits/Bandits-main-05.wav	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-05.wav
+R100	data/sfx/voices/Bandits/Bandits-main-06.wav	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-06.wav
+R100	data/sfx/voices/Bandits/Bandits-main-07.wav	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-07.wav
+R100	data/sfx/voices/Bandits/Bandits-main-08.wav	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-08.wav
+R100	data/sfx/voices/Bandits/Bandits-main-09.wav	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-09.wav
+R100	data/sfx/voices/Bandits/Bandits-main-10.wav	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-10.wav
+R100	data/sfx/voices/Bandits/Bandits-main-11.wav	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-11.wav
+R100	data/sfx/voices/Bandits/Bandits-main-12.wav	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-12.wav
+R100	data/sfx/voices/Bandits/Bandits-main-13.wav	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-13.wav
+R100	data/sfx/voices/Bandits/Bandits-main-14.wav	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-14.wav
+R100	data/sfx/voices/Bandits/Bandits-main-15.wav	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-15.wav
+R100	data/sfx/voices/Bandits/Bandits-main-16.wav	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-16.wav
+R100	data/sfx/voices/Bandits/Bandits-main-17.wav	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-17.wav
+R100	data/sfx/voices/ClearSky/ClearSky-main-01.wav	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-01.wav
+R100	data/sfx/voices/ClearSky/ClearSky-main-02.wav	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-02.wav
+R100	data/sfx/voices/ClearSky/ClearSky-main-03.wav	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-03.wav
+R100	data/sfx/voices/ClearSky/ClearSky-main-04.wav	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-04.wav
+R100	data/sfx/voices/ClearSky/ClearSky-main-05.wav	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-05.wav
+R100	data/sfx/voices/ClearSky/ClearSky-main-06.wav	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-06.wav
+R100	data/sfx/voices/ClearSky/ClearSky-main-07.wav	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-07.wav
+R100	data/sfx/voices/ClearSky/ClearSky-main-08.wav	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-08.wav
+R100	data/sfx/voices/ClearSky/ClearSky-main-09.wav	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-09.wav
+R100	data/sfx/voices/ClearSky/ClearSky-main-10.wav	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-10.wav
+R100	data/sfx/voices/ClearSky/ClearSky-main-11.wav	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-11.wav
+R100	data/sfx/voices/ClearSky/ClearSky-main-12.wav	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-12.wav
+R100	data/sfx/voices/ClearSky/ClearSky-main-13.wav	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-13.wav
+R100	data/sfx/voices/ClearSky/ClearSky-main-14.wav	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-14.wav
+R100	data/sfx/voices/ClearSky/ClearSky-main-15.wav	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-15.wav
+R100	data/sfx/voices/ClearSky/ClearSky-main-16.wav	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-16.wav
+R100	data/sfx/voices/ClearSky/ClearSky-main-17.wav	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-17.wav
+R100	data/sfx/voices/Duty/Duty-main-01.wav	data/locale/ruRu/sfx/voices/Duty/Duty-main-01.wav
+R100	data/sfx/voices/Duty/Duty-main-02.wav	data/locale/ruRu/sfx/voices/Duty/Duty-main-02.wav
+R100	data/sfx/voices/Duty/Duty-main-03.wav	data/locale/ruRu/sfx/voices/Duty/Duty-main-03.wav
+R100	data/sfx/voices/Duty/Duty-main-04.wav	data/locale/ruRu/sfx/voices/Duty/Duty-main-04.wav
+R100	data/sfx/voices/Duty/Duty-main-05.wav	data/locale/ruRu/sfx/voices/Duty/Duty-main-05.wav
+R100	data/sfx/voices/Duty/Duty-main-06.wav	data/locale/ruRu/sfx/voices/Duty/Duty-main-06.wav
+R100	data/sfx/voices/Duty/Duty-main-07.wav	data/locale/ruRu/sfx/voices/Duty/Duty-main-07.wav
+R100	data/sfx/voices/Duty/Duty-main-08.wav	data/locale/ruRu/sfx/voices/Duty/Duty-main-08.wav
+R100	data/sfx/voices/Duty/Duty-main-09.wav	data/locale/ruRu/sfx/voices/Duty/Duty-main-09.wav
+R100	data/sfx/voices/Duty/Duty-main-10.wav	data/locale/ruRu/sfx/voices/Duty/Duty-main-10.wav
+R100	data/sfx/voices/Duty/Duty-main-11.wav	data/locale/ruRu/sfx/voices/Duty/Duty-main-11.wav
+R100	data/sfx/voices/Duty/Duty-main-12.wav	data/locale/ruRu/sfx/voices/Duty/Duty-main-12.wav
+R100	data/sfx/voices/Duty/Duty-main-13.wav	data/locale/ruRu/sfx/voices/Duty/Duty-main-13.wav
+R100	data/sfx/voices/Duty/Duty-main-14.wav	data/locale/ruRu/sfx/voices/Duty/Duty-main-14.wav
+R100	data/sfx/voices/Duty/Duty-main-15.wav	data/locale/ruRu/sfx/voices/Duty/Duty-main-15.wav
+R100	data/sfx/voices/Duty/Duty-main-16.wav	data/locale/ruRu/sfx/voices/Duty/Duty-main-16.wav
+R100	data/sfx/voices/Duty/Duty-main-17.wav	data/locale/ruRu/sfx/voices/Duty/Duty-main-17.wav
+R100	data/sfx/voices/Freedom/Freedom-main-01.wav	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-01.wav
+R100	data/sfx/voices/Freedom/Freedom-main-02.wav	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-02.wav
+R100	data/sfx/voices/Freedom/Freedom-main-03.wav	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-03.wav
+R100	data/sfx/voices/Freedom/Freedom-main-04.wav	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-04.wav
+R100	data/sfx/voices/Freedom/Freedom-main-05.wav	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-05.wav
+R100	data/sfx/voices/Freedom/Freedom-main-06.wav	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-06.wav
+R100	data/sfx/voices/Freedom/Freedom-main-07.wav	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-07.wav
+R100	data/sfx/voices/Freedom/Freedom-main-08.wav	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-08.wav
+R100	data/sfx/voices/Freedom/Freedom-main-09.wav	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-09.wav
+R100	data/sfx/voices/Freedom/Freedom-main-10.wav	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-10.wav
+R100	data/sfx/voices/Freedom/Freedom-main-11.wav	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-11.wav
+R100	data/sfx/voices/Freedom/Freedom-main-12.wav	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-12.wav
+R100	data/sfx/voices/Freedom/Freedom-main-13.wav	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-13.wav
+R100	data/sfx/voices/Freedom/Freedom-main-14.wav	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-14.wav
+R100	data/sfx/voices/Freedom/Freedom-main-15.wav	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-15.wav
+R100	data/sfx/voices/Freedom/Freedom-main-16.wav	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-16.wav
+R100	data/sfx/voices/Freedom/Freedom-main-17.wav	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-17.wav
+R100	data/sfx/voices/FreedomCS/Freedom-main-01.wav	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-01.wav
+R100	data/sfx/voices/FreedomCS/Freedom-main-02.wav	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-02.wav
+R100	data/sfx/voices/FreedomCS/Freedom-main-03.wav	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-03.wav
+R100	data/sfx/voices/FreedomCS/Freedom-main-04.wav	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-04.wav
+R100	data/sfx/voices/FreedomCS/Freedom-main-05.wav	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-05.wav
+R100	data/sfx/voices/FreedomCS/Freedom-main-06.wav	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-06.wav
+R100	data/sfx/voices/FreedomCS/Freedom-main-07.wav	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-07.wav
+R100	data/sfx/voices/FreedomCS/Freedom-main-09.wav	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-09.wav
+R100	data/sfx/voices/FreedomCS/Freedom-main-10.wav	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-10.wav
+R100	data/sfx/voices/FreedomCS/Freedom-main-11.wav	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-11.wav
+R100	data/sfx/voices/FreedomCS/Freedom-main-12.wav	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-12.wav
+R100	data/sfx/voices/FreedomCS/Freedom-main-13.wav	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-13.wav
+R100	data/sfx/voices/FreedomCS/Freedom-main-14.wav	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-14.wav
+R100	data/sfx/voices/FreedomCS/Freedom-main-15.wav	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-15.wav
+R100	data/sfx/voices/FreedomCS/Freedom-main-16.wav	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-16.wav
+R100	data/sfx/voices/FreedomCS/Freedom-main-17.wav	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-17.wav
+R100	data/sfx/voices/Mercenaries/Mercenaries-main-01.wav	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-01.wav
+R100	data/sfx/voices/Mercenaries/Mercenaries-main-02.wav	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-02.wav
+R100	data/sfx/voices/Mercenaries/Mercenaries-main-03.wav	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-03.wav
+R100	data/sfx/voices/Mercenaries/Mercenaries-main-04.wav	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-04.wav
+R100	data/sfx/voices/Mercenaries/Mercenaries-main-05.wav	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-05.wav
+R100	data/sfx/voices/Mercenaries/Mercenaries-main-06.wav	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-06.wav
+R100	data/sfx/voices/Mercenaries/Mercenaries-main-07.wav	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-07.wav
+R100	data/sfx/voices/Mercenaries/Mercenaries-main-08.wav	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-08.wav
+R100	data/sfx/voices/Mercenaries/Mercenaries-main-09.wav	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-09.wav
+R100	data/sfx/voices/Mercenaries/Mercenaries-main-10.wav	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-10.wav
+R100	data/sfx/voices/Mercenaries/Mercenaries-main-11.wav	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-11.wav
+R100	data/sfx/voices/Mercenaries/Mercenaries-main-12.wav	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-12.wav
+R100	data/sfx/voices/Mercenaries/Mercenaries-main-13.wav	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-13.wav
+R100	data/sfx/voices/Mercenaries/Mercenaries-main-14.wav	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-14.wav
+R100	data/sfx/voices/Mercenaries/Mercenaries-main-15.wav	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-15.wav
+R100	data/sfx/voices/Mercenaries/Mercenaries-main-16.wav	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-16.wav
+R100	data/sfx/voices/Mercenaries/Mercenaries-main-17.wav	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-17.wav
+R100	data/sfx/voices/Monolith/Monolith-main-01.wav	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-01.wav
+R100	data/sfx/voices/Monolith/Monolith-main-02.wav	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-02.wav
+R100	data/sfx/voices/Monolith/Monolith-main-03.wav	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-03.wav
+R100	data/sfx/voices/Monolith/Monolith-main-04.wav	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-04.wav
+R100	data/sfx/voices/Monolith/Monolith-main-05.wav	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-05.wav
+R100	data/sfx/voices/Monolith/Monolith-main-06.wav	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-06.wav
+R100	data/sfx/voices/Monolith/Monolith-main-07.wav	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-07.wav
+R100	data/sfx/voices/Monolith/Monolith-main-08.wav	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-08.wav
+R100	data/sfx/voices/Monolith/Monolith-main-09.wav	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-09.wav
+R100	data/sfx/voices/Monolith/Monolith-main-10.wav	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-10.wav
+R100	data/sfx/voices/Monolith/Monolith-main-11.wav	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-11.wav
+R100	data/sfx/voices/Monolith/Monolith-main-12.wav	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-12.wav
+R100	data/sfx/voices/Monolith/Monolith-main-13.wav	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-13.wav
+R100	data/sfx/voices/Monolith/Monolith-main-14.wav	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-14.wav
+R100	data/sfx/voices/Monolith/Monolith-main-15.wav	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-15.wav
+R100	data/sfx/voices/Monolith/Monolith-main-16.wav	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-16.wav
+R100	data/sfx/voices/Monolith/Monolith-main-17.wav	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-17.wav
+R100	data/sfx/voices/Renegats/Renegats-main-01.wav	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-01.wav
+R100	data/sfx/voices/Renegats/Renegats-main-02.wav	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-02.wav
+R100	data/sfx/voices/Renegats/Renegats-main-03.wav	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-03.wav
+R100	data/sfx/voices/Renegats/Renegats-main-04.wav	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-04.wav
+R100	data/sfx/voices/Renegats/Renegats-main-05.wav	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-05.wav
+R100	data/sfx/voices/Renegats/Renegats-main-06.wav	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-06.wav
+R100	data/sfx/voices/Renegats/Renegats-main-07.wav	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-07.wav
+R100	data/sfx/voices/Renegats/Renegats-main-08.wav	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-08.wav
+R100	data/sfx/voices/Renegats/Renegats-main-09.wav	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-09.wav
+R100	data/sfx/voices/Renegats/Renegats-main-10.wav	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-10.wav
+R100	data/sfx/voices/Renegats/Renegats-main-11.wav	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-11.wav
+R100	data/sfx/voices/Renegats/Renegats-main-12.wav	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-12.wav
+R100	data/sfx/voices/Renegats/Renegats-main-13.wav	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-13.wav
+R100	data/sfx/voices/Renegats/Renegats-main-14.wav	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-14.wav
+R100	data/sfx/voices/Renegats/Renegats-main-15.wav	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-15.wav
+R100	data/sfx/voices/Renegats/Renegats-main-16.wav	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-16.wav
+R100	data/sfx/voices/Renegats/Renegats-main-17.wav	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-17.wav
+R100	data/sfx/voices/Scientists/Scientists-main-01.wav	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-01.wav
+R100	data/sfx/voices/Scientists/Scientists-main-02.wav	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-02.wav
+R100	data/sfx/voices/Scientists/Scientists-main-03.wav	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-03.wav
+R100	data/sfx/voices/Scientists/Scientists-main-04.wav	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-04.wav
+R100	data/sfx/voices/Scientists/Scientists-main-05.wav	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-05.wav
+R100	data/sfx/voices/Scientists/Scientists-main-06.wav	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-06.wav
+R100	data/sfx/voices/Scientists/Scientists-main-07.wav	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-07.wav
+R100	data/sfx/voices/Scientists/Scientists-main-08.wav	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-08.wav
+R100	data/sfx/voices/Scientists/Scientists-main-09.wav	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-09.wav
+R100	data/sfx/voices/Scientists/Scientists-main-10.wav	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-10.wav
+R100	data/sfx/voices/Scientists/Scientists-main-11.wav	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-11.wav
+R100	data/sfx/voices/Scientists/Scientists-main-12.wav	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-12.wav
+R100	data/sfx/voices/Scientists/Scientists-main-13.wav	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-13.wav
+R100	data/sfx/voices/Scientists/Scientists-main-14.wav	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-14.wav
+R100	data/sfx/voices/Scientists/Scientists-main-15.wav	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-15.wav
+R100	data/sfx/voices/Scientists/Scientists-main-16.wav	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-16.wav
+R100	data/sfx/voices/Scientists/Scientists-main-17.wav	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-17.wav
+R100	data/sfx/voices/Soldiers/Soldiers-main-01.wav	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-01.wav
+R100	data/sfx/voices/Soldiers/Soldiers-main-02.wav	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-02.wav
+R100	data/sfx/voices/Soldiers/Soldiers-main-03.wav	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-03.wav
+R100	data/sfx/voices/Soldiers/Soldiers-main-04.wav	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-04.wav
+R100	data/sfx/voices/Soldiers/Soldiers-main-05.wav	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-05.wav
+R100	data/sfx/voices/Soldiers/Soldiers-main-06.wav	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-06.wav
+R100	data/sfx/voices/Soldiers/Soldiers-main-07.wav	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-07.wav
+R100	data/sfx/voices/Soldiers/Soldiers-main-08.wav	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-08.wav
+R100	data/sfx/voices/Soldiers/Soldiers-main-09.wav	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-09.wav
+R100	data/sfx/voices/Soldiers/Soldiers-main-10.wav	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-10.wav
+R100	data/sfx/voices/Soldiers/Soldiers-main-11.wav	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-11.wav
+R100	data/sfx/voices/Soldiers/Soldiers-main-12.wav	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-12.wav
+R100	data/sfx/voices/Soldiers/Soldiers-main-13.wav	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-13.wav
+R100	data/sfx/voices/Soldiers/Soldiers-main-14.wav	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-14.wav
+R100	data/sfx/voices/Soldiers/Soldiers-main-15.wav	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-15.wav
+R100	data/sfx/voices/Soldiers/Soldiers-main-16.wav	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-16.wav
+R100	data/sfx/voices/Soldiers/Soldiers-main-17.wav	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-17.wav
+R100	data/sfx/voices/SoldiersCOP/Soldiers-main-01.wav	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-01.wav
+R100	data/sfx/voices/SoldiersCOP/Soldiers-main-02.wav	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-02.wav
+R100	data/sfx/voices/SoldiersCOP/Soldiers-main-03.wav	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-03.wav
+R100	data/sfx/voices/SoldiersCOP/Soldiers-main-04.wav	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-04.wav
+R100	data/sfx/voices/SoldiersCOP/Soldiers-main-05.wav	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-05.wav
+R100	data/sfx/voices/SoldiersCOP/Soldiers-main-06.wav	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-06.wav
+R100	data/sfx/voices/SoldiersCOP/Soldiers-main-07.wav	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-07.wav
+R100	data/sfx/voices/SoldiersCOP/Soldiers-main-08.wav	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-08.wav
+R100	data/sfx/voices/SoldiersCOP/Soldiers-main-09.wav	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-09.wav
+R100	data/sfx/voices/SoldiersCOP/Soldiers-main-10.wav	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-10.wav
+R100	data/sfx/voices/SoldiersCOP/Soldiers-main-11.wav	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-11.wav
+R100	data/sfx/voices/SoldiersCOP/Soldiers-main-12.wav	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-12.wav
+R100	data/sfx/voices/SoldiersCOP/Soldiers-main-13.wav	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-13.wav
+R100	data/sfx/voices/SoldiersCOP/Soldiers-main-14.wav	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-14.wav
+R100	data/sfx/voices/SoldiersCOP/Soldiers-main-15.wav	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-15.wav
+R100	data/sfx/voices/SoldiersCOP/Soldiers-main-16.wav	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-16.wav
+R100	data/sfx/voices/SoldiersCOP/Soldiers-main-17.wav	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-17.wav
+R100	data/sfx/voices/Stalkers/Stalkers-main-01.wav	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-01.wav
+R100	data/sfx/voices/Stalkers/Stalkers-main-02.wav	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-02.wav
+R100	data/sfx/voices/Stalkers/Stalkers-main-03.wav	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-03.wav
+R100	data/sfx/voices/Stalkers/Stalkers-main-04.wav	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-04.wav
+R100	data/sfx/voices/Stalkers/Stalkers-main-05.wav	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-05.wav
+R100	data/sfx/voices/Stalkers/Stalkers-main-06.wav	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-06.wav
+R100	data/sfx/voices/Stalkers/Stalkers-main-07.wav	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-07.wav
+R100	data/sfx/voices/Stalkers/Stalkers-main-08.wav	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-08.wav
+R100	data/sfx/voices/Stalkers/Stalkers-main-09.wav	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-09.wav
+R100	data/sfx/voices/Stalkers/Stalkers-main-10.wav	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-10.wav
+R100	data/sfx/voices/Stalkers/Stalkers-main-11.wav	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-11.wav
+R100	data/sfx/voices/Stalkers/Stalkers-main-12.wav	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-12.wav
+R100	data/sfx/voices/Stalkers/Stalkers-main-13.wav	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-13.wav
+R100	data/sfx/voices/Stalkers/Stalkers-main-14.wav	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-14.wav
+R100	data/sfx/voices/Stalkers/Stalkers-main-15.wav	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-15.wav
+R100	data/sfx/voices/Stalkers/Stalkers-main-16.wav	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-16.wav
+R100	data/sfx/voices/Stalkers/Stalkers-main-17.wav	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-17.wav
+R100	data/sfx/voices/StalkersCS/Stalkers-main-01.wav	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-01.wav
+R100	data/sfx/voices/StalkersCS/Stalkers-main-02.wav	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-02.wav
+R100	data/sfx/voices/StalkersCS/Stalkers-main-03.wav	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-03.wav
+R100	data/sfx/voices/StalkersCS/Stalkers-main-04.wav	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-04.wav
+R100	data/sfx/voices/StalkersCS/Stalkers-main-05.wav	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-05.wav
+R100	data/sfx/voices/StalkersCS/Stalkers-main-06.wav	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-06.wav
+R100	data/sfx/voices/StalkersCS/Stalkers-main-07.wav	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-07.wav
+R100	data/sfx/voices/StalkersCS/Stalkers-main-08.wav	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-08.wav
+R100	data/sfx/voices/StalkersCS/Stalkers-main-09.wav	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-09.wav
+R100	data/sfx/voices/StalkersCS/Stalkers-main-10.wav	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-10.wav
+R100	data/sfx/voices/StalkersCS/Stalkers-main-11.wav	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-11.wav
+R100	data/sfx/voices/StalkersCS/Stalkers-main-12.wav	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-12.wav
+R100	data/sfx/voices/StalkersCS/Stalkers-main-13.wav	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-13.wav
+R100	data/sfx/voices/StalkersCS/Stalkers-main-14.wav	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-14.wav
+R100	data/sfx/voices/StalkersCS/Stalkers-main-15.wav	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-15.wav
+R100	data/sfx/voices/StalkersCS/Stalkers-main-16.wav	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-16.wav
+R100	data/sfx/voices/StalkersCS/Stalkers-main-17.wav	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-17.wav
+M	data/maps/CS_Battle_For_Limansk/Locations/Limansk.ini
+M	data/maps/CS_Battle_For_Limansk/TerritoriesInfo.ini
+A	data/maps/CS_Battle_For_Limansk/locale/ruRu/MapMessages.csv
+M	data/maps/CS_Battle_For_Limansk/settings.ini
+M	data/maps/CS_Border/TerritoriesInfo.ini
+A	data/maps/CS_Border/locale/ruRu/MapMessages.csv
+M	data/maps/CS_Border/settings.ini
+M	data/maps/CS_Standard/Locations/Hospital.ini
+M	data/maps/CS_Standard/Locations/Limansk.ini
+M	data/maps/CS_Standard/Locations/RedForest.ini
+M	data/maps/CS_Standard/Locations/Swamp.ini
+M	data/maps/CS_Standard/TerritoriesInfo.ini
+A	data/maps/CS_Standard/locale/ruRu/MapMessages.csv
+M	data/maps/CS_Standard/settings.ini
+M	data/maps/CoP_Map_Classic/Locations/LabX8.ini
+M	data/maps/CoP_Map_Classic/Locations/PripyatEast.ini
+M	data/maps/CoP_Map_Classic/Locations/Puteprovod.ini
+M	data/maps/CoP_Map_Classic/Locations/Upiter.ini
+M	data/maps/CoP_Map_Classic/Locations/Zaton.ini
+M	data/maps/CoP_Map_Classic/TerritoriesInfo.ini
+A	data/maps/CoP_Map_Classic/locale/ruRu/MapMessages.csv
+M	data/maps/CoP_Map_Classic/settings.ini
+M	data/maps/CoP_Map_Pripyat/Locations/LabX8.ini
+M	data/maps/CoP_Map_Pripyat/Locations/PripyatEast.ini
+M	data/maps/CoP_Map_Pripyat/TerritoriesInfo.ini
+A	data/maps/CoP_Map_Pripyat/locale/ruRu/MapMessages.csv
+M	data/maps/CoP_Map_Pripyat/settings.ini
+M	data/maps/CoP_Map_Zaton/Locations/Zaton.ini
+M	data/maps/CoP_Map_Zaton/TerritoriesInfo.ini
+A	data/maps/CoP_Map_Zaton/locale/ruRu/MapMessages.csv
+M	data/maps/CoP_Map_Zaton/settings.ini
+M	data/maps/SHOC_Garbage/TerritoriesInfo.ini
+A	data/maps/SHOC_Garbage/locale/ruRu/MapMessages.csv
+M	data/maps/SHOC_Garbage/settings.ini
+M	data/maps/SHOC_Monolith/Locations/BunkerMonolith.ini
+M	data/maps/SHOC_Monolith/Locations/CHAES1.ini
+M	data/maps/SHOC_Monolith/Locations/LabX10.ini
+M	data/maps/SHOC_Monolith/Locations/PripyatCentral.ini
+M	data/maps/SHOC_Monolith/Locations/Radar.ini
+M	data/maps/SHOC_Monolith/Locations/Sarcophagus.ini
+M	data/maps/SHOC_Monolith/TerritoriesInfo.ini
+A	data/maps/SHOC_Monolith/locale/ruRu/MapMessages.csv
+M	data/maps/SHOC_Monolith/settings.ini
+M	data/maps/SHOC_Standard/Locations/BunkerMonolith.ini
+M	data/maps/SHOC_Standard/Locations/CHAES1.ini
+M	data/maps/SHOC_Standard/Locations/LabX10.ini
+M	data/maps/SHOC_Standard/Locations/LabX16.ini
+M	data/maps/SHOC_Standard/Locations/LabX18.ini
+M	data/maps/SHOC_Standard/Locations/PripyatCentral.ini
+M	data/maps/SHOC_Standard/Locations/Radar.ini
+M	data/maps/SHOC_Standard/Locations/Rostok.ini
+M	data/maps/SHOC_Standard/Locations/Sarcophagus.ini
+M	data/maps/SHOC_Standard/Locations/WildTerritory.ini
+M	data/maps/SHOC_Standard/TerritoriesInfo.ini
+A	data/maps/SHOC_Standard/locale/ruRu/MapMessages.csv
+M	data/maps/SHOC_Standard/settings.ini
+M	data/maps/SNET_2players/TerritoriesInfo.ini
+A	data/maps/SNET_2players/locale/ruRu/MapMessages.csv
+M	data/maps/SNET_2players/settings.ini
+M	data/maps/SNET_3players/TerritoriesInfo.ini
+A	data/maps/SNET_3players/locale/ruRu/MapMessages.csv
+M	data/maps/SNET_3players/settings.ini
+M	data/maps/SNET_4players/TerritoriesInfo.ini
+A	data/maps/SNET_4players/locale/ruRu/MapMessages.csv
+M	data/maps/SNET_4players/settings.ini
+M	data/maps/SNET_4playersV2/TerritoriesInfo.ini
+A	data/maps/SNET_4playersV2/locale/ruRu/MapMessages.csv
+M	data/maps/SNET_4playersV2/settings.ini
+M	data/maps/SNET_5players/TerritoriesInfo.ini
+A	data/maps/SNET_5players/locale/ruRu/MapMessages.csv
+M	data/maps/SNET_5players/settings.ini
+M	data/maps/SNET_6players/TerritoriesInfo.ini
+A	data/maps/SNET_6players/locale/ruRu/MapMessages.csv
+M	data/maps/SNET_6players/settings.ini
+M	data/maps/SNET_7players/TerritoriesInfo.ini
+A	data/maps/SNET_7players/locale/ruRu/MapMessages.csv
+M	data/maps/SNET_7players/settings.ini
+A	data/maps/SNET_8players/locale/ruRu/MapMessages.csv
+M	data/maps/SNET_8players/settings.ini
+M	data/maps/SNET_8players/territoriesinfo.ini
+A	data/maps/Tutorial_1/locale/ruRu/MapMessages.csv
+M	data/maps/Tutorial_1/settings.ini
+M	data/maps/Tutorial_1/territoriesinfo.ini
+A	data/maps/Tutorial_2/locale/ruRu/MapMessages.csv
+M	data/maps/Tutorial_2/settings.ini
+M	data/maps/Tutorial_2/territoriesinfo.ini
+A	data/maps/Tutorial_3/locale/ruRu/MapMessages.csv
+M	data/maps/Tutorial_3/settings.ini
+M	data/maps/Tutorial_3/territoriesinfo.ini
+A	data/maps/Tutorial_4/locale/ruRu/MapMessages.csv
+M	data/maps/Tutorial_4/settings.ini
+M	data/maps/Tutorial_4/territoriesinfo.ini
+A	data/maps/Tutorial_5/locale/ruRu/MapMessages.csv
+M	data/maps/Tutorial_5/settings.ini
+M	data/maps/Tutorial_5/territoriesinfo.ini
+A	data/maps/Tutorial_6/locale/ruRu/MapMessages.csv
+M	data/maps/Tutorial_6/settings.ini
+M	data/maps/Tutorial_6/territoriesinfo.ini
+A	data/maps/Tutorial_7/locale/ruRu/MapMessages.csv
+M	data/maps/Tutorial_7/settings.ini
+M	data/maps/Tutorial_7/territoriesinfo.ini
+A	data/maps/Tutorial_8/locale/ruRu/MapMessages.csv
+M	data/maps/Tutorial_8/settings.ini
+M	data/maps/Tutorial_8/territoriesinfo.ini
+M	modConverter.exe
