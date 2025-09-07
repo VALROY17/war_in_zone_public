@@ -1,0 +1,204 @@
+﻿[Territories.Name].Zona1;Задворки станции
+[Territories.Name].Zona2;Служебные здания
+[Territories.Name].Zona3;Генераторы
+[Territories.Name].Zona4;Северные постройки
+[Territories.Name].Zona5;Подстанции
+[Territories.Name].Zona6;Западная постройка
+[Territories.Name].Zona7;Катакомбы
+[Territories.Name].Zona8;Северные подходы
+[Territories.Name].Zona9;Восточные строения
+[Territories.Name].Zona10;Западный лагерь
+[Territories.Name].Zona11;Крыши
+[Territories.Name].Zona12;Северный вход
+[Territories.Name].Zona13;Саркофаг
+[Territories.Name].Zona14;Западные ворота
+[Territories.Name].Zona15;Подходы к станции
+[Territories.Name].Zona16;Дорога у входа
+[Territories.Name].Zona17;Дорога
+[Territories.Name].Zona18;Блокпост
+[Territories.Name].Zona19;Главная аллея
+[Territories.Name].Zona20;Юго-запад
+[Territories.Name].Zona21;Стоянка Монолита
+[Territories.Name].Zona22;Дорога к блокпосту
+[Territories.Name].Zona23;Южная территория
+[Territories.Name].Zona24;Мост
+[Territories.Name].Zona25;Стадион Авангард
+[Territories.Name].Zona26;Вход на стадион
+[Territories.Name].Zona27;Западные многоэтажки
+[Territories.Name].Zona28;Колесо обозрения
+[Territories.Name].Zona29;ДК Энергетик
+[Territories.Name].Zona30;Гостиница Полесье
+[Territories.Name].Zona31;Автовокзал
+[Territories.Name].Zona32;Площадь
+[Territories.Name].Zona33;Подземная автостоянка
+[Territories.Name].Zona34;Детский сад
+[Territories.Name].Zona35;Юго-запад
+[Territories.Name].Zona36;Аллея
+[Territories.Name].Zona37;Юго-восток
+[Territories.Name].Zona38;Северный КПП
+[Territories.Name].Zona39;Тупик
+[Territories.Name].Zona40;Лаборатория
+[Territories.Name].Zona41;Подъем к антеннам
+[Territories.Name].Zona42;Антенны
+[Territories.Name].Zona43;Развилка
+[Territories.Name].Zona44;Перекресток
+[Territories.Name].Zona45;Дорога к перекрестку
+[Territories.Name].Zona46;Северный Мертвый лес
+[Territories.Name].Zona47;Петляющая дорога
+[Territories.Name].Zona48;Мертвый лес
+[Territories.Name].Zona49;Восточный Мертвый лес
+[Territories.Name].Zona50;Смотровой пункт
+[Territories.Name].Zona51;Южный КПП
+[Territories.Name].Zona52;Дальний блокпост
+[Territories.Name].Zona53;Дорога на Радар
+[Territories.Name].Zona54;Барьер
+[Territories.Name].Zona55;Упавший вертолёт
+[Territories.Name].Zona56;Дорога к блокпосту
+[Territories.Name].Zona57;Дальний хутор
+[Territories.Name].Zona58;Восток деревни
+[Territories.Name].Zona59;Развилка
+[Territories.Name].Zona60;Кривая балка
+[Territories.Name].Zona61;Запад деревни
+[Territories.Name].Zona62;Лагерь у Барьера
+[Territories.Name].Zona63;Болото
+[Territories.Name].Zona64;Перекресток
+[Territories.Name].Zona65;Съезд к деревне
+[Territories.Name].Zona66;Брошенный хутор
+[Territories.Name].Zona67;Переход в Бар
+[Territories.Name].Zona68;Блокпост складов
+[Territories.Name].Zona69;Железная дорога
+[Territories.Name].Zona70;Депо складов
+[Territories.Name].Zona71;Администрация складов
+[Territories.Name].Zona72;Ангары складов
+[Territories.Name].Zona73;Переход на Склады
+[Territories.Name].Zona74;Вышка с ангарами
+[Territories.Name].Zona75;Упавший вертолет
+[Territories.Name].Zona76;Переход в Бар
+[Territories.Name].Zona77;Западный блокпост
+[Territories.Name].Zona78;Заброшенные ангары
+[Territories.Name].Zona79;База Долга
+[Territories.Name].Zona80;Костры
+[Territories.Name].Zona81;Депо
+[Territories.Name].Zona82;Разрушенное здание
+[Territories.Name].Zona83;Вход с ареной
+[Territories.Name].Zona84;Стройплощадка
+[Territories.Name].Zona85;Бар 100 рентген
+[Territories.Name].Zona86;Брошенный вагон
+[Territories.Name].Zona87;Южный блокпост
+[Territories.Name].Zona88;Северо-восточная часть
+[Territories.Name].Zona89;Задний двор
+[Territories.Name].Zona90;Тоннель с жарками
+[Territories.Name].Zona91;Переход на Свалку
+[Territories.Name].Zona92;Двор завода
+[Territories.Name].Zona93;Дорога на Янтарь
+[Territories.Name].Zona94;Лаборатория
+[Territories.Name].Zona95;Вход на завод
+[Territories.Name].Zona96;Окраина
+[Territories.Name].Zona97;Ангар
+[Territories.Name].Zona98;Ржавый автобус
+[Territories.Name].Zona99;Северная окраина
+[Territories.Name].Zona100;Северо-восточная окраина
+[Territories.Name].Zona101;Подходы к заводу
+[Territories.Name].Zona102;Тоннели под заводом
+[Territories.Name].Zona103;Северо-западные окраины
+[Territories.Name].Zona104;Дорога на Дикую территорию
+[Territories.Name].Zona105;Юго-западная окраина
+[Territories.Name].Zona106;Болото
+[Territories.Name].Zona107;Подходы к бункеру
+[Territories.Name].Zona108;Бункер
+[Territories.Name].Zona109;Ангар
+[Territories.Name].Zona110;Западный блокпост
+[Territories.Name].Zona111;Заправка
+[Territories.Name].Zona112;Комплекс
+[Territories.Name].Zona113;Восточный овраг
+[Territories.Name].Zona114;Западный овраг
+[Territories.Name].Zona115;Северный блокпост
+[Territories.Name].Zona116;Переход на Свалку
+[Territories.Name].Zona117;Северо-западная окраина
+[Territories.Name].Zona118;Северная лощина
+[Territories.Name].Zona119;Старая фабрика
+[Territories.Name].Zona120;Болото
+[Territories.Name].Zona121;Барахолка
+[Territories.Name].Zona122;Северная окраина
+[Territories.Name].Zona123;Переход в Тёмную долину
+[Territories.Name].Zona124;Низина
+[Territories.Name].Zona125;Трубы
+[Territories.Name].Zona126;Северная окраина
+[Territories.Name].Zona127;Северо-восточная окраина
+[Territories.Name].Zona128;Лаборатория
+[Territories.Name].Zona129;Северо-западная окраина
+[Territories.Name].Zona130;Подходы к ферме
+[Territories.Name].Zona131;Северная пустошь
+[Territories.Name].Zona132;Восточная окраина
+[Territories.Name].Zona133;Северное плато
+[Territories.Name].Zona134;Остановка
+[Territories.Name].Zona135;Болото
+[Territories.Name].Zona136;Северо-восточная часть плато
+[Territories.Name].Zona137;Выезд из тоннеля
+[Territories.Name].Zona138;Тоннель
+[Territories.Name].Zona139;Депо
+[Territories.Name].Zona140;Переход на Агропром
+[Territories.Name].Zona141;Северный подход к комплексу
+[Territories.Name].Zona142;Восточная стоянка
+[Territories.Name].Zona143;Плато у болота
+[Territories.Name].Zona144;Мертвая стоянка
+[Territories.Name].Zona145;Подходы к Депо
+[Territories.Name].Zona146;Южная окраина
+[Territories.Name].Zona147;Комплекс
+[Territories.Name].Zona148;Гримпенская трясина
+[Territories.Name].Zona149;Дорога на Свалку
+[Territories.Name].Zona150;Развилка
+[Territories.Name].Zona151;Брошенный лагерь
+[Territories.Name].Zona152;Верхняя дорога
+[Territories.Name].Zona153;Старая тропа
+[Territories.Name].Zona154;Подземелье
+[Territories.Name].Zona155;Брошенная техника
+[Territories.Name].Zona156;Южная окраина
+[Territories.Name].Zona157;Восточная окраина
+[Territories.Name].Zona158;Нижняя дорога
+[Territories.Name].Zona159;Центральное плато
+[Territories.Name].Zona160;Северный вход
+[Territories.Name].Zona161;Ферма
+[Territories.Name].Zona162;Переход на Кордон
+[Territories.Name].Zona163;Южные холмы
+[Territories.Name].Zona164;Ангары
+[Territories.Name].Zona165;Брошенный вертолёт
+[Territories.Name].Zona166;Военная база
+[Territories.Name].Zona167;Южная окраина
+[Territories.Name].Zona168;Старая дорога
+[Territories.Name].Zona169;Северный КПП
+[Territories.Name].Zona170;Старая тропа
+[Territories.Name].Zona171;Перевернутый грузовик
+[Territories.Name].Zona172;Малая поляна
+[Territories.Name].Zona173;Хутор
+[Territories.Name].Zona174;Дальний переход через насыпь
+[Territories.Name].Zona175;Забытая тропа
+[Territories.Name].Zona176;Ферма
+[Territories.Name].Zona177;Северные холмы
+[Territories.Name].Zona178;Брошенный поезд
+[Territories.Name].Zona179;Тоннель под насыпью
+[Territories.Name].Zona180;Разрушенный мост
+[Territories.Name].Zona181;Южные холмы
+[Territories.Name].Zona182;Элеватор
+[Territories.Name].Zona183;Костёр в низине
+[Territories.Name].Zona184;Западные холмы
+[Territories.Name].Zona185;Восточная дорога
+[Territories.Name].Zona186;АТП
+[Territories.Name].Zona187;Тоннель
+[Territories.Name].Zona188;Свалка
+[Territories.Name].Zona189;Вагончик с мостом
+[Territories.Name].Zona190;Восточные холмы
+[Territories.Name].Zona191;Деревня
+[Territories.Name].Zona192;Восточная низина
+[Territories.Name].Zona193;Западная низина
+[Territories.Name].Zona194;Южный КПП
+[Locations.BunkerMonolith].Name;Бункер управления Монолитом
+[Locations.CHAES1].Name;ЧАЭС-1
+[Locations.LabX10].Name;Лаборатория X-10
+[Locations.LabX16].Name;Лаборатория X-16
+[Locations.LabX18].Name;Лаборатория X-18
+[Locations.PripyatCentral].Name;Припять
+[Locations.Radar].Name;Радар
+[Locations.Rostok].Name;Завод Росток
+[Locations.Sarcophagus].Name;Саркофаг
+[Locations.WildTerritory].Name;Дикая территория

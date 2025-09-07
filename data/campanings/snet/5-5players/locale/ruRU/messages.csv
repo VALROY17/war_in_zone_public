@@ -1,0 +1,60 @@
+﻿[SpecialEvents.BrainPsy].Name;Воздействие пси установки!
+[SpecialEvents.BrainPsy].Desc-Yes;Внимание! Из-за воздействия пси излучения мы понесли потери. Командование рекомендует проверить бойцов на проблемных территориях.
+[SpecialEvents.BrainPsy].Desc-No;Похоже, что из-за воздействий пси излучения на наших бойцов их разум пошатнулся, но они выдержали испытание. Потерь нет.
+[SpecialEvents.BrainPsyStatus].Name;Установка излучателя на локации
+[SpecialEvents.BrainPsyStatus].Desc-Yes;Внимание! Установка пси излучения на локации снова активна!
+[SpecialEvents.BrainPsyStatus].Desc-No;Внимание! Установка пси излучения на локации отключена!
+[Advisors.Advisor-Mutants-1].Name;Неизвестно
+[Advisors.Advisor-FirstGroup-1].Name;Неизвестно
+[Advisors.Advisor-SecondGroup-1].Name;Неизвестно
+[Advisors.Advisor-ThirdGroup-1].Name;Неизвестно
+[Advisors.Advisor-FourthGroup-1].Name;Неизвестно
+[Advisors.Advisor-FifthGroup-1].Name;Неизвестно
+[Advisors.Advisor-Zombie-1].Name;Неизвестно
+[Advisors.Advisor-Mutants-KolRazum].Name;Коллективный разум
+[Advisors.Advisor-FirstGroup-Balance-1].Name;Разведчик
+[Advisors.Advisor-FirstGroup-Balance-2].Name;Управленец
+[Advisors.Advisor-FirstGroup-Balance-3].Name;Боевик
+[Advisors.Advisor-FirstGroup-Balance-4].Name;Агитатор
+[Advisors.Advisor-FirstGroup-Gray].Name;Серый
+[Advisors.Advisor-FirstGroup-White].Name;Белый
+[Advisors.Advisor-FirstGroup-Black].Name;Тёмный
+[Advisors.Advisor-SecondGroup-Balance-1].Name;Разведчик
+[Advisors.Advisor-SecondGroup-Balance-2].Name;Управленец
+[Advisors.Advisor-SecondGroup-Balance-3].Name;Боевик
+[Advisors.Advisor-SecondGroup-Balance-4].Name;Агитатор
+[Advisors.Advisor-SecondGroup-Balance-5].Name;Серый
+[Advisors.Advisor-SecondGroup-White].Name;Белый
+[Advisors.Advisor-SecondGroup-Black].Name;Тёмный
+[Advisors.Advisor-ThirdGroup-Balance-1].Name;Разведчик
+[Advisors.Advisor-ThirdGroup-Balance-2].Name;Управленец
+[Advisors.Advisor-ThirdGroup-Balance-3].Name;Боевик
+[Advisors.Advisor-ThirdGroup-Balance-4].Name;Агитатор
+[Advisors.Advisor-ThirdGroup-Gray].Name;Серый
+[Advisors.Advisor-ThirdGroup-White].Name;Белый
+[Advisors.Advisor-ThirdGroup-Black].Name;Тёмный
+[Advisors.Advisor-FourthGroup-Balance-1].Name;Разведчик
+[Advisors.Advisor-FourthGroup-Balance-2].Name;Управленец
+[Advisors.Advisor-FourthGroup-Balance-3].Name;Боевик
+[Advisors.Advisor-FourthGroup-Balance-4].Name;Агитатор
+[Advisors.Advisor-FourthGroup-Gray].Name;Серый
+[Advisors.Advisor-FourthGroup-White].Name;Белый
+[Advisors.Advisor-FourthGroup-Black].Name;Тёмный
+[Advisors.Advisor-FifthGroup-Balance-1].Name;Разведчик
+[Advisors.Advisor-FifthGroup-Balance-2].Name;Управленец
+[Advisors.Advisor-FifthGroup-Balance-3].Name;Боевик
+[Advisors.Advisor-FifthGroup-Balance-4].Name;Агитатор
+[Advisors.Advisor-FifthGroup-Gray].Name;Серый
+[Advisors.Advisor-FifthGroup-White].Name;Белый
+[Advisors.Advisor-FifthGroup-Black].Name;Тёмный
+[Advisors.Advisor-Zombie-Kontroler].Name;Контролер
+[Traders.World].Name;Внешний мир
+[Traders.World].NeedText;Связь с внешним миром не всегда удается установить. Шанс 50%. Цена попытки установить связь:
+[Traders.YourGroup].Name;Торговец вашей группировки
+[Traders.YourGroup].NeedText;Вы всегда можете поторговать со своим торговцем. Цена:
+[Traders.OtherGroup].Name;Торговец чужой группировки
+[Traders.OtherGroup].NeedText;Чтобы торговать с чужими группировками сначала выберите на карте чужую территорию
+ScenarioName;5 игроков. Противостояние
+ScenarioDescription;Из-за последнего выброса образовались несколько телепортационных аномалий, которую ведут на эту странную локацию. Похоже, тут были не так давно пространственные аномальные шары или что-то похоже на них, которые перенесли сюда части зданий, руин, лесов и полян. Одинокие многоэтажки в полях, дороги ведущие в никуда и множество других странностей ждут сталкеров! Карта локации для игры на 5 игроков. Полностью зеркальный баланс, стороны имеют одинаковые стартовые условия. Данный сценарий не имеет ограничение по количеству ходов. Вам необходимо захватить всю локацию.
+ScenarioVictoryDescription;Условия победы: захватить все территории на карте и удержать их 1 ход.
+ScenarioLoseDescription;Условия поражения: потерять все подконтрольные территории.
