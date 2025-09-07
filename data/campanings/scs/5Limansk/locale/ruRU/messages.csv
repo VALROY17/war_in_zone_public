@@ -1,0 +1,487 @@
+﻿[Leaders.Leader-0].NameName;Неизвестно
+[Leaders.Leader-10].NameName;Генерал Лебедев
+[Leaders.Leader-7].NameName;Наёмник
+[Leaders.Leader-Chehov].NameName;Чехов
+[Leaders.Leader-General].NameName;Генерал
+[Leaders.Leader-Krylov].NameName;Генерал Крылов
+[Leaders.Leader-Monolith].NameName;Неизвестно
+[Leaders.Leader-Spectator].NameName;Неизвестно
+[Leaders.Leader-Yoga].NameName;Йога
+[Advisors.Advisor-Mutants-1].Name;Неизвестно
+[Advisors.Advisor-Bandits-1].Name;Неизвестно
+[Advisors.Advisor-Soldiers-1].Name;Неизвестно
+[Advisors.Advisor-Duty-1].Name;Неизвестно
+[Advisors.Advisor-Freedom-1].Name;Неизвестно
+[Advisors.Advisor-Monolith-1].Name;Неизвестно
+[Advisors.Advisor-Mercenaries-1].Name;Неизвестно
+[Advisors.Advisor-ClearSky-1].Name;Неизвестно
+[Advisors.Advisor-Zombie-1].Name;Неизвестно
+[Advisors.Advisor-Mutants-KolRazum].Name;Коллективный разум
+[Advisors.Advisor-Bandits-Chugun].Name;Чугун
+[Advisors.Advisor-Bandits-Borov].Name;Боров
+[Advisors.Advisor-Bandits-Zhivoder].Name;Живодёр
+[Advisors.Advisor-Bandits-Zub].Name;Зуб
+[Advisors.Advisor-Bandits-Prozrachniy].Name;Прозрачный
+[Advisors.Advisor-Bandits-Senka].Name;Сенька
+[Advisors.Advisor-Bandits-Father].Name;Отче
+[Advisors.Advisor-Soldiers-Capitan].Name;Капитан
+[Advisors.Advisor-Soldiers-Ovechko].Name;Семён Овечко
+[Advisors.Advisor-Soldiers-Specialist].Name;Специалист
+[Advisors.Advisor-Soldiers-Poproshayko].Name;Майор Попрошайко
+[Advisors.Advisor-Soldiers-Haleckiy].Name;Майор Халецкий
+[Advisors.Advisor-Soldiers-Sokolov].Name;Прапорщик Соколов
+[Advisors.Advisor-Duty-Zvyagincev].Name;Майор Звягинцев
+[Advisors.Advisor-Duty-Incvizitor].Name;Инквизитор
+[Advisors.Advisor-Duty-Nalivayko].Name;Сержант Наливайко
+[Advisors.Advisor-Duty-Fekl].Name;Фёкл
+[Advisors.Advisor-Duty-Kolobok].Name;Колобок
+[Advisors.Advisor-Duty-Sudar].Name;Сударь
+[Advisors.Advisor-Duty-Semen].Name;Семён Семёныч
+[Advisors.Advisor-Duty-Milutin].Name;Милютин
+[Advisors.Advisor-Duty-Gromov].Name;Громов
+[Advisors.Advisor-Duty-Mityay].Name;Митяй
+[Advisors.Advisor-Duty-Lis].Name;Лис Бандикут
+[Advisors.Advisor-Duty-Galin].Name;Галин
+[Advisors.Advisor-Duty-Serega].Name;Серёга
+[Advisors.Advisor-Freedom-Shukin].Name;Щукин
+[Advisors.Advisor-Freedom-Voron].Name;Ворон
+[Advisors.Advisor-Freedom-Ganzha].Name;Ганжа
+[Advisors.Advisor-Freedom-Yar].Name;Дядька Яр
+[Advisors.Advisor-Freedom-Kostuk].Name;Костюк
+[Advisors.Advisor-Freedom-Ashot].Name;Ашот
+[Advisors.Advisor-Freedom-Zhurnalist].Name;Журналист
+[Advisors.Advisor-Monolith-Propovednik].Name;Проповедник
+[Advisors.Advisor-Monolith-Molitvennik].Name;Молитвенник
+[Advisors.Advisor-Monolith-Messiya].Name;Мессия
+[Advisors.Advisor-Mercenaries-Hog].Name;Хог
+[Advisors.Advisor-Mercenaries-Leshiy].Name;Леший
+[Advisors.Advisor-Mercenaries-Shtyr].Name;Штырь
+[Advisors.Advisor-Mercenaries-Tancpol].Name;Витя Танцпол
+[Advisors.Advisor-Mercenaries-Avtobus].Name;Лёха Автобус
+[Advisors.Advisor-Mercenaries-Rzhaviy].Name;Валера Ржавый
+[Advisors.Advisor-Mercenaries-Shtirlic].Name;Толян Штирлиц
+[Advisors.Advisor-Mercenaries-Dollar].Name;"Иван ""Один доллар"""
+[Advisors.Advisor-Mercenaries-Plintus].Name;Тимур Плинтус
+[Advisors.Advisor-ClearSky-Kalancha].Name;Каланча
+[Advisors.Advisor-ClearSky-Suslov].Name;Суслов
+[Advisors.Advisor-ClearSky-Cold].Name;Холод
+[Advisors.Advisor-ClearSky-Faster].Name;Шустрый
+[Advisors.Advisor-ClearSky-Tropnik].Name;Иван Тропник
+[Advisors.Advisor-ClearSky-Petro].Name;Петро
+[Advisors.Advisor-ClearSky-Vasilenko].Name;Василенко
+[Advisors.Advisor-ClearSky-Petrenko].Name;Петренко
+[Advisors.Advisor-Zombie-Controler].Name;Контролер
+[Achievements.Achiv-1].Name;Вольный порыв
+[Achievements.Achiv-1].Desc;Получено новое достижение! Пережить уничтожение группировки Долг играя за Свободу на любом уровне сложности.
+[Achievements.Achiv-1].Desc-Logo;Пережить уничтожение группировки Долг играя за Свободу на любом уровне сложности.
+[Achievements.Achiv-2].Name;Должный порядок
+[Achievements.Achiv-2].Desc;Получено новое достижение! Пережить уничтожение группировки Свобода играя за Долг на уровне сложности опытный или выше.
+[Achievements.Achiv-2].Desc-Logo;Пережить уничтожение группировки Свобода играя за Долг на уровне сложности опытный или выше.
+[Achievements.Achiv-3].Name;День Л
+[Achievements.Achiv-3].Desc;Получено новое достижение! Захватить локацию Лиманск и удержать 1 ход до окончания сценария за группировку Военные на уровне сложности Ветеран или выше.
+[Achievements.Achiv-3].Desc-Logo;Захватить локацию Лиманск и удержать 1 ход до окончания сценария за группировку Военные на уровне сложности Ветеран или выше.
+[Achievements.Achiv-4].Name;Чикнул, Брикнул, Дамкнул!
+[Achievements.Achiv-4].Desc;Получено новое достижение! Захватить локацию Лиманск и удержать 1 ход до окончания сценария за группировку Бандиты на уровне сложности Мастер.
+[Achievements.Achiv-4].Desc-Logo;Захватить локацию Лиманск и удержать 1 ход до окончания сценария за группировку Бандиты на уровне сложности Мастер.
+[Achievements.Achiv-5].Name;Борец с нечестью!
+[Achievements.Achiv-5].Desc;Получено новое достижение! Принять идеологию Борьба с Зоной за группировку Военные на уровне сложности Мастер в течении 10 ходов с момента старта сценария.
+[Achievements.Achiv-5].Desc-Logo;Принять идеологию Борьба с Зоной за группировку Военные на уровне сложности Мастер в течении 10 ходов с момента старта сценария.
+[Achievements.Achiv-6].Name;Стабильный рэкет!
+[Achievements.Achiv-6].Desc;Получено новое достижение! Принять идеологию Стабильность за группировку Бандиты на уровне сложности Мастер в течении 20 ходов с момента старта сценария.
+[Achievements.Achiv-6].Desc-Logo;Принять идеологию Стабильность за группировку Бандиты на уровне сложности Мастер в течении 20 ходов с момента старта сценария.
+[Traders.World].Name;Внешний мир
+[Traders.World].NeedText;Связь с внешним миром не всегда удается установить. Цена попытки установить связь:
+[Traders.YourGroup].Name;Торговец вашей группировки
+[Traders.YourGroup].NeedText;Вы всегда можете поторговать со своим торговцем. Цена:
+[Traders.OtherGroup].Name;Торговец чужой группировки
+[Traders.OtherGroup].NeedText;Чтобы торговать с чужими группировками сначала выберите на карте чужую территорию
+[StoryEvents.Event-Info-1].Name;Местонахождение Шрама
+[StoryEvents.Event-Info-1].Desc-Owner;Шрам на пути к Лиманску. Его появление ожидается примерно через 15 ходов
+[StoryEvents.Event-Info-1].Desc-NonOwner;Шрам на пути к Лиманску. Его появление ожидается примерно через 15 ходов
+[StoryEvents.Event-Invasion-Mercenaries-1].Name;Наёмники
+[StoryEvents.Event-Invasion-Mercenaries-1].Desc-Owner;На территорию %0:s на локации %1:s вторглась группа Наёмников. Видимо %1:s теперь тоже им интересен!
+[StoryEvents.Event-Invasion-Mercenaries-1].Desc-NonOwner;На территорию %0:s на локации %1:s вторглась группа Наёмников. Видимо %1:s теперь тоже им интересен!
+[StoryEvents.Event-Info-2].Name;Шрам приближается
+[StoryEvents.Event-Info-2].Desc-Owner;К нам поступила информация, что собирается группа Чистого небо для штурма моста в Лиманск, который охраняют Ренегаты. Предполагается, что Шрам будет участвовать в этом штурме.
+[StoryEvents.Event-Info-2].Desc-NonOwner;К нам поступила информация, что собирается группа Чистого небо для штурма моста в Лиманск, который охраняют Ренегаты. Предполагается, что Шрам будет участвовать в этом штурме.
+[StoryEvents.Event-Info-3].Name;Бой на мосту
+[StoryEvents.Event-Info-3].Desc-Owner;К нам поступила информация, что на мосту в Лиманск идут бои Чистого неба и Ренегатов. Шрам принял участие на стороне Чистого неба
+[StoryEvents.Event-Info-3].Desc-NonOwner;К нам поступила информация, что на мосту в Лиманск идут бои Чистого неба и Ренегатов. Шрам принял участие на стороне Чистого неба
+[StoryEvents.Event-Info-4].Name;Мост захвачен
+[StoryEvents.Event-Info-4].Desc-Owner;Чистое небо захватило мост в Лиманск. На следующий ход они уже будут тут. По информации разведки, бойцы чистого небо не простые, а из элитного штурмового отряда и очень хорошо вооружены!
+[StoryEvents.Event-Info-4].Desc-NonOwner;Чистое небо захватило мост в Лиманск. На следующий ход они уже будут тут. По информации разведки, бойцы чистого небо не простые, а из элитного штурмового отряда и очень хорошо вооружены!
+[StoryEvents.Event-Limansk-1].Name;Шрам перемещается
+[StoryEvents.Event-Limansk-1].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Limansk-1].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Limansk-2].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Limansk-2].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Limansk-2].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-RemoveArmy-1].Name;Технический ивент №1
+[StoryEvents.Event-RemoveArmy-1].Desc-Owner;Если вы это видите, то это баг ивента Event-RemoveArmy-1
+[StoryEvents.Event-RemoveArmy-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-RemoveArmy-1
+[StoryEvents.Event-ChangeZonaOwner-ClearSky-1].Name;Чистое небо
+[StoryEvents.Event-ChangeZonaOwner-ClearSky-1].Desc-Owner;Вот черт! На нас оказывает давление группировка Чистое небо и угрожает войной. Нам пришлось уступить им территорию %0:s на локации %1:s
+[StoryEvents.Event-ChangeZonaOwner-ClearSky-1].Desc-NonOwner;К нам поступила информация, что территорией %0:s на локации %1:s теперь управляет группировка Чистое небо. Судя по всему боя небо, и, наверное, территория была получена ими иным способом.
+[StoryEvents.Event-AddArmy-1].Name;Технический ивент №2
+[StoryEvents.Event-AddArmy-1].Desc-Owner;Если вы это видите, то это баг ивента Event-AddArmy-1
+[StoryEvents.Event-AddArmy-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-AddArmy-1
+[StoryEvents.Event-Invasion-ClearSky-1].Name;Чистое небо
+[StoryEvents.Event-Invasion-ClearSky-1].Desc-Owner;На территорию %0:s на локации %1:s вторглась группа Чистого неба. Видимо %1:s теперь тоже им интересен!
+[StoryEvents.Event-Invasion-ClearSky-1].Desc-NonOwner;На территорию %0:s на локации %1:s вторглась группа Чистого неба. Видимо %1:s теперь тоже им интересен!
+[StoryEvents.Event-Limansk-3].Name;Шрам перемещается
+[StoryEvents.Event-Limansk-3].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Limansk-3].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Limansk-4].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Limansk-4].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Limansk-4].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Limansk-5].Name;Шрам перемещается
+[StoryEvents.Event-Limansk-5].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Limansk-5].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Limansk-6].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Limansk-6].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Limansk-6].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Limansk-7].Name;Шрам перемещается
+[StoryEvents.Event-Limansk-7].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Limansk-7].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Limansk-8].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Limansk-8].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Limansk-8].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Limansk-9].Name;Шрам перемещается
+[StoryEvents.Event-Limansk-9].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Limansk-9].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Limansk-10].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Limansk-10].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Limansk-10].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-RemoveArmy-2].Name;Технический ивент №3
+[StoryEvents.Event-RemoveArmy-2].Desc-Owner;Если вы это видите, то это баг ивента Event-RemoveArmy-2
+[StoryEvents.Event-RemoveArmy-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-RemoveArmy-2
+[StoryEvents.Event-ChangeZonaOwner-ClearSky-2].Name;Чистое небо
+[StoryEvents.Event-ChangeZonaOwner-ClearSky-2].Desc-Owner;Вот черт! На нас оказывает давление группировка Чистое небо и угрожает войной. Нам пришлось уступить им территорию %0:s на локации %1:s
+[StoryEvents.Event-ChangeZonaOwner-ClearSky-2].Desc-NonOwner;К нам поступила информация, что территорией %0:s на локации %1:s теперь управляет группировка Чистое небо. Судя по всему боя небо, и, наверное, территория была получена ими иным способом.
+[StoryEvents.Event-AddArmy-2].Name;Технический ивент №4
+[StoryEvents.Event-AddArmy-2].Desc-Owner;Если вы это видите, то это баг ивента Event-AddArmy-2
+[StoryEvents.Event-AddArmy-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-AddArmy-2
+[StoryEvents.Event-Invasion-ClearSky-2].Name;Чистое небо
+[StoryEvents.Event-Invasion-ClearSky-2].Desc-Owner;На территорию %0:s на локации %1:s вторглась группа Чистого неба. Видимо %1:s теперь тоже им интересен!
+[StoryEvents.Event-Invasion-ClearSky-2].Desc-NonOwner;На территорию %0:s на локации %1:s вторглась группа Чистого неба. Видимо %1:s теперь тоже им интересен!
+[StoryEvents.Event-Limansk-11].Name;Шрам перемещается
+[StoryEvents.Event-Limansk-11].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Limansk-11].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Limansk-12].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Limansk-12].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Limansk-12].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Limansk-13].Name;Шрам перемещается
+[StoryEvents.Event-Limansk-13].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Limansk-13].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Limansk-14].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Limansk-14].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Limansk-14].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Limansk-15].Name;Шрам перемещается
+[StoryEvents.Event-Limansk-15].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Limansk-15].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Limansk-16].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Limansk-16].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Limansk-16].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Limansk-17].Name;Шрам перемещается
+[StoryEvents.Event-Limansk-17].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Limansk-17].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Limansk-18].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Limansk-18].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Limansk-18].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-RemoveArmy-3].Name;Технический ивент №5
+[StoryEvents.Event-RemoveArmy-3].Desc-Owner;Если вы это видите, то это баг ивента Event-RemoveArmy-3
+[StoryEvents.Event-RemoveArmy-3].Desc-NonOwner;Если вы это видите, то это баг ивента Event-RemoveArmy-3
+[StoryEvents.Event-ChangeZonaOwner-ClearSky-3].Name;Чистое небо
+[StoryEvents.Event-ChangeZonaOwner-ClearSky-3].Desc-Owner;Вот черт! На нас оказывает давление группировка Чистое небо и угрожает войной. Нам пришлось уступить им территорию %0:s на локации %1:s
+[StoryEvents.Event-ChangeZonaOwner-ClearSky-3].Desc-NonOwner;К нам поступила информация, что территорией %0:s на локации %1:s теперь управляет группировка Чистое небо. Судя по всему боя небо, и, наверное, территория была получена ими иным способом.
+[StoryEvents.Event-AddArmy-3].Name;Технический ивент №6
+[StoryEvents.Event-AddArmy-3].Desc-Owner;Если вы это видите, то это баг ивента Event-AddArmy-3
+[StoryEvents.Event-AddArmy-3].Desc-NonOwner;Если вы это видите, то это баг ивента Event-AddArmy-3
+[StoryEvents.Event-Invasion-ClearSky-3].Name;Чистое небо
+[StoryEvents.Event-Invasion-ClearSky-3].Desc-Owner;На территорию %0:s на локации %1:s вторглась группа Чистого неба. Видимо %1:s теперь тоже им интересен!
+[StoryEvents.Event-Invasion-ClearSky-3].Desc-NonOwner;На территорию %0:s на локации %1:s вторглась группа Чистого неба. Видимо %1:s теперь тоже им интересен!
+[StoryEvents.Event-Limansk-19].Name;Шрам перемещается
+[StoryEvents.Event-Limansk-19].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Limansk-19].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Limansk-20].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Limansk-20].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Limansk-20].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Hospital-1].Name;Госпиталь
+[StoryEvents.Event-Hospital-1].Desc-Owner;К нам поступила информация, что идут бои в Госпиталя между Чистым небом и Монолитом
+[StoryEvents.Event-Hospital-1].Desc-NonOwner;К нам поступила информация, что идут бои в Госпиталя между Чистым небом и Монолитом
+[StoryEvents.Event-CHAES-0].Name;Близится развязка
+[StoryEvents.Event-CHAES-0].Desc-Owner;К нам поступила информация, что Шрам на пути к локации ЧАЭС, видимо скоро нас ждёт развязка событий!
+[StoryEvents.Event-CHAES-0].Desc-NonOwner;К нам поступила информация, что Шрам на пути к локации ЧАЭС, видимо скоро нас ждёт развязка событий!
+[StoryEvents.Event-CHAES-5].Name;Шрам почти настиг Стрелка
+[StoryEvents.Event-CHAES-5].Desc-Owner;К нам поступила информация, что идет бой на ЧАЭС. Похоже, что на следующий ход всё завершится.
+[StoryEvents.Event-CHAES-5].Desc-NonOwner;К нам поступила информация, что идет бой на ЧАЭС. Похоже, что на следующий ход всё завершится.
+[StoryEvents.Event-End-1].Name;Защита Стрелка была отключена
+[StoryEvents.Event-End-1].Desc-Owner;Шраму удалось отключить защиту Стрелка. По имеющейся информации из разных источников, отключение защиты Стрелка должно было остановить приближение Выброса, но видимо информация была ошибочной. Что же пошло не так?
+[StoryEvents.Event-End-1].Desc-NonOwner;К нам поступила информация, что на севере ЧАЭС наёмник почти догнал сталкера и даже смог отключить ему защиту. По имеющейся информации из разных источников, отключение защиты Стрелка должно было остановить приближение Выброса, но видимо информация была ошибочной. Что же пошло не так?
+[StoryEvents.Event-End-2].Name;План Стрелка провалился
+[StoryEvents.Event-End-2].Desc-Owner;Шраму удалось отключить защиту Стрелка. Необходимо убрать всех кто смог прорвать нашу оборону в Лиманске и оказался на ЧАЭС. Великий Монолит пошлёт на них Выброс. Неверные обречены!
+[StoryEvents.Event-End-2].Desc-NonOwner;К нам поступила информация, что на севере ЧАЭС наёмник почти догнал сталкера и даже смог отключить ему защиту. По имеющейся информации из разных источников, отключение защиты Стрелка должно было остановить приближение Выброса, но видимо информация была ошибочной. Что же пошло не так?
+ScenarioName;Битва за Лиманск. Чистое Небо
+ScenarioDescription;Близкий к лору сценарий, где события происходят ближе к концу оригинальной игры. Вам необходимо полностью захватить локацию Лиманск до того, как Шрам остановит Стрелка на ЧАЭС. У вас около 30 ходов. Дипломатия между группировками может иметь отличия от канона в процессе игры.
+ScenarioVictoryDescription;Условия победы: захватить все территории на карте и удержать их 1 ход.
+ScenarioLoseDescription;Условия поражения: потерять все подконтрольные территории или не выполнить условия победы примерно за 30 ходов.
+[Groups.bandits.:main].Spy1-Name;Новичок
+[Groups.bandits.:main].Spy2-Name;Опытный
+[Groups.bandits.:main].Spy3-Name;Ветеран
+[Groups.bandits.:main].Spy4-Name;Мастер
+[Groups.bandits.:main].Name;Бандиты
+[Groups.bandits.:main].Description;Бандиты – криминальная сторона Зоны. Имеют под своим контролем значительные территории ближе к югу Зоны. Несколько групп попали в Лиманск и теперь пытаются занять ключевые територии, чтобы позже группировка могла зарабатывать дополнительные деньги за проход по своей территории.
+[Groups.bandits.:main].DiplomacyText-Question-War;Ну, че фраер, допрыгался? Расчихляй валыну! Братва к тебе уже катит!
+[Groups.bandits.:main].DiplomacyText-Question-Neutral;Э-э-э! Братела, не суетись, а? Пора перестать шмалять друг-друга, лады?
+[Groups.bandits.:main].DiplomacyText-Question-Alliance;Э, Братела, давай союзничками будем? А? Там... шмалять вместе гавриков... Всё такое.. М? Лады?
+[Groups.bandits.:main].DiplomacyText-Question-BreakAlliance;Не, ну ты фраер, ну ты конкретный лох, теперь дальше каждый сам за себя!
+[Groups.bandits.:main].DiplomacyText-RequestMoney-Ask;Э, сышишь кореш, мелочи не подкинешь, а? Нам бы вот столько:
+[Groups.bandits.:main].DiplomacyText-Ans-0-Down;Ты на кого батон крошишь? Бычара, ты труп, ты понял?!
+[Groups.bandits.:main].DiplomacyText-Ans-1-Down;Ну ты это вообще не о чем, мля...
+[Groups.bandits.:main].DiplomacyText-Ans-1-No;Найдем - на меха порежем!
+[Groups.bandits.:main].DiplomacyText-Ans-1-Yes;Сышишь, мы тя не тронем, в натуре за базар отвечаю!
+[Groups.bandits.:main].DiplomacyText-Ans-2-No;Не, не, это нифига не то, ты гонишь!
+[Groups.bandits.:main].DiplomacyText-Ans-2-Yes;Держись, кореш, щас все будет пучком...
+[Groups.bandits.:main].DiplomacyText-RequestMoney-Ans-No;Ты че головой ударился? Откуда у нас такое бабло! Нам самим не помешало бы...
+[Groups.bandits.:main].DiplomacyText-RequestMoney-Ans-Yes;Братела, держи баблишко!
+[Groups.bandits.:main].DiplomacyText-Question-Neutral-No;Братела, ты, конечно, это зря! Не надо было так...
+[Groups.bandits.:main].DiplomacyText-Question-Neutral-Yes;А чо, братела, порадовал! Молодца...
+[Groups.bandits.:main].DiplomacyText-Question-Alliance-No;Братела, ты, конечно, это зря! Не надо было так...
+[Groups.bandits.:main].DiplomacyText-Question-Alliance-Yes;О, братела, отлично! Теперь вместе фраеров шмалять будем!
+[Groups.bandits.:main].Text-End-Standart-Victory;Победа! Группировка взяла Лиманск, но претерпела некоторые изменения в идеологическом плане. Вот-вот начнётся конфликт внутри между группой в Лиманске и основной частью группировки на почве виденья того как и куда идти дальше в своих целях и развитии. Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.bandits.:main].Text-End-Step-Victory;Вы выжили! Победа!
+[Groups.bandits.:main].Text-End-EventFlag-Victory;Победа по ивент флагу!
+[Groups.bandits.:main].Text-End-Standart-Lose;Группировка была полностью уничтожена, теперь Лиманск буду делить другие группировки. Поражение!
+[Groups.bandits.:main].Text-End-Step-Lose;Время истекло, Вы не смогли добиться контроля над Зоной. Поражение!
+[Groups.bandits.:main].Text-End-EventFlag-Lose;Вы не успели выполнить поставленные задачи! Поражение!
+[Groups.bandits.Crime].Text-End-Standart-Victory;Победа! Группировка взяла город и готовится к прорыву на ЧАЭС! Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.bandits.Crime].Text-End-Standart-Lose;Последний бандит поймал маслину. В Лиманске больше нет места криминальному миру... Поражение!
+[Groups.bandits.Crime].Text-End-Step-Lose;"Время истекло. Пацаны говорят, что ""бугор"" из тебя никакой... Поражение!"
+[Groups.bandits.Growth].Text-End-Standart-Victory;Победа! Группировка взяла Лиманск, но претерпела некоторые изменения в идеологическом плане. Вот-вот начнётся конфликт внутри между группой в Лиманске и основной частью группировки на почве виденья того как и куда идти дальше в своих целях и развитии. Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.bandits.Growth].Text-End-Standart-Lose;Последний бандит поймал маслину. В Лиманске больше нет места криминальному миру... Поражение!
+[Groups.bandits.Growth].Text-End-Step-Lose;"Время истекло. Пацаны говорят, что ""бугор"" из тебя никакой... Поражение!"
+[Groups.bandits.Unknow].Text-End-Standart-Victory;Победа! Группировка взяла Лиманск, но претерпела некоторые изменения в идеологическом плане. Вот-вот начнётся конфликт внутри между группой в Лиманске и основной частью группировки на почве виденья того как и куда идти дальше в своих целях и развитии. Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.bandits.Unknow].Text-End-Standart-Lose;Последний бандит поймал маслину. В Лиманске больше нет места криминальному миру... Поражение!
+[Groups.bandits.Unknow].Text-End-Step-Lose;"Время истекло. Пацаны говорят, что ""бугор"" из тебя никакой... Поражение!"
+[Groups.clearsky.:main].Spy1-Name;Охранник
+[Groups.clearsky.:main].Spy2-Name;Патрульный
+[Groups.clearsky.:main].Spy3-Name;Штурмовик
+[Groups.clearsky.:main].Spy4-Name;Элита
+[Groups.clearsky.:main].Name;Чистое Небо
+[Groups.clearsky.:main].Description;Чистое небо – мало кому известная группировка с сомнительными целями организованная подозрительными лицами. По некоторым слухам управляющий состав это выходцы из «Института», которые позднее стали О-Сознанием, но об этом практически никому не известно, поэтому к ним относятся достаточно лояльно. Проблемное расположение и слабое вооружение опытных бойцов потребуют от лидера продуманной тактики управления группировкой.
+[Groups.clearsky.:main].DiplomacyText-Question-War;Вы мешаете нам. Мы вас уничтожим!
+[Groups.clearsky.:main].DiplomacyText-Question-Neutral;Мы предлагаем перемирие. Вы согласны?
+[Groups.clearsky.:main].DiplomacyText-Question-Alliance;Мы предлагаем вам союз. Согласны?
+[Groups.clearsky.:main].DiplomacyText-Question-BreakAlliance;Союз с вами больше не входит в наши планы.
+[Groups.clearsky.:main].DiplomacyText-RequestMoney-Ask;Здравствуй! Нам необходима финансовая помощь суммой:
+[Groups.clearsky.:main].DiplomacyText-Ans-0-Down;Война, значит война!
+[Groups.clearsky.:main].DiplomacyText-Ans-1-Down;Очень жаль...
+[Groups.clearsky.:main].DiplomacyText-Ans-1-No;В этом нет необходимости.
+[Groups.clearsky.:main].DiplomacyText-Ans-1-Yes;Мы согласны на прекращение огня.
+[Groups.clearsky.:main].DiplomacyText-Ans-2-No;Мы уверены, что нам сейчас это не нужно.
+[Groups.clearsky.:main].DiplomacyText-Ans-2-Yes;Мы согласны на сотрудничество.
+[Groups.clearsky.:main].DiplomacyText-RequestMoney-Ans-No;Мы не сможем вам помочь на такую сумму.
+[Groups.clearsky.:main].DiplomacyText-RequestMoney-Ans-Yes;Хорошо, перевели сумму.
+[Groups.clearsky.:main].DiplomacyText-Question-Neutral-No;Жаль, война с вами не входила в наши планы.
+[Groups.clearsky.:main].DiplomacyText-Question-Neutral-Yes;Отлично, договорились.
+[Groups.clearsky.:main].DiplomacyText-Question-Alliance-No;Зря, у нас общие цели.
+[Groups.clearsky.:main].DiplomacyText-Question-Alliance-Yes;Отлично, а то эта война была ни кому из нас не нужна.
+[Groups.clearsky.:main].Text-End-Standart-Victory;Победа! Группировка взяла город и готовится к прорыву на ЧАЭС! Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.clearsky.:main].Text-End-Step-Victory;Вы выжили! Победа!
+[Groups.clearsky.:main].Text-End-EventFlag-Victory;Победа по ивент флагу!
+[Groups.clearsky.:main].Text-End-Standart-Lose;Ваша группировка полностью уничтожена в Лиманске и не смогла достичь своих целей. Из-за ее закрытости она не была на слуху у сталкеров, поэтому скоро о ней совсем забудут...
+[Groups.clearsky.:main].Text-End-Step-Lose;Время истекло, Вы не смогли добиться контроля над Зоной. Поражение!
+[Groups.clearsky.:main].Text-End-EventFlag-Lose;Вы не успели выполнить поставленные задачи! Поражение!
+[Groups.clearsky.Growth].Text-End-Standart-Victory;Победа! Группировка взяла город и готовится к прорыву на ЧАЭС! Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.clearsky.Growth].Text-End-Standart-Lose;Зона это опасное место. После уничтожения группы в Лиманске, командование решило, что больше не будет рисковать. Поражение!
+[Groups.clearsky.Stability].Text-End-Standart-Victory;Победа! Группировка взяла город и готовится к прорыву на ЧАЭС! Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.clearsky.Stability].Text-End-Standart-Lose;Ваша группировка полностью уничтожена в Лиманске. Чистое небо не смогло достичь своих целей. Все основные силы были потеряны в боях, а то что осталось на болотах потеряло боевой дух и решило покинуть группировку. Из-за закрытости Чистого неба она не была на слуху у сталкеров, поэтому скоро о ней совсем забудут...
+[Groups.clearsky.Unknow].Text-End-Standart-Victory;Победа! Группировка взяла город и готовится к прорыву на ЧАЭС! Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.clearsky.Unknow].Text-End-Standart-Lose;Зона это опасное место. После уничтожения группы Чистого неба в Лиманске, командование решило, что больше не будет рисковать. Поражение!
+[Groups.Duty.:main].Spy1-Name;Новичок
+[Groups.Duty.:main].Spy2-Name;Опытный
+[Groups.Duty.:main].Spy3-Name;Ветеран
+[Groups.Duty.:main].Spy4-Name;Мастер
+[Groups.Duty.:main].Name;Долг
+[Groups.Duty.:main].Description;Долг – цель группировки защитить мир от заразы Зоны. Достаточно мощная военизированная группировка. Неплохое расположение, хорошее вооружение и предрасположенность к борьбе с мутантами гарантируют успех в умелых руках.
+[Groups.Duty.:main].DiplomacyText-Question-War;Вы и ваша шайка угроза миру, пора с вами разобраться!
+[Groups.Duty.:main].DiplomacyText-Question-Neutral;Мы хотим заключить с вами перемирие, Вы cогласны?
+[Groups.Duty.:main].DiplomacyText-Question-Alliance;Мы предлагаем союз. Вместе мы сможем провернуть пару операций против наших врагов. Вы согласны?
+[Groups.Duty.:main].DiplomacyText-Question-BreakAlliance;Мы больше не будем сотрудничать!
+[Groups.Duty.:main].DiplomacyText-RequestMoney-Ask;Лишних денег не найдется? А то времена у нас тяжелые. Нам бы вот столько:
+[Groups.Duty.:main].DiplomacyText-Ans-0-Down;Понятно. И от тебя Зону отчистим!
+[Groups.Duty.:main].DiplomacyText-Ans-1-Down;Жа-а-аль, но раз Вы настаиваете, значит будет так.
+[Groups.Duty.:main].DiplomacyText-Ans-1-No;Нет, сейчас мы точно на это не пойдем.
+[Groups.Duty.:main].DiplomacyText-Ans-1-Yes;Мы надеемся на дальнейшее сотрудничество.
+[Groups.Duty.:main].DiplomacyText-Ans-2-No;Нет, сейчас мы точно на это не пойдем.
+[Groups.Duty.:main].DiplomacyText-Ans-2-Yes;Та-а-ак, отлично, по рукам!
+[Groups.Duty.:main].DiplomacyText-RequestMoney-Ans-No;Нет, мы пока не можем помогать.
+[Groups.Duty.:main].DiplomacyText-RequestMoney-Ans-Yes;Хорошо, мы Вам поможем.
+[Groups.Duty.:main].DiplomacyText-Question-Neutral-No;Ох и зря Вы отказались!
+[Groups.Duty.:main].DiplomacyText-Question-Neutral-Yes;Хорошо, это радует!
+[Groups.Duty.:main].DiplomacyText-Question-Alliance-No;Ох и зря Вы отказались!
+[Groups.Duty.:main].DiplomacyText-Question-Alliance-Yes;Хорошо, это радует!
+[Groups.Duty.:main].Text-End-Standart-Victory;Победа! Группировка взяла Лиманск, но претерпела некоторые изменения в идеологическом плане. Вот-вот начнётся конфликт внутри между группой в Лиманске и основной частью группировки на почве виденья того как и куда идти дальше в своих целях и развитии. Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.Duty.:main].Text-End-Step-Victory;Вы выжили! Победа!
+[Groups.Duty.:main].Text-End-EventFlag-Victory;Победа по ивент флагу!
+[Groups.Duty.:main].Text-End-Standart-Lose;Группировка была полностью уничтожена, теперь Лиманск буду делить другие группировки. Поражение!
+[Groups.Duty.:main].Text-End-Step-Lose;Время истекло, Вы не смогли добиться контроля над Зоной. Поражение!
+[Groups.Duty.:main].Text-End-EventFlag-Lose;Вы не успели выполнить поставленные задачи! Поражение!
+[Groups.Duty.AntiZone].Text-End-Standart-Victory;Победа! Группировка взяла город и готовится к прорыву на ЧАЭС! Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.Duty.AntiZone].Text-End-Standart-Lose;Ваша группировка полностью уничтожена в Лиманске. Долг решил сменить приоритеты и больше не лезть так далеко... Поражение!
+[Groups.Duty.Growth].Text-End-Standart-Lose;Ваша группировка полностью уничтожена в Лиманске. Последние долговцы разошлись кто куда не имея воли к борьбе за идеалы Долга. Поражение!
+[Groups.Duty.Unknow].Text-End-Standart-Victory;Победа! Группировка взяла Лиманск, но претерпела некоторые изменения в идеологическом плане. Вот-вот начнётся конфликт внутри между группой в Лиманске и основной частью группировки на почве виденья того как и куда идти дальше в своих целях и развитии. Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.Duty.Unknow].Text-End-Standart-Lose;Ваша группировка полностью уничтожена в Лиманске. Последние долговцы разошлись кто куда не имея воли к борьбе за идеалы Долга. Поражение!
+[Groups.freedom.:main].Spy1-Name;Новичок
+[Groups.freedom.:main].Spy2-Name;Опытный
+[Groups.freedom.:main].Spy3-Name;Ветеран
+[Groups.freedom.:main].Spy4-Name;Мастер
+[Groups.freedom.:main].Name;Свобода
+[Groups.freedom.:main].Description;Свобода – анархистская группировка, которая враждебно относится к правительственным войскам и исследовательским группам. Неплохое расположение, опытные бойцы, которые, к тому же, хорошо вооруженные... Практически идеальный рецепт успешной группировки в умелых руках.
+[Groups.freedom.:main].DiplomacyText-Question-War;Ну, мэн, готовься! Мы идем за тобой и твоими ребятами.
+[Groups.freedom.:main].DiplomacyText-Question-Neutral;Чувак, может на мировую, а?
+[Groups.freedom.:main].DiplomacyText-Question-Alliance;Чел, как насчет союза? Что думаешь?
+[Groups.freedom.:main].DiplomacyText-Question-BreakAlliance;Чувак, сорян-ба, Но наши дороги расходятся.
+[Groups.freedom.:main].DiplomacyText-RequestMoney-Ask;Хай, мэн! Свободе не хватает свободных деньжат... Не подкинешь ли нам сумму в таком размере:
+[Groups.freedom.:main].DiplomacyText-Ans-0-Down;Вот гробы-то подорожают!
+[Groups.freedom.:main].DiplomacyText-Ans-1-Down;О-о-о... Всё с тобой понятно, ну и ладно.
+[Groups.freedom.:main].DiplomacyText-Ans-1-No;Не, мы не согласны.
+[Groups.freedom.:main].DiplomacyText-Ans-1-Yes;Окей, договорились!
+[Groups.freedom.:main].DiplomacyText-Ans-2-No;Не, чувак, мы сейчас точно пас.
+[Groups.freedom.:main].DiplomacyText-Ans-2-Yes;О-о-о, ништяк, замётано!
+[Groups.freedom.:main].DiplomacyText-RequestMoney-Ans-No;Мэн, не, ты чего? Мы такой кэш не готовы сейчас подкинуть...
+[Groups.freedom.:main].DiplomacyText-RequestMoney-Ans-Yes;Чувак, не вопрос! Уже перевели!
+[Groups.freedom.:main].DiplomacyText-Question-Neutral-No;Мэн, эт плохая новость...
+[Groups.freedom.:main].DiplomacyText-Question-Neutral-Yes;Чувак, эт отличный ньюс!
+[Groups.freedom.:main].DiplomacyText-Question-Alliance-No;О-о-о... Всё с тобой понятно, ну и ладно.
+[Groups.freedom.:main].DiplomacyText-Question-Alliance-Yes;Мэн, это отлично!
+[Groups.freedom.:main].Text-End-Standart-Victory;Победа! Группировка взяла Лиманск, но претерпела некоторые изменения в идеологическом плане. Вот-вот начнётся конфликт внутри между группой в Лиманске и основной частью группировки на почве виденья того как и куда идти дальше в своих целях и развитии. Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.freedom.:main].Text-End-Step-Victory;Вы выжили! Победа!
+[Groups.freedom.:main].Text-End-EventFlag-Victory;Победа по ивент флагу!
+[Groups.freedom.:main].Text-End-Standart-Lose;Группировка была полностью уничтожена, теперь Лиманск буду делить другие группировки. Поражение!
+[Groups.freedom.:main].Text-End-Step-Lose;Время истекло, Вы не смогли добиться контроля над Зоной. Поражение!
+[Groups.freedom.:main].Text-End-EventFlag-Lose;Вы не успели выполнить поставленные задачи! Поражение!
+[Groups.freedom.Anarchy].Text-End-Standart-Victory;Победа! Группировка взяла город и готовится к прорыву на ЧАЭС! Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.freedom.Anarchy].Text-End-Standart-Lose;Ваша группировка полностью уничтожена в Лиманске. Группировка решила больше не ввязываться в авантюры, перенести базу на Армейские склады и укрепиться там в глухой обороне. Поражение!
+[Groups.freedom.Growth].Text-End-Standart-Victory;Победа! Группировка взяла Лиманск, но претерпела некоторые изменения в идеологическом плане. Вот-вот начнётся конфликт внутри между группой в Лиманске и основной частью группировки на почве виденья того как и куда идти дальше в своих целях и развитии. Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.freedom.Growth].Text-End-Standart-Lose;Ваша группировка полностью уничтожена в Лиманске. Последние свободовцы разошлись кто куда не имея воли к борьбе за идеалы Свободы. Поражение!
+[Groups.freedom.Unknow].Text-End-Standart-Victory;Победа! Группировка взяла Лиманск, но претерпела некоторые изменения в идеологическом плане. Вот-вот начнётся конфликт внутри между группой в Лиманске и основной частью группировки на почве виденья того как и куда идти дальше в своих целях и развитии. Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.freedom.Unknow].Text-End-Standart-Lose;Ваша группировка полностью уничтожена в Лиманск. Последние свободовцы разошлись кто куда не имея воли к борьбе за идеалы Свободы. Поражение!
+[Groups.Mercenaries.:main].Spy1-Name;Новичок
+[Groups.Mercenaries.:main].Spy2-Name;Опытный
+[Groups.Mercenaries.:main].Spy3-Name;Ветеран
+[Groups.Mercenaries.:main].Spy4-Name;Мастер
+[Groups.Mercenaries.:main].Name;Наёмники
+[Groups.Mercenaries.:main].Description;Наёмники – достаточно скрытная военизированная группировка со специализацией на выполнении каких-либо заказов поступивших как из самой Зоны, так и извне. Имеет не самое удобное расположение для контроля своих территорий, поэтому целью лидера скорее всего станет смена базы группировки на более продуманную и удобную.
+[Groups.Mercenaries.:main].DiplomacyText-Question-War;На вас поступил заказ. Ничего личного. Только бизнес.
+[Groups.Mercenaries.:main].DiplomacyText-Question-Neutral;Нам обоим эта война не выгодна. Как на счет мира?
+[Groups.Mercenaries.:main].DiplomacyText-Question-Alliance;Нам было бы выгодно более тесное сотрудничество с вами. Согласны?
+[Groups.Mercenaries.:main].DiplomacyText-Question-BreakAlliance;Мы больше не будем сотрудничать с вами.
+[Groups.Mercenaries.:main].DiplomacyText-RequestMoney-Ask;У нас тут парочка накладок вышла с кое-какими контрактами. Нам бы финансовую помощь в таком вот размере:
+[Groups.Mercenaries.:main].DiplomacyText-Ans-0-Down;Больше дел с вами вести не будем!
+[Groups.Mercenaries.:main].DiplomacyText-Ans-1-Down;Печально, вы упускаете свою выгоду.
+[Groups.Mercenaries.:main].DiplomacyText-Ans-1-No;Сейчас нам это не выгодно.
+[Groups.Mercenaries.:main].DiplomacyText-Ans-1-Yes;Хорошо, надеемся на взаимовыгодное партнерство.
+[Groups.Mercenaries.:main].DiplomacyText-Ans-2-No;В данный момент нам это не выгодно.
+[Groups.Mercenaries.:main].DiplomacyText-Ans-2-Yes;Ок, нам это выгодно.
+[Groups.Mercenaries.:main].DiplomacyText-RequestMoney-Ans-No;У нас сейчас не так много премиальных с контрактов, так что помочь не сможем.
+[Groups.Mercenaries.:main].DiplomacyText-RequestMoney-Ans-Yes;Ладно, перевели.
+[Groups.Mercenaries.:main].DiplomacyText-Question-Neutral-No;Отказались? Ну и ладно.
+[Groups.Mercenaries.:main].DiplomacyText-Question-Neutral-Yes;Отлично, хорошо что Вы согласились!
+[Groups.Mercenaries.:main].DiplomacyText-Question-Alliance-No;Отказались? Ну и ладно.
+[Groups.Mercenaries.:main].DiplomacyText-Question-Alliance-Yes;Отлично, хорошо что Вы согласились!
+[Groups.Mercenaries.:main].Text-End-Standart-Victory;Победа! Группировка взяла Лиманск, но претерпела некоторые изменения в идеологическом плане. Вот-вот начнётся конфликт внутри между группой в Лиманске и основной частью группировки на почве виденья того как и куда идти дальше в своих целях и развитии. Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.Mercenaries.:main].Text-End-Step-Victory;Вы выжили! Победа!
+[Groups.Mercenaries.:main].Text-End-EventFlag-Victory;Победа по ивент флагу!
+[Groups.Mercenaries.:main].Text-End-Standart-Lose;Группировка была полностью уничтожена, теперь Лиманск буду делить другие группировки. Поражение!
+[Groups.Mercenaries.:main].Text-End-Step-Lose;Время истекло, Вы не смогли добиться контроля над Зоной. Поражение!
+[Groups.Mercenaries.:main].Text-End-EventFlag-Lose;Вы не успели выполнить поставленные задачи! Поражение!
+[Groups.Mercenaries.Mercenary].Text-End-Standart-Victory;Победа! Группировка взяла город и готовится к прорыву на ЧАЭС! Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.Mercenaries.Mercenary].Text-End-Standart-Lose;"Ваша группировка полностью уничтожена в Лиманске. Заказчики в ярости. Группировка вынуждена выплачивать неустойки... Похоже, группировке больше не видать ""серьезных"" контрактов. Поражение!"
+[Groups.monolith.:main].Spy1-Name;Послушник
+[Groups.monolith.:main].Spy2-Name;Фанатик
+[Groups.monolith.:main].Spy3-Name;Ветеран
+[Groups.monolith.:main].Spy4-Name;Элита
+[Groups.monolith.:main].Name;Монолит
+[Groups.monolith.:main].Description;Монолит – группировка, служащая щитом О-Сознания. Главная цель – защита Зоны от какого-либо внешнего вмешательства. Крайне враждебна к любым другим группировкам. Несмотря на преимущество в вооружении имеет проблемы с контролем своих территорий, так как расположена на севере Зоны.
+[Groups.monolith.:main].DiplomacyText-Question-War;Найти и искоренить!
+[Groups.monolith.:main].DiplomacyText-Question-Neutral;Монолит повелел нам заключить с вами мир. Вы согласны или как?
+[Groups.monolith.:main].DiplomacyText-Question-Alliance;Монолит велел нам стать вашими друзьями.
+[Groups.monolith.:main].DiplomacyText-Question-BreakAlliance;Монолит недоволен нашим союзом!
+[Groups.monolith.:main].DiplomacyText-RequestMoney-Ask;По воле Великого Монолита мы отправяем вам запрос на денежный перевод для наших братьев в таком вот размере:
+[Groups.monolith.:main].DiplomacyText-Ans-0-Down;Обнаружить и искоренить! *Собеседник добавил вас в черный список*
+[Groups.monolith.:main].DiplomacyText-Ans-1-Down;Такое Монолит точно не одобрит! *Собеседник удалил вас из друзей*
+[Groups.monolith.:main].DiplomacyText-Ans-1-No;Ты познаешь гнев Монолита! *Собеседник вышел из чата*
+[Groups.monolith.:main].DiplomacyText-Ans-1-Yes;И придет день, и Монолит вновь воссияет во славе своей! *Собеседник вышел из чата*
+[Groups.monolith.:main].DiplomacyText-Ans-2-No;Монолит точно не даст согласия своего. *Собеседник вышел из чата*
+[Groups.monolith.:main].DiplomacyText-Ans-2-Yes;Никому не верь кроме Монолита и братьев его, никому. *Собеседник добавил вас в друзья*
+[Groups.monolith.:main].DiplomacyText-RequestMoney-Ans-No;Монолит сказал не проявлять милосердие к неверным! *Собеседник исключил вас из чата*
+[Groups.monolith.:main].DiplomacyText-RequestMoney-Ans-Yes;Монолит велел проявить жалость к слепцам и сделать вам денежный перевод.
+[Groups.monolith.:main].DiplomacyText-Question-Neutral-No;Тогда мы вас найдем и уничтожим!
+[Groups.monolith.:main].DiplomacyText-Question-Neutral-Yes;Иначе и не могло быть. Всё по воле Великого Монолита!
+[Groups.monolith.:main].DiplomacyText-Question-Alliance-No;Зря вы не следуете воле Монолита.
+[Groups.monolith.:main].DiplomacyText-Question-Alliance-Yes;Да возрадуются братья наши и ужаснутся наши враги!
+[Groups.monolith.:main].Text-End-Step-Victory;Вы выжили! Победа!
+[Groups.monolith.:main].Text-End-EventFlag-Victory;Победа по ивент флагу!
+[Groups.monolith.:main].Text-End-Standart-Lose;Группировка была полностью уничтожена, теперь Лиманск буду делить другие группировки. Поражение!
+[Groups.monolith.:main].Text-End-Step-Lose;Время истекло, Вы не смогли добиться контроля над Зоной. Поражение!
+[Groups.monolith.:main].Text-End-EventFlag-Lose;Вы не успели выполнить поставленные задачи! Поражение!
+[Groups.monolith.Anarchy].Text-End-Standart-Victory;Победа! Группировка взяла Лиманск, но претерпела некоторые изменения в идеологическом плане. Вот-вот начнётся конфликт внутри между группой в Лиманске и основной частью группировки на почве виденья того как и куда идти дальше в своих целях и развитии. Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.monolith.AntiZone].Text-End-Standart-Victory;Победа! Группировка взяла Лиманск, но претерпела некоторые изменения в идеологическом плане. Вот-вот начнётся конфликт внутри между группой в Лиманске и основной частью группировки на почве виденья того как и куда идти дальше в своих целях и развитии. Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.monolith.Control].Text-End-Standart-Victory;Победа! Группировка взяла Лиманск, но претерпела некоторые изменения в идеологическом плане. Вот-вот начнётся конфликт внутри между группой в Лиманске и основной частью группировки на почве виденья того как и куда идти дальше в своих целях и развитии. Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.monolith.Crime].Text-End-Standart-Victory;Победа! Группировка взяла Лиманск, но претерпела некоторые изменения в идеологическом плане. Вот-вот начнётся конфликт внутри между группой в Лиманске и основной частью группировки на почве виденья того как и куда идти дальше в своих целях и развитии. Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.monolith.Exploring].Text-End-Standart-Victory;Победа! Группировка взяла Лиманск, но претерпела некоторые изменения в идеологическом плане. Вот-вот начнётся конфликт внутри между группой в Лиманске и основной частью группировки на почве виденья того как и куда идти дальше в своих целях и развитии. Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.monolith.Growth].Text-End-Standart-Victory;Победа! Группировка взяла Лиманск, но претерпела некоторые изменения в идеологическом плане. Вот-вот начнётся конфликт внутри между группой в Лиманске и основной частью группировки на почве виденья того как и куда идти дальше в своих целях и развитии. Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.monolith.Growth].Text-End-Standart-Lose;"О-сознание в панике. Ее верный пёс - группировка Монолит - полностью уничтожена в Лиманске! Уже разрабатывается новый план по защите важных персон ""Института"""
+[Groups.monolith.Mercenary].Text-End-Standart-Victory;Победа! Группировка взяла Лиманск, но претерпела некоторые изменения в идеологическом плане. Вот-вот начнётся конфликт внутри между группой в Лиманске и основной частью группировки на почве виденья того как и куда идти дальше в своих целях и развитии. Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.monolith.Sectarianism].Text-End-Standart-Victory;Победа! Группировка взяла город и остановила попытку прорыва к ЧАЭС! Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.monolith.Sectarianism].Text-End-Standart-Lose;"О-сознание в панике. Ее верный пёс - группировка Монолит - полностью уничтожена в Лиманске! Готовится ""последний заслон"" в Госпитале..."
+[Groups.monolith.Stability].Text-End-Standart-Victory;Победа! Группировка взяла Лиманск, но претерпела некоторые изменения в идеологическом плане. Вот-вот начнётся конфликт внутри между группой в Лиманске и основной частью группировки на почве виденья того как и куда идти дальше в своих целях и развитии. Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.monolith.Stalkers].Text-End-Standart-Victory;Победа! Группировка взяла Лиманск, но претерпела некоторые изменения в идеологическом плане. Вот-вот начнётся конфликт внутри между группой в Лиманске и основной частью группировки на почве виденья того как и куда идти дальше в своих целях и развитии. Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.monolith.Unknow].Text-End-Standart-Victory;Победа! Группировка взяла Лиманск, но претерпела некоторые изменения в идеологическом плане. Вот-вот начнётся конфликт внутри между группой в Лиманске и основной частью группировки на почве виденья того как и куда идти дальше в своих целях и развитии. Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.monolith.Unknow].Text-End-Standart-Lose;"О-сознание в панике. Ее верный пёс - группировка Монолит - полностью уничтожена в Лиманске! Уже разрабатывается новый план по защите важных персон ""Института"""
+[Groups.monolith.Zombie].Text-End-Standart-Victory;Победа! Группировка взяла Лиманск, но претерпела некоторые изменения в идеологическом плане. Вот-вот начнётся конфликт внутри между группой в Лиманске и основной частью группировки на почве виденья того как и куда идти дальше в своих целях и развитии. Остальные же группировки, похоже, пока что взяли передышку, так как битва за Лиманск оказалась слишком кровавой...
+[Groups.soldiers.:main].Spy1-Name;Сержант
+[Groups.soldiers.:main].Spy2-Name;Лейтенант
+[Groups.soldiers.:main].Spy3-Name;Капитан
+[Groups.soldiers.:main].Spy4-Name;Майор
+[Groups.soldiers.:main].Name;Военные
+[Groups.soldiers.:main].Description;Военные – государственные силы на территории Зоны. Считают своими врагами всё живое внутри периметра кроме Ученых. Имеют отличную амуницию в плане борьбы с любыми сталкерами, однако, плохо приспособлены к аномальным порождениям Зоны.
+[Groups.soldiers.:main].DiplomacyText-Question-War;Ваше нахождение в Зоне теперь считается незаконным. Попадетёсь - расстрел на месте!
+[Groups.soldiers.:main].DiplomacyText-Question-Neutral;Командование считает, что нам нужно снизить оперативную активность. Как насчет перемирия?
+[Groups.soldiers.:main].DiplomacyText-Question-Alliance;Командование считает, что нам нужен союзник в Зоне для проведения операций. Вы согласны?
+[Groups.soldiers.:main].DiplomacyText-Question-BreakAlliance;Мы больше не будем сотрудничать!
+[Groups.soldiers.:main].DiplomacyText-RequestMoney-Ask;Правительственным силам требуется финансовое содействие на новый особняк генерал.. Кхм. На... На выполнение особых задач вот в таком размере. Поможите?
+[Groups.soldiers.:main].DiplomacyText-Ans-0-Down;Да мы тебя в порошок сотрём!
+[Groups.soldiers.:main].DiplomacyText-Ans-1-Down;Это еще как понимать?
+[Groups.soldiers.:main].DiplomacyText-Ans-1-No;Нет, мы не можем закрыть глаза на ваше присутствие в Зоне.
+[Groups.soldiers.:main].DiplomacyText-Ans-1-Yes;Ладно, мы закроем глаза на ваше присутствие в Зоне...
+[Groups.soldiers.:main].DiplomacyText-Ans-2-No;Нет, мы не можем закрыть глаза на ваше присутствие в Зоне.
+[Groups.soldiers.:main].DiplomacyText-Ans-2-Yes;Армии нужен союзник в Зоне. Хорошо, мы согласны.
+[Groups.soldiers.:main].DiplomacyText-RequestMoney-Ans-No;Нет, мы не оказываем финансовую помощь!
+[Groups.soldiers.:main].DiplomacyText-RequestMoney-Ans-Yes;Да, начальство согласилось помочь вам с финансами
+[Groups.soldiers.:main].DiplomacyText-Question-Neutral-No;Отказались? Ну.. Это Вы зря!
+[Groups.soldiers.:main].DiplomacyText-Question-Neutral-Yes;Отлично, хорошо что Вы согласились!
+[Groups.soldiers.:main].DiplomacyText-Question-Alliance-No;Отказались? Ну.. Это Вы зря!
+[Groups.soldiers.:main].DiplomacyText-Question-Alliance-Yes;Отлично, хорошо что Вы согласились!
+[Groups.soldiers.:main].Text-End-Standart-Victory;Победа! Правительство взяло под контроль Лиманск, но достаточно быстро потеряла связь с отрядами в городе. Командующий при поддержке своих бойцов решил дезертировать и основать новую группировку, в которую сразу же вошло большинство бывших бойцов. Несогласных отправили на дно кормить рыб. Строились планы, планировались захваты ключевых маршрутов для обогащения, но вскоре грянул мощнейший Выброс и Лиманск стал вновь «закрытым» городом, а бойцов-дезертиров больше ни кто и ни когда не видел…
+[Groups.soldiers.:main].Text-End-Step-Victory;Вы выжили! Победа!
+[Groups.soldiers.:main].Text-End-EventFlag-Victory;Победа по ивент флагу!
+[Groups.soldiers.:main].Text-End-Standart-Lose;Группировка была полностью уничтожена, теперь Лиманск буду делить другие группировки. Поражение!
+[Groups.soldiers.:main].Text-End-Step-Lose;Время истекло, Вы не смогли добиться контроля над Зоной. Вы разжалованы. Поражение!
+[Groups.soldiers.:main].Text-End-EventFlag-Lose;Вы не успели выполнить поставленные задачи! Поражение!
+[Groups.soldiers.Anarchy].Text-End-Standart-Victory;Победа! Правительство взяло под контроль Лиманск, но достаточно быстро потеряла связь с отрядами в городе. Командующий при поддержке своих бойцов решил дезертировать и основать новую группировку, в которую сразу же вошло большинство бывших бойцов. Несогласных отправили на дно кормить рыб. Строились планы, планировались захваты ключевых маршрутов для обогащения, но вскоре грянул мощнейший Выброс и Лиманск стал вновь «закрытым» городом, а бойцов-дезертиров больше ни кто и ни когда не видел…
+[Groups.soldiers.AntiZone].Text-End-Standart-Victory;Победа! Правительство взяло под контроль Лиманск, но достаточно быстро потеряла связь с отрядами в городе. Командующий при поддержке своих бойцов решил дезертировать и основать новую группировку, в которую сразу же вошло большинство бывших бойцов. Несогласных отправили на дно кормить рыб. Строились планы, планировались захваты ключевых маршрутов для обогащения, но вскоре грянул мощнейший Выброс и Лиманск стал вновь «закрытым» городом, а бойцов-дезертиров больше ни кто и ни когда не видел…
+[Groups.soldiers.Control].Text-End-Standart-Victory;Победа! Правительство взяло под контроль Лиманск, но вскоре грянул мощнейший Выброс и Лиманск стал вновь «закрытым» городом, а бойцов больше ни кто и ни когда не видел…
+[Groups.soldiers.Control].Text-End-Standart-Lose;Военных в Лиманске не осталось... Теперь неизвестно чем всё кончится без правительственных сил. Вы разжалованы за провал! Поражение!
+[Groups.soldiers.Crime].Text-End-Standart-Victory;Победа! Правительство взяло под контроль Лиманск, но достаточно быстро потеряла связь с отрядами в городе. Командующий при поддержке своих бойцов решил дезертировать и основать новую группировку, в которую сразу же вошло большинство бывших бойцов. Несогласных отправили на дно кормить рыб. Строились планы, планировались захваты ключевых маршрутов для обогащения, но вскоре грянул мощнейший Выброс и Лиманск стал вновь «закрытым» городом, а бойцов-дезертиров больше ни кто и ни когда не видел…
+[Groups.soldiers.Exploring].Text-End-Standart-Victory;Победа! Правительство взяло под контроль Лиманск, но достаточно быстро потеряла связь с отрядами в городе. Командующий при поддержке своих бойцов решил дезертировать и основать новую группировку, в которую сразу же вошло большинство бывших бойцов. Несогласных отправили на дно кормить рыб. Строились планы, планировались захваты ключевых маршрутов для обогащения, но вскоре грянул мощнейший Выброс и Лиманск стал вновь «закрытым» городом, а бойцов-дезертиров больше ни кто и ни когда не видел…
+[Groups.soldiers.Growth].Text-End-Standart-Victory;Победа! Правительство взяло под контроль Лиманск, но достаточно быстро потеряла связь с отрядами в городе. Командующий при поддержке своих бойцов решил дезертировать и основать новую группировку, в которую сразу же вошло большинство бывших бойцов. Несогласных отправили на дно кормить рыб. Строились планы, планировались захваты ключевых маршрутов для обогащения, но вскоре грянул мощнейший Выброс и Лиманск стал вновь «закрытым» городом, а бойцов-дезертиров больше ни кто и ни когда не видел…
+[Groups.soldiers.Growth].Text-End-Standart-Lose;Военных в Лиманск не осталось... Теперь неизвестно чем всё кончится без правительственных сил. Вы разжалованы за провал! Поражение!
+[Groups.soldiers.Mercenary].Text-End-Standart-Victory;Победа! Правительство взяло под контроль Лиманск, но достаточно быстро потеряла связь с отрядами в городе. Командующий при поддержке своих бойцов решил дезертировать и основать новую группировку, в которую сразу же вошло большинство бывших бойцов. Несогласных отправили на дно кормить рыб. Строились планы, планировались захваты ключевых маршрутов для обогащения, но вскоре грянул мощнейший Выброс и Лиманск стал вновь «закрытым» городом, а бойцов-дезертиров больше ни кто и ни когда не видел…
+[Groups.soldiers.Sectarianism].Text-End-Standart-Victory;Победа! Правительство взяло под контроль Лиманск, но достаточно быстро потеряла связь с отрядами в городе. Командующий при поддержке своих бойцов решил дезертировать и основать новую группировку, в которую сразу же вошло большинство бывших бойцов. Несогласных отправили на дно кормить рыб. Строились планы, планировались захваты ключевых маршрутов для обогащения, но вскоре грянул мощнейший Выброс и Лиманск стал вновь «закрытым» городом, а бойцов-дезертиров больше ни кто и ни когда не видел…
+[Groups.soldiers.Stability].Text-End-Standart-Victory;Победа! Правительство взяло под контроль Лиманск, но достаточно быстро потеряла связь с отрядами в городе. Командующий при поддержке своих бойцов решил дезертировать и основать новую группировку, в которую сразу же вошло большинство бывших бойцов. Несогласных отправили на дно кормить рыб. Строились планы, планировались захваты ключевых маршрутов для обогащения, но вскоре грянул мощнейший Выброс и Лиманск стал вновь «закрытым» городом, а бойцов-дезертиров больше ни кто и ни когда не видел…
+[Groups.soldiers.Stalkers].Text-End-Standart-Victory;Победа! Правительство взяло под контроль Лиманск, но достаточно быстро потеряла связь с отрядами в городе. Командующий при поддержке своих бойцов решил дезертировать и основать новую группировку, в которую сразу же вошло большинство бывших бойцов. Несогласных отправили на дно кормить рыб. Строились планы, планировались захваты ключевых маршрутов для обогащения, но вскоре грянул мощнейший Выброс и Лиманск стал вновь «закрытым» городом, а бойцов-дезертиров больше ни кто и ни когда не видел…
+[Groups.soldiers.Unknow].Text-End-Standart-Victory;Победа! Правительство взяло под контроль Лиманск, но достаточно быстро потеряла связь с отрядами в городе. Командующий при поддержке своих бойцов решил дезертировать и основать новую группировку, в которую сразу же вошло большинство бывших бойцов. Несогласных отправили на дно кормить рыб. Строились планы, планировались захваты ключевых маршрутов для обогащения, но вскоре грянул мощнейший Выброс и Лиманск стал вновь «закрытым» городом, а бойцов-дезертиров больше ни кто и ни когда не видел…
+[Groups.soldiers.Unknow].Text-End-Standart-Lose;Военных в Лиманск не осталось... Теперь неизвестно чем всё кончится без правительственных сил. Вы разжалованы за провал! Поражение!
+[Groups.soldiers.Zombie].Text-End-Standart-Victory;Победа! Правительство взяло под контроль Лиманск, но достаточно быстро потеряла связь с отрядами в городе. Командующий при поддержке своих бойцов решил дезертировать и основать новую группировку, в которую сразу же вошло большинство бывших бойцов. Несогласных отправили на дно кормить рыб. Строились планы, планировались захваты ключевых маршрутов для обогащения, но вскоре грянул мощнейший Выброс и Лиманск стал вновь «закрытым» городом, а бойцов-дезертиров больше ни кто и ни когда не видел…

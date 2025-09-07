@@ -1,0 +1,496 @@
+﻿[Rules.Rule-1].Name;Максимальная децентрализация
+[Rules.Rule-2].Name;Децентрализация
+[Rules.Rule-3].Name;Сбалансированное управление
+[Rules.Rule-4].Name;Централизация
+[Rules.Rule-5].Name;Максимальная централизация
+[Rules.Rule-6].Name;Полная автоматизация поиска артефактов
+[Rules.Rule-7].Name;Частичная автоматизация поиска артефактов
+[Rules.Rule-8].Name;Сбалансированный поиск
+[Rules.Rule-9].Name;Картографирование аномалий
+[Rules.Rule-10].Name;Слежение за аномалиями
+[Rules.Rule-11].Name;Параноидальная контрразведка
+[Rules.Rule-12].Name;Упор на контрразведку
+[Rules.Rule-13].Name;Сбалансированная разведка
+[Rules.Rule-14].Name;Упор на разведку
+[Rules.Rule-15].Name;Разведовательная сеть
+[Rules.Rule-16].Name;Круговая оборона
+[Rules.Rule-17].Name;Упор на оборону
+[Rules.Rule-18].Name;Сбалансированность
+[Rules.Rule-19].Name;Упор на атаку
+[Rules.Rule-20].Name;Масштабное наступление
+[Advisors.Advisor-Mutants-1].Name;Неизвестно
+[Advisors.Advisor-Stalkers-1].Name;Неизвестно
+[Advisors.Advisor-Soldiers-1].Name;Неизвестно
+[Advisors.Advisor-Duty-1].Name;Неизвестно
+[Advisors.Advisor-Freedom-1].Name;Неизвестно
+[Advisors.Advisor-Monolith-1].Name;Неизвестно
+[Advisors.Advisor-Mercenaries-1].Name;Неизвестно
+[Advisors.Advisor-Zombie-1].Name;Неизвестно
+[Advisors.Advisor-Mutants-KolRazum].Name;Коллективный разум
+[Advisors.Advisor-Stalkers-Wolf].Name;Волк
+[Advisors.Advisor-Stalkers-Orest].Name;Орест
+[Advisors.Advisor-Stalkers-Levsha].Name;Левша
+[Advisors.Advisor-Stalkers-Dikiy].Name;Дикий Напр
+[Advisors.Advisor-Stalkers-Aidar].Name;Айдар
+[Advisors.Advisor-Stalkers-Drozd].Name;Дрозд
+[Advisors.Advisor-Stalkers-Dog].Name;Пёс
+[Advisors.Advisor-Stalkers-Furgon].Name;Фургон
+[Advisors.Advisor-Stalkers-Shilov].Name;Шилов
+[Advisors.Advisor-Stalkers-Avoska].Name;Авоська
+[Advisors.Advisor-Stalkers-Vasiliy].Name;Василий
+[Advisors.Advisor-Stalkers-Vasyan].Name;Васян
+[Advisors.Advisor-Stalkers-Goblin].Name;Гоблин
+[Advisors.Advisor-Stalkers-Doctor].Name;Доктор
+[Advisors.Advisor-Stalkers-Puzo].Name;Пузо
+[Advisors.Advisor-Stalkers-Ezh].Name;Вовка Ёж
+[Advisors.Advisor-Soldiers-Capitan].Name;Капитан
+[Advisors.Advisor-Soldiers-Ovechko].Name;Семён Овечко
+[Advisors.Advisor-Soldiers-Specialist].Name;Специалист
+[Advisors.Advisor-Soldiers-Poproshayko].Name;Майор Попрошайко
+[Advisors.Advisor-Soldiers-Haleckiy].Name;Майор Халецкий
+[Advisors.Advisor-Soldiers-Sokolov].Name;Прапорщик Соколов
+[Advisors.Advisor-Duty-Zvyagincev].Name;Майор Звягинцев
+[Advisors.Advisor-Duty-Incvizitor].Name;Инквизитор
+[Advisors.Advisor-Duty-Nalivayko].Name;Сержант Наливайко
+[Advisors.Advisor-Duty-Fekl].Name;Фёкл
+[Advisors.Advisor-Duty-Kolobok].Name;Колобок
+[Advisors.Advisor-Duty-Sudar].Name;Сударь
+[Advisors.Advisor-Duty-Semen].Name;Семён Семёныч
+[Advisors.Advisor-Duty-Milutin].Name;Милютин
+[Advisors.Advisor-Duty-Gromov].Name;Громов
+[Advisors.Advisor-Duty-Mityay].Name;Митяй
+[Advisors.Advisor-Duty-Lis].Name;Лис Бандикут
+[Advisors.Advisor-Duty-Galin].Name;Галин
+[Advisors.Advisor-Duty-Serega].Name;Серёга
+[Advisors.Advisor-Freedom-Shukin].Name;Щукин
+[Advisors.Advisor-Freedom-Voron].Name;Ворон
+[Advisors.Advisor-Freedom-Ganzha].Name;Ганжа
+[Advisors.Advisor-Freedom-Yar].Name;Дядька Яр
+[Advisors.Advisor-Freedom-Kostuk].Name;Костюк
+[Advisors.Advisor-Freedom-Ashot].Name;Ашот
+[Advisors.Advisor-Freedom-Zhurnalist].Name;Журналист
+[Advisors.Advisor-Monolith-Propovednik].Name;Проповедник
+[Advisors.Advisor-Monolith-Molitvennik].Name;Молитвенник
+[Advisors.Advisor-Monolith-Messiya].Name;Мессия
+[Advisors.Advisor-Mercenaries-Hog].Name;Хог
+[Advisors.Advisor-Mercenaries-Leshiy].Name;Леший
+[Advisors.Advisor-Mercenaries-Shtyr].Name;Штырь
+[Advisors.Advisor-Mercenaries-Tancpol].Name;Витя Танцпол
+[Advisors.Advisor-Mercenaries-Avtobus].Name;Лёха Автобус
+[Advisors.Advisor-Mercenaries-Rzhaviy].Name;Валера Ржавый
+[Advisors.Advisor-Mercenaries-Shtirlic].Name;Толян Штирлиц
+[Advisors.Advisor-Mercenaries-Dollar].Name;"Иван ""Один доллар"""
+[Advisors.Advisor-Mercenaries-Plintus].Name;Тимур Плинтус
+[Advisors.Advisor-Zombie-Controler].Name;Контролер
+[Achievements.Achiv-1].Name;Быстрее молнии!
+[Achievements.Achiv-1].Desc;Получено новое достижение! За 10 ходов захватить всю локацию.
+[Achievements.Achiv-1].Desc-Logo;За 10 ходов захватить всю локацию.
+[Achievements.Achiv-2].Name;Выжить!
+[Achievements.Achiv-2].Desc;Получено новое достижение! Захватить всю локацию и удерживать 1 ход за группировку Военные на уровне сложности Ветеран или выше.
+[Achievements.Achiv-2].Desc-Logo;Захватить всю локацию и удерживать 1 ход за группировку Военные на уровне сложности Ветеран или выше.
+[Achievements.Achiv-3].Name;Опасный враг!
+[Achievements.Achiv-3].Desc;Получено новое достижение! Пережить уничтожение группировки Одиночки за группировку Монолит.
+[Achievements.Achiv-3].Desc-Logo;Пережить уничтожение группировки Одиночки за группировку Монолит.
+[Achievements.Achiv-4].Name;Пришел, Увидел, Победил!
+[Achievements.Achiv-4].Desc;Получено новое достижение! Захватить всю локацию и удерживать 1 ход на уровне сложности Мастер.
+[Achievements.Achiv-4].Desc-Logo;Захватить всю локацию и удерживать 1 ход на уровне сложности Мастер.
+[Achievements.Achiv-5].Name;У нас всё стабильно!
+[Achievements.Achiv-5].Desc;Получено новое достижение! Принять идеологию Стабильность за группировку Наёмники на Мастере и продержаться 1 ход.
+[Achievements.Achiv-5].Desc-Logo;Принять идеологию Стабильность за группировку Наёмники на Мастере и продержаться 1 ход.
+[Achievements.Achiv-6].Name;Самое время замерить!
+[Achievements.Achiv-6].Desc;Получено новое достижение! Принять идеологию Изучение за любую группировку и продержаться 1 ход.
+[Achievements.Achiv-6].Desc-Logo;Принять идеологию Изучение за любую группировку и продержаться 1 ход.
+[Traders.World].Name;Внешний мир
+[Traders.World].NeedText;Связь с внешним миром не всегда удается установить. Цена попытки установить связь:
+[Traders.YourGroup].Name;Торговец вашей группировки
+[Traders.YourGroup].NeedText;Вы всегда можете поторговать со своим торговцем. Цена:
+[Traders.OtherGroup].Name;Торговец чужой группировки
+[Traders.OtherGroup].NeedText;Чтобы торговать с чужими группировками сначала выберите на карте чужую территорию
+[StoryEvents.Event-Info-1].Name;Шрам
+[StoryEvents.Event-Info-1].Desc-Owner;Наёмник Шрам по заданию Лесника идет на локацию %1:s и скоро появится на территории %0:s
+[StoryEvents.Event-Info-1].Desc-NonOwner;Наёмник Шрам по заданию Лесника идет на локацию %1:s и скоро появится на территории %0:s
+[StoryEvents.Event-Military1-1].Name;Шрам появился
+[StoryEvents.Event-Military1-1].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Military1-1].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military1-2].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Military1-2].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Military1-2].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military1-3].Name;Шрам появился
+[StoryEvents.Event-Military1-3].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Military1-3].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military1-4].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Military1-4].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Military1-4].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military1-5].Name;Шрам перемещается
+[StoryEvents.Event-Military1-5].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Military1-5].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military1-6].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Military1-6].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Military1-6].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military1-7].Name;Шрам перемещается
+[StoryEvents.Event-Military1-7].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Military1-7].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military1-8].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Military1-8].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Military1-8].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military1-9].Name;Шрам перемещается
+[StoryEvents.Event-Military1-9].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Military1-9].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military1-10].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Military1-10].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Military1-10].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military1-11].Name;Шрам перемещается
+[StoryEvents.Event-Military1-11].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Military1-11].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military1-12].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Military1-12].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Military1-12].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-AddUnit-Monolith-1].Name;Подкрепления Монолита
+[StoryEvents.Event-AddUnit-Monolith-1].Desc-Owner;Отряд Монолита прибыл с Радара на территорию %0:s локации %1:s!
+[StoryEvents.Event-AddUnit-Monolith-1].Desc-NonOwner;К нам поступила информация, что Монолит получил подкрепление с Радара на территорию %0:s локации %1:s
+[StoryEvents.Event-Invasion-Monolith-1].Name;Вторжение Монолита
+[StoryEvents.Event-Invasion-Monolith-1].Desc-Owner;Отряд Монолита вторгся с Радара на территорию %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Invasion-Monolith-1].Desc-NonOwner;К нам поступила информация, что отряд Монолита вторгся с Радара на территорию %0:s локации %1:s
+[StoryEvents.Event-AddUnit-Monolith-2].Name;Подкрепления Монолита
+[StoryEvents.Event-AddUnit-Monolith-2].Desc-Owner;Отряд Монолита прибыл с Радара на территорию %0:s локации %1:s!
+[StoryEvents.Event-AddUnit-Monolith-2].Desc-NonOwner;К нам поступила информация, что Монолит получил подкрепление с Радара на территорию %0:s локации %1:s
+[StoryEvents.Event-Invasion-Monolith-2].Name;Вторжение Монолита
+[StoryEvents.Event-Invasion-Monolith-2].Desc-Owner;Отряд Монолита вторгся с Радара на территорию %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Invasion-Monolith-2].Desc-NonOwner;К нам поступила информация, что отряд Монолита вторгся с Радара на территорию %0:s локации %1:s
+[StoryEvents.Event-AddUnit-Monolith-3].Name;Подкрепления Монолита
+[StoryEvents.Event-AddUnit-Monolith-3].Desc-Owner;Отряд Монолита прибыл с Радара на территорию %0:s локации %1:s!
+[StoryEvents.Event-AddUnit-Monolith-3].Desc-NonOwner;К нам поступила информация, что Монолит получил подкрепление с Радара на территорию %0:s локации %1:s
+[StoryEvents.Event-Invasion-Monolith-3].Name;Вторжение Монолита
+[StoryEvents.Event-Invasion-Monolith-3].Desc-Owner;Отряд Монолита вторгся с Радара на территорию %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Invasion-Monolith-3].Desc-NonOwner;К нам поступила информация, что отряд Монолита вторгся с Радара на территорию %0:s локации %1:s
+[StoryEvents.Event-AddUnit-Monolith-4].Name;Подкрепления Монолита
+[StoryEvents.Event-AddUnit-Monolith-4].Desc-Owner;Отряд Монолита прибыл с Радара на территорию %0:s локации %1:s!
+[StoryEvents.Event-AddUnit-Monolith-4].Desc-NonOwner;К нам поступила информация, что Монолит получил подкрепление с Радара на территорию %0:s локации %1:s
+[StoryEvents.Event-Invasion-Monolith-4].Name;Вторжение Монолита
+[StoryEvents.Event-Invasion-Monolith-4].Desc-Owner;Отряд Монолита вторгся с Радара на территорию %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Invasion-Monolith-4].Desc-NonOwner;К нам поступила информация, что отряд Монолита вторгся с Радара на территорию %0:s локации %1:s
+[StoryEvents.Event-AddUnit-Monolith-5].Name;Подкрепления Монолита
+[StoryEvents.Event-AddUnit-Monolith-5].Desc-Owner;Отряд Монолита прибыл с Радара на территорию %0:s локации %1:s!
+[StoryEvents.Event-AddUnit-Monolith-5].Desc-NonOwner;К нам поступила информация, что Монолит получил подкрепление с Радара на территорию %0:s локации %1:s
+[StoryEvents.Event-Invasion-Monolith-5].Name;Вторжение Монолита
+[StoryEvents.Event-Invasion-Monolith-5].Desc-Owner;Отряд Монолита вторгся с Радара на территорию %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Invasion-Monolith-5].Desc-NonOwner;К нам поступила информация, что отряд Монолита вторгся с Радара на территорию %0:s локации %1:s
+[StoryEvents.Event-AddUnit-Zombie-1].Name;Подкрепления Зомбированных
+[StoryEvents.Event-AddUnit-Zombie-1].Desc-Owner;Отряд Зомбированных прибыл с Радара на территорию %0:s локации %1:s!
+[StoryEvents.Event-AddUnit-Zombie-1].Desc-NonOwner;К нам поступила информация, что Зомбированные получили подкрепление с Радара на территорию %0:s локации %1:s
+[StoryEvents.Event-Invasion-Zombie-1].Name;Вторжение Зомбированных
+[StoryEvents.Event-Invasion-Zombie-1].Desc-Owner;Отряд Зомбированных вторгся с Радара на территорию %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Invasion-Zombie-1].Desc-NonOwner;К нам поступила информация, что отряд Зомбированных вторгся с Радара на территорию %0:s локации %1:s
+[StoryEvents.Event-AddUnit-Zombie-2].Name;Подкрепления Зомбированных
+[StoryEvents.Event-AddUnit-Zombie-2].Desc-Owner;Отряд Зомбированных прибыл с Радара на территорию %0:s локации %1:s!
+[StoryEvents.Event-AddUnit-Zombie-2].Desc-NonOwner;К нам поступила информация, что Зомбированные получили подкрепление с Радара на территорию %0:s локации %1:s
+[StoryEvents.Event-Invasion-Zombie-2].Name;Вторжение Зомбированных
+[StoryEvents.Event-Invasion-Zombie-2].Desc-Owner;Отряд Зомбированных вторгся с Радара на территорию %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Invasion-Zombie-2].Desc-NonOwner;К нам поступила информация, что отряд Зомбированных вторгся с Радара на территорию %0:s локации %1:s
+[StoryEvents.Event-AddUnit-Zombie-3].Name;Подкрепления Зомбированных
+[StoryEvents.Event-AddUnit-Zombie-3].Desc-Owner;Отряд Зомбированных прибыл с Радара на территорию %0:s локации %1:s!
+[StoryEvents.Event-AddUnit-Zombie-3].Desc-NonOwner;К нам поступила информация, что Зомбированные получили подкрепление с Радара на территорию %0:s локации %1:s
+[StoryEvents.Event-Invasion-Zombie-3].Name;Вторжение Зомбированных
+[StoryEvents.Event-Invasion-Zombie-3].Desc-Owner;Отряд Зомбированных вторгся с Радара на территорию %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Invasion-Zombie-3].Desc-NonOwner;К нам поступила информация, что отряд Зомбированных вторгся с Радара на территорию %0:s локации %1:s
+[StoryEvents.Event-AddUnit-Zombie-4].Name;Подкрепления Зомбированных
+[StoryEvents.Event-AddUnit-Zombie-4].Desc-Owner;Отряд Зомбированных прибыл с Радара на территорию %0:s локации %1:s!
+[StoryEvents.Event-AddUnit-Zombie-4].Desc-NonOwner;К нам поступила информация, что Зомбированные получили подкрепление с Радара на территорию %0:s локации %1:s
+[StoryEvents.Event-Invasion-Zombie-4].Name;Вторжение Зомбированных
+[StoryEvents.Event-Invasion-Zombie-4].Desc-Owner;Отряд Зомбированных вторгся с Радара на территорию %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Invasion-Zombie-4].Desc-NonOwner;К нам поступила информация, что отряд Зомбированных вторгся с Радара на территорию %0:s локации %1:s
+[StoryEvents.Event-Military2-1].Name;Шрам перемещается
+[StoryEvents.Event-Military2-1].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Military2-1].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-2].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Military2-2].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Military2-2].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-3].Name;Шрам перемещается
+[StoryEvents.Event-Military2-3].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Military2-3].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-4].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Military2-4].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Military2-4].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-5].Name;Шрам перемещается
+[StoryEvents.Event-Military2-5].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Military2-5].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-6].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Military2-6].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Military2-6].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-7].Name;Шрам перемещается
+[StoryEvents.Event-Military2-7].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Military2-7].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-8].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Military2-8].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Military2-8].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-9].Name;Шрам перемещается
+[StoryEvents.Event-Military2-9].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Military2-9].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-10].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Military2-10].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Military2-10].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-11].Name;Шрам перемещается
+[StoryEvents.Event-Military2-11].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Military2-11].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-12].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Military2-12].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Military2-12].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-13].Name;Шрам перемещается
+[StoryEvents.Event-Military2-13].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Military2-13].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-14].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Military2-14].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Military2-14].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-15].Name;Шрам перемещается
+[StoryEvents.Event-Military2-15].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Military2-15].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-16].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Military2-16].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Military2-16].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-17].Name;Шрам перемещается
+[StoryEvents.Event-Military2-17].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Military2-17].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-18].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Military2-18].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Military2-18].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-19].Name;Шрам перемещается
+[StoryEvents.Event-Military2-19].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Military2-19].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-20].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Military2-20].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Military2-20].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-21].Name;Шрам перемещается
+[StoryEvents.Event-Military2-21].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Military2-21].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-22].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Military2-22].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Military2-22].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-23].Name;Шрам перемещается
+[StoryEvents.Event-Military2-23].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Military2-23].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-24].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Military2-24].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Military2-24].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-25].Name;Шрам перемещается
+[StoryEvents.Event-Military2-25].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Military2-25].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-26].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Military2-26].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Military2-26].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-27].Name;Шрам перемещается
+[StoryEvents.Event-Military2-27].Desc-Owner;На нашей территории %0:s на локации %1:s замечен наёмник Шрам. Наш гарнизон пропустил его.
+[StoryEvents.Event-Military2-27].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Military2-28].Name;Шрам напал на гарнизон территории
+[StoryEvents.Event-Military2-28].Desc-Owner;Наши патрули наткнулись на наёмника с прозвищем Шрам. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Military2-28].Desc-NonOwner;Ходят слухи, что наёмник Шрам был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Info-2].Name;Шрам на пути к мосту
+[StoryEvents.Event-Info-2].Desc-Owner;Наёмник Шрам покинул локацию %1:s и направился к мосту в Рыжем лесу.
+[StoryEvents.Event-Info-2].Desc-NonOwner;Наёмник Шрам покинул локацию %1:s и направился к мосту в Рыжем лесу.
+ScenarioName;Защита Барьера. Чистое Небо
+ScenarioDescription;Близкий к лору сценарий, где события происходят ближе к финалу оригинальной игры. Вам необходимо полностью захватить локацию Армейские склады до того, как Шрам остановит Стрелка на ЧАЭС. У вас около 35 ходов. Дипломатия между группировками может иметь отличия от канона в процессе игры.
+ScenarioVictoryDescription;Условия победы: захватить все территории на карте и удержать их 1 ход.
+ScenarioLoseDescription;Условия поражения: потерять все подконтрольные территории или не выполнить условия победы примерно за 37 ходов.
+[Groups.Duty.:main].Spy1-Name;Новичок
+[Groups.Duty.:main].Spy2-Name;Опытный
+[Groups.Duty.:main].Spy3-Name;Ветеран
+[Groups.Duty.:main].Spy4-Name;Мастер
+[Groups.Duty.:main].Name;Долг
+[Groups.Duty.:main].Description;Долг – цель группировки защитить мир от заразы Зоны. Достаточно мощная военизированная группировка. Хорошее вооружение и предрасположенность к борьбе с мутантами гарантируют успех в умелых руках.
+[Groups.Duty.:main].DiplomacyText-Question-War;Вы и ваша шайка угроза миру, пора с вами разобраться!
+[Groups.Duty.:main].DiplomacyText-Question-Neutral;Мы хотим заключить с вами перемирие, Вы cогласны?
+[Groups.Duty.:main].DiplomacyText-Question-Alliance;Мы предлагаем союз. Вместе мы сможем провернуть пару операций против наших врагов. Вы согласны?
+[Groups.Duty.:main].DiplomacyText-Question-BreakAlliance;Мы больше не будем сотрудничать!
+[Groups.Duty.:main].DiplomacyText-RequestMoney-Ask;Лишних денег не найдется? А то времена у нас тяжелые. Нам бы вот столько:
+[Groups.Duty.:main].DiplomacyText-Ans-0-Down;Понятно. И от тебя Зону отчистим!
+[Groups.Duty.:main].DiplomacyText-Ans-1-Down;Жа-а-аль, но раз Вы настаиваете, значит будет так.
+[Groups.Duty.:main].DiplomacyText-Ans-1-No;Нет, сейчас мы точно на это не пойдем.
+[Groups.Duty.:main].DiplomacyText-Ans-1-Yes;Мы надеемся на дальнейшее сотрудничество.
+[Groups.Duty.:main].DiplomacyText-Ans-2-No;Нет, сейчас мы точно на это не пойдем.
+[Groups.Duty.:main].DiplomacyText-Ans-2-Yes;Та-а-ак, отлично, по рукам!
+[Groups.Duty.:main].DiplomacyText-RequestMoney-Ans-No;Нет, мы пока не можем помогать.
+[Groups.Duty.:main].DiplomacyText-RequestMoney-Ans-Yes;Хорошо, мы Вам поможем.
+[Groups.Duty.:main].DiplomacyText-Question-Neutral-No;Ох и зря Вы отказались!
+[Groups.Duty.:main].DiplomacyText-Question-Neutral-Yes;Хорошо, это радует!
+[Groups.Duty.:main].DiplomacyText-Question-Alliance-No;Ох и зря Вы отказались!
+[Groups.Duty.:main].DiplomacyText-Question-Alliance-Yes;Хорошо, это радует!
+[Groups.Duty.:main].Text-End-Standart-Victory;Победа! Группировка теперь контролирует Армейские склады. Монолит отброшен к Радару, а Свобода в пролете со своими планами переноса базы на Армейские склады. Ситуация стабилизировалась, но есть понимание, что это не продлится долго. Монолит явно будет прорываться еще, однако руководство группировки пока что не может обеспечить подкреплениями, так как силы сосредоточены на прорыве в Лиманске. Пока что придется подождать…
+[Groups.Duty.:main].Text-End-Step-Victory;Вы выжили! Победа!
+[Groups.Duty.:main].Text-End-EventFlag-Victory;Победа по ивент флагу!
+[Groups.Duty.:main].Text-End-Standart-Lose;Отряды группировки были полностью уничтожены на Армейских складах, теперь неизвестно что будет дальше, так как на север через Лиманск не прорваться – посланная туда группа была уничтожена, там сейчас горячая точка, а плацдарма на Складах группировка лишилась… Понесены невосполнимые потери. Поражение!
+[Groups.Duty.:main].Text-End-Step-Lose;Время истекло, Вы не смогли добиться контроля над Армейскими складами. Поражение!
+[Groups.Duty.:main].Text-End-EventFlag-Lose;Вы не успели достигнуть целей! Поражение!
+[Groups.Duty.AntiZone].Text-End-Standart-Victory;Победа! Группировка теперь контролирует Армейские склады. Монолит отброшен к Радару, а Свобода в пролете со своими планами переноса базы на Армейские склады. Ситуация стабилизировалась, но есть понимание, что это не продлится долго. Монолит явно будет прорываться еще, однако руководство группировки пока что не может обеспечить подкреплениями, так как силы сосредоточены на прорыве в Лиманске. Пока что придется подождать…
+[Groups.freedom.:main].Spy1-Name;Новичок
+[Groups.freedom.:main].Spy2-Name;Опытный
+[Groups.freedom.:main].Spy3-Name;Ветеран
+[Groups.freedom.:main].Spy4-Name;Мастер
+[Groups.freedom.:main].Name;Свобода
+[Groups.freedom.:main].Description;Свобода – анархистская группировка, которая враждебно относится к правительственным войскам и исследовательским группам. Планирует сделать локацию Армейские склады своей основной базой перед дальнейшим продвижением на север.
+[Groups.freedom.:main].DiplomacyText-Question-War;Ну, мэн, готовься! Мы идем за тобой и твоими ребятами.
+[Groups.freedom.:main].DiplomacyText-Question-Neutral;Чувак, может на мировую, а?
+[Groups.freedom.:main].DiplomacyText-Question-Alliance;Чел, как насчет союза? Что думаешь?
+[Groups.freedom.:main].DiplomacyText-Question-BreakAlliance;Чувак, сорян-ба, Но наши дороги расходятся.
+[Groups.freedom.:main].DiplomacyText-RequestMoney-Ask;Хай, мэн! Свободе не хватает свободных деньжат... Не подкинешь ли нам сумму в таком размере:
+[Groups.freedom.:main].DiplomacyText-Ans-0-Down;Вот гробы-то подорожают!
+[Groups.freedom.:main].DiplomacyText-Ans-1-Down;О-о-о... Всё с тобой понятно, ну и ладно.
+[Groups.freedom.:main].DiplomacyText-Ans-1-No;Не, мы не согласны.
+[Groups.freedom.:main].DiplomacyText-Ans-1-Yes;Окей, договорились!
+[Groups.freedom.:main].DiplomacyText-Ans-2-No;Не, чувак, мы сейчас точно пас.
+[Groups.freedom.:main].DiplomacyText-Ans-2-Yes;О-о-о, ништяк, замётано!
+[Groups.freedom.:main].DiplomacyText-RequestMoney-Ans-No;Мэн, не, ты чего? Мы такой кэш не готовы сейчас подкинуть...
+[Groups.freedom.:main].DiplomacyText-RequestMoney-Ans-Yes;Чувак, не вопрос! Уже перевели!
+[Groups.freedom.:main].DiplomacyText-Question-Neutral-No;Мэн, эт плохая новость...
+[Groups.freedom.:main].DiplomacyText-Question-Neutral-Yes;Чувак, эт отличный ньюс!
+[Groups.freedom.:main].DiplomacyText-Question-Alliance-No;О-о-о... Всё с тобой понятно, ну и ладно.
+[Groups.freedom.:main].DiplomacyText-Question-Alliance-Yes;Мэн, это отлично!
+[Groups.freedom.:main].Text-End-Standart-Victory;Победа! Группировка теперь контролирует Армейские склады. Монолит отброшен к Радару, а Военные на складах полностью уничтожены. Ситуация стабилизировалась, но есть понимание, что это не продлится долго. Монолит явно будет прорываться еще, поэтому руководство группировки ускоряет перенос базы на Армейские склады. Предполагается, что данный успех удастся развить в будущем и прорваться дальше на сервер через Выжигатель мозгов. На данный момент к нему не приблизиться. Нужно, чтобы кто-то его отключил, поэтому пока что придется подождать…
+[Groups.freedom.:main].Text-End-Step-Victory;Вы выжили! Победа!
+[Groups.freedom.:main].Text-End-EventFlag-Victory;Победа по ивент флагу!
+[Groups.freedom.:main].Text-End-Standart-Lose;Отряды группировки были полностью уничтожены на Армейских складах, теперь неизвестно что будет дальше, так как на север через Лиманск не прорваться – посланная туда группа была уничтожена, там сейчас горячая точка, а плацдарма на Складах группировка лишилась… Планы по переносы базы на север пошли прахом. Поражение!
+[Groups.freedom.:main].Text-End-Step-Lose;Время истекло, Вы не смогли добиться контроля над Армейскими складами. Поражение!
+[Groups.freedom.:main].Text-End-EventFlag-Lose;Время истекло, Вы не смогли добиться контроля над Армейскими складами. Поражение!
+[Groups.Mercenaries.:main].Spy1-Name;Новичок
+[Groups.Mercenaries.:main].Spy2-Name;Опытный
+[Groups.Mercenaries.:main].Spy3-Name;Ветеран
+[Groups.Mercenaries.:main].Spy4-Name;Мастер
+[Groups.Mercenaries.:main].Name;Наёмники
+[Groups.Mercenaries.:main].Description;Наёмники – достаточно скрытная военизированная группировка со специализацией на выполнении каких-либо заказов поступивших как из самой Зоны, так и извне. Хорошее вооружение, опытные бойцы и интересы на Армейских складах могут позволить группировке уверенно закрепиться на этой локации.
+[Groups.Mercenaries.:main].DiplomacyText-Question-War;На вас поступил заказ. Ничего личного. Только бизнес.
+[Groups.Mercenaries.:main].DiplomacyText-Question-Neutral;Нам обоим эта война не выгодна. Как на счет мира?
+[Groups.Mercenaries.:main].DiplomacyText-Question-Alliance;Нам было бы выгодно более тесное сотрудничество с вами. Согласны?
+[Groups.Mercenaries.:main].DiplomacyText-Question-BreakAlliance;Мы больше не будем сотрудничать с вами.
+[Groups.Mercenaries.:main].DiplomacyText-RequestMoney-Ask;У нас тут парочка накладок вышла с кое-какими контрактами. Нам бы финансовую помощь в таком вот размере:
+[Groups.Mercenaries.:main].DiplomacyText-Ans-0-Down;Больше дел с вами вести не будем!
+[Groups.Mercenaries.:main].DiplomacyText-Ans-1-Down;Печально, вы упускаете свою выгоду.
+[Groups.Mercenaries.:main].DiplomacyText-Ans-1-No;Сейчас нам это не выгодно.
+[Groups.Mercenaries.:main].DiplomacyText-Ans-1-Yes;Хорошо, надеемся на взаимовыгодное партнерство.
+[Groups.Mercenaries.:main].DiplomacyText-Ans-2-No;В данный момент нам это не выгодно.
+[Groups.Mercenaries.:main].DiplomacyText-Ans-2-Yes;Ок, нам это выгодно.
+[Groups.Mercenaries.:main].DiplomacyText-RequestMoney-Ans-No;У нас сейчас не так много премиальных с контрактов, так что помочь не сможем.
+[Groups.Mercenaries.:main].DiplomacyText-RequestMoney-Ans-Yes;Ладно, перевели.
+[Groups.Mercenaries.:main].DiplomacyText-Question-Neutral-No;Отказались? Ну и ладно.
+[Groups.Mercenaries.:main].DiplomacyText-Question-Neutral-Yes;Отлично, хорошо что Вы согласились!
+[Groups.Mercenaries.:main].DiplomacyText-Question-Alliance-No;Отказались? Ну и ладно.
+[Groups.Mercenaries.:main].DiplomacyText-Question-Alliance-Yes;Отлично, хорошо что Вы согласились!
+[Groups.Mercenaries.:main].Text-End-Standart-Victory;Победа! Группировка теперь контролируют Армейские склады. Это не входило в планы, однако, ситуация сложилась именно так… В данный момент этот успех осмысливается и строятся планы по дальнейшему использованию столь отличного плацдарма. Однако, монолитовцы вряд ли будут сидеть смирно на Радаре – необходимо укреплять Барьер. Сейчас другие группировки вряд ли будут что-либо предпринимать, так как они связаны Лиманском. Это позволяет нам взять передышку и подготовиться к последующим боям…
+[Groups.Mercenaries.:main].Text-End-Step-Victory;Вы выжили! Победа!
+[Groups.Mercenaries.:main].Text-End-EventFlag-Victory;Победа по ивент флагу!
+[Groups.Mercenaries.:main].Text-End-Standart-Lose;Бойцы группировки были полностью уничтожены на Армейских складах. Заказчикам это явно не понравится, репутация группировки под угрозой... Поражение!
+[Groups.Mercenaries.:main].Text-End-Step-Lose;Время истекло, Вы не смогли добиться контроля над Армейскими складами. Поражение!
+[Groups.Mercenaries.:main].Text-End-EventFlag-Lose;Вы не успели достичь целей. Поражение!
+[Groups.monolith.:main].Spy1-Name;Послушник
+[Groups.monolith.:main].Spy2-Name;Фанатик
+[Groups.monolith.:main].Spy3-Name;Ветеран
+[Groups.monolith.:main].Spy4-Name;Элита
+[Groups.monolith.:main].Name;Монолит
+[Groups.monolith.:main].Description;Монолит – группировка, служащая щитом О-Сознания. Главная цель – защита Зоны от какого-либо внешнего вмешательства. Крайне враждебна к любым другим группировкам. Несмотря на преимущество в вооружении имеет проблемы с продвижением на локации Армейские склады, так как сосредоточила основные силы в Лиманске.
+[Groups.monolith.:main].DiplomacyText-Question-War;Найти и искоренить!
+[Groups.monolith.:main].DiplomacyText-Question-Neutral;Монолит повелел нам заключить с вами мир. Вы согласны или как?
+[Groups.monolith.:main].DiplomacyText-Question-Alliance;Монолит велел нам стать вашими друзьями.
+[Groups.monolith.:main].DiplomacyText-Question-BreakAlliance;Монолит недоволен нашим союзом!
+[Groups.monolith.:main].DiplomacyText-RequestMoney-Ask;По воле Великого Монолита мы отправяем вам запрос на денежный перевод для наших братьев в таком вот размере:
+[Groups.monolith.:main].DiplomacyText-Ans-0-Down;Обнаружить и искоренить! *Собеседник добавил вас в черный список*
+[Groups.monolith.:main].DiplomacyText-Ans-1-Down;Такое Монолит точно не одобрит! *Собеседник удалил вас из друзей*
+[Groups.monolith.:main].DiplomacyText-Ans-1-No;Ты познаешь гнев Монолита! *Собеседник вышел из чата*
+[Groups.monolith.:main].DiplomacyText-Ans-1-Yes;И придет день, и Монолит вновь воссияет во славе своей! *Собеседник вышел из чата*
+[Groups.monolith.:main].DiplomacyText-Ans-2-No;Монолит точно не даст согласия своего. *Собеседник вышел из чата*
+[Groups.monolith.:main].DiplomacyText-Ans-2-Yes;Никому не верь кроме Монолита и братьев его, никому. *Собеседник добавил вас в друзья*
+[Groups.monolith.:main].DiplomacyText-RequestMoney-Ans-No;Монолит сказал не проявлять милосердие к неверным! *Собеседник исключил вас из чата*
+[Groups.monolith.:main].DiplomacyText-RequestMoney-Ans-Yes;Монолит велел проявить жалость к слепцам и сделать вам денежный перевод.
+[Groups.monolith.:main].DiplomacyText-Question-Neutral-No;Тогда мы вас найдем и уничтожим!
+[Groups.monolith.:main].DiplomacyText-Question-Neutral-Yes;Иначе и не могло быть. Всё по воле Великого Монолита!
+[Groups.monolith.:main].DiplomacyText-Question-Alliance-No;Зря вы не следуете воле Монолита.
+[Groups.monolith.:main].DiplomacyText-Question-Alliance-Yes;Да возрадуются братья наши и ужаснутся наши враги!
+[Groups.monolith.:main].Text-End-Standart-Victory;Победа! Группировка теперь контролирует Армейские склады. Ситуация стабилизировалась, но есть понимание, что это не продлится долго. В Лиманске сталкеры прорываются вглубь территории группировки. Поэтому монолитовцы перебрасывают туда свои основные силы. Так же присутствует угроза прорыва некой группы сталкеров к ЧАЭС, поэтому дальнейший прорыв на юг через Армейские склады приостановлен, придется пока что подождать…
+[Groups.monolith.:main].Text-End-Step-Victory;Вы выжили! Победа!
+[Groups.monolith.:main].Text-End-EventFlag-Victory;Победа по ивент флагу!
+[Groups.monolith.:main].Text-End-Standart-Lose;Отряды группировки были полностью уничтожены на Армейских складах… А в Лиманске к тому же идут ожесточенные бои, где группировка несет огромные потери. Ситуация близка к катастрофической. Поражение!
+[Groups.monolith.:main].Text-End-Step-Lose;Время истекло, Вы не смогли добиться контроля над Армейскими складами. Поражение!
+[Groups.monolith.:main].Text-End-EventFlag-Lose;Вы не успели достигнуть цели! Поражение!
+[Groups.mutants.:main].Spy1-Name;Новичок
+[Groups.mutants.:main].Spy2-Name;Опытный
+[Groups.mutants.:main].Spy3-Name;Ветеран
+[Groups.mutants.:main].Spy4-Name;Мастер
+[Groups.mutants.:main].Name;Мутанты
+[Groups.mutants.:main].Description;Группировка не доступна в данной версии игры
+[Groups.mutants.:main].DiplomacyText-Question-War;ГАВ!!!!
+[Groups.mutants.:main].DiplomacyText-Question-Neutral;Ррррр!
+[Groups.mutants.:main].DiplomacyText-Question-Alliance;АГР!!!!
+[Groups.mutants.:main].DiplomacyText-Question-BreakAlliance;АГР!!!!
+[Groups.mutants.:main].DiplomacyText-RequestMoney-Ask;Хрю-хрю?
+[Groups.mutants.:main].DiplomacyText-Ans-0-Down;АГР!!!!
+[Groups.mutants.:main].DiplomacyText-Ans-1-Down;АГР!!!!
+[Groups.mutants.:main].DiplomacyText-Ans-1-No;АГР!!!!
+[Groups.mutants.:main].DiplomacyText-Ans-1-Yes;АГР!!!!
+[Groups.mutants.:main].DiplomacyText-Ans-2-No;АГР!!!!
+[Groups.mutants.:main].DiplomacyText-Ans-2-Yes;МЯУ!!!!
+[Groups.mutants.:main].DiplomacyText-RequestMoney-Ans-No;АГР!
+[Groups.mutants.:main].DiplomacyText-RequestMoney-Ans-Yes;Хря-хря!
+[Groups.mutants.:main].DiplomacyText-Question-Neutral-No;Ррррр!
+[Groups.mutants.:main].DiplomacyText-Question-Neutral-Yes;Ррррр!
+[Groups.mutants.:main].DiplomacyText-Question-Alliance-No;АГР!!!!
+[Groups.mutants.:main].DiplomacyText-Question-Alliance-Yes;АГР!!!!
+[Groups.mutants.:main].Text-End-Standart-Victory;Победа! Толпы монстров поглотили Армейские склады. Теперь эта территория стала слишком опасной. Даже монолитовцы больше не пытаются прорваться через барьер. Однако, группировки не оставят сложившуюся ситуацию в покое и скорее всего в будущем попытаются взять под контроль эту территорию.
+[Groups.mutants.:main].Text-End-Step-Victory;Вы выжили! Победа!
+[Groups.mutants.:main].Text-End-EventFlag-Victory;Победа по ивент флагу!
+[Groups.mutants.:main].Text-End-Standart-Lose;Вас истребили на Армейских складах! Поражение!
+[Groups.mutants.:main].Text-End-Step-Lose;Время истекло, а мутанты так и не смогли забрать Армейские склады себе... Поражение!
+[Groups.mutants.:main].Text-End-EventFlag-Lose;Поражение по ивент флагу!
+[Groups.soldiers.:main].Spy1-Name;Сержант
+[Groups.soldiers.:main].Spy2-Name;Лейтенант
+[Groups.soldiers.:main].Spy3-Name;Капитан
+[Groups.soldiers.:main].Spy4-Name;Майор
+[Groups.soldiers.:main].Name;Военные
+[Groups.soldiers.:main].Description;Военные – остатки боевой группы которая засела на Армейских складах. Пытается добиться эвакуации от командующего состава, которое имеет абсолютно противоположное мнение о сложившейся ситуации. Имеют отличную амуницию в плане борьбы с любыми сталкерами, однако, плохо приспособлены к аномальным порождениям Зоны.
+[Groups.soldiers.:main].DiplomacyText-Question-War;Ваше нахождение в Зоне теперь считается незаконным. Попадетёсь - расстрел на месте!
+[Groups.soldiers.:main].DiplomacyText-Question-Neutral;Командование считает, что нам нужно снизить оперативную активность. Как насчет перемирия?
+[Groups.soldiers.:main].DiplomacyText-Question-Alliance;Командование считает, что нам нужен союзник в Зоне для проведения операций. Вы согласны?
+[Groups.soldiers.:main].DiplomacyText-Question-BreakAlliance;Мы больше не будем сотрудничать!
+[Groups.soldiers.:main].DiplomacyText-RequestMoney-Ask;Правительственным силам требуется финансовое содействие на новый особняк генерал.. Кхм. На... На выполнение особых задач вот в таком размере. Поможите?
+[Groups.soldiers.:main].DiplomacyText-Ans-0-Down;Да мы тебя в порошок сотрём!
+[Groups.soldiers.:main].DiplomacyText-Ans-1-Down;Это еще как понимать?
+[Groups.soldiers.:main].DiplomacyText-Ans-1-No;Нет, мы не можем закрыть глаза на ваше присутствие в Зоне.
+[Groups.soldiers.:main].DiplomacyText-Ans-1-Yes;Ладно, мы закроем глаза на ваше присутствие в Зоне...
+[Groups.soldiers.:main].DiplomacyText-Ans-2-No;Нет, мы не можем закрыть глаза на ваше присутствие в Зоне.
+[Groups.soldiers.:main].DiplomacyText-Ans-2-Yes;Армии нужен союзник в Зоне. Хорошо, мы согласны.
+[Groups.soldiers.:main].DiplomacyText-RequestMoney-Ans-No;Нет, мы не оказываем финансовую помощь!
+[Groups.soldiers.:main].DiplomacyText-RequestMoney-Ans-Yes;Да, начальство согласилось помочь вам с финансами
+[Groups.soldiers.:main].DiplomacyText-Question-Neutral-No;Отказались? Ну.. Это Вы зря!
+[Groups.soldiers.:main].DiplomacyText-Question-Neutral-Yes;Отлично, хорошо что Вы согласились!
+[Groups.soldiers.:main].DiplomacyText-Question-Alliance-No;Отказались? Ну.. Это Вы зря!
+[Groups.soldiers.:main].DiplomacyText-Question-Alliance-Yes;Отлично, хорошо что Вы согласились!
+[Groups.soldiers.:main].Text-End-Standart-Victory;Победа! Группировка теперь контролируют Армейские склады. Монолит отброшен к Радару, а Свобода в пролете со своими планами переноса базы на Армейские склады. Связь со штабом удалось восстановить, но подкрепления пока не ожидаются в связи с боями в Лиманске. Пока что придется подождать…
+[Groups.soldiers.:main].Text-End-Step-Victory;Вы выжили! Победа!
+[Groups.soldiers.:main].Text-End-EventFlag-Victory;Победа по ивент флагу!
+[Groups.soldiers.:main].Text-End-Standart-Lose;Отряды группировки были полностью уничтожены на Армейских складах, теперь неизвестно что будет дальше, так как на север через Лиманск не прорваться – посланная туда группа была уничтожена, там сейчас горячая точка, а плацдарма на Складах Военные лишились… Поражение!
+[Groups.soldiers.:main].Text-End-Step-Lose;Время истекло, Вы не смогли добиться контроля над Армейскими складами. Вы разжалованы. Поражение!
+[Groups.soldiers.:main].Text-End-EventFlag-Lose;Вы не успели достигнуть цели! Поражение!
+[Groups.stalkers.:main].Spy1-Name;Новичок
+[Groups.stalkers.:main].Spy2-Name;Опытный
+[Groups.stalkers.:main].Spy3-Name;Ветеран
+[Groups.stalkers.:main].Spy4-Name;Мастер
+[Groups.stalkers.:main].Name;Одиночки
+[Groups.stalkers.:main].Description;Одиночки – добровольное объединение сталкеров на локации Армейские склады с целью сдерживания Монолита на Барьере. Преимуществом можно считать их предрасположенность к поиску артефактов, что благоприятно скажется на финансовом положении в умелых руках. Группировке необходимо определиться с приоритетами в своем развитии.
+[Groups.stalkers.:main].DiplomacyText-Question-War;Мы объявляем вам войну!
+[Groups.stalkers.:main].DiplomacyText-Question-Neutral;Пора закончить эту бойню, мы готовы к миру, а Вы?
+[Groups.stalkers.:main].DiplomacyText-Question-Alliance;Мы хотим заключить с вами союз. Вы согласны?
+[Groups.stalkers.:main].DiplomacyText-Question-BreakAlliance;Мы расторгаем союз!
+[Groups.stalkers.:main].DiplomacyText-RequestMoney-Ask;У нас тут финансовые затруднения возникли. Нам бы помощь не помешала. Нас интересует сумма в таком вот размере:
+[Groups.stalkers.:main].DiplomacyText-Ans-0-Down;Ну ты и крыса! Война, так война!
+[Groups.stalkers.:main].DiplomacyText-Ans-1-Down;Да будет так.
+[Groups.stalkers.:main].DiplomacyText-Ans-1-No;На данный момент мы не видим в этом необходимости.
+[Groups.stalkers.:main].DiplomacyText-Ans-1-Yes;Да, мы согласны на прекращение огня.
+[Groups.stalkers.:main].DiplomacyText-Ans-2-No;Мы не уверены, что нам сейчас это нужно.
+[Groups.stalkers.:main].DiplomacyText-Ans-2-Yes;Да, мы согласны на сотрудничество.
+[Groups.stalkers.:main].DiplomacyText-RequestMoney-Ans-No;Увы, но сейчас мы не в состоянии помочь такой суммой.
+[Groups.stalkers.:main].DiplomacyText-RequestMoney-Ans-Yes;Ладно, мы перечислим вам эту сумму.
+[Groups.stalkers.:main].DiplomacyText-Question-Neutral-No;Очень жаль, что Вы отказались!
+[Groups.stalkers.:main].DiplomacyText-Question-Neutral-Yes;Хорошо! Мы рады, что Вы согласны!
+[Groups.stalkers.:main].DiplomacyText-Question-Alliance-No;Очень жаль, что Вы отказались!
+[Groups.stalkers.:main].DiplomacyText-Question-Alliance-Yes;Хорошо! Мы рады, что Вы согласны!
+[Groups.stalkers.:main].Text-End-Standart-Victory;Победа! Бойцы группировки теперь контролируют Армейские склады, но хоть Монолит и отброшен к Радару, но это явно не продлится долго. Придется копить силы для сдерживания монолитовцев на Барьере. Ожидается, что они предпримут новые попытки прорыва достаточно скоро, поэтому готовиться нужно начинать уже сейчас, так как одиночкам в Лиманск не пробраться. Там сейчас другие группировки ведут ожесточенные бои…
+[Groups.stalkers.:main].Text-End-Step-Victory;Вы выжили! Победа!
+[Groups.stalkers.:main].Text-End-EventFlag-Victory;Победа по ивент флагу!
+[Groups.stalkers.:main].Text-End-Standart-Lose;Отряды группировки были полностью уничтожены на Армейских складах, теперь не известно что будет дальше, так как на север через Лиманск не прорваться – там сейчас горячая точка, а плацдарма на Складах группировка лишилась… Поражение!
+[Groups.stalkers.:main].Text-End-Step-Lose;Время истекло, Вы не смогли добиться контроля над Армейскими складами. Поражение!
+[Groups.stalkers.:main].Text-End-EventFlag-Lose;Время истекло, Вы не смогли добиться контроля над Армейскими складами. Поражение!

@@ -1,0 +1,1519 @@
+﻿[SpecialEvents.Burst].Name;Выброс!
+[SpecialEvents.Burst].Desc-Yes;В Зоне произошел сильный выброс. Мутанты стали более активными и похоже где-то могут начать буйствовать. Наши бойцы успешно пережили выброс, но даже в укрытиях им было тяжело, поэтому в расход пошло следующее число медикаментов
+[SpecialEvents.Burst].Desc-No;В Зоне произошел сильный выброс. Мутанты стали более активными и похоже где-то могут начать буйствовать. Некоторые бойцы не смогли пережить выброс, из-за нехватки медикаментов, которые они были вынуждены использовать даже в укрытиях
+[Advisors.Advisor-Mutants-1].Name;Неизвестно
+[Advisors.Advisor-Stalkers-1].Name;Неизвестно
+[Advisors.Advisor-Bandits-1].Name;Неизвестно
+[Advisors.Advisor-Soldiers-1].Name;Неизвестно
+[Advisors.Advisor-Duty-1].Name;Неизвестно
+[Advisors.Advisor-Freedom-1].Name;Неизвестно
+[Advisors.Advisor-Monolith-1].Name;Неизвестно
+[Advisors.Advisor-Mercenaries-1].Name;Неизвестно
+[Advisors.Advisor-Scientists-1].Name;Неизвестно
+[Advisors.Advisor-Zombie-1].Name;Неизвестно
+[Advisors.Advisor-Mutants-KolRazum].Name;Коллективный разум
+[Advisors.Advisor-Stalkers-Wolf].Name;Волк
+[Advisors.Advisor-Stalkers-Shustriy].Name;Шустрый
+[Advisors.Advisor-Stalkers-Fanat].Name;Фанат
+[Advisors.Advisor-Stalkers-Bes].Name;Бес
+[Advisors.Advisor-Stalkers-Urik].Name;Юрик
+[Advisors.Advisor-Stalkers-Seriy].Name;Серый
+[Advisors.Advisor-Stalkers-Demon].Name;Олег «Демон» Гусаров
+[Advisors.Advisor-Stalkers-Upir].Name;Упырь
+[Advisors.Advisor-Stalkers-Arni].Name;Арни
+[Advisors.Advisor-Stalkers-Krot].Name;Крот
+[Advisors.Advisor-Stalkers-Lis].Name;Лис
+[Advisors.Advisor-Stalkers-Diodor].Name;Отец Диодор
+[Advisors.Advisor-Stalkers-Chuchelo].Name;Чучело
+[Advisors.Advisor-Stalkers-Provodnik].Name;Проводник
+[Advisors.Advisor-Stalkers-Doctor].Name;Доктор
+[Advisors.Advisor-Bandits-Kaban].Name;Вася Кабан
+[Advisors.Advisor-Bandits-Fraer].Name;Фраер
+[Advisors.Advisor-Bandits-Kocherga].Name;Кочерга
+[Advisors.Advisor-Bandits-Babtist].Name;Баптист
+[Advisors.Advisor-Bandits-Chugun].Name;Чугун
+[Advisors.Advisor-Soldiers-Kuznecov].Name;Майор Кузнецов
+[Advisors.Advisor-Soldiers-Capitan].Name;Капитан
+[Advisors.Advisor-Soldiers-Chuguykin].Name;Лейтенант Чугуйкин
+[Advisors.Advisor-Soldiers-Specialist].Name;Специалист
+[Advisors.Advisor-Soldiers-Poproshayko].Name;Майор Попрошайко
+[Advisors.Advisor-Duty-Petrenko].Name;Полковник Петренко
+[Advisors.Advisor-Duty-Cherep].Name;Череп
+[Advisors.Advisor-Duty-Ivancov].Name;Капитан Иванцов
+[Advisors.Advisor-Duty-Plichko].Name;Сержант Пличко
+[Advisors.Advisor-Duty-Kizenko].Name;Сержант Киценко
+[Advisors.Advisor-Duty-Prapor].Name;Прапор
+[Advisors.Advisor-Duty-Lohmatiy].Name;Сергей Лохматый
+[Advisors.Advisor-Duty-Barin].Name;Барин
+[Advisors.Advisor-Duty-Pulya].Name;Пуля
+[Advisors.Advisor-Freedom-Ugrumiy].Name;Угрюмый
+[Advisors.Advisor-Freedom-Kep].Name;КЭП
+[Advisors.Advisor-Freedom-Skryaga].Name;Скряга
+[Advisors.Advisor-Freedom-Max].Name;Макс
+[Advisors.Advisor-Freedom-Povar].Name;Повар
+[Advisors.Advisor-Freedom-Pavlik].Name;Павлик
+[Advisors.Advisor-Monolith-Propovednik].Name;Проповедник
+[Advisors.Advisor-Monolith-Molitvennik].Name;Молитвенник
+[Advisors.Advisor-Monolith-Messiya].Name;Мессия
+[Advisors.Advisor-Mercenaries-Ara].Name;Ара
+[Advisors.Advisor-Mercenaries-Tancpol].Name;Витя Танцпол
+[Advisors.Advisor-Mercenaries-Avtobus].Name;Лёха Автобус
+[Advisors.Advisor-Mercenaries-Rzhaviy].Name;Валера Ржавый
+[Advisors.Advisor-Mercenaries-Shtirlic].Name;Толян Штирлиц
+[Advisors.Advisor-Mercenaries-Dollar].Name;"Иван ""Один доллар"""
+[Advisors.Advisor-Mercenaries-Plintus].Name;Тимур Плинтус
+[Advisors.Advisor-Scientists-Kruglov].Name;Профессор Круглов
+[Advisors.Advisor-Scientists-Nachalnik].Name;Начальник охраны
+[Advisors.Advisor-Scientists-Semenov].Name;Семенов
+[Advisors.Advisor-Scientists-Zob].Name;Зоб
+[Advisors.Advisor-Zombie-Kontroler].Name;Контролер
+[Achievements.Achiv-1].Name;Загадавший желание!
+[Achievements.Achiv-1].Desc;Получено новое достижение! Захватить Саркофаг за любую группировку, кроме Монолит и Мутанты и удержать его в течении 1 хода.
+[Achievements.Achiv-1].Desc-Logo;Захватить Саркофаг за любую группировку, кроме Монолит и Мутанты и удержать его в течении 1 хода.
+[Achievements.Achiv-2].Name;Чики-брики и в дамки!
+[Achievements.Achiv-2].Desc;Получено новое достижение! Захватить всю Зону за группировку Бандиты.
+[Achievements.Achiv-2].Desc-Logo;Захватить всю Зону за группировку Бандиты.
+[Achievements.Achiv-3].Name;Я Легенда!
+[Achievements.Achiv-3].Desc;Получено новое достижение! Пройти сценарий на уровне сложности Мастер.
+[Achievements.Achiv-3].Desc-Logo;Пройти сценарий на уровне сложности Мастер.
+[Achievements.Achiv-4].Name;Выполнил заказ!
+[Achievements.Achiv-4].Desc;Получено новое достижение! Захватить всю Зону за группировку Наёмники.
+[Achievements.Achiv-4].Desc-Logo;Захватить всю Зону за группировку Наёмники.
+[Achievements.Achiv-5].Name;Криминальная секта!
+[Achievements.Achiv-5].Desc;Получено новое достижение! Принять идеологию Сектантство за группировку Бандиты и продержаться 1 ход.
+[Achievements.Achiv-5].Desc-Logo;Принять идеологию Сектанство за группировку Бандиты и продержаться 1 ход.
+[Achievements.Achiv-6].Name;Отголосок Болот
+[Achievements.Achiv-6].Desc;Получено новое достижение! Принять идеологию Стабильность за группировку Военные на уровне сложности Мастер и продержаться 1 ход.
+[Achievements.Achiv-6].Desc-Logo;Принять идеологию Стабильность за группировку Военные на уровне сложности Мастер и продержаться 1 ход.
+[Traders.World].Name;Внешний мир
+[Traders.World].NeedText;Связь с внешним миром не всегда удается установить. Шанс 50%. Цена попытки установить связь:
+[Traders.YourGroup].Name;Торговец вашей группировки
+[Traders.YourGroup].NeedText;Вы всегда можете поторговать со своим торговцем. Цена:
+[Traders.OtherGroup].Name;Торговец чужой группировки
+[Traders.OtherGroup].NeedText;Чтобы торговать с чужими группировками сначала выберите на карте чужую территорию
+[Traders.Trader1].Name;Сидорович
+[Traders.Trader1].NeedText;Торговать с ним можно при условии контролирования территории Деревня на Кордоне. Цена:
+[Traders.Trader2].Name;Бармен
+[Traders.Trader2].NeedText;Бармен будет доступен для торговли при условии контролирования территории Бар 100 рентген. Цена:
+[Traders.Trader3].Name;Сахаров
+[Traders.Trader3].NeedText;Сахаров доступен при условии контроля территории Бункер на локации Янтарь. Цена:
+[StoryEvents.Event-Cordon-1].Name;Появление Меченого
+[StoryEvents.Event-Cordon-1].Desc-Owner;Сталкер Волк сообщает, что сталкер по прозвищу Меченый пришел в себя. Сейчас он взялся за работу Сидоровича. Возможно, мы скоро узнаем, что к чему...
+[StoryEvents.Event-Cordon-1].Desc-NonOwner;Ходят слухи о появлении в Зоне неизвестного сталкера, которого называют Меченый. Говорят, что его нашли живым в разбившемся грузовике смерти...
+[StoryEvents.Event-Cordon-2].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Cordon-2].Desc-Owner;Вот черт! Какой-то сталкер Меченый развязал бой на территории %0:s! Наши потери:
+[StoryEvents.Event-Cordon-2].Desc-NonOwner;Ходят слухи, что сталкер Меченый вступил в бой на территории %0:s
+[StoryEvents.Event-Cordon-3].Name;Меченый перемещается
+[StoryEvents.Event-Cordon-3].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Cordon-3].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon-4].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Cordon-4].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Cordon-4].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon-5].Name;Меченый продолжает идти
+[StoryEvents.Event-Cordon-5].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Cordon-5].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon-6].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Cordon-6].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Cordon-6].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon-7].Name;Меченый продолжает идти
+[StoryEvents.Event-Cordon-7].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Cordon-7].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon-8].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Cordon-8].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Cordon-8].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon-ChangeOwner-1].Name;Потеря территории
+[StoryEvents.Event-Cordon-ChangeOwner-1].Desc-Owner;Мы потеряли контроль над территорией %0:s локации %1:s
+[StoryEvents.Event-Cordon-ChangeOwner-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Cordon-ChangeOwner-1
+[StoryEvents.Event-Cordon-Advisor-1].Name;Шустрый спасен
+[StoryEvents.Event-Cordon-Advisor-1].Desc-Owner;Шустрый теперь доступен как кандидат в заместители!
+[StoryEvents.Event-Cordon-Advisor-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Cordon-Advisor-1
+[StoryEvents.Event-Cordon-ChangeOwner-2].Name;Потеря территории
+[StoryEvents.Event-Cordon-ChangeOwner-2].Desc-Owner;Если вы это видите, то это баг ивента Event-Cordon-ChangeOwner-2
+[StoryEvents.Event-Cordon-ChangeOwner-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Cordon-ChangeOwner-2
+[StoryEvents.Event-Cordon-9].Name;Меченый продолжает идти
+[StoryEvents.Event-Cordon-9].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Cordon-9].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon-10].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Cordon-10].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Cordon-10].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon-11].Name;Меченый продолжает идти
+[StoryEvents.Event-Cordon-11].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Cordon-11].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon-12].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Cordon-12].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Cordon-12].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon-13].Name;Меченый продолжает идти
+[StoryEvents.Event-Cordon-13].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Cordon-13].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon-14].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Cordon-14].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Cordon-14].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon-15].Name;Меченый продолжает идти
+[StoryEvents.Event-Cordon-15].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Cordon-15].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon-16].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Cordon-16].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Cordon-16].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon-17].Name;Меченый продолжает идти
+[StoryEvents.Event-Cordon-17].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Cordon-17].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon-18].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Cordon-18].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Cordon-18].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon-19].Name;Меченый продолжает идти
+[StoryEvents.Event-Cordon-19].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Cordon-19].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon-20].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Cordon-20].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Cordon-20].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon-21].Name;Меченый продолжает идти
+[StoryEvents.Event-Cordon-21].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Cordon-21].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon-22].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Cordon-22].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Cordon-22].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon-ChangeOwner-3].Name;Потеря территории
+[StoryEvents.Event-Cordon-ChangeOwner-3].Desc-Owner;Мы потеряли контроль над территорией %0:s локации %1:s
+[StoryEvents.Event-Cordon-ChangeOwner-3].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Cordon-ChangeOwner-3
+[StoryEvents.Event-Cordon-Advisor-2].Name;Лис спасен
+[StoryEvents.Event-Cordon-Advisor-2].Desc-Owner;Лис теперь доступен как кандидат в заместители!
+[StoryEvents.Event-Cordon-Advisor-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Cordon-Advisor-2
+[StoryEvents.Event-Cordon-23].Name;Меченый продолжает идти
+[StoryEvents.Event-Cordon-23].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Cordon-23].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon-24].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Cordon-24].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Cordon-24].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon-25].Name;Меченый продолжает идти
+[StoryEvents.Event-Cordon-25].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Cordon-25].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon-26].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Cordon-26].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Cordon-26].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump-1].Name;Меченый продолжает идти
+[StoryEvents.Event-Dump-1].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Dump-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump-2].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Dump-2].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Dump-2].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump-ChangeOwner-1].Name;Потеря территории
+[StoryEvents.Event-Dump-ChangeOwner-1].Desc-Owner;Мы потеряли контроль над территорией %0:s локации %1:s
+[StoryEvents.Event-Dump-ChangeOwner-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Cordon-ChangeOwner-1
+[StoryEvents.Event-Dump-Advisor-1].Name;Юрик спасен
+[StoryEvents.Event-Dump-Advisor-1].Desc-Owner;Юрик теперь доступен как кандидат в заместители!
+[StoryEvents.Event-Dump-Advisor-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Dump-Advisor-1
+[StoryEvents.Event-Dump-ChangeOwner-2].Name;Потеря территории
+[StoryEvents.Event-Dump-ChangeOwner-2].Desc-Owner;Если вы это видите, то это баг ивента Event-Cordon-ChangeOwner-2
+[StoryEvents.Event-Dump-ChangeOwner-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Cordon-ChangeOwner-2
+[StoryEvents.Event-Dump-AddUnit-1].Name;Технический ивент
+[StoryEvents.Event-Dump-AddUnit-1].Desc-Owner;Если вы это видите, то это баг ивента Event-Dump-AddUnit-1
+[StoryEvents.Event-Dump-AddUnit-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Dump-AddUnit-1
+[StoryEvents.Event-Dump-3].Name;Меченый продолжает идти
+[StoryEvents.Event-Dump-3].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Dump-3].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump-4].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Dump-4].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Dump-4].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump-Advisor-2].Name;Бес
+[StoryEvents.Event-Dump-Advisor-2].Desc-Owner;Бес теперь доступен как кандидат в заместители!
+[StoryEvents.Event-Dump-Advisor-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Dump-Advisor-2
+[StoryEvents.Event-Dump-5].Name;Меченый продолжает идти
+[StoryEvents.Event-Dump-5].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Dump-5].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump-6].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Dump-6].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Dump-6].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump-7].Name;Меченый продолжает идти
+[StoryEvents.Event-Dump-7].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Dump-7].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump-8].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Dump-8].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Dump-8].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump-9].Name;Меченый продолжает идти
+[StoryEvents.Event-Dump-9].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Dump-9].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump-10].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Dump-10].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Dump-10].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump-Advisor-3].Name;Серый
+[StoryEvents.Event-Dump-Advisor-3].Desc-Owner;Серый теперь доступен как кандидат в заместители!
+[StoryEvents.Event-Dump-Advisor-3].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Dump-Advisor-3
+[StoryEvents.Event-Dump-11].Name;Меченый продолжает идти
+[StoryEvents.Event-Dump-11].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Dump-11].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump-12].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Dump-12].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Dump-12].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump-13].Name;Меченый продолжает идти
+[StoryEvents.Event-Dump-13].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Dump-13].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump-14].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Dump-14].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Dump-14].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Agroprom-1].Name;Меченый продолжает идти
+[StoryEvents.Event-Agroprom-1].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Agroprom-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Agroprom-2].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Agroprom-2].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Agroprom-2].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Agroprom-Helicopter-1].Name;Замечен вертолёт
+[StoryEvents.Event-Agroprom-Helicopter-1].Desc-Owner;Над локацией %1:s замечен военный вертолёт!
+[StoryEvents.Event-Agroprom-Helicopter-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Agroprom-3].Name;Меченый продолжает идти
+[StoryEvents.Event-Agroprom-3].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Agroprom-3].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Agroprom-4].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Agroprom-4].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Agroprom-4].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Agroprom-SetFlag1-1].Name;Технический ивент
+[StoryEvents.Event-Agroprom-SetFlag1-1].Desc-Owner;Если вы это видите, то это баг ивента Event-Agroprom-SetFlag1-1
+[StoryEvents.Event-Agroprom-SetFlag1-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Agroprom-SetFlag1-1
+[StoryEvents.Event-Agroprom-Helicopter-2].Name;Атака вертолёта
+[StoryEvents.Event-Agroprom-Helicopter-2].Desc-Owner;По территории %0:s локации %1:s был нанесён удар военным вертолётом! Предположительно, мы понесли следующие потери:
+[StoryEvents.Event-Agroprom-Helicopter-2].Desc-NonOwner;По территории %0:s локации %1:s был нанесён удар военным вертолётом!
+[StoryEvents.Event-Agroprom-Invasion-1].Name;Военный десант
+[StoryEvents.Event-Agroprom-Invasion-1].Desc-Owner;Территорию %0:s локации %1:s штурмует десант Военных!
+[StoryEvents.Event-Agroprom-Invasion-1].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует десант Военных!
+[StoryEvents.Event-Agroprom-SetFlag1-2].Name;Технический ивент
+[StoryEvents.Event-Agroprom-SetFlag1-2].Desc-Owner;Если вы это видите, то это баг ивента Event-Agroprom-SetFlag1-2
+[StoryEvents.Event-Agroprom-SetFlag1-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Agroprom-SetFlag1-2
+[StoryEvents.Event-Agroprom-5].Name;Меченый продолжает идти
+[StoryEvents.Event-Agroprom-5].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Agroprom-5].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Agroprom-6].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Agroprom-6].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Agroprom-6].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Agroprom-Advisor-1].Name;Крот
+[StoryEvents.Event-Agroprom-Advisor-1].Desc-Owner;Крот теперь доступен как кандидат в заместители!
+[StoryEvents.Event-Agroprom-Advisor-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Agroprom-Advisor-1
+[StoryEvents.Event-Agroprom-7].Name;Меченый продолжает идти
+[StoryEvents.Event-Agroprom-7].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Agroprom-7].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Agroprom-8].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Agroprom-8].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Agroprom-8].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Agroprom-9].Name;Меченый продолжает идти
+[StoryEvents.Event-Agroprom-9].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Agroprom-9].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Agroprom-10].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Agroprom-10].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Agroprom-10].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Agroprom-11].Name;Меченый продолжает идти
+[StoryEvents.Event-Agroprom-11].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Agroprom-11].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Agroprom-12].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Agroprom-12].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Agroprom-12].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Agroprom-13].Name;Меченый продолжает идти
+[StoryEvents.Event-Agroprom-13].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Agroprom-13].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Agroprom-14].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Agroprom-14].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Agroprom-14].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Agroprom-Documents].Name;Меченый продолжает идти
+[StoryEvents.Event-Agroprom-Documents].Desc-Owner;У нас кто-то украл важные документы с базы! Тревога!
+[StoryEvents.Event-Agroprom-Documents].Desc-NonOwner;Ходят слухи, что сталкер Меченый выкрал какие-то важные документы с базы Военных на территории %0:s локации %1:s
+[StoryEvents.Event-Agroprom-15].Name;Меченый продолжает идти
+[StoryEvents.Event-Agroprom-15].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Agroprom-15].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Agroprom-16].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Agroprom-16].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Agroprom-16].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Agroprom-17].Name;Меченый продолжает идти
+[StoryEvents.Event-Agroprom-17].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Agroprom-17].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Agroprom-18].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Agroprom-18].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Agroprom-18].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Agroprom-19].Name;Меченый продолжает идти
+[StoryEvents.Event-Agroprom-19].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Agroprom-19].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Agroprom-20].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Agroprom-20].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Agroprom-20].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Agroprom-21].Name;Меченый продолжает идти
+[StoryEvents.Event-Agroprom-21].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Agroprom-21].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Agroprom-22].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Agroprom-22].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Agroprom-22].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump2-1].Name;Меченый продолжает идти
+[StoryEvents.Event-Dump2-1].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Dump2-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump2-2].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Dump2-2].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Dump2-2].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump2-3].Name;Меченый продолжает идти
+[StoryEvents.Event-Dump2-3].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Dump2-3].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump2-4].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Dump2-4].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Dump2-4].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump2-5].Name;Меченый продолжает идти
+[StoryEvents.Event-Dump2-5].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Dump2-5].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump2-6].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Dump2-6].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Dump2-6].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump2-7].Name;Меченый продолжает идти
+[StoryEvents.Event-Dump2-7].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Dump2-7].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump2-8].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Dump2-8].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Dump2-8].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump2-9].Name;Меченый продолжает идти
+[StoryEvents.Event-Dump2-9].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Dump2-9].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump2-10].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Dump2-10].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Dump2-10].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok-1].Name;Меченый продолжает идти
+[StoryEvents.Event-Rostok-1].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Rostok-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok-2].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Rostok-2].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Rostok-2].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok-3].Name;Меченый продолжает идти
+[StoryEvents.Event-Rostok-3].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Rostok-3].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok-4].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Rostok-4].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Rostok-4].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok-5].Name;Меченый продолжает идти
+[StoryEvents.Event-Rostok-5].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Rostok-5].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok-6].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Rostok-6].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Rostok-6].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok-7].Name;Меченый продолжает идти
+[StoryEvents.Event-Rostok-7].Desc-Owner;На нашей территории %0:s на локации %1:s сталкер Меченый встретился с Барменом. Наш гарнизон пропустил его.
+[StoryEvents.Event-Rostok-7].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s и вел какие-то переговоры с Барменом.
+[StoryEvents.Event-Rostok-8].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Rostok-8].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Rostok-8].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok-9].Name;Меченый продолжает идти
+[StoryEvents.Event-Rostok-9].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Rostok-9].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok-10].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Rostok-10].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Rostok-10].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok-11].Name;Меченый продолжает идти
+[StoryEvents.Event-Rostok-11].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Rostok-11].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok-12].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Rostok-12].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Rostok-12].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok-13].Name;Меченый продолжает идти
+[StoryEvents.Event-Rostok-13].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Rostok-13].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok-14].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Rostok-14].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Rostok-14].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump3-1].Name;Меченый продолжает идти
+[StoryEvents.Event-Dump3-1].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Dump3-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump3-2].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Dump3-2].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Dump3-2].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump3-3].Name;Меченый продолжает идти
+[StoryEvents.Event-Dump3-3].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Dump3-3].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump3-4].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Dump3-4].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Dump3-4].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump3-5].Name;Меченый продолжает идти
+[StoryEvents.Event-Dump3-5].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Dump3-5].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump3-6].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Dump3-6].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Dump3-6].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-DarkVallery-1].Name;Меченый продолжает идти
+[StoryEvents.Event-DarkVallery-1].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-DarkVallery-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-DarkVallery-2].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-DarkVallery-2].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-DarkVallery-2].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-DarkVallery-Advisor-1].Name;Пуля
+[StoryEvents.Event-DarkVallery-Advisor-1].Desc-Owner;Пуля теперь доступен как кандидат в заместители!
+[StoryEvents.Event-DarkVallery-Advisor-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-DarkVallery-Advisor-1
+[StoryEvents.Event-DarkVallery-3].Name;Меченый продолжает идти
+[StoryEvents.Event-DarkVallery-3].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-DarkVallery-3].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-DarkVallery-4].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-DarkVallery-4].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-DarkVallery-4].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-DarkVallery-5].Name;Меченый продолжает идти
+[StoryEvents.Event-DarkVallery-5].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-DarkVallery-5].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-DarkVallery-6].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-DarkVallery-6].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-DarkVallery-6].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-DarkVallery-7].Name;Меченый продолжает идти
+[StoryEvents.Event-DarkVallery-7].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-DarkVallery-7].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-DarkVallery-8].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-DarkVallery-8].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-DarkVallery-8].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-DarkVallery-9].Name;Меченый продолжает идти
+[StoryEvents.Event-DarkVallery-9].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-DarkVallery-9].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-DarkVallery-10].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-DarkVallery-10].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-DarkVallery-10].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-DarkVallery-SetFlag1-1].Name;Технический ивент
+[StoryEvents.Event-DarkVallery-SetFlag1-1].Desc-Owner;Если вы это видите, то это баг ивента Event-DarkVallery-SetFlag1-1
+[StoryEvents.Event-DarkVallery-SetFlag1-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-DarkVallery-SetFlag1-1
+[StoryEvents.Event-DarkVallery-Advisor-2].Name;Сергей Лохматый
+[StoryEvents.Event-DarkVallery-Advisor-2].Desc-Owner;Сергей Лохматый теперь доступен как кандидат в заместители!
+[StoryEvents.Event-DarkVallery-Advisor-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-DarkVallery-Advisor-2
+[StoryEvents.Event-DarkVallery-SetFlag1-2].Name;Технический ивент
+[StoryEvents.Event-DarkVallery-SetFlag1-2].Desc-Owner;Если вы это видите, то это баг ивента Event-DarkVallery-SetFlag1-2
+[StoryEvents.Event-DarkVallery-SetFlag1-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-DarkVallery-SetFlag1-2
+[StoryEvents.Event-DarkVallery-ChangeLeader].Name;Смерть Борова
+[StoryEvents.Event-DarkVallery-ChangeLeader].Desc-Owner;"В результате нападения Меченого погиб глава группировки. Ряд ""авторитетов"" организовали сходку, на которой решили временно управлять группировкой через коллективные решения. Несмотря на сохранение единства группировки, это привело к некоторому ухудшению ее управляемости."
+[StoryEvents.Event-DarkVallery-ChangeLeader].Desc-NonOwner;"В результате нападения Меченого погиб глава группировки. Ряд ""авторитетов"" организовали сходку, на которой решили временно управлять группировкой через коллективные решения. Несмотря на сохранение единства группировки, это привело к некоторому ухудшению ее управляемости."
+[StoryEvents.Event-DarkVallery-11].Name;Меченый продолжает идти
+[StoryEvents.Event-DarkVallery-11].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-DarkVallery-11].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-DarkVallery-12].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-DarkVallery-12].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-DarkVallery-12].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-DarkVallery-X18-1].Name;Меченый продолжает идти
+[StoryEvents.Event-DarkVallery-X18-1].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-DarkVallery-X18-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-DarkVallery-X18-2].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-DarkVallery-X18-2].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-DarkVallery-X18-2].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-DarkVallery-Invasion-1].Name;Военный десант
+[StoryEvents.Event-DarkVallery-Invasion-1].Desc-Owner;Территорию %0:s локации %1:s штурмует десант Военных!
+[StoryEvents.Event-DarkVallery-Invasion-1].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует десант Военных!
+[StoryEvents.Event-DarkVallery-Invasion-2].Name;Военный десант
+[StoryEvents.Event-DarkVallery-Invasion-2].Desc-Owner;Территорию %0:s локации %1:s штурмует десант Военных!
+[StoryEvents.Event-DarkVallery-Invasion-2].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует десант Военных!
+[StoryEvents.Event-DarkVallery-13].Name;Меченый продолжает идти
+[StoryEvents.Event-DarkVallery-13].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-DarkVallery-13].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-DarkVallery-14].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-DarkVallery-14].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-DarkVallery-14].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-DarkVallery-Invasion-3].Name;Военный десант
+[StoryEvents.Event-DarkVallery-Invasion-3].Desc-Owner;Территорию %0:s локации %1:s штурмует десант Военных!
+[StoryEvents.Event-DarkVallery-Invasion-3].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует десант Военных!
+[StoryEvents.Event-DarkVallery-15].Name;Меченый продолжает идти
+[StoryEvents.Event-DarkVallery-15].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-DarkVallery-15].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-DarkVallery-16].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-DarkVallery-16].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-DarkVallery-16].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon2-SetFlag1-1].Name;Технический ивент
+[StoryEvents.Event-Cordon2-SetFlag1-1].Desc-Owner;Если вы это видите, то это баг ивента Event-DarkVallery-SetFlag1-1
+[StoryEvents.Event-Cordon2-SetFlag1-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-DarkVallery-SetFlag1-1
+[StoryEvents.Event-Cordon2-Invasion-1].Name;Группа Наёмников
+[StoryEvents.Event-Cordon2-Invasion-1].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд группировки Наёмники!
+[StoryEvents.Event-Cordon2-Invasion-1].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует отряд группировки Наёмники!
+[StoryEvents.Event-Cordon2-SetFlag1-2].Name;Технический ивент
+[StoryEvents.Event-Cordon2-SetFlag1-2].Desc-Owner;Если вы это видите, то это баг ивента Event-DarkVallery-SetFlag1-2
+[StoryEvents.Event-Cordon2-SetFlag1-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-DarkVallery-SetFlag1-2
+[StoryEvents.Event-Cordon2-1].Name;Меченый продолжает идти
+[StoryEvents.Event-Cordon2-1].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Cordon2-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon2-2].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Cordon2-2].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Cordon2-2].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon2-3].Name;Меченый продолжает идти
+[StoryEvents.Event-Cordon2-3].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Cordon2-3].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon2-4].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Cordon2-4].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Cordon2-4].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon2-5].Name;Меченый продолжает идти
+[StoryEvents.Event-Cordon2-5].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Cordon2-5].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon2-6].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Cordon2-6].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Cordon2-6].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon2-7].Name;Меченый продолжает идти
+[StoryEvents.Event-Cordon2-7].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Cordon2-7].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon2-8].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Cordon2-8].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Cordon2-8].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon2-9].Name;Меченый продолжает идти
+[StoryEvents.Event-Cordon2-9].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Cordon2-9].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon2-10].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Cordon2-10].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Cordon2-10].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon2-11].Name;Меченый продолжает идти
+[StoryEvents.Event-Cordon2-11].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Cordon2-11].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon2-12].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Cordon2-12].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Cordon2-12].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon2-13].Name;Меченый продолжает идти
+[StoryEvents.Event-Cordon2-13].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Cordon2-13].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Cordon2-14].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Cordon2-14].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Cordon2-14].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump4-1].Name;Меченый продолжает идти
+[StoryEvents.Event-Dump4-1].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Dump4-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump4-2].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Dump4-2].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Dump4-2].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump4-3].Name;Меченый продолжает идти
+[StoryEvents.Event-Dump4-3].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Dump4-3].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump4-4].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Dump4-4].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Dump4-4].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump4-5].Name;Меченый продолжает идти
+[StoryEvents.Event-Dump4-5].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Dump4-5].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump4-6].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Dump4-6].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Dump4-6].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump4-7].Name;Меченый продолжает идти
+[StoryEvents.Event-Dump4-7].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Dump4-7].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump4-8].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Dump4-8].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Dump4-8].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump4-9].Name;Меченый продолжает идти
+[StoryEvents.Event-Dump4-9].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Dump4-9].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump4-10].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Dump4-10].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Dump4-10].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump4-11].Name;Меченый продолжает идти
+[StoryEvents.Event-Dump4-11].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Dump4-11].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Dump4-12].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Dump4-12].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Dump4-12].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok2-1].Name;Меченый продолжает идти
+[StoryEvents.Event-Rostok2-1].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Rostok2-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok2-2].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Rostok2-2].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Rostok2-2].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok2-3].Name;Меченый продолжает идти
+[StoryEvents.Event-Rostok2-3].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Rostok2-3].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok2-4].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Rostok2-4].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Rostok2-4].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok2-5].Name;Меченый продолжает идти
+[StoryEvents.Event-Rostok2-5].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Rostok2-5].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok2-6].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Rostok2-6].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Rostok2-6].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok2-7].Name;Меченый продолжает идти
+[StoryEvents.Event-Rostok2-7].Desc-Owner;На нашей территории %0:s на локации %1:s сталкер Меченый встретился с Барменом. Наш гарнизон пропустил его.
+[StoryEvents.Event-Rostok2-7].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s и вел какие-то переговоры с Барменом.
+[StoryEvents.Event-Rostok2-8].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Rostok2-8].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Rostok2-8].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok2-9].Name;Меченый продолжает идти
+[StoryEvents.Event-Rostok2-9].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Rostok2-9].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok2-10].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Rostok2-10].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Rostok2-10].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok2-11].Name;Меченый продолжает идти
+[StoryEvents.Event-Rostok2-11].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Rostok2-11].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok2-12].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Rostok2-12].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Rostok2-12].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory-1].Name;Меченый продолжает идти
+[StoryEvents.Event-WildTerritory-1].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-WildTerritory-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory-2].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-WildTerritory-2].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-WildTerritory-2].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory-3].Name;Меченый продолжает идти
+[StoryEvents.Event-WildTerritory-3].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-WildTerritory-3].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory-4].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-WildTerritory-4].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-WildTerritory-4].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory-SetFlag1-1].Name;Технический ивент
+[StoryEvents.Event-WildTerritory-SetFlag1-1].Desc-Owner;Если вы это видите, то это баг ивента Event-WildTerritory-SetFlag1-1
+[StoryEvents.Event-WildTerritory-SetFlag1-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-WildTerritory-SetFlag1-1
+[StoryEvents.Event-WildTerritory-ChangeResourceScientists-1].Name;Вертолет с Кругловым
+[StoryEvents.Event-WildTerritory-ChangeResourceScientists-1].Desc-Owner;Вертолёт успешно доставил Круглова
+[StoryEvents.Event-WildTerritory-ChangeResourceScientists-1].Desc-NonOwner;Над локацией Дикая территория был замечен вертолёт, который летел в сторону локации Янтарь. Что это могло бы значить?
+[StoryEvents.Event-WildTerritory-ChangeResourceScientists-2].Name;Группа ученых
+[StoryEvents.Event-WildTerritory-ChangeResourceScientists-2].Desc-Owner;Вместе с Кругловым прибыла группа ученых, теперь их можно использовать как дополнительную охрану
+[StoryEvents.Event-WildTerritory-ChangeResourceScientists-2].Desc-NonOwner;Над локацией Дикая территория был замечен вертолёт, который летел в сторону локации Янтарь. Что это могло бы значить?
+[StoryEvents.Event-WildTerritory-SetFlag1-2].Name;Технический ивент
+[StoryEvents.Event-WildTerritory-SetFlag1-2].Desc-Owner;Если вы это видите, то это баг ивента Event-WildTerritory-SetFlag1-2
+[StoryEvents.Event-WildTerritory-SetFlag1-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-WildTerritory-SetFlag1-2
+[StoryEvents.Event-WildTerritory-SetFlag1-3].Name;Технический ивент
+[StoryEvents.Event-WildTerritory-SetFlag1-3].Desc-Owner;Если вы это видите, то это баг ивента Event-WildTerritory-SetFlag1-3
+[StoryEvents.Event-WildTerritory-SetFlag1-3].Desc-NonOwner;Если вы это видите, то это баг ивента Event-WildTerritory-SetFlag1-3
+[StoryEvents.Event-WildTerritory-ChangeResourceScientists-3].Name;Вертолет с Кругловым
+[StoryEvents.Event-WildTerritory-ChangeResourceScientists-3].Desc-Owner;Вертолёт был сбит над Дикой Территорией, но Круглов выжил.
+[StoryEvents.Event-WildTerritory-ChangeResourceScientists-3].Desc-NonOwner;Над локацией Дикая территория был сбит вертолёт, который летел в сторону локации Янтарь. Что это могло бы значить?
+[StoryEvents.Event-WildTerritory-SetFlag1-4].Name;Технический ивент
+[StoryEvents.Event-WildTerritory-SetFlag1-4].Desc-Owner;Если вы это видите, то это баг ивента Event-WildTerritory-SetFlag1-4
+[StoryEvents.Event-WildTerritory-SetFlag1-4].Desc-NonOwner;Если вы это видите, то это баг ивента Event-WildTerritory-SetFlag1-4
+[StoryEvents.Event-WildTerritory-SetFlag1-5].Name;Технический ивент
+[StoryEvents.Event-WildTerritory-SetFlag1-5].Desc-Owner;Если вы это видите, то это баг ивента Event-WildTerritory-SetFlag1-5
+[StoryEvents.Event-WildTerritory-SetFlag1-5].Desc-NonOwner;Если вы это видите, то это баг ивента Event-WildTerritory-SetFlag1-5
+[StoryEvents.Event-WildTerritory-Advisor-1].Name;Семёнов доступен
+[StoryEvents.Event-WildTerritory-Advisor-1].Desc-Owner;Если вы это видите, то это баг ивента Event-WildTerritory-Advisor-1
+[StoryEvents.Event-WildTerritory-Advisor-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-WildTerritory-Advisor-1
+[StoryEvents.Event-WildTerritory-Advisor-2].Name;Вертолет с Кругловым
+[StoryEvents.Event-WildTerritory-Advisor-2].Desc-Owner;Вертолёт был сбит над Дикой Территорией. Круглов погиб. Научный сотрудник Семёнов принял на себя обязанности Круглова.
+[StoryEvents.Event-WildTerritory-Advisor-2].Desc-NonOwner;Над локацией Дикая территория был сбит вертолёт, который летел в сторону локации Янтарь. По слухам весь экипаж погиб. Что это могло бы значить?
+[StoryEvents.Event-WildTerritory-SetFlag1-6].Name;Технический ивент
+[StoryEvents.Event-WildTerritory-SetFlag1-6].Desc-Owner;Если вы это видите, то это баг ивента Event-WildTerritory-SetFlag1-6
+[StoryEvents.Event-WildTerritory-SetFlag1-6].Desc-NonOwner;Если вы это видите, то это баг ивента Event-WildTerritory-SetFlag1-6
+[StoryEvents.Event-WildTerritory-5].Name;Меченый продолжает идти
+[StoryEvents.Event-WildTerritory-5].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-WildTerritory-5].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory-6].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-WildTerritory-6].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-WildTerritory-6].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory-7].Name;Меченый продолжает идти
+[StoryEvents.Event-WildTerritory-7].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-WildTerritory-7].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory-8].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-WildTerritory-8].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-WildTerritory-8].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory-9].Name;Меченый продолжает идти
+[StoryEvents.Event-WildTerritory-9].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-WildTerritory-9].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory-10].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-WildTerritory-10].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-WildTerritory-10].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory-11].Name;Меченый продолжает идти
+[StoryEvents.Event-WildTerritory-11].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-WildTerritory-11].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory-12].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-WildTerritory-12].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-WildTerritory-12].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory-13].Name;Меченый продолжает идти
+[StoryEvents.Event-WildTerritory-13].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-WildTerritory-13].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory-14].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-WildTerritory-14].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-WildTerritory-14].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory-15].Name;Меченый продолжает идти
+[StoryEvents.Event-WildTerritory-15].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-WildTerritory-15].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory-16].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-WildTerritory-16].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-WildTerritory-16].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-1].Name;Меченый продолжает идти
+[StoryEvents.Event-Yantar-1].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Yantar-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-2].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Yantar-2].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Yantar-2].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-3].Name;Меченый продолжает идти
+[StoryEvents.Event-Yantar-3].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Yantar-3].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-4].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Yantar-4].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Yantar-4].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-5].Name;Меченый встретился с Сахаровым
+[StoryEvents.Event-Yantar-5].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Yantar-5].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-6].Name;Меченый встретился с Сахаровым
+[StoryEvents.Event-Yantar-6].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Yantar-6].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-7].Name;Меченый продолжает идти
+[StoryEvents.Event-Yantar-7].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Yantar-7].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-8].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Yantar-8].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Yantar-8].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-9].Name;Меченый продолжает идти
+[StoryEvents.Event-Yantar-9].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Yantar-9].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-10].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Yantar-10].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Yantar-10].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-11].Name;Меченый продолжает идти
+[StoryEvents.Event-Yantar-11].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Yantar-11].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-12].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Yantar-12].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Yantar-12].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-13].Name;Меченый продолжает идти
+[StoryEvents.Event-Yantar-13].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Yantar-13].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-14].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Yantar-14].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Yantar-14].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-HeadsetPsyBlocker-1].Name;Экспериментальный образец
+[StoryEvents.Event-Yantar-HeadsetPsyBlocker-1].Desc-Owner;Сахарову удалось создать экспериментальный образец блокировщика пси излучения и отдать его Меченому, который сразу же отправился в лабораторию X-16!
+[StoryEvents.Event-Yantar-HeadsetPsyBlocker-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый заполучил некий уникальный предмет, который способен либо блокировать пси излучение, либо значительно его снизить!
+[StoryEvents.Event-Yantar-15].Name;Меченый продолжает идти
+[StoryEvents.Event-Yantar-15].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Yantar-15].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-16].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Yantar-16].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Yantar-16].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-17].Name;Меченый продолжает идти
+[StoryEvents.Event-Yantar-17].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Yantar-17].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-18].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Yantar-18].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Yantar-18].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-19].Name;Меченый продолжает идти
+[StoryEvents.Event-Yantar-19].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Yantar-19].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-20].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Yantar-20].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Yantar-20].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-21].Name;Меченый продолжает идти
+[StoryEvents.Event-Yantar-21].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Yantar-21].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-22].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Yantar-22].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Yantar-22].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-23].Name;Меченый продолжает идти
+[StoryEvents.Event-Yantar-23].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Yantar-23].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-24].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Yantar-24].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Yantar-24].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-25].Name;Меченый продолжает идти
+[StoryEvents.Event-Yantar-25].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Yantar-25].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-26].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Yantar-26].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Yantar-26].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-BrainPsyDisable-1].Name;Пси установка серьезно повреждена!
+[StoryEvents.Event-Yantar-BrainPsyDisable-1].Desc-Owner;Меченый вывел из строя пси установку на территории %0:s локации %1:s!
+[StoryEvents.Event-Yantar-BrainPsyDisable-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый вывел из строя пси установку на территории %0:s локации %1:s!
+[StoryEvents.Event-Yantar-27].Name;Меченый продолжает идти
+[StoryEvents.Event-Yantar-27].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Yantar-27].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-28].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Yantar-28].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Yantar-28].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-SetFlag1-1].Name;Технический ивент
+[StoryEvents.Event-Yantar-SetFlag1-1].Desc-Owner;Если вы это видите, то это баг ивента Event-Yantar-SetFlag1-1
+[StoryEvents.Event-Yantar-SetFlag1-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Yantar-SetFlag1-1
+[StoryEvents.Event-Yantar-HelicopterAttack-1].Name;Зачистка территорий
+[StoryEvents.Event-Yantar-HelicopterAttack-1].Desc-Owner;По нашей территории %0:s локации %1:s подлые Экологи вызвали удар вертолётами!
+[StoryEvents.Event-Yantar-HelicopterAttack-1].Desc-NonOwner;К нам поступила информация, что Экологи вызвали вертолёты для зачистки территории %0:s локации %1:s!
+[StoryEvents.Event-Yantar-HelicopterAttack-2].Name;Зачистка территорий
+[StoryEvents.Event-Yantar-HelicopterAttack-2].Desc-Owner;По нашей территории %0:s локации %1:s подлые Экологи вызвали удар вертолётами!
+[StoryEvents.Event-Yantar-HelicopterAttack-2].Desc-NonOwner;К нам поступила информация, что Экологи вызвали вертолёты для зачистки территории %0:s локации %1:s!
+[StoryEvents.Event-Yantar-HelicopterAttack-3].Name;Зачистка территорий
+[StoryEvents.Event-Yantar-HelicopterAttack-3].Desc-Owner;По нашей территории %0:s локации %1:s подлые Экологи вызвали удар вертолётами!
+[StoryEvents.Event-Yantar-HelicopterAttack-3].Desc-NonOwner;К нам поступила информация, что Экологи вызвали вертолёты для зачистки территории %0:s локации %1:s!
+[StoryEvents.Event-Cordon-Advisor-3].Name;Проводник
+[StoryEvents.Event-Cordon-Advisor-3].Desc-Owner;Проводник теперь доступен как кандидат в заместители!
+[StoryEvents.Event-Cordon-Advisor-3].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Cordon-Advisor-3
+[StoryEvents.Event-Yantar-SetFlag1-2].Name;Технический ивент
+[StoryEvents.Event-Yantar-SetFlag1-2].Desc-Owner;Если вы это видите, то это баг ивента Event-Yantar-SetFlag1-1
+[StoryEvents.Event-Yantar-SetFlag1-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Yantar-SetFlag1-1
+[StoryEvents.Event-Rostok-SetFlag1-1].Name;Технический ивент
+[StoryEvents.Event-Rostok-SetFlag1-1].Desc-Owner;Если вы это видите, то это баг ивента Event-Rostok-SetFlag1-1
+[StoryEvents.Event-Rostok-SetFlag1-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Rostok-SetFlag1-1
+[StoryEvents.Event-Rostok-SetFlag1-2].Name;Технический ивент
+[StoryEvents.Event-Rostok-SetFlag1-2].Desc-Owner;Если вы это видите, то это баг ивента Event-Rostok-SetFlag1-2
+[StoryEvents.Event-Rostok-SetFlag1-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Rostok-SetFlag1-2
+[StoryEvents.Event-WildTerritory-Invasion-2].Name;Отряд Долга
+[StoryEvents.Event-WildTerritory-Invasion-2].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд Долга!
+[StoryEvents.Event-WildTerritory-Invasion-2].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует отряд Долга!
+[StoryEvents.Event-Rostok-SetFlag1-3].Name;Технический ивент
+[StoryEvents.Event-Rostok-SetFlag1-3].Desc-Owner;Если вы это видите, то это баг ивента Event-Rostok-SetFlag1-3
+[StoryEvents.Event-Rostok-SetFlag1-3].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Rostok-SetFlag1-3
+[StoryEvents.Event-Yantar-29].Name;Меченый продолжает идти
+[StoryEvents.Event-Yantar-29].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Yantar-29].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-30].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Yantar-30].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Yantar-30].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok-SetFlag1-4].Name;Технический ивент
+[StoryEvents.Event-Rostok-SetFlag1-4].Desc-Owner;Если вы это видите, то это баг ивента Event-Rostok-SetFlag1-4
+[StoryEvents.Event-Rostok-SetFlag1-4].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Rostok-SetFlag1-4
+[StoryEvents.Event-Yantar-31].Name;Меченый продолжает идти
+[StoryEvents.Event-Yantar-31].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Yantar-31].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-32].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Yantar-32].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Yantar-32].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-33].Name;Меченый продолжает идти
+[StoryEvents.Event-Yantar-33].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Yantar-33].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-34].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Yantar-34].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Yantar-34].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-35].Name;Меченый продолжает идти
+[StoryEvents.Event-Yantar-35].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Yantar-35].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-36].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Yantar-36].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Yantar-36].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-37].Name;Меченый продолжает идти
+[StoryEvents.Event-Yantar-37].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Yantar-37].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-38].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Yantar-38].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Yantar-38].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory2-Invasion-1].Name;Появление группы Бандитов
+[StoryEvents.Event-WildTerritory2-Invasion-1].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд Бандитов!
+[StoryEvents.Event-WildTerritory2-Invasion-1].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует отряд Бандитов!
+[StoryEvents.Event-WildTerritory2-Invasion-2].Name;Группа Бандитов
+[StoryEvents.Event-WildTerritory2-Invasion-2].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд Бандитов!
+[StoryEvents.Event-WildTerritory2-Invasion-2].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует отряд Бандитов!
+[StoryEvents.Event-WildTerritory2-1].Name;Меченый продолжает идти
+[StoryEvents.Event-WildTerritory2-1].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-WildTerritory2-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory2-2].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-WildTerritory2-2].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-WildTerritory2-2].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-Invasion-1].Name;Группа сталкеров
+[StoryEvents.Event-Yantar-Invasion-1].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд Одиночек!
+[StoryEvents.Event-Yantar-Invasion-1].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует отряд Одиночек!
+[StoryEvents.Event-Rostok-SetFlag1-5].Name;Технический ивент
+[StoryEvents.Event-Rostok-SetFlag1-5].Desc-Owner;Если вы это видите, то это баг ивента Event-Rostok-SetFlag1-5
+[StoryEvents.Event-Rostok-SetFlag1-5].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Rostok-SetFlag1-5
+[StoryEvents.Event-WildTerritory2-3].Name;Меченый продолжает идти
+[StoryEvents.Event-WildTerritory2-3].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-WildTerritory2-3].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory2-4].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-WildTerritory2-4].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-WildTerritory2-4].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Yantar-SetFlag2-1].Name;Технический ивент
+[StoryEvents.Event-Yantar-SetFlag2-1].Desc-Owner;Если вы это видите, то это баг ивента Event-Yantar-SetFlag2-1
+[StoryEvents.Event-Yantar-SetFlag2-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Yantar-SetFlag2-1
+[StoryEvents.Event-Yantar-Invasion-2].Name;Отряд Долга
+[StoryEvents.Event-Yantar-Invasion-2].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд Долга!
+[StoryEvents.Event-Yantar-Invasion-2].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует отряд Долга!
+[StoryEvents.Event-Yantar-SetFlag2-2].Name;Технический ивент
+[StoryEvents.Event-Yantar-SetFlag2-2].Desc-Owner;Если вы это видите, то это баг ивента Event-Yantar-SetFlag2-2
+[StoryEvents.Event-Yantar-SetFlag2-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Yantar-SetFlag2-2
+[StoryEvents.Event-WildTerritory2-5].Name;Меченый продолжает идти
+[StoryEvents.Event-WildTerritory2-5].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-WildTerritory2-5].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory2-6].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-WildTerritory2-6].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-WildTerritory2-6].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory2-7].Name;Меченый продолжает идти
+[StoryEvents.Event-WildTerritory2-7].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-WildTerritory2-7].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory2-8].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-WildTerritory2-8].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-WildTerritory2-8].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory2-9].Name;Меченый продолжает идти
+[StoryEvents.Event-WildTerritory2-9].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-WildTerritory2-9].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory2-10].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-WildTerritory2-10].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-WildTerritory2-10].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory2-11].Name;Меченый продолжает идти
+[StoryEvents.Event-WildTerritory2-11].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-WildTerritory2-11].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory2-12].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-WildTerritory2-12].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-WildTerritory2-12].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory2-13].Name;Меченый продолжает идти
+[StoryEvents.Event-WildTerritory2-13].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-WildTerritory2-13].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory2-14].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-WildTerritory2-14].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-WildTerritory2-14].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory2-15].Name;Меченый продолжает идти
+[StoryEvents.Event-WildTerritory2-15].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-WildTerritory2-15].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-WildTerritory2-16].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-WildTerritory2-16].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-WildTerritory2-16].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok3-1].Name;Меченый продолжает идти
+[StoryEvents.Event-Rostok3-1].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Rostok3-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok3-2].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Rostok3-2].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Rostok3-2].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok3-3].Name;Меченый продолжает идти
+[StoryEvents.Event-Rostok3-3].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Rostok3-3].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok3-4].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Rostok3-4].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Rostok3-4].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok3-5].Name;Меченый продолжает идти
+[StoryEvents.Event-Rostok3-5].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Rostok3-5].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok3-6].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Rostok3-6].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Rostok3-6].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok3-7].Name;Меченый продолжает идти
+[StoryEvents.Event-Rostok3-7].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Rostok3-7].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok3-8].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Rostok3-8].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Rostok3-8].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok3-9].Name;Меченый продолжает идти
+[StoryEvents.Event-Rostok3-9].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Rostok3-9].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok3-10].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Rostok3-10].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Rostok3-10].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok3-11].Name;Меченый продолжает идти
+[StoryEvents.Event-Rostok3-11].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Rostok3-11].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Rostok3-12].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Rostok3-12].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Rostok3-12].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Agroprom-Advisor-2].Name;Доктор
+[StoryEvents.Event-Agroprom-Advisor-2].Desc-Owner;Доктор теперь доступен как кандидат в заместители!
+[StoryEvents.Event-Agroprom-Advisor-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Agroprom-Advisor-2
+[StoryEvents.Event-ArmyStocks-1].Name;Меченый продолжает идти
+[StoryEvents.Event-ArmyStocks-1].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-ArmyStocks-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-ArmyStocks-2].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-ArmyStocks-2].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-ArmyStocks-2].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-ArmyStocks-3].Name;Меченый продолжает идти
+[StoryEvents.Event-ArmyStocks-3].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-ArmyStocks-3].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-ArmyStocks-4].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-ArmyStocks-4].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-ArmyStocks-4].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-ArmyStocks-5].Name;Меченый продолжает идти
+[StoryEvents.Event-ArmyStocks-5].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-ArmyStocks-5].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-ArmyStocks-6].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-ArmyStocks-6].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-ArmyStocks-6].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-ArmyStocks-7].Name;Меченый продолжает идти
+[StoryEvents.Event-ArmyStocks-7].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-ArmyStocks-7].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-ArmyStocks-8].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-ArmyStocks-8].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-ArmyStocks-8].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-ArmyStocks-9].Name;Меченый продолжает идти
+[StoryEvents.Event-ArmyStocks-9].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-ArmyStocks-9].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-ArmyStocks-10].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-ArmyStocks-10].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-ArmyStocks-10].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-ArmyStocks-11].Name;Меченый продолжает идти
+[StoryEvents.Event-ArmyStocks-11].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-ArmyStocks-11].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-ArmyStocks-12].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-ArmyStocks-12].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-ArmyStocks-12].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-ArmyStocks-13].Name;Меченый продолжает идти
+[StoryEvents.Event-ArmyStocks-13].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-ArmyStocks-13].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-ArmyStocks-14].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-ArmyStocks-14].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-ArmyStocks-14].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Radar-1].Name;Меченый продолжает идти
+[StoryEvents.Event-Radar-1].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Radar-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Radar-2].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Radar-2].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Radar-2].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Radar-3].Name;Меченый продолжает идти
+[StoryEvents.Event-Radar-3].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Radar-3].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Radar-4].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Radar-4].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Radar-4].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Radar-5].Name;Меченый продолжает идти
+[StoryEvents.Event-Radar-5].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Radar-5].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Radar-6].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Radar-6].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Radar-6].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Radar-7].Name;Меченый продолжает идти
+[StoryEvents.Event-Radar-7].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Radar-7].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Radar-8].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Radar-8].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Radar-8].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Radar-9].Name;Меченый продолжает идти
+[StoryEvents.Event-Radar-9].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Radar-9].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Radar-10].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Radar-10].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Radar-10].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Radar-11].Name;Меченый продолжает идти
+[StoryEvents.Event-Radar-11].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Radar-11].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Radar-12].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Radar-12].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Radar-12].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Radar-13].Name;Меченый продолжает идти
+[StoryEvents.Event-Radar-13].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Radar-13].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Radar-14].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Radar-14].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Radar-14].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Radar-15].Name;Меченый продолжает идти
+[StoryEvents.Event-Radar-15].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Radar-15].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Radar-16].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Radar-16].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Radar-16].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Radar-17].Name;Меченый продолжает идти
+[StoryEvents.Event-Radar-17].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Radar-17].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Radar-18].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Radar-18].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Radar-18].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Radar-BrainMixerDisable-1].Name;Пси установка серьезно повреждена!
+[StoryEvents.Event-Radar-BrainMixerDisable-1].Desc-Owner;Меченый вывел из строя пси установку на территории %0:s локации %1:s!
+[StoryEvents.Event-Radar-BrainMixerDisable-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый вывел из строя пси установку на территории %0:s локации %1:s!
+[StoryEvents.Event-Radar-SetFlag1-1].Name;Технический ивент
+[StoryEvents.Event-Radar-SetFlag1-1].Desc-Owner;Если вы это видите, то это баг ивента Event-Radar-SetFlag1-1
+[StoryEvents.Event-Radar-SetFlag1-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Radar-SetFlag1-1
+[StoryEvents.Event-Radar-Helicopter-1].Name;Вертолёты
+[StoryEvents.Event-Radar-Helicopter-1].Desc-Owner;Множество военных вертолётов летят в нашу сторону к ЧАЭС! Тревога! Все к оружию!
+[StoryEvents.Event-Radar-Helicopter-1].Desc-NonOwner;Множество вертолётов Военных направились к ЧАЭС!
+[StoryEvents.Event-Radar-RadioFlood-1].Name;Переговоры
+[StoryEvents.Event-Radar-RadioFlood-1].Desc-Owner;Радиоэфир переполнен различными переговорами о происходящем. Похоже что-то будет.
+[StoryEvents.Event-Radar-RadioFlood-1].Desc-NonOwner;Радиоэфир переполнен различными переговорами о происходящем. Похоже что-то будет.
+[StoryEvents.Event-Radar-SetFlag1-2].Name;Технический ивент
+[StoryEvents.Event-Radar-SetFlag1-2].Desc-Owner;Если вы это видите, то это баг ивента Event-Radar-SetFlag1-2
+[StoryEvents.Event-Radar-SetFlag1-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Radar-SetFlag1-2
+[StoryEvents.Event-Radar-19].Name;Меченый продолжает идти
+[StoryEvents.Event-Radar-19].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Radar-19].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Radar-20].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Radar-20].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Radar-20].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Radar-SoldiersIsDie-1].Name;Судьба отряда Вепрь
+[StoryEvents.Event-Radar-SoldiersIsDie-1].Desc-Owner;Отряд Военных, который внезапно оказался на территории %0:s локации %1:s был уничтожен сталкером Меченым!
+[StoryEvents.Event-Radar-SoldiersIsDie-1].Desc-NonOwner;Поступила информация, что на территории %0:s локации %1:s был бой с отрядом Военных. Среди того отряда выживших нет.
+[StoryEvents.Event-Radar-SetFlag2-1].Name;Технический ивент
+[StoryEvents.Event-Radar-SetFlag2-1].Desc-Owner;Если вы это видите, то это баг ивента Event-Radar-SetFlag2-1
+[StoryEvents.Event-Radar-SetFlag2-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Radar-SetFlag2-1
+[StoryEvents.Event-Radar-SetFlag3-1].Name;Технический ивент
+[StoryEvents.Event-Radar-SetFlag3-1].Desc-Owner;Если вы это видите, то это баг ивента Event-Radar-SetFlag3-1
+[StoryEvents.Event-Radar-SetFlag3-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Radar-SetFlag3-1
+[StoryEvents.Event-Radar-SetFlag2-2].Name;Технический ивент
+[StoryEvents.Event-Radar-SetFlag2-2].Desc-Owner;Если вы это видите, то это баг ивента Event-Radar-SetFlag2-2
+[StoryEvents.Event-Radar-SetFlag2-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Radar-SetFlag2-2
+[StoryEvents.Event-Radar-SetFlag3-2].Name;Технический ивент
+[StoryEvents.Event-Radar-SetFlag3-2].Desc-Owner;Если вы это видите, то это баг ивента Event-Radar-SetFlag3-2
+[StoryEvents.Event-Radar-SetFlag3-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Radar-SetFlag3-2
+[StoryEvents.Event-Radar-Invasion-1].Name;Отряд Долга
+[StoryEvents.Event-Radar-Invasion-1].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд группировки Долг!
+[StoryEvents.Event-Radar-Invasion-1].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует отряд группировки Долг!
+[StoryEvents.Event-Radar-Invasion-2].Name;Отряд Свободы
+[StoryEvents.Event-Radar-Invasion-2].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд группировки Свобода!
+[StoryEvents.Event-Radar-Invasion-2].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует отряд группировки Свобода!
+[StoryEvents.Event-Radar-21].Name;Меченый продолжает идти
+[StoryEvents.Event-Radar-21].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Radar-21].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Radar-22].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Radar-22].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Radar-22].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Radar-SetFlag2-3].Name;Технический ивент
+[StoryEvents.Event-Radar-SetFlag2-3].Desc-Owner;Если вы это видите, то это баг ивента Event-Radar-SetFlag2-3
+[StoryEvents.Event-Radar-SetFlag2-3].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Radar-SetFlag2-3
+[StoryEvents.Event-Radar-SetFlag3-3].Name;Технический ивент
+[StoryEvents.Event-Radar-SetFlag3-3].Desc-Owner;Если вы это видите, то это баг ивента Event-Radar-SetFlag3-3
+[StoryEvents.Event-Radar-SetFlag3-3].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Radar-SetFlag3-3
+[StoryEvents.Event-Radar-SetFlag2-4].Name;Технический ивент
+[StoryEvents.Event-Radar-SetFlag2-4].Desc-Owner;Если вы это видите, то это баг ивента Event-Radar-SetFlag2-4
+[StoryEvents.Event-Radar-SetFlag2-4].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Radar-SetFlag2-4
+[StoryEvents.Event-Radar-SetFlag3-4].Name;Технический ивент
+[StoryEvents.Event-Radar-SetFlag3-4].Desc-Owner;Если вы это видите, то это баг ивента Event-Radar-SetFlag3-4
+[StoryEvents.Event-Radar-SetFlag3-4].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Radar-SetFlag3-4
+[StoryEvents.Event-Radar-AddUnits-1].Name;Прибыло подкрепление
+[StoryEvents.Event-Radar-AddUnits-1].Desc-Owner;На территорию %0:s локации %1:s прибыло подкрепление с базы!
+[StoryEvents.Event-Radar-AddUnits-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Radar-AddUnits-1
+[StoryEvents.Event-Radar-AddUnits-2].Name;Прибыло подкрепление
+[StoryEvents.Event-Radar-AddUnits-2].Desc-Owner;На территорию %0:s локации %1:s прибыло подкрепление с базы!
+[StoryEvents.Event-Radar-AddUnits-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Radar-AddUnits-2
+[StoryEvents.Event-Radar-Invasion-3].Name;Отряд Долга
+[StoryEvents.Event-Radar-Invasion-3].Desc-Owner;Территорию %0:s локации %1:s повторно штурмует отряд группировки Долг!
+[StoryEvents.Event-Radar-Invasion-3].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s повторно штурмует отряд группировки Долг!
+[StoryEvents.Event-Radar-Invasion-4].Name;Отряд Свободы
+[StoryEvents.Event-Radar-Invasion-4].Desc-Owner;Территорию %0:s локации %1:s повторно штурмует отряд группировки Свобода!
+[StoryEvents.Event-Radar-Invasion-4].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s повторно штурмует отряд группировки Свобода!
+[StoryEvents.Event-Radar-SetFlag1-3].Name;Технический ивент
+[StoryEvents.Event-Radar-SetFlag1-3].Desc-Owner;Если вы это видите, то это баг ивента Event-Radar-SetFlag1-3
+[StoryEvents.Event-Radar-SetFlag1-3].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Radar-SetFlag1-3
+[StoryEvents.Event-Radar-AddUnits-3].Name;Прибыло подкрепление
+[StoryEvents.Event-Radar-AddUnits-3].Desc-Owner;На территорию %0:s локации %1:s прибыло подкрепление с базы!
+[StoryEvents.Event-Radar-AddUnits-3].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Radar-AddUnits-3
+[StoryEvents.Event-Radar-Invasion-5].Name;Военный отряд
+[StoryEvents.Event-Radar-Invasion-5].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд Военных!
+[StoryEvents.Event-Radar-Invasion-5].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует отряд группировки Военных!
+[StoryEvents.Event-Radar-23].Name;Меченый продолжает идти
+[StoryEvents.Event-Radar-23].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Radar-23].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Radar-24].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Radar-24].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Radar-24].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Radar-Mickluha].Name;Миклуха выжил!
+[StoryEvents.Event-Radar-Mickluha].Desc-Owner;Отличная новость! На территории %0:s локации %1:s обнаружены остатки отряда Миклухи! Миклуха жив и отправляется на продолжительное лечение и отдых. Скоро он снова сможет возглавить группировку. Данная новость добавила энтузиазма всем бойцам!
+[StoryEvents.Event-Radar-Mickluha].Desc-NonOwner;Ходят слухи, что на территории %0:s локации %1:s были обнаружены остатки отряда Миклухи, который будучи лидером группировки Свобода отправился около месяца назад к Радару и не вернулся. Миклуха выжил, но ему требуется лечение и отдых, поэтому Лукаш пока что продолжает управлять Свободой.
+[StoryEvents.Event-Radar-SetFlag4-1].Name;Технический ивент
+[StoryEvents.Event-Radar-SetFlag4-1].Desc-Owner;Если вы это видите, то это баг ивента Event-Radar-SetFlag4-1
+[StoryEvents.Event-Radar-SetFlag4-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Radar-SetFlag4-1
+[StoryEvents.Event-Radar-SetFlag4-2].Name;Технический ивент
+[StoryEvents.Event-Radar-SetFlag4-2].Desc-Owner;Если вы это видите, то это баг ивента Event-Radar-SetFlag4-2
+[StoryEvents.Event-Radar-SetFlag4-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Radar-SetFlag4-2
+[StoryEvents.Event-Radar-AddUnits-4].Name;Прибыло подкрепление
+[StoryEvents.Event-Radar-AddUnits-4].Desc-Owner;На территорию %0:s локации %1:s прибыло подкрепление!
+[StoryEvents.Event-Radar-AddUnits-4].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Radar-AddUnits-4
+[StoryEvents.Event-Radar-Invasion-6].Name;Прорыв сталкеров
+[StoryEvents.Event-Radar-Invasion-6].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд группировки Одиночки!
+[StoryEvents.Event-Radar-Invasion-6].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует отряд группировки Одиночки!
+[StoryEvents.Event-Radar-25].Name;Меченый продолжает идти
+[StoryEvents.Event-Radar-25].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Radar-25].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Radar-26].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Radar-26].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Radar-26].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Pripyat-SetFlag1-1].Name;Технический ивент
+[StoryEvents.Event-Pripyat-SetFlag1-1].Desc-Owner;Если вы это видите, то это баг ивента Event-Pripyat-SetFlag1-1
+[StoryEvents.Event-Pripyat-SetFlag1-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Pripyat-SetFlag1-1
+[StoryEvents.Event-StartOperationMonolith].Name;"Операция ""Монолит"""
+[StoryEvents.Event-StartOperationMonolith].Desc-Owner;"К нам поступила информация, что вертолёты, которые летят к ЧАЭС это часть масштабной операции Военных под кодовым названием ""Монолит"". Похоже это начало масштабного штурма!"
+[StoryEvents.Event-StartOperationMonolith].Desc-NonOwner;"Руководство Военных начинают операцию ""Монолит"" на севере Зоны!"
+[StoryEvents.Event-Pripyat-Invasion-1].Name;В Припяти сбит вертолёт
+[StoryEvents.Event-Pripyat-Invasion-1].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд Военных, часть которого уцелела при аварийной посадке вертолёта!
+[StoryEvents.Event-Pripyat-Invasion-1].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует остатки отряда группировки Военных, которые уцелели при аварийной посадке подбитого вертолёта!
+[StoryEvents.Event-Pripyat-SetFlag4-1].Name;Технический ивент
+[StoryEvents.Event-Pripyat-SetFlag4-1].Desc-Owner;Если вы это видите, то это баг ивента Event-Pripyat-SetFlag4-1
+[StoryEvents.Event-Pripyat-SetFlag4-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Pripyat-SetFlag4-1
+[StoryEvents.Event-Pripyat-SetFlag4-2].Name;Технический ивент
+[StoryEvents.Event-Pripyat-SetFlag4-2].Desc-Owner;Если вы это видите, то это баг ивента Event-Pripyat-SetFlag4-2
+[StoryEvents.Event-Pripyat-SetFlag4-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Pripyat-SetFlag4-2
+[StoryEvents.Event-Pripyat-Invasion-2].Name;Группа прорыва
+[StoryEvents.Event-Pripyat-Invasion-2].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд Одиночек!
+[StoryEvents.Event-Pripyat-Invasion-2].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует отряд группировки Одиночки!
+[StoryEvents.Event-Pripyat-1].Name;Меченый продолжает идти
+[StoryEvents.Event-Pripyat-1].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Pripyat-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Pripyat-2].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Pripyat-2].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Pripyat-2].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Pripyat-3].Name;Меченый продолжает идти
+[StoryEvents.Event-Pripyat-3].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Pripyat-3].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Pripyat-4].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Pripyat-4].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Pripyat-4].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Pripyat-SetFlag2-1].Name;Технический ивент
+[StoryEvents.Event-Pripyat-SetFlag2-1].Desc-Owner;Если вы это видите, то это баг ивента Event-Pripyat-SetFlag2-1
+[StoryEvents.Event-Pripyat-SetFlag2-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Pripyat-SetFlag2-1
+[StoryEvents.Event-Pripyat-SetFlag3-1].Name;Технический ивент
+[StoryEvents.Event-Pripyat-SetFlag3-1].Desc-Owner;Если вы это видите, то это баг ивента Event-Pripyat-SetFlag3-1
+[StoryEvents.Event-Pripyat-SetFlag3-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Pripyat-SetFlag3-1
+[StoryEvents.Event-Pripyat-SetFlag2-2].Name;Технический ивент
+[StoryEvents.Event-Pripyat-SetFlag2-2].Desc-Owner;Если вы это видите, то это баг ивента Event-Pripyat-SetFlag2-2
+[StoryEvents.Event-Pripyat-SetFlag2-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Pripyat-SetFlag2-2
+[StoryEvents.Event-Pripyat-SetFlag3-2].Name;Технический ивент
+[StoryEvents.Event-Pripyat-SetFlag3-2].Desc-Owner;Если вы это видите, то это баг ивента Event-Pripyat-SetFlag3-2
+[StoryEvents.Event-Pripyat-SetFlag3-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Pripyat-SetFlag3-2
+[StoryEvents.Event-Pripyat-Invasion-3].Name;Передовой отряд Долга
+[StoryEvents.Event-Pripyat-Invasion-3].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд группировки Долг!
+[StoryEvents.Event-Pripyat-Invasion-3].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует отряд группировки Долг!
+[StoryEvents.Event-Pripyat-Invasion-4].Name;Передовой отряд Свободы
+[StoryEvents.Event-Pripyat-Invasion-4].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд группировки Свобода!
+[StoryEvents.Event-Pripyat-Invasion-4].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует отряд группировки Свобода!
+[StoryEvents.Event-Pripyat-5].Name;Меченый продолжает идти
+[StoryEvents.Event-Pripyat-5].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Pripyat-5].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Pripyat-6].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Pripyat-6].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Pripyat-6].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Pripyat-Helicopter].Name;Сбит вертолёт!
+[StoryEvents.Event-Pripyat-Helicopter].Desc-Owner;На территории %0:s локации %1:s нам удалось сбить вертолёт неверных! Отомстим за братьев наших!
+[StoryEvents.Event-Pripyat-Helicopter].Desc-NonOwner;Ходят слухи, что на территории %0:s локации %1:s был сбит вертолёт!
+[StoryEvents.Event-Pripyat-7].Name;Меченый продолжает идти
+[StoryEvents.Event-Pripyat-7].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Pripyat-7].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Pripyat-8].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Pripyat-8].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Pripyat-8].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Pripyat-9].Name;Меченый продолжает идти
+[StoryEvents.Event-Pripyat-9].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Pripyat-9].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Pripyat-10].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Pripyat-10].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Pripyat-10].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Pripyat-11].Name;Меченый продолжает идти
+[StoryEvents.Event-Pripyat-11].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Pripyat-11].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Pripyat-12].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Pripyat-12].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Pripyat-12].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Pripyat-13].Name;Меченый продолжает идти
+[StoryEvents.Event-Pripyat-13].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-Pripyat-13].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Pripyat-14].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-Pripyat-14].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-Pripyat-14].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Pripyat-SetFlag1-2].Name;Технический ивент
+[StoryEvents.Event-Pripyat-SetFlag1-2].Desc-Owner;Если вы это видите, то это баг ивента Event-Radar-SetFlag1-2
+[StoryEvents.Event-Pripyat-SetFlag1-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Radar-SetFlag1-2
+[StoryEvents.Event-Pripyat-SetFlag1-3].Name;Технический ивент
+[StoryEvents.Event-Pripyat-SetFlag1-3].Desc-Owner;Если вы это видите, то это баг ивента Event-Pripyat-SetFlag1-3
+[StoryEvents.Event-Pripyat-SetFlag1-3].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Pripyat-SetFlag1-3
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-1].Name;Атака веролётом
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-1].Desc-Owner;Территорию %0:s локации %1:s обстрелял вертолёт Военных!
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-HelicopterAttack-1
+[StoryEvents.Event-OperationMonolith-Invasion-1].Name;Операция Монолит. Квартет.
+[StoryEvents.Event-OperationMonolith-Invasion-1].Desc-Owner;Территорию %0:s локации %1:s штурмуют Военные!
+[StoryEvents.Event-OperationMonolith-Invasion-1].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмуют Военные!
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-2].Name;Атака веролётом
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-2].Desc-Owner;Территорию %0:s локации %1:s обстрелял вертолёт Военных!
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-HelicopterAttack-2
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-3].Name;Атака веролётом
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-3].Desc-Owner;Территорию %0:s локации %1:s обстрелял вертолёт Военных!
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-3].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-HelicopterAttack-3
+[StoryEvents.Event-OperationMonolith-Bridge-1].Name;Битва у моста
+[StoryEvents.Event-OperationMonolith-Bridge-1].Desc-Owner;На территории %0:s локации %1:s мы разбили колонну Военных! Нам пришлось потратить следующее число боеприпасов:
+[StoryEvents.Event-OperationMonolith-Bridge-1].Desc-NonOwner;На территории %0:s локации %1:s была полностью разбита колонна бронетехники Военных!
+[StoryEvents.Event-CHAES-1].Name;Меченый продолжает идти
+[StoryEvents.Event-CHAES-1].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-CHAES-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-CHAES-2].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-CHAES-2].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-CHAES-2].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-4].Name;Атака веролётом
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-4].Desc-Owner;Территорию %0:s локации %1:s обстрелял вертолёт Военных!
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-4].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-HelicopterAttack-4
+[StoryEvents.Event-OperationMonolith-Invasion-2].Name;Отряд Коршун
+[StoryEvents.Event-OperationMonolith-Invasion-2].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд Военных!
+[StoryEvents.Event-OperationMonolith-Invasion-2].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует отряд Военных!
+[StoryEvents.Event-OperationMonolith-HelicopterShotdown-1].Name;Сбит вертолёт
+[StoryEvents.Event-OperationMonolith-HelicopterShotdown-1].Desc-Owner;Над локацией %1:s был сбит вертолёт Военных!
+[StoryEvents.Event-OperationMonolith-HelicopterShotdown-1].Desc-NonOwner;Над локацией %1:s был сбит вертолёт Военных!
+[StoryEvents.Event-OperationMonolith-Invasion-3].Name;Отряд Сапсан
+[StoryEvents.Event-OperationMonolith-Invasion-3].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд Военных!
+[StoryEvents.Event-OperationMonolith-Invasion-3].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует отряд Военных!
+[StoryEvents.Event-OperationMonolith-Reinforcement-1].Name;Отряд Ястреб
+[StoryEvents.Event-OperationMonolith-Reinforcement-1].Desc-Owner;Территорию %0:s локации %1:s прибыло подкрепление!
+[StoryEvents.Event-OperationMonolith-Reinforcement-1].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s прибыл еще один отряд Военных!
+[StoryEvents.Event-OperationMonolith-Invasion-4].Name;Отряд Ястреб
+[StoryEvents.Event-OperationMonolith-Invasion-4].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд Военных!
+[StoryEvents.Event-OperationMonolith-Invasion-4].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует отряд Военных!
+[StoryEvents.Event-CHAES-3].Name;Меченый продолжает идти
+[StoryEvents.Event-CHAES-3].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-CHAES-3].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-CHAES-4].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-CHAES-4].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-CHAES-4].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-5].Name;Атака веролётом
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-5].Desc-Owner;Территорию %0:s локации %1:s обстрелял вертолёт Военных!
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-5].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-HelicopterAttack-5
+[StoryEvents.Event-OperationMonolith-Invasion-5].Name;Операция Монолит
+[StoryEvents.Event-OperationMonolith-Invasion-5].Desc-Owner;Территорию %0:s локации %1:s штурмуют Военные!
+[StoryEvents.Event-OperationMonolith-Invasion-5].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмуют Военные!
+[StoryEvents.Event-OperationMonolith-HelicopterShotdown-2].Name;Сбит вертолёт
+[StoryEvents.Event-OperationMonolith-HelicopterShotdown-2].Desc-Owner;Над локацией %1:s был сбит вертолёт Военных!
+[StoryEvents.Event-OperationMonolith-HelicopterShotdown-2].Desc-NonOwner;Над локацией %1:s был сбит вертолёт Военных!
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-6].Name;Атака веролётом
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-6].Desc-Owner;Территорию %0:s локации %1:s обстрелял вертолёт Военных!
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-6].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-HelicopterAttack-6
+[StoryEvents.Event-OperationMonolith-Reinforcement-2].Name;Отряд Сокол
+[StoryEvents.Event-OperationMonolith-Reinforcement-2].Desc-Owner;Территорию %0:s локации %1:s прибыло подкрепление!
+[StoryEvents.Event-OperationMonolith-Reinforcement-2].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s прибыл еще один отряд Военных!
+[StoryEvents.Event-OperationMonolith-Invasion-6].Name;Отряд Сокол
+[StoryEvents.Event-OperationMonolith-Invasion-6].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд Военных!
+[StoryEvents.Event-OperationMonolith-Invasion-6].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует отряд Военных!
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-7].Name;Атака веролётом
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-7].Desc-Owner;Территорию %0:s локации %1:s обстрелял вертолёт Военных!
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-7].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-HelicopterAttack-7
+[StoryEvents.Event-OperationMonolith-Reinforcement-3].Name;Отряд Канюк
+[StoryEvents.Event-OperationMonolith-Reinforcement-3].Desc-Owner;Территорию %0:s локации %1:s прибыло подкрепление!
+[StoryEvents.Event-OperationMonolith-Reinforcement-3].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s прибыл еще один отряд Военных!
+[StoryEvents.Event-OperationMonolith-Invasion-7].Name;Отряд Канюк
+[StoryEvents.Event-OperationMonolith-Invasion-7].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд Военных!
+[StoryEvents.Event-OperationMonolith-Invasion-7].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует отряд Военных!
+[StoryEvents.Event-CHAES-5].Name;Меченый продолжает идти
+[StoryEvents.Event-CHAES-5].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-CHAES-5].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-CHAES-6].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-CHAES-6].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-CHAES-6].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-8].Name;Атака веролётом
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-8].Desc-Owner;Территорию %0:s локации %1:s обстрелял вертолёт Военных!
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-8].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-HelicopterAttack-8
+[StoryEvents.Event-OperationMonolith-Reinforcement-4].Name;Отряд Пустельга
+[StoryEvents.Event-OperationMonolith-Reinforcement-4].Desc-Owner;Территорию %0:s локации %1:s прибыло подкрепление!
+[StoryEvents.Event-OperationMonolith-Reinforcement-4].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s прибыл еще один отряд Военных!
+[StoryEvents.Event-OperationMonolith-Invasion-8].Name;Отряд Пустельга
+[StoryEvents.Event-OperationMonolith-Invasion-8].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд Военных!
+[StoryEvents.Event-OperationMonolith-Invasion-8].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует отряд Военных!
+[StoryEvents.Event-OperationMonolith-BurstAlarm-1].Name;Приборы зашкаливают
+[StoryEvents.Event-OperationMonolith-BurstAlarm-1].Desc-Owner;Внимание! Скоро состоится Выброс!
+[StoryEvents.Event-OperationMonolith-BurstAlarm-1].Desc-NonOwner;Поступила информация, что скоро состоится Выброс! Измерительные приборы зашкаливают!
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-9].Name;Атака веролётом
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-9].Desc-Owner;Территорию %0:s локации %1:s обстрелял вертолёт Военных!
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-9].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-HelicopterAttack-9
+[StoryEvents.Event-OperationMonolith-Reinforcement-5].Name;Отряд Лунь
+[StoryEvents.Event-OperationMonolith-Reinforcement-5].Desc-Owner;Территорию %0:s локации %1:s прибыло подкрепление!
+[StoryEvents.Event-OperationMonolith-Reinforcement-5].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s прибыл еще один отряд Военных!
+[StoryEvents.Event-OperationMonolith-Invasion-9].Name;Отряд Лунь
+[StoryEvents.Event-OperationMonolith-Invasion-9].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд Военных!
+[StoryEvents.Event-OperationMonolith-Invasion-9].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует отряд Военных!
+[StoryEvents.Event-CHAES-7].Name;Меченый продолжает идти
+[StoryEvents.Event-CHAES-7].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-CHAES-7].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-CHAES-8].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-CHAES-8].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-CHAES-8].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-10].Name;Атака веролётом
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-10].Desc-Owner;Территорию %0:s локации %1:s обстрелял вертолёт Военных!
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-10].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-HelicopterAttack-10
+[StoryEvents.Event-OperationMonolith-Reinforcement-6].Name;Отряд Сова
+[StoryEvents.Event-OperationMonolith-Reinforcement-6].Desc-Owner;Территорию %0:s локации %1:s прибыло подкрепление!
+[StoryEvents.Event-OperationMonolith-Reinforcement-6].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s прибыл еще один отряд Военных!
+[StoryEvents.Event-OperationMonolith-Invasion-10].Name;Отряд Сова
+[StoryEvents.Event-OperationMonolith-Invasion-10].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд Военных!
+[StoryEvents.Event-OperationMonolith-Invasion-10].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует отряд Военных!
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-11].Name;Атака веролётом
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-11].Desc-Owner;Территорию %0:s локации %1:s обстрелял вертолёт Военных!
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-11].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-HelicopterAttack-11
+[StoryEvents.Event-OperationMonolith-Reinforcement-7].Name;Отряд Гриф
+[StoryEvents.Event-OperationMonolith-Reinforcement-7].Desc-Owner;Территорию %0:s локации %1:s прибыло подкрепление!
+[StoryEvents.Event-OperationMonolith-Reinforcement-7].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s прибыл еще один отряд Военных!
+[StoryEvents.Event-OperationMonolith-Invasion-11].Name;Отряд Гриф
+[StoryEvents.Event-OperationMonolith-Invasion-11].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд Военных!
+[StoryEvents.Event-OperationMonolith-Invasion-11].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует отряд Военных!
+[StoryEvents.Event-CHAES-9].Name;Меченый продолжает идти
+[StoryEvents.Event-CHAES-9].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-CHAES-9].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-CHAES-10].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-CHAES-10].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-CHAES-10].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-OperationMonolith-HelicopterShotdown-3].Name;Сбит вертолёт
+[StoryEvents.Event-OperationMonolith-HelicopterShotdown-3].Desc-Owner;Над локацией %1:s был сбит вертолёт Военных!
+[StoryEvents.Event-OperationMonolith-HelicopterShotdown-3].Desc-NonOwner;Над локацией %1:s был сбит вертолёт Военных!
+[StoryEvents.Event-OperationMonolith-HelicopterShotdown-4].Name;Сбит еще один вертолёт
+[StoryEvents.Event-OperationMonolith-HelicopterShotdown-4].Desc-Owner;Над локацией %1:s был сбит вертолёт Военных!
+[StoryEvents.Event-OperationMonolith-HelicopterShotdown-4].Desc-NonOwner;Над локацией %1:s был сбит вертолёт Военных!
+[StoryEvents.Event-OperationMonolith-Clearing-1].Name;Смена владельца на ЧАЭС
+[StoryEvents.Event-OperationMonolith-Clearing-1].Desc-Owner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-1
+[StoryEvents.Event-OperationMonolith-Clearing-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-1
+[StoryEvents.Event-OperationMonolith-Clearing-2].Name;Смена владельца на ЧАЭС
+[StoryEvents.Event-OperationMonolith-Clearing-2].Desc-Owner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-2
+[StoryEvents.Event-OperationMonolith-Clearing-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-2
+[StoryEvents.Event-OperationMonolith-Clearing-3].Name;Смена владельца на ЧАЭС
+[StoryEvents.Event-OperationMonolith-Clearing-3].Desc-Owner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-3
+[StoryEvents.Event-OperationMonolith-Clearing-3].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-3
+[StoryEvents.Event-OperationMonolith-Clearing-4].Name;Смена владельца на ЧАЭС
+[StoryEvents.Event-OperationMonolith-Clearing-4].Desc-Owner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-4
+[StoryEvents.Event-OperationMonolith-Clearing-4].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-4
+[StoryEvents.Event-OperationMonolith-Clearing-5].Name;Смена владельца на ЧАЭС
+[StoryEvents.Event-OperationMonolith-Clearing-5].Desc-Owner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-5
+[StoryEvents.Event-OperationMonolith-Clearing-5].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-5
+[StoryEvents.Event-OperationMonolith-Clearing-6].Name;Смена владельца на ЧАЭС
+[StoryEvents.Event-OperationMonolith-Clearing-6].Desc-Owner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-6
+[StoryEvents.Event-OperationMonolith-Clearing-6].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-6
+[StoryEvents.Event-OperationMonolith-Clearing-7].Name;Смена владельца на ЧАЭС
+[StoryEvents.Event-OperationMonolith-Clearing-7].Desc-Owner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-7
+[StoryEvents.Event-OperationMonolith-Clearing-7].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-7
+[StoryEvents.Event-OperationMonolith-Clearing-8].Name;Смена владельца на ЧАЭС
+[StoryEvents.Event-OperationMonolith-Clearing-8].Desc-Owner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-8
+[StoryEvents.Event-OperationMonolith-Clearing-8].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-8
+[StoryEvents.Event-OperationMonolith-Clearing-9].Name;Смена владельца на ЧАЭС
+[StoryEvents.Event-OperationMonolith-Clearing-9].Desc-Owner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-9
+[StoryEvents.Event-OperationMonolith-Clearing-9].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-9
+[StoryEvents.Event-OperationMonolith-Clearing-10].Name;Смена владельца на ЧАЭС
+[StoryEvents.Event-OperationMonolith-Clearing-10].Desc-Owner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-10
+[StoryEvents.Event-OperationMonolith-Clearing-10].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-10
+[StoryEvents.Event-OperationMonolith-Clearing-11].Name;Смена владельца на ЧАЭС
+[StoryEvents.Event-OperationMonolith-Clearing-11].Desc-Owner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-11
+[StoryEvents.Event-OperationMonolith-Clearing-11].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-11
+[StoryEvents.Event-OperationMonolith-Clearing-12].Name;Смена владельца на ЧАЭС
+[StoryEvents.Event-OperationMonolith-Clearing-12].Desc-Owner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-12
+[StoryEvents.Event-OperationMonolith-Clearing-12].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-12
+[StoryEvents.Event-OperationMonolith-Clearing-13].Name;Смена владельца на ЧАЭС
+[StoryEvents.Event-OperationMonolith-Clearing-13].Desc-Owner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-13
+[StoryEvents.Event-OperationMonolith-Clearing-13].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-13
+[StoryEvents.Event-OperationMonolith-Clearing-14].Name;Смена владельца на ЧАЭС
+[StoryEvents.Event-OperationMonolith-Clearing-14].Desc-Owner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-14
+[StoryEvents.Event-OperationMonolith-Clearing-14].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-14
+[StoryEvents.Event-OperationMonolith-Clearing-15].Name;Смена владельца на ЧАЭС
+[StoryEvents.Event-OperationMonolith-Clearing-15].Desc-Owner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-15
+[StoryEvents.Event-OperationMonolith-Clearing-15].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-15
+[StoryEvents.Event-OperationMonolith-Clearing-16].Name;Смена владельца на ЧАЭС
+[StoryEvents.Event-OperationMonolith-Clearing-16].Desc-Owner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-16
+[StoryEvents.Event-OperationMonolith-Clearing-16].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-16
+[StoryEvents.Event-OperationMonolith-Clearing-17].Name;Смена владельца на ЧАЭС
+[StoryEvents.Event-OperationMonolith-Clearing-17].Desc-Owner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-17
+[StoryEvents.Event-OperationMonolith-Clearing-17].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-17
+[StoryEvents.Event-OperationMonolith-Clearing-18].Name;Смена владельца на ЧАЭС
+[StoryEvents.Event-OperationMonolith-Clearing-18].Desc-Owner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-18
+[StoryEvents.Event-OperationMonolith-Clearing-18].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-18
+[StoryEvents.Event-OperationMonolith-Clearing-19].Name;Смена владельца на ЧАЭС
+[StoryEvents.Event-OperationMonolith-Clearing-19].Desc-Owner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-19
+[StoryEvents.Event-OperationMonolith-Clearing-19].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-19
+[StoryEvents.Event-OperationMonolith-Clearing-20].Name;Смена владельца на ЧАЭС
+[StoryEvents.Event-OperationMonolith-Clearing-20].Desc-Owner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-20
+[StoryEvents.Event-OperationMonolith-Clearing-20].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-20
+[StoryEvents.Event-OperationMonolith-Clearing-21].Name;Смена владельца на ЧАЭС
+[StoryEvents.Event-OperationMonolith-Clearing-21].Desc-Owner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-21
+[StoryEvents.Event-OperationMonolith-Clearing-21].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-21
+[StoryEvents.Event-OperationMonolith-Clearing-22].Name;Смена владельца на ЧАЭС
+[StoryEvents.Event-OperationMonolith-Clearing-22].Desc-Owner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-22
+[StoryEvents.Event-OperationMonolith-Clearing-22].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-Clearing-22
+[StoryEvents.Event-OperationMonolith-Finishing-Lose-1].Name;Провал операции Монолит
+[StoryEvents.Event-OperationMonolith-Finishing-Lose-1].Desc-Owner;Великий Монолит дал нам силу и мы отбились!
+[StoryEvents.Event-OperationMonolith-Finishing-Lose-1].Desc-NonOwner;Государственные силы так и не смогли взять Саркофаг под контроль! Это полная катастрофа для них?
+[StoryEvents.Event-OperationMonolith-Finishing-Lose-2].Name;Провал операции Монолит
+[StoryEvents.Event-OperationMonolith-Finishing-Lose-2].Desc-Owner;Мы смогли защитить %0:s! Мы отбились от Военных!
+[StoryEvents.Event-OperationMonolith-Finishing-Lose-2].Desc-NonOwner;Государственные силы так и не смогли взять %0:s под контроль! Это полная катастрофа для них?
+[StoryEvents.Event-OperationMonolith-Finishing-Lose-3].Name;Неоднозначные итоги
+[StoryEvents.Event-OperationMonolith-Finishing-Lose-3].Desc-Owner;"Мы смогли захватить %0:s! Именно мы, а не ""эти"" Военные! Мы - защита этого мира от заразы Зоны!"
+[StoryEvents.Event-OperationMonolith-Finishing-Lose-3].Desc-NonOwner;Государственные силы так и не смогли взять %0:s под контроль! Это полная катастрофа для них или был какой-то договор с Долгом?
+[StoryEvents.Event-OperationMonolith-Finishing-Lose-4].Name;Необычные итоги
+[StoryEvents.Event-OperationMonolith-Finishing-Lose-4].Desc-Owner;"Мы смогли захватить %0:s! Именно мы, а не ""эти"" Военные! Мы - передовые отряды науки и знаний!"
+[StoryEvents.Event-OperationMonolith-Finishing-Lose-4].Desc-NonOwner;Военные не смогли взять под контроль %0:s, но вместо них это сделали Экологи! Эти ребята с приборами и пробирками доказали всем, что с ними шутки плохи!
+[StoryEvents.Event-OperationMonolith-Finishing-Victory].Name;Итоги операции
+[StoryEvents.Event-OperationMonolith-Finishing-Victory].Desc-Owner;Не смотря на все жертвы, %0:s захвачен! Успех, но мы за свои потери в этой кампании, похоже, представимся перед трибуналом...
+[StoryEvents.Event-OperationMonolith-Finishing-Victory].Desc-NonOwner;%0:s под контролем государственных сил!
+[StoryEvents.Event-CHAES-11].Name;Меченый продолжает идти
+[StoryEvents.Event-CHAES-11].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-CHAES-11].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-CHAES-12].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-CHAES-12].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-CHAES-12].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Ending-Mutants].Name;Меченый загадал желание
+[StoryEvents.Event-Ending-Mutants].Desc-Owner;Контролёр другому Контролёру: Видел Меченого возле Тёмного камня людей? Хах, ходит слепой, глухой и про зелёную траву с красивыми лугами говорит. И так уже несколько дней. Мне бы так людям мозги промывать как этот камень...
+[StoryEvents.Event-Ending-Mutants].Desc-NonOwner;Ходят слухи, что Меченый нашел Исполнитель Желаний, но почему-то позже его нашли бродящим возле ЧАЭС. Глухой и слепой, бубнящий что-то зелёную траву и красивые луга. Что же он такого загадал?
+[StoryEvents.Event-Ending-StalkersAndBanditsAndMercenaries].Name;Меченый загадал желание
+[StoryEvents.Event-Ending-StalkersAndBanditsAndMercenaries].Desc-Owner;Командиры групп сообщили, что нашли тело Меченого под завалом обломков в Саркофаге. В руке он держал гайку. Что же произошло?
+[StoryEvents.Event-Ending-StalkersAndBanditsAndMercenaries].Desc-NonOwner;Ходят слухи, что Меченый нашел Исполнитель Желаний, но почему-то позже его нашли под завалом обломков держащем в руке гайку. Что же он такого загадал?
+[StoryEvents.Event-Ending-Soldiers].Name;Меченый загадал желание
+[StoryEvents.Event-Ending-Soldiers].Desc-Owner;Офицеры сообщили, что нашли амуницию Меченого возле Исполнителя Желаний. Самого Меченого нигде нет. Его что, затащило в Монолит? Что же произошло?
+[StoryEvents.Event-Ending-Soldiers].Desc-NonOwner;Ходят слухи, про Меченого, нашедшего Исполнитель Желаний, но почему-то позже он исчез и его никто не видел. Хотя возле Исполнителя Желаний нашли его амуницию. Его что, затащило в Монолит? Что же он такого загадал?
+[StoryEvents.Event-Ending-Duty].Name;Меченый загадал желание
+[StoryEvents.Event-Ending-Duty].Desc-Owner;Офицеры сообщили, что нашли Меченого в Саркофаге. Он ничего не видит и не слышит, всё время говорит про зелень кругом и красивые луга. Что же произошло?
+[StoryEvents.Event-Ending-Duty].Desc-NonOwner;Ходят слухи, что Меченый нашел Исполнитель Желаний, но почему-то позже его нашли глухим и слепым бубнящим что-то зелёную траву и красивые луга. Что же он такого загадал?
+[StoryEvents.Event-Ending-Freedom].Name;Меченый загадал желание
+[StoryEvents.Event-Ending-Freedom].Desc-Owner;Офицеры сообщили, что нашли Меченого в Саркофаге бесцельно бродящего. Он ничего не видит и не слышит, всё время говорит про темноту. Что же произошло?
+[StoryEvents.Event-Ending-Freedom].Desc-NonOwner;Ходят слухи, что Меченый нашел Исполнитель Желаний, но почему-то позже его нашли глухим и слепым бесцельно бродящим и бубнящим что-то про темноту. Что же он такого загадал?
+[StoryEvents.Event-Ending-Scientists].Name;Меченый загадал желание
+[StoryEvents.Event-Ending-Scientists].Desc-Owner;Ученые, которые исследовали Саркофаг сообщили, что нашли непонятную серебряную статую человека в Саркофаге. Это что? Меченый?!
+[StoryEvents.Event-Ending-Scientists].Desc-NonOwner;Ходят слухи, что Меченый нашел Исполнитель Желаний, но почему-то позже его нашли в виде серебряной статуи. Что же он такого загадал?
+[StoryEvents.Event-CHAES-13].Name;Меченый продолжает идти
+[StoryEvents.Event-CHAES-13].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
+[StoryEvents.Event-CHAES-13].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-CHAES-14].Name;Меченый напал на гарнизон территории
+[StoryEvents.Event-CHAES-14].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
+[StoryEvents.Event-CHAES-14].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
+[StoryEvents.Event-Ending-Monolith].Name;Меченый уничтожил О-Сознание!
+[StoryEvents.Event-Ending-Monolith].Desc-Owner;Монолит! Мы перестали тебя слышать! Монолит! Ответь нам! Монолит! Монолит!!!
+[StoryEvents.Event-Ending-Monolith].Desc-NonOwner;Ходят слухи, что Меченый уничтожил некое О-Сознание, которое использовало Исполнитель желаний и управляло группировкой Монолит! Интересно, правда ли это?
+[StoryEvents.Event-Ending-Zombie].Name;Меченый присоединился к О-Сознанию!
+[StoryEvents.Event-Ending-Zombie].Desc-Owner;Что ж. Меченый присоединился к О-Сознанию. Он завоевал себе место в кругу хозяев Зоны!
+[StoryEvents.Event-Ending-Zombie].Desc-NonOwner;"Ходят слухи, что Меченый смог пробраться внутрь ЧАЭС. Но каких-либо подтверждений этому или информации о том, что было с ним дальше нету. Некоторые предполагают, что он присоединился к группировке Монолит, а кто-то даже говорит, что он загадал желание что-то в виде ""Я хочу стать хозяином Зоны"". В общем слухи ходят разные, а Зона стала стремительно расширяться... Скоро Кордон уже не будет окраиной..."
+ScenarioName;Сюжет. Тень Чернобыля
+ScenarioDescription;В данном сценарии воспроизводится сюжет оригинальной игры. Поход Меченого в центр Зоны в поисках Стрелка. Данный сценарий имеет ограничение по количеству ходов. Вам необходимо захватить всю Зону до того, как Меченый доберется c Кордона до О-Сознания или Монолита (концовки разные, зависят от определённых условий). Дипломатия между группировками близка к канону. Выброс имеет мощность в два раза больше, но происходит в два раза реже.
+ScenarioVictoryDescription;Условия победы: захватить все территории на карте и удержать их 1 ход.
+ScenarioLoseDescription;Условия поражения: потерять все подконтрольные территории или не выполнить условия победы примерно за 148-149 ходов.
