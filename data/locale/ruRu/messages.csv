@@ -26,7 +26,8 @@
 [Form_OptionsInterface].Text1;Подробный вывод в игровой лог:
 [Form_OptionsInterface].Text2;Отображение отчетов о обоях поле начала хода:
 [Form_OptionsInterface].Text3;Показ игрового лога в конце хода:
-[Form_OptionsInterface].Text4;Авто смена фона главного меню:
+[Form_OptionsInterface].Text4;Масштабирование интерфейса:
+[Form_OptionsInterface].Text5;Авто смена фона главного меню:
 [Form_OptionsInterface].Text.NeedRestart;Для активации масштабирования требуется перезапуск игры!
 [Form_OptionsOther].Text1;Игровой никнейм:
 [Form_OptionsOther].Text2;Таймер ограничения частоты отправки сообщений в игровой чат
