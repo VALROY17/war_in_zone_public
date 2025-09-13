@@ -1312,48 +1312,48 @@
 [Ideologies.Stalkers].Name;Сталкерство
 [Ideologies.Unknow].Name;Неизвестно
 [Ideologies.Zombie].Name;Зомбированность
-[Leaders.Leader-0].NameName;Неизвестно
-[Leaders.Leader-1-BG].NameName;Бес
-[Leaders.Leader-1-COP].NameName;Неизвестно
-[Leaders.Leader-1].NameName;Группа мастеров
-[Leaders.Leader-10-BL].NameName;Генерал Лебедев
-[Leaders.Leader-10].NameName;Генерал Лебедев
-[Leaders.Leader-17].NameName;Неизвестно
-[Leaders.Leader-18].NameName;Неизвестно
-[Leaders.Leader-2-BG].NameName;Вася Кабан
-[Leaders.Leader-2-BZ].NameName;Султан
-[Leaders.Leader-2-COP].NameName;Неизвестно
-[Leaders.Leader-2-Second].NameName;Неизвестно
-[Leaders.Leader-2].NameName;Боров
-[Leaders.Leader-3].NameName;Генерал
-[Leaders.Leader-4-BG].NameName;Прапор
-[Leaders.Leader-4].NameName;Генерал Воронин
-[Leaders.Leader-5].NameName;Лукаш
-[Leaders.Leader-6-COP].NameName;Неизвестно
-[Leaders.Leader-6].NameName;Харон
-[Leaders.Leader-7-BL].NameName;Наёмник
-[Leaders.Leader-7].NameName;Наёмник
-[Leaders.Leader-8].NameName;Профессор
-[Leaders.Leader-9].NameName;Неизвестно
-[Leaders.Leader-Chehov-BL].NameName;Чехов
-[Leaders.Leader-Chehov].NameName;Чехов
-[Leaders.Leader-General-BL].NameName;Генерал
-[Leaders.Leader-General].NameName;Генерал
-[Leaders.Leader-German-COP].NameName;Профессор Герман
-[Leaders.Leader-Hog].NameName;Хог
-[Leaders.Leader-Kovalskiy-COP].NameName;Полковник Ковальский
-[Leaders.Leader-Krylov-BL].NameName;Генерал Крылов
-[Leaders.Leader-Krylov].NameName;Генерал Крылов
-[Leaders.Leader-Loki-COP].NameName;Локи
-[Leaders.Leader-Monolith-BL].NameName;Неизвестно
-[Leaders.Leader-Monolith].NameName;Неизвестно
-[Leaders.Leader-Multi].NameName;Неизвестно
-[Leaders.Leader-Shakal-COP].NameName;Шакал
-[Leaders.Leader-Shulga-COP].NameName;Подполковник Шульга
-[Leaders.Leader-Spectator].NameName;Неизвестно
-[Leaders.Leader-Valerian].NameName;Валерьян
-[Leaders.Leader-Yoga-BL].NameName;Йога
-[Leaders.Leader-Yoga].NameName;Йога
+[Leaders.Leader-0].Name;Неизвестно
+[Leaders.Leader-1-BG].Name;Бес
+[Leaders.Leader-1-COP].Name;Неизвестно
+[Leaders.Leader-1].Name;Группа мастеров
+[Leaders.Leader-10-BL].Name;Генерал Лебедев
+[Leaders.Leader-10].Name;Генерал Лебедев
+[Leaders.Leader-17].Name;Неизвестно
+[Leaders.Leader-18].Name;Неизвестно
+[Leaders.Leader-2-BG].Name;Вася Кабан
+[Leaders.Leader-2-BZ].Name;Султан
+[Leaders.Leader-2-COP].Name;Неизвестно
+[Leaders.Leader-2-Second].Name;Неизвестно
+[Leaders.Leader-2].Name;Боров
+[Leaders.Leader-3].Name;Генерал
+[Leaders.Leader-4-BG].Name;Прапор
+[Leaders.Leader-4].Name;Генерал Воронин
+[Leaders.Leader-5].Name;Лукаш
+[Leaders.Leader-6-COP].Name;Неизвестно
+[Leaders.Leader-6].Name;Харон
+[Leaders.Leader-7-BL].Name;Наёмник
+[Leaders.Leader-7].Name;Наёмник
+[Leaders.Leader-8].Name;Профессор
+[Leaders.Leader-9].Name;Неизвестно
+[Leaders.Leader-Chehov-BL].Name;Чехов
+[Leaders.Leader-Chehov].Name;Чехов
+[Leaders.Leader-General-BL].Name;Генерал
+[Leaders.Leader-General].Name;Генерал
+[Leaders.Leader-German-COP].Name;Профессор Герман
+[Leaders.Leader-Hog].Name;Хог
+[Leaders.Leader-Kovalskiy-COP].Name;Полковник Ковальский
+[Leaders.Leader-Krylov-BL].Name;Генерал Крылов
+[Leaders.Leader-Krylov].Name;Генерал Крылов
+[Leaders.Leader-Loki-COP].Name;Локи
+[Leaders.Leader-Monolith-BL].Name;Неизвестно
+[Leaders.Leader-Monolith].Name;Неизвестно
+[Leaders.Leader-Multi].Name;Неизвестно
+[Leaders.Leader-Shakal-COP].Name;Шакал
+[Leaders.Leader-Shulga-COP].Name;Подполковник Шульга
+[Leaders.Leader-Spectator].Name;Неизвестно
+[Leaders.Leader-Valerian].Name;Валерьян
+[Leaders.Leader-Yoga-BL].Name;Йога
+[Leaders.Leader-Yoga].Name;Йога
 [Upgrades.Upgrade-1].Name;Подготовка к вербовке
 [Upgrades.Upgrade-1].Desc;Необходимо подготовить заранее дополнительные места для наших будущих бойцов. Дает +1 к лимиту каждого типа рекрутов (Суммируется с другими аналогичными улучшениями)
 [Upgrades.Upgrade-10].Name;Закупить детекторы Сварог
