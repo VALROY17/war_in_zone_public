@@ -1,12 +1,12 @@
-﻿[Leaders.Leader-0].NameName;Неизвестно
-[Leaders.Leader-10].NameName;Генерал Лебедев
-[Leaders.Leader-7].NameName;Наёмник
-[Leaders.Leader-Chehov].NameName;Чехов
-[Leaders.Leader-General].NameName;Генерал
-[Leaders.Leader-Krylov].NameName;Генерал Крылов
-[Leaders.Leader-Monolith].NameName;Неизвестно
-[Leaders.Leader-Spectator].NameName;Неизвестно
-[Leaders.Leader-Yoga].NameName;Йога
+﻿[Leaders.Leader-0].Name;Неизвестно
+[Leaders.Leader-10].Name;Генерал Лебедев
+[Leaders.Leader-7].Name;Наёмник
+[Leaders.Leader-Chehov].Name;Чехов
+[Leaders.Leader-General].Name;Генерал
+[Leaders.Leader-Krylov].Name;Генерал Крылов
+[Leaders.Leader-Monolith].Name;Неизвестно
+[Leaders.Leader-Spectator].Name;Неизвестно
+[Leaders.Leader-Yoga].Name;Йога
 [Advisors.Advisor-Mutants-1].Name;Неизвестно
 [Advisors.Advisor-Bandits-1].Name;Неизвестно
 [Advisors.Advisor-Soldiers-1].Name;Неизвестно

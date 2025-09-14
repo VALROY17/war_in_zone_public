@@ -1,12 +1,12 @@
 ﻿[Form_ScenarioSettings].Text3;Помощь для Монолита и Зомбированных:
-[Leaders.Leader-Diggers].NameName;Дикий Напр
-[Leaders.Leader-Kosoy].NameName;Косой
-[Leaders.Leader-Kruk].NameName;Крюк
-[Leaders.Leader-Orest].NameName;Орест
-[Leaders.Leader-Soldiers1].NameName;Майор Халецкий
-[Leaders.Leader-Soldiers2].NameName;Командир
-[Leaders.Leader-StalkersMilitary].NameName;Неизвестно
-[Leaders.Leader-Wolf].NameName;Волк
+[Leaders.Leader-Diggers].Name;Дикий Напр
+[Leaders.Leader-Kosoy].Name;Косой
+[Leaders.Leader-Kruk].Name;Крюк
+[Leaders.Leader-Orest].Name;Орест
+[Leaders.Leader-Soldiers1].Name;Майор Халецкий
+[Leaders.Leader-Soldiers2].Name;Командир
+[Leaders.Leader-StalkersMilitary].Name;Неизвестно
+[Leaders.Leader-Wolf].Name;Волк
 [Advisors.Advisor-Mutants-1].Name;Неизвестно
 [Advisors.Advisor-Stalkers-1].Name;Неизвестно
 [Advisors.Advisor-StalkersWolf-1].Name;Неизвестно
