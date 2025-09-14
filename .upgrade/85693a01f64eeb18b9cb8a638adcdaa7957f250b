@@ -1,0 +1,27 @@
+A	.upgrade/7fa869cb46fc456a092de46bced0687a2f549024
+M	Launcher.exe
+M	ModdingHelp.html
+M	ScenarioEditorTools.exe
+M	WAR IN ZONE.exe
+M	data/Engine_Settings.ini
+M	data/campanings/scop/1Story/Traders.ini
+M	data/campanings/scop/2Freeplay/Traders.ini
+M	data/campanings/scop/3OneTerritory/Traders.ini
+M	data/campanings/scop/5Zaton/Traders.ini
+M	data/campanings/scop/6Fragmentation/Traders.ini
+M	data/campanings/scs/6Fragmentation/Achievements.ini
+M	data/campanings/scs/6Fragmentation/Settings.ini
+M	data/campanings/scs/6Fragmentation/locale/ruRU/messages.csv
+M	data/campanings/shoc/5Garbage/locale/ruRU/messages.csv
+M	data/campanings/st/07Tutorial/AI.ini
+M	data/campanings/st/07Tutorial/locale/ruRU/messages.csv
+A	data/gfx/icons/achievements_SCS/unlock/31.png
+A	data/gfx/icons/achievements_SCS/unlock/32.png
+A	data/gfx/icons/achievements_SCS/unlock/33.png
+A	data/gfx/icons/achievements_SCS/unlock/34.png
+A	data/gfx/icons/achievements_SCS/unlock/35.png
+A	data/gfx/icons/achievements_SCS/unlock/36.png
+A	data/gfx/old/34.png
+M	data/locale/ruRu/messages.csv
+M	data/maps/SHOC_Garbage/locale/ruRu/MapMessages.csv
+M	modConverter.exe
