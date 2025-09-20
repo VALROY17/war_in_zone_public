@@ -127,8 +127,8 @@
 [StoryEvents.Event-Agroprom-Advisor-1].Desc-Owner;Крот теперь доступен как кандидат в заместители!
 [StoryEvents.Event-Agroprom-Advisor-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Agroprom-Advisor-1
 [StoryEvents.Event-Agroprom-Documents].Name;Меченый продолжает идти
-[StoryEvents.Event-Agroprom-Documents].Desc-Owner;К нам поступила информация, что сталкер Меченый выкрал какие-то важные документы с базы Военных на территории %0:s локации %1:s
-[StoryEvents.Event-Agroprom-Documents].Desc-NonOwner;Ходят слухи, что сталкер Меченый выкрал какие-то важные документы с базы Военных на территории %0:s локации %1:s
+[StoryEvents.Event-Agroprom-Documents].Desc-Owner;К нам поступила информация, что сталкер Меченый выкрал какие-то важные документы с базы Военных.
+[StoryEvents.Event-Agroprom-Documents].Desc-NonOwner;Ходят слухи, что сталкер Меченый выкрал какие-то важные документы с базы Военных.
 [StoryEvents.Event-Dump2-1].Name;Меченый продолжает идти
 [StoryEvents.Event-Dump2-1].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
 [StoryEvents.Event-Dump2-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
