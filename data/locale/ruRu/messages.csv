@@ -48,19 +48,6 @@
 [Form_OptionsVideo].TextNeedRestart;Для активации шрифта требуется перезапуск игры!
 [frmOptionsBase].Message1;Вы уверены что хотите сбросить все настройки?||Некоторые настройки вступят в силу только после перезапуска.
 [Form_ScenarioSettings].TitleText;Выберите настройки сценария
-[Form_ScenarioSettings].Text1;Выберите уровень сложности:
-[Form_ScenarioSettings].Text2;Случайные события:
-[Form_ScenarioSettings].Text3;Сюжетные события:
-[Form_ScenarioSettings].Text4;Взаимодействия через территорию союзника:
-[Form_ScenarioSettings].Text5;Выбросы:
-[Form_ScenarioSettings].Dif1;Новичок
-[Form_ScenarioSettings].Dif2;Опытный
-[Form_ScenarioSettings].Dif3;Ветеран
-[Form_ScenarioSettings].Dif4;Мастер
-[Form_ScenarioSettings].Status1;Включены
-[Form_ScenarioSettings].Status2;Выключены
-[Form_ScenarioSettings].Status3;Только передислокация
-[Form_ScenarioSettings].Status4;Передислокация и атака
 [Form_ScenarioSettings].Message_1;Уже выбрано игроком!
 [Form_ScenarioSettings].Message_2;Ошибка сетевого подключения: %d
 [Form_ScenarioSettings].Message_3;Неверный сетевой адрес
@@ -474,20 +461,7 @@
 [Form_Chat].HintUnmute;Заблокировать сообщения от %s, %s
 [Form_Chat].HintMute;Разблокировать сообщения от %s, %s
 [Form_AboutScenario].TitleText;О сценарии
-[Form_AboutScenario].Text1;Выбранный уровень сложности:
-[Form_AboutScenario].Text2;Случайные события:
-[Form_AboutScenario].Text3;Сюжетные события:
-[Form_AboutScenario].Text4;Взаимодействия через территорию союзника:
-[Form_AboutScenario].Text5;Выбросы:
 [Form_AboutScenario].Text6;Описание сценария
-[Form_AboutScenario].Dif1;Новичок
-[Form_AboutScenario].Dif2;Опытный
-[Form_AboutScenario].Dif3;Ветеран
-[Form_AboutScenario].Dif4;Мастер
-[Form_AboutScenario].Status1;Включены
-[Form_AboutScenario].Status2;Выключены
-[Form_AboutScenario].Status3;Только передислокация
-[Form_AboutScenario].Status4;Передислокация и атака
 [Form_MultiplayerSettings].TitleText;Настройки многопользовательской игры
 [Form_MultiplayerSettings].Text1;Пароль для сохранения
 [Form_MultiplayerSettings].Text2;Выберите число игроков
@@ -687,6 +661,19 @@
 [Common_Strings].MultiPlayer;Мультиплеер
 [Common_Strings].Network;Интернет
 [Common_Strings].OffShort;Выкл
+[Common_Strings].DifLevelText;Уровень сложности:
+[Common_Strings].RandomEventsLevelText;Случайные события:
+[Common_Strings].StoryEventsLevelText;Сюжетные события:
+[Common_Strings].EnclaveLevelText;Взаимодействия через территорию союзника:
+[Common_Strings].BurstLevelText;Выбросы:
+[Common_Strings].DifLevel1;Новичок
+[Common_Strings].DifLevel2;Опытный
+[Common_Strings].DifLevel3;Ветеран
+[Common_Strings].DifLevel4;Мастер
+[Common_Strings].Status1;Включены
+[Common_Strings].Status2;Выключены
+[Common_Strings].EnclaveLevelStatus3;Только передислокация
+[Common_Strings].EnclaveLevelStatus4;Передислокация и атака
 [GameLog].LT_1;Ход %d Группировка %s : %s
 [GameLog].LT_2;Ход %d Общее : %s
 [GameLog].LT_3;Из %s локации %s напала на территорию
