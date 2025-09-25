@@ -1,4 +1,4 @@
-﻿[Form_ScenarioSettings].Text3;Доп. замы (рекомендуется):
+﻿[Common_Strings].StoryEventsLevelText;Доп. замы (рекомендуется):
 [Form_World].LT_4;Группировка изменила состояние вентиляции на территории %s локации %s
 [Form_World].FilterHint_6;Биологическая опасность
 [Form_ZonaMenu].FT_11;, присутствует пульт вентиляции
