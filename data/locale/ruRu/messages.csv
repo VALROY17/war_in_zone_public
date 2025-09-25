@@ -672,8 +672,8 @@
 [Common_Strings].DifLevel4;Мастер
 [Common_Strings].Status1;Включены
 [Common_Strings].Status2;Выключены
-[Common_Strings].EnclaveLevelStatus3;Только передислокация
-[Common_Strings].EnclaveLevelStatus4;Передислокация и атака
+[Common_Strings].Status3;Только передислокация
+[Common_Strings].Status4;Передислокация и атака
 [GameLog].LT_1;Ход %d Группировка %s : %s
 [GameLog].LT_2;Ход %d Общее : %s
 [GameLog].LT_3;Из %s локации %s напала на территорию
