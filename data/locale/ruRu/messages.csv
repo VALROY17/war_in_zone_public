@@ -395,6 +395,7 @@
 [Form_Rearm].Text9;Текущая цена 1 бойца до перевооружения:
 [Form_Rearm].Text10;Предполагаемая цена 1 бойца после перевооружения:
 [Form_Rearm].Text11;Стоимость перевооружения:
+[Form_Rearm].DisableRearm;Перевооружение отключено настройками сценария
 [Form_Report].TitleText;Отчет по территориям
 [Form_Report].ColText0;#
 [Form_Report].ColText1;Локация
@@ -548,6 +549,12 @@
 [Window_SaveList].Message1;Игра сохранена!
 [Window_SaveList].Message2;Сохранения от старой версии игры не поддерживаются!
 [Window_SaveList].Message3;Сохранение не найдено!
+[Window_SaveList].Message4;Файл сохранения повреждён!
+[Window_SaveList].Message5;Вы уверены, что хотите удалить сохранение?
+[Window_SaveList].VersionNonSupport;Неподдерживаемая версия сохранения: %s
+[Window_SaveList].SaveMainDesc;Дата: %s||Уровень сложности: %s||Текущий ход: %d||
+[Window_SaveList].SaveMultiplayerList;Группировка %s: %s
+[Window_SaveList].SaveSinglePlayer;Группировка игрока: %s
 [fServerInfo].Message1;Скопировано!
 [Window_StartStep].Title;Начало хода игрока
 [Window_StartStep].Text1;Теперь ходит игрок выбравший указанную группировку. Для начала хода нажмите Продолжить.
@@ -699,6 +706,7 @@
 [GameLog].FT_2;конец хода
 [GameLog].FT_3;Начало хода
 [GameLog].FT_4;Автосохранение...
+[GameLog].FT_5;произошло перевооружение одного из ранга бойцов
 [Buttons].BTN_On.Text;Включить
 [Buttons].BTN_Off.Text;Выключить
 [Buttons].BTN_Spy.Text;Разведка
@@ -764,6 +772,7 @@
 [Buttons].BTN_LocalClient.Text;Подключиться
 [Buttons].BTN_ResetSettings.Text;Сбросить все
 [Buttons].BTN_Reset.Text;Сбросить
+[Buttons].BTN_Delete.Text;Удалить
 [Other].Exception_1;Данный тип битвы не поддерживается!
 [Other].Exception_2;Произошло ошибка в обработке параметров достижения № %s ! Указан неизвестный тип достижения
 [Other].Exception_3;Ошибка параметра выброса. Прописан 0 в BurstEverySteps
