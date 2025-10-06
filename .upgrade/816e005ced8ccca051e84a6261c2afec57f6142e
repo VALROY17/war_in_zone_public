@@ -1,0 +1,21 @@
+M	Launcher.exe
+M	ScenarioEditorTools.exe
+M	WAR IN ZONE.exe
+M	data/campanings/st/01Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img2.png
+M	data/campanings/st/01Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img3.png
+M	data/campanings/st/02Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img1.png
+M	data/campanings/st/02Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img2.png
+M	data/campanings/st/02Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img3.png
+M	data/campanings/st/02Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img5.png
+M	data/campanings/st/03Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img3.png
+M	data/campanings/st/03Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img5.png
+M	data/campanings/st/04Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img1.png
+M	data/campanings/st/05Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img1.png
+M	data/campanings/st/05Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img2.png
+M	data/campanings/st/05Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img4.png
+M	data/campanings/st/06Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img2.png
+M	data/campanings/st/06Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img3.png
+M	data/campanings/st/07Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img3.png
+M	data/campanings/st/08Tutorial/locale/ruRU/gfx/Tutorial/tutorial_img1.png
+A	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-08.wav
+M	modConverter.exe
