@@ -1,0 +1,128 @@
+﻿[Common_Strings].StoryEventsLevelText;Подкрепления для Монолита:
+[Advisors.Advisor-Mutants-1].Name;Неизвестно
+[Advisors.Advisor-Stalkers-1].Name;Неизвестно
+[Advisors.Advisor-Bandits-1].Name;Неизвестно
+[Advisors.Advisor-Soldiers-1].Name;Неизвестно
+[Advisors.Advisor-Duty-1].Name;Неизвестно
+[Advisors.Advisor-Freedom-1].Name;Неизвестно
+[Advisors.Advisor-Monolith-1].Name;Неизвестно
+[Advisors.Advisor-Mercenaries-1].Name;Неизвестно
+[Advisors.Advisor-Scientists-1].Name;Неизвестно
+[Advisors.Advisor-Zombie-1].Name;Неизвестно
+[Advisors.Advisor-Mutants-KolRazum].Name;Коллективный разум
+[Advisors.Advisor-Stalkers-Wolf].Name;Волк
+[Advisors.Advisor-Stalkers-Shustriy].Name;Шустрый
+[Advisors.Advisor-Stalkers-Fanat].Name;Фанат
+[Advisors.Advisor-Stalkers-Bes].Name;Бес
+[Advisors.Advisor-Stalkers-Urik].Name;Юрик
+[Advisors.Advisor-Stalkers-Seriy].Name;Серый
+[Advisors.Advisor-Stalkers-Demon].Name;Олег «Демон» Гусаров
+[Advisors.Advisor-Stalkers-Upir].Name;Упырь
+[Advisors.Advisor-Stalkers-Arni].Name;Арни
+[Advisors.Advisor-Stalkers-Krot].Name;Крот
+[Advisors.Advisor-Stalkers-Lis].Name;Лис
+[Advisors.Advisor-Stalkers-Diodor].Name;Отец Диодор
+[Advisors.Advisor-Stalkers-Chuchelo].Name;Чучело
+[Advisors.Advisor-Stalkers-Provodnik].Name;Проводник
+[Advisors.Advisor-Stalkers-Doctor].Name;Доктор
+[Advisors.Advisor-Bandits-Kaban].Name;Вася Кабан
+[Advisors.Advisor-Bandits-Fraer].Name;Фраер
+[Advisors.Advisor-Bandits-Kocherga].Name;Кочерга
+[Advisors.Advisor-Bandits-Babtist].Name;Баптист
+[Advisors.Advisor-Bandits-Chugun].Name;Чугун
+[Advisors.Advisor-Soldiers-Kuznecov].Name;Майор Кузнецов
+[Advisors.Advisor-Soldiers-Capitan].Name;Капитан
+[Advisors.Advisor-Soldiers-Chuguykin].Name;Лейтенант Чугуйкин
+[Advisors.Advisor-Soldiers-Specialist].Name;Специалист
+[Advisors.Advisor-Soldiers-Poproshayko].Name;Майор Попрошайко
+[Advisors.Advisor-Duty-Petrenko].Name;Полковник Петренко
+[Advisors.Advisor-Duty-Cherep].Name;Череп
+[Advisors.Advisor-Duty-Ivancov].Name;Капитан Иванцов
+[Advisors.Advisor-Duty-Plichko].Name;Сержант Пличко
+[Advisors.Advisor-Duty-Kizenko].Name;Сержант Киценко
+[Advisors.Advisor-Duty-Prapor].Name;Прапор
+[Advisors.Advisor-Duty-Lohmatiy].Name;Сергей Лохматый
+[Advisors.Advisor-Duty-Barin].Name;Барин
+[Advisors.Advisor-Duty-Pulya].Name;Пуля
+[Advisors.Advisor-Freedom-Ugrumiy].Name;Угрюмый
+[Advisors.Advisor-Freedom-Kep].Name;КЭП
+[Advisors.Advisor-Freedom-Skryaga].Name;Скряга
+[Advisors.Advisor-Freedom-Max].Name;Макс
+[Advisors.Advisor-Freedom-Povar].Name;Повар
+[Advisors.Advisor-Freedom-Pavlik].Name;Павлик
+[Advisors.Advisor-Monolith-Propovednik].Name;Проповедник
+[Advisors.Advisor-Monolith-Molitvennik].Name;Молитвенник
+[Advisors.Advisor-Monolith-Messiya].Name;Мессия
+[Advisors.Advisor-Mercenaries-Ara].Name;Ара
+[Advisors.Advisor-Mercenaries-Tancpol].Name;Витя Танцпол
+[Advisors.Advisor-Mercenaries-Avtobus].Name;Лёха Автобус
+[Advisors.Advisor-Mercenaries-Rzhaviy].Name;Валера Ржавый
+[Advisors.Advisor-Mercenaries-Shtirlic].Name;Толян Штирлиц
+[Advisors.Advisor-Mercenaries-Dollar].Name;"Иван ""Один доллар"""
+[Advisors.Advisor-Mercenaries-Plintus].Name;Тимур Плинтус
+[Advisors.Advisor-Scientists-Kruglov].Name;Профессор Круглов
+[Advisors.Advisor-Scientists-Nachalnik].Name;Начальник охраны
+[Advisors.Advisor-Scientists-Semenov].Name;Семенов
+[Advisors.Advisor-Scientists-Zob].Name;Зоб
+[Advisors.Advisor-Zombie-Kontroler].Name;Контролер
+[Achievements.Achiv-1].Name;Держите меня семеро!
+[Achievements.Achiv-1].Desc;Получено новое достижение! Захватить всю Зону за Экологов на уровне сложности Мастер.
+[Achievements.Achiv-1].Desc-Logo;Захватить всю Зону за Экологов на уровне сложности Мастер.
+[Achievements.Achiv-2].Name;Я здесь закон!
+[Achievements.Achiv-2].Desc;Получено новое достижение! Захватить всю Зону за группировку Военные.
+[Achievements.Achiv-2].Desc-Logo;Захватить всю Зону за группировку Военные.
+[Achievements.Achiv-3].Name;Найти и искоренить!
+[Achievements.Achiv-3].Desc;Получено новое достижение! Захватить локацию Кордон за группировку Монолит.
+[Achievements.Achiv-3].Desc-Logo;Захватить локацию Кордон за группировку Монолит.
+[Achievements.Achiv-4].Name;Тамбовский волк тебе товарищ!
+[Achievements.Achiv-4].Desc;Получено новое достижение! Захватить территории База Долга (Росток), Военная База (Армейские склады) и удержать 1 ход за группировку Одиночки.
+[Achievements.Achiv-4].Desc-Logo;Захватить территории База Долга (Росток), Военная База (Армейские склады) и удержать 1 ход за группировку Одиночки.
+[Achievements.Achiv-5].Name;Пробирки больше не нужны!
+[Achievements.Achiv-5].Desc;Получено новое достижение! Принять идеологию Законность за группировку Экологи и продержаться 1 ход.
+[Achievements.Achiv-5].Desc-Logo;Принять идеологию Законность за группировку Экологи и продержаться 1 ход.
+[Achievements.Achiv-6].Name;Деньги важнее идеалов!
+[Achievements.Achiv-6].Desc;Получено новое достижение! Принять идеологию Наёмничество за группировку Долг на уровне сложности Мастер и продержаться 1 ход.
+[Achievements.Achiv-6].Desc-Logo;Принять идеологию Наёмничество за группировку Долг на уровне сложности Мастер и продержаться 1 ход.
+[Traders.World].Name;Внешний мир
+[Traders.World].NeedText;Связь с внешним миром не всегда удается установить. Шанс 50%. Цена попытки установить связь:
+[Traders.YourGroup].Name;Торговец вашей группировки
+[Traders.YourGroup].NeedText;Вы всегда можете поторговать со своим торговцем. Цена:
+[Traders.OtherGroup].Name;Торговец чужой группировки
+[Traders.OtherGroup].NeedText;Чтобы торговать с чужими группировками сначала выберите на карте чужую территорию
+[Traders.Trader1].Name;Сидорович
+[Traders.Trader1].NeedText;Торговать с ним можно при условии контролирования территории Деревня на Кордоне. Цена:
+[Traders.Trader2].Name;Бармен
+[Traders.Trader2].NeedText;Бармен будет доступен для торговли при условии контролирования территории Бар 100 рентген. Цена:
+[Traders.Trader3].Name;Сахаров
+[Traders.Trader3].NeedText;Сахаров доступен при условии контроля территории Бункер на локации Янтарь. Цена:
+[StoryEvents.Event-Boost-1].Name;Выбранный режим игры
+[StoryEvents.Event-Boost-1].Desc-Owner;Был выбран режим с подкреплениями для Монолита, при котором эта группировка получает дополнительных бойцов. Подкрепления приходят только в рамках текущего хода.
+[StoryEvents.Event-Boost-1].Desc-NonOwner;Был выбран режим с подкреплениями для Монолита, при котором эта группировка получает дополнительных бойцов. Подкрепления приходят только в рамках текущего хода.
+[StoryEvents.Event-Boost-AddUnit-1].Name;Подкрепление прибыло!
+[StoryEvents.Event-Boost-AddUnit-1].Desc-Owner;На территорию %0:s на локации %1:s прибыло подкрепление!
+[StoryEvents.Event-Boost-AddUnit-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Boost-AddUnit-1
+[StoryEvents.Event-Boost-AddUnit-2].Name;Подкрепление прибыло!
+[StoryEvents.Event-Boost-AddUnit-2].Desc-Owner;На территорию %0:s на локации %1:s прибыло подкрепление!
+[StoryEvents.Event-Boost-AddUnit-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Boost-AddUnit-2
+[StoryEvents.Event-Boost-AddUnit-3].Name;Подкрепление прибыло!
+[StoryEvents.Event-Boost-AddUnit-3].Desc-Owner;На территорию %0:s на локации %1:s прибыло подкрепление!
+[StoryEvents.Event-Boost-AddUnit-3].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Boost-AddUnit-3
+[StoryEvents.Event-Boost-AddUnit-4].Name;Подкрепление прибыло!
+[StoryEvents.Event-Boost-AddUnit-4].Desc-Owner;На территорию %0:s на локации %1:s прибыло подкрепление!
+[StoryEvents.Event-Boost-AddUnit-4].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Boost-AddUnit-4
+[StoryEvents.Event-Boost-AddUnit-5].Name;Подкрепление прибыло!
+[StoryEvents.Event-Boost-AddUnit-5].Desc-Owner;На территорию %0:s на локации %1:s прибыло подкрепление!
+[StoryEvents.Event-Boost-AddUnit-5].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Boost-AddUnit-5
+[StoryEvents.Event-Boost-AddUnit-6].Name;Подкрепление прибыло!
+[StoryEvents.Event-Boost-AddUnit-6].Desc-Owner;На территорию %0:s на локации %1:s прибыло подкрепление!
+[StoryEvents.Event-Boost-AddUnit-6].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Boost-AddUnit-6
+[StoryEvents.Event-Boost-AddUnit-7].Name;Подкрепление прибыло!
+[StoryEvents.Event-Boost-AddUnit-7].Desc-Owner;На территорию %0:s на локации %1:s прибыло подкрепление!
+[StoryEvents.Event-Boost-AddUnit-7].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Boost-AddUnit-7
+[StoryEvents.Event-Boost-AddUnit-8].Name;Подкрепление прибыло!
+[StoryEvents.Event-Boost-AddUnit-8].Desc-Owner;На территорию %0:s на локации %1:s прибыло подкрепление!
+[StoryEvents.Event-Boost-AddUnit-8].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Boost-AddUnit-8
+ScenarioName;Свободная игра. Тень Чернобыля
+ScenarioDescription;Свободная игра подразумевает собой копию сюжетного режима, но с отключенным сюжетом. Нет каких-либо ограничений по времени. Победа достигается в случае захвата всей Зоны, а поражение при потере последней территории. Дипломатия между группировками может иметь отличия от канона в процессе игры.
+ScenarioVictoryDescription;Условия победы: захватить все территории на карте и удержать их 1 ход.
+ScenarioLoseDescription;Условия поражения: потерять все подконтрольные территории.
