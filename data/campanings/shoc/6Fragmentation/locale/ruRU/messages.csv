@@ -1,31 +1,71 @@
-﻿[Common_Strings].StoryEventsLevelText;Подкрепления для Монолита:
+﻿[Groups.Stalkers.:main].Name;Группа Волка
+[Groups.StalkersSeriy.:main].Name;Группа Серого
+[Groups.StalkersBes.:main].Name;Группа Беса
+[Groups.StalkersDiggers.:main].Name;Диггеры
+[Groups.StalkersDV.:main].Name;Гнилые
+[Groups.StalkersBar.:main].Name;Одиночки
+[Groups.StalkersArm.:main].Name;Группа Мастеров
+[Groups.BanditsKaban.:main].Name;Банда Кабана
+[Groups.DutyCherep.:main].Name;Группа Черепа
+[Groups.Patrol.:main].Name;Дозор
+[Groups.BanditsHunters.:main].Name;Банда Ловчих
+[Groups.Deserters.:main].Name;Дезертиры
+[Groups.StalkersLis.:main].Name;Группа Лиса
+[Groups.Zombie.:main].Name;Зомбированные Янтаря
+[Groups.ZombieRadar.:main].Name;Зомбированные Радара
+[Groups.Crazy.:main].Name;Сумасшедшие
+[Groups.Mercenaries.:main].Name;Отряд Волкодава
+[Groups.Stalkers.:main].Description;Группа Волка – слабо организованные отряды сталкеров-новичков, которые расположены на южной части Кордона. Ни кто не воспринимает данную группу в серьез. Потребуется грамотное руководство и удача, чтобы избавиться от таких угроз, как Военные и Бандиты.
+[Groups.StalkersSeriy.:main].Description;Группа Серого – маленькая группа сталкеров в Ангаре на Свалке. Находятся на грани уничтожения из-за бандитов. Необходимо найти способ выжить без помощи Стрелка.
+[Groups.StalkersBes.:main].Description;Группа Беса – маленькая команда сталкеров на юге Свалки. Пытаются удержать ключевую точку на локации. Зажаты почти со всех сторон Бандитами. Группа находится на грани уничтожения.
+[Groups.StalkersDiggers.:main].Description;Диггеры – серьезная сила на Агропроме. Необходимо расширить зону контроля вокруг базы и захватить точки с артефактами для дальнейшего успешного развития группировки. Стоит опасаться Военных и «гостей» со Свалки.
+[Groups.StalkersDV.:main].Description;Гнилые – подозрительная группа сталкеров с Тёмной Долины. Имеют плохую репутацию. Ходят слухи, что разводят людей на деньги. Несмотря на неплохое расположение, имеют ряд минусов, среди которых самый явный – близость к базе Бандитов.
+[Groups.StalkersBar.:main].Description;Одиночки не имеют четкой иерархии и лидера. Преимуществом можно считать их предрасположенность к поиску артефактов, что благоприятно скажется на финансовом положении в умелых руках. Расположены на локации Завод Росток. Группировке необходимо определиться с приоритетами в своем развитии.
+[Groups.StalkersArm.:main].Description;Группа Мастеров - несколько сталкеров с Кривой балки локации Армейские Склады. Расположение посередине локации позволяет выбрать любое направление для экспансии. Имеют проблемы с притоком сталкеров в свои ряды и испытывают крайнюю необходимость взятия точки с артефактами.
+[Groups.BanditsKaban.:main].Description;Банда Кабана – небольшая банда, которая базируется на окраине Свалки. Со старта контролируют точку с артефактами, что является ощутимый плюсом, но проблема с притоком людей в банду заставляет искать пути для экспансии, которая может привести к конфликту с основной группировкой Бандитов. Необходимо найти правильные векторы развития этой небольшой группировки.
+[Groups.DutyCherep.:main].Description;Группа Черепа – отколовшийся отряд Долга под предводительством полковника Черепа. В составе отряда находится элита Долга. Группу еще называют «спецназ Долга» за их опыт, выучку и снаряжение. Группа декларирует своей основной целью – решительные действия против Свободы с захватом их базы. Необходимо определиться с приоритетами развития и не дать отряду пасть под натиском Свободы.
+[Groups.Patrol.:main].Description;Дозор – отряд наёмников, который охраняет блокпост на окраине Армейских складов. Несмотря на отличное вооружение, имеют сомнительные перспективы на выживание под натиском более многочисленных группировок, если не заняться экономической стороной группировки.
+[Groups.BanditsHunters.:main].Description;Банда Ловчих – мелкая группа Бандитов, цель которых заманивать сталкеров в ловушку для убийства и грабежа. Из-за маленького размера группы практически нет шансов на выживание.
+[Groups.Deserters.:main].Description;Дезертиры – военные, которые самовольно по каким-либо причинам покинули службу, но остались в Зоне с крайне туманными перспективами.
+[Groups.StalkersLis.:main].Description;Группа Лиса – группа с крайне сомнительными шансами на выживание. Базируется на серверной части Кордона.
+[Groups.Zombie.:main].Description;Зомбированные Янтаря – сталкеры, которые попали под излучение на Янтаре и стали пленниками «Мозга в колбе».
+[Groups.ZombieRadar.:main].Description;Зомбированные Радара – сталкеры, которые попали под излучение на Радаре и утратили свой разум из-за «Выжигателя мозгов».
+[Groups.Crazy.:main].Description;Сумасшедшие – те, которые с «Я дурак и у меня справка есть!»
+[Groups.Mercenaries.:main].Description;Отряд Волкодава  – большой отряд Наёмников под предводительством Волкодава. Имеет ключевое расположение на локации Дикая территория, сильных бойцов и приток ресурсов. Такому отряду вряд ли кто-то станет помехой на ранних этапах игры.
+[Common_Strings].StoryEventsLevelText;Подкрепления для Монолита:
 [Advisors.Advisor-Mutants-1].Name;Неизвестно
 [Advisors.Advisor-Stalkers-1].Name;Неизвестно
+[Advisors.Advisor-StalkersLis-1].Name;Неизвестно
+[Advisors.Advisor-StalkersBes-1].Name;Неизвестно
+[Advisors.Advisor-StalkersSeriy-1].Name;Неизвестно
+[Advisors.Advisor-StalkersKrot-1].Name;Неизвестно
+[Advisors.Advisor-StalkersBar-1].Name;Неизвестно
+[Advisors.Advisor-StalkersDV-1].Name;Неизвестно
+[Advisors.Advisor-StalkersArm-1].Name;Неизвестно
 [Advisors.Advisor-Bandits-1].Name;Неизвестно
+[Advisors.Advisor-BanditsHunters-1].Name;Неизвестно
+[Advisors.Advisor-BanditsKaban-1].Name;Неизвестно
 [Advisors.Advisor-Soldiers-1].Name;Неизвестно
 [Advisors.Advisor-Duty-1].Name;Неизвестно
+[Advisors.Advisor-DutyCherep-1].Name;Неизвестно
 [Advisors.Advisor-Freedom-1].Name;Неизвестно
 [Advisors.Advisor-Monolith-1].Name;Неизвестно
 [Advisors.Advisor-Mercenaries-1].Name;Неизвестно
+[Advisors.Advisor-Patrol-1].Name;Неизвестно
 [Advisors.Advisor-Scientists-1].Name;Неизвестно
 [Advisors.Advisor-Zombie-1].Name;Неизвестно
+[Advisors.Advisor-ZombieRadar-1].Name;Неизвестно
 [Advisors.Advisor-Mutants-KolRazum].Name;Коллективный разум
-[Advisors.Advisor-Stalkers-Wolf].Name;Волк
 [Advisors.Advisor-Stalkers-Shustriy].Name;Шустрый
 [Advisors.Advisor-Stalkers-Fanat].Name;Фанат
-[Advisors.Advisor-Stalkers-Bes].Name;Бес
-[Advisors.Advisor-Stalkers-Urik].Name;Юрик
-[Advisors.Advisor-Stalkers-Seriy].Name;Серый
+[Advisors.Advisor-StalkersBes-Urik].Name;Юрик
 [Advisors.Advisor-Stalkers-Demon].Name;Олег «Демон» Гусаров
 [Advisors.Advisor-Stalkers-Upir].Name;Упырь
-[Advisors.Advisor-Stalkers-Arni].Name;Арни
-[Advisors.Advisor-Stalkers-Krot].Name;Крот
-[Advisors.Advisor-Stalkers-Lis].Name;Лис
-[Advisors.Advisor-Stalkers-Diodor].Name;Отец Диодор
-[Advisors.Advisor-Stalkers-Chuchelo].Name;Чучело
+[Advisors.Advisor-StalkersBar-Arni].Name;Арни
+[Advisors.Advisor-StalkersArm-Diodor].Name;Отец Диодор
+[Advisors.Advisor-StalkersArm-Chuchelo].Name;Чучело
 [Advisors.Advisor-Stalkers-Provodnik].Name;Проводник
-[Advisors.Advisor-Stalkers-Doctor].Name;Доктор
-[Advisors.Advisor-Bandits-Kaban].Name;Вася Кабан
+[Advisors.Advisor-StalkersDiggers-Doctor].Name;Доктор
 [Advisors.Advisor-Bandits-Fraer].Name;Фраер
 [Advisors.Advisor-Bandits-Kocherga].Name;Кочерга
 [Advisors.Advisor-Bandits-Babtist].Name;Баптист
@@ -36,7 +76,6 @@
 [Advisors.Advisor-Soldiers-Specialist].Name;Специалист
 [Advisors.Advisor-Soldiers-Poproshayko].Name;Майор Попрошайко
 [Advisors.Advisor-Duty-Petrenko].Name;Полковник Петренко
-[Advisors.Advisor-Duty-Cherep].Name;Череп
 [Advisors.Advisor-Duty-Ivancov].Name;Капитан Иванцов
 [Advisors.Advisor-Duty-Plichko].Name;Сержант Пличко
 [Advisors.Advisor-Duty-Kizenko].Name;Сержант Киценко
@@ -53,7 +92,6 @@
 [Advisors.Advisor-Monolith-Propovednik].Name;Проповедник
 [Advisors.Advisor-Monolith-Molitvennik].Name;Молитвенник
 [Advisors.Advisor-Monolith-Messiya].Name;Мессия
-[Advisors.Advisor-Mercenaries-Ara].Name;Ара
 [Advisors.Advisor-Mercenaries-Tancpol].Name;Витя Танцпол
 [Advisors.Advisor-Mercenaries-Avtobus].Name;Лёха Автобус
 [Advisors.Advisor-Mercenaries-Rzhaviy].Name;Валера Ржавый
