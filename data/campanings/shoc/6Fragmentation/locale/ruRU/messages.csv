@@ -1,4 +1,20 @@
-﻿[Groups.Stalkers.:main].Name;Группа Волка
+﻿[Leaders.Leader-Krot].Name;Крот
+[Leaders.Leader-Deserter].Name;Неизвестно
+[Leaders.Leader-Wolf].Name;Волк
+[Leaders.Leader-Bes].Name;Бес
+[Leaders.Leader-Lis].Name;Лис
+[Leaders.Leader-Seriy].Name;Серый
+[Leaders.Leader-DV].Name;Неизвестно
+[Leaders.Leader-Bar].Name;Неизвестно
+[Leaders.Leader-Arm].Name;Неизвестно
+[Leaders.Leader-Kaban].Name;Кабан
+[Leaders.Leader-Hunters].Name;Неизвестно
+[Leaders.Leader-ZombieRadar].Name;Неизвестно
+[Leaders.Leader-Crazy].Name;Дурак со справкой
+[Leaders.Leader-Patrol].Name;Ара
+[Leaders.Leader-Cherep].Name;Полковник Череп
+[Leaders.Leader-7].Name;Волкодав
+[Groups.Stalkers.:main].Name;Группа Волка
 [Groups.StalkersSeriy.:main].Name;Группа Серого
 [Groups.StalkersBes.:main].Name;Группа Беса
 [Groups.StalkersDiggers.:main].Name;Диггеры
@@ -46,6 +62,7 @@
 [Advisors.Advisor-BanditsHunters-1].Name;Неизвестно
 [Advisors.Advisor-BanditsKaban-1].Name;Неизвестно
 [Advisors.Advisor-Soldiers-1].Name;Неизвестно
+[Advisors.Advisor-Deserters-1].Name;Неизвестно
 [Advisors.Advisor-Duty-1].Name;Неизвестно
 [Advisors.Advisor-DutyCherep-1].Name;Неизвестно
 [Advisors.Advisor-Freedom-1].Name;Неизвестно
@@ -55,26 +72,39 @@
 [Advisors.Advisor-Scientists-1].Name;Неизвестно
 [Advisors.Advisor-Zombie-1].Name;Неизвестно
 [Advisors.Advisor-ZombieRadar-1].Name;Неизвестно
+[Advisors.Advisor-Crazy-1].Name;Неизвестно
 [Advisors.Advisor-Mutants-KolRazum].Name;Коллективный разум
 [Advisors.Advisor-Stalkers-Shustriy].Name;Шустрый
 [Advisors.Advisor-Stalkers-Fanat].Name;Фанат
+[Advisors.Advisor-Stalkers-Tolik].Name;Толик
 [Advisors.Advisor-StalkersBes-Urik].Name;Юрик
-[Advisors.Advisor-Stalkers-Demon].Name;Олег «Демон» Гусаров
-[Advisors.Advisor-Stalkers-Upir].Name;Упырь
+[Advisors.Advisor-StalkersBes-Duplet].Name;Жека Дуплет
+[Advisors.Advisor-StalkersBar-Demon].Name;Олег «Демон» Гусаров
+[Advisors.Advisor-StalkersBar-Lelik].Name;Лёлик
+[Advisors.Advisor-StalkersBar-Amir].Name;Амир Пуганный
+[Advisors.Advisor-StalkersDV-Upir].Name;Упырь
+[Advisors.Advisor-StalkersDV-Neumeha].Name;Неумеха
 [Advisors.Advisor-StalkersBar-Arni].Name;Арни
 [Advisors.Advisor-StalkersArm-Diodor].Name;Отец Диодор
 [Advisors.Advisor-StalkersArm-Chuchelo].Name;Чучело
-[Advisors.Advisor-Stalkers-Provodnik].Name;Проводник
+[Advisors.Advisor-StalkersLis-Provodnik].Name;Проводник
 [Advisors.Advisor-StalkersDiggers-Doctor].Name;Доктор
+[Advisors.Advisor-StalkersDiggers-Krisolov].Name;Крысолов
+[Advisors.Advisor-StalkersSeriy-Black].Name;Федька Чёрный
+[Advisors.Advisor-StalkersSeriy-Prohodchik].Name; Карим Проходчик
 [Advisors.Advisor-Bandits-Fraer].Name;Фраер
 [Advisors.Advisor-Bandits-Kocherga].Name;Кочерга
 [Advisors.Advisor-Bandits-Babtist].Name;Баптист
 [Advisors.Advisor-Bandits-Chugun].Name;Чугун
+[Advisors.Advisor-BanditsKaban-LusCor].Name;ЛюсКор
+[Advisors.Advisor-BanditsHunters-Mitya].Name;Митя Перхоть
 [Advisors.Advisor-Soldiers-Kuznecov].Name;Майор Кузнецов
 [Advisors.Advisor-Soldiers-Capitan].Name;Капитан
 [Advisors.Advisor-Soldiers-Chuguykin].Name;Лейтенант Чугуйкин
 [Advisors.Advisor-Soldiers-Specialist].Name;Специалист
 [Advisors.Advisor-Soldiers-Poproshayko].Name;Майор Попрошайко
+[Advisors.Advisor-Deserters-Sokolov].Name;Алекс «Сокол» Соколов
+[Advisors.Advisor-Deserters-Steck].Name;Стек
 [Advisors.Advisor-Duty-Petrenko].Name;Полковник Петренко
 [Advisors.Advisor-Duty-Ivancov].Name;Капитан Иванцов
 [Advisors.Advisor-Duty-Plichko].Name;Сержант Пличко
@@ -83,6 +113,8 @@
 [Advisors.Advisor-Duty-Lohmatiy].Name;Сергей Лохматый
 [Advisors.Advisor-Duty-Barin].Name;Барин
 [Advisors.Advisor-Duty-Pulya].Name;Пуля
+[Advisors.Advisor-DutyCherep-Second].Name;«Второй»
+[Advisors.Advisor-DutyCherep-Sixth].Name;«Шестой»
 [Advisors.Advisor-Freedom-Ugrumiy].Name;Угрюмый
 [Advisors.Advisor-Freedom-Kep].Name;КЭП
 [Advisors.Advisor-Freedom-Skryaga].Name;Скряга
@@ -96,13 +128,16 @@
 [Advisors.Advisor-Mercenaries-Avtobus].Name;Лёха Автобус
 [Advisors.Advisor-Mercenaries-Rzhaviy].Name;Валера Ржавый
 [Advisors.Advisor-Mercenaries-Shtirlic].Name;Толян Штирлиц
-[Advisors.Advisor-Mercenaries-Dollar].Name;"Иван ""Один доллар"""
+[Advisors.Advisor-Mercenaries-Dollar].Name;Иван «Один доллар»
 [Advisors.Advisor-Mercenaries-Plintus].Name;Тимур Плинтус
+[Advisors.Advisor-Patrol-Courier].Name;Петя Курьер
 [Advisors.Advisor-Scientists-Kruglov].Name;Профессор Круглов
 [Advisors.Advisor-Scientists-Nachalnik].Name;Начальник охраны
 [Advisors.Advisor-Scientists-Semenov].Name;Семенов
 [Advisors.Advisor-Scientists-Zob].Name;Зоб
+[Advisors.Advisor-Crazy-Zver].Name;Зверь
 [Advisors.Advisor-Zombie-Kontroler].Name;Контролер
+[Advisors.Advisor-ZombieRadar-Vidra].Name;Выдра
 [Achievements.Achiv-1].Name;Держите меня семеро!
 [Achievements.Achiv-1].Desc;Получено новое достижение! Захватить всю Зону за Экологов на уровне сложности Мастер.
 [Achievements.Achiv-1].Desc-Logo;Захватить всю Зону за Экологов на уровне сложности Мастер.
