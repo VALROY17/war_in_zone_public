@@ -7,7 +7,7 @@
 [Leaders.Leader-DV].Name;Неизвестно
 [Leaders.Leader-Bar].Name;Неизвестно
 [Leaders.Leader-Arm].Name;Неизвестно
-[Leaders.Leader-Kaban].Name;Кабан
+[Leaders.Leader-Kaban].Name;Вася Кабан
 [Leaders.Leader-Hunters].Name;Неизвестно
 [Leaders.Leader-ZombieRadar].Name;Неизвестно
 [Leaders.Leader-Crazy].Name;Дурак со справкой
@@ -20,7 +20,7 @@
 [Groups.StalkersDiggers.:main].Name;Диггеры
 [Groups.StalkersDV.:main].Name;Гнилые
 [Groups.StalkersBar.:main].Name;Одиночки
-[Groups.StalkersArm.:main].Name;Группа Мастеров
+[Groups.StalkersMilitary.:main].Name;Группа Мастеров
 [Groups.BanditsKaban.:main].Name;Банда Кабана
 [Groups.DutyCherep.:main].Name;Группа Черепа
 [Groups.Patrol.:main].Name;Дозор
@@ -37,7 +37,7 @@
 [Groups.StalkersDiggers.:main].Description;Диггеры – серьезная сила на Агропроме. Необходимо расширить зону контроля вокруг базы и захватить точки с артефактами для дальнейшего успешного развития группировки. Стоит опасаться Военных и «гостей» со Свалки.
 [Groups.StalkersDV.:main].Description;Гнилые – подозрительная группа сталкеров с Тёмной Долины. Имеют плохую репутацию. Ходят слухи, что разводят людей на деньги. Несмотря на неплохое расположение, имеют ряд минусов, среди которых самый явный – близость к базе Бандитов.
 [Groups.StalkersBar.:main].Description;Одиночки не имеют четкой иерархии и лидера. Преимуществом можно считать их предрасположенность к поиску артефактов, что благоприятно скажется на финансовом положении в умелых руках. Расположены на локации Завод Росток. Группировке необходимо определиться с приоритетами в своем развитии.
-[Groups.StalkersArm.:main].Description;Группа Мастеров - несколько сталкеров с Кривой балки локации Армейские Склады. Расположение посередине локации позволяет выбрать любое направление для экспансии. Имеют проблемы с притоком сталкеров в свои ряды и испытывают крайнюю необходимость взятия точки с артефактами.
+[Groups.StalkersMilitary.:main].Description;Группа Мастеров - несколько сталкеров с Кривой балки локации Армейские Склады. Расположение посередине локации позволяет выбрать любое направление для экспансии. Имеют проблемы с притоком сталкеров в свои ряды и испытывают крайнюю необходимость взятия точки с артефактами.
 [Groups.BanditsKaban.:main].Description;Банда Кабана – небольшая банда, которая базируется на окраине Свалки. Со старта контролируют точку с артефактами, что является ощутимый плюсом, но проблема с притоком людей в банду заставляет искать пути для экспансии, которая может привести к конфликту с основной группировкой Бандитов. Необходимо найти правильные векторы развития этой небольшой группировки.
 [Groups.DutyCherep.:main].Description;Группа Черепа – отколовшийся отряд Долга под предводительством полковника Черепа. В составе отряда находится элита Долга. Группу еще называют «спецназ Долга» за их опыт, выучку и снаряжение. Группа декларирует своей основной целью – решительные действия против Свободы с захватом их базы. Необходимо определиться с приоритетами развития и не дать отряду пасть под натиском Свободы.
 [Groups.Patrol.:main].Description;Дозор – отряд наёмников, который охраняет блокпост на окраине Армейских складов. Несмотря на отличное вооружение, имеют сомнительные перспективы на выживание под натиском более многочисленных группировок, если не заняться экономической стороной группировки.
@@ -57,7 +57,8 @@
 [Advisors.Advisor-StalkersKrot-1].Name;Неизвестно
 [Advisors.Advisor-StalkersBar-1].Name;Неизвестно
 [Advisors.Advisor-StalkersDV-1].Name;Неизвестно
-[Advisors.Advisor-StalkersArm-1].Name;Неизвестно
+[Advisors.Advisor-StalkersDiggers-1].Name;Неизвестно
+[Advisors.Advisor-StalkersMilitary-1].Name;Неизвестно
 [Advisors.Advisor-Bandits-1].Name;Неизвестно
 [Advisors.Advisor-BanditsHunters-1].Name;Неизвестно
 [Advisors.Advisor-BanditsKaban-1].Name;Неизвестно
@@ -82,11 +83,17 @@
 [Advisors.Advisor-StalkersBar-Demon].Name;Олег «Демон» Гусаров
 [Advisors.Advisor-StalkersBar-Lelik].Name;Лёлик
 [Advisors.Advisor-StalkersBar-Amir].Name;Амир Пуганный
+[Advisors.Advisor-StalkersBar-Alkash].Name;Димон Алкаш
+[Advisors.Advisor-StalkersBar-Vorobey].Name;Воробей
+[Advisors.Advisor-StalkersBar-Lysiy].Name;Лысый
+[Advisors.Advisor-StalkersBar-Hunter].Name;Охотник
 [Advisors.Advisor-StalkersDV-Upir].Name;Упырь
 [Advisors.Advisor-StalkersDV-Neumeha].Name;Неумеха
 [Advisors.Advisor-StalkersBar-Arni].Name;Арни
-[Advisors.Advisor-StalkersArm-Diodor].Name;Отец Диодор
-[Advisors.Advisor-StalkersArm-Chuchelo].Name;Чучело
+[Advisors.Advisor-StalkersMilitary-Diodor].Name;Отец Диодор
+[Advisors.Advisor-StalkersMilitary-Chuchelo].Name;Чучело
+[Advisors.Advisor-StalkersMilitary-Master].Name;Мастер
+[Advisors.Advisor-StalkersMilitary-Umnik].Name;Умник
 [Advisors.Advisor-StalkersLis-Provodnik].Name;Проводник
 [Advisors.Advisor-StalkersDiggers-Doctor].Name;Доктор
 [Advisors.Advisor-StalkersDiggers-Krisolov].Name;Крысолов
@@ -113,6 +120,7 @@
 [Advisors.Advisor-Duty-Lohmatiy].Name;Сергей Лохматый
 [Advisors.Advisor-Duty-Barin].Name;Барин
 [Advisors.Advisor-Duty-Pulya].Name;Пуля
+[Advisors.Advisor-Duty-Brom].Name;Бром
 [Advisors.Advisor-DutyCherep-Second].Name;«Второй»
 [Advisors.Advisor-DutyCherep-Sixth].Name;«Шестой»
 [Advisors.Advisor-Freedom-Ugrumiy].Name;Угрюмый
