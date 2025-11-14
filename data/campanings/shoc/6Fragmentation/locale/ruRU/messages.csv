@@ -48,7 +48,6 @@
 [Groups.ZombieRadar.:main].Description;Зомбированные Радара – сталкеры, которые попали под излучение на Радаре и утратили свой разум из-за «Выжигателя мозгов».
 [Groups.Crazy.:main].Description;Сумасшедшие – те, которые с «Я дурак и у меня справка есть!»
 [Groups.Mercenaries.:main].Description;Отряд Волкодава  – большой отряд Наёмников под предводительством Волкодава. Имеет ключевое расположение на локации Дикая территория, сильных бойцов и приток ресурсов. Такому отряду вряд ли кто-то станет помехой на ранних этапах игры.
-[Common_Strings].StoryEventsLevelText;Подкрепления для Монолита:
 [Advisors.Advisor-Mutants-1].Name;Неизвестно
 [Advisors.Advisor-Stalkers-1].Name;Неизвестно
 [Advisors.Advisor-StalkersLis-1].Name;Неизвестно
@@ -176,33 +175,6 @@
 [Traders.Trader2].NeedText;Бармен будет доступен для торговли при условии контролирования территории Бар 100 рентген. Цена:
 [Traders.Trader3].Name;Сахаров
 [Traders.Trader3].NeedText;Сахаров доступен при условии контроля территории Бункер на локации Янтарь. Цена:
-[StoryEvents.Event-Boost-1].Name;Выбранный режим игры
-[StoryEvents.Event-Boost-1].Desc-Owner;Был выбран режим с подкреплениями для Монолита, при котором эта группировка получает дополнительных бойцов. Подкрепления приходят только в рамках текущего хода.
-[StoryEvents.Event-Boost-1].Desc-NonOwner;Был выбран режим с подкреплениями для Монолита, при котором эта группировка получает дополнительных бойцов. Подкрепления приходят только в рамках текущего хода.
-[StoryEvents.Event-Boost-AddUnit-1].Name;Подкрепление прибыло!
-[StoryEvents.Event-Boost-AddUnit-1].Desc-Owner;На территорию %0:s на локации %1:s прибыло подкрепление!
-[StoryEvents.Event-Boost-AddUnit-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Boost-AddUnit-1
-[StoryEvents.Event-Boost-AddUnit-2].Name;Подкрепление прибыло!
-[StoryEvents.Event-Boost-AddUnit-2].Desc-Owner;На территорию %0:s на локации %1:s прибыло подкрепление!
-[StoryEvents.Event-Boost-AddUnit-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Boost-AddUnit-2
-[StoryEvents.Event-Boost-AddUnit-3].Name;Подкрепление прибыло!
-[StoryEvents.Event-Boost-AddUnit-3].Desc-Owner;На территорию %0:s на локации %1:s прибыло подкрепление!
-[StoryEvents.Event-Boost-AddUnit-3].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Boost-AddUnit-3
-[StoryEvents.Event-Boost-AddUnit-4].Name;Подкрепление прибыло!
-[StoryEvents.Event-Boost-AddUnit-4].Desc-Owner;На территорию %0:s на локации %1:s прибыло подкрепление!
-[StoryEvents.Event-Boost-AddUnit-4].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Boost-AddUnit-4
-[StoryEvents.Event-Boost-AddUnit-5].Name;Подкрепление прибыло!
-[StoryEvents.Event-Boost-AddUnit-5].Desc-Owner;На территорию %0:s на локации %1:s прибыло подкрепление!
-[StoryEvents.Event-Boost-AddUnit-5].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Boost-AddUnit-5
-[StoryEvents.Event-Boost-AddUnit-6].Name;Подкрепление прибыло!
-[StoryEvents.Event-Boost-AddUnit-6].Desc-Owner;На территорию %0:s на локации %1:s прибыло подкрепление!
-[StoryEvents.Event-Boost-AddUnit-6].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Boost-AddUnit-6
-[StoryEvents.Event-Boost-AddUnit-7].Name;Подкрепление прибыло!
-[StoryEvents.Event-Boost-AddUnit-7].Desc-Owner;На территорию %0:s на локации %1:s прибыло подкрепление!
-[StoryEvents.Event-Boost-AddUnit-7].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Boost-AddUnit-7
-[StoryEvents.Event-Boost-AddUnit-8].Name;Подкрепление прибыло!
-[StoryEvents.Event-Boost-AddUnit-8].Desc-Owner;На территорию %0:s на локации %1:s прибыло подкрепление!
-[StoryEvents.Event-Boost-AddUnit-8].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Boost-AddUnit-8
 ScenarioName;Период Полураспада. Тень Чернобыля
 ScenarioDescription;Сценарий без сюжетного наполнения, где группировки поделены в соответствии с лидерами на местах, а не общей составляющей. Нет каких-либо ограничений по времени. Победа достигается в случае захвата всей Зоны, а поражение при потере последней территории. Сценарий не каноничный, поэтому дипломатия далека от канона.
 ScenarioVictoryDescription;Условия победы: захватить все территории на карте и удержать их 1 ход.
