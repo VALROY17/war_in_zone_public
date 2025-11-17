@@ -1,0 +1,86 @@
+M	ModdingHelp.html
+M	ScenarioEditorTools.exe
+M	WAR IN ZONE.exe
+M	data/campanings/shoc/6Fragmentation/locale/ruRU/messages.csv
+M	data/campanings/st/01Tutorial/Settings.ini
+R100	data/maps/Tutorial_1/links.ini	data/campanings/st/01Tutorial/map/links.ini
+R100	data/maps/Tutorial_1/locale/ruRu/MapMessages.csv	data/campanings/st/01Tutorial/map/locale/ruRu/MapMessages.csv
+R100	data/maps/Tutorial_1/map.bt	data/campanings/st/01Tutorial/map/map.bt
+R100	data/maps/Tutorial_1/territories.ini	data/campanings/st/01Tutorial/map/territories.ini
+R100	data/maps/Tutorial_1/territories_icon_coordinates.ini	data/campanings/st/01Tutorial/map/territories_icon_coordinates.ini
+R100	data/maps/Tutorial_1/territoriesinfo.ini	data/campanings/st/01Tutorial/map/territoriesinfo.ini
+M	data/campanings/st/02Tutorial/Settings.ini
+R100	data/maps/Tutorial_2/links.ini	data/campanings/st/02Tutorial/map/links.ini
+R100	data/maps/Tutorial_2/locale/ruRu/MapMessages.csv	data/campanings/st/02Tutorial/map/locale/ruRu/MapMessages.csv
+R100	data/maps/Tutorial_2/map.bt	data/campanings/st/02Tutorial/map/map.bt
+R100	data/maps/Tutorial_2/territories.ini	data/campanings/st/02Tutorial/map/territories.ini
+R100	data/maps/Tutorial_2/territories_icon_coordinates.ini	data/campanings/st/02Tutorial/map/territories_icon_coordinates.ini
+R100	data/maps/Tutorial_2/territoriesinfo.ini	data/campanings/st/02Tutorial/map/territoriesinfo.ini
+M	data/campanings/st/03Tutorial/Settings.ini
+R100	data/maps/Tutorial_3/links.ini	data/campanings/st/03Tutorial/map/links.ini
+R100	data/maps/Tutorial_3/locale/ruRu/MapMessages.csv	data/campanings/st/03Tutorial/map/locale/ruRu/MapMessages.csv
+R100	data/maps/Tutorial_3/map.bt	data/campanings/st/03Tutorial/map/map.bt
+R100	data/maps/Tutorial_3/territories.ini	data/campanings/st/03Tutorial/map/territories.ini
+R100	data/maps/Tutorial_3/territories_icon_coordinates.ini	data/campanings/st/03Tutorial/map/territories_icon_coordinates.ini
+R100	data/maps/Tutorial_3/territoriesinfo.ini	data/campanings/st/03Tutorial/map/territoriesinfo.ini
+M	data/campanings/st/04Tutorial/Settings.ini
+R100	data/maps/Tutorial_4/links.ini	data/campanings/st/04Tutorial/map/links.ini
+R100	data/maps/Tutorial_4/locale/ruRu/MapMessages.csv	data/campanings/st/04Tutorial/map/locale/ruRu/MapMessages.csv
+R100	data/maps/Tutorial_4/map.bt	data/campanings/st/04Tutorial/map/map.bt
+R100	data/maps/Tutorial_4/territories.ini	data/campanings/st/04Tutorial/map/territories.ini
+R100	data/maps/Tutorial_4/territories_icon_coordinates.ini	data/campanings/st/04Tutorial/map/territories_icon_coordinates.ini
+R100	data/maps/Tutorial_4/territoriesinfo.ini	data/campanings/st/04Tutorial/map/territoriesinfo.ini
+M	data/campanings/st/05Tutorial/Settings.ini
+R100	data/maps/Tutorial_5/links.ini	data/campanings/st/05Tutorial/map/links.ini
+R100	data/maps/Tutorial_5/locale/ruRu/MapMessages.csv	data/campanings/st/05Tutorial/map/locale/ruRu/MapMessages.csv
+R100	data/maps/Tutorial_5/map.bt	data/campanings/st/05Tutorial/map/map.bt
+R100	data/maps/Tutorial_5/territories.ini	data/campanings/st/05Tutorial/map/territories.ini
+R100	data/maps/Tutorial_5/territories_icon_coordinates.ini	data/campanings/st/05Tutorial/map/territories_icon_coordinates.ini
+R100	data/maps/Tutorial_5/territoriesinfo.ini	data/campanings/st/05Tutorial/map/territoriesinfo.ini
+M	data/campanings/st/06Tutorial/Settings.ini
+R100	data/maps/Tutorial_6/links.ini	data/campanings/st/06Tutorial/map/links.ini
+R100	data/maps/Tutorial_6/locale/ruRu/MapMessages.csv	data/campanings/st/06Tutorial/map/locale/ruRu/MapMessages.csv
+R100	data/maps/Tutorial_6/map.bt	data/campanings/st/06Tutorial/map/map.bt
+R100	data/maps/Tutorial_6/territories.ini	data/campanings/st/06Tutorial/map/territories.ini
+R100	data/maps/Tutorial_6/territories_icon_coordinates.ini	data/campanings/st/06Tutorial/map/territories_icon_coordinates.ini
+R100	data/maps/Tutorial_6/territoriesinfo.ini	data/campanings/st/06Tutorial/map/territoriesinfo.ini
+M	data/campanings/st/07Tutorial/Settings.ini
+R100	data/maps/Tutorial_7/links.ini	data/campanings/st/07Tutorial/map/links.ini
+R100	data/maps/Tutorial_7/locale/ruRu/MapMessages.csv	data/campanings/st/07Tutorial/map/locale/ruRu/MapMessages.csv
+R100	data/maps/Tutorial_7/map.bt	data/campanings/st/07Tutorial/map/map.bt
+R100	data/maps/Tutorial_7/territories.ini	data/campanings/st/07Tutorial/map/territories.ini
+R100	data/maps/Tutorial_7/territories_icon_coordinates.ini	data/campanings/st/07Tutorial/map/territories_icon_coordinates.ini
+R100	data/maps/Tutorial_7/territoriesinfo.ini	data/campanings/st/07Tutorial/map/territoriesinfo.ini
+M	data/campanings/st/08Tutorial/Settings.ini
+R100	data/gfx/Elements/GlobalMap/alliesMove.agr	data/gfx/Elements/GlobalMap/alliesAttack.agr
+R100	data/gfx/Elements/GlobalMap/enemyMove.agr	data/gfx/Elements/GlobalMap/enemyAttack.agr
+A	data/gfx/Elements/GlobalMap/neutralsAttack.agr
+A	data/gfx/Elements/GlobalMap/playerAttack.agr
+M	data/gfx/icons/achievements_SHOC/unlock/31.png
+M	data/gfx/icons/achievements_SHOC/unlock/32.png
+M	data/gfx/icons/achievements_SHOC/unlock/34.png
+M	data/gfx/icons/achievements_SHOC/unlock/35.png
+M	data/gfx/icons/achievements_SHOC/unlock/36.png
+M	data/locale/ruRu/messages.csv
+R100	data/maps/Tutorial_8/links.ini	data/maps/Tutorial/links.ini
+R100	data/maps/Tutorial_8/locale/ruRu/MapMessages.csv	data/maps/Tutorial/locale/ruRu/MapMessages.csv
+R100	data/maps/Tutorial_8/map.bt	data/maps/Tutorial/map.bt
+R100	data/maps/Tutorial_1/map.png	data/maps/Tutorial/map.png
+R100	data/maps/Tutorial_1/settings.ini	data/maps/Tutorial/settings.ini
+R100	data/maps/Tutorial_8/territories.ini	data/maps/Tutorial/territories.ini
+R100	data/maps/Tutorial_8/territories_icon_coordinates.ini	data/maps/Tutorial/territories_icon_coordinates.ini
+R100	data/maps/Tutorial_8/territoriesinfo.ini	data/maps/Tutorial/territoriesinfo.ini
+D	data/maps/Tutorial_2/map.png
+D	data/maps/Tutorial_2/settings.ini
+D	data/maps/Tutorial_3/map.png
+D	data/maps/Tutorial_3/settings.ini
+D	data/maps/Tutorial_4/map.png
+D	data/maps/Tutorial_4/settings.ini
+D	data/maps/Tutorial_5/map.png
+D	data/maps/Tutorial_5/settings.ini
+D	data/maps/Tutorial_6/map.png
+D	data/maps/Tutorial_6/settings.ini
+D	data/maps/Tutorial_7/map.png
+D	data/maps/Tutorial_7/settings.ini
+D	data/maps/Tutorial_8/map.png
+D	data/maps/Tutorial_8/settings.ini
