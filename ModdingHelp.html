@@ -51,40 +51,41 @@ div:target {
 Часть файлов имеет предустановленные версии и хранится в data\default\<br>
 Описание файлов настроек:
 <ul>
-<li><a href="#interface"><сценарий>\interface.ini</a>
-<li><a href="#Messages"><сценарий>\locale\<язык>\Messages.csv</a>
-<li><a href="#Rules"><сценарий>\Rules.ini</a>
-<li><a href="#Difficulty"><сценарий>\Difficulty.Ini</a>
-<li><a href="#Buildings"><сценарий>\Buildings</a>
-<li><a href="#Goods"><сценарий>\Goods</a>
-<li><a href="#Groups"><сценарий>\Groups</a>
-<li><a href="#ideologies"><сценарий>\ideologies</a>
-<li><a href="#leaders"><сценарий>\leaders</a>
-<li><a href="#RandomEvents"><сценарий>\RandomEvents</a>
-<li><a href="#Receipts"><сценарий>\Receipts</a>
-<li><a href="#SpecialEvents"><сценарий>\SpecialEvents</a>
-<li><a href="#upgrades"><сценарий>\upgrades</a>
-<li><a href="#Achievements"><сценарий>\Achievements.ini</a>
-<li><a href="#Advisors"><сценарий>\Advisors.ini</a>
-<li><a href="#AI"><сценарий>\AI.ini</a>
-<li><a href="#Events_Story"><сценарий>\Events_Story.ini</a>
-<li><a href="#Main"><сценарий>\Main.ini</a>
-<li><a href="#Settings"><сценарий>\Settings.ini</a>
-<li><a href="#TraderGoods"><сценарий>\TraderGoods.ini</a>
-<li><a href="#Traders"><сценарий>\Traders.ini</a>
-<li><a href="#Tutorial"><сценарий>\Tutorial.ini</a>
+<li><a href="#interface">&ltсценарий>\interface.ini</a>
+<li><a href="#Messages">&ltсценарий>\locale\&ltязык>\Messages.csv</a>
+<li><a href="#Rules">&ltсценарий>\Rules.ini</a>
+<li><a href="#Difficulty">&ltсценарий>\Difficulty.Ini</a>
+<li><a href="#Buildings">&ltсценарий>\Buildings</a>
+<li><a href="#Goods">&ltсценарий>\Goods</a>
+<li><a href="#Groups">&ltсценарий>\Groups</a>
+<li><a href="#ideologies">&ltсценарий>\ideologies</a>
+<li><a href="#leaders">&ltсценарий>\leaders</a>
+<li><a href="#RandomEvents">&ltсценарий>\RandomEvents</a>
+<li><a href="#Receipts">&ltсценарий>\Receipts</a>
+<li><a href="#SpecialEvents">&ltсценарий>\SpecialEvents</a>
+<li><a href="#upgrades">&ltсценарий>\upgrades</a>
+<li><a href="#Achievements">&ltсценарий>\Achievements.ini</a>
+<li><a href="#Advisors">&ltсценарий>\Advisors.ini</a>
+<li><a href="#AI">&ltсценарий>\AI.ini</a>
+<li><a href="#Events_Story">&ltсценарий>\Events_Story.ini</a>
+<li><a href="#Main">&ltсценарий>\Main.ini</a>
+<li><a href="#Settings">&ltсценарий>\Settings.ini</a>
+<li><a href="#TraderGoods">&ltсценарий>\TraderGoods.ini</a>
+<li><a href="#Traders">&ltсценарий>\Traders.ini</a>
+<li><a href="#Tutorial">&ltсценарий>\Tutorial.ini</a>
 </ul>
 Файлы карты можно переопредилить создав папку map в сценарии и положив туда одноимённые файлы
 <ul>
-<li><a href="#mapLinks"><карта>\Links.ini</a>
-<li><a href="#mapSettings"><карта>\settings.ini</a>
-<li><a href="#mapTerritories"><карта>\Territories.ini</a>
-<li><a href="#mapTypeLands"><карта>\TypeLands</a>
-<li><a href="#mapLocations"><карта>\Locations</a>
-<li><a href="#mapTerritories_Icon_Coordinates"><карта>\Territories_Icon_Coordinates.ini</a>
-<li><a href="#mapTerritoriesInfo"><карта>\TerritoriesInfo.ini</a>
-<li><a href="#mapBT"><карта>\map.bt</a>
-<li><a href="#mapImage"><карта>\map.png</a>
+<li><a href="#mapLinks">&ltкарта>\Links.ini</a>
+<li><a href="#mapSettings">&ltкарта>\settings.ini</a>
+<li><a href="#mapTerritories">&ltкарта>\Territories.ini</a>
+<li><a href="#mapTypeLands">&ltкарта>\TypeLands</a>
+<li><a href="#mapLocations">&ltкарта>\Locations</a>
+<li><a href="#mapTerritories_Icon_Coordinates">&ltкарта>\Territories_Icon_Coordinates.ini</a>
+<li><a href="#mapTerritoriesInfo">&ltкарта>\TerritoriesInfo.ini</a>
+<li><a href="#mapBackgroundObjects">&ltкарта>\BackgroundObjects.ini</a>
+<li><a href="#mapBT">&ltкарта>\map.bt</a>
+<li><a href="#mapImage">&ltкарта>\map.png</a>
 </ul>
 </div>
 <div class=rightpannel>
@@ -532,6 +533,19 @@ div:target {
 <p><b>BonusRangeForAtackers</b> - бонус к дальности нападающим %
 <p><b>BonusRangeForDefenders</b> - бонус к дальности обороняющимся %
 <p><b>CountBuildings</b> - число построек, которые могут быть построены на этом типе местности
+</div>
+
+
+
+<div id="mapBackgroundObjects">
+<p>Файл содержит список неактивных объектов на карте.
+<p><i>[Main]</i>
+<p><b>Count</b> - количество элементов в файле
+<p><i>[Element&ltX>]</i>
+<p><b>&ltX></b> - индекс объекта
+<p><b>X</b> - X позиция на карте
+<p><b>Y</b> - Y позиция на карте
+<p><b>Name</b> - название файла с изображением
 </div>
 
 
