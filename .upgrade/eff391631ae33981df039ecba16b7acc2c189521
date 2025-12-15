@@ -1,0 +1,15 @@
+A	data/gfx/Elements/GlobalMap/anomaliesAshHeap.agr
+A	data/gfx/Elements/GlobalMap/anomaliesAshHeap/0.png
+A	data/gfx/Elements/GlobalMap/anomaliesLoza.agr
+A	data/gfx/Elements/GlobalMap/anomaliesLoza/0.png
+A	data/gfx/Elements/GlobalMap/anomaliesSoda.agr
+A	data/gfx/Elements/GlobalMap/anomaliesSteam.agr
+A	data/gfx/Elements/GlobalMap/anomaliesSteam/0.png
+A	data/gfx/Elements/GlobalMap/anomaliesVulkan.agr
+A	data/gfx/Elements/GlobalMap/anomaliesVulkan/0.png
+M	data/maps/CS_Battle_For_Limansk/backgroundobjects.ini
+M	data/maps/CS_Standard/backgroundobjects.ini
+M	data/maps/CoP_Map_Classic/BackgroundObjects.ini
+M	data/maps/CoP_Map_Pripyat/backgroundobjects.ini
+M	data/maps/CoP_Map_Zaton/backgroundobjects.ini
+M	data/maps/SNET_6players/backgroundobjects.ini
