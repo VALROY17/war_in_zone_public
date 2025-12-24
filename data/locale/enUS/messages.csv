@@ -1,0 +1,2545 @@
+[Form_MainMenu].Update.NewVersion.Text;The new version of the game is out. You can download it from the game's launcher!
+[Form_MainMenu].Version.Part.Text;Version
+[Form_Campanings].TitleText;Choose a campaign
+[Form_Campanings].Tutorial.Text;Please play the tutorial first! || The game has a fairly high entry barrier, so the tutorial will help you get up to speed faster! You don't have to complete the entire tutorial. Completing any one scenario is enough.
+[Form_OtherProjects].TitleText;Our other projects
+[Form_OtherProjects].GMBText;G.M.B. MOD is a global modification for Stronghold Crusader. Its goal is to improve the game in every possible way, without affecting the original concept that has made it beloved by players worldwide!
+[Form_Options].TitleText;Options
+[Form_Options].Text.TabVideo;Image
+[Form_Options].Text.TabSound;Sound
+[Form_Options].Text.TabInterface;Interface
+[Form_Options].Text.TabOther;Other
+[Form_Options].Text.Current;Current:
+[Form_Options].Text.On;Turn on
+[Form_Options].Text.Off;Turn off
+[Form_Options].Text.Fast;Fast
+[Form_Options].Text.WindowWithBorder;Window with borders
+[Form_Options].Text.WindowWithoutBorder;Window without borders
+[Form_Options].Text.Auto;Auto
+[Form_Options].Text.Log1;Only important
+[Form_Options].Text.Log2;Standart
+[Form_Options].Text.Log3;Extended
+[Form_Options].Text.Log4;Similar
+[Form_Options].Text.Part;Everything except riots
+[Form_Options].Text.All;Everything
+[Form_Options].Text.No;No
+[Form_OptionsInterface].Text1;Detailed output to the game log:
+[Form_OptionsInterface].Text2;Displaying battle reports after the turn has started:
+[Form_OptionsInterface].Text3;Show game log at the end of a turn:
+[Form_OptionsInterface].Text4;Interface scaling:
+[Form_OptionsInterface].Text5;Automatic change of main menu background:
+[Form_OptionsInterface].Text.NeedRestart;A game restart is required to activate scaling!
+[Form_OptionsOther].Text1;Game nickname:
+[Form_OptionsOther].Text2;Timer for limiting the frequency of sending messages to the game chat
+[Form_OptionsSound].Text1;Overall sound volume:
+[Form_OptionsSound].Text2;Background sounds:
+[Form_OptionsSound].Text3;Music:
+[Form_OptionsSound].Text4;Event sounds:
+[Form_OptionsSound].Text5;Interface sounds:
+[Form_OptionsSound].Text6;Speech:
+[Form_OptionsVideo].Text1;Screen resolution:
+[Form_OptionsVideo].Text2;Use new font:
+[Form_OptionsVideo].Text3;Show the boundaries of neighboring territories:
+[Form_OptionsVideo].Text4;Focus the camera on the event source:
+[Form_OptionsVideo].Text5;Returning the camera after an event:
+[Form_OptionsVideo].Text6;Camera focus when clicking in the log:
+[Form_OptionsVideo].Text7;Event animation speed:
+[Form_OptionsVideo].Text8;Battle animation speed:
+[Form_OptionsVideo].TextNeedRestart;A game restart is required to activate the font!
+[frmOptionsBase].Message1;Are you sure you want to reset all settings?||Some settings will only take effect after a restart.
+[Form_ScenarioSettings].TitleText;Select scenario settings
+[Form_ScenarioSettings].Message_1;Already selected by a player!
+[Form_ScenarioSettings].Message_2;Network connection error: %d
+[Form_ScenarioSettings].Message_3;Invalid network address
+[Form_ScenarioSettings].Message_4;Not all players have chosen a faction!
+[Form_ScenarioSettings].Message_5;Wait for other players to connect!
+[Form_ScenarioSettings].Message_6;Not all players have connected to the game.
+[Form_ScenarioSettings].Message_7;Available only to the host!
+[Groups.:Spectator.:main].Name;Observer
+[Groups.:Spectator.:main].Description;Observer
+[Groups.:Random.:main].Name;Random
+[Groups.:Random.:main].Description;The faction will be selected randomly
+[Form_ScenarioSettings].SelectPlayerBTN.Hint;Select a player
+[Form_ScenarioSettings].PlayerNick.Hint;Player's nickname
+[Form_ScenarioSettings].PlayerFraction.Hint;The faction the player has chosen
+[Form_ScenarioSettings].Ban.Hint;Block a player
+[Form_ScenarioSettings].Up.Hint;Move a player up a player in turn order
+[Form_ScenarioSettings].Down.Hint;Move a player down in the play order
+[Form_ScenarioSettings].Kick.Hint;Kick a player
+[Form_ScenarioSettings].MBTN_Send.Hint;Send a message
+[Form_ScenarioSettings].clChat.Hint;Game chat
+[Form_ScenarioSettings].cgMessage.Hint;Message input field
+[Form_Spy].TitleText;Reconnaissance
+[Form_Spy].Text1;Select soldier for reconnaissance
+[Form_Spy].Text2;Cost:
+[Form_Spy].Text3;Have you purchased any success-impacting upgrades:
+[Form_Spy].Text4;Operation success rate in %:
+[Form_Spy].Text5;Selected soldier:
+[Form_Spy].Text6;Yes
+[Form_Spy].Text7;No
+[Form_Spy].FT_1;The scout successfully completed the mission! The scout reports that the following soldiers are in the area:
+[Form_Spy].LT_1;The scout successfully completed the mission. The following troops were detected on %s territory...
+[Form_Spy].FT_2;The scout failed the mission! You can try again.
+[Form_Spy].LT_2;The scout failed to complete the task in the %s location %s
+[Form_Spy].FT_3;The soldier has not been selected!
+[Form_Spy].LHint_1;The number of soldiers of rank %s in this territory.
+[Form_ArmyMove].TitleText;Movement of soldiers between territories
+[Form_ArmyMove].Text1;From:
+[Form_ArmyMove].Text2;To:
+[Form_ArmyMove].Text3;Cost of moving:
+[Form_ArmyMove].FT_1;%s location %s
+[Form_ArmyMove].LT_1;Moved troops from %s location %s to %s location %s
+[Form_ArmyMove].BTN_Move;Redeploy all specified soldiers
+[Form_ArmyMove].BTN_Back;Cancel the redeployment
+[Form_ArmyMove].Message_1;The officers already know where they're coming from. Choose your neighboring territory where the troops will be deployed.
+[Form_AtackEnd].TitleText;Results of the battle
+[Form_AtackEnd].Text1;Resources spent on the battle:
+[Form_AtackEnd].Text2;Loot collected after the battle:
+[Form_AtackEnd].FT_1;%s location %s
+[Form_AtackEnd].FT_2;DRAW
+[Form_AtackEnd].FT_3;ATTACKER'S VICTORY
+[Form_AtackEnd].FT_4;ATTACKER'S DEFEAT
+[Form_AtackEnd].FT_5;Mutant rampage on the territory
+[Form_AtackEnd].FT_7;Mutants raided the player's territory
+[Form_AtackEnd].FT_8;Mutants attacked the player's territory
+[Form_AtackEnd].FT_11;Clearing the area of ??mutants
+[Form_AtackEnd].FT_12;The player went on reconnaissance mission into mutant territory.
+[Form_AtackEnd].FT_13;The player went into a battle to capture mutant territory.
+[Form_AtackEnd].FT_14;The player went on a reconnaissance mission into enemy territory.
+[Form_AtackEnd].FT_15;The player carried out a capture by combat on the enemy territory
+[Form_AtackEnd].FT_19;The enemy conducted a reconnaissance mission into the player's territory.
+[Form_AtackEnd].FT_20;The enemy carried out a capture by combat on the player's territory
+[Form_AtackEnd].FT_21;%s || %s || Base price without merchant markup: %d
+[Form_AtackEnd].FT_23;Enemy invasion
+[Form_AtackPlan].TitleText;Planning an attack
+[Form_AtackPlan].Text1;Select attack type:
+[Form_AtackPlan].Text2;Garrison:
+[Form_AtackPlan].Text3;Garrison:
+[Form_AtackPlan].Text4;Garrison:
+[Form_AtackPlan].Text5;Garrison:
+[Form_AtackPlan].Text6;Attackers:
+[Form_AtackPlan].Text7;Attackers:
+[Form_AtackPlan].Text8;Attackers:
+[Form_AtackPlan].Text9;Attackers:
+[Form_AtackPlan].LT_1;At %s location %s
+[Form_AtackPlan].BTN_Shelling;Reconnaissance in force - a short skirmish with a chance to retreat
+[Form_AtackPlan].BTN_Conquest;Capture - the battle lasts until one of the sides is completely destroyed
+[Form_AtackPlan].BTN_Back;Cancel the attack
+[Form_AtackPlan].Message_1;The officers have already figured out where to attack. Choose an enemy neighboring territory to attack.
+[Form_AtackPlan].Attack_Stats.Hint;Approximate bonuses that will be applied to attackers during an attack. The final bonuses will differ from those listed here, as the defender's situation may be affected by unknown circumstances (bonuses from rules, deputy, and buildings).
+[Form_AtackPlan].Defend_Stats.Hint;Approximate bonuses that will be applied to the defender during an attack. The final bonuses will differ from those listed here, as the defender's situation may be influenced by unknown circumstances (bonuses from rules, deputy, buildings).
+[Form_AtackResult].TitleText;Survivors
+[Form_AtackResult].Text1;Was:
+[Form_AtackResult].Text2;Was:
+[Form_AtackResult].Text3;Was:
+[Form_AtackResult].Text4;Was:
+[Form_AtackResult].Text5;Was:
+[Form_AtackResult].Text6;Was:
+[Form_AtackResult].Text7;Was:
+[Form_AtackResult].Text8;Was:
+[Form_AtackResult].Text9;Left:
+[Form_AtackResult].Text10;Left:
+[Form_AtackResult].Text11;Left:
+[Form_AtackResult].Text12;Left:
+[Form_AtackResult].Text13;Left:
+[Form_AtackResult].Text14;Left:
+[Form_AtackResult].Text15;Left:
+[Form_AtackResult].Text16;Left:
+[Form_BuyUnits].TitleText;Hiring soldiers
+[Form_BuyUnits].L_Hint1;Number of available recruits of rank %s
+[Form_BuyUnits].L_Hint2;Number of soldiers of rank %s in the territory
+[Form_BuyUnits].L_Hint3;To hire a soldier of rank %s, press LMB
+[Form_BuyUnits].L_Hint4;Dismiss a soldier of rank %s and return the ammunition to the warehouse
+[Form_BuyUnits].F_Hint1;Number of ammunition in stock
+[Form_BuyUnits].F_Hint2;Name of the soldier rank
+[Form_BuyUnits].F_Hint3;The cost of one soldier
+[Form_Diplomacy].TitleText;Дипломатия
+[Form_Diplomacy].Text1;Current relationship status
+[Form_Diplomacy].Text2;Action cost:
+[Form_Diplomacy].Text3;Available actions:
+[Form_Diplomacy].Text4;Another group's response to your proposal:
+[Form_Diplomacy].Text5;Enemies:
+[Form_Diplomacy].Text6;Allies:
+[Form_Diplomacy].FT_0;The faction will be able to respond to your proposal when it is their turn.
+[Form_Diplomacy].FT_1;Neutrality
+[Form_Diplomacy].FT_2;Alliance
+[Form_Diplomacy].FT_3;War
+[Form_Diplomacy].FT_4;Eternal war
+[Form_Diplomacy].FT_5;Eternal alliance
+[Form_Diplomacy].FT_6;Error! Incorrect relationship status
+[Form_Diplomacy].LT_1;Broke the alliance with the %s faction
+[Form_Diplomacy].LT_2;Formed an alliance with the %s faction
+[Form_Diplomacy].LT_3;Didn't reach an agreement with the %s faction about an alliance
+[Form_Diplomacy].LT_4;A ceasefire was reached with the %s faction.
+[Form_Diplomacy].LT_5;Failed to reach an agreement with the %s faction regarding a truce
+[Form_Diplomacy].LT_6;Declared war on the %s faction
+[Form_Diplomacy].LT_7;%s proposed a truce
+[Form_Diplomacy].LT_8;Suggested an alliance: %s
+[Form_Diplomacy].Exception_1;Invalid offer type: %s
+[Form_Diplomacy].BTN_Send_War.Hint;Declare war. Military action can begin immediately after its declaration.
+[Form_Diplomacy].BTN_Send_Alliance.Hint;Propose an alliance. After proposing an alliance, you must wait for a response, which will be received on the next turn.
+[Form_Diplomacy].BTN_Send_Money.Hint;Send money. The recipient will receive the money immediately after sending.
+[Form_Diplomacy].BTN_Send_Neutral.Hint;Offer a truce. After offering a truce, you must wait for a response, which will be received on the next turn.
+[Form_Diplomacy].BTN_Break_Alliace.Hint;Break alliance. The alliance is broken immediately after pressing the button.
+[Form_Diplomacy].BTN_Request_Money.Hint;Send a request to transfer money to you. You must wait for a response, which will be received on the next turn.
+[Form_KillMutants].TitleText;Clearing the area of ??mutants
+[Form_KillMutants].Text1;Garrison
+[Form_KillMutants].Text2;Garrison
+[Form_KillMutants].Text3;Garrison
+[Form_KillMutants].Text4;Garrison
+[Form_KillMutants].Text5;Attackers:
+[Form_KillMutants].Text6;Attackers:
+[Form_KillMutants].Text7;Attackers:
+[Form_KillMutants].Text8;Attackers:
+[Form_KillMutants].Text9;Number of people:
+[Form_KillMutants].Text10;Number of people:
+[Form_KillMutants].Text11;Number of people:
+[Form_KillMutants].Text12;Number of people:
+[Form_KillMutants].BTN_Next;Send the specified soldiers to clear the area of ??mutants.
+[Form_KillMutants].BTN_Back;Cancel the clearing of the area from mutants
+[Form_MoreInfo].TitleText;Additional information
+[Form_MoreInfo].Text1;Current total number of soldiers in the group:
+[Form_MoreInfo].Text2;Total number of recruits arriving per turn:
+[Form_MoreInfo].Text3;Total number of command resource increasing per turn:
+[Form_MoreInfo].Text4;Total number of food consumption per turn:
+[Form_Advisor].TitleText;Appointment of a new deputy group leader
+[Form_Advisor].Text1;Deputy leader
+[Form_Advisor].Text2;Hint: || Almost every character has their own ideology, which may not coincide with the current ideology of the faction. || When appointed as a deputy, the process of advancing their own ideology by the specified % each turn will begin.
+[Form_Advisor].Text3;Hint: || When changing a faction's ideology, the old characters will remain available, and you can use your deputies again to promote the other ideology. || Also, certain story events may affect the character list.
+[Form_Advisor].BTN_Appoint;Appoint a new deputy to replace the old one. The deputy's bonuses will begin to apply from the moment of appointment.
+[Form_Advisor].FHint1;The deputy leader of the faction provides additional bonuses and influences the entire group.
+[Form_Advisor].LT_1;A new deputy leader of the faction has been appointed: %s
+[Form_Ideology].TitleText;Change of ideology
+[Form_Ideology].Text1;Choose an ideology
+[Form_Ideology].Text2;Current % in your faction
+[Form_Ideology].Text3;The cost of changing ideology to the chosen one
+[Form_Ideology].Text4;Hint: || If a faction's ideology drops below 50%, there's a chance of soldiers leaving. || At 49%, the chance of a soldier leaving is 1%, at 48%, the chance is 2%, at 47%, the chance is 3%, and so on...|| Keep in mind that changing the ideology will change the merchant's inventory and the winning ending.
+[Form_Ideology].Text5;Hint: || Each ideology has its own set of rules for regulating the faction's internal policies. || When switching from the current one to a new one, the old rules will remain active, even if they are not included in the new ideology. || However, they will no longer be available for re-selection.
+[Form_Ideology].BTN_Accept;Change your ideology to a new one. Ideology bonuses begin to apply from the moment you choose it.
+[Form_Ideology].FHint1;The ideology of a group provides additional bonuses and affects the entire group.
+[Form_Ideology].True;Yes
+[Form_Ideology].LT_1;A new ideology has been selected for the faction: %s
+[Form_Market].TitleText;Trade
+[Form_Market].FT_1;%s || %s || Base price without merchant markup: %d
+[Form_Rating].TitleText;Faction rating
+[Form_Rating].Text1;Territories
+[Form_Rating].Text2;Armies
+[Form_Rating].Exeption_1;Error calculating ranking based on territories. The value for the grouping is greater than 100.
+[Form_Rating].Exeption_2;Error calculating army-based rating. The group's rating is greater than 100.
+[Form_SearchArts].TitleText;Searching for artifacts
+[Form_SearchArts].Text1;Select soldier type:
+[Form_SearchArts].Text2;Selected soldier:
+[Form_SearchArts].Text3;Base chance of finding artifacts:
+[Form_SearchArts].Text4;Base chance of a soldier dying:
+[Form_SearchArts].Text5;The sum of all search bonuses, except for the soldier's ammunition:
+[Form_SearchArts].Text6;The amount of penalties that increase the soldier's chance of death:
+[Form_SearchArts].Text7;Chance of successfully finding artifacts, taking into account all bonuses:
+[Form_SearchArts].Text8;Chance of a soldier's death, taking into account all bonuses:
+[Form_SearchArts].Text9;Cost of sending a soldier:
+[Form_SearchArts].Text10;Artifact search results:
+[Form_SearchArts].Text11;Found artifacts:
+[Form_SearchArts].FT_1;The soldier has returned from the mission and reported that he had not found any artifacts and it looked like they would not appear in this area in the future.
+[Form_SearchArts].FT_2;The soldier has returned from the mission and reported that the artifacts had been found! Should he be sent again?
+[Form_SearchArts].FT_3;The soldier has returned from his mission and reported that he hadn't managed to find anything worthwhile this time. Should ge be sent out again?
+[Form_SearchArts].FT_4;%d%%
+[Form_SearchArts].FT_5;The soldier has returned with the artifacts. The mission was successful!
+[Form_SearchArts].FT_6;During the mission, the stalker went silent. His fate remains unknown.
+[Form_SearchArts].LT_1;Conducted an initially unsuccessful attempt to search for artifacts in the %s location %s
+[Form_SearchArts].LT_2;Conducted an unsuccessful attempt to search for artifacts in the %s location %s
+[Form_SearchArts].LT_3;Conducted a successful attempt to search for artifacts in the %s location %s
+[Form_SearchArts].LT_4;Conducted a failed attempt to search for artifacts in the %s location %s, where %s died.
+[Form_SearchArts].LHint_1;Soldier rank %s. Left-click to select.
+[Form_SearchArts].LHint_2;The number of soldiers of rank %s in this territory.
+[Form_SearchArts].FHint_1;Browse through the ammunition that is suitable for a given soldier rank.
+[Form_SearchArts].FHint_2;Soldier stats. Choose your equipment to influence your stats.
+[Form_SearchArts].LHint_3;A parameter specified in the scenario settings. All other bonuses and penalties are added to it.
+[Form_SearchArts].LHint_4;A parameter specified in the scenario settings. All other bonuses and penalties are added to this parameter, but the probability of a soldier's death cannot be lower than this parameter, regardless of any bonuses.
+[Form_SearchArts].LHint_5;The sum of all bonuses and penalties from the leader, deputy, internal faction rules, ideology, buildings, improvements, and terrain.
+[Form_SearchArts].LHint_6;The sum of all penalties from the number of mutants in this territory and the % of their activity.
+[Form_SearchArts].LHint_7;"The total sum of all bonuses and penalties to the soldier's successful search chance. The calculation formula takes into account the base chance of %d%%, the sum of the bonuses, the soldier's rank, and the ""Anti-Rad"" parameter of their equipment."
+[Form_SearchArts].LHint_8;The total sum of all bonuses and penalties to a soldier's chance of death. The calculation formula takes into account the fighter's PVM, defense and damage parameters, the sum of penalties, and the base chance of death, but the value cannot be lower than the base chance of death - %d%%.
+[Form_SearchArts].BTN_Send.Hint;Send one unit to search. If an artifact is found in this area, the search cannot be repeated until the next turn.
+[Form_SelectTrader].TitleText;Select a merchant
+[Form_SelectTrader].Text1;Merchent:
+[Form_SelectTrader].FT_1;First, select someone else's territory and then click Trade to start trading with the other faction.
+[Form_SelectTrader].FT_2;This trading method will be available in later versions of the game or in multiplayer.
+[Form_Sklad].TitleText;Faction warehouse
+[Form_Sklad].Text1;Filters:
+[Form_Sklad].FT_0;All
+[Form_Sklad].FT_1;Main
+[Form_Sklad].FT_2;Resources
+[Form_Sklad].FT_3;Ammunition
+[Form_Sklad].FT_4;Other
+[Form_Sklad].FT_5;%s || %s || Base price without merchant markup: %d
+[Form_Tech].TitleText;Upgrades
+[Form_Tech].Text1;Hover over the upgrade image to display information
+[Form_Tech].Text2;Upgrade required:
+[Form_Tech].Text3;Cost:
+[Form_Tech].Text4;Status:
+[Form_Tech].FT_1;Upgrade purchased
+[Form_Tech].FT_2;Upgrade not purchased
+[Form_Tech].LT_1;Purchased upgrade %s
+[Form_World].LT_1;Faction %s has experienced a plot event %s
+[Form_World].LT_2;Faction %s has experienced a random event %s
+[Form_World].LT_3;Faction %s has experienced a special event %s
+[Form_World].LT_4;The faction has changed the state of the emitter in the territory of %s location %s
+[Form_World].LT_5;Faction %s has had its ideology increased to %s
+[Form_World].LT_6;Currently it's %s faction's turn || This will take some time
+[Form_World].FT_1;Specify the territory where the troop movement will take place. Available ones are colored blue||Right-click to cancel.
+[Form_World].FT_2;Specify the area where the attack will take place. Available ones are highlighted in red. Right-click to cancel.
+[Form_World].FT_3;There was an Emission in the Zone!
+[Form_World].FHint_1;Money
+[Form_World].FHint_2;CR (command resource)/CR limit
+[Form_World].FHint_3;Total number of available recruits for rank %s / Limit of simultaneously available recruits for this rank
+[Form_World].FBTNHint_1;Warehouse
+[Form_World].FBTNHint_2;Upgrades
+[Form_World].FBTNHint_3;Report
+[Form_World].FBTNHint_4;Faction rating
+[Form_World].FBTNHint_5;Ammunition upgrade
+[Form_World].FBTNHint_6;Extra
+[Form_World].FilterHint_1;Physical map
+[Form_World].FilterHint_2;Artifacts
+[Form_World].FilterHint_3;Mutant activity
+[Form_World].FilterHint_4;Increase in recruits
+[Form_World].FilterHint_5;Diplomatic
+[Form_World].FilterHint_6;Psi radiation
+[Form_World].FilterHint_7;Garrison
+[Form_World].FilterHint_8;Logistics
+[Form_World].FilterHint_9;Place for construction of buildings
+[Form_World].LogHint;Game event log
+[Form_World].ChatHint;Game chat
+[Form_World].JudgeHint;Switch view Judge/Spectator
+[Form_World].PlayerListHint;List of players
+[Form_World].NotificationsHint;Notification Center
+[Form_World].HelpHint;Script Reference
+[Form_World].OptionsHint;Options
+[Form_World].StepHint;End of turn
+[Form_World].TimerHint;Time remaining until the end of the turn
+[Form_World].NameChatChanel_1;General
+[Form_World].NameChatChanel_2;Allies
+[Form_World].NameChatChanel_3;Personal
+[Form_World].Exeption_1;The GBModeView specifies an incorrect mode for interacting with the global map.
+[Form_World].Exeption_2;Error in Form_World.LoadIconsMap. An error has occurred, further play is not recommended. Please report to the developer.
+[Form_World].Exeption_3;Something went wrong, this shouldn't happen!
+[Form_ZonaMenu].TitleText;Territory menu
+[Form_ZonaMenu].Text1;Garrison
+[Form_ZonaMenu].LT_1;%s location %s
+[Form_ZonaMenu].LT_2;Territory index = %s
+[Form_ZonaMenu].FT_1;No
+[Form_ZonaMenu].FT_2;Cheap
+[Form_ZonaMenu].FT_3;Expensive
+[Form_ZonaMenu].FT_4;Rare
+[Form_ZonaMenu].FT_5;Cheap and expensive
+[Form_ZonaMenu].FT_6;Expensive and rare
+[Form_ZonaMenu].FT_7;Cheap and rare
+[Form_ZonaMenu].FT_8;All
+[Form_ZonaMenu].FT_9;This faction refuses to trade with you under current diplomatic relations.
+[Form_ZonaMenu].FT_10;Yes
+[Form_ZonaMenu].FT_11;, there is an emitter
+[Form_ZonaMenu].FT_12;Few
+[Form_ZonaMenu].FT_13;Enough
+[Form_ZonaMenu].FT_14;Many
+[Form_ZonaMenu].FT_15;Territory menu
+[Form_ZonaMenu].FT_16;The territory is the main base of the group
+[Form_ZonaMenu].FT_17;Main territory
+[Form_ZonaMenu].FT_18;Enclave with access through an ally
+[Form_ZonaMenu].FT_19;Enclave with access through a neutral
+[Form_ZonaMenu].FT_20;Enclave in enemy territory
+[Form_ZonaMenu].FT_21;You cannot trade with other factions. This may be due to your ideology.
+[Form_ZonaMenu].FT_22;Main base
+[Form_ZonaMenu].FHint1;There are no restrictions on the management of the territory.
+[Form_ZonaMenu].FHint2;Is this territory an enclave?
+[Form_ZonaMenu].FHint9;The presence of a dangerous level of psi radiation
+[Form_ZonaMenu].FHint10;Mutant activity in %
+[Form_ZonaMenu].FHint11;Arrival of new recuits per turn
+[Form_ZonaMenu].FHint12;Number of turns since the last successful search for artifacts
+[Form_ZonaMenu].FHint13;Type of artifacts appearing
+[Form_ZonaMenu].FHint14;Logo of the faction
+[Form_ZonaMenu].FHint15;The name of the faction that controls this territory
+[Form_ZonaMenu].FHint16;Is the current garrison sufficient to stop the increase % in mutant activity in this area?
+[Form_ZonaMenu].FHint17;Current number of buildings / Maximum number of buildings in this area
+[Form_ZonaMenu].FHint18;Go to the previous territory
+[Form_ZonaMenu].FHint19;Go to the next territory
+[Form_ZonaMenu].LHint1;Due to the selected group management rule, this territory has the following restrictions: %s. Some of these restrictions can be removed by changing the management rule!
+[Form_ZonaMenu].ZonaTypeLandHint0;Terrain type: %s
+[Form_ZonaMenu].ZonaTypeLandHint1;Number of places for construction: %d
+[Form_ZonaMenu].ZonaTypeLandHint2;Bonus to enemy recons: %d%%
+[Form_ZonaMenu].ZonaTypeLandHint3;Artifact search bonus: %d%%
+[Form_ZonaMenu].ZonaTypeLandHint4;PVP damage bonus to attackers: %d%%
+[Form_ZonaMenu].ZonaTypeLandHint5;PVP damage bonus to defenders: %d%%
+[Form_ZonaMenu].ZonaTypeLandHint6;PVM damage bonus to attackers: %d%%
+[Form_ZonaMenu].ZonaTypeLandHint7;PVM damage bonus to defenders: %d%%
+[Form_ZonaMenu].ZonaTypeLandHint8;Range bonus for attackers: %d%%
+[Form_ZonaMenu].ZonaTypeLandHint9;Range bonus for defenders: %d%%
+[Form_ZonaMenu].BTNHint1;Send recons to find out the number of fighters in the area
+[Form_ZonaMenu].BTNHint2;Conduct diplomatic negotiations with the group
+[Form_ZonaMenu].BTNHint3;Sell ??or buy ammunition, resources and other goods
+[Form_ZonaMenu].BTNHint4;Send soldiers to search for artifacts on the territory
+[Form_ZonaMenu].BTNHint5;Send soldiers to clear the area of ??mutants
+[Form_ZonaMenu].BTNHint6;Send the soldiers into the attack
+[Form_ZonaMenu].BTNHint7;Send soldiers to another territory
+[Form_ZonaMenu].BTNHint8;Recruit new soldiers and change the faction's weapons
+[Form_ZonaMenu].BTNHint9;Control the emitter state
+[Form_ZonaMenu].BTNHint10;Build or destroy any structures
+[Form_ZonaMenu].BTNHint11;Leave the territory and lose control over it
+[Form_ZonaMenu].BTNHint12;Move the faction's main base to another territory
+[Form_Rearm].TitleText;Rearmament of the faction
+[Form_Rearm].Text1;Select soldier type:
+[Form_Rearm].Text2;The cost of rearming all soldiers of a given type
+[Form_Rearm].Text3;Selected soldier type:
+[Form_Rearm].Text4;In stock:
+[Form_Rearm].Text5;Required:
+[Form_Rearm].Text6;In stock:
+[Form_Rearm].Text7;Required:
+[Form_Rearm].Text8;Rearming is a crucial step. You need to plan everything in advance! Consider not only how much your soldiers' stats will increase but also the price of ammunition. It's also worth considering which merchants you'll need to purchase it from (your merchant's inventory won't change!!!). The recruitment price for a soldier will also change after rearming, depending on the base price of ammunition. The cost of rearming depends on how many soldiers will be rearmed. If there aren't enough soldiers, rearming is free. Any previously used ammunition the soldiers had before rearming will be stored in the warehouse. The ammunition you specify will be taken from the warehouse. If the required ammunition is in short supply, the soldier type will not be rearmed!
+[Form_Rearm].Text9;Current price of 1 soldier before rearmament:
+[Form_Rearm].Text10;Estimated price of 1 soldier after rearmament:
+[Form_Rearm].Text11;Cost of rearmament:
+[Form_Rearm].DisableRearm;Rearmament is disabled by scenario settings
+[Form_Report].TitleText;Territorial report
+[Form_Report].ColText0;#
+[Form_Report].ColText1;Location
+[Form_Report].ColText2;Territory
+[Form_Report].ColText3;% mutant activity
+[Form_Report].ColText4;Garrison to stop the growth of % mutant activity
+[Form_Report].ColText5;The appearance of artifacts
+[Form_Report].ColText6;Number of turns after a successful search
+[Form_Report].ColText7;Recruits %s
+[Form_Report].ColText8;Recruits %s
+[Form_Report].ColText9;Recruits %s
+[Form_Report].ColText10;Recruits %s
+[Form_Report].ColText11;Total number of soldiers on the territory
+[Form_Report].CheckText1;There are
+[Form_Report].CheckText2;There aren't
+[Form_Report].CheckText3;Few
+[Form_Report].CheckText4;Enough
+[Form_Report].CheckText5;Many
+[Form_Report].Text1;To sort a column in ascending/descending order, click on its header || To go to the territory menu, click on the line with the territory
+[Form_PsyControl].TitleText;Actions with the emitter
+[Form_PsyControl].LT_1;%s location %s
+[Form_PsyControl].LT_2;Emitter status: %s
+[Form_PsyControl].LT_3;You can turn the emitter on and off. The cost is %s CR. Keep in mind that the emitter can affect not only this area but also neighboring ones. Be prepared for unpredictable changes to come!
+[Form_PsyControl].FT_1;You cannot turn the radiation device on or off. Please note that the emitter may affect not only this area but also others. Be careful!
+[Form_PsyControl].FT_2;On
+[Form_PsyControl].FT_3;Off
+[Form_Rules].TitleText;Group management rules
+[Form_Rules].LT_1;Rule %s accepted
+[Form_Rules].Text1;This rule is already active!
+[Form_Rules].FHint1;Cost of changing one rule || Selecting one rule will cancel another one from the same group (horizontally)
+[Form_Buildings].TitleText;Buildings
+[Form_Buildings].Text1;Available buildings
+[Form_Buildings].Text2;Number of remaining construction sites:
+[Form_Buildings].Text3;Upgrade required:
+[Form_Buildings].Text4;Building required:
+[Form_Buildings].Text5;Cost:
+[Form_Buildings].FHint1;Destroy the building for %d CR
+[Form_Buildings].Message_1;The building limit on the territory has been reached!
+[Form_AmmoUp].TitleText;Modification of ammunition
+[Form_AmmoUp].Text1;Select the ammunition you want to modify from the list. Only items that are in stock and can be modified are displayed.
+[Form_AmmoUp].Text2;Additionally, the following resources will be spent:
+[Form_AmmoUp].LHint_1;The remaining amount of ammunition that can be modified during the current turn: %d
+[Form_AmmoUp].LHint_2;One workshop can modify the following number of ammunition items at a time: %d
+[Form_AmmoUp].LHint_3;Total number of workshops built: %d
+[Form_AmmoUp].FHint1;Close window
+[Form_AmmoUp].FHint2;Modify the selected ammunition. || Once modified, the new ammunition will immediately appear in your warehouse.
+[Form_AmmoUp].FHint3;You don't have any buildings that can modify ammunition!
+[Form_AmmoUp].Message_1;The modification limit has been reached for the current turn!
+[Form_AmmoUp].Message_2;Please enter a number greater than 0!
+[Form_LeaveZone].TitleText;Leave the territory
+[Form_LeaveZone].Text1;You can leave this territory. || If there are soldiers in the territory, they will be disbanded. Disbanding is the same as in manual mode - all equipment is sent to the warehouse. Money and spent recruits are non-refundable. || If you want to keep your soldiers, redeploy them yourself before leaving the territory. || Leaving the territory means you lose control of it. || The %s faction will be considered the new owner.
+[Form_LeaveZone].Text2;Action cost:
+[Form_LeaveZone].LT_1;left the territory of %s location %s
+[Form_Rebase].TitleText;Relocation of the main base of the group
+[Form_Rebase].Text1;You can move your main base to this territory. || This has many consequences. One of them is the issue of supply logistics for soldiers, both in the rear and on the front lines. || It is recommended to place your faction's base in the rear of the main core of the group's presence ? where it will be most difficult for the enemy to reach the base, and where there will be a minimum of territories not connected to the main core. || This is very important! || Otherwise, the enemy will easily capture your base, and you will lose %d% of your resources! || If you do not have a base, assigning this territory will be free.
+[Form_Rebase].Text2;Cost of moving the main base of the group:
+[Form_Rebase].LT_1;moved the main base to the territory of %s location %s
+[Form_Chat].TitleText;Chat
+[Form_Chat].Text1;Select the recipient
+[Form_Chat].FHint1;Everyone
+[Form_Chat].FHint2;Allies only
+[Form_Chat].LHint1;Player of %s faction %s
+[Form_Chat].BTN_Back.Hint;Close chat
+[Form_Chat].BTN_Send.Hint;Send a message
+[Form_Chat].HintUnmute;Block messages from %s, %s
+[Form_Chat].HintMute;Unblock messages from %s, %s
+[Form_AboutScenario].TitleText;About the script
+[Form_AboutScenario].Text6;Description of the script
+[Form_MultiplayerSettings].TitleText;Multiplayer game settings
+[Form_MultiplayerSettings].Text1;Password to save
+[Form_MultiplayerSettings].Text2;Select the number of players
+[Form_MultiplayerSettings].Text3;Turn timer - the number of minutes after which a player's turn will be forced to end
+[Form_MultiplayerSettings].Text4;Turn start timer - the number of minutes a player is given to begin their turn. Once the timer expires, the turn begins automatically.
+[Form_MultiplayerSettings].Text5;The player's nickname as it appears in-game. Maximum 11 characters.
+[Form_MultiplayerSettings].Text6;Timer for limiting the frequency of sending messages to the game chat
+[Form_MultiplayerSettings].Message_1;Enter the password to save the game!
+[Form_MultiplayerSettings].Message_2;Empty nicknames are prohibited!
+[Form_MultiplayerSettings].Message_3;Nicknames must be different from each other!
+[Form_MultiplayerTypeSelect].Text1;Hotseat - the ability for several players to play on one computer in turns
+[Form_MultiplayerTypeSelect].Text2;To play through Steam, you must launch the Steam client before launching the game.
+[Form_MultiplayerTypeSelect].Text3;If you plan to play games without Steam, but via the Internet, you must use Radmin or Hamachi, or their equivalents.
+[Form_MultiplayerTypeSelect].Text4;If you will be the host (server)
+[Form_MultiplayerTypeSelect].Text5;Specify the port to which other players will connect:
+[Form_MultiplayerTypeSelect].Text6;If you connect to another player (server)
+[Form_MultiplayerTypeSelect].Text7;Please provide a link or connection address:
+[Form_MultiplayerTypeSelect].PartMessage_1;Try reconnecting?
+[Form_MultiplayerTypeSelect].Message_1;Reconnecting...
+[Form_MultiplayerTypeSelect].Message_2;Connecting...
+[Form_MultiplayerTypeSelect].ShowMessage.Button.Text;Reconnect
+[Window_ServerInfo].Text1;Copy the link and send it to a friend so they can connect using it (recommended). The game will automatically calculate a suitable IP address from the list below using the link. IP connection is still available in case of unexpected link issues.
+[Window_ServerInfo].Text2;Alternative link:
+[Window_ServerInfo].Text3;List of your IP addresses used to create the links:
+[Window_Dialog].TitleText;Message
+[Window_Dialog].Text1;Enemies:
+[Window_Dialog].Text2;Allies:
+[Window_Dialog].Text3;The message will be automatically passed through
+[Window_Dialog].FT_1;Mutant riot!
+[Window_Dialog].FT_2;%s location %s
+[Window_Dialog].FT_3;The mutants emerged from their holes and attacked the faction!
+[Window_Dialog].FT_4;Enemy attack!
+[Window_Dialog].FT_5;The enemy is attacking the faction's territory! The soldiers have already entered the battle!
+[Window_Dialog].FT_6;Enemy invasion!
+[Window_Dialog].FT_7;The enemy is launching a surprise attack on the faction's territory! The soldiers have taken up defensive positions!
+[Window_Dialog].FT_8;Declaration of war!
+[Window_Dialog].FT_9;Offer of neutrality!
+[Window_Dialog].FT_10;Alliance proposal!
+[Window_Dialog].FT_11;Breaking the alliance!
+[Window_Dialog].FT_12;Money transfer request!
+[Window_Dialog].LT_1;refused the diplomatic offer of the %s faction
+[Window_Dialog].LT_2;agreed to the diplomatic proposal of the %s faction
+[Window_Dialog].LT_3;declared war on the %s faction
+[Window_Dialog].LT_4;broke the alliance with the %s faction
+[Window_Dialog].LT_5;concluded a truce with the %s faction
+[Window_Dialog].LT_6;refused the truce proposed by the %s faction
+[Window_Dialog].LT_7;entered into an alliance with the %s faction
+[Window_Dialog].LT_8;refused the alliance proposed by the %s faction
+[Window_Dialog].LT_9;%s sec
+[Window_Event].LT_3;You have earned a new achievement %s
+[Window_Trading].Text1;Number of items in stock:
+[Window_Trading].Text2;Number of items:
+[Window_Trading].Text3;Transaction amount:
+[Window_Trading].Text4;Price per unit with merchant's markup:
+[Window_Trading].FT_1;Purchase
+[Window_Trading].FT_2;Sale
+[Window_Trading].LT_1;Purchased %s resource in quantity %s for %s
+[Window_Trading].LT_2;Bought %s of product in %s quantity for %s
+[Window_Trading].LT_3;Sold %s resource in quantity %s for %s
+[Window_Trading].LT_4;Sold item %s in quantity %s for %s
+[Window_Trading].Message_1;Please indicate the quantity of the product more than 0
+[Window_Dlg].Text1;Are you sure? All unsaved progress will be lost!
+[Window_Dlg].Text2;Are you sure? The purchase cannot be cancelled!
+[Window_Dlg].Text3;There's a chance your soldiers may run out of ammunition during the battle. Are you sure you want to continue?
+[Window_Dlg].Text4;There's a chance your soldiers might run out of food. Are you sure you want to continue?
+[Window_Dlg].Text5;This save already exists. Are you sure you want to overwrite it?
+[Window_Dlg].Text6;Are you sure? || If a soldier is disbanded, his equipment will be returned to the warehouse.
+[Window_Dlg].Text7;Are you sure? You will cancel another similar rule.
+[Window_Dlg].Text8;You don't have a Home Base! Are you sure you don't want to designate one? If you ignore this message, the Home Base location will be selected automatically!
+[Window_Dlg].Text9;Are you sure you want to block this player from accessing your lobby?
+[Window_Dlg].Text10;(Access will be restricted until the game is restarted)
+[Window_Dlg].Text11;Add an exception to Windows Firewall?
+[Window_ErrorMsg].Multiplayer_PlayerLeave;Player %s (%s) has disconnected from the game
+[Window_ErrorMsg].Multiplayer_ServerLeave;The server has left the game
+[Window_ErrorMsg].Multiplayer_StartKickYouPoll;The vote for your kick has begun.
+[Window_ErrorMsg].Multiplayer_StartKickPoll;Voting has begun to kick player: %s
+[Window_ErrorMsg].Multiplayer_PlayerKick;Player %s has been kicked
+[Window_ErrorMsg].Multiplayer_PlayerNotKick;Player %s has been decided to remain in the game.
+[Window_ErrorMsg].Multiplayer_YouNotKick;They decided to leave you
+[Window_ErrorMsg].Multiplayer_YouKick;You have been expelled
+[Window_ErrorMsg].Multiplayer_YouBan;You have been banned by the server
+[Window_SaveList].Title;Save list
+[Window_SaveList].Message1;Game saved!
+[Window_SaveList].Message2;Saves from older versions of the game are not supported!
+[Window_SaveList].Message3;Save not found!
+[Window_SaveList].Message4;The save file is corrupted!
+[Window_SaveList].Message5;Are you sure you want to delete the save?
+[Window_SaveList].VersionNonSupport;Unsupported save version: %s
+[Window_SaveList].SaveMainDesc;Date: %s||Difficulty level: %s||Current move: %d||
+[Window_SaveList].SaveMultiplayerList;Faction %s: %s||
+[Window_SaveList].SaveSinglePlayer;Player faction: %s
+[fServerInfo].Message1;Copied!
+[Window_StartStep].Title;Start of a player's turn
+[Window_StartStep].Text1;Now the player who selected the specified faction takes their turn. To begin their turn, click Continue.
+[Window_StartStep].Text2;The move will start automatically in
+[Window_StartStep].LT_1;%s sec.
+[Window_DiplomacyMoney].Title-Send;Sending money
+[Window_DiplomacyMoney].Title-Request;Request money
+[Window_DiplomacyMoney].Text1-Send;To whom:
+[Window_DiplomacyMoney].Text1-Request;From who:
+[Window_DiplomacyMoney].Text2-Send;The money you send will be debited from your faction's account. The selected faction will be able to use it as soon as their turn begins.
+[Window_DiplomacyMoney].Text2-Request;The money you requested will be received on your next turn if the other faction agrees to send it to you when it is their turn.
+[Window_DiplomacyMoney].LT_1;Sent money to the %s faction
+[Window_DiplomacyMoney].LT_2;Requested money from the %s faction
+[Window_DiplomacyMoney].LT_3;Refused to send money to the %s faction
+[Window_DiplomacyMoney].LT_4;Agreed to send money to the %s faction
+[Window_PlayersStatusList].Title;List of players
+[Window_PlayersStatusList].Text1;Faction name:
+[Window_PlayersStatusList].Text2;Player nickname:
+[Window_PlayersStatusList].Text3;Status:
+[Window_PlayersStatusList].Online;Online
+[Window_PlayersStatusList].Offline;Offline
+[Window_PlayersStatusList].Reconnect;Waiting
+[Window_PlayersStatusList].WaitPlayers;Waiting for players to connect
+[Window_PlayersStatusList].VoteWaitNo;against
+[Window_PlayersStatusList].VoteWaitYes;for
+[Window_PlayersStatusList].Kick;Vote to kick a player
+[Window_PlayersStatusList].No;Vote against kick
+[Window_Options].TitleText;Menu
+[Window_Password].TitleText;Multiplayer password
+[Window_Password].Text1;Enter the password you specified for the multiplayer session save. || Without the password, you will not be able to continue playing using this save!
+[Window_Password].Message_1;Password cannot be empty!
+[Common_Strings].Enumeration;%s, %s
+[Common_Strings].Arrows_Hint;Moving soldiers. LMB - 1 soldier, RMB - all soldiers of the same rank, MMB - all soldiers of all ranks
+[Common_Strings].MiniIcon_Unit_Rang;Number of soldiers of rank %s
+[Common_Strings].MiniIcon_Unit_Recruit;The number of recruits of rank %s increasing
+[Common_Strings].NeedSomeTroops;Troops not assigned!
+[Common_Strings].NeedOtherUpgrade;The required upgrade was not purchased!
+[Common_Strings].FaultTraderConnect;You were unable to contact merchant %s! Please try again.
+[Common_Strings].NeedToControllZona;You need to control the territory of %s to establish contact with the merchant %s!
+[Common_Strings].NotEnoughMaster;There is a shortage of master recruits!
+[Common_Strings].NotEnoughVeteran;There is a shortage of veteran recruits!
+[Common_Strings].NotEnoughSkilled;There is a shortage of experienced recruits!
+[Common_Strings].NotEnoughNovice;There is a shortage of new recruits!
+[Common_Strings].NotEnoughResource;A required resource is missing: %s!
+[Common_Strings].NotEnoughMoney;Not enough money!
+[Common_Strings].NotEnoughCommands;Not enough team resources!
+[Common_Strings].NotEnoughBuilding;The required building %s is missing!
+[Common_Strings].NotEnoughUpgrade;The required upgrade %s was not purchased!
+[Common_Strings].AmmunitionDescription;PVP Attack: %d ||PVM Attack: %d ||PVP Defense: %d ||PVM Defense: %d ||Anti-Rad: %d ||Range: %d ||Ammo Consumption: %d ||Mobility Penalty: %d
+[Common_Strings].WeaponDescriptionShort;PVP Attack=%d, PVM Attack=%d, Range=%d, Ammo Consumption=%d
+[Common_Strings].UniformDescriptionShort;PVP Defense=%d, PVM Defense=%d, Rad Reduction=%d, Mobility Penalty=%d
+[Common_Strings].AttackBonus;Attack: %d%%
+[Common_Strings].RangeBonus;Range: %d%%
+[Common_Strings].True;Yes
+[Common_Strings].False;No
+[Common_Strings].StatsHint0;Faction leader: %s
+[Common_Strings].StatsHint1;Recon bonus: %d%%
+[Common_Strings].StatsHint2;Enemy recon bonus: %d%%
+[Common_Strings].StatsHint3;Artifact search bonus: %d%%
+[Common_Strings].StatsHint4;PVP attack damage bonus: %d%%
+[Common_Strings].StatsHint5;PVP damage bonus while defending: %d%%
+[Common_Strings].StatsHint6;PVM attack damage bonus: %d%%
+[Common_Strings].StatsHint7;PVM damage bonus while defending: %d%%
+[Common_Strings].StatsHint8;Attack range bonus: %d%%
+[Common_Strings].StatsHint9;Defense range bonus: %d%%
+[Common_Strings].StatsHint10;Recruit growth bonus %s: %d
+[Common_Strings].StatsHint11;Recruit growth bonus %s: %d
+[Common_Strings].StatsHint12;Recruit growth bonus %s: %d
+[Common_Strings].StatsHint13;Recruit growth bonus %s: %d
+[Common_Strings].StatsHint14;Bonus to recruit limit %s: %d
+[Common_Strings].StatsHint15;Bonus to recruit limit %s: %d
+[Common_Strings].StatsHint16;Bonus to recruit limit %s: %d
+[Common_Strings].StatsHint17;Bonus to recruit limit %s: %d
+[Common_Strings].StatsHint18;Bonus increase in CR: %d
+[Common_Strings].StatsHint19;Bonus to the CR limit: %d
+[Common_Strings].StatsHint20;Mutant trophy bonus: %d
+[Common_Strings].StatsHint21;Bonus to trophy money: %d
+[Common_Strings].StatsHint22;Increase in price in CR for sending a scout: %d
+[Common_Strings].StatsHint23;Price in CR for appointment of deputy: %d
+[Common_Strings].StatsHint24;Ideology: %s
+[Common_Strings].StatsHint25;Character's ideology growth per turn: %d%%
+[Common_Strings].StatsHint26;Rule required: %s
+[Common_Strings].StatsHint27;The rule enables automatic search for artifacts when pressing End of Turn in all controlled territories without spending resources, but manual search will not be available.
+[Common_Strings].StatsHint28;The rule enables automatic search for artifacts when pressing End of Turn in approximately half of the territories without spending resources
+[Common_Strings].StatsHint34;Price increase in CR for changing the main base: %d
+[Common_Strings].StatsHint35;Bonus to %% resource loss when losing a base: %d%%
+[Common_Strings].StatsHint36;Restrictions for key areas: %s
+[Common_Strings].StatsHint37;Enclaves with access through ally territory restricted: %s
+[Common_Strings].StatsHint38;Restrictions for enclaves with access through neutral territory: %s
+[Common_Strings].StatsHint39;Enclave restrictions in enemy territory: %s
+[Common_Strings].StatsHint40;Price increase in CR for base transfer: %d
+[Common_Strings].StatsHint41;Percentage of resources lost when losing a base: %d%%
+[Common_Strings].StatsHint42;Increase in the cost of rearming soldiers: %d%%
+[Common_Strings].StatsHint43;Increase in the cost of changing the faction's ideology: %d%%
+[Common_Strings].StatsHint29;Access to governance rule Maximum decentralization: %s
+[Common_Strings].StatsHint30;Access to governance rule Decentralization: %s
+[Common_Strings].StatsHint31;Access to the control rule Balance: %s
+[Common_Strings].StatsHint32;Access to the Centralization control rule: %s
+[Common_Strings].StatsHint33;Access to the control rule Maximum centralization: %s
+[Common_Strings].RuleEnclave1;Automatic search for artifacts
+[Common_Strings].RuleEnclave2;Manual search for artifacts
+[Common_Strings].RuleEnclave3;Construction of buildings
+[Common_Strings].RuleEnclave4;Send to attack
+[Common_Strings].RuleEnclave5;Redeployment
+[Common_Strings].RuleEnclave6;Hiring soldiers
+[Common_Strings].Unknown;Unknown
+[Common_Strings].AchivTake;Achievement received
+[Common_Strings].AchivNoTake;Achievement not received
+[Common_Strings].Cancel;Cancel
+[Common_Strings].Hotseat;Hotseat
+[Common_Strings].Singleplayer;Singleplayer
+[Common_Strings].MultiPlayer;Multiplayer
+[Common_Strings].Network;Internet
+[Common_Strings].OffShort;Off
+[Common_Strings].DifLevelText;Difficulty level:
+[Common_Strings].RandomEventsLevelText;Random events:
+[Common_Strings].StoryEventsLevelText;Plot events:
+[Common_Strings].EnclaveLevelText;Interactions through ally territory:
+[Common_Strings].BurstLevelText;Emissions:
+[Common_Strings].DifLevel1;Newbie
+[Common_Strings].DifLevel2;Experienced
+[Common_Strings].DifLevel3;Veteran
+[Common_Strings].DifLevel4;Master
+[Common_Strings].Status1;Turned on
+[Common_Strings].Status2;Turned off
+[Common_Strings].Status3;Redeployment only
+[Common_Strings].Status4;Redeployment and attack
+[GameLog].LT_1;%d Faction %s turn: %s
+[GameLog].LT_2;%d Total turn: %s
+[GameLog].LT_3;Attacked the territory from %s location %s 
+[GameLog].LT_4;Began clearing the area of ??mutants
+[GameLog].LT_5;They started to run amok on the territory
+[GameLog].LT_6;Organized an invasion of the territory
+[GameLog].LT_7;draw
+[GameLog].LT_8;victory of the attacking side
+[GameLog].LT_9;defeat of the attacking side
+[GameLog].LT_10;%s location %s which belongs to %s and the battle ended
+[GameLog].LT_11;received help from outside
+[GameLog].LT_12;found %s %s in the territory of %s location %s
+[GameLog].LT_13;sold %s in quantity %s for %s
+[GameLog].LT_14;hired %s in quantity of %d in the territory of %s
+[GameLog].LT_15;bought %s in quantity %s for %s
+[GameLog].LT_16;disbanded %s in quantity of %d in the territory of %s
+[GameLog].LT_17;%d people left the faction due to food shortages.
+[GameLog].LT_18;built %s on the territory of %s
+[GameLog].LT_19;destroyed building %s on the territory of %s
+[GameLog].LT_20;%d units of %s were produced using the %s building.
+[GameLog].FT_1;ending of the faction move
+[GameLog].FT_2;end of the turn
+[GameLog].FT_3;Start of the turn
+[GameLog].FT_4;Autosave...
+[GameLog].FT_5;a rearmament of one of the soldier ranks took place
+[Buttons].BTN_On.Text;Turn on
+[Buttons].BTN_Off.Text;Turn off
+[Buttons].BTN_Spy.Text;Recon
+[Buttons].BTN_Accept.Text;Accept
+[Buttons].BTN_Reject.Text;Decline
+[Buttons].BTN_Send.Text;Send
+[Buttons].BTN_Diplomacy.Text;Diplomacy
+[Buttons].BTN_Market.Text;Trade
+[Buttons].BTN_SearchArts.Text;Search for artifacts
+[Buttons].BTN_KillMutants.Text;Mutant purge
+[Buttons].BTN_War.Text;War
+[Buttons].BTN_ArmyMove.Text;Redeployment
+[Buttons].BTN_BuyUnits.Text;Hiring soldiers
+[Buttons].BTN_Buildings.Text;Buildings
+[Buttons].BTN_PsyControl.Text;Emitter
+[Buttons].BTN_AmmoUp.Text;Modify
+[Buttons].BTN_Appoint.Text;Assign
+[Buttons].BTN_Move.Text;Move
+[Buttons].BTN_Shelling.Text;Reconnaissance in force
+[Buttons].BTN_Conquest.Text;Capture
+[Buttons].BTN_Send_Alliance.Text;Propose an alliance
+[Buttons].BTN_Send_Money.Text;Send money
+[Buttons].BTN_Send_Neutral.Text;Status quo
+[Buttons].BTN_Send_War.Text;Declare war
+[Buttons].BTN_Break_Alliace.Text;Break the alliance
+[Buttons].BTN_Request_Money.Text;Request money
+[Buttons].BTN_Request.Text;Request
+[Buttons].BTN_Advisor.Text;Deputies
+[Buttons].BTN_Ideology.Text;Ideologies
+[Buttons].BTN_Rules.Text;Rules
+[Buttons].BTN_Rearm.Text;Rearmament
+[Buttons].BTN_All.Text;All
+[Buttons].BTN_Ammunition.Text;Ammunition
+[Buttons].BTN_Resources.Text;Resources
+[Buttons].BTN_Other.Text;Other
+[Buttons].BTN_System.Text;Main
+[Buttons].BTN_Trading.Text;Trade
+[Buttons].BTN_LeaveZone.Text;Leave
+[Buttons].BTN_Rebase.Text;Base transfer
+[Buttons].BTN_Target.Text;About the script
+[Buttons].BTN_Adress.Text;Address
+[Buttons].BTN_Copy.Text;Copy
+[Buttons].BTN_Back.Text;Back
+[Buttons].BTN_Next.Text;Continue
+[Buttons].BTN_LoadSave.Text;Load
+[Buttons].BTN_MainMenu.Text;Main menu
+[Buttons].BTN_TabVideo.Text;Image
+[Buttons].BTN_TabSound.Text;Sound
+[Buttons].BTN_TabInterface.Text;Interface
+[Buttons].BTN_TabOther.Text;Other
+[Buttons].BTN_SinglePlay.Text;Companies
+[Buttons].BTN_Options.Text;Options
+[Buttons].BTN_MyOtherProjects.Text;Other projects
+[Buttons].BTN_Modding.Text;Modding
+[Buttons].BTN_Multiplay.Text;Multiplayer
+[Buttons].BTN_HelpProject.Text;Help the project
+[Buttons].BTN_Credits.Text;Authors
+[Buttons].BTN_Exit.Text;Exit
+[Buttons].BTN_Tutorial.Text;Tutorial
+[Buttons].BTN_Save.Text;Save
+[Buttons].BTN_HotSeat.Text;Hotseat
+[Buttons].BTN_LocalHost.Text;Create
+[Buttons].BTN_LocalClient.Text;Connect
+[Buttons].BTN_ResetSettings.Text;Reset all
+[Buttons].BTN_Reset.Text;Reset
+[Buttons].BTN_Delete.Text;Delete
+[Other].Exception_1;This battle type is not supported!
+[Other].Exception_2;An error occurred while processing the parameters for achievement #%s! An unknown achievement type was specified.
+[Other].Exception_3;Burst parameter error. 0 specified in BurstEverySteps
+[Other].Exception_4;Mutant riot is not a mutant riot!
+[Other].Exception_5;Error! In event configs. Event %s has an unsupported type: %s!
+[Other].Exception_6;Unsupported event: %s
+[Other].Exception_7;The first event to be saved should be the start of the day event!
+[Other].Exception_9;There's nothing to look for here %s %s
+[Other].Exception_10;Warning!!! An error has been detected. Please save your game and send it to the game developers!
+[Other].Exception_11;Incorrect diplomatic proposal: %d
+[Other].Exception_12;Error. AI. AIDiplomacyOfferFromOtherFraction. Invalid TypeDiplomacyOffer index!
+[Other].Exception_13;Building %s already exists!
+[Other].Exception_14;Building %s no longer exists!
+[Other].Exception_15;An error occurred while processing the parameters for achievement #%s! The StartStep and LimitStep parameters were specified incorrectly.
+[Other].Exception_16;Error! In event configs. Event- %s has an unsupported type!
+[Other].Exception_17;Someone's cheating. Apparently it's %s.
+[Other].Exception_18;Someone is cheating. We couldn't figure out who it was because there weren't enough players.
+[Other].Exception_19;Someone's cheating. We couldn't figure out who exactly, but there are likely at least two.
+[Other].Exception_20;Connection to the server has been lost.
+[Other].Exception_21;The game version does not match the server version.
+[Other].Exception_22;The script version does not match the version on the server.
+[Other].Exception_23;You have been kicked from the game!
+[Other].Exception_24;Advisor is not available!
+[Other].Exception_25;Recruitment is not possible because this territory has no direct connection with the faction's main base or the main base is missing!
+[Other].Exception_26;Manual searching is impossible due to the current faction management rules! If you want to search for artifacts in an enclave, you need to shift the faction management principles to a more decentralized approach!
+[Other].Exception_27;Redeployment is impossible due to the current faction management rules! If you want to redeploy soldiers within an enclave, you need to shift the faction's management principles to a more decentralized approach!
+[Other].Exception_28;Construction is impossible due to the current faction management rules! If you want to construct buildings in an enclave, you need to shift the faction management principles to a more decentralized approach!
+[Other].Exception_29;You can't leave the main base!
+[Other].Exception_30;An attack is impossible due to the current faction control rules! If you want to control territories behind enemy lines, you need to decentralize your faction control principles!
+[Other].Exception_31;Active rule %s required
+[Other].Exception_32;Unknown event type: %s
+[Other].Exception_33;Multiplayer is not available in debug mode!
+[Other].Exception_34;Unknown deputy: %s
+[Other].Exception_35;Unknown building: %s
+[Other].Exception_36;Unknown ideology: %s
+[Other].Exception_37;Unknown leader: %s
+[Other].Exception_38;Unknown upgrade: %s
+[Other].Exception_39;Building %s produces unknown resource: %s
+[Other].Exception_40;Building %s requires an unknown resource for production: %s
+[Other].Exception_42;Unsupported type: %s
+[Other].Exception_43;%s.%sMotivationModificator cannot be less than or equal to zero
+[Other].Exception_44;The number of names and factions of players does not match
+[Other].Exception_45;Unknown logical block [%s] in AI.ini file!
+[Other].Exception_46;This territory cannot be the location for the faction's main base!
+[Other].Exception_47;At level %d, a non-existent branch %d is configured for faction: %d
+[Other].Exception_48;Faction %s is not found
+[Other].Exception_49;Message limit exceeded!
+[Other].Exception_50;It is impossible to move troops in the opposite direction due to the lack of a path!
+[Other].Exception_51;Attempt to set base to zone (%d) that does not belong to faction %s
+[Other].Exception_52;Invalid ideology percentages specified for faction %s: %d
+[Other].Exception_53;For story event %s %s is less than zero
+[Other].Exception_54;No zone specified for story event %s
+[Other].Exception_55;No result flag specified for plot event %s
+[Other].Exception_56;Unknown resource %s
+[Other].Exception_57;The %s section is duplicated in Events_Story.ini
+[Other].Exception_58;The %s section is duplicated in Advisors.ini
+[Other].Exception_59;For faction %s, the AI ??has a deputy %s belonging to another faction.
+[Other].Exception_60;Faction %s has a non-existent deputy %s installed on the AI.
+[Other].Exception_61;The scenario uses a brain burner and %s is allowed to control it, but no control zone is specified.
+[Other].Exception_62;The script uses a psi installation and %s is allowed to control it, but no control zone is specified.
+[Other].Exception_63;Error in the text of the story event %s.%s
+[Other].Exception_64;File with icon %s not found
+[Other].Exception_65;System: %s
+[Other].Exception_66;Building %s for AI is not found
+[Other].Exception_67;An error has occurred while trying to install the main base:
+[Other].Exception_68;No file found:
+[Other].Exception_69;Invalid connection address!
+[Other].Exception_70;Windows Firewall is not configured, which may cause problems in online play!
+[Other].Exception_71;"Error getting interface address ""%s"": %d"
+[Other].Exception_72;Incorrect address!
+[Other].Exception_73;"No AI has been set for faction ""%s"" for ideology ""%s"""
+[Other].Exception_74;In Events_Story.ini, section %s has an invalid name (commas are not allowed)
+[Other].Exception_75;AI %s is using an unknown upgrade: %s
+[Other].Exception_76;Parameter %s is not specified in file %s
+[Other].Exception_77;Map icon parameters are not specified in file %s
+[Other].Exception_78;Parameter %s is not specified in file %s
+[Other].Exception_79;AI setting %s not found
+[Other].Exception_80;There is no building %s
+[Other].Exception_81;AI event: %s, failed to execute: %s
+[Rules.Rule-1].Name;Maximum decentralization
+[Rules.Rule-2].Name;Decentralization
+[Rules.Rule-3].Name;Balanced management
+[Rules.Rule-4].Name;Centralization
+[Rules.Rule-5].Name;Maximum centralization
+[Rules.Rule-6].Name;Fully automated artifact search
+[Rules.Rule-7].Name;Partial automation of artifact search
+[Rules.Rule-8].Name;Balanced search
+[Rules.Rule-9].Name;Anomaly mapping
+[Rules.Rule-10].Name;Anomaly monitoring
+[Rules.Rule-11].Name;Paranoid counter recon
+[Rules.Rule-12].Name;Focus on counter recon
+[Rules.Rule-13].Name;Balanced recon
+[Rules.Rule-14].Name;Focus on recon
+[Rules.Rule-15].Name;Recon network
+[Rules.Rule-16].Name;All-round defense
+[Rules.Rule-17].Name;Focus on defense
+[Rules.Rule-18].Name;Balance
+[Rules.Rule-19].Name;Focus on attack
+[Rules.Rule-20].Name;Large-scale offense
+[Goods.Abakan-Modified].Name;Abakan-M
+[Goods.Abakan-Modified].Desc;A modified version. A good weapon for veterans.
+[Goods.Abakan].Name;Abakan
+[Goods.Abakan].Desc;A good weapon for Veterans.
+[Goods.AKM-Modified].Name;AKM2
+[Goods.AKM-Modified].Desc;A modified version. The most practical weapon in the Zone for experienced users.
+[Goods.AKM].Name;AKM
+[Goods.AKM].Desc;The most practical weapon in the Zone for experienced players.
+[Goods.AKU-Modified].Name;AKU-M
+[Goods.AKU-Modified].Desc;A modified version. A decent assault rifle, but its short frame compromises accuracy at long ranges. Suitable for experienced ranks and above.
+[Goods.AKU].Name;AKU
+[Goods.AKU].Desc;It's a decent assault rifle, but its short frame compromises accuracy at long ranges. Suitable for experienced ranks and above.
+[Goods.Bandits-1-Modified].Name;Reinforced bandit jacket
+[Goods.Bandits-1-Modified].Desc;A modified version. For beginners. Cheap and cheerful.
+[Goods.Bandits-1].Name;Bandit jacket
+[Goods.Bandits-1].Desc;For beginners. Cheap and effective.
+[Goods.Bandits-2-Modified].Name;Reinforced cloak
+[Goods.Bandits-2-Modified].Desc;A modified version. The cloak is more show-off than useful, but experienced bandits love it for that very reason.
+[Goods.Bandits-2].Name;Cloak
+[Goods.Bandits-2].Desc;The cloak has more show than actual use, but experienced bandits love it for this very reason.
+[Goods.Bandits-3-Modified].Name;Modified complex body armor
+[Goods.Bandits-3-Modified].Desc;A modified version. Good protection for veterans of criminal gangs.
+[Goods.Bandits-3].Name;Comprehensive body armor
+[Goods.Bandits-3].Desc;Good protection figures for veterans of criminal gangs.
+[Goods.Black-Modified].Name;Modified black hawk
+[Goods.Black-Modified].Desc;A modified version of the most powerful pistol in the game. For experienced players.
+[Goods.Black].Name;Black hawk
+[Goods.Black].Desc;The most powerful pistol in the game. For experienced players.
+[Goods.Buldog].Name;Bulldog
+[Goods.Buldog].Desc;A powerful weapon! For the master.
+[Goods.Cheser-Modified].Name;Chester-M
+[Goods.Cheser-Modified].Desc;A modified version. An excellent shotgun for veterans.
+[Goods.Cheser].Name;Chester
+[Goods.Cheser].Desc;Great shotgun for veterans.
+[Goods.Comands].Name;Team resource
+[Goods.Comands].Desc;
+[Goods.Compact-Modified].Name;Compact-M
+[Goods.Compact-Modified].Desc;A modified version of the best pistol for beginners.
+[Goods.Compact].Name;Compact
+[Goods.Compact].Desc;The best pistol for beginners.
+[Goods.CS-1-Modified].Name;CS-MV2
+[Goods.CS-1-Modified].Desc;An advanced version of the CS faction jumpsuit for beginners.
+[Goods.CS-1].Name;CS-M
+[Goods.CS-1].Desc;Basic jumpsuit with a CS faction for beginners.
+[Goods.CS-2-Modified].Name;CS-M2V2
+[Goods.CS-2-Modified].Desc;A heavy-duty version of the improved Clear Sky suit for experienced operators.
+[Goods.CS-2].Name;CS-M2
+[Goods.CS-2].Desc;Improved Clear Sky faction overalls for experienced players.
+[Goods.CS-3A-Modified].Name;CS-M3V2
+[Goods.CS-3A-Modified].Desc;A heavy version of the combat suit of the CS faction for veterans.
+[Goods.CS-3A].Name;CS-M3
+[Goods.CS-3A].Desc;Combat suit of the CS faction for veterans.
+[Goods.CS-4-Modified].Name;CS-M4V2
+[Goods.CS-4-Modified].Desc;An experimental prototype of protection for special assault units of the CS faction. For experts only.
+[Goods.CS-4].Name;CS-M4
+[Goods.CS-4].Desc;A jumpsuit for special assault units of the CS faction. For masters only.
+[Goods.Doga].Name;DogA
+[Goods.Doga].Desc;Level 1,
+[Goods.Dogw].Name;DogW
+[Goods.Dogw].Desc;Level 1,
+[Goods.Duty-1-Modified].Name;Improved Duty shield
+[Goods.Duty-1-Modified].Desc;A modified version. For the Rookie rank.
+[Goods.Duty-1].Name;Duty shield
+[Goods.Duty-1].Desc;Every newcomer who joins is given exactly this.
+[Goods.Duty-2-Modified].Name;Reinforced Duty suit
+[Goods.Duty-2-Modified].Desc;A modified version for experienced stalkers.
+[Goods.Duty-2].Name;Duty jumpsuit
+[Goods.Duty-2].Desc;For experienced stalkers.
+[Goods.Duty-3A-Modified].Name;Enhanced Duty Armor
+[Goods.Duty-3A-Modified].Desc;A modified version for Duty veterans.
+[Goods.Duty-3A].Name;Armor of Duty
+[Goods.Duty-3A].Desc;For veterans of Duty.
+[Goods.Duty-3B-Modified].Name;Heavy UZ Duty
+[Goods.Duty-3B-Modified].Desc;A modified version of the UZ Duty with improved performance indicators.
+[Goods.Duty-3B].Name;UZ Duty
+[Goods.Duty-3B].Desc;Duty veterans love the Duty UZ for its excellent protection against radiation and anomalies.
+[Goods.Duty-4-Modified].Name;Duty Assault Exoskeleton
+[Goods.Duty-4-Modified].Desc;A modified version for assault infantry in the Zone's particularly hazardous conditions. For experienced users only.
+[Goods.Duty-4].Name;Exoskeleton of Duty
+[Goods.Duty-4].Desc;Modified in the style of Duty. For masters only.
+[Goods.FN-Modified].Name;FN-M
+[Goods.FN-Modified].Desc;A modified version. Costing a fortune. For craftsmen.
+[Goods.FN].Name;FN
+[Goods.FN].Desc;High on the hog. For masters.
+[Goods.Food].Name;Products
+[Goods.Food].Desc;No food - no soldiers.
+[Goods.Fora-Modified].Name;Fora-M
+[Goods.Fora-Modified].Desc;A modified version of the improved pistol for beginners.
+[Goods.Fora].Name;Fora
+[Goods.Fora].Desc;Improved pistol for beginners.
+[Goods.Freedom-1-Modified].Name;Improved Wind of Freedom
+[Goods.Freedom-1-Modified].Desc;A modified version. For the Rookie rank.
+[Goods.Freedom-1].Name;Wind of Freedom
+[Goods.Freedom-1].Desc;Issued to every new member of the faction.
+[Goods.Freedom-2-Modified].Name;Fortified Freedom Guard
+[Goods.Freedom-2-Modified].Desc;Modified version. For experienced users.
+[Goods.Freedom-2].Name;Guardian of Freedom
+[Goods.Freedom-2].Desc;For experienced users.
+[Goods.Freedom-3A-Modified].Name;Enhanced Armor of Freedom
+[Goods.Freedom-3A-Modified].Desc;Modified version for veterans.
+[Goods.Freedom-3A].Name;Armor of Freedom
+[Goods.Freedom-3A].Desc;For veterans.
+[Goods.Freedom-3B-Modified].Name;Freedom Scout
+[Goods.Freedom-3B-Modified].Desc;Special version for conducting rapid operations in conditions of high anomalous influence for veterans.
+[Goods.Freedom-3B].Name;Freedom Seeker
+[Goods.Freedom-3B].Desc;A lightweight suit in terms of protection against mutants and bullets, but with slightly increased protection against radiation and anomalies. Its low price makes it a popular choice for veterans.
+[Goods.Freedom-3C-Modified].Name;Heavy Freedom UZ
+[Goods.Freedom-3C-Modified].Desc;A modified version of the Freedom UZ for veterans.
+[Goods.Freedom-3C].Name;Freedom UZ
+[Goods.Freedom-3C].Desc;For veterans who want to look for artifacts.
+[Goods.Freedom-4-Modified].Name;Freedom Assault Exoskeleton
+[Goods.Freedom-4-Modified].Desc;A modified version for assault infantry in the Zone's particularly hazardous conditions. For experienced users only.
+[Goods.Freedom-4].Name;Freedom Exoskeleton
+[Goods.Freedom-4].Desc;A modified exoskeleton in the style of the Freedom. For masters only.
+[Goods.Gauss].Name;Gauss
+[Goods.Gauss].Desc;An enemy in heavy exoskeletons? No problem! For the experts.
+[Goods.GP-Modified].Name;GP-M
+[Goods.GP-Modified].Desc;A modified version. Many craftsmen prefer this one.
+[Goods.GP].Name;GP
+[Goods.GP].Desc;Many masters prefer this.
+[Goods.Grom-Modified].Name;Thunder-M
+[Goods.Grom-Modified].Desc;A modified version. Craftsmen love this weapon.
+[Goods.Grom].Name;Thunder
+[Goods.Grom].Desc;Masters love this weapon.
+[Goods.Gun-Modified].Name;Improved shotgun
+[Goods.Gun-Modified].Desc;A modified version of the shotgun. For experienced soldiers.
+[Goods.Gun].Name;Shotgun
+[Goods.Gun].Desc;Chean and nasty. For a rank no lower than experienced.
+[Goods.HighQualityBuildingMaterials].Name;Rare building materials
+[Goods.HighQualityBuildingMaterials].Desc;Rare building materials are used to construct important structures.
+[Goods.HighQualityComponents].Name;Rare components
+[Goods.HighQualityComponents].Desc;Rare components for modifying ammunition.
+[Goods.HightArts].Name;Rare artifacts
+[Goods.HightArts].Desc;If a stalker without a faction finds one, he can leave the Zone rich. If, of course, he can.
+[Goods.HightParts].Name;Rare mutant parts
+[Goods.HightParts].Desc;Rare, and therefore very expensive. Drops from controllers.
+[Goods.HPSS-Modified].Name;HPSS-M
+[Goods.HPSS-Modified].Desc;A modified version of a good pistol for beginners with an increased magazine.
+[Goods.HPSS].Name;HPSS
+[Goods.HPSS].Desc;A good pistol for beginners with an extended magazine.
+[Goods.Il-Modified].Name;Il-M
+[Goods.Il-Modified].Desc;A modified version. An obsolete weapon. Used by experienced users.
+[Goods.Il].Name;Il
+[Goods.Il].Desc;An obsolete weapon, used by experienced users.
+[Goods.Kabana].Name;KabanA
+[Goods.Kabana].Desc;Level 2,
+[Goods.Kabanw].Name;KabanW
+[Goods.Kabanw].Desc;Level 2,
+[Goods.Kontrolera].Name;KontrolerA
+[Goods.Kontrolera].Desc;Level 4,
+[Goods.Kontrolerw].Name;KontrolerW
+[Goods.Kontrolerw].Desc;Level 1,
+[Goods.Kora-Modified].Name;Cora-M
+[Goods.Kora-Modified].Desc;A modified version of an excellent pistol for beginners.
+[Goods.Kora].Name;Cora
+[Goods.Kora].Desc;A great pistol for beginners.
+[Goods.Krovososa].Name;KrovososA
+[Goods.Krovososa].Desc;Level 3,
+[Goods.Krovososw].Name;KrovososW
+[Goods.Krovososw].Desc;Level 3,
+[Goods.LowArts].Name;Cheap artifacts
+[Goods.LowArts].Desc;Cheap artifacts are the most common in the Zone.
+[Goods.LowParts].Name;Cheap mutant body parts
+[Goods.LowParts].Desc;Cheap mutant body parts drop from blind dogs and boars.
+[Goods.LowQualityBuildingMaterials].Name;Cheap building materials
+[Goods.LowQualityBuildingMaterials].Desc;Cheap building materials are used to construct small structures.
+[Goods.LowQualityComponents].Name;Cheap components
+[Goods.LowQualityComponents].Desc;Cheap components for modifying ammunition.
+[Goods.Marta-Modified].Name;Martha-M
+[Goods.Marta-Modified].Desc;A modified version of a good pistol for beginners.
+[Goods.Marta].Name;Martha
+[Goods.Marta].Desc;A good pistol for beginners.
+[Goods.Master].Name;Master
+[Goods.Master].Desc;
+[Goods.Medic].Name;Medicines
+[Goods.Medic].Desc;It's easier to heal a soldier than to hire a new one. A medicament is cheaper than a master stalker.
+[Goods.MediumArts].Name;Expensive artifacts
+[Goods.MediumArts].Desc;Expensive artifacts are highly valued by traders.
+[Goods.MediumParts].Name;Expensive mutant body parts
+[Goods.MediumParts].Desc;Expensive body parts of mutants fall out of bloodsuckers.
+[Goods.MediumQualityBuildingMaterials].Name;Expensive building materials
+[Goods.MediumQualityBuildingMaterials].Desc;Expensive building materials are used to build strong structures.
+[Goods.MediumQualityComponents].Name;Expensive components
+[Goods.MediumQualityComponents].Desc;Expensive components for modifying ammunition.
+[Goods.Mercenaries-1-Modified].Name;Mercenary Body Armor
+[Goods.Mercenaries-1-Modified].Desc;One of the best body armor for the Rookie rank.
+[Goods.Mercenaries-1].Name;Lightweight Mercenary Body Armor
+[Goods.Mercenaries-1].Desc;Affordable in both price and quality. A popular choice for beginners.
+[Goods.Mercenaries-2-Modified].Name;Mercenary's Jumpsuit with purification system
+[Goods.Mercenaries-2-Modified].Desc;A modified version of the classic mercenary suit for work in areas with increased anomalous activity. For experienced personnel.
+[Goods.Mercenaries-2].Name;Mercenary Jumpsuit
+[Goods.Mercenaries-2].Desc;A classic for all experienced mercenaries.
+[Goods.Mercenaries-3A-Modified].Name;Fortified Bulat
+[Goods.Mercenaries-3A-Modified].Desc;A modified version. A full-fledged military body armor for mercenary veterans.
+[Goods.Mercenaries-3A].Name;Bulat
+[Goods.Mercenaries-3A].Desc;A full-fledged military body armor for veteran mercenaries.
+[Goods.Mercenaries-3B-Modified].Name;Heavy UZ Mercenaries
+[Goods.Mercenaries-3B-Modified].Desc;A modified version for work in hazardous areas. For veterans.
+[Goods.Mercenaries-3B].Name;Mercenary UZ
+[Goods.Mercenaries-3B].Desc;A veteran has received an order, but the location is dangerous due to anomalies or radiation? With this UZ, that's no problem!
+[Goods.Mercenaries-4-Modified].Name;Mercenary Assault Exoskeleton
+[Goods.Mercenaries-4-Modified].Desc;A modified version. One of the best exoskeletons in the Zone. For masters only.
+[Goods.Mercenaries-4].Name;Mercenary Exoskeleton
+[Goods.Mercenaries-4].Desc;One of the best exoskeletons in the Zone. For masters only.
+[Goods.Money].Name;Money
+[Goods.Money].Desc;There's no way without money
+[Goods.Monolith-1-Modified].Name;Enhanced Monolith Body Armor
+[Goods.Monolith-1-Modified].Desc;A modified version of the basic body armor. For beginners.
+[Goods.Monolith-1].Name;Monolith Bulletproof Vest
+[Goods.Monolith-1].Desc;Issued to every newcomer to Monolith.
+[Goods.Monolith-2-Modified].Name;Monolith's Reinforced Suit
+[Goods.Monolith-2-Modified].Desc;A modified version. For experienced Monolithists.
+[Goods.Monolith-2].Name;Monolith jumpsuit
+[Goods.Monolith-2].Desc;For experienced monolithists.
+[Goods.Monolith-3A-Modified].Name;Reinforced heavy duty overalls
+[Goods.Monolith-3A-Modified].Desc;One of the best overalls. For veterans.
+[Goods.Monolith-3A].Name;Heavy overalls
+[Goods.Monolith-3A].Desc;Monolith veterans highly value this suit for its high performance.
+[Goods.Monolith-3B-Modified].Name;Heavy Monolith UZ
+[Goods.Monolith-3B-Modified].Desc;A modified version. For Monolith veterans operating in special anomalous or contaminated areas.
+[Goods.Monolith-3B].Name;Monolith UZ
+[Goods.Monolith-3B].Desc;For Monolith veterans operating in special anomalous or contaminated areas.
+[Goods.MP5-Modified].Name;Viper-M
+[Goods.MP5-Modified].Desc;A modified version. The cheapest automatic weapon for beginners.
+[Goods.MP5].Name;Viper
+[Goods.MP5].Desc;The cheapest automatic weapon for beginners.
+[Goods.Novice].Name;Newbie
+[Goods.Novice].Desc;
+[Goods.Obrez-Modified].Name;Improved sawed-off shotgun
+[Goods.Obrez-Modified].Desc;A modified version of the only available shotgun weapon for beginners.
+[Goods.Obrez].Name;Sawed-off shotgun
+[Goods.Obrez].Desc;The only available weapon for beginners among shotguns.
+[Goods.Otboynik-Modified].Name;Eliminator-M
+[Goods.Otboynik-Modified].Desc;A modified version. The best shotgun for masters.
+[Goods.Otboynik].Name;Eliminator
+[Goods.Otboynik].Desc;The best shotgun for the master.
+[Goods.PB-Modified].Name;PB-M
+[Goods.PB-Modified].Desc;The cheapest silent modified product that even a beginner can own.
+[Goods.PB].Name;PB
+[Goods.PB].Desc;The cheapest silent tool that even a beginner can use.
+[Goods.PM-Modified].Name;PM-M
+[Goods.PM-Modified].Desc;A modified version of the pistol for beginners.
+[Goods.PM].Name;PM
+[Goods.PM].Desc;Pistol for beginners.
+[Goods.Renegats-3A-Modified].Name;Reinforced heavy body armor
+[Goods.Renegats-3A-Modified].Desc;A modified version of the heavy body armor for veterans of the Renegades group.
+[Goods.Renegats-3A].Name;Heavy body armor
+[Goods.Renegats-3A].Desc;Heavy body armor for veterans of the Renegades group.
+[Goods.Renegats-3B-Modified].Name;TAB-AR-M
+[Goods.Renegats-3B-Modified].Desc;A modified version of the body armor with enhanced anti-radiation protection for veterans of the Renegades group.
+[Goods.Renegats-3B].Name;TAB-AR
+[Goods.Renegats-3B].Desc;A bulletproof vest with enhanced radiation protection for veterans of the Renegades group.
+[Goods.Renegats-4-Modified].Name;Assault full body armor
+[Goods.Renegats-4-Modified].Desc;Assault full body armor with complete protection for experts.
+[Goods.Renegats-4].Name;Heavy full body armor
+[Goods.Renegats-4].Desc;A heavy, full-body armor vest with complete protection according to all standards for masters.
+[Goods.RP-74-Modified].Name;RP-74M
+[Goods.RP-74-Modified].Desc;A modified version of the machine gun for masters.
+[Goods.RP-74].Name;RP-74
+[Goods.RP-74].Desc;What could be more beautiful than a machine gun? A weapon reserved for master rank only.
+[Goods.Rpg].Name;RPG
+[Goods.Rpg].Desc;A weapon that reduces enemy armor! Can be used by Veterans and Masters.
+[Goods.Scientists-1-Modified].Name;Ecologist-1 Spacesuit
+[Goods.Scientists-1-Modified].Desc;An experimental sample with maximum protection against anomalous activity for any rank.
+[Goods.Scientists-1].Name;Ecologist-1
+[Goods.Scientists-1].Desc;The best radiation protection in the game for any stalker.
+[Goods.Scientists-2-Modified].Name;Ecologist-1M2
+[Goods.Scientists-2-Modified].Desc;A modification of one of the best radiation protection options for experienced stalkers.
+[Goods.Scientists-2].Name;Ecologist-1M
+[Goods.Scientists-2].Desc;One of the best radiation protection options for experienced stalkers.
+[Goods.Scientists-3A-Modified].Name;Heavy Escort jumpsuit
+[Goods.Scientists-3A-Modified].Desc;A modified version. This is what veterans working for the Scientists faction are usually issued.
+[Goods.Scientists-3A].Name;Escort Jumpsuit
+[Goods.Scientists-3A].Desc;This is what the Scientists usually give to veterans working for the group.
+[Goods.Scientists-4-Modified].Name;Ecologist-2M
+[Goods.Scientists-4-Modified].Desc;Modified version. For masters only.
+[Goods.Scientists-4].Name;Ecologist-2
+[Goods.Scientists-4].Desc;For masters only.
+[Goods.SGI-Modified].Name;SGI-M
+[Goods.SGI-Modified].Desc;A modified version. The best weapon for veterans.
+[Goods.SGI].Name;SGI
+[Goods.SGI].Desc;The best weapon for veterans.
+[Goods.SIP-Modified].Name;SIP-M
+[Goods.SIP-Modified].Desc;A modified version of one of the best pistols for beginners.
+[Goods.SIP].Name;SIP
+[Goods.SIP].Desc;One of the best pistols for beginners.
+[Goods.Skilled].Name;Experienced
+[Goods.Skilled].Desc;
+[Goods.Soldiers-1-Modified].Name;
+[Goods.Soldiers-1-Modified].Desc;
+[Goods.Soldiers-1].Name;
+[Goods.Soldiers-1].Desc;
+[Goods.Soldiers-1B-Modified].Name;
+[Goods.Soldiers-1B-Modified].Desc;
+[Goods.Soldiers-1B].Name;
+[Goods.Soldiers-1B].Desc;
+[Goods.Soldiers-2-Modified].Name;
+[Goods.Soldiers-2-Modified].Desc;
+[Goods.Soldiers-2].Name;
+[Goods.Soldiers-2].Desc;
+[Goods.Soldiers-3-Modified].Name;
+[Goods.Soldiers-3-Modified].Desc;
+[Goods.Soldiers-3].Name;
+[Goods.Soldiers-3].Desc;
+[Goods.Soldiers-4-Modified].Name;
+[Goods.Soldiers-4-Modified].Desc;
+[Goods.Soldiers-4].Name;
+[Goods.Soldiers-4].Desc;
+[Goods.SPSA-Modified].Name;
+[Goods.SPSA-Modified].Desc;
+[Goods.SPSA].Name;
+[Goods.SPSA].Desc;
+[Goods.Stalker-1-Modified].Name;
+[Goods.Stalker-1-Modified].Desc;
+[Goods.Stalker-1].Name;
+[Goods.Stalker-1].Desc;
+[Goods.Stalker-2-Modified].Name;
+[Goods.Stalker-2-Modified].Desc;
+[Goods.Stalker-2].Name;
+[Goods.Stalker-2].Desc;
+[Goods.Stalker-3A-Modified].Name;
+[Goods.Stalker-3A-Modified].Desc;
+[Goods.Stalker-3A].Name;
+[Goods.Stalker-3A].Desc;
+[Goods.Stalker-3B-Modified].Name;
+[Goods.Stalker-3B-Modified].Desc;
+[Goods.Stalker-3B].Name;
+[Goods.Stalker-3B].Desc;
+[Goods.Stalker-4-Modified].Name;
+[Goods.Stalker-4-Modified].Desc;
+[Goods.Stalker-4].Name;
+[Goods.Stalker-4].Desc;
+[Goods.Supplies].Name;
+[Goods.Supplies].Desc;
+[Goods.SVD-Modified].Name;
+[Goods.SVD-Modified].Desc;
+[Goods.SVD].Name;
+[Goods.SVD].Desc;
+[Goods.SVU-Modified].Name;
+[Goods.SVU-Modified].Desc;
+[Goods.SVU].Name;
+[Goods.SVU].Desc;
+[Goods.TPC-Modified].Name;
+[Goods.TPC-Modified].Desc;
+[Goods.TPC].Name;
+[Goods.TPC].Desc;
+[Goods.Val-Modified].Name;
+[Goods.Val-Modified].Desc;
+[Goods.Val].Name;
+[Goods.Val].Desc;
+[Goods.Veteran].Name;
+[Goods.Veteran].Desc;
+[Goods.Vintarez-Modified].Name;
+[Goods.Vintarez-Modified].Desc;
+[Goods.Vintarez].Name;
+[Goods.Vintarez].Desc;
+[Goods.Volker-Modified].Name;
+[Goods.Volker-Modified].Desc;
+[Goods.Volker].Name;
+[Goods.Volker].Desc;
+[Locations.Agroprom].Name;
+[Locations.AgropromUnderground].Name;
+[Locations.BaseLocation].Name;
+[Locations.CHAES2].Name;
+[Locations.DarkVallery].Name;
+[Locations.Escape].Name;
+[Locations.Garbage].Name;
+[Locations.Military].Name;
+[Locations.None].Name;
+[Locations.Yantar].Name;
+[TypeLands.BarRostok].Name;
+[TypeLands.BaseArmStorage].Name;
+[TypeLands.BaseMillitaryAgroprom].Name;
+[TypeLands.BaseRadar].Name;
+[TypeLands.BaseRostok].Name;
+[TypeLands.Blockpost].Name;
+[TypeLands.Border].Name;
+[TypeLands.Bridge].Name;
+[TypeLands.Buildings].Name;
+[TypeLands.BuildingsAndCatacombs].Name;
+[TypeLands.Catacomb].Name;
+[TypeLands.City].Name;
+[TypeLands.Cordon].Name;
+[TypeLands.FlatTerrain].Name;
+[TypeLands.Forest].Name;
+[TypeLands.FortifiedBlockpost].Name;
+[TypeLands.FortifiedBunker].Name;
+[TypeLands.Hills].Name;
+[TypeLands.Hutor].Name;
+[TypeLands.NarrowPassage].Name;
+[TypeLands.None].Name;
+[TypeLands.Ruins].Name;
+[TypeLands.SectorArmStorage].Name;
+[TypeLands.Swamp].Name;
+[TypeLands.SwampBase].Name;
+[TypeLands.Tunnel].Name;
+[TypeLands.Village].Name;
+[TypeLands.VillageWithBunker].Name;
+[Buildings.building1].Name;
+[Buildings.building1].Desc;
+[Buildings.building10].Name;
+[Buildings.building10].Desc;
+[Buildings.building11].Name;
+[Buildings.building11].Desc;
+[Buildings.building12].Name;
+[Buildings.building12].Desc;
+[Buildings.building2].Name;
+[Buildings.building2].Desc;
+[Buildings.building3].Name;
+[Buildings.building3].Desc;
+[Buildings.building4].Name;
+[Buildings.building4].Desc;
+[Buildings.building5].Name;
+[Buildings.building5].Desc;
+[Buildings.building6].Name;
+[Buildings.building6].Desc;
+[Buildings.building7].Name;
+[Buildings.building7].Desc;
+[Buildings.building8].Name;
+[Buildings.building8].Desc;
+[Buildings.building9].Name;
+[Buildings.building9].Desc;
+[Ideologies.Anarchy].Name;
+[Ideologies.AntiZone].Name;
+[Ideologies.Balance].Name;
+[Ideologies.Combat].Name;
+[Ideologies.Control].Name;
+[Ideologies.Crime].Name;
+[Ideologies.Economic].Name;
+[Ideologies.Exploring].Name;
+[Ideologies.Growth].Name;
+[Ideologies.Mercenary].Name;
+[Ideologies.Sectarianism].Name;
+[Ideologies.Stability].Name;
+[Ideologies.Stalkers].Name;
+[Ideologies.Unknow].Name;
+[Ideologies.Zombie].Name;
+[Leaders.Leader-0].Name;
+[Leaders.Leader-1-BG].Name;
+[Leaders.Leader-1-COP].Name;
+[Leaders.Leader-1].Name;
+[Leaders.Leader-10-BL].Name;
+[Leaders.Leader-10].Name;
+[Leaders.Leader-17].Name;
+[Leaders.Leader-18].Name;
+[Leaders.Leader-2-BG].Name;
+[Leaders.Leader-2-BZ].Name;
+[Leaders.Leader-2-COP].Name;
+[Leaders.Leader-2-Second].Name;
+[Leaders.Leader-2].Name;
+[Leaders.Leader-3].Name;
+[Leaders.Leader-4-BG].Name;
+[Leaders.Leader-4].Name;
+[Leaders.Leader-5].Name;
+[Leaders.Leader-6-COP].Name;
+[Leaders.Leader-6].Name;
+[Leaders.Leader-7-BL].Name;
+[Leaders.Leader-7].Name;
+[Leaders.Leader-8].Name;
+[Leaders.Leader-9].Name;
+[Leaders.Leader-Chehov-BL].Name;
+[Leaders.Leader-Chehov].Name;
+[Leaders.Leader-General-BL].Name;
+[Leaders.Leader-General].Name;
+[Leaders.Leader-German-COP].Name;
+[Leaders.Leader-Hog].Name;
+[Leaders.Leader-Kovalskiy-COP].Name;
+[Leaders.Leader-Krylov-BL].Name;
+[Leaders.Leader-Krylov].Name;
+[Leaders.Leader-Loki-COP].Name;
+[Leaders.Leader-Monolith-BL].Name;
+[Leaders.Leader-Monolith].Name;
+[Leaders.Leader-Multi].Name;
+[Leaders.Leader-Shakal-COP].Name;
+[Leaders.Leader-Shulga-COP].Name;
+[Leaders.Leader-Spectator].Name;
+[Leaders.Leader-Valerian].Name;
+[Leaders.Leader-Yoga-BL].Name;
+[Leaders.Leader-Yoga].Name;
+[Upgrades.Upgrade-1].Name;
+[Upgrades.Upgrade-1].Desc;
+[Upgrades.Upgrade-10].Name;
+[Upgrades.Upgrade-10].Desc;
+[Upgrades.Upgrade-11].Name;
+[Upgrades.Upgrade-11].Desc;
+[Upgrades.Upgrade-12].Name;
+[Upgrades.Upgrade-12].Desc;
+[Upgrades.Upgrade-13].Name;
+[Upgrades.Upgrade-13].Desc;
+[Upgrades.Upgrade-14].Name;
+[Upgrades.Upgrade-14].Desc;
+[Upgrades.Upgrade-15].Name;
+[Upgrades.Upgrade-15].Desc;
+[Upgrades.Upgrade-16].Name;
+[Upgrades.Upgrade-16].Desc;
+[Upgrades.Upgrade-17].Name;
+[Upgrades.Upgrade-17].Desc;
+[Upgrades.Upgrade-18].Name;
+[Upgrades.Upgrade-18].Desc;
+[Upgrades.Upgrade-19].Name;
+[Upgrades.Upgrade-19].Desc;
+[Upgrades.Upgrade-2].Name;
+[Upgrades.Upgrade-2].Desc;
+[Upgrades.Upgrade-20].Name;
+[Upgrades.Upgrade-20].Desc;
+[Upgrades.Upgrade-21].Name;
+[Upgrades.Upgrade-21].Desc;
+[Upgrades.Upgrade-22].Name;
+[Upgrades.Upgrade-22].Desc;
+[Upgrades.Upgrade-23].Name;
+[Upgrades.Upgrade-23].Desc;
+[Upgrades.Upgrade-24].Name;
+[Upgrades.Upgrade-24].Desc;
+[Upgrades.Upgrade-25].Name;
+[Upgrades.Upgrade-25].Desc;
+[Upgrades.Upgrade-26].Name;
+[Upgrades.Upgrade-26].Desc;
+[Upgrades.Upgrade-27].Name;
+[Upgrades.Upgrade-27].Desc;
+[Upgrades.Upgrade-28].Name;
+[Upgrades.Upgrade-28].Desc;
+[Upgrades.Upgrade-29].Name;
+[Upgrades.Upgrade-29].Desc;
+[Upgrades.Upgrade-3].Name;
+[Upgrades.Upgrade-3].Desc;
+[Upgrades.Upgrade-30].Name;
+[Upgrades.Upgrade-30].Desc;
+[Upgrades.Upgrade-31].Name;
+[Upgrades.Upgrade-31].Desc;
+[Upgrades.Upgrade-32].Name;
+[Upgrades.Upgrade-32].Desc;
+[Upgrades.Upgrade-33].Name;
+[Upgrades.Upgrade-33].Desc;
+[Upgrades.Upgrade-34].Name;
+[Upgrades.Upgrade-34].Desc;
+[Upgrades.Upgrade-35].Name;
+[Upgrades.Upgrade-35].Desc;
+[Upgrades.Upgrade-36].Name;
+[Upgrades.Upgrade-36].Desc;
+[Upgrades.Upgrade-4].Name;
+[Upgrades.Upgrade-4].Desc;
+[Upgrades.Upgrade-5].Name;
+[Upgrades.Upgrade-5].Desc;
+[Upgrades.Upgrade-6].Name;
+[Upgrades.Upgrade-6].Desc;
+[Upgrades.Upgrade-7].Name;
+[Upgrades.Upgrade-7].Desc;
+[Upgrades.Upgrade-8].Name;
+[Upgrades.Upgrade-8].Desc;
+[Upgrades.Upgrade-9].Name;
+[Upgrades.Upgrade-9].Desc;
+[SpecialEvents.Biohazard].Name;
+[SpecialEvents.Biohazard].Desc-Yes;
+[SpecialEvents.Biohazard].Desc-No;
+[SpecialEvents.BiohazardStatus].Name;
+[SpecialEvents.BiohazardStatus].Desc-Yes;
+[SpecialEvents.BiohazardStatus].Desc-No;
+[SpecialEvents.BrainMixer].Name;
+[SpecialEvents.BrainMixer].Desc-Yes;
+[SpecialEvents.BrainMixer].Desc-No;
+[SpecialEvents.BrainMixerStatus].Name;
+[SpecialEvents.BrainMixerStatus].Desc-Yes;
+[SpecialEvents.BrainMixerStatus].Desc-No;
+[SpecialEvents.BrainPsy].Name;
+[SpecialEvents.BrainPsy].Desc-Yes;
+[SpecialEvents.BrainPsy].Desc-No;
+[SpecialEvents.BrainPsyStatus].Name;
+[SpecialEvents.BrainPsyStatus].Desc-Yes;
+[SpecialEvents.BrainPsyStatus].Desc-No;
+[SpecialEvents.BrainPsyStatus2].Name;
+[SpecialEvents.BrainPsyStatus2].Desc-Yes;
+[SpecialEvents.BrainPsyStatus2].Desc-No;
+[SpecialEvents.Burst].Name;
+[SpecialEvents.Burst].Desc-Yes;
+[SpecialEvents.Burst].Desc-No;
+[SpecialEvents.IdeologyUnitsLeave].Name;
+[SpecialEvents.IdeologyUnitsLeave].Desc-Yes;
+[SpecialEvents.LocalBrainPsy1].Name;
+[SpecialEvents.LocalBrainPsy1].Desc-Yes;
+[SpecialEvents.LocalBrainPsy1].Desc-No;
+[SpecialEvents.LocalBrainPsy2].Name;
+[SpecialEvents.LocalBrainPsy2].Desc-Yes;
+[SpecialEvents.LocalBrainPsy2].Desc-No;
+[SpecialEvents.LocalBrainPsyStatus1].Name;
+[SpecialEvents.LocalBrainPsyStatus1].Desc-Yes;
+[SpecialEvents.LocalBrainPsyStatus1].Desc-No;
+[SpecialEvents.LocalBrainPsyStatus2].Name;
+[SpecialEvents.LocalBrainPsyStatus2].Desc-Yes;
+[SpecialEvents.LocalBrainPsyStatus2].Desc-No;
+[SpecialEvents.MaxAutoSearchArts].Name;
+[SpecialEvents.MaxAutoSearchArts].Desc-Yes;
+[SpecialEvents.MaxAutoSearchArts].Desc-No;
+[SpecialEvents.MoneySend].Name;
+[SpecialEvents.MoneySend].Desc-Yes;
+[SpecialEvents.NoFood].Name;
+[SpecialEvents.NoFood].Desc-Yes;
+[SpecialEvents.PartAutoSearchArts].Name;
+[SpecialEvents.PartAutoSearchArts].Desc-Yes;
+[SpecialEvents.PartAutoSearchArts].Desc-No;
+[RandomEvents.event1].Name;
+[RandomEvents.event1].Desc-Yes;
+[RandomEvents.event1].Desc-No;
+[RandomEvents.event10].Name;
+[RandomEvents.event10].Desc-Yes;
+[RandomEvents.event11].Name;
+[RandomEvents.event11].Desc-Yes;
+[RandomEvents.event12].Name;
+[RandomEvents.event12].Desc-Yes;
+[RandomEvents.event12].Desc-No;
+[RandomEvents.event13].Name;
+[RandomEvents.event13].Desc-Yes;
+[RandomEvents.event13].Desc-No;
+[RandomEvents.event14].Name;
+[RandomEvents.event14].Desc-Yes;
+[RandomEvents.event14].Desc-No;
+[RandomEvents.event15].Name;
+[RandomEvents.event15].Desc-Yes;
+[RandomEvents.event15].Desc-No;
+[RandomEvents.event16].Name;
+[RandomEvents.event16].Desc-Yes;
+[RandomEvents.event16].Desc-No;
+[RandomEvents.event17].Name;
+[RandomEvents.event17].Desc-Yes;
+[RandomEvents.event17].Desc-No;
+[RandomEvents.event18].Name;
+[RandomEvents.event18].Desc-Yes;
+[RandomEvents.event18].Desc-No;
+[RandomEvents.event19].Name;
+[RandomEvents.event19].Desc-Yes;
+[RandomEvents.event19].Desc-No;
+[RandomEvents.event2].Name;
+[RandomEvents.event2].Desc-Yes;
+[RandomEvents.event20].Name;
+[RandomEvents.event20].Desc-Yes;
+[RandomEvents.event20].Desc-No;
+[RandomEvents.event21].Name;
+[RandomEvents.event21].Desc-Yes;
+[RandomEvents.event21].Desc-No;
+[RandomEvents.event22].Name;
+[RandomEvents.event22].Desc-Yes;
+[RandomEvents.event22].Desc-No;
+[RandomEvents.event3].Name;
+[RandomEvents.event3].Desc-Yes;
+[RandomEvents.event4].Name;
+[RandomEvents.event4].Desc-Yes;
+[RandomEvents.event5].Name;
+[RandomEvents.event5].Desc-Yes;
+[RandomEvents.event6].Name;
+[RandomEvents.event6].Desc-Yes;
+[RandomEvents.event7].Name;
+[RandomEvents.event7].Desc-Yes;
+[RandomEvents.event8].Name;
+[RandomEvents.event8].Desc-Yes;
+[RandomEvents.event9].Name;
+[RandomEvents.event9].Desc-Yes;
+[Groups.Bandits.:main].Spy1-Name;
+[Groups.Bandits.:main].Spy2-Name;
+[Groups.Bandits.:main].Spy3-Name;
+[Groups.Bandits.:main].Spy4-Name;
+[Groups.Bandits.:main].Name;
+[Groups.Bandits.:main].Description;
+[Groups.Bandits.:main].DiplomacyText-Question-War;
+[Groups.Bandits.:main].DiplomacyText-Question-Neutral;
+[Groups.Bandits.:main].DiplomacyText-Question-Alliance;
+[Groups.Bandits.:main].DiplomacyText-Question-BreakAlliance;
+[Groups.Bandits.:main].DiplomacyText-RequestMoney-Ask;
+[Groups.Bandits.:main].DiplomacyText-Ans-0-Down;
+[Groups.Bandits.:main].DiplomacyText-Ans-1-Down;
+[Groups.Bandits.:main].DiplomacyText-Ans-1-No;
+[Groups.Bandits.:main].DiplomacyText-Ans-1-Yes;
+[Groups.Bandits.:main].DiplomacyText-Ans-2-No;
+[Groups.Bandits.:main].DiplomacyText-Ans-2-Yes;
+[Groups.Bandits.:main].DiplomacyText-RequestMoney-Ans-No;
+[Groups.Bandits.:main].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.Bandits.:main].DiplomacyText-Question-Neutral-No;
+[Groups.Bandits.:main].DiplomacyText-Question-Neutral-Yes;
+[Groups.Bandits.:main].DiplomacyText-Question-Alliance-No;
+[Groups.Bandits.:main].DiplomacyText-Question-Alliance-Yes;
+[Groups.Bandits.:main].Text-End-Step-Victory;
+[Groups.Bandits.:main].Text-End-EventFlag-Victory;
+[Groups.Bandits.:main].Text-End-Standart-Lose;
+[Groups.Bandits.:main].Text-End-Step-Lose;
+[Groups.Bandits.:main].Text-End-EventFlag-Lose;
+[Groups.Bandits.Anarchy].Text-End-Standart-Victory;
+[Groups.Bandits.AntiZone].Text-End-Standart-Victory;
+[Groups.Bandits.Control].Text-End-Standart-Victory;
+[Groups.Bandits.Crime].Text-End-Standart-Victory;
+[Groups.Bandits.Crime].Text-End-Standart-Lose;
+[Groups.Bandits.Crime].Text-End-Step-Lose;
+[Groups.Bandits.Exploring].Text-End-Standart-Victory;
+[Groups.Bandits.Growth].Text-End-Standart-Victory;
+[Groups.Bandits.Growth].Text-End-Standart-Lose;
+[Groups.Bandits.Growth].Text-End-Step-Lose;
+[Groups.Bandits.Mercenary].Text-End-Standart-Victory;
+[Groups.Bandits.Sectarianism].Text-End-Standart-Victory;
+[Groups.Bandits.Stability].Text-End-Standart-Victory;
+[Groups.Bandits.Stalkers].Text-End-Standart-Victory;
+[Groups.Bandits.Unknow].Text-End-Standart-Victory;
+[Groups.Bandits.Unknow].Text-End-Standart-Lose;
+[Groups.Bandits.Unknow].Text-End-Step-Lose;
+[Groups.Bandits.Zombie].Text-End-Standart-Victory;
+[Groups.ClearSky.:main].Spy1-Name;
+[Groups.ClearSky.:main].Spy2-Name;
+[Groups.ClearSky.:main].Spy3-Name;
+[Groups.ClearSky.:main].Spy4-Name;
+[Groups.ClearSky.:main].Name;
+[Groups.ClearSky.:main].Description;
+[Groups.ClearSky.:main].DiplomacyText-Question-War;
+[Groups.ClearSky.:main].DiplomacyText-Question-Neutral;
+[Groups.ClearSky.:main].DiplomacyText-Question-Alliance;
+[Groups.ClearSky.:main].DiplomacyText-Question-BreakAlliance;
+[Groups.ClearSky.:main].DiplomacyText-RequestMoney-Ask;
+[Groups.ClearSky.:main].DiplomacyText-Ans-0-Down;
+[Groups.ClearSky.:main].DiplomacyText-Ans-1-Down;
+[Groups.ClearSky.:main].DiplomacyText-Ans-1-No;
+[Groups.ClearSky.:main].DiplomacyText-Ans-1-Yes;
+[Groups.ClearSky.:main].DiplomacyText-Ans-2-No;
+[Groups.ClearSky.:main].DiplomacyText-Ans-2-Yes;
+[Groups.ClearSky.:main].DiplomacyText-RequestMoney-Ans-No;
+[Groups.ClearSky.:main].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.ClearSky.:main].DiplomacyText-Question-Neutral-No;
+[Groups.ClearSky.:main].DiplomacyText-Question-Neutral-Yes;
+[Groups.ClearSky.:main].DiplomacyText-Question-Alliance-No;
+[Groups.ClearSky.:main].DiplomacyText-Question-Alliance-Yes;
+[Groups.ClearSky.:main].Text-End-Step-Victory;
+[Groups.ClearSky.:main].Text-End-EventFlag-Victory;
+[Groups.ClearSky.:main].Text-End-Standart-Lose;
+[Groups.ClearSky.:main].Text-End-Step-Lose;
+[Groups.ClearSky.:main].Text-End-EventFlag-Lose;
+[Groups.ClearSky.Anarchy].Text-End-Standart-Victory;
+[Groups.ClearSky.AntiZone].Text-End-Standart-Victory;
+[Groups.ClearSky.Control].Text-End-Standart-Victory;
+[Groups.ClearSky.Crime].Text-End-Standart-Victory;
+[Groups.ClearSky.Exploring].Text-End-Standart-Victory;
+[Groups.ClearSky.Growth].Text-End-Standart-Victory;
+[Groups.ClearSky.Mercenary].Text-End-Standart-Victory;
+[Groups.ClearSky.Sectarianism].Text-End-Standart-Victory;
+[Groups.ClearSky.Stability].Text-End-Standart-Victory;
+[Groups.ClearSky.Stability].Text-End-Standart-Lose;
+[Groups.ClearSky.Stalkers].Text-End-Standart-Victory;
+[Groups.ClearSky.Unknow].Text-End-Standart-Victory;
+[Groups.ClearSky.Zombie].Text-End-Standart-Victory;
+[Groups.Duty.:main].Spy1-Name;
+[Groups.Duty.:main].Spy2-Name;
+[Groups.Duty.:main].Spy3-Name;
+[Groups.Duty.:main].Spy4-Name;
+[Groups.Duty.:main].Name;
+[Groups.Duty.:main].Description;
+[Groups.Duty.:main].DiplomacyText-Question-War;
+[Groups.Duty.:main].DiplomacyText-Question-Neutral;
+[Groups.Duty.:main].DiplomacyText-Question-Alliance;
+[Groups.Duty.:main].DiplomacyText-Question-BreakAlliance;
+[Groups.Duty.:main].DiplomacyText-RequestMoney-Ask;
+[Groups.Duty.:main].DiplomacyText-Ans-0-Down;
+[Groups.Duty.:main].DiplomacyText-Ans-1-Down;
+[Groups.Duty.:main].DiplomacyText-Ans-1-No;
+[Groups.Duty.:main].DiplomacyText-Ans-1-Yes;
+[Groups.Duty.:main].DiplomacyText-Ans-2-No;
+[Groups.Duty.:main].DiplomacyText-Ans-2-Yes;
+[Groups.Duty.:main].DiplomacyText-RequestMoney-Ans-No;
+[Groups.Duty.:main].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.Duty.:main].DiplomacyText-Question-Neutral-No;
+[Groups.Duty.:main].DiplomacyText-Question-Neutral-Yes;
+[Groups.Duty.:main].DiplomacyText-Question-Alliance-No;
+[Groups.Duty.:main].DiplomacyText-Question-Alliance-Yes;
+[Groups.Duty.:main].Text-End-Step-Victory;
+[Groups.Duty.:main].Text-End-EventFlag-Victory;
+[Groups.Duty.:main].Text-End-Standart-Lose;
+[Groups.Duty.:main].Text-End-Step-Lose;
+[Groups.Duty.:main].Text-End-EventFlag-Lose;
+[Groups.Duty.Anarchy].Text-End-Standart-Victory;
+[Groups.Duty.AntiZone].Text-End-Standart-Victory;
+[Groups.Duty.AntiZone].Text-End-Standart-Lose;
+[Groups.Duty.Control].Text-End-Standart-Victory;
+[Groups.Duty.Crime].Text-End-Standart-Victory;
+[Groups.Duty.Exploring].Text-End-Standart-Victory;
+[Groups.Duty.Growth].Text-End-Standart-Victory;
+[Groups.Duty.Growth].Text-End-Standart-Lose;
+[Groups.Duty.Mercenary].Text-End-Standart-Victory;
+[Groups.Duty.Sectarianism].Text-End-Standart-Victory;
+[Groups.Duty.Stability].Text-End-Standart-Victory;
+[Groups.Duty.Stalkers].Text-End-Standart-Victory;
+[Groups.Duty.Unknow].Text-End-Standart-Victory;
+[Groups.Duty.Unknow].Text-End-Standart-Lose;
+[Groups.Duty.Zombie].Text-End-Standart-Victory;
+[Groups.EighthGroup.:main].Spy1-Name;
+[Groups.EighthGroup.:main].Spy2-Name;
+[Groups.EighthGroup.:main].Spy3-Name;
+[Groups.EighthGroup.:main].Spy4-Name;
+[Groups.EighthGroup.:main].Name;
+[Groups.EighthGroup.:main].Description;
+[Groups.EighthGroup.:main].DiplomacyText-Question-War;
+[Groups.EighthGroup.:main].DiplomacyText-Question-Neutral;
+[Groups.EighthGroup.:main].DiplomacyText-Question-Alliance;
+[Groups.EighthGroup.:main].DiplomacyText-Question-BreakAlliance;
+[Groups.EighthGroup.:main].DiplomacyText-RequestMoney-Ask;
+[Groups.EighthGroup.:main].DiplomacyText-Ans-0-Down;
+[Groups.EighthGroup.:main].DiplomacyText-Ans-1-Down;
+[Groups.EighthGroup.:main].DiplomacyText-Ans-1-No;
+[Groups.EighthGroup.:main].DiplomacyText-Ans-1-Yes;
+[Groups.EighthGroup.:main].DiplomacyText-Ans-2-No;
+[Groups.EighthGroup.:main].DiplomacyText-Ans-2-Yes;
+[Groups.EighthGroup.:main].DiplomacyText-RequestMoney-Ans-No;
+[Groups.EighthGroup.:main].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.EighthGroup.:main].DiplomacyText-Question-Neutral-No;
+[Groups.EighthGroup.:main].DiplomacyText-Question-Neutral-Yes;
+[Groups.EighthGroup.:main].DiplomacyText-Question-Alliance-No;
+[Groups.EighthGroup.:main].DiplomacyText-Question-Alliance-Yes;
+[Groups.EighthGroup.:main].Text-End-Standart-Victory;
+[Groups.EighthGroup.:main].Text-End-Step-Victory;
+[Groups.EighthGroup.:main].Text-End-EventFlag-Victory;
+[Groups.EighthGroup.:main].Text-End-Standart-Lose;
+[Groups.EighthGroup.:main].Text-End-Step-Lose;
+[Groups.EighthGroup.:main].Text-End-EventFlag-Lose;
+[Groups.EighthGroup.Economic].DiplomacyText-Question-War;
+[Groups.EighthGroup.Economic].DiplomacyText-Question-Neutral;
+[Groups.EighthGroup.Economic].DiplomacyText-Question-Alliance;
+[Groups.EighthGroup.Economic].DiplomacyText-Question-BreakAlliance;
+[Groups.EighthGroup.Economic].DiplomacyText-RequestMoney-Ask;
+[Groups.EighthGroup.Economic].DiplomacyText-Ans-0-Down;
+[Groups.EighthGroup.Economic].DiplomacyText-Ans-1-Down;
+[Groups.EighthGroup.Economic].DiplomacyText-Ans-1-No;
+[Groups.EighthGroup.Economic].DiplomacyText-Ans-1-Yes;
+[Groups.EighthGroup.Economic].DiplomacyText-Ans-2-No;
+[Groups.EighthGroup.Economic].DiplomacyText-Ans-2-Yes;
+[Groups.EighthGroup.Economic].DiplomacyText-RequestMoney-Ans-No;
+[Groups.EighthGroup.Economic].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.EighthGroup.Economic].DiplomacyText-Question-Neutral-No;
+[Groups.EighthGroup.Economic].DiplomacyText-Question-Neutral-Yes;
+[Groups.EighthGroup.Economic].DiplomacyText-Question-Alliance-No;
+[Groups.EighthGroup.Economic].DiplomacyText-Question-Alliance-Yes;
+[Groups.EighthGroup.Combat].DiplomacyText-Question-War;
+[Groups.EighthGroup.Combat].DiplomacyText-Question-Neutral;
+[Groups.EighthGroup.Combat].DiplomacyText-Question-Alliance;
+[Groups.EighthGroup.Combat].DiplomacyText-Question-BreakAlliance;
+[Groups.EighthGroup.Combat].DiplomacyText-RequestMoney-Ask;
+[Groups.EighthGroup.Combat].DiplomacyText-Ans-0-Down;
+[Groups.EighthGroup.Combat].DiplomacyText-Ans-1-Down;
+[Groups.EighthGroup.Combat].DiplomacyText-Ans-1-No;
+[Groups.EighthGroup.Combat].DiplomacyText-Ans-1-Yes;
+[Groups.EighthGroup.Combat].DiplomacyText-Ans-2-No;
+[Groups.EighthGroup.Combat].DiplomacyText-Ans-2-Yes;
+[Groups.EighthGroup.Combat].DiplomacyText-RequestMoney-Ans-No;
+[Groups.EighthGroup.Combat].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.EighthGroup.Combat].DiplomacyText-Question-Neutral-No;
+[Groups.EighthGroup.Combat].DiplomacyText-Question-Neutral-Yes;
+[Groups.EighthGroup.Combat].DiplomacyText-Question-Alliance-No;
+[Groups.EighthGroup.Combat].DiplomacyText-Question-Alliance-Yes;
+[Groups.FifthGroup.:main].Spy1-Name;
+[Groups.FifthGroup.:main].Spy2-Name;
+[Groups.FifthGroup.:main].Spy3-Name;
+[Groups.FifthGroup.:main].Spy4-Name;
+[Groups.FifthGroup.:main].Name;
+[Groups.FifthGroup.:main].Description;
+[Groups.FifthGroup.:main].DiplomacyText-Question-War;
+[Groups.FifthGroup.:main].DiplomacyText-Question-Neutral;
+[Groups.FifthGroup.:main].DiplomacyText-Question-Alliance;
+[Groups.FifthGroup.:main].DiplomacyText-Question-BreakAlliance;
+[Groups.FifthGroup.:main].DiplomacyText-RequestMoney-Ask;
+[Groups.FifthGroup.:main].DiplomacyText-Ans-0-Down;
+[Groups.FifthGroup.:main].DiplomacyText-Ans-1-Down;
+[Groups.FifthGroup.:main].DiplomacyText-Ans-1-No;
+[Groups.FifthGroup.:main].DiplomacyText-Ans-1-Yes;
+[Groups.FifthGroup.:main].DiplomacyText-Ans-2-No;
+[Groups.FifthGroup.:main].DiplomacyText-Ans-2-Yes;
+[Groups.FifthGroup.:main].DiplomacyText-RequestMoney-Ans-No;
+[Groups.FifthGroup.:main].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.FifthGroup.:main].DiplomacyText-Question-Neutral-No;
+[Groups.FifthGroup.:main].DiplomacyText-Question-Neutral-Yes;
+[Groups.FifthGroup.:main].DiplomacyText-Question-Alliance-No;
+[Groups.FifthGroup.:main].DiplomacyText-Question-Alliance-Yes;
+[Groups.FifthGroup.:main].Text-End-Standart-Victory;
+[Groups.FifthGroup.:main].Text-End-Step-Victory;
+[Groups.FifthGroup.:main].Text-End-EventFlag-Victory;
+[Groups.FifthGroup.:main].Text-End-Standart-Lose;
+[Groups.FifthGroup.:main].Text-End-Step-Lose;
+[Groups.FifthGroup.:main].Text-End-EventFlag-Lose;
+[Groups.FifthGroup.Economic].DiplomacyText-Question-War;
+[Groups.FifthGroup.Economic].DiplomacyText-Question-Neutral;
+[Groups.FifthGroup.Economic].DiplomacyText-Question-Alliance;
+[Groups.FifthGroup.Economic].DiplomacyText-Question-BreakAlliance;
+[Groups.FifthGroup.Economic].DiplomacyText-RequestMoney-Ask;
+[Groups.FifthGroup.Economic].DiplomacyText-Ans-0-Down;
+[Groups.FifthGroup.Economic].DiplomacyText-Ans-1-Down;
+[Groups.FifthGroup.Economic].DiplomacyText-Ans-1-No;
+[Groups.FifthGroup.Economic].DiplomacyText-Ans-1-Yes;
+[Groups.FifthGroup.Economic].DiplomacyText-Ans-2-No;
+[Groups.FifthGroup.Economic].DiplomacyText-Ans-2-Yes;
+[Groups.FifthGroup.Economic].DiplomacyText-RequestMoney-Ans-No;
+[Groups.FifthGroup.Economic].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.FifthGroup.Economic].DiplomacyText-Question-Neutral-No;
+[Groups.FifthGroup.Economic].DiplomacyText-Question-Neutral-Yes;
+[Groups.FifthGroup.Economic].DiplomacyText-Question-Alliance-No;
+[Groups.FifthGroup.Economic].DiplomacyText-Question-Alliance-Yes;
+[Groups.FifthGroup.Combat].DiplomacyText-Question-War;
+[Groups.FifthGroup.Combat].DiplomacyText-Question-Neutral;
+[Groups.FifthGroup.Combat].DiplomacyText-Question-Alliance;
+[Groups.FifthGroup.Combat].DiplomacyText-Question-BreakAlliance;
+[Groups.FifthGroup.Combat].DiplomacyText-RequestMoney-Ask;
+[Groups.FifthGroup.Combat].DiplomacyText-Ans-0-Down;
+[Groups.FifthGroup.Combat].DiplomacyText-Ans-1-Down;
+[Groups.FifthGroup.Combat].DiplomacyText-Ans-1-No;
+[Groups.FifthGroup.Combat].DiplomacyText-Ans-1-Yes;
+[Groups.FifthGroup.Combat].DiplomacyText-Ans-2-No;
+[Groups.FifthGroup.Combat].DiplomacyText-Ans-2-Yes;
+[Groups.FifthGroup.Combat].DiplomacyText-RequestMoney-Ans-No;
+[Groups.FifthGroup.Combat].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.FifthGroup.Combat].DiplomacyText-Question-Neutral-No;
+[Groups.FifthGroup.Combat].DiplomacyText-Question-Neutral-Yes;
+[Groups.FifthGroup.Combat].DiplomacyText-Question-Alliance-No;
+[Groups.FifthGroup.Combat].DiplomacyText-Question-Alliance-Yes;
+[Groups.FirstGroup.:main].Spy1-Name;
+[Groups.FirstGroup.:main].Spy2-Name;
+[Groups.FirstGroup.:main].Spy3-Name;
+[Groups.FirstGroup.:main].Spy4-Name;
+[Groups.FirstGroup.:main].Name;
+[Groups.FirstGroup.:main].Description;
+[Groups.FirstGroup.:main].DiplomacyText-Question-War;
+[Groups.FirstGroup.:main].DiplomacyText-Question-Neutral;
+[Groups.FirstGroup.:main].DiplomacyText-Question-Alliance;
+[Groups.FirstGroup.:main].DiplomacyText-Question-BreakAlliance;
+[Groups.FirstGroup.:main].DiplomacyText-RequestMoney-Ask;
+[Groups.FirstGroup.:main].DiplomacyText-Ans-0-Down;
+[Groups.FirstGroup.:main].DiplomacyText-Ans-1-Down;
+[Groups.FirstGroup.:main].DiplomacyText-Ans-1-No;
+[Groups.FirstGroup.:main].DiplomacyText-Ans-1-Yes;
+[Groups.FirstGroup.:main].DiplomacyText-Ans-2-No;
+[Groups.FirstGroup.:main].DiplomacyText-Ans-2-Yes;
+[Groups.FirstGroup.:main].DiplomacyText-RequestMoney-Ans-No;
+[Groups.FirstGroup.:main].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.FirstGroup.:main].DiplomacyText-Question-Neutral-No;
+[Groups.FirstGroup.:main].DiplomacyText-Question-Neutral-Yes;
+[Groups.FirstGroup.:main].DiplomacyText-Question-Alliance-No;
+[Groups.FirstGroup.:main].DiplomacyText-Question-Alliance-Yes;
+[Groups.FirstGroup.:main].Text-End-Standart-Victory;
+[Groups.FirstGroup.:main].Text-End-Step-Victory;
+[Groups.FirstGroup.:main].Text-End-EventFlag-Victory;
+[Groups.FirstGroup.:main].Text-End-Standart-Lose;
+[Groups.FirstGroup.:main].Text-End-Step-Lose;
+[Groups.FirstGroup.:main].Text-End-EventFlag-Lose;
+[Groups.FirstGroup.Economic].DiplomacyText-Question-War;
+[Groups.FirstGroup.Economic].DiplomacyText-Question-Neutral;
+[Groups.FirstGroup.Economic].DiplomacyText-Question-Alliance;
+[Groups.FirstGroup.Economic].DiplomacyText-Question-BreakAlliance;
+[Groups.FirstGroup.Economic].DiplomacyText-RequestMoney-Ask;
+[Groups.FirstGroup.Economic].DiplomacyText-Ans-0-Down;
+[Groups.FirstGroup.Economic].DiplomacyText-Ans-1-Down;
+[Groups.FirstGroup.Economic].DiplomacyText-Ans-1-No;
+[Groups.FirstGroup.Economic].DiplomacyText-Ans-1-Yes;
+[Groups.FirstGroup.Economic].DiplomacyText-Ans-2-No;
+[Groups.FirstGroup.Economic].DiplomacyText-Ans-2-Yes;
+[Groups.FirstGroup.Economic].DiplomacyText-RequestMoney-Ans-No;
+[Groups.FirstGroup.Economic].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.FirstGroup.Economic].DiplomacyText-Question-Neutral-No;
+[Groups.FirstGroup.Economic].DiplomacyText-Question-Neutral-Yes;
+[Groups.FirstGroup.Economic].DiplomacyText-Question-Alliance-No;
+[Groups.FirstGroup.Economic].DiplomacyText-Question-Alliance-Yes;
+[Groups.FirstGroup.Combat].DiplomacyText-Question-War;
+[Groups.FirstGroup.Combat].DiplomacyText-Question-Neutral;
+[Groups.FirstGroup.Combat].DiplomacyText-Question-Alliance;
+[Groups.FirstGroup.Combat].DiplomacyText-Question-BreakAlliance;
+[Groups.FirstGroup.Combat].DiplomacyText-RequestMoney-Ask;
+[Groups.FirstGroup.Combat].DiplomacyText-Ans-0-Down;
+[Groups.FirstGroup.Combat].DiplomacyText-Ans-1-Down;
+[Groups.FirstGroup.Combat].DiplomacyText-Ans-1-No;
+[Groups.FirstGroup.Combat].DiplomacyText-Ans-1-Yes;
+[Groups.FirstGroup.Combat].DiplomacyText-Ans-2-No;
+[Groups.FirstGroup.Combat].DiplomacyText-Ans-2-Yes;
+[Groups.FirstGroup.Combat].DiplomacyText-RequestMoney-Ans-No;
+[Groups.FirstGroup.Combat].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.FirstGroup.Combat].DiplomacyText-Question-Neutral-No;
+[Groups.FirstGroup.Combat].DiplomacyText-Question-Neutral-Yes;
+[Groups.FirstGroup.Combat].DiplomacyText-Question-Alliance-No;
+[Groups.FirstGroup.Combat].DiplomacyText-Question-Alliance-Yes;
+[Groups.FourthGroup.:main].Spy1-Name;
+[Groups.FourthGroup.:main].Spy2-Name;
+[Groups.FourthGroup.:main].Spy3-Name;
+[Groups.FourthGroup.:main].Spy4-Name;
+[Groups.FourthGroup.:main].Name;
+[Groups.FourthGroup.:main].Description;
+[Groups.FourthGroup.:main].DiplomacyText-Question-War;
+[Groups.FourthGroup.:main].DiplomacyText-Question-Neutral;
+[Groups.FourthGroup.:main].DiplomacyText-Question-Alliance;
+[Groups.FourthGroup.:main].DiplomacyText-Question-BreakAlliance;
+[Groups.FourthGroup.:main].DiplomacyText-RequestMoney-Ask;
+[Groups.FourthGroup.:main].DiplomacyText-Ans-0-Down;
+[Groups.FourthGroup.:main].DiplomacyText-Ans-1-Down;
+[Groups.FourthGroup.:main].DiplomacyText-Ans-1-No;
+[Groups.FourthGroup.:main].DiplomacyText-Ans-1-Yes;
+[Groups.FourthGroup.:main].DiplomacyText-Ans-2-No;
+[Groups.FourthGroup.:main].DiplomacyText-Ans-2-Yes;
+[Groups.FourthGroup.:main].DiplomacyText-RequestMoney-Ans-No;
+[Groups.FourthGroup.:main].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.FourthGroup.:main].DiplomacyText-Question-Neutral-No;
+[Groups.FourthGroup.:main].DiplomacyText-Question-Neutral-Yes;
+[Groups.FourthGroup.:main].DiplomacyText-Question-Alliance-No;
+[Groups.FourthGroup.:main].DiplomacyText-Question-Alliance-Yes;
+[Groups.FourthGroup.:main].Text-End-Standart-Victory;
+[Groups.FourthGroup.:main].Text-End-Step-Victory;
+[Groups.FourthGroup.:main].Text-End-EventFlag-Victory;
+[Groups.FourthGroup.:main].Text-End-Standart-Lose;
+[Groups.FourthGroup.:main].Text-End-Step-Lose;
+[Groups.FourthGroup.:main].Text-End-EventFlag-Lose;
+[Groups.FourthGroup.Economic].DiplomacyText-Question-War;
+[Groups.FourthGroup.Economic].DiplomacyText-Question-Neutral;
+[Groups.FourthGroup.Economic].DiplomacyText-Question-Alliance;
+[Groups.FourthGroup.Economic].DiplomacyText-Question-BreakAlliance;
+[Groups.FourthGroup.Economic].DiplomacyText-RequestMoney-Ask;
+[Groups.FourthGroup.Economic].DiplomacyText-Ans-0-Down;
+[Groups.FourthGroup.Economic].DiplomacyText-Ans-1-Down;
+[Groups.FourthGroup.Economic].DiplomacyText-Ans-1-No;
+[Groups.FourthGroup.Economic].DiplomacyText-Ans-1-Yes;
+[Groups.FourthGroup.Economic].DiplomacyText-Ans-2-No;
+[Groups.FourthGroup.Economic].DiplomacyText-Ans-2-Yes;
+[Groups.FourthGroup.Economic].DiplomacyText-RequestMoney-Ans-No;
+[Groups.FourthGroup.Economic].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.FourthGroup.Economic].DiplomacyText-Question-Neutral-No;
+[Groups.FourthGroup.Economic].DiplomacyText-Question-Neutral-Yes;
+[Groups.FourthGroup.Economic].DiplomacyText-Question-Alliance-No;
+[Groups.FourthGroup.Economic].DiplomacyText-Question-Alliance-Yes;
+[Groups.FourthGroup.Combat].DiplomacyText-Question-War;
+[Groups.FourthGroup.Combat].DiplomacyText-Question-Neutral;
+[Groups.FourthGroup.Combat].DiplomacyText-Question-Alliance;
+[Groups.FourthGroup.Combat].DiplomacyText-Question-BreakAlliance;
+[Groups.FourthGroup.Combat].DiplomacyText-RequestMoney-Ask;
+[Groups.FourthGroup.Combat].DiplomacyText-Ans-0-Down;
+[Groups.FourthGroup.Combat].DiplomacyText-Ans-1-Down;
+[Groups.FourthGroup.Combat].DiplomacyText-Ans-1-No;
+[Groups.FourthGroup.Combat].DiplomacyText-Ans-1-Yes;
+[Groups.FourthGroup.Combat].DiplomacyText-Ans-2-No;
+[Groups.FourthGroup.Combat].DiplomacyText-Ans-2-Yes;
+[Groups.FourthGroup.Combat].DiplomacyText-RequestMoney-Ans-No;
+[Groups.FourthGroup.Combat].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.FourthGroup.Combat].DiplomacyText-Question-Neutral-No;
+[Groups.FourthGroup.Combat].DiplomacyText-Question-Neutral-Yes;
+[Groups.FourthGroup.Combat].DiplomacyText-Question-Alliance-No;
+[Groups.FourthGroup.Combat].DiplomacyText-Question-Alliance-Yes;
+[Groups.Freedom.:main].Spy1-Name;
+[Groups.Freedom.:main].Spy2-Name;
+[Groups.Freedom.:main].Spy3-Name;
+[Groups.Freedom.:main].Spy4-Name;
+[Groups.Freedom.:main].Name;
+[Groups.Freedom.:main].Description;
+[Groups.Freedom.:main].DiplomacyText-Question-War;
+[Groups.Freedom.:main].DiplomacyText-Question-Neutral;
+[Groups.Freedom.:main].DiplomacyText-Question-Alliance;
+[Groups.Freedom.:main].DiplomacyText-Question-BreakAlliance;
+[Groups.Freedom.:main].DiplomacyText-RequestMoney-Ask;
+[Groups.Freedom.:main].DiplomacyText-Ans-0-Down;
+[Groups.Freedom.:main].DiplomacyText-Ans-1-Down;
+[Groups.Freedom.:main].DiplomacyText-Ans-1-No;
+[Groups.Freedom.:main].DiplomacyText-Ans-1-Yes;
+[Groups.Freedom.:main].DiplomacyText-Ans-2-No;
+[Groups.Freedom.:main].DiplomacyText-Ans-2-Yes;
+[Groups.Freedom.:main].DiplomacyText-RequestMoney-Ans-No;
+[Groups.Freedom.:main].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.Freedom.:main].DiplomacyText-Question-Neutral-No;
+[Groups.Freedom.:main].DiplomacyText-Question-Neutral-Yes;
+[Groups.Freedom.:main].DiplomacyText-Question-Alliance-No;
+[Groups.Freedom.:main].DiplomacyText-Question-Alliance-Yes;
+[Groups.Freedom.:main].Text-End-Step-Victory;
+[Groups.Freedom.:main].Text-End-EventFlag-Victory;
+[Groups.Freedom.:main].Text-End-Standart-Lose;
+[Groups.Freedom.:main].Text-End-Step-Lose;
+[Groups.Freedom.:main].Text-End-EventFlag-Lose;
+[Groups.Freedom.Anarchy].Text-End-Standart-Victory;
+[Groups.Freedom.Anarchy].Text-End-Standart-Lose;
+[Groups.Freedom.AntiZone].Text-End-Standart-Victory;
+[Groups.Freedom.Control].Text-End-Standart-Victory;
+[Groups.Freedom.Crime].Text-End-Standart-Victory;
+[Groups.Freedom.Exploring].Text-End-Standart-Victory;
+[Groups.Freedom.Growth].Text-End-Standart-Victory;
+[Groups.Freedom.Growth].Text-End-Standart-Lose;
+[Groups.Freedom.Mercenary].Text-End-Standart-Victory;
+[Groups.Freedom.Sectarianism].Text-End-Standart-Victory;
+[Groups.Freedom.Stability].Text-End-Standart-Victory;
+[Groups.Freedom.Stalkers].Text-End-Standart-Victory;
+[Groups.Freedom.Unknow].Text-End-Standart-Victory;
+[Groups.Freedom.Unknow].Text-End-Standart-Lose;
+[Groups.Freedom.Zombie].Text-End-Standart-Victory;
+[Groups.Mercenaries.:main].Spy1-Name;
+[Groups.Mercenaries.:main].Spy2-Name;
+[Groups.Mercenaries.:main].Spy3-Name;
+[Groups.Mercenaries.:main].Spy4-Name;
+[Groups.Mercenaries.:main].Name;
+[Groups.Mercenaries.:main].Description;
+[Groups.Mercenaries.:main].DiplomacyText-Question-War;
+[Groups.Mercenaries.:main].DiplomacyText-Question-Neutral;
+[Groups.Mercenaries.:main].DiplomacyText-Question-Alliance;
+[Groups.Mercenaries.:main].DiplomacyText-Question-BreakAlliance;
+[Groups.Mercenaries.:main].DiplomacyText-RequestMoney-Ask;
+[Groups.Mercenaries.:main].DiplomacyText-Ans-0-Down;
+[Groups.Mercenaries.:main].DiplomacyText-Ans-1-Down;
+[Groups.Mercenaries.:main].DiplomacyText-Ans-1-No;
+[Groups.Mercenaries.:main].DiplomacyText-Ans-1-Yes;
+[Groups.Mercenaries.:main].DiplomacyText-Ans-2-No;
+[Groups.Mercenaries.:main].DiplomacyText-Ans-2-Yes;
+[Groups.Mercenaries.:main].DiplomacyText-RequestMoney-Ans-No;
+[Groups.Mercenaries.:main].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.Mercenaries.:main].DiplomacyText-Question-Neutral-No;
+[Groups.Mercenaries.:main].DiplomacyText-Question-Neutral-Yes;
+[Groups.Mercenaries.:main].DiplomacyText-Question-Alliance-No;
+[Groups.Mercenaries.:main].DiplomacyText-Question-Alliance-Yes;
+[Groups.Mercenaries.:main].Text-End-Step-Victory;
+[Groups.Mercenaries.:main].Text-End-EventFlag-Victory;
+[Groups.Mercenaries.:main].Text-End-Standart-Lose;
+[Groups.Mercenaries.:main].Text-End-Step-Lose;
+[Groups.Mercenaries.:main].Text-End-EventFlag-Lose;
+[Groups.Mercenaries.Anarchy].Text-End-Standart-Victory;
+[Groups.Mercenaries.AntiZone].Text-End-Standart-Victory;
+[Groups.Mercenaries.Control].Text-End-Standart-Victory;
+[Groups.Mercenaries.Crime].Text-End-Standart-Victory;
+[Groups.Mercenaries.Exploring].Text-End-Standart-Victory;
+[Groups.Mercenaries.Growth].Text-End-Standart-Victory;
+[Groups.Mercenaries.Growth].Text-End-Standart-Lose;
+[Groups.Mercenaries.Mercenary].Text-End-Standart-Victory;
+[Groups.Mercenaries.Mercenary].Text-End-Standart-Lose;
+[Groups.Mercenaries.Sectarianism].Text-End-Standart-Victory;
+[Groups.Mercenaries.Stability].Text-End-Standart-Victory;
+[Groups.Mercenaries.Stalkers].Text-End-Standart-Victory;
+[Groups.Mercenaries.Unknow].Text-End-Standart-Victory;
+[Groups.Mercenaries.Unknow].Text-End-Standart-Lose;
+[Groups.Mercenaries.Zombie].Text-End-Standart-Victory;
+[Groups.Monolith.:main].Spy1-Name;
+[Groups.Monolith.:main].Spy2-Name;
+[Groups.Monolith.:main].Spy3-Name;
+[Groups.Monolith.:main].Spy4-Name;
+[Groups.Monolith.:main].Name;
+[Groups.Monolith.:main].Description;
+[Groups.Monolith.:main].DiplomacyText-Question-War;
+[Groups.Monolith.:main].DiplomacyText-Question-Neutral;
+[Groups.Monolith.:main].DiplomacyText-Question-Alliance;
+[Groups.Monolith.:main].DiplomacyText-Question-BreakAlliance;
+[Groups.Monolith.:main].DiplomacyText-RequestMoney-Ask;
+[Groups.Monolith.:main].DiplomacyText-Ans-0-Down;
+[Groups.Monolith.:main].DiplomacyText-Ans-1-Down;
+[Groups.Monolith.:main].DiplomacyText-Ans-1-No;
+[Groups.Monolith.:main].DiplomacyText-Ans-1-Yes;
+[Groups.Monolith.:main].DiplomacyText-Ans-2-No;
+[Groups.Monolith.:main].DiplomacyText-Ans-2-Yes;
+[Groups.Monolith.:main].DiplomacyText-RequestMoney-Ans-No;
+[Groups.Monolith.:main].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.Monolith.:main].DiplomacyText-Question-Neutral-No;
+[Groups.Monolith.:main].DiplomacyText-Question-Neutral-Yes;
+[Groups.Monolith.:main].DiplomacyText-Question-Alliance-No;
+[Groups.Monolith.:main].DiplomacyText-Question-Alliance-Yes;
+[Groups.Monolith.:main].Text-End-Step-Victory;
+[Groups.Monolith.:main].Text-End-EventFlag-Victory;
+[Groups.Monolith.:main].Text-End-Standart-Lose;
+[Groups.Monolith.:main].Text-End-Step-Lose;
+[Groups.Monolith.:main].Text-End-EventFlag-Lose;
+[Groups.Monolith.Anarchy].Text-End-Standart-Victory;
+[Groups.Monolith.AntiZone].Text-End-Standart-Victory;
+[Groups.Monolith.Control].Text-End-Standart-Victory;
+[Groups.Monolith.Crime].Text-End-Standart-Victory;
+[Groups.Monolith.Exploring].Text-End-Standart-Victory;
+[Groups.Monolith.Growth].Text-End-Standart-Victory;
+[Groups.Monolith.Growth].Text-End-Standart-Lose;
+[Groups.Monolith.Mercenary].Text-End-Standart-Victory;
+[Groups.Monolith.Sectarianism].Text-End-Standart-Victory;
+[Groups.Monolith.Sectarianism].Text-End-Standart-Lose;
+[Groups.Monolith.Stability].Text-End-Standart-Victory;
+[Groups.Monolith.Stalkers].Text-End-Standart-Victory;
+[Groups.Monolith.Unknow].Text-End-Standart-Victory;
+[Groups.Monolith.Unknow].Text-End-Standart-Lose;
+[Groups.Monolith.Zombie].Text-End-Standart-Victory;
+[Groups.mutants.:main].Spy1-Name;
+[Groups.mutants.:main].Spy2-Name;
+[Groups.mutants.:main].Spy3-Name;
+[Groups.mutants.:main].Spy4-Name;
+[Groups.mutants.:main].Name;
+[Groups.mutants.:main].Description;
+[Groups.mutants.:main].DiplomacyText-Question-War;
+[Groups.mutants.:main].DiplomacyText-Question-Neutral;
+[Groups.mutants.:main].DiplomacyText-Question-Alliance;
+[Groups.mutants.:main].DiplomacyText-Question-BreakAlliance;
+[Groups.mutants.:main].DiplomacyText-RequestMoney-Ask;
+[Groups.mutants.:main].DiplomacyText-Ans-0-Down;
+[Groups.mutants.:main].DiplomacyText-Ans-1-Down;
+[Groups.mutants.:main].DiplomacyText-Ans-1-No;
+[Groups.mutants.:main].DiplomacyText-Ans-1-Yes;
+[Groups.mutants.:main].DiplomacyText-Ans-2-No;
+[Groups.mutants.:main].DiplomacyText-Ans-2-Yes;
+[Groups.mutants.:main].DiplomacyText-RequestMoney-Ans-No;
+[Groups.mutants.:main].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.mutants.:main].DiplomacyText-Question-Neutral-No;
+[Groups.mutants.:main].DiplomacyText-Question-Neutral-Yes;
+[Groups.mutants.:main].DiplomacyText-Question-Alliance-No;
+[Groups.mutants.:main].DiplomacyText-Question-Alliance-Yes;
+[Groups.mutants.:main].Text-End-Step-Victory;
+[Groups.mutants.:main].Text-End-EventFlag-Victory;
+[Groups.mutants.:main].Text-End-Standart-Lose;
+[Groups.mutants.:main].Text-End-Step-Lose;
+[Groups.mutants.:main].Text-End-EventFlag-Lose;
+[Groups.mutants.Anarchy].Text-End-Standart-Victory;
+[Groups.mutants.AntiZone].Text-End-Standart-Victory;
+[Groups.mutants.Control].Text-End-Standart-Victory;
+[Groups.mutants.Crime].Text-End-Standart-Victory;
+[Groups.mutants.Exploring].Text-End-Standart-Victory;
+[Groups.mutants.Growth].Text-End-Standart-Victory;
+[Groups.mutants.Mercenary].Text-End-Standart-Victory;
+[Groups.mutants.Sectarianism].Text-End-Standart-Victory;
+[Groups.mutants.Stability].Text-End-Standart-Victory;
+[Groups.mutants.Stalkers].Text-End-Standart-Victory;
+[Groups.mutants.Unknow].Text-End-Standart-Victory;
+[Groups.mutants.Zombie].Text-End-Standart-Victory;
+[Groups.Renegats.:main].Spy1-Name;
+[Groups.Renegats.:main].Spy2-Name;
+[Groups.Renegats.:main].Spy3-Name;
+[Groups.Renegats.:main].Spy4-Name;
+[Groups.Renegats.:main].Name;
+[Groups.Renegats.:main].Description;
+[Groups.Renegats.:main].DiplomacyText-Question-War;
+[Groups.Renegats.:main].DiplomacyText-Question-Neutral;
+[Groups.Renegats.:main].DiplomacyText-Question-Alliance;
+[Groups.Renegats.:main].DiplomacyText-Question-BreakAlliance;
+[Groups.Renegats.:main].DiplomacyText-RequestMoney-Ask;
+[Groups.Renegats.:main].DiplomacyText-Ans-0-Down;
+[Groups.Renegats.:main].DiplomacyText-Ans-1-Down;
+[Groups.Renegats.:main].DiplomacyText-Ans-1-No;
+[Groups.Renegats.:main].DiplomacyText-Ans-1-Yes;
+[Groups.Renegats.:main].DiplomacyText-Ans-2-No;
+[Groups.Renegats.:main].DiplomacyText-Ans-2-Yes;
+[Groups.Renegats.:main].DiplomacyText-RequestMoney-Ans-No;
+[Groups.Renegats.:main].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.Renegats.:main].DiplomacyText-Question-Neutral-No;
+[Groups.Renegats.:main].DiplomacyText-Question-Neutral-Yes;
+[Groups.Renegats.:main].DiplomacyText-Question-Alliance-No;
+[Groups.Renegats.:main].DiplomacyText-Question-Alliance-Yes;
+[Groups.Renegats.:main].Text-End-Step-Victory;
+[Groups.Renegats.:main].Text-End-EventFlag-Victory;
+[Groups.Renegats.:main].Text-End-Standart-Lose;
+[Groups.Renegats.:main].Text-End-Step-Lose;
+[Groups.Renegats.:main].Text-End-EventFlag-Lose;
+[Groups.Renegats.Anarchy].Text-End-Standart-Victory;
+[Groups.Renegats.AntiZone].Text-End-Standart-Victory;
+[Groups.Renegats.Control].Text-End-Standart-Victory;
+[Groups.Renegats.Crime].Text-End-Standart-Victory;
+[Groups.Renegats.Crime].Text-End-Standart-Lose;
+[Groups.Renegats.Exploring].Text-End-Standart-Victory;
+[Groups.Renegats.Growth].Text-End-Standart-Victory;
+[Groups.Renegats.Growth].Text-End-Standart-Lose;
+[Groups.Renegats.Mercenary].Text-End-Standart-Victory;
+[Groups.Renegats.Sectarianism].Text-End-Standart-Victory;
+[Groups.Renegats.Stability].Text-End-Standart-Victory;
+[Groups.Renegats.Stalkers].Text-End-Standart-Victory;
+[Groups.Renegats.Unknow].Text-End-Standart-Victory;
+[Groups.Renegats.Unknow].Text-End-Standart-Lose;
+[Groups.Renegats.Zombie].Text-End-Standart-Victory;
+[Groups.Scientists.:main].Spy1-Name;
+[Groups.Scientists.:main].Spy2-Name;
+[Groups.Scientists.:main].Spy3-Name;
+[Groups.Scientists.:main].Spy4-Name;
+[Groups.Scientists.:main].Name;
+[Groups.Scientists.:main].Description;
+[Groups.Scientists.:main].DiplomacyText-Question-War;
+[Groups.Scientists.:main].DiplomacyText-Question-Neutral;
+[Groups.Scientists.:main].DiplomacyText-Question-Alliance;
+[Groups.Scientists.:main].DiplomacyText-Question-BreakAlliance;
+[Groups.Scientists.:main].DiplomacyText-RequestMoney-Ask;
+[Groups.Scientists.:main].DiplomacyText-Ans-0-Down;
+[Groups.Scientists.:main].DiplomacyText-Ans-1-Down;
+[Groups.Scientists.:main].DiplomacyText-Ans-1-No;
+[Groups.Scientists.:main].DiplomacyText-Ans-1-Yes;
+[Groups.Scientists.:main].DiplomacyText-Ans-2-No;
+[Groups.Scientists.:main].DiplomacyText-Ans-2-Yes;
+[Groups.Scientists.:main].DiplomacyText-RequestMoney-Ans-No;
+[Groups.Scientists.:main].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.Scientists.:main].DiplomacyText-Question-Neutral-No;
+[Groups.Scientists.:main].DiplomacyText-Question-Neutral-Yes;
+[Groups.Scientists.:main].DiplomacyText-Question-Alliance-No;
+[Groups.Scientists.:main].DiplomacyText-Question-Alliance-Yes;
+[Groups.Scientists.:main].Text-End-Step-Victory;
+[Groups.Scientists.:main].Text-End-EventFlag-Victory;
+[Groups.Scientists.:main].Text-End-Standart-Lose;
+[Groups.Scientists.:main].Text-End-Step-Lose;
+[Groups.Scientists.:main].Text-End-EventFlag-Lose;
+[Groups.Scientists.Anarchy].Text-End-Standart-Victory;
+[Groups.Scientists.AntiZone].Text-End-Standart-Victory;
+[Groups.Scientists.Control].Text-End-Standart-Victory;
+[Groups.Scientists.Control].Text-End-Standart-Lose;
+[Groups.Scientists.Crime].Text-End-Standart-Victory;
+[Groups.Scientists.Exploring].Text-End-Standart-Victory;
+[Groups.Scientists.Exploring].Text-End-Standart-Lose;
+[Groups.Scientists.Growth].Text-End-Standart-Victory;
+[Groups.Scientists.Growth].Text-End-Standart-Lose;
+[Groups.Scientists.Mercenary].Text-End-Standart-Victory;
+[Groups.Scientists.Sectarianism].Text-End-Standart-Victory;
+[Groups.Scientists.Stability].Text-End-Standart-Victory;
+[Groups.Scientists.Stalkers].Text-End-Standart-Victory;
+[Groups.Scientists.Unknow].Text-End-Standart-Victory;
+[Groups.Scientists.Unknow].Text-End-Standart-Lose;
+[Groups.Scientists.Zombie].Text-End-Standart-Victory;
+[Groups.SecondGroup.:main].Spy1-Name;
+[Groups.SecondGroup.:main].Spy2-Name;
+[Groups.SecondGroup.:main].Spy3-Name;
+[Groups.SecondGroup.:main].Spy4-Name;
+[Groups.SecondGroup.:main].Name;
+[Groups.SecondGroup.:main].Description;
+[Groups.SecondGroup.:main].DiplomacyText-Question-War;
+[Groups.SecondGroup.:main].DiplomacyText-Question-Neutral;
+[Groups.SecondGroup.:main].DiplomacyText-Question-Alliance;
+[Groups.SecondGroup.:main].DiplomacyText-Question-BreakAlliance;
+[Groups.SecondGroup.:main].DiplomacyText-RequestMoney-Ask;
+[Groups.SecondGroup.:main].DiplomacyText-Ans-0-Down;
+[Groups.SecondGroup.:main].DiplomacyText-Ans-1-Down;
+[Groups.SecondGroup.:main].DiplomacyText-Ans-1-No;
+[Groups.SecondGroup.:main].DiplomacyText-Ans-1-Yes;
+[Groups.SecondGroup.:main].DiplomacyText-Ans-2-No;
+[Groups.SecondGroup.:main].DiplomacyText-Ans-2-Yes;
+[Groups.SecondGroup.:main].DiplomacyText-RequestMoney-Ans-No;
+[Groups.SecondGroup.:main].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.SecondGroup.:main].DiplomacyText-Question-Neutral-No;
+[Groups.SecondGroup.:main].DiplomacyText-Question-Neutral-Yes;
+[Groups.SecondGroup.:main].DiplomacyText-Question-Alliance-No;
+[Groups.SecondGroup.:main].DiplomacyText-Question-Alliance-Yes;
+[Groups.SecondGroup.:main].Text-End-Standart-Victory;
+[Groups.SecondGroup.:main].Text-End-Step-Victory;
+[Groups.SecondGroup.:main].Text-End-EventFlag-Victory;
+[Groups.SecondGroup.:main].Text-End-Standart-Lose;
+[Groups.SecondGroup.:main].Text-End-Step-Lose;
+[Groups.SecondGroup.:main].Text-End-EventFlag-Lose;
+[Groups.SecondGroup.Economic].DiplomacyText-Question-War;
+[Groups.SecondGroup.Economic].DiplomacyText-Question-Neutral;
+[Groups.SecondGroup.Economic].DiplomacyText-Question-Alliance;
+[Groups.SecondGroup.Economic].DiplomacyText-Question-BreakAlliance;
+[Groups.SecondGroup.Economic].DiplomacyText-RequestMoney-Ask;
+[Groups.SecondGroup.Economic].DiplomacyText-Ans-0-Down;
+[Groups.SecondGroup.Economic].DiplomacyText-Ans-1-Down;
+[Groups.SecondGroup.Economic].DiplomacyText-Ans-1-No;
+[Groups.SecondGroup.Economic].DiplomacyText-Ans-1-Yes;
+[Groups.SecondGroup.Economic].DiplomacyText-Ans-2-No;
+[Groups.SecondGroup.Economic].DiplomacyText-Ans-2-Yes;
+[Groups.SecondGroup.Economic].DiplomacyText-RequestMoney-Ans-No;
+[Groups.SecondGroup.Economic].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.SecondGroup.Economic].DiplomacyText-Question-Neutral-No;
+[Groups.SecondGroup.Economic].DiplomacyText-Question-Neutral-Yes;
+[Groups.SecondGroup.Economic].DiplomacyText-Question-Alliance-No;
+[Groups.SecondGroup.Economic].DiplomacyText-Question-Alliance-Yes;
+[Groups.SecondGroup.Combat].DiplomacyText-Question-War;
+[Groups.SecondGroup.Combat].DiplomacyText-Question-Neutral;
+[Groups.SecondGroup.Combat].DiplomacyText-Question-Alliance;
+[Groups.SecondGroup.Combat].DiplomacyText-Question-BreakAlliance;
+[Groups.SecondGroup.Combat].DiplomacyText-RequestMoney-Ask;
+[Groups.SecondGroup.Combat].DiplomacyText-Ans-0-Down;
+[Groups.SecondGroup.Combat].DiplomacyText-Ans-1-Down;
+[Groups.SecondGroup.Combat].DiplomacyText-Ans-1-No;
+[Groups.SecondGroup.Combat].DiplomacyText-Ans-1-Yes;
+[Groups.SecondGroup.Combat].DiplomacyText-Ans-2-No;
+[Groups.SecondGroup.Combat].DiplomacyText-Ans-2-Yes;
+[Groups.SecondGroup.Combat].DiplomacyText-RequestMoney-Ans-No;
+[Groups.SecondGroup.Combat].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.SecondGroup.Combat].DiplomacyText-Question-Neutral-No;
+[Groups.SecondGroup.Combat].DiplomacyText-Question-Neutral-Yes;
+[Groups.SecondGroup.Combat].DiplomacyText-Question-Alliance-No;
+[Groups.SecondGroup.Combat].DiplomacyText-Question-Alliance-Yes;
+[Groups.SeventhGroup.:main].Spy1-Name;
+[Groups.SeventhGroup.:main].Spy2-Name;
+[Groups.SeventhGroup.:main].Spy3-Name;
+[Groups.SeventhGroup.:main].Spy4-Name;
+[Groups.SeventhGroup.:main].Name;
+[Groups.SeventhGroup.:main].Description;
+[Groups.SeventhGroup.:main].DiplomacyText-Question-War;
+[Groups.SeventhGroup.:main].DiplomacyText-Question-Neutral;
+[Groups.SeventhGroup.:main].DiplomacyText-Question-Alliance;
+[Groups.SeventhGroup.:main].DiplomacyText-Question-BreakAlliance;
+[Groups.SeventhGroup.:main].DiplomacyText-RequestMoney-Ask;
+[Groups.SeventhGroup.:main].DiplomacyText-Ans-0-Down;
+[Groups.SeventhGroup.:main].DiplomacyText-Ans-1-Down;
+[Groups.SeventhGroup.:main].DiplomacyText-Ans-1-No;
+[Groups.SeventhGroup.:main].DiplomacyText-Ans-1-Yes;
+[Groups.SeventhGroup.:main].DiplomacyText-Ans-2-No;
+[Groups.SeventhGroup.:main].DiplomacyText-Ans-2-Yes;
+[Groups.SeventhGroup.:main].DiplomacyText-RequestMoney-Ans-No;
+[Groups.SeventhGroup.:main].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.SeventhGroup.:main].DiplomacyText-Question-Neutral-No;
+[Groups.SeventhGroup.:main].DiplomacyText-Question-Neutral-Yes;
+[Groups.SeventhGroup.:main].DiplomacyText-Question-Alliance-No;
+[Groups.SeventhGroup.:main].DiplomacyText-Question-Alliance-Yes;
+[Groups.SeventhGroup.:main].Text-End-Standart-Victory;
+[Groups.SeventhGroup.:main].Text-End-Step-Victory;
+[Groups.SeventhGroup.:main].Text-End-EventFlag-Victory;
+[Groups.SeventhGroup.:main].Text-End-Standart-Lose;
+[Groups.SeventhGroup.:main].Text-End-Step-Lose;
+[Groups.SeventhGroup.:main].Text-End-EventFlag-Lose;
+[Groups.SeventhGroup.Economic].DiplomacyText-Question-War;
+[Groups.SeventhGroup.Economic].DiplomacyText-Question-Neutral;
+[Groups.SeventhGroup.Economic].DiplomacyText-Question-Alliance;
+[Groups.SeventhGroup.Economic].DiplomacyText-Question-BreakAlliance;
+[Groups.SeventhGroup.Economic].DiplomacyText-RequestMoney-Ask;
+[Groups.SeventhGroup.Economic].DiplomacyText-Ans-0-Down;
+[Groups.SeventhGroup.Economic].DiplomacyText-Ans-1-Down;
+[Groups.SeventhGroup.Economic].DiplomacyText-Ans-1-No;
+[Groups.SeventhGroup.Economic].DiplomacyText-Ans-1-Yes;
+[Groups.SeventhGroup.Economic].DiplomacyText-Ans-2-No;
+[Groups.SeventhGroup.Economic].DiplomacyText-Ans-2-Yes;
+[Groups.SeventhGroup.Economic].DiplomacyText-RequestMoney-Ans-No;
+[Groups.SeventhGroup.Economic].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.SeventhGroup.Economic].DiplomacyText-Question-Neutral-No;
+[Groups.SeventhGroup.Economic].DiplomacyText-Question-Neutral-Yes;
+[Groups.SeventhGroup.Economic].DiplomacyText-Question-Alliance-No;
+[Groups.SeventhGroup.Economic].DiplomacyText-Question-Alliance-Yes;
+[Groups.SeventhGroup.Combat].DiplomacyText-Question-War;
+[Groups.SeventhGroup.Combat].DiplomacyText-Question-Neutral;
+[Groups.SeventhGroup.Combat].DiplomacyText-Question-Alliance;
+[Groups.SeventhGroup.Combat].DiplomacyText-Question-BreakAlliance;
+[Groups.SeventhGroup.Combat].DiplomacyText-RequestMoney-Ask;
+[Groups.SeventhGroup.Combat].DiplomacyText-Ans-0-Down;
+[Groups.SeventhGroup.Combat].DiplomacyText-Ans-1-Down;
+[Groups.SeventhGroup.Combat].DiplomacyText-Ans-1-No;
+[Groups.SeventhGroup.Combat].DiplomacyText-Ans-1-Yes;
+[Groups.SeventhGroup.Combat].DiplomacyText-Ans-2-No;
+[Groups.SeventhGroup.Combat].DiplomacyText-Ans-2-Yes;
+[Groups.SeventhGroup.Combat].DiplomacyText-RequestMoney-Ans-No;
+[Groups.SeventhGroup.Combat].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.SeventhGroup.Combat].DiplomacyText-Question-Neutral-No;
+[Groups.SeventhGroup.Combat].DiplomacyText-Question-Neutral-Yes;
+[Groups.SeventhGroup.Combat].DiplomacyText-Question-Alliance-No;
+[Groups.SeventhGroup.Combat].DiplomacyText-Question-Alliance-Yes;
+[Groups.SixthGroup.:main].Spy1-Name;
+[Groups.SixthGroup.:main].Spy2-Name;
+[Groups.SixthGroup.:main].Spy3-Name;
+[Groups.SixthGroup.:main].Spy4-Name;
+[Groups.SixthGroup.:main].Name;
+[Groups.SixthGroup.:main].Description;
+[Groups.SixthGroup.:main].DiplomacyText-Question-War;
+[Groups.SixthGroup.:main].DiplomacyText-Question-Neutral;
+[Groups.SixthGroup.:main].DiplomacyText-Question-Alliance;
+[Groups.SixthGroup.:main].DiplomacyText-Question-BreakAlliance;
+[Groups.SixthGroup.:main].DiplomacyText-RequestMoney-Ask;
+[Groups.SixthGroup.:main].DiplomacyText-Ans-0-Down;
+[Groups.SixthGroup.:main].DiplomacyText-Ans-1-Down;
+[Groups.SixthGroup.:main].DiplomacyText-Ans-1-No;
+[Groups.SixthGroup.:main].DiplomacyText-Ans-1-Yes;
+[Groups.SixthGroup.:main].DiplomacyText-Ans-2-No;
+[Groups.SixthGroup.:main].DiplomacyText-Ans-2-Yes;
+[Groups.SixthGroup.:main].DiplomacyText-RequestMoney-Ans-No;
+[Groups.SixthGroup.:main].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.SixthGroup.:main].DiplomacyText-Question-Neutral-No;
+[Groups.SixthGroup.:main].DiplomacyText-Question-Neutral-Yes;
+[Groups.SixthGroup.:main].DiplomacyText-Question-Alliance-No;
+[Groups.SixthGroup.:main].DiplomacyText-Question-Alliance-Yes;
+[Groups.SixthGroup.:main].Text-End-Standart-Victory;
+[Groups.SixthGroup.:main].Text-End-Step-Victory;
+[Groups.SixthGroup.:main].Text-End-EventFlag-Victory;
+[Groups.SixthGroup.:main].Text-End-Standart-Lose;
+[Groups.SixthGroup.:main].Text-End-Step-Lose;
+[Groups.SixthGroup.:main].Text-End-EventFlag-Lose;
+[Groups.SixthGroup.Economic].DiplomacyText-Question-War;
+[Groups.SixthGroup.Economic].DiplomacyText-Question-Neutral;
+[Groups.SixthGroup.Economic].DiplomacyText-Question-Alliance;
+[Groups.SixthGroup.Economic].DiplomacyText-Question-BreakAlliance;
+[Groups.SixthGroup.Economic].DiplomacyText-RequestMoney-Ask;
+[Groups.SixthGroup.Economic].DiplomacyText-Ans-0-Down;
+[Groups.SixthGroup.Economic].DiplomacyText-Ans-1-Down;
+[Groups.SixthGroup.Economic].DiplomacyText-Ans-1-No;
+[Groups.SixthGroup.Economic].DiplomacyText-Ans-1-Yes;
+[Groups.SixthGroup.Economic].DiplomacyText-Ans-2-No;
+[Groups.SixthGroup.Economic].DiplomacyText-Ans-2-Yes;
+[Groups.SixthGroup.Economic].DiplomacyText-RequestMoney-Ans-No;
+[Groups.SixthGroup.Economic].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.SixthGroup.Economic].DiplomacyText-Question-Neutral-No;
+[Groups.SixthGroup.Economic].DiplomacyText-Question-Neutral-Yes;
+[Groups.SixthGroup.Economic].DiplomacyText-Question-Alliance-No;
+[Groups.SixthGroup.Economic].DiplomacyText-Question-Alliance-Yes;
+[Groups.SixthGroup.Combat].DiplomacyText-Question-War;
+[Groups.SixthGroup.Combat].DiplomacyText-Question-Neutral;
+[Groups.SixthGroup.Combat].DiplomacyText-Question-Alliance;
+[Groups.SixthGroup.Combat].DiplomacyText-Question-BreakAlliance;
+[Groups.SixthGroup.Combat].DiplomacyText-RequestMoney-Ask;
+[Groups.SixthGroup.Combat].DiplomacyText-Ans-0-Down;
+[Groups.SixthGroup.Combat].DiplomacyText-Ans-1-Down;
+[Groups.SixthGroup.Combat].DiplomacyText-Ans-1-No;
+[Groups.SixthGroup.Combat].DiplomacyText-Ans-1-Yes;
+[Groups.SixthGroup.Combat].DiplomacyText-Ans-2-No;
+[Groups.SixthGroup.Combat].DiplomacyText-Ans-2-Yes;
+[Groups.SixthGroup.Combat].DiplomacyText-RequestMoney-Ans-No;
+[Groups.SixthGroup.Combat].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.SixthGroup.Combat].DiplomacyText-Question-Neutral-No;
+[Groups.SixthGroup.Combat].DiplomacyText-Question-Neutral-Yes;
+[Groups.SixthGroup.Combat].DiplomacyText-Question-Alliance-No;
+[Groups.SixthGroup.Combat].DiplomacyText-Question-Alliance-Yes;
+[Groups.Soldiers.:main].Spy1-Name;
+[Groups.Soldiers.:main].Spy2-Name;
+[Groups.Soldiers.:main].Spy3-Name;
+[Groups.Soldiers.:main].Spy4-Name;
+[Groups.Soldiers.:main].Name;
+[Groups.Soldiers.:main].Description;
+[Groups.Soldiers.:main].DiplomacyText-Question-War;
+[Groups.Soldiers.:main].DiplomacyText-Question-Neutral;
+[Groups.Soldiers.:main].DiplomacyText-Question-Alliance;
+[Groups.Soldiers.:main].DiplomacyText-Question-BreakAlliance;
+[Groups.Soldiers.:main].DiplomacyText-RequestMoney-Ask;
+[Groups.Soldiers.:main].DiplomacyText-Ans-0-Down;
+[Groups.Soldiers.:main].DiplomacyText-Ans-1-Down;
+[Groups.Soldiers.:main].DiplomacyText-Ans-1-No;
+[Groups.Soldiers.:main].DiplomacyText-Ans-1-Yes;
+[Groups.Soldiers.:main].DiplomacyText-Ans-2-No;
+[Groups.Soldiers.:main].DiplomacyText-Ans-2-Yes;
+[Groups.Soldiers.:main].DiplomacyText-RequestMoney-Ans-No;
+[Groups.Soldiers.:main].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.Soldiers.:main].DiplomacyText-Question-Neutral-No;
+[Groups.Soldiers.:main].DiplomacyText-Question-Neutral-Yes;
+[Groups.Soldiers.:main].DiplomacyText-Question-Alliance-No;
+[Groups.Soldiers.:main].DiplomacyText-Question-Alliance-Yes;
+[Groups.Soldiers.:main].Text-End-Step-Victory;
+[Groups.Soldiers.:main].Text-End-EventFlag-Victory;
+[Groups.Soldiers.:main].Text-End-Standart-Lose;
+[Groups.Soldiers.:main].Text-End-Step-Lose;
+[Groups.Soldiers.:main].Text-End-EventFlag-Lose;
+[Groups.Soldiers.Anarchy].Text-End-Standart-Victory;
+[Groups.Soldiers.AntiZone].Text-End-Standart-Victory;
+[Groups.Soldiers.Control].Text-End-Standart-Victory;
+[Groups.Soldiers.Control].Text-End-Standart-Lose;
+[Groups.Soldiers.Crime].Text-End-Standart-Victory;
+[Groups.Soldiers.Exploring].Text-End-Standart-Victory;
+[Groups.Soldiers.Growth].Text-End-Standart-Victory;
+[Groups.Soldiers.Growth].Text-End-Standart-Lose;
+[Groups.Soldiers.Mercenary].Text-End-Standart-Victory;
+[Groups.Soldiers.Sectarianism].Text-End-Standart-Victory;
+[Groups.Soldiers.Stability].Text-End-Standart-Victory;
+[Groups.Soldiers.Stalkers].Text-End-Standart-Victory;
+[Groups.Soldiers.Unknow].Text-End-Standart-Victory;
+[Groups.Soldiers.Unknow].Text-End-Standart-Lose;
+[Groups.Soldiers.Zombie].Text-End-Standart-Victory;
+[Groups.Stalkers.:main].Spy1-Name;
+[Groups.Stalkers.:main].Spy2-Name;
+[Groups.Stalkers.:main].Spy3-Name;
+[Groups.Stalkers.:main].Spy4-Name;
+[Groups.Stalkers.:main].Name;
+[Groups.Stalkers.:main].Description;
+[Groups.Stalkers.:main].DiplomacyText-Question-War;
+[Groups.Stalkers.:main].DiplomacyText-Question-Neutral;
+[Groups.Stalkers.:main].DiplomacyText-Question-Alliance;
+[Groups.Stalkers.:main].DiplomacyText-Question-BreakAlliance;
+[Groups.Stalkers.:main].DiplomacyText-RequestMoney-Ask;
+[Groups.Stalkers.:main].DiplomacyText-Ans-0-Down;
+[Groups.Stalkers.:main].DiplomacyText-Ans-1-Down;
+[Groups.Stalkers.:main].DiplomacyText-Ans-1-No;
+[Groups.Stalkers.:main].DiplomacyText-Ans-1-Yes;
+[Groups.Stalkers.:main].DiplomacyText-Ans-2-No;
+[Groups.Stalkers.:main].DiplomacyText-Ans-2-Yes;
+[Groups.Stalkers.:main].DiplomacyText-RequestMoney-Ans-No;
+[Groups.Stalkers.:main].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.Stalkers.:main].DiplomacyText-Question-Neutral-No;
+[Groups.Stalkers.:main].DiplomacyText-Question-Neutral-Yes;
+[Groups.Stalkers.:main].DiplomacyText-Question-Alliance-No;
+[Groups.Stalkers.:main].DiplomacyText-Question-Alliance-Yes;
+[Groups.Stalkers.:main].Text-End-Step-Victory;
+[Groups.Stalkers.:main].Text-End-EventFlag-Victory;
+[Groups.Stalkers.:main].Text-End-Standart-Lose;
+[Groups.Stalkers.:main].Text-End-Step-Lose;
+[Groups.Stalkers.:main].Text-End-EventFlag-Lose;
+[Groups.Stalkers.Anarchy].Text-End-Standart-Victory;
+[Groups.Stalkers.AntiZone].Text-End-Standart-Victory;
+[Groups.Stalkers.Control].Text-End-Standart-Victory;
+[Groups.Stalkers.Crime].Text-End-Standart-Victory;
+[Groups.Stalkers.Exploring].Text-End-Standart-Victory;
+[Groups.Stalkers.Growth].Text-End-Standart-Victory;
+[Groups.Stalkers.Growth].Text-End-Standart-Lose;
+[Groups.Stalkers.Mercenary].Text-End-Standart-Victory;
+[Groups.Stalkers.Sectarianism].Text-End-Standart-Victory;
+[Groups.Stalkers.Stability].Text-End-Standart-Victory;
+[Groups.Stalkers.Stalkers].Text-End-Standart-Victory;
+[Groups.Stalkers.Stalkers].Text-End-Standart-Lose;
+[Groups.Stalkers.Unknow].Text-End-Standart-Victory;
+[Groups.Stalkers.Unknow].Text-End-Standart-Lose;
+[Groups.Stalkers.Zombie].Text-End-Standart-Victory;
+[Groups.ThirdGroup.:main].Spy1-Name;
+[Groups.ThirdGroup.:main].Spy2-Name;
+[Groups.ThirdGroup.:main].Spy3-Name;
+[Groups.ThirdGroup.:main].Spy4-Name;
+[Groups.ThirdGroup.:main].Name;
+[Groups.ThirdGroup.:main].Description;
+[Groups.ThirdGroup.:main].DiplomacyText-Question-War;
+[Groups.ThirdGroup.:main].DiplomacyText-Question-Neutral;
+[Groups.ThirdGroup.:main].DiplomacyText-Question-Alliance;
+[Groups.ThirdGroup.:main].DiplomacyText-Question-BreakAlliance;
+[Groups.ThirdGroup.:main].DiplomacyText-RequestMoney-Ask;
+[Groups.ThirdGroup.:main].DiplomacyText-Ans-0-Down;
+[Groups.ThirdGroup.:main].DiplomacyText-Ans-1-Down;
+[Groups.ThirdGroup.:main].DiplomacyText-Ans-1-No;
+[Groups.ThirdGroup.:main].DiplomacyText-Ans-1-Yes;
+[Groups.ThirdGroup.:main].DiplomacyText-Ans-2-No;
+[Groups.ThirdGroup.:main].DiplomacyText-Ans-2-Yes;
+[Groups.ThirdGroup.:main].DiplomacyText-RequestMoney-Ans-No;
+[Groups.ThirdGroup.:main].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.ThirdGroup.:main].DiplomacyText-Question-Neutral-No;
+[Groups.ThirdGroup.:main].DiplomacyText-Question-Neutral-Yes;
+[Groups.ThirdGroup.:main].DiplomacyText-Question-Alliance-No;
+[Groups.ThirdGroup.:main].DiplomacyText-Question-Alliance-Yes;
+[Groups.ThirdGroup.:main].Text-End-Standart-Victory;
+[Groups.ThirdGroup.:main].Text-End-Step-Victory;
+[Groups.ThirdGroup.:main].Text-End-EventFlag-Victory;
+[Groups.ThirdGroup.:main].Text-End-Standart-Lose;
+[Groups.ThirdGroup.:main].Text-End-Step-Lose;
+[Groups.ThirdGroup.:main].Text-End-EventFlag-Lose;
+[Groups.ThirdGroup.Economic].DiplomacyText-Question-War;
+[Groups.ThirdGroup.Economic].DiplomacyText-Question-Neutral;
+[Groups.ThirdGroup.Economic].DiplomacyText-Question-Alliance;
+[Groups.ThirdGroup.Economic].DiplomacyText-Question-BreakAlliance;
+[Groups.ThirdGroup.Economic].DiplomacyText-RequestMoney-Ask;
+[Groups.ThirdGroup.Economic].DiplomacyText-Ans-0-Down;
+[Groups.ThirdGroup.Economic].DiplomacyText-Ans-1-Down;
+[Groups.ThirdGroup.Economic].DiplomacyText-Ans-1-No;
+[Groups.ThirdGroup.Economic].DiplomacyText-Ans-1-Yes;
+[Groups.ThirdGroup.Economic].DiplomacyText-Ans-2-No;
+[Groups.ThirdGroup.Economic].DiplomacyText-Ans-2-Yes;
+[Groups.ThirdGroup.Economic].DiplomacyText-RequestMoney-Ans-No;
+[Groups.ThirdGroup.Economic].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.ThirdGroup.Economic].DiplomacyText-Question-Neutral-No;
+[Groups.ThirdGroup.Economic].DiplomacyText-Question-Neutral-Yes;
+[Groups.ThirdGroup.Economic].DiplomacyText-Question-Alliance-No;
+[Groups.ThirdGroup.Economic].DiplomacyText-Question-Alliance-Yes;
+[Groups.ThirdGroup.Combat].DiplomacyText-Question-War;
+[Groups.ThirdGroup.Combat].DiplomacyText-Question-Neutral;
+[Groups.ThirdGroup.Combat].DiplomacyText-Question-Alliance;
+[Groups.ThirdGroup.Combat].DiplomacyText-Question-BreakAlliance;
+[Groups.ThirdGroup.Combat].DiplomacyText-RequestMoney-Ask;
+[Groups.ThirdGroup.Combat].DiplomacyText-Ans-0-Down;
+[Groups.ThirdGroup.Combat].DiplomacyText-Ans-1-Down;
+[Groups.ThirdGroup.Combat].DiplomacyText-Ans-1-No;
+[Groups.ThirdGroup.Combat].DiplomacyText-Ans-1-Yes;
+[Groups.ThirdGroup.Combat].DiplomacyText-Ans-2-No;
+[Groups.ThirdGroup.Combat].DiplomacyText-Ans-2-Yes;
+[Groups.ThirdGroup.Combat].DiplomacyText-RequestMoney-Ans-No;
+[Groups.ThirdGroup.Combat].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.ThirdGroup.Combat].DiplomacyText-Question-Neutral-No;
+[Groups.ThirdGroup.Combat].DiplomacyText-Question-Neutral-Yes;
+[Groups.ThirdGroup.Combat].DiplomacyText-Question-Alliance-No;
+[Groups.ThirdGroup.Combat].DiplomacyText-Question-Alliance-Yes;
+[Groups.zombie.:main].Spy1-Name;
+[Groups.zombie.:main].Spy2-Name;
+[Groups.zombie.:main].Spy3-Name;
+[Groups.zombie.:main].Spy4-Name;
+[Groups.zombie.:main].Name;
+[Groups.zombie.:main].Description;
+[Groups.zombie.:main].DiplomacyText-Question-War;
+[Groups.zombie.:main].DiplomacyText-Question-Neutral;
+[Groups.zombie.:main].DiplomacyText-Question-Alliance;
+[Groups.zombie.:main].DiplomacyText-Question-BreakAlliance;
+[Groups.zombie.:main].DiplomacyText-RequestMoney-Ask;
+[Groups.zombie.:main].DiplomacyText-Ans-0-Down;
+[Groups.zombie.:main].DiplomacyText-Ans-1-Down;
+[Groups.zombie.:main].DiplomacyText-Ans-1-No;
+[Groups.zombie.:main].DiplomacyText-Ans-1-Yes;
+[Groups.zombie.:main].DiplomacyText-Ans-2-No;
+[Groups.zombie.:main].DiplomacyText-Ans-2-Yes;
+[Groups.zombie.:main].DiplomacyText-RequestMoney-Ans-No;
+[Groups.zombie.:main].DiplomacyText-RequestMoney-Ans-Yes;
+[Groups.zombie.:main].DiplomacyText-Question-Neutral-No;
+[Groups.zombie.:main].DiplomacyText-Question-Neutral-Yes;
+[Groups.zombie.:main].DiplomacyText-Question-Alliance-No;
+[Groups.zombie.:main].DiplomacyText-Question-Alliance-Yes;
+[Groups.zombie.:main].Text-End-Step-Victory;
+[Groups.zombie.:main].Text-End-EventFlag-Victory;
+[Groups.zombie.:main].Text-End-Standart-Lose;
+[Groups.zombie.:main].Text-End-Step-Lose;
+[Groups.zombie.:main].Text-End-EventFlag-Lose;
+[Groups.zombie.Anarchy].Text-End-Standart-Victory;
+[Groups.zombie.AntiZone].Text-End-Standart-Victory;
+[Groups.zombie.Control].Text-End-Standart-Victory;
+[Groups.zombie.Crime].Text-End-Standart-Victory;
+[Groups.zombie.Exploring].Text-End-Standart-Victory;
+[Groups.zombie.Growth].Text-End-Standart-Victory;
+[Groups.zombie.Mercenary].Text-End-Standart-Victory;
+[Groups.zombie.Sectarianism].Text-End-Standart-Victory;
+[Groups.zombie.Stability].Text-End-Standart-Victory;
+[Groups.zombie.Stalkers].Text-End-Standart-Victory;
+[Groups.zombie.Unknow].Text-End-Standart-Victory;
+[Groups.zombie.Zombie].Text-End-Standart-Victory;
