@@ -24,7 +24,7 @@
 [Form_Options].Text.All;Все
 [Form_Options].Text.No;Нет
 [Form_OptionsInterface].Text1;Подробный вывод в игровой лог:
-[Form_OptionsInterface].Text2;Отображение отчетов о обоях поле начала хода:
+[Form_OptionsInterface].Text2;Отображение отчетов о боях поле начала хода:
 [Form_OptionsInterface].Text3;Показ игрового лога в конце хода:
 [Form_OptionsInterface].Text4;Масштабирование интерфейса:
 [Form_OptionsInterface].Text5;Авто смена фона главного меню:
@@ -102,7 +102,7 @@
 [Form_AtackEnd].FT_5;Буйство мутантов на территории
 [Form_AtackEnd].FT_7;Мутанты совершили набег на территорию игрока
 [Form_AtackEnd].FT_8;Мутанты атаковали территорию игрока
-[Form_AtackEnd].FT_11;Чистка территории от мутантов
+[Form_AtackEnd].FT_11;Очистка территории от мутантов
 [Form_AtackEnd].FT_12;Игрок пошел в разведку боем на территорию мутантов
 [Form_AtackEnd].FT_13;Игрок пошел в захват боем на территорию мутантов
 [Form_AtackEnd].FT_14;Игрок пошел в разведку боем на территорию противника
@@ -166,7 +166,7 @@
 [Form_Diplomacy].FT_3;Война
 [Form_Diplomacy].FT_4;Вечная война
 [Form_Diplomacy].FT_5;Вечный союз
-[Form_Diplomacy].FT_6;Ошибка! Не правильный статус отношений
+[Form_Diplomacy].FT_6;Ошибка! Неправильный статус отношений
 [Form_Diplomacy].LT_1;Разорвала союз с группировкой %s
 [Form_Diplomacy].LT_2;Заключила союз с группировкой %s
 [Form_Diplomacy].LT_3;Не договорилась с группировкой %s о союзе
@@ -175,7 +175,7 @@
 [Form_Diplomacy].LT_6;Объявила войну группировке %s
 [Form_Diplomacy].LT_7;Предложила перемирие %s
 [Form_Diplomacy].LT_8;Предложила союз %s
-[Form_Diplomacy].Exception_1;Не верный тип предложения: %s
+[Form_Diplomacy].Exception_1;Неверный тип предложения: %s
 [Form_Diplomacy].BTN_Send_War.Hint;Объявить войну. Боевые действия можно начинать сразу после ее объявления
 [Form_Diplomacy].BTN_Send_Alliance.Hint;Предложить союз. После предложения союза необходимо дождаться ответа, который будет получен на следующем ходу.
 [Form_Diplomacy].BTN_Send_Money.Hint;Отправить деньги. Деньги будут получены адресатом сразу после отправки.
@@ -478,7 +478,7 @@
 [Form_MultiplayerTypeSelect].Text2;Для игры через Steam, необходимо запустить клиент Steam до запуска игры
 [Form_MultiplayerTypeSelect].Text3;Если предполагается игры без Steam, но через интернет, то необходимо использовать Radmin или Hamachi, или их аналоги
 [Form_MultiplayerTypeSelect].Text4;Если Вы будете хостом (сервером)
-[Form_MultiplayerTypeSelect].Text5;Укажите порт к которому буут подключаться другие игроки:
+[Form_MultiplayerTypeSelect].Text5;Укажите порт к которому будут подключаться другие игроки:
 [Form_MultiplayerTypeSelect].Text6;Если Вы будете подключаться к другому игроку (серверу)
 [Form_MultiplayerTypeSelect].Text7;Укажите ссылку или адрес подключения:
 [Form_MultiplayerTypeSelect].PartMessage_1;Попробовать переподключиться?
@@ -520,10 +520,10 @@
 [Window_Trading].Text4;Цена за 1 шт с наценкой торговца:
 [Window_Trading].FT_1;Покупка
 [Window_Trading].FT_2;Продажа
-[Window_Trading].LT_1;Купила ресурс %s в колличестве %s за %s
-[Window_Trading].LT_2;Купила товар %s в колличестве %s за %s
-[Window_Trading].LT_3;Продала ресурс %s в колличестве %s за %s
-[Window_Trading].LT_4;Продала товар %s в колличестве %s за %s
+[Window_Trading].LT_1;Купила ресурс %s в количестве %s за %s
+[Window_Trading].LT_2;Купила товар %s в количестве %s за %s
+[Window_Trading].LT_3;Продала ресурс %s в количестве %s за %s
+[Window_Trading].LT_4;Продала товар %s в количестве %s за %s
 [Window_Trading].Message_1;Укажите число товара более 0
 [Window_Dlg].Text1;Вы уверены? Весь несохраненный прогресс будет утерян!
 [Window_Dlg].Text2;Вы уверены? Покупку нельзя будет отменить!
@@ -692,7 +692,7 @@
 [GameLog].LT_8;победой атакующей стороны
 [GameLog].LT_9;поражением атакующей стороны
 [GameLog].LT_10;%s локации %s которая принадлежит %s и бой закончился
-[GameLog].LT_11;получила помощь из вне
+[GameLog].LT_11;получила помощь извне
 [GameLog].LT_12;нашла %s %s на территории %s локации %s
 [GameLog].LT_13;продала %s в количестве %s за %s
 [GameLog].LT_14;наняла %s в количестве %d на территории %s
@@ -777,17 +777,17 @@
 [Other].Exception_2;Произошло ошибка в обработке параметров достижения № %s ! Указан неизвестный тип достижения
 [Other].Exception_3;Ошибка параметра выброса. Прописан 0 в BurstEverySteps
 [Other].Exception_4;Буйство мутантов не буйство мутантов!
-[Other].Exception_5;Ошибка! В конфигах ивентов. Событие %s имеет не поддерживаемый тип: %s!
+[Other].Exception_5;Ошибка! В конфигах ивентов. Событие %s имеет неподдерживаемый тип: %s!
 [Other].Exception_6;Не поддерживаемое событие: %s
 [Other].Exception_7;Первым в сохранении должно идти событие начала дня!
 [Other].Exception_9;Нечего тут искать %s %s
 [Other].Exception_10;Внимание!!! Обнаружена ошибка. Пожалуйста, сделайте сохранение и отправьте его разработчикам игры!
-[Other].Exception_11;Не верное дипломатическое предложение: %d
+[Other].Exception_11;Неверное дипломатическое предложение: %d
 [Other].Exception_12;Ошибка. AI. AIDiplomacyOfferFromOtherFraction. Не правильный индекс TypeDiplomacyOffer!
 [Other].Exception_13;Постройка %s уже существует!
 [Other].Exception_14;Постройка %s уже не существует!
 [Other].Exception_15;Произошло ошибка в обработке параметров достижения № %s ! Не правильно указаны параметры StartStep и LimitStep
-[Other].Exception_16;Ошибка! В конфигах ивентов. Event- %s имеет не поддерживаемый тип!
+[Other].Exception_16;Ошибка! В конфигах ивентов. Event- %s имеет неподдерживаемый тип!
 [Other].Exception_17;Кто-то читерит. По всей видимости это %s
 [Other].Exception_18;Кто-то читерит. Выяснить кто не удалось, т.к. слишком мало игроков.
 [Other].Exception_19;Кто-то читерит. Выяснить кто точно не удалось, но вероятно, что читера минимум два.
@@ -807,7 +807,7 @@
 [Other].Exception_33;В режиме включеного дебага мультиплеер не доступен!
 [Other].Exception_34;Неизвестный заместитель: %s
 [Other].Exception_35;Неизвестная постройка: %s
-[Other].Exception_36;Неизвестная идеалогия: %s
+[Other].Exception_36;Неизвестная идеология: %s
 [Other].Exception_37;Неизвестный лидер: %s
 [Other].Exception_38;Неизвестное улучшение: %s
 [Other].Exception_39;Строение %s производит неизвестный ресурс: %s
