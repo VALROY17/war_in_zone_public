@@ -1,0 +1,329 @@
+[Common_Strings].StoryEventsLevelText;Training events:
+[Advisors.Advisor-Mutants-1].Name;Unknown
+[Advisors.Advisor-Stalkers-1].Name;Unknown
+[Advisors.Advisor-Bandits-1].Name;Unknown
+[Advisors.Advisor-Soldiers-1].Name;Unknown
+[Advisors.Advisor-Monolith-1].Name;Unknown
+[Advisors.Advisor-Mercenaries-1].Name;Unknown
+[Advisors.Advisor-Zombie-1].Name;Unknown
+[Advisors.Advisor-Mutants-KolRazum].Name;Collective mind
+[Advisors.Advisor-Stalkers-Wolf].Name;Wolf
+[Advisors.Advisor-Stalkers-Shustriy].Name;Nimble
+[Advisors.Advisor-Stalkers-Fanat].Name;Fanatic
+[Advisors.Advisor-Stalkers-Bes].Name;Bes
+[Advisors.Advisor-Stalkers-Urik].Name;Yurik
+[Advisors.Advisor-Stalkers-Seriy].Name;Seriy
+[Advisors.Advisor-Stalkers-Demon].Name;"Oleg ""Fiend"" Gusarov"
+[Advisors.Advisor-Stalkers-Upir].Name;Vampire
+[Advisors.Advisor-Stalkers-Arni].Name;Arnie
+[Advisors.Advisor-Stalkers-Krot].Name;Mole
+[Advisors.Advisor-Stalkers-Lis].Name;Fox
+[Advisors.Advisor-Stalkers-Diodor].Name;Father Diodor
+[Advisors.Advisor-Stalkers-Chuchelo].Name;Scarecrow
+[Advisors.Advisor-Stalkers-Provodnik].Name;Guide
+[Advisors.Advisor-Stalkers-Doctor].Name;Doctor
+[Advisors.Advisor-Bandits-Kaban].Name;Vasya Boar
+[Advisors.Advisor-Bandits-Fraer].Name;Friar
+[Advisors.Advisor-Bandits-Kocherga].Name;Poker
+[Advisors.Advisor-Bandits-Babtist].Name;Baptist
+[Advisors.Advisor-Bandits-Chugun].Name;Cast Iron
+[Advisors.Advisor-Soldiers-Kuznecov].Name;Major Kuznetsov
+[Advisors.Advisor-Soldiers-Capitan].Name;Captain
+[Advisors.Advisor-Soldiers-Chuguykin].Name;Lieutenant Chuguykin
+[Advisors.Advisor-Soldiers-Specialist].Name;Specialist
+[Advisors.Advisor-Soldiers-Poproshayko].Name;Major Poproshaiko
+[Advisors.Advisor-Monolith-Propovednik].Name;Preacher
+[Advisors.Advisor-Monolith-Molitvennik].Name;Devotee
+[Advisors.Advisor-Monolith-Messiya].Name;Messiah
+[Advisors.Advisor-Mercenaries-Ara].Name;Ara
+[Advisors.Advisor-Mercenaries-Tancpol].Name;Vitya Dancefloor
+[Advisors.Advisor-Mercenaries-Avtobus].Name;Lyokha Bus
+[Advisors.Advisor-Mercenaries-Rzhaviy].Name;Valera Rusty
+[Advisors.Advisor-Mercenaries-Shtirlic].Name;Tolyan Stirlitz
+[Advisors.Advisor-Mercenaries-Dollar].Name;"Ivan ""One Dollar"""
+[Advisors.Advisor-Mercenaries-Plintus].Name;Timur Plintus
+[Advisors.Advisor-Zombie-Kontroler].Name;Controller
+[Achievements.Achiv-1].Name;Master of training!
+[Achievements.Achiv-1].Desc;Achievement unlocked! Complete a scenario on Master difficulty.
+[Achievements.Achiv-1].Desc-Logo;Complete the scenario on Master difficulty.
+[Achievements.Achiv-2].Name;Right on time!
+[Achievements.Achiv-2].Desc;Achievement unlocked! Complete a scenario in 3 turn on any difficulty.
+[Achievements.Achiv-2].Desc-Logo;Complete the scenario in 3 turn on any difficulty level.
+[Traders.World].Name;The outside world
+[Traders.World].NeedText;Establishing contact with the outside world isn't always possible. 50% chance. Cost per attempt:
+[Traders.YourGroup].Name;Trader of your faction
+[Traders.YourGroup].NeedText;You can always trade with your merchant. Price:
+[Traders.OtherGroup].Name;Trader of another faction
+[Traders.OtherGroup].NeedText;To trade with other factions, first select the other's territory on the map.
+[Traders.Trader1].Name;Sidorovich
+[Traders.Trader1].NeedText;You can trade with him if you control the Village on the Cordon territory. Price:
+[Tutorial.Page-1].Text;Greetings, stalker! This is the fourth part of the tutorial. In it, I'll introduce you to trade and diplomacy. To go to the next page, click the green arrows below (you can also use the arrow keys on your keyboard).
+[Tutorial.Page-2].Text;"Trade and traders are the main source of income for factions. The Zone is rich in anomalies and mutants. Anomalies generate artifacts, and mutants can be hunted for their body parts, which are highly prized by individual traders. Traders can be roughly divided into four categories. The first is the ""Outer World."" They profit from selling mutant body parts and artifacts, but they place little value on anything else. Rare types of ammunition can be purchased from them, but their prices are clearly inflated (and contact is often difficult to establish), as it is difficult to organize deliveries across the Zone's guarded border. The second category is your faction's trader, who offers a minimal markup on ammunition and a low profit on artifacts and mutant body parts. The third category consists of traders from other factions, who clearly inflate their commission, so traders are usually only traded with them in cases of extreme necessity. And the fourth category consists of individual traders (for example, Sidorovich). Each of them has their own prices and markup percentages, so the group leader needs to consider each one individually."
+[Tutorial.Page-3].Text;"You currently have a cheap artifact in your warehouse. You shouldn't get much for it, but you might still be able to find someone who might sell it profitably. Try using the ""Trade"" button (Mark #1) in your territory menu. Find the best trader for the artifact and complete the deal, but keep in mind that attempting to contact any trader costs 1 CR. Once you've done that, come back to me using the ""?"" button in the lower left corner of the screen."
+[Tutorial.Page-4].Text;"I hope you sold the artifact at the best price. Now let's look at diplomacy. It's actually quite simple. There are three possible types of relations with other factions: war, status quo (neutrality), and alliance. On the global map, territory icons are colored in diplomacy colors. Red is war, gray is neutral, green is ally, and blue is your territory. Right now, everything is outlined in red, so we need to form an alliance with the Military. Click on any of their territories, press the ""Diplomacy"" button, and send them a status quo proposal. You won't receive a response until the next turn. Then, when they agree, send them an alliance proposal. I think they'll be interested, then come back to me via the ""?"" button in the lower left corner of the screen."
+[Tutorial.Page-5].Text;"Well, an alliance with the Military will help us. Now your final objective in this scenario is to purchase the ""Val"" weapon from the Military (Mark #1). Since you're allied with them, they'll definitely agree to sell it to you. After purchasing the weapon, click ""End Turn"" to successfully complete the scenario."
+[StoryEvents.Event-EveryStep-CheckVictory].Name;Technical event
+[StoryEvents.Event-EveryStep-CheckVictory].Desc-Owner;Technical event to change the winning event flag
+[StoryEvents.Event-EveryStep-CheckVictory].Desc-NonOwner;Technical event to change the winning event flag
+ScenarioName;Part 4. Tutorial
+ScenarioDescription;This is a tutorial scenario where you will learn trade and diplomacy.
+ScenarioVictoryDescription;Victory conditions: complete the task from the tutorial.
+ScenarioLoseDescription;Defeat conditions: lose all controlled territories or fail the training mission.
+[Groups.Bandits.:main].Spy1-Name;Newbie
+[Groups.Bandits.:main].Spy2-Name;Experienced
+[Groups.Bandits.:main].Spy3-Name;Veteran
+[Groups.Bandits.:main].Spy4-Name;Master
+[Groups.Bandits.:main].Name;Bandits
+[Groups.Bandits.:main].Description;Bandits are the criminal element of the Zone. They control significant territories further south. Despite their favorable location, defending them won't be easy, as they are in conflict with virtually everyone. They lack adequate weapons and a large number of skilled soldiers within their ranks. The faction needs to reorganize, both internally and externally.
+[Groups.Bandits.:main].DiplomacyText-Question-War;Well, what now, chump, had enough? Pull your piece out! The boys are already on their way!
+[Groups.Bandits.:main].DiplomacyText-Question-Neutral;Hey, hey! Easy there, bro, yeah? Maybe we stop blasting each other, huh? Deal?
+[Groups.Bandits.:main].DiplomacyText-Question-Alliance;Hey, bro, how about we team up, yeah? Like? shoot some suckers together? that kinda thing. Huh? Deal?
+[Groups.Bandits.:main].DiplomacyText-Question-BreakAlliance;Nah, you're a real punk, straight-up loser. From here on, every man for himself!
+[Groups.Bandits.:main].DiplomacyText-RequestMoney-Ask;Hey, you hear me, pal, got any spare change? Just a bit, like this much:
+[Groups.Bandits.:main].DiplomacyText-Ans-0-Down;Who the hell are you mouthing off to? Big man, you're dead, got it?!
+[Groups.Bandits.:main].DiplomacyText-Ans-1-Down;Man, that was just pathetic as hell?
+[Groups.Bandits.:main].DiplomacyText-Ans-1-No;We find you - we'll skin you alive!
+[Groups.Bandits.:main].DiplomacyText-Ans-1-Yes;Listen up, we won't touch you. For real, I swear on my word!
+[Groups.Bandits.:main].DiplomacyText-Ans-2-No;No, no, that's total crap, you're talking nonsense!
+[Groups.Bandits.:main].DiplomacyText-Ans-2-Yes;Hang in there, buddy, everything's gonna be fine?
+[Groups.Bandits.:main].DiplomacyText-RequestMoney-Ans-No;You hit your head or what? Where would we get that kinda cash? We could use it ourselves?
+[Groups.Bandits.:main].DiplomacyText-RequestMoney-Ans-Yes;Here, bro, take the cash!
+[Groups.Bandits.:main].DiplomacyText-Question-Neutral-No;Bro? you really screwed up. You shouldn't have done that?
+[Groups.Bandits.:main].DiplomacyText-Question-Neutral-Yes;Well damn, bro, you made my day! Nice one?
+[Groups.Bandits.:main].DiplomacyText-Question-Alliance-No;Bro? you really messed up. Shouldn't have done that?
+[Groups.Bandits.:main].DiplomacyText-Question-Alliance-Yes;Oh hell yeah, bro! Now we'll be popping chumps together!
+[Groups.Bandits.:main].Text-End-Step-Victory;You survived! Victory!
+[Groups.Bandits.:main].Text-End-EventFlag-Victory;Victory by event flag!
+[Groups.Bandits.:main].Text-End-Standart-Lose;The faction has been completely destroyed, now the Zone will be divided between other factions. Defeat!
+[Groups.Bandits.:main].Text-End-Step-Lose;Time's up, you failed to gain control of the Zone. Defeat!
+[Groups.Bandits.:main].Text-End-EventFlag-Lose;Time's up, you failed to gain control of the Zone. Defeat!
+[Groups.Bandits.Anarchy].Text-End-Standart-Victory;"Victory! The faction's behavior soon became less and less like its original form. Yes, there was still crime, but it was diminishing. The elite tried to promote a theme close to that advocated by the ""Freedom"" faction, while the lower ranks were slow to embrace these new ideals, as the old methods of robbery and looting seemed simpler and more understandable. The group was splintering before our eyes. Every new day brought new instances of disobedience by individual groups. A new conflict in the Zone was about to begin..."
+[Groups.Bandits.AntiZone].Text-End-Standart-Victory;"Victory! The gang's behavior soon became less and less like its original self. The criminal element diminished significantly. The leadership increasingly pushed the idea of ??fighting the Zone. Yes, many understood that there was no one left to rob, everyone was part of the faction, and they agreed. But since the gang also included real criminals, separate groups formed to rob those same ""their own."" Localized fighting broke out all around. The Zone once again found itself on the brink of a full-scale war of all against all..."
+[Groups.Bandits.Control].Text-End-Standart-Victory;"Victory! The faction's behavior soon became less and less like its original form. Crime levels dropped significantly. A strict hierarchy was established. The name ""Penal Battalion"" best described the situation. Rumors circulated among the faction's members that the top brass had caved in to the government's influence. Many accepted this, but there were also those in power with the ""big shots"" who disagreed with this arrangement. A new, large-scale conflict was brewing, this time within the group..."
+[Groups.Bandits.Crime].Text-End-Standart-Victory;Victory! The Zone had become a criminal quasi-state. The Zone began to live by its own rules. Soon, there was no one left to rob, and the gang became mired in infighting. Instead of shooting monsters and looting artifacts, the Bandits started shooting at each other...
+[Groups.Bandits.Crime].Text-End-Standart-Lose;The last bandit got the bullet. There's no more room for the criminal underworld in the Zone... Defeat!
+[Groups.Bandits.Crime].Text-End-Step-Lose;Time's up. The boys say you're no good... Defeat!
+[Groups.Bandits.Exploring].Text-End-Standart-Victory;"Victory! The faction controls the entire territory. There's no one left to rob. Soon, there'll be nowhere left to loot either... The top brass is already actively switching to lucrative contracts from the government. Groups of Scientists can now often be seen in the Zone taking their animal activity measurements under the watchful eye of local ""brothers."" Yesterday's bandits were already out and about, doing what they once considered too dirty - searching for artifacts, extracting mutant body parts, and taking obscure measurements with equally obscure instruments. Not everyone liked this, so isolated groups emerged who organized attacks on ""their own."" They tried to actively combat them, but more and more of these ""dissenters"" appeared, as few found their place in the new reality of studying the Zone..."
+[Groups.Bandits.Growth].Text-End-Standart-Victory;Victory! The Zone had become a criminal quasi-state. The Zone began to live by its own rules. Soon, there was no one left to rob, and the gang became mired in infighting. Instead of shooting monsters and looting artifacts, the Bandits started shooting at each other...
+[Groups.Bandits.Growth].Text-End-Standart-Lose;The last bandit got the bullet. There's no more room for the criminal underworld in the Zone... Defeat!
+[Groups.Bandits.Growth].Text-End-Step-Lose;Time's up. The boys say you're no good... Defeat!
+[Groups.Bandits.Mercenary].Text-End-Standart-Victory;"Victory! The faction controls the entire territory. There's no one left to rob. Soon, there will be no more room for looting either... The leadership is already actively switching to lucrative contracts from the outside world. But the emphasis was on more criminal contracts, so Scientists, guarded by local soldiers, were practically nonexistent in the Zone, significantly limiting exploration of the Zone. The government planned to launch several military operations to retake key Zone facilities. Soon there will be a ""War in the Zone"" again..."
+[Groups.Bandits.Sectarianism].Text-End-Standart-Victory;"Victory! But despite the fact that the faction had occupied all territories, there was no such control over its forces. Confusion reigned all around. Strange speeches from the leadership, strange behavior from everyone in the northern Zone, the psionic installations soon being turned on again... All this worried those in the south. The south began arming itself and forming its own hierarchy with commanders. A new phase of the ""War in the Zone"" was about to begin..."
+[Groups.Bandits.Stability].Text-End-Standart-Victory;"Victory! The group controls the entire territory. There's no one left to plunder. Soon, there will be no more room to loot either... The leadership is actively trying to find new ways to enrich themselves. The soldiers began to be divided into subgroups. Some search for artifacts, others hunt for mutant body parts, and still others are used as mercenaries to carry out external contracts. But there were also those for whom any of the ""peaceful"" trades were unsuitable. The first conflicts and subsequent fighting soon began. The group's internal hierarchy was in turmoil, and it was unclear how it would all end..."
+[Groups.Bandits.Stalkers].Text-End-Standart-Victory;Victory! The faction soon behaved less and less like its original self. Crime had truly diminished. Pay your share, and you can go and get artifacts. No one should interfere. And if someone does, they'll find those guys. Find them quickly. But if they find patrons high up, they'll let them go with a few words of warning. So, within the faction, separate groups with their own leaders quickly formed, dragging the group toward armed internal conflict...
+[Groups.Bandits.Unknow].Text-End-Standart-Victory;Victory! The Zone had become a criminal quasi-state. The Zone began to live by its own rules. Soon, there was no one left to rob, and the gang became mired in infighting. Instead of shooting monsters and looting artifacts, the Bandits started shooting at each other...
+[Groups.Bandits.Unknow].Text-End-Standart-Lose;The last bandit got the bullet. There's no more room for the criminal underworld in the Zone... Defeat!
+[Groups.Bandits.Unknow].Text-End-Step-Lose;Time's up. The boys say you're no good... Defeat!
+[Groups.Bandits.Zombie].Text-End-Standart-Victory;Victory! Now O-Consciousness is safe. Soon, psi-radiation covered the entire Zone thanks to the increased number of emitters. Even the Cordon became dangerous. The government, although didn't release mutants from the Zone, no longer tried to retake it...
+[Groups.Mercenaries.:main].Spy1-Name;Newbie
+[Groups.Mercenaries.:main].Spy2-Name;Experienced
+[Groups.Mercenaries.:main].Spy3-Name;Veteran
+[Groups.Mercenaries.:main].Spy4-Name;Master
+[Groups.Mercenaries.:main].Name;Mercenaries
+[Groups.Mercenaries.:main].Description;The Mercenaries are a rather secretive paramilitary faction specializing in carrying out orders from both within and outside the Zone. Their location is not ideal for controlling their territory, so the leader's goal will likely be to relocate the faction's base to a more sophisticated and convenient one.
+[Groups.Mercenaries.:main].DiplomacyText-Question-War;Someone put a hit on you. Nothing personal. Just business.
+[Groups.Mercenaries.:main].DiplomacyText-Question-Neutral;This war is not beneficial to either of us. How about peace?
+[Groups.Mercenaries.:main].DiplomacyText-Question-Alliance;We would benefit from closer cooperation with you. Do you agree?
+[Groups.Mercenaries.:main].DiplomacyText-Question-BreakAlliance;We will no longer cooperate with you.
+[Groups.Mercenaries.:main].DiplomacyText-RequestMoney-Ask;We've had a couple of hitches with some contracts. We could use financial assistance in this amount:
+[Groups.Mercenaries.:main].DiplomacyText-Ans-0-Down;We will not do business with you anymore!
+[Groups.Mercenaries.:main].DiplomacyText-Ans-1-Down;It's sad, you're missing out on your benefit.
+[Groups.Mercenaries.:main].DiplomacyText-Ans-1-No;It is not profitable for us now.
+[Groups.Mercenaries.:main].DiplomacyText-Ans-1-Yes;Okay, we hope for a mutually beneficial partnership.
+[Groups.Mercenaries.:main].DiplomacyText-Ans-2-No;At the moment, it is not profitable for us.
+[Groups.Mercenaries.:main].DiplomacyText-Ans-2-Yes;Ok, it's profitable for us.
+[Groups.Mercenaries.:main].DiplomacyText-RequestMoney-Ans-No;We don't have many bonuses from contracts right now, so we can't help.
+[Groups.Mercenaries.:main].DiplomacyText-RequestMoney-Ans-Yes;Okay, we transferred it.
+[Groups.Mercenaries.:main].DiplomacyText-Question-Neutral-No;Refused? Well, okay.
+[Groups.Mercenaries.:main].DiplomacyText-Question-Neutral-Yes;Excellent, it's good that you agreed!
+[Groups.Mercenaries.:main].DiplomacyText-Question-Alliance-No;Refused? Well, okay.
+[Groups.Mercenaries.:main].DiplomacyText-Question-Alliance-Yes;Excellent, it's good that you agreed!
+[Groups.Mercenaries.:main].Text-End-Step-Victory;You survived! Victory!
+[Groups.Mercenaries.:main].Text-End-EventFlag-Victory;Victory by event flag!
+[Groups.Mercenaries.:main].Text-End-Standart-Lose;The faction was completely destroyed, now the Zone will be divided between other factions. Defeat!
+[Groups.Mercenaries.:main].Text-End-Step-Lose;Time's up, you failed to gain control of the Zone. Defeat!
+[Groups.Mercenaries.:main].Text-End-EventFlag-Lose;Time's up, you failed to gain control of the Zone. Defeat!
+[Groups.Mercenaries.Anarchy].Text-End-Standart-Victory;"Victory! Soon, the faction's leadership began openly clashing with the government. Numerous documents were actively leaked to the media for lucrative mercenary rewards. Government forces are already preparing a new plan to storm key territories. It looks like a new ""War in the Zone"" will begin very soon..."
+[Groups.Mercenaries.AntiZone].Text-End-Standart-Victory;Victory! Soon, the faction's leadership reached an agreement with the government. Part of the territory was transferred to the control of the Military. Many mercenaries decided to leave the Zone, as everything had devolved into contracts for artifact searches and mutant hunts. It seems no new major wars are expected in the Exclusion Zone...
+[Groups.Mercenaries.Control].Text-End-Standart-Victory;Victory! Soon, the faction's leadership reached an agreement with the government. Part of the territory was transferred to the control of the Military. Many mercenaries decided to leave the Zone, as everything had devolved into contracts for artifact searches and mutant hunts. It seems no new major wars are expected in the Exclusion Zone...
+[Groups.Mercenaries.Crime].Text-End-Standart-Victory;Victory! The Zone soon became a major base for mercenaries from all over the world. The criminal element grew steadily. The mutant population was poorly controlled. Minor clashes constantly erupted throughout the Exclusion Zone. This was unlikely to end well...
+[Groups.Mercenaries.Exploring].Text-End-Standart-Victory;Victory! Soon, the faction's leadership reached an agreement with the government. Part of the territory was transferred to the control of the Military. Many mercenaries decided to leave the Zone, as everything had devolved into contracts for artifact searches and mutant hunts. It seems no new major wars are expected in the Exclusion Zone...
+[Groups.Mercenaries.Growth].Text-End-Standart-Victory;"Victory! The Zone soon became a major base for mercenaries from all over the world. Soldiers were trained there for deployment to any of the planet's hot spots. The mutant population was strictly controlled. They even organized ""safaris"" for wealthy clients..."
+[Groups.Mercenaries.Growth].Text-End-Standart-Lose;Your faction has been completely destroyed. The last mercenaries have scattered to other factions that have offered them good pay. Defeat!
+[Groups.Mercenaries.Mercenary].Text-End-Standart-Victory;"Victory! The Zone soon became a major base for mercenaries from all over the world. Soldiers were trained there for deployment to any of the planet's hot spots. The mutant population was strictly controlled. They even organized ""safaris"" for wealthy clients..."
+[Groups.Mercenaries.Mercenary].Text-End-Standart-Lose;Your faction has been completely destroyed. The last mercenaries have scattered to other factions that have offered them good pay. Defeat!
+[Groups.Mercenaries.Sectarianism].Text-End-Standart-Victory;Victory! The Zone soon became a major base for mercenaries from all over the world. Soldiers were trained there for deployment to any hotspot on the planet. These excellent soldiers, capable of carrying out any dirty orders without question, completely fearless - they were greatly admired by their clients, though they were perplexed by their religious views. The government delayed solving this problem for a long time, as all forecasts for the assaults predicted high casualties. A decision was made to organize multiple infiltrations to attempt to control the group. We'll see how this plays out...
+[Groups.Mercenaries.Stability].Text-End-Standart-Victory;"Victory! The Zone soon became a major base for mercenaries from all over the world. Soldiers were trained there for deployment to any of the planet's hot spots. The mutant population was strictly controlled. They even organized ""safaris"" for wealthy clients..."
+[Groups.Mercenaries.Stalkers].Text-End-Standart-Victory;"Victory! The Zone soon became a major base for mercenaries from all over the world. Soldiers were trained there for deployment to any of the planet's hot spots. The mutant population was strictly controlled. They even organized ""safaris"" for wealthy clients..."
+[Groups.Mercenaries.Unknow].Text-End-Standart-Victory;"Victory! The Zone soon became a major base for mercenaries from all over the world. Soldiers were trained there for deployment to any of the planet's hot spots. The mutant population was strictly controlled. They even organized ""safaris"" for wealthy clients..."
+[Groups.Mercenaries.Unknow].Text-End-Standart-Lose;Your faction has been completely destroyed. The last mercenaries have scattered to other factions that have offered them good pay. Defeat!
+[Groups.Mercenaries.Zombie].Text-End-Standart-Victory;Victory! Now O-Consciousness is safe. Soon, psi-radiation covered the entire Zone thanks to the increased number of emitters. Even the Cordon became dangerous. The government, although didn't release mutants from the Zone, no longer tried to retake it...
+[Groups.Monolith.:main].Spy1-Name;Newbie
+[Groups.Monolith.:main].Spy2-Name;Experienced
+[Groups.Monolith.:main].Spy3-Name;Veteran
+[Groups.Monolith.:main].Spy4-Name;Master
+[Groups.Monolith.:main].Name;Monolith
+[Groups.Monolith.:main].Description;Monolith is a faction that serves as the O-Consciousness' shield. Its primary goal is to protect the Zone from any external interference. It is extremely hostile to all other factions. Despite its superior weaponry, it has difficulty controlling its territory, as it is located in the northern part of the Zone.
+[Groups.Monolith.:main].DiplomacyText-Question-War;Find and eradicate!
+[Groups.Monolith.:main].DiplomacyText-Question-Neutral;The Monolith has commanded us to make peace with you. Do you agree or not?
+[Groups.Monolith.:main].DiplomacyText-Question-Alliance;The Monolith told us to become your friends.
+[Groups.Monolith.:main].DiplomacyText-Question-BreakAlliance;The Monolith is unhappy with our union!
+[Groups.Monolith.:main].DiplomacyText-RequestMoney-Ask;By the will of the Great Monolith, we are sending you a request for a money transfer for our brothers in the following amount:
+[Groups.Monolith.:main].DiplomacyText-Ans-0-Down;Detect and eradicate! *The interlocutor has added you to the blacklist*
+[Groups.Monolith.:main].DiplomacyText-Ans-1-Down;Monolith would definitely not approve of this! *The interlocutor has removed you from their friends list*
+[Groups.Monolith.:main].DiplomacyText-Ans-1-No;You will know the wrath of the Monolith! *The interlocutor has left the chat*
+[Groups.Monolith.:main].DiplomacyText-Ans-1-Yes;And the day will come, and the Monolith will shine again in its glory! *The interlocutor has left the chat*
+[Groups.Monolith.:main].DiplomacyText-Ans-2-No;The Monolith definitely won't give its consent. *The interlocutor has left the chat*
+[Groups.Monolith.:main].DiplomacyText-Ans-2-Yes;Trust no one but Monolith and its brothers, no one. *The interlocutor has added you as a friend*
+[Groups.Monolith.:main].DiplomacyText-RequestMoney-Ans-No;Monolith said to show no mercy to the infidels! *The interlocutor has excluded you from the chat*
+[Groups.Monolith.:main].DiplomacyText-RequestMoney-Ans-Yes;The Monolith told me to show compassion to the blind and make you a money transfer.
+[Groups.Monolith.:main].DiplomacyText-Question-Neutral-No;Then we will find you and destroy you!
+[Groups.Monolith.:main].DiplomacyText-Question-Neutral-Yes;It couldn't be otherwise. Everything is by the will of the Great Monolith!
+[Groups.Monolith.:main].DiplomacyText-Question-Alliance-No;It is in vain that you do not follow the will of the Monolith.
+[Groups.Monolith.:main].DiplomacyText-Question-Alliance-Yes;Let our brothers rejoice and our enemies be terrified!
+[Groups.Monolith.:main].Text-End-Step-Victory;You survived! Victory!
+[Groups.Monolith.:main].Text-End-EventFlag-Victory;Victory by event flag!
+[Groups.Monolith.:main].Text-End-Standart-Lose;The faction was completely destroyed, now the Zone will be divided between other factions. Defeat!
+[Groups.Monolith.:main].Text-End-Step-Lose;Time's up, you failed to gain control of the Zone. Defeat!
+[Groups.Monolith.:main].Text-End-EventFlag-Lose;Time's up, you failed to gain control of the Zone. Defeat!
+[Groups.Monolith.Anarchy].Text-End-Standart-Victory;"Victory! O-Consciousness, with the help of the Monoliths, has firmly established control of the Zone. But this may only appear so from the outside. Due to the lack of power from the psionic installations, people in the southern Zone are gradually beginning to regain consciousness. Many are regaining their memories. In some places, clashes are brewing. Preachers are already reporting a rise in resistance. Entire units are refusing to obey orders. It appears they are planning to liberate their comrades in the north... A new ""War in the Zone"" is coming..."
+[Groups.Monolith.AntiZone].Text-End-Standart-Victory;"Victory! O-Consciousness, with the help of the Monoliths, has firmly established control of the Zone. But this may only appear so from the outside. Due to the lack of power from the psionic installations, people in the southern Zone are gradually beginning to regain consciousness. Many are regaining their memories. In some places, clashes are brewing. Preachers are already reporting a rise in resistance. Entire units are refusing to obey orders. It appears they are planning to liberate their comrades in the north... A new ""War in the Zone"" is coming..."
+[Groups.Monolith.Control].Text-End-Standart-Victory;"Victory! O-Consciousness, with the help of the Monoliths, has firmly established control of the Zone. But this may only appear so from the outside. Due to the lack of power from the psionic installations, people in the southern Zone are gradually beginning to regain consciousness. Many are regaining their memories. In some places, clashes are brewing. Preachers are already reporting a rise in resistance. Entire units are refusing to obey orders. It appears they are planning to liberate their comrades in the north... A new ""War in the Zone"" is coming..."
+[Groups.Monolith.Crime].Text-End-Standart-Victory;"Victory! O-Consciousness, with the help of the Monoliths, has firmly established control of the Zone. But this may only appear so from the outside. Due to the lack of power from the psionic installations, people in the southern Zone are gradually beginning to regain consciousness. Many are regaining their memories. In some places, clashes are brewing. Preachers are already reporting a rise in resistance. Entire units are refusing to obey orders. It appears they are planning to liberate their comrades in the north... A new ""War in the Zone"" is coming..."
+[Groups.Monolith.Exploring].Text-End-Standart-Victory;"Victory! O-Consciousness, with the help of the Monoliths, has firmly established control of the Zone. But this may only appear so from the outside. Due to the lack of power from the psionic installations, people in the southern Zone are gradually beginning to regain consciousness. Many are regaining their memories. In some places, clashes are brewing. Preachers are already reporting a rise in resistance. Entire units are refusing to obey orders. It appears they are planning to liberate their comrades in the north... A new ""War in the Zone"" is coming..."
+[Groups.Monolith.Growth].Text-End-Standart-Victory;Victory! O-Consciousness, with the help of the Monoliths, securely controls the Zone. The government no longer interferes. The Monoliths shoot anyone who tries to enter the Zone. Soon, it is completely closed to outsiders...
+[Groups.Monolith.Growth].Text-End-Standart-Lose;O-consciousness is in a panic. Its faithful dog, the Monolith faction, has been completely destroyed! A new plan to protect the Institute's VIPs is already being developed.
+[Groups.Monolith.Mercenary].Text-End-Standart-Victory;"Victory! O-Consciousness, with the help of the Monoliths, has firmly established control of the Zone. But this may only appear so from the outside. Due to the lack of power from the psionic installations, people in the southern Zone are gradually beginning to regain consciousness. Many are regaining their memories. In some places, clashes are brewing. Preachers are already reporting a rise in resistance. Entire units are refusing to obey orders. It appears they are planning to liberate their comrades in the north... A new ""War in the Zone"" is coming..."
+[Groups.Monolith.Sectarianism].Text-End-Standart-Victory;Victory! O-Consciousness, with the help of the Monoliths, securely controls the Zone. The government no longer interferes. The Monoliths shoot anyone who tries to enter the Zone. Soon, it is completely closed to outsiders...
+[Groups.Monolith.Sectarianism].Text-End-Standart-Lose;O-consciousness is in a panic. Its faithful dog, the Monolith faction, has been completely destroyed! A new plan to protect the Institute's VIPs is already being developed.
+[Groups.Monolith.Stability].Text-End-Standart-Victory;"Victory! O-Consciousness, with the help of the Monoliths, has firmly established control of the Zone. But this may only appear so from the outside. Due to the lack of power from the psionic installations, people in the southern Zone are gradually beginning to regain consciousness. Many are regaining their memories. In some places, clashes are brewing. Preachers are already reporting a rise in resistance. Entire units are refusing to obey orders. It appears they are planning to liberate their comrades in the north... A new ""War in the Zone"" is coming..."
+[Groups.Monolith.Stalkers].Text-End-Standart-Victory;"Victory! O-Consciousness, with the help of the Monoliths, has firmly established control of the Zone. But this may only appear so from the outside. Due to the lack of power from the psionic installations, people in the southern Zone are gradually beginning to regain consciousness. Many are regaining their memories. In some places, clashes are brewing. Preachers are already reporting a rise in resistance. Entire units are refusing to obey orders. It appears they are planning to liberate their comrades in the north... A new ""War in the Zone"" is coming..."
+[Groups.Monolith.Unknow].Text-End-Standart-Victory;Victory! O-Consciousness, with the help of the Monoliths, securely controls the Zone. The government no longer interferes. The Monoliths shoot anyone who tries to enter the Zone. Soon, it is completely closed to outsiders...
+[Groups.Monolith.Unknow].Text-End-Standart-Lose;O-consciousness is in a panic. Its faithful dog, the Monolith group, has been completely destroyed! A new plan to protect the Institute's VIPs is already being developed.
+[Groups.Monolith.Zombie].Text-End-Standart-Victory;Victory! Now O-Consciousness is safe. Soon, psi-radiation covered the entire Zone thanks to the increased number of emitters. Even the Cordon became dangerous. The government, although didn't release mutants from the Zone, no longer tried to retake it...
+[Groups.Soldiers.:main].Spy1-Name;Newbie
+[Groups.Soldiers.:main].Spy2-Name;Experienced
+[Groups.Soldiers.:main].Spy3-Name;Veteran
+[Groups.Soldiers.:main].Spy4-Name;Master
+[Groups.Soldiers.:main].Name;Military
+[Groups.Soldiers.:main].Description;The Military is the state force within the Zone. They consider all living things within the perimeter to be their enemies, except for the Ecologists. They have excellent equipment for fighting any stalkers, but are ill-equipped to deal with the Zone's anomalous creatures.
+[Groups.Soldiers.:main].DiplomacyText-Question-War;Your presence in the Zone is now considered illegal. If caught, you'll be shot on the spot!
+[Groups.Soldiers.:main].DiplomacyText-Question-Neutral;Command believes we need to reduce operational activity. How about a ceasefire?
+[Groups.Soldiers.:main].DiplomacyText-Question-Alliance;Command believes we need an ally in the Zone to conduct operations. Do you agree?
+[Groups.Soldiers.:main].DiplomacyText-Question-BreakAlliance;We will no longer cooperate!
+[Groups.Soldiers.:main].DiplomacyText-RequestMoney-Ask;The government requires financial assistance for a new mansion for the general... Ahem. For... For the performance of special tasks in this amount. Can you help?
+[Groups.Soldiers.:main].DiplomacyText-Ans-0-Down;We'll grind you into dust!
+[Groups.Soldiers.:main].DiplomacyText-Ans-1-Down;How else should this be understood?
+[Groups.Soldiers.:main].DiplomacyText-Ans-1-No;No, we cannot turn a blind eye to your presence in the Zone.
+[Groups.Soldiers.:main].DiplomacyText-Ans-1-Yes;Okay, we'll turn a blind eye to your presence in the Zone...
+[Groups.Soldiers.:main].DiplomacyText-Ans-2-No;No, we cannot turn a blind eye to your presence in the Zone.
+[Groups.Soldiers.:main].DiplomacyText-Ans-2-Yes;The army needs an ally in the Zone. Okay, we agree.
+[Groups.Soldiers.:main].DiplomacyText-RequestMoney-Ans-No;No, we do not provide financial assistance!
+[Groups.Soldiers.:main].DiplomacyText-RequestMoney-Ans-Yes;Yes,our management has agreed to help you with finances.
+[Groups.Soldiers.:main].DiplomacyText-Question-Neutral-No;Refused? Well... That was a mistake!
+[Groups.Soldiers.:main].DiplomacyText-Question-Neutral-Yes;Excellent, it?s good that you agreed!
+[Groups.Soldiers.:main].DiplomacyText-Question-Alliance-No;Refused? Well... That was a mistake!
+[Groups.Soldiers.:main].DiplomacyText-Question-Alliance-Yes;Excellent, it?s good that you agreed!
+[Groups.Soldiers.:main].Text-End-Step-Victory;You survived! Victory!
+[Groups.Soldiers.:main].Text-End-EventFlag-Victory;Victory by event flag!
+[Groups.Soldiers.:main].Text-End-Standart-Lose;The faction was completely destroyed, now the Zone will be divided between other factions. Defeat!
+[Groups.Soldiers.:main].Text-End-Step-Lose;Time's up, you failed to gain control of the Zone. You have been demoted. Defeat!
+[Groups.Soldiers.:main].Text-End-EventFlag-Lose;Time's up, you failed to gain control of the Zone. Defeat!
+[Groups.Soldiers.Anarchy].Text-End-Standart-Victory;Victory! The government took control of the Zone, and as soon as it reviewed the documents from the laboratories, it decided to immediately classify everything. But some of the documentation somehow ended up in the public's hands. Weapons, human experiments, the reason for the Zone's creation... Now much of this has become public knowledge...
+[Groups.Soldiers.AntiZone].Text-End-Standart-Victory;Victory! The government took control of the Zone, and as soon as they reviewed the documents from the laboratories, they decided to immediately classify everything. Weapons, human experiments, the reason for the Zone's existence... Now it will forever remain a secret... The new priority became the destruction of any manifestations of the Zone. The main target: mutants. Special teams armed with shotguns and flamethrowers were formed to exterminate any creature, even small rats. Eliminating the anomalous manifestations of the Zone is the new government order that must be carried out.
+[Groups.Soldiers.Control].Text-End-Standart-Victory;Victory! The government took control of the Zone, and as soon as they reviewed the documents from the laboratories, they decided to immediately classify everything. The weapons, the human experiments, the reason for the Zone's creation... Now it will remain a secret forever...
+[Groups.Soldiers.Control].Text-End-Standart-Lose;There are no military personnel left in the Zone... Now it's unknown how things will end without government forces. You are demoted for failure! Defeat!
+[Groups.Soldiers.Crime].Text-End-Standart-Victory;Victory! The government took control of the Zone. But corruption and neglect flourished. For some reason, there wasn't enough ammunition for raids against mutants, either because it was unusable or because the necessary supplies were out of stock. The perimeter guards weren't guarding, but rather collecting bribes to transport prohibited items, like artifacts. It's unclear what this lack of attention to the Zone will lead to, but it's unlikely to be anything good.
+[Groups.Soldiers.Exploring].Text-End-Standart-Victory;Victory! Government forces had taken control of the entire exclusion zone and were now rapidly restoring order. Ensuring the safety of research teams became a new priority. Various small units of special forces soldiers were formed for operations in particularly dangerous conditions. This was the name given to the underground complexes and laboratories, which, to the generals' surprise, turned out to be several times larger than initially anticipated. All information obtained was quickly classified, and the public knew only what the government told them about the Zone.
+[Groups.Soldiers.Growth].Text-End-Standart-Victory;Victory! The government took control of the Zone, and as soon as they reviewed the documents from the laboratories, they decided to immediately classify everything. The weapons, the human experiments, the reason for the Zone's creation... Now it will remain a secret forever...
+[Groups.Soldiers.Growth].Text-End-Standart-Lose;There are no military personnel left in the Zone... Now it's unknown how things will end without government forces. You are demoted for failure! Defeat!
+[Groups.Soldiers.Mercenary].Text-End-Standart-Victory;"Victory! Government forces had taken control of the entire exclusion zone and were now rapidly restoring order. But corruption was rampant among the commanders. Some began to profit from dubious contracts with private firms. Various small detachments of soldiers formed, collecting artifacts and capturing mutants for private ""collectors."" Service or money? This was the question everyone was asking themselves..."
+[Groups.Soldiers.Sectarianism].Text-End-Standart-Victory;Victory! The government had taken control of the Zone, but local commanders were increasingly wary of respecting the chain of command. Rotation wasn't helping. The SBU reported some element of sectarianism among the commanders, but they couldn't investigate further. The commanders skillfully covered their tracks. So much so that even the O-Consciousness mentioned in the recovered documents was never found...
+[Groups.Soldiers.Stability].Text-End-Standart-Victory;Victory! Government forces had managed to take control of the entire exclusion zone and were now rapidly restoring order. Various small units of special forces soldiers were formed for operations in particularly dangerous conditions. This was the name given to the underground complexes and laboratories, which, to the generals' surprise, turned out to be several times larger than initially anticipated. All information obtained was quickly classified, and the public knew only what the government told them about the Zone.
+[Groups.Soldiers.Stalkers].Text-End-Standart-Victory;"Victory! The government took control of the Zone. They decided not only to fight the Zone but also to secretly profit from it. Several secret squads of military stalkers were formed to search for particularly valuable artifacts, which were then sold on the black market abroad to enrich certain elites. This is how the so-called ""artifact oligarchs"" subsequently emerged..."
+[Groups.Soldiers.Unknow].Text-End-Standart-Victory;Victory! The government took control of the Zone, and as soon as they reviewed the documents from the laboratories, they decided to immediately classify everything. The weapons, the human experiments, the reason for the Zone's creation... Now it will remain a secret forever...
+[Groups.Soldiers.Unknow].Text-End-Standart-Lose;There are no military personnel left in the Zone... Now it's unknown how things will end without government forces. You are demoted for failure! Defeat!
+[Groups.Soldiers.Zombie].Text-End-Standart-Victory;Victory! Now O-Consciousness is safe. Soon, psi-radiation covered the entire Zone thanks to the increased number of emitters. Even the Cordon became dangerous. The government, although didn't release mutants from the Zone, no longer tried to retake it...
+[Groups.Stalkers.:main].Spy1-Name;Newbie
+[Groups.Stalkers.:main].Spy2-Name;Experienced
+[Groups.Stalkers.:main].Spy3-Name;Veteran
+[Groups.Stalkers.:main].Spy4-Name;Master
+[Groups.Stalkers.:main].Name;Loners
+[Groups.Stalkers.:main].Description;Loners lack a clear hierarchy and leader. Their predisposition to searching for artifacts can be considered an advantage, which can have a positive impact on their financial situation in capable hands. However, the territories under their control are scattered across locations, making them very difficult to maintain. The faction needs to prioritize its development.
+[Groups.Stalkers.:main].DiplomacyText-Question-War;We declare war on you!
+[Groups.Stalkers.:main].DiplomacyText-Question-Neutral;It's time to end this carnage, we are ready for peace, and you?
+[Groups.Stalkers.:main].DiplomacyText-Question-Alliance;We want to form an alliance with you. Do you agree?
+[Groups.Stalkers.:main].DiplomacyText-Question-BreakAlliance;We are dissolving the union!
+[Groups.Stalkers.:main].DiplomacyText-RequestMoney-Ask;We're having some financial difficulties. We could use some help. We're looking for a sum of money like this:
+[Groups.Stalkers.:main].DiplomacyText-Ans-0-Down;What a rat you are! If it's war, let's have war!
+[Groups.Stalkers.:main].DiplomacyText-Ans-1-Down;So be it.
+[Groups.Stalkers.:main].DiplomacyText-Ans-1-No;At the moment we don't see any need for this.
+[Groups.Stalkers.:main].DiplomacyText-Ans-1-Yes;Yes, we agree to a ceasefire.
+[Groups.Stalkers.:main].DiplomacyText-Ans-2-No;We're not sure we need it right now.
+[Groups.Stalkers.:main].DiplomacyText-Ans-2-Yes;Yes, we agree to cooperate.
+[Groups.Stalkers.:main].DiplomacyText-RequestMoney-Ans-No;Unfortunately, we are currently unable to provide such assistance.
+[Groups.Stalkers.:main].DiplomacyText-RequestMoney-Ans-Yes;Okay, we will transfer this amount to you.
+[Groups.Stalkers.:main].DiplomacyText-Question-Neutral-No;It's a pity that you refused!
+[Groups.Stalkers.:main].DiplomacyText-Question-Neutral-Yes;Good! We're glad you agree!
+[Groups.Stalkers.:main].DiplomacyText-Question-Alliance-No;It's a pity that you refused!
+[Groups.Stalkers.:main].DiplomacyText-Question-Alliance-Yes;Good! We're glad you agree!
+[Groups.Stalkers.:main].Text-End-Step-Victory;You survived! Victory!
+[Groups.Stalkers.:main].Text-End-EventFlag-Victory;Victory by event flag!
+[Groups.Stalkers.:main].Text-End-Standart-Lose;The faction was completely destroyed, now the Zone will be divided between other factions. Defeat!
+[Groups.Stalkers.:main].Text-End-Step-Lose;Time's up, you failed to gain control of the Zone. Defeat!
+[Groups.Stalkers.:main].Text-End-EventFlag-Lose;Time's up, you failed to gain control of the Zone. Defeat!
+[Groups.Stalkers.Anarchy].Text-End-Standart-Victory;"Victory! Soon, a unified stalker faction developed a set of rules similar to those of the Freedom group, but with some clear differences. The emphasis was on money, not the idea. After some time, ""separate"" interest groups began to form within the faction, leading to a schism at the top. Many began to talk about the imminent beginning of a new phase of the ""War in the Zone""..."
+[Groups.Stalkers.AntiZone].Text-End-Standart-Victory;Victory! Soon, a unified stalker group developed a set of rules similar to those of the Duty faction, but without the military slant. Not everyone liked this, but dissent remained silent, as the new leadership fought tooth and nail against any manifestations of the Zone, allowing for safer collection of artifacts and freedom from bandits. Mutant hunting was rigorously implemented, so much so that even blind dogs were unseen in the south. The faction's command actively collaborated with the Scientists and tried to avoid conflict with the Military, leading to a new phase of exploration of the Zone, but its secrets were extremely reluctantly revealed to the public.
+[Groups.Stalkers.Control].Text-End-Standart-Victory;"Victory! Soon, the stalkers developed a set of rules designed to establish order in the Zone. Even military ranks replaced ranks. No trace remained of the old command chaos. A clear system of subordination and command was established; newcomers to the Zone were forcibly integrated into this hierarchy, and those who disagreed were immediately handed over to the Military Abroad without further ado. Rumors circulated that members of the military leadership were at the top of the faction, but no one could prove it. Or perhaps they never had time to publish evidence because the Military took them to an unknown location. The Zone became less open but safer, especially for government organizations."
+[Groups.Stalkers.Crime].Text-End-Standart-Victory;Victory! Soon, the stalkers established a rule that there would be only one group in the Zone, with each person obligated to pay a share, and a tax was collected from traders. Those who couldn't pay were handed over to the military beyond the border. The Zone became less open to government scrutiny, and the criminal nature of the situation reduced the influx of new people into the territory protected by the stalkers.
+[Groups.Stalkers.Exploring].Text-End-Standart-Victory;Victory! Soon, a faction of freelance stalkers began actively collaborating with all the scientists within the Zone. Obtaining mutant body parts, artifacts, measuring anomalous activity... Everyone began making a living this way. A real hunt began for any documents from the underground laboratories. It wasn't enough just to obtain them... They also had to somehow get these papers to the nearest Scientists' bunker. And the fact that there were now an order of magnitude more bunkers didn't help. Bounty hunters are the new scourge of the Zone. If anyone found out that a stalker had even a single piece of paper from the lab, or, at worst, an item even remotely valuable to the scientists... They could easily be written off as dead. They wouldn't reach any bunker. People in the Zone split into two groups - those who extracted things, and those who hunted down those who had managed to obtain anything. There was gunfire everywhere. Gradually, the Zone became more and more dangerous...
+[Groups.Stalkers.Growth].Text-End-Standart-Victory;Victory! Soon, free stalkers established a rule that there would no longer be any gangs in the Zone, and those who decided to engage in banditry were handed over to the military abroad. The Zone became open to anyone who wanted to explore. And less dangerous.
+[Groups.Stalkers.Growth].Text-End-Standart-Lose;The loners have been completely wiped out, and now the Zone will be divided only between factions. There are no free stalkers left! Defeat!
+[Groups.Stalkers.Mercenary].Text-End-Standart-Victory;"Victory! Soon, the faction of freelance stalkers began to resemble ordinary mercenaries more and more. The clear hierarchy was crumbling, the group was fragmenting. ""Orders"" began to rule the current order. Murders became so frequent that the Zone became filled with ""professional killers."" But while people squabbled among themselves for the money they so dearly loved, the Zone became much more dangerous, as the monsters were paid far less attention than they should have been. Rumors were swirling that several new, previously unknown, and extremely dangerous monsters had already been sighted in the Cordon."
+[Groups.Stalkers.Sectarianism].Text-End-Standart-Victory;"Victory! Soon, the faction of free stalkers began to resemble a cult more and more. Rumors circulated among the lower ranks that the ""top brass"" were under the influence of ""certain forces from the north."" Religious phrases increasingly appeared in the commanders' speeches. Active military operations were underway against government forces to expand their influence beyond the perimeter. Brainwashing of the faction members intensified with each passing day, but some remained resilient and protected their minds. Most of them remained in the south, as they were immune to the psionic installations that had been reactivated. A new phase of the ""War in the Zone"" was brewing..."
+[Groups.Stalkers.Stability].Text-End-Standart-Victory;Victory! Soon, the faction of free stalkers, lacking external enemies, began to look for them within themselves. Intrigues, scandals, executions... This is what the faction had become. The stalkers' tasks devolved to guarding and clearing the main routes in the Zone, while outlying areas received virtually no attention. This led to an increase in the number of mutants and those who fled there to escape all this internal squabbling. The faction cooperated with the Scientists and the Military, but reluctantly, which led government forces to consider establishing a new base within the perimeter, which could lead to new clashes within the Zone's perimeter...
+[Groups.Stalkers.Stalkers].Text-End-Standart-Victory;Victory! Soon, free stalkers established a rule that there would no longer be any gangs in the Zone, and those who decided to engage in banditry were handed over to the military abroad. The Zone became open to anyone who wanted to explore. And less dangerous.
+[Groups.Stalkers.Stalkers].Text-End-Standart-Lose;The loners have been completely wiped out, and now the Zone will be divided only between factions. There are no free stalkers left! Defeat!
+[Groups.Stalkers.Unknow].Text-End-Standart-Victory;Victory! Soon, free stalkers established a rule that there would no longer be any gangs in the Zone, and those who decided to engage in banditry were handed over to the military abroad. The Zone became open to anyone who wanted to explore. And less dangerous.
+[Groups.Stalkers.Unknow].Text-End-Standart-Lose;The loners have been completely wiped out, and now the Zone will be divided only between factions. There are no free stalkers left! Defeat!
+[Groups.Stalkers.Zombie].Text-End-Standart-Victory;Victory! Now O-Consciousness is safe. Soon, psi-radiation covered the entire Zone thanks to the increased number of emitters. Even the Cordon became dangerous. The government, although didn't release mutants from the Zone, no longer tried to retake it...
+[Groups.zombie.:main].Spy1-Name;Newbie
+[Groups.zombie.:main].Spy2-Name;Experienced
+[Groups.zombie.:main].Spy3-Name;Veteran
+[Groups.zombie.:main].Spy4-Name;Master
+[Groups.zombie.:main].Name;Zombified
+[Groups.zombie.:main].Description;The faction is only available in debug mode.
+[Groups.zombie.:main].DiplomacyText-Question-War;M-m-m-m-u-u-u-r-r-d-d-d-ah!!!!!!!
+[Groups.zombie.:main].DiplomacyText-Question-Neutral;P-p-p-p-e-e-a-a-c-c-c-e!!!!!!!
+[Groups.zombie.:main].DiplomacyText-Question-Alliance;A-a-a-a-l-l-l-l-i-i-a-a-n-n-n-n-c-e!!!!!!!
+[Groups.zombie.:main].DiplomacyText-Question-BreakAlliance;M-m-m-m-u-u-u-r-r-d-d-d-ah!!!!!!!
+[Groups.zombie.:main].DiplomacyText-RequestMoney-Ask;N-n-e-e-d mo-o-o-o-ney! G-i-i-i-i-ve:
+[Groups.zombie.:main].DiplomacyText-Ans-0-Down;M-m-m-m-u-u-u-r-r-d-d-d-ah!!!!!!!
+[Groups.zombie.:main].DiplomacyText-Ans-1-Down;Œ-¬-¬-¬!!!
+[Groups.zombie.:main].DiplomacyText-Ans-1-No;M-m-m-m-u-u-u-r-r-d-d-d-ah!!!!!!!
+[Groups.zombie.:main].DiplomacyText-Ans-1-Yes;M-m-m-m-u-u-u-r-r-d-d-d-ah!!!!!!!
+[Groups.zombie.:main].DiplomacyText-Ans-2-No;Œ-¬-¬-¬!!!
+[Groups.zombie.:main].DiplomacyText-Ans-2-Yes;H-e-e-e-e-e-y-y-y-y-y!
+[Groups.zombie.:main].DiplomacyText-RequestMoney-Ans-No;N-n-o-o-o?
+[Groups.zombie.:main].DiplomacyText-RequestMoney-Ans-Yes;N-n-e-e-d mo-o-o-o-ney! G-i-i-i-i-ve:
+[Groups.zombie.:main].DiplomacyText-Question-Neutral-No;M-m-m-m-u-u-u-r-r-d-d-d-ah!!!!!!!
+[Groups.zombie.:main].DiplomacyText-Question-Neutral-Yes;G-g-g-g-g-r-r-r-r-r-e-e-e-e-e-a-a-a-a-a-t-t-t-e!!!!!!!
+[Groups.zombie.:main].DiplomacyText-Question-Alliance-No;M-m-m-m-u-u-u-r-r-d-d-d-ah!!!!!!!
+[Groups.zombie.:main].DiplomacyText-Question-Alliance-Yes;M-m-m-m-u-u-u-r-r-d-d-d-ah!!!!!!!
+[Groups.zombie.:main].Text-End-Step-Victory;You survived! Victory!
+[Groups.zombie.:main].Text-End-EventFlag-Victory;Victory! You have achieved your goal!
+[Groups.zombie.:main].Text-End-Standart-Lose;You have been eradicated. Defeat!
+[Groups.zombie.:main].Text-End-Step-Lose;Time's up, you managed to rot before you could capture the Zone. Defeat!
+[Groups.zombie.:main].Text-End-EventFlag-Lose;You didn't manage to reach your goal. Defeat!
+[Groups.zombie.Anarchy].Text-End-Standart-Victory;Victory! Now O-Consciousness is safe. Soon, psi-radiation covered the entire Zone thanks to the increased number of emitters. Even the Cordon became dangerous. The government, although didn't release mutants from the Zone, no longer tried to retake it...
+[Groups.zombie.AntiZone].Text-End-Standart-Victory;Victory! Now O-Consciousness is safe. Soon, psi-radiation covered the entire Zone thanks to the increased number of emitters. Even the Cordon became dangerous. The government, although didn't release mutants from the Zone, no longer tried to retake it...
+[Groups.zombie.Control].Text-End-Standart-Victory;Victory! Now O-Consciousness is safe. Soon, psi-radiation covered the entire Zone thanks to the increased number of emitters. Even the Cordon became dangerous. The government, although didn't release mutants from the Zone, no longer tried to retake it...
+[Groups.zombie.Crime].Text-End-Standart-Victory;Victory! Now O-Consciousness is safe. Soon, psi-radiation covered the entire Zone thanks to the increased number of emitters. Even the Cordon became dangerous. The government, although didn't release mutants from the Zone, no longer tried to retake it...
+[Groups.zombie.Exploring].Text-End-Standart-Victory;Victory! Now O-Consciousness is safe. Soon, psi-radiation covered the entire Zone thanks to the increased number of emitters. Even the Cordon became dangerous. The government, although didn't release mutants from the Zone, no longer tried to retake it...
+[Groups.zombie.Growth].Text-End-Standart-Victory;Victory! Now O-Consciousness is safe. Soon, psi-radiation covered the entire Zone thanks to the increased number of emitters. Even the Cordon became dangerous. The government, although didn't release mutants from the Zone, no longer tried to retake it...
+[Groups.zombie.Mercenary].Text-End-Standart-Victory;Victory! Now O-Consciousness is safe. Soon, psi-radiation covered the entire Zone thanks to the increased number of emitters. Even the Cordon became dangerous. The government, although didn't release mutants from the Zone, no longer tried to retake it...
+[Groups.zombie.Sectarianism].Text-End-Standart-Victory;Victory! Now O-Consciousness is safe. Soon, psi-radiation covered the entire Zone thanks to the increased number of emitters. Even the Cordon became dangerous. The government, although didn't release mutants from the Zone, no longer tried to retake it...
+[Groups.zombie.Stability].Text-End-Standart-Victory;Victory! Now O-Consciousness is safe. Soon, psi-radiation covered the entire Zone thanks to the increased number of emitters. Even the Cordon became dangerous. The government, although didn't release mutants from the Zone, no longer tried to retake it...
+[Groups.zombie.Stalkers].Text-End-Standart-Victory;Victory! Now O-Consciousness is safe. Soon, psi-radiation covered the entire Zone thanks to the increased number of emitters. Even the Cordon became dangerous. The government, although didn't release mutants from the Zone, no longer tried to retake it...
+[Groups.zombie.Unknow].Text-End-Standart-Victory;Victory! Now O-Consciousness is safe. Soon, psi-radiation covered the entire Zone thanks to the increased number of emitters. Even the Cordon became dangerous. The government, although didn't release mutants from the Zone, no longer tried to retake it...
+[Groups.zombie.Zombie].Text-End-Standart-Victory;Victory! Now O-Consciousness is safe. Soon, psi-radiation covered the entire Zone thanks to the increased number of emitters. Even the Cordon became dangerous. The government, although didn't release mutants from the Zone, no longer tried to retake it...
