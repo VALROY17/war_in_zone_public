@@ -1,0 +1,128 @@
+[Common_Strings].StoryEventsLevelText;Reinforcements for the Monolith:
+[Advisors.Advisor-Mutants-1].Name;Unknown
+[Advisors.Advisor-Stalkers-1].Name;Unknown
+[Advisors.Advisor-Bandits-1].Name;Unknown
+[Advisors.Advisor-Soldiers-1].Name;Unknown
+[Advisors.Advisor-Duty-1].Name;Unknown
+[Advisors.Advisor-Freedom-1].Name;Unknown
+[Advisors.Advisor-Monolith-1].Name;Unknown
+[Advisors.Advisor-Mercenaries-1].Name;Unknown
+[Advisors.Advisor-Scientists-1].Name;Unknown
+[Advisors.Advisor-Zombie-1].Name;Unknown
+[Advisors.Advisor-Mutants-KolRazum].Name;Collective mind
+[Advisors.Advisor-Stalkers-Wolf].Name;Wolf
+[Advisors.Advisor-Stalkers-Shustriy].Name;Nimble
+[Advisors.Advisor-Stalkers-Fanat].Name;Fanatic
+[Advisors.Advisor-Stalkers-Bes].Name;Bes
+[Advisors.Advisor-Stalkers-Urik].Name;Yurik
+[Advisors.Advisor-Stalkers-Seriy].Name;Seriy
+[Advisors.Advisor-Stalkers-Demon].Name;"Oleg ""Friend"" Gusarov"
+[Advisors.Advisor-Stalkers-Upir].Name;Vampire
+[Advisors.Advisor-Stalkers-Arni].Name;Arnie
+[Advisors.Advisor-Stalkers-Krot].Name;Mole
+[Advisors.Advisor-Stalkers-Lis].Name;Fox
+[Advisors.Advisor-Stalkers-Diodor].Name;Father Diodor
+[Advisors.Advisor-Stalkers-Chuchelo].Name;Scarecrow
+[Advisors.Advisor-Stalkers-Provodnik].Name;Guide
+[Advisors.Advisor-Stalkers-Doctor].Name;Doctor
+[Advisors.Advisor-Bandits-Kaban].Name;Vasya Boar
+[Advisors.Advisor-Bandits-Fraer].Name;Friar
+[Advisors.Advisor-Bandits-Kocherga].Name;Poker
+[Advisors.Advisor-Bandits-Babtist].Name;Baptist
+[Advisors.Advisor-Bandits-Chugun].Name;Cast Iron
+[Advisors.Advisor-Soldiers-Kuznecov].Name;Major Kuznetsov
+[Advisors.Advisor-Soldiers-Capitan].Name;Captain
+[Advisors.Advisor-Soldiers-Chuguykin].Name;Lieutenant Chuguykin
+[Advisors.Advisor-Soldiers-Specialist].Name;Specialist
+[Advisors.Advisor-Soldiers-Poproshayko].Name;Major Poproshaiko
+[Advisors.Advisor-Duty-Petrenko].Name;Colonel Petrenko
+[Advisors.Advisor-Duty-Cherep].Name;Skull
+[Advisors.Advisor-Duty-Ivancov].Name;Captain Ivantsov
+[Advisors.Advisor-Duty-Plichko].Name;Sergeant Plichko
+[Advisors.Advisor-Duty-Kizenko].Name;Sergeant Kitsenko
+[Advisors.Advisor-Duty-Prapor].Name;Warrant Officer
+[Advisors.Advisor-Duty-Lohmatiy].Name;Shaggy Sergei
+[Advisors.Advisor-Duty-Barin].Name;Barin
+[Advisors.Advisor-Duty-Pulya].Name;Bullet
+[Advisors.Advisor-Freedom-Ugrumiy].Name;Murk
+[Advisors.Advisor-Freedom-Kep].Name;Cap
+[Advisors.Advisor-Freedom-Skryaga].Name;Skinflint
+[Advisors.Advisor-Freedom-Max].Name;Max
+[Advisors.Advisor-Freedom-Povar].Name;Chef
+[Advisors.Advisor-Freedom-Pavlik].Name;Pavlik
+[Advisors.Advisor-Monolith-Propovednik].Name;Preacher
+[Advisors.Advisor-Monolith-Molitvennik].Name;Devotee
+[Advisors.Advisor-Monolith-Messiya].Name;Messiah
+[Advisors.Advisor-Mercenaries-Ara].Name;Ara
+[Advisors.Advisor-Mercenaries-Tancpol].Name;Vitya Dancefloor
+[Advisors.Advisor-Mercenaries-Avtobus].Name;Lyokha Bus
+[Advisors.Advisor-Mercenaries-Rzhaviy].Name;Valera Rusty
+[Advisors.Advisor-Mercenaries-Shtirlic].Name;Tolyan Stirlitz
+[Advisors.Advisor-Mercenaries-Dollar].Name;"Ivan ""One Dollar"""
+[Advisors.Advisor-Mercenaries-Plintus].Name;Timur Plintus
+[Advisors.Advisor-Scientists-Kruglov].Name;Professor Kruglov
+[Advisors.Advisor-Scientists-Nachalnik].Name;Head of security
+[Advisors.Advisor-Scientists-Semenov].Name;Semenov
+[Advisors.Advisor-Scientists-Zob].Name;Zob
+[Advisors.Advisor-Zombie-Kontroler].Name;Controller
+[Achievements.Achiv-1].Name;
+[Achievements.Achiv-1].Desc;
+[Achievements.Achiv-1].Desc-Logo;
+[Achievements.Achiv-2].Name;
+[Achievements.Achiv-2].Desc;
+[Achievements.Achiv-2].Desc-Logo;
+[Achievements.Achiv-3].Name;
+[Achievements.Achiv-3].Desc;
+[Achievements.Achiv-3].Desc-Logo;
+[Achievements.Achiv-4].Name;
+[Achievements.Achiv-4].Desc;
+[Achievements.Achiv-4].Desc-Logo;
+[Achievements.Achiv-5].Name;
+[Achievements.Achiv-5].Desc;
+[Achievements.Achiv-5].Desc-Logo;
+[Achievements.Achiv-6].Name;
+[Achievements.Achiv-6].Desc;
+[Achievements.Achiv-6].Desc-Logo;
+[Traders.World].Name;
+[Traders.World].NeedText;
+[Traders.YourGroup].Name;
+[Traders.YourGroup].NeedText;
+[Traders.OtherGroup].Name;
+[Traders.OtherGroup].NeedText;
+[Traders.Trader1].Name;
+[Traders.Trader1].NeedText;
+[Traders.Trader2].Name;
+[Traders.Trader2].NeedText;
+[Traders.Trader3].Name;
+[Traders.Trader3].NeedText;
+[StoryEvents.Event-Boost-1].Name;
+[StoryEvents.Event-Boost-1].Desc-Owner;
+[StoryEvents.Event-Boost-1].Desc-NonOwner;
+[StoryEvents.Event-Boost-AddUnit-1].Name;
+[StoryEvents.Event-Boost-AddUnit-1].Desc-Owner;
+[StoryEvents.Event-Boost-AddUnit-1].Desc-NonOwner;
+[StoryEvents.Event-Boost-AddUnit-2].Name;
+[StoryEvents.Event-Boost-AddUnit-2].Desc-Owner;
+[StoryEvents.Event-Boost-AddUnit-2].Desc-NonOwner;
+[StoryEvents.Event-Boost-AddUnit-3].Name;
+[StoryEvents.Event-Boost-AddUnit-3].Desc-Owner;
+[StoryEvents.Event-Boost-AddUnit-3].Desc-NonOwner;
+[StoryEvents.Event-Boost-AddUnit-4].Name;
+[StoryEvents.Event-Boost-AddUnit-4].Desc-Owner;
+[StoryEvents.Event-Boost-AddUnit-4].Desc-NonOwner;
+[StoryEvents.Event-Boost-AddUnit-5].Name;
+[StoryEvents.Event-Boost-AddUnit-5].Desc-Owner;
+[StoryEvents.Event-Boost-AddUnit-5].Desc-NonOwner;
+[StoryEvents.Event-Boost-AddUnit-6].Name;
+[StoryEvents.Event-Boost-AddUnit-6].Desc-Owner;
+[StoryEvents.Event-Boost-AddUnit-6].Desc-NonOwner;
+[StoryEvents.Event-Boost-AddUnit-7].Name;
+[StoryEvents.Event-Boost-AddUnit-7].Desc-Owner;
+[StoryEvents.Event-Boost-AddUnit-7].Desc-NonOwner;
+[StoryEvents.Event-Boost-AddUnit-8].Name;
+[StoryEvents.Event-Boost-AddUnit-8].Desc-Owner;
+[StoryEvents.Event-Boost-AddUnit-8].Desc-NonOwner;
+ScenarioName;
+ScenarioDescription;
+ScenarioVictoryDescription;
+ScenarioLoseDescription;

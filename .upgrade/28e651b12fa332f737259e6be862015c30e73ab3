@@ -1,0 +1,307 @@
+M	Launcher.exe
+M	ScenarioEditorTools.exe
+M	WAR IN ZONE.exe
+A	data/campanings/scop/1Story/locale/enUS/messages.csv
+M	data/campanings/scop/1Story/locale/ruRu/messages.csv
+A	data/campanings/scop/2Freeplay/locale/enUS/messages.csv
+M	data/campanings/scop/2Freeplay/locale/ruRu/messages.csv
+A	data/campanings/scop/3OneTerritory/locale/enUS/messages.csv
+A	data/campanings/scop/4Pripyat/locale/enUS/messages.csv
+A	data/campanings/scop/5Zaton/locale/enUS/messages.csv
+M	data/campanings/scop/5Zaton/locale/ruRU/messages.csv
+A	data/campanings/scop/6Fragmentation/locale/enUS/messages.csv
+M	data/campanings/scop/6Fragmentation/locale/ruRU/messages.csv
+A	data/campanings/scs/1story/locale/enUS/messages.csv
+A	data/campanings/scs/2Freeplay/locale/enUS/messages.csv
+A	data/campanings/scs/3OneTerritory/locale/enUS/messages.csv
+A	data/campanings/scs/4Border/locale/enUS/messages.csv
+M	data/campanings/scs/4Border/locale/ruRU/messages.csv
+A	data/campanings/scs/5Limansk/locale/enUS/messages.csv
+M	data/campanings/scs/6Fragmentation/Main.ini
+M	data/campanings/scs/6Fragmentation/groups/RenegatsKosoy.ini
+M	data/campanings/scs/6Fragmentation/leaders/Leader-Diggers.ini
+M	data/campanings/scs/6Fragmentation/leaders/Leader-Orest.ini
+M	data/campanings/scs/6Fragmentation/leaders/Leader-Soldiers1.ini
+M	data/campanings/scs/6Fragmentation/leaders/Leader-StalkersMilitary.ini
+M	data/campanings/scs/6Fragmentation/leaders/Leader-Wolf.ini
+A	data/campanings/scs/6Fragmentation/locale/enUS/messages.csv
+A	data/campanings/shoc/1story/locale/enUS/messages.csv
+A	data/campanings/shoc/2Freeplay/locale/enUS/messages.csv
+A	data/campanings/shoc/3OneTerritory/locale/enUS/messages.csv
+A	data/campanings/shoc/4Monolith/locale/enUS/messages.csv
+A	data/campanings/shoc/5Garbage/locale/enUS/messages.csv
+M	data/campanings/shoc/6Fragmentation/Leaders/Leader-Arm.ini
+M	data/campanings/shoc/6Fragmentation/Leaders/Leader-Bes.ini
+M	data/campanings/shoc/6Fragmentation/Leaders/Leader-DV.ini
+M	data/campanings/shoc/6Fragmentation/Leaders/Leader-Deserter.ini
+M	data/campanings/shoc/6Fragmentation/Leaders/Leader-Krot.ini
+M	data/campanings/shoc/6Fragmentation/Leaders/Leader-Patrol.ini
+M	data/campanings/shoc/6Fragmentation/Leaders/Leader-Seriy.ini
+A	data/campanings/shoc/6Fragmentation/locale/enUS/messages.csv
+M	data/campanings/shoc/6Fragmentation/locale/ruRU/messages.csv
+A	data/campanings/snet/1-2players/locale/enUS/messages.csv
+A	data/campanings/snet/2-3players/locale/enUS/messages.csv
+A	data/campanings/snet/3-4players/locale/enUS/messages.csv
+A	data/campanings/snet/4-4players/locale/enUS/messages.csv
+A	data/campanings/snet/5-5players/locale/enUS/messages.csv
+A	data/campanings/snet/6-6players/locale/enUS/messages.csv
+A	data/campanings/snet/7-7players/locale/enUS/messages.csv
+A	data/campanings/snet/8-8players/locale/enUS/messages.csv
+A	data/campanings/st/01Tutorial/locale/enUS/messages.csv
+A	data/campanings/st/02Tutorial/locale/enUS/messages.csv
+A	data/campanings/st/03Tutorial/locale/enUS/messages.csv
+A	data/campanings/st/04Tutorial/locale/enUS/messages.csv
+A	data/campanings/st/05Tutorial/locale/enUS/messages.csv
+A	data/campanings/st/06Tutorial/locale/enUS/messages.csv
+A	data/campanings/st/07Tutorial/locale/enUS/messages.csv
+A	data/campanings/st/08Tutorial/locale/enUS/messages.csv
+M	data/default/Rules.ini
+R100	data/locale/ruRu/gfx/Camp_CS-Active.png	data/gfx/Camp_CS-Active.png
+R100	data/locale/ruRu/gfx/Camp_CS.png	data/gfx/Camp_CS.png
+R100	data/locale/ruRu/gfx/Camp_MODS-Active.png	data/gfx/Camp_MODS-Active.png
+R100	data/locale/ruRu/gfx/Camp_MODS.png	data/gfx/Camp_MODS.png
+R100	data/locale/ruRu/gfx/Camp_SAC-Active.png	data/gfx/Camp_SAC-Active.png
+R100	data/locale/ruRu/gfx/Camp_SAC.png	data/gfx/Camp_SAC.png
+R100	data/locale/ruRu/gfx/Camp_SCOP-Active.png	data/gfx/Camp_SCOP-Active.png
+R100	data/locale/ruRu/gfx/Camp_SCOP.png	data/gfx/Camp_SCOP.png
+R100	data/locale/ruRu/gfx/Camp_SHOC-Active.png	data/gfx/Camp_SHOC-Active.png
+R100	data/locale/ruRu/gfx/Camp_SHOC.png	data/gfx/Camp_SHOC.png
+R100	data/locale/ruRu/gfx/Camp_SNET-Active.png	data/gfx/Camp_SNET-Active.png
+R100	data/locale/ruRu/gfx/Camp_SNET.png	data/gfx/Camp_SNET.png
+R100	data/locale/ruRu/gfx/Camp_ST-Active.png	data/gfx/Camp_ST-Active.png
+R100	data/locale/ruRu/gfx/Camp_ST.png	data/gfx/Camp_ST.png
+R100	data/locale/ruRu/gfx/Scenario_Logo_Fragmentation-Active.png	data/gfx/Scenario_Logo_Fragmentation-Active.png
+R100	data/locale/ruRu/gfx/Scenario_Logo_Fragmentation.png	data/gfx/Scenario_Logo_Fragmentation.png
+R100	data/locale/ruRu/gfx/Scenario_Logo_LatsFrontier-Active.png	data/gfx/Scenario_Logo_LatsFrontier-Active.png
+R100	data/locale/ruRu/gfx/Scenario_Logo_LatsFrontier.png	data/gfx/Scenario_Logo_LatsFrontier.png
+R100	data/gfx/icons/map/Soldiers-Anarchyl-Neutral.png	data/gfx/icons/map/Soldiers-Anarchy-Neutral.png
+R100	data/gfx/icons/map/Soldiers-AntiZonel-Neutral.png	data/gfx/icons/map/Soldiers-AntiZone-Neutral.png
+R100	data/gfx/icons/map/Soldiers-Crimel-Neutral.png	data/gfx/icons/map/Soldiers-Crime-Neutral.png
+R100	data/gfx/icons/map/Soldiers-Exploringl-Neutral.png	data/gfx/icons/map/Soldiers-Exploring-Neutral.png
+R100	data/gfx/icons/map/Soldiers-Mercenaryl-Neutral.png	data/gfx/icons/map/Soldiers-Mercenary-Neutral.png
+R100	data/gfx/icons/map/Soldiers-Sectarianisml-Neutral.png	data/gfx/icons/map/Soldiers-Sectarianism-Neutral.png
+R100	data/gfx/icons/map/Soldiers-Stabilityl-Neutral.png	data/gfx/icons/map/Soldiers-Stability-Neutral.png
+R100	data/gfx/icons/map/Soldiers-Stalkersl-Neutral.png	data/gfx/icons/map/Soldiers-Stalkers-Neutral.png
+A	data/locale/enUS/messages.csv
+M	data/locale/ruRu/messages.csv
+R100	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-01.wav	data/sfx/voices/Bandits/Bandits-main-01.wav
+R100	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-02.wav	data/sfx/voices/Bandits/Bandits-main-02.wav
+R100	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-03.wav	data/sfx/voices/Bandits/Bandits-main-03.wav
+R100	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-04.wav	data/sfx/voices/Bandits/Bandits-main-04.wav
+R100	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-05.wav	data/sfx/voices/Bandits/Bandits-main-05.wav
+R100	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-06.wav	data/sfx/voices/Bandits/Bandits-main-06.wav
+R100	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-07.wav	data/sfx/voices/Bandits/Bandits-main-07.wav
+R100	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-08.wav	data/sfx/voices/Bandits/Bandits-main-08.wav
+R100	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-09.wav	data/sfx/voices/Bandits/Bandits-main-09.wav
+R100	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-10.wav	data/sfx/voices/Bandits/Bandits-main-10.wav
+R100	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-11.wav	data/sfx/voices/Bandits/Bandits-main-11.wav
+R100	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-12.wav	data/sfx/voices/Bandits/Bandits-main-12.wav
+R100	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-13.wav	data/sfx/voices/Bandits/Bandits-main-13.wav
+R100	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-14.wav	data/sfx/voices/Bandits/Bandits-main-14.wav
+R100	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-15.wav	data/sfx/voices/Bandits/Bandits-main-15.wav
+R100	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-16.wav	data/sfx/voices/Bandits/Bandits-main-16.wav
+R100	data/locale/ruRu/sfx/voices/Bandits/Bandits-main-17.wav	data/sfx/voices/Bandits/Bandits-main-17.wav
+R100	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-01.wav	data/sfx/voices/ClearSky/ClearSky-main-01.wav
+R100	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-02.wav	data/sfx/voices/ClearSky/ClearSky-main-02.wav
+R100	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-03.wav	data/sfx/voices/ClearSky/ClearSky-main-03.wav
+R100	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-04.wav	data/sfx/voices/ClearSky/ClearSky-main-04.wav
+R100	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-05.wav	data/sfx/voices/ClearSky/ClearSky-main-05.wav
+R100	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-06.wav	data/sfx/voices/ClearSky/ClearSky-main-06.wav
+R100	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-07.wav	data/sfx/voices/ClearSky/ClearSky-main-07.wav
+R100	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-08.wav	data/sfx/voices/ClearSky/ClearSky-main-08.wav
+R100	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-09.wav	data/sfx/voices/ClearSky/ClearSky-main-09.wav
+R100	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-10.wav	data/sfx/voices/ClearSky/ClearSky-main-10.wav
+R100	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-11.wav	data/sfx/voices/ClearSky/ClearSky-main-11.wav
+R100	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-12.wav	data/sfx/voices/ClearSky/ClearSky-main-12.wav
+R100	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-13.wav	data/sfx/voices/ClearSky/ClearSky-main-13.wav
+R100	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-14.wav	data/sfx/voices/ClearSky/ClearSky-main-14.wav
+R100	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-15.wav	data/sfx/voices/ClearSky/ClearSky-main-15.wav
+R100	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-16.wav	data/sfx/voices/ClearSky/ClearSky-main-16.wav
+R100	data/locale/ruRu/sfx/voices/ClearSky/ClearSky-main-17.wav	data/sfx/voices/ClearSky/ClearSky-main-17.wav
+R100	data/locale/ruRu/sfx/voices/Duty/Duty-main-01.wav	data/sfx/voices/Duty/Duty-main-01.wav
+R100	data/locale/ruRu/sfx/voices/Duty/Duty-main-02.wav	data/sfx/voices/Duty/Duty-main-02.wav
+R100	data/locale/ruRu/sfx/voices/Duty/Duty-main-03.wav	data/sfx/voices/Duty/Duty-main-03.wav
+R100	data/locale/ruRu/sfx/voices/Duty/Duty-main-04.wav	data/sfx/voices/Duty/Duty-main-04.wav
+R100	data/locale/ruRu/sfx/voices/Duty/Duty-main-05.wav	data/sfx/voices/Duty/Duty-main-05.wav
+R100	data/locale/ruRu/sfx/voices/Duty/Duty-main-06.wav	data/sfx/voices/Duty/Duty-main-06.wav
+R100	data/locale/ruRu/sfx/voices/Duty/Duty-main-07.wav	data/sfx/voices/Duty/Duty-main-07.wav
+R100	data/locale/ruRu/sfx/voices/Duty/Duty-main-08.wav	data/sfx/voices/Duty/Duty-main-08.wav
+R100	data/locale/ruRu/sfx/voices/Duty/Duty-main-09.wav	data/sfx/voices/Duty/Duty-main-09.wav
+R100	data/locale/ruRu/sfx/voices/Duty/Duty-main-10.wav	data/sfx/voices/Duty/Duty-main-10.wav
+R100	data/locale/ruRu/sfx/voices/Duty/Duty-main-11.wav	data/sfx/voices/Duty/Duty-main-11.wav
+R100	data/locale/ruRu/sfx/voices/Duty/Duty-main-12.wav	data/sfx/voices/Duty/Duty-main-12.wav
+R100	data/locale/ruRu/sfx/voices/Duty/Duty-main-13.wav	data/sfx/voices/Duty/Duty-main-13.wav
+R100	data/locale/ruRu/sfx/voices/Duty/Duty-main-14.wav	data/sfx/voices/Duty/Duty-main-14.wav
+R100	data/locale/ruRu/sfx/voices/Duty/Duty-main-15.wav	data/sfx/voices/Duty/Duty-main-15.wav
+R100	data/locale/ruRu/sfx/voices/Duty/Duty-main-16.wav	data/sfx/voices/Duty/Duty-main-16.wav
+R100	data/locale/ruRu/sfx/voices/Duty/Duty-main-17.wav	data/sfx/voices/Duty/Duty-main-17.wav
+R100	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-01.wav	data/sfx/voices/Freedom/Freedom-main-01.wav
+R100	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-02.wav	data/sfx/voices/Freedom/Freedom-main-02.wav
+R100	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-03.wav	data/sfx/voices/Freedom/Freedom-main-03.wav
+R100	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-04.wav	data/sfx/voices/Freedom/Freedom-main-04.wav
+R100	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-05.wav	data/sfx/voices/Freedom/Freedom-main-05.wav
+R100	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-06.wav	data/sfx/voices/Freedom/Freedom-main-06.wav
+R100	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-07.wav	data/sfx/voices/Freedom/Freedom-main-07.wav
+R100	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-08.wav	data/sfx/voices/Freedom/Freedom-main-08.wav
+R100	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-09.wav	data/sfx/voices/Freedom/Freedom-main-09.wav
+R100	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-10.wav	data/sfx/voices/Freedom/Freedom-main-10.wav
+R100	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-11.wav	data/sfx/voices/Freedom/Freedom-main-11.wav
+R100	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-12.wav	data/sfx/voices/Freedom/Freedom-main-12.wav
+R100	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-13.wav	data/sfx/voices/Freedom/Freedom-main-13.wav
+R100	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-14.wav	data/sfx/voices/Freedom/Freedom-main-14.wav
+R100	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-15.wav	data/sfx/voices/Freedom/Freedom-main-15.wav
+R100	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-16.wav	data/sfx/voices/Freedom/Freedom-main-16.wav
+R100	data/locale/ruRu/sfx/voices/Freedom/Freedom-main-17.wav	data/sfx/voices/Freedom/Freedom-main-17.wav
+R100	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-01.wav	data/sfx/voices/FreedomCS/Freedom-main-01.wav
+R100	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-02.wav	data/sfx/voices/FreedomCS/Freedom-main-02.wav
+R100	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-03.wav	data/sfx/voices/FreedomCS/Freedom-main-03.wav
+R100	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-04.wav	data/sfx/voices/FreedomCS/Freedom-main-04.wav
+R100	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-05.wav	data/sfx/voices/FreedomCS/Freedom-main-05.wav
+R100	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-06.wav	data/sfx/voices/FreedomCS/Freedom-main-06.wav
+R100	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-07.wav	data/sfx/voices/FreedomCS/Freedom-main-07.wav
+R100	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-08.wav	data/sfx/voices/FreedomCS/Freedom-main-08.wav
+R100	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-09.wav	data/sfx/voices/FreedomCS/Freedom-main-09.wav
+R100	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-10.wav	data/sfx/voices/FreedomCS/Freedom-main-10.wav
+R100	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-11.wav	data/sfx/voices/FreedomCS/Freedom-main-11.wav
+R100	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-12.wav	data/sfx/voices/FreedomCS/Freedom-main-12.wav
+R100	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-13.wav	data/sfx/voices/FreedomCS/Freedom-main-13.wav
+R100	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-14.wav	data/sfx/voices/FreedomCS/Freedom-main-14.wav
+R100	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-15.wav	data/sfx/voices/FreedomCS/Freedom-main-15.wav
+R100	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-16.wav	data/sfx/voices/FreedomCS/Freedom-main-16.wav
+R100	data/locale/ruRu/sfx/voices/FreedomCS/Freedom-main-17.wav	data/sfx/voices/FreedomCS/Freedom-main-17.wav
+R100	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-01.wav	data/sfx/voices/Mercenaries/Mercenaries-main-01.wav
+R100	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-02.wav	data/sfx/voices/Mercenaries/Mercenaries-main-02.wav
+R100	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-03.wav	data/sfx/voices/Mercenaries/Mercenaries-main-03.wav
+R100	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-04.wav	data/sfx/voices/Mercenaries/Mercenaries-main-04.wav
+R100	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-05.wav	data/sfx/voices/Mercenaries/Mercenaries-main-05.wav
+R100	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-06.wav	data/sfx/voices/Mercenaries/Mercenaries-main-06.wav
+R100	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-07.wav	data/sfx/voices/Mercenaries/Mercenaries-main-07.wav
+R100	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-08.wav	data/sfx/voices/Mercenaries/Mercenaries-main-08.wav
+R100	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-09.wav	data/sfx/voices/Mercenaries/Mercenaries-main-09.wav
+R100	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-10.wav	data/sfx/voices/Mercenaries/Mercenaries-main-10.wav
+R100	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-11.wav	data/sfx/voices/Mercenaries/Mercenaries-main-11.wav
+R100	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-12.wav	data/sfx/voices/Mercenaries/Mercenaries-main-12.wav
+R100	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-13.wav	data/sfx/voices/Mercenaries/Mercenaries-main-13.wav
+R100	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-14.wav	data/sfx/voices/Mercenaries/Mercenaries-main-14.wav
+R100	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-15.wav	data/sfx/voices/Mercenaries/Mercenaries-main-15.wav
+R100	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-16.wav	data/sfx/voices/Mercenaries/Mercenaries-main-16.wav
+R100	data/locale/ruRu/sfx/voices/Mercenaries/Mercenaries-main-17.wav	data/sfx/voices/Mercenaries/Mercenaries-main-17.wav
+R100	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-01.wav	data/sfx/voices/Monolith/Monolith-main-01.wav
+R100	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-02.wav	data/sfx/voices/Monolith/Monolith-main-02.wav
+R100	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-03.wav	data/sfx/voices/Monolith/Monolith-main-03.wav
+R100	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-04.wav	data/sfx/voices/Monolith/Monolith-main-04.wav
+R100	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-05.wav	data/sfx/voices/Monolith/Monolith-main-05.wav
+R100	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-06.wav	data/sfx/voices/Monolith/Monolith-main-06.wav
+R100	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-07.wav	data/sfx/voices/Monolith/Monolith-main-07.wav
+R100	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-08.wav	data/sfx/voices/Monolith/Monolith-main-08.wav
+R100	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-09.wav	data/sfx/voices/Monolith/Monolith-main-09.wav
+R100	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-10.wav	data/sfx/voices/Monolith/Monolith-main-10.wav
+R100	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-11.wav	data/sfx/voices/Monolith/Monolith-main-11.wav
+R100	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-12.wav	data/sfx/voices/Monolith/Monolith-main-12.wav
+R100	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-13.wav	data/sfx/voices/Monolith/Monolith-main-13.wav
+R100	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-14.wav	data/sfx/voices/Monolith/Monolith-main-14.wav
+R100	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-15.wav	data/sfx/voices/Monolith/Monolith-main-15.wav
+R100	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-16.wav	data/sfx/voices/Monolith/Monolith-main-16.wav
+R100	data/locale/ruRu/sfx/voices/Monolith/Monolith-main-17.wav	data/sfx/voices/Monolith/Monolith-main-17.wav
+R100	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-01.wav	data/sfx/voices/Renegats/Renegats-main-01.wav
+R100	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-02.wav	data/sfx/voices/Renegats/Renegats-main-02.wav
+R100	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-03.wav	data/sfx/voices/Renegats/Renegats-main-03.wav
+R100	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-04.wav	data/sfx/voices/Renegats/Renegats-main-04.wav
+R100	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-05.wav	data/sfx/voices/Renegats/Renegats-main-05.wav
+R100	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-06.wav	data/sfx/voices/Renegats/Renegats-main-06.wav
+R100	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-07.wav	data/sfx/voices/Renegats/Renegats-main-07.wav
+R100	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-08.wav	data/sfx/voices/Renegats/Renegats-main-08.wav
+R100	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-09.wav	data/sfx/voices/Renegats/Renegats-main-09.wav
+R100	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-10.wav	data/sfx/voices/Renegats/Renegats-main-10.wav
+R100	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-11.wav	data/sfx/voices/Renegats/Renegats-main-11.wav
+R100	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-12.wav	data/sfx/voices/Renegats/Renegats-main-12.wav
+R100	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-13.wav	data/sfx/voices/Renegats/Renegats-main-13.wav
+R100	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-14.wav	data/sfx/voices/Renegats/Renegats-main-14.wav
+R100	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-15.wav	data/sfx/voices/Renegats/Renegats-main-15.wav
+R100	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-16.wav	data/sfx/voices/Renegats/Renegats-main-16.wav
+R100	data/locale/ruRu/sfx/voices/Renegats/Renegats-main-17.wav	data/sfx/voices/Renegats/Renegats-main-17.wav
+R100	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-01.wav	data/sfx/voices/Scientists/Scientists-main-01.wav
+R100	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-02.wav	data/sfx/voices/Scientists/Scientists-main-02.wav
+R100	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-03.wav	data/sfx/voices/Scientists/Scientists-main-03.wav
+R100	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-04.wav	data/sfx/voices/Scientists/Scientists-main-04.wav
+R100	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-05.wav	data/sfx/voices/Scientists/Scientists-main-05.wav
+R100	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-06.wav	data/sfx/voices/Scientists/Scientists-main-06.wav
+R100	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-07.wav	data/sfx/voices/Scientists/Scientists-main-07.wav
+R100	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-08.wav	data/sfx/voices/Scientists/Scientists-main-08.wav
+R100	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-09.wav	data/sfx/voices/Scientists/Scientists-main-09.wav
+R100	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-10.wav	data/sfx/voices/Scientists/Scientists-main-10.wav
+R100	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-11.wav	data/sfx/voices/Scientists/Scientists-main-11.wav
+R100	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-12.wav	data/sfx/voices/Scientists/Scientists-main-12.wav
+R100	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-13.wav	data/sfx/voices/Scientists/Scientists-main-13.wav
+R100	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-14.wav	data/sfx/voices/Scientists/Scientists-main-14.wav
+R100	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-15.wav	data/sfx/voices/Scientists/Scientists-main-15.wav
+R100	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-16.wav	data/sfx/voices/Scientists/Scientists-main-16.wav
+R100	data/locale/ruRu/sfx/voices/Scientists/Scientists-main-17.wav	data/sfx/voices/Scientists/Scientists-main-17.wav
+R100	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-01.wav	data/sfx/voices/Soldiers/Soldiers-main-01.wav
+R100	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-02.wav	data/sfx/voices/Soldiers/Soldiers-main-02.wav
+R100	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-03.wav	data/sfx/voices/Soldiers/Soldiers-main-03.wav
+R100	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-04.wav	data/sfx/voices/Soldiers/Soldiers-main-04.wav
+R100	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-05.wav	data/sfx/voices/Soldiers/Soldiers-main-05.wav
+R100	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-06.wav	data/sfx/voices/Soldiers/Soldiers-main-06.wav
+R100	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-07.wav	data/sfx/voices/Soldiers/Soldiers-main-07.wav
+R100	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-08.wav	data/sfx/voices/Soldiers/Soldiers-main-08.wav
+R100	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-09.wav	data/sfx/voices/Soldiers/Soldiers-main-09.wav
+R100	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-10.wav	data/sfx/voices/Soldiers/Soldiers-main-10.wav
+R100	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-11.wav	data/sfx/voices/Soldiers/Soldiers-main-11.wav
+R100	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-12.wav	data/sfx/voices/Soldiers/Soldiers-main-12.wav
+R100	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-13.wav	data/sfx/voices/Soldiers/Soldiers-main-13.wav
+R100	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-14.wav	data/sfx/voices/Soldiers/Soldiers-main-14.wav
+R100	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-15.wav	data/sfx/voices/Soldiers/Soldiers-main-15.wav
+R100	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-16.wav	data/sfx/voices/Soldiers/Soldiers-main-16.wav
+R100	data/locale/ruRu/sfx/voices/Soldiers/Soldiers-main-17.wav	data/sfx/voices/Soldiers/Soldiers-main-17.wav
+R100	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-01.wav	data/sfx/voices/SoldiersCOP/Soldiers-main-01.wav
+R100	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-02.wav	data/sfx/voices/SoldiersCOP/Soldiers-main-02.wav
+R100	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-03.wav	data/sfx/voices/SoldiersCOP/Soldiers-main-03.wav
+R100	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-04.wav	data/sfx/voices/SoldiersCOP/Soldiers-main-04.wav
+R100	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-05.wav	data/sfx/voices/SoldiersCOP/Soldiers-main-05.wav
+R100	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-06.wav	data/sfx/voices/SoldiersCOP/Soldiers-main-06.wav
+R100	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-07.wav	data/sfx/voices/SoldiersCOP/Soldiers-main-07.wav
+R100	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-08.wav	data/sfx/voices/SoldiersCOP/Soldiers-main-08.wav
+R100	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-09.wav	data/sfx/voices/SoldiersCOP/Soldiers-main-09.wav
+R100	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-10.wav	data/sfx/voices/SoldiersCOP/Soldiers-main-10.wav
+R100	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-11.wav	data/sfx/voices/SoldiersCOP/Soldiers-main-11.wav
+R100	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-12.wav	data/sfx/voices/SoldiersCOP/Soldiers-main-12.wav
+R100	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-13.wav	data/sfx/voices/SoldiersCOP/Soldiers-main-13.wav
+R100	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-14.wav	data/sfx/voices/SoldiersCOP/Soldiers-main-14.wav
+R100	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-15.wav	data/sfx/voices/SoldiersCOP/Soldiers-main-15.wav
+R100	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-16.wav	data/sfx/voices/SoldiersCOP/Soldiers-main-16.wav
+R100	data/locale/ruRu/sfx/voices/SoldiersCOP/Soldiers-main-17.wav	data/sfx/voices/SoldiersCOP/Soldiers-main-17.wav
+R100	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-01.wav	data/sfx/voices/Stalkers/Stalkers-main-01.wav
+R100	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-02.wav	data/sfx/voices/Stalkers/Stalkers-main-02.wav
+R100	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-03.wav	data/sfx/voices/Stalkers/Stalkers-main-03.wav
+R100	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-04.wav	data/sfx/voices/Stalkers/Stalkers-main-04.wav
+R100	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-05.wav	data/sfx/voices/Stalkers/Stalkers-main-05.wav
+R100	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-06.wav	data/sfx/voices/Stalkers/Stalkers-main-06.wav
+R100	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-07.wav	data/sfx/voices/Stalkers/Stalkers-main-07.wav
+R100	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-08.wav	data/sfx/voices/Stalkers/Stalkers-main-08.wav
+R100	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-09.wav	data/sfx/voices/Stalkers/Stalkers-main-09.wav
+R100	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-10.wav	data/sfx/voices/Stalkers/Stalkers-main-10.wav
+R100	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-11.wav	data/sfx/voices/Stalkers/Stalkers-main-11.wav
+R100	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-12.wav	data/sfx/voices/Stalkers/Stalkers-main-12.wav
+R100	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-13.wav	data/sfx/voices/Stalkers/Stalkers-main-13.wav
+R100	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-14.wav	data/sfx/voices/Stalkers/Stalkers-main-14.wav
+R100	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-15.wav	data/sfx/voices/Stalkers/Stalkers-main-15.wav
+R100	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-16.wav	data/sfx/voices/Stalkers/Stalkers-main-16.wav
+R100	data/locale/ruRu/sfx/voices/Stalkers/Stalkers-main-17.wav	data/sfx/voices/Stalkers/Stalkers-main-17.wav
+R100	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-01.wav	data/sfx/voices/StalkersCS/Stalkers-main-01.wav
+R100	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-02.wav	data/sfx/voices/StalkersCS/Stalkers-main-02.wav
+R100	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-03.wav	data/sfx/voices/StalkersCS/Stalkers-main-03.wav
+R100	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-04.wav	data/sfx/voices/StalkersCS/Stalkers-main-04.wav
+R100	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-05.wav	data/sfx/voices/StalkersCS/Stalkers-main-05.wav
+R100	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-06.wav	data/sfx/voices/StalkersCS/Stalkers-main-06.wav
+R100	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-07.wav	data/sfx/voices/StalkersCS/Stalkers-main-07.wav
+R100	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-08.wav	data/sfx/voices/StalkersCS/Stalkers-main-08.wav
+R100	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-09.wav	data/sfx/voices/StalkersCS/Stalkers-main-09.wav
+R100	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-10.wav	data/sfx/voices/StalkersCS/Stalkers-main-10.wav
+R100	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-11.wav	data/sfx/voices/StalkersCS/Stalkers-main-11.wav
+R100	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-12.wav	data/sfx/voices/StalkersCS/Stalkers-main-12.wav
+R100	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-13.wav	data/sfx/voices/StalkersCS/Stalkers-main-13.wav
+R100	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-14.wav	data/sfx/voices/StalkersCS/Stalkers-main-14.wav
+R100	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-15.wav	data/sfx/voices/StalkersCS/Stalkers-main-15.wav
+R100	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-16.wav	data/sfx/voices/StalkersCS/Stalkers-main-16.wav
+R100	data/locale/ruRu/sfx/voices/StalkersCS/Stalkers-main-17.wav	data/sfx/voices/StalkersCS/Stalkers-main-17.wav
