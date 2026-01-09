@@ -1,401 +1,401 @@
-[Rules.Rule-1].Name;Maximum decentralization;
-[Rules.Rule-2].Name;Decentralization;
-[Rules.Rule-3].Name;Balanced management;
-[Rules.Rule-4].Name;Centralization;
-[Rules.Rule-5].Name;Maximum centralization;
-[Rules.Rule-6].Name;Fully automated artifact search;
-[Rules.Rule-7].Name;Partial automation of artifact search;
-[Rules.Rule-8].Name;Balanced search;
-[Rules.Rule-9].Name;Anomaly mapping;
-[Rules.Rule-10].Name;Anomaly monitoring;
-[Rules.Rule-11].Name;Paranoid counterrecon;
-[Rules.Rule-12].Name;Focus on counterrecon;
-[Rules.Rule-13].Name;Balanced recon;
-[Rules.Rule-14].Name;Focus on recon;
-[Rules.Rule-15].Name;Recon network;"""разведывательная"" пишется через ""ы"""
-[Rules.Rule-16].Name;All-round defense;
-[Rules.Rule-17].Name;Focus on defense;
-[Rules.Rule-18].Name;Balance;
-[Rules.Rule-19].Name;Focus on attack;
-[Rules.Rule-20].Name;Large-scale offense;
-[Advisors.Advisor-0].Name;Unknown;
-[Advisors.Advisor-3].Name;Unknown;
-[Advisors.Advisor-6].Name;Unknown;
-[Advisors.Advisor-11].Name;Unknown;
-[Advisors.Advisor-13].Name;Collective mind;
-[Advisors.Advisor-47].Name;Captain Klimenko;
-[Advisors.Advisor-48].Name;Captain Tarasov;
-[Advisors.Advisor-49].Name;Lieutenant Kirillov;
-[Advisors.Advisor-50].Name;Lieutenant Podorozhny;
-[Advisors.Advisor-51].Name;Lieutenant Rogovets;
-[Advisors.Advisor-52].Name;Lieutenant Sergeev;
-[Advisors.Advisor-53].Name;Lieutenant Skelya;
-[Advisors.Advisor-54].Name;Lieutenant Stetsenko;
-[Advisors.Advisor-55].Name;Ensign Valentir;
-[Advisors.Advisor-56].Name;Sergeant Valyushok;
-[Advisors.Advisor-57].Name;Senior Sergeant Morozov;
-[Advisors.Advisor-58].Name;Sergeant Merkulov;
-[Advisors.Advisor-59].Name;Sergeant Ostrovsky;
-[Advisors.Advisor-60].Name;Sergeant Yarmoshuk;
-[Advisors.Advisor-61].Name;Strider;
-[Advisors.Advisor-62].Name;Degtyarev;
-[Advisors.Advisor-72].Name;Preacher;
-[Advisors.Advisor-73].Name;Devotee;
-[Advisors.Advisor-74].Name;Messiah;
-[Advisors.Advisor-75].Name;Strider;
-[Advisors.Advisor-112].Name;Controller;
-[Achievements.Achiv-1].Name;;
-[Achievements.Achiv-1].Desc;;
-[Achievements.Achiv-1].Desc-Logo;;
-[Achievements.Achiv-2].Name;;
-[Achievements.Achiv-2].Desc;;
-[Achievements.Achiv-2].Desc-Logo;;
-[Achievements.Achiv-3].Name;;
-[Achievements.Achiv-3].Desc;;
-[Achievements.Achiv-3].Desc-Logo;;
-[Achievements.Achiv-4].Name;;
-[Achievements.Achiv-4].Desc;;
-[Achievements.Achiv-4].Desc-Logo;;
-[Achievements.Achiv-5].Name;;
-[Achievements.Achiv-5].Desc;;
-[Achievements.Achiv-5].Desc-Logo;;
-[Achievements.Achiv-6].Name;;
-[Achievements.Achiv-6].Desc;;
-[Achievements.Achiv-6].Desc-Logo;;
-[Traders.YourGroup].Name;;
-[Traders.YourGroup].NeedText;;
-[Traders.OtherGroup].Name;;
-[Traders.OtherGroup].NeedText;;
-[StoryEvents.Event-1].Name;;
-[StoryEvents.Event-1].Desc-Owner;;
-[StoryEvents.Event-1].Desc-NonOwner;;
-[StoryEvents.Event-2].Name;;
-[StoryEvents.Event-2].Desc-Owner;;
-[StoryEvents.Event-2].Desc-NonOwner;;
-[StoryEvents.Event-3].Name;;
-[StoryEvents.Event-3].Desc-Owner;;
-[StoryEvents.Event-3].Desc-NonOwner;;
-[StoryEvents.Event-4].Name;;
-[StoryEvents.Event-4].Desc-Owner;;
-[StoryEvents.Event-4].Desc-NonOwner;;
-[StoryEvents.Event-5].Name;;
-[StoryEvents.Event-5].Desc-Owner;;
-[StoryEvents.Event-5].Desc-NonOwner;;
-[StoryEvents.Event-6].Name;;
-[StoryEvents.Event-6].Desc-Owner;;
-[StoryEvents.Event-6].Desc-NonOwner;;
-[StoryEvents.Event-7].Name;;
-[StoryEvents.Event-7].Desc-Owner;;
-[StoryEvents.Event-7].Desc-NonOwner;;
-[StoryEvents.Event-8].Name;;
-[StoryEvents.Event-8].Desc-Owner;;
-[StoryEvents.Event-8].Desc-NonOwner;;
-[StoryEvents.Event-9].Name;;
-[StoryEvents.Event-9].Desc-Owner;;
-[StoryEvents.Event-9].Desc-NonOwner;;
-[StoryEvents.Event-10].Name;;
-[StoryEvents.Event-10].Desc-Owner;;
-[StoryEvents.Event-10].Desc-NonOwner;;
-[StoryEvents.Event-11].Name;;
-[StoryEvents.Event-11].Desc-Owner;;
-[StoryEvents.Event-11].Desc-NonOwner;;
-[StoryEvents.Event-12].Name;;
-[StoryEvents.Event-12].Desc-Owner;;
-[StoryEvents.Event-12].Desc-NonOwner;;
-[StoryEvents.Event-13].Name;;
-[StoryEvents.Event-13].Desc-Owner;;
-[StoryEvents.Event-13].Desc-NonOwner;;
-[StoryEvents.Event-14].Name;;
-[StoryEvents.Event-14].Desc-Owner;;
-[StoryEvents.Event-14].Desc-NonOwner;;
-[StoryEvents.Event-15].Name;;
-[StoryEvents.Event-15].Desc-Owner;;
-[StoryEvents.Event-15].Desc-NonOwner;;
-[StoryEvents.Event-16].Name;;
-[StoryEvents.Event-16].Desc-Owner;;
-[StoryEvents.Event-16].Desc-NonOwner;;
-[StoryEvents.Event-17].Name;;
-[StoryEvents.Event-17].Desc-Owner;;
-[StoryEvents.Event-17].Desc-NonOwner;;
-[StoryEvents.Event-18].Name;;
-[StoryEvents.Event-18].Desc-Owner;;
-[StoryEvents.Event-18].Desc-NonOwner;;
-[StoryEvents.Event-19].Name;;
-[StoryEvents.Event-19].Desc-Owner;;
-[StoryEvents.Event-19].Desc-NonOwner;;
-[StoryEvents.Event-20].Name;;
-[StoryEvents.Event-20].Desc-Owner;;
-[StoryEvents.Event-20].Desc-NonOwner;;
-[StoryEvents.Event-21].Name;;
-[StoryEvents.Event-21].Desc-Owner;;
-[StoryEvents.Event-21].Desc-NonOwner;;
-[StoryEvents.Event-22].Name;;
-[StoryEvents.Event-22].Desc-Owner;;
-[StoryEvents.Event-22].Desc-NonOwner;;
-[StoryEvents.Event-23].Name;;
-[StoryEvents.Event-23].Desc-Owner;;
-[StoryEvents.Event-23].Desc-NonOwner;;
-[StoryEvents.Event-24].Name;;
-[StoryEvents.Event-24].Desc-Owner;;
-[StoryEvents.Event-24].Desc-NonOwner;;
-[StoryEvents.Event-25].Name;;
-[StoryEvents.Event-25].Desc-Owner;;
-[StoryEvents.Event-25].Desc-NonOwner;;
-[StoryEvents.Event-26].Name;;
-[StoryEvents.Event-26].Desc-Owner;;
-[StoryEvents.Event-26].Desc-NonOwner;;
-[StoryEvents.Event-27].Name;;
-[StoryEvents.Event-27].Desc-Owner;;
-[StoryEvents.Event-27].Desc-NonOwner;;
-[StoryEvents.Event-28].Name;;
-[StoryEvents.Event-28].Desc-Owner;;
-[StoryEvents.Event-28].Desc-NonOwner;;
-[StoryEvents.Event-29].Name;;
-[StoryEvents.Event-29].Desc-Owner;;
-[StoryEvents.Event-29].Desc-NonOwner;;
-[StoryEvents.Event-30].Name;;
-[StoryEvents.Event-30].Desc-Owner;;
-[StoryEvents.Event-30].Desc-NonOwner;;
-[StoryEvents.Event-31].Name;;
-[StoryEvents.Event-31].Desc-Owner;;
-[StoryEvents.Event-31].Desc-NonOwner;;
-[StoryEvents.Event-32].Name;;
-[StoryEvents.Event-32].Desc-Owner;;
-[StoryEvents.Event-32].Desc-NonOwner;;
-[StoryEvents.Event-33].Name;;
-[StoryEvents.Event-33].Desc-Owner;;
-[StoryEvents.Event-33].Desc-NonOwner;;
-[StoryEvents.Event-34].Name;;
-[StoryEvents.Event-34].Desc-Owner;;
-[StoryEvents.Event-34].Desc-NonOwner;;
-[StoryEvents.Event-35].Name;;
-[StoryEvents.Event-35].Desc-Owner;;
-[StoryEvents.Event-35].Desc-NonOwner;;
-[StoryEvents.Event-36].Name;;
-[StoryEvents.Event-36].Desc-Owner;;
-[StoryEvents.Event-36].Desc-NonOwner;;
-[StoryEvents.Event-37].Name;;
-[StoryEvents.Event-37].Desc-Owner;;
-[StoryEvents.Event-37].Desc-NonOwner;;
-[StoryEvents.Event-38].Name;;
-[StoryEvents.Event-38].Desc-Owner;;
-[StoryEvents.Event-38].Desc-NonOwner;;
-[StoryEvents.Event-39].Name;;
-[StoryEvents.Event-39].Desc-Owner;;
-[StoryEvents.Event-39].Desc-NonOwner;;
-[StoryEvents.Event-40].Name;;
-[StoryEvents.Event-40].Desc-Owner;;
-[StoryEvents.Event-40].Desc-NonOwner;;
-[StoryEvents.Event-41].Name;;
-[StoryEvents.Event-41].Desc-Owner;;
-[StoryEvents.Event-41].Desc-NonOwner;;
-[StoryEvents.Event-42].Name;;
-[StoryEvents.Event-42].Desc-Owner;;
-[StoryEvents.Event-42].Desc-NonOwner;;
-[StoryEvents.Event-43].Name;;
-[StoryEvents.Event-43].Desc-Owner;;
-[StoryEvents.Event-43].Desc-NonOwner;;
-[StoryEvents.Event-44].Name;;
-[StoryEvents.Event-44].Desc-Owner;;
-[StoryEvents.Event-44].Desc-NonOwner;;
-[StoryEvents.Event-45].Name;;
-[StoryEvents.Event-45].Desc-Owner;;
-[StoryEvents.Event-45].Desc-NonOwner;;
-[StoryEvents.Event-46].Name;;
-[StoryEvents.Event-46].Desc-Owner;;
-[StoryEvents.Event-46].Desc-NonOwner;;
-[StoryEvents.Event-47].Name;;
-[StoryEvents.Event-47].Desc-Owner;;
-[StoryEvents.Event-47].Desc-NonOwner;;
-[StoryEvents.Event-48].Name;;
-[StoryEvents.Event-48].Desc-Owner;;
-[StoryEvents.Event-48].Desc-NonOwner;;
-[StoryEvents.Event-49].Name;;
-[StoryEvents.Event-49].Desc-Owner;;
-[StoryEvents.Event-49].Desc-NonOwner;;
-[StoryEvents.Event-50].Name;;
-[StoryEvents.Event-50].Desc-Owner;;
-[StoryEvents.Event-50].Desc-NonOwner;;
-[StoryEvents.Event-51].Name;;
-[StoryEvents.Event-51].Desc-Owner;;
-[StoryEvents.Event-51].Desc-NonOwner;;
-[StoryEvents.Event-52].Name;;
-[StoryEvents.Event-52].Desc-Owner;;
-[StoryEvents.Event-52].Desc-NonOwner;;
-[StoryEvents.Event-53].Name;;
-[StoryEvents.Event-53].Desc-Owner;;
-[StoryEvents.Event-53].Desc-NonOwner;;
-[StoryEvents.Event-54].Name;;
-[StoryEvents.Event-54].Desc-Owner;;
-[StoryEvents.Event-54].Desc-NonOwner;;
-[StoryEvents.Event-55].Name;;
-[StoryEvents.Event-55].Desc-Owner;;
-[StoryEvents.Event-55].Desc-NonOwner;;
-[StoryEvents.Event-56].Name;;
-[StoryEvents.Event-56].Desc-Owner;;
-[StoryEvents.Event-56].Desc-NonOwner;;
-[StoryEvents.Event-57].Name;;
-[StoryEvents.Event-57].Desc-Owner;;
-[StoryEvents.Event-57].Desc-NonOwner;;
-[StoryEvents.Event-58].Name;;
-[StoryEvents.Event-58].Desc-Owner;;
-[StoryEvents.Event-58].Desc-NonOwner;;
-[StoryEvents.Event-59].Name;;
-[StoryEvents.Event-59].Desc-Owner;;
-[StoryEvents.Event-59].Desc-NonOwner;;
-[StoryEvents.Event-60].Name;;
-[StoryEvents.Event-60].Desc-Owner;;
-[StoryEvents.Event-60].Desc-NonOwner;;
-[StoryEvents.Event-61].Name;;
-[StoryEvents.Event-61].Desc-Owner;;
-[StoryEvents.Event-61].Desc-NonOwner;;
-[StoryEvents.Event-62].Name;;
-[StoryEvents.Event-62].Desc-Owner;;
-[StoryEvents.Event-62].Desc-NonOwner;;
-[StoryEvents.Event-63].Name;;
-[StoryEvents.Event-63].Desc-Owner;;
-[StoryEvents.Event-63].Desc-NonOwner;;
-[StoryEvents.Event-64].Name;;
-[StoryEvents.Event-64].Desc-Owner;;
-[StoryEvents.Event-64].Desc-NonOwner;;
-[StoryEvents.Event-65].Name;;
-[StoryEvents.Event-65].Desc-Owner;;
-[StoryEvents.Event-65].Desc-NonOwner;;
-[StoryEvents.Event-66].Name;;
-[StoryEvents.Event-66].Desc-Owner;;
-[StoryEvents.Event-66].Desc-NonOwner;;
-[StoryEvents.Event-67].Name;;
-[StoryEvents.Event-67].Desc-Owner;;
-[StoryEvents.Event-67].Desc-NonOwner;;
-[StoryEvents.Event-68].Name;;
-[StoryEvents.Event-68].Desc-Owner;;
-[StoryEvents.Event-68].Desc-NonOwner;;
-[StoryEvents.Event-69].Name;;
-[StoryEvents.Event-69].Desc-Owner;;
-[StoryEvents.Event-69].Desc-NonOwner;;
-[StoryEvents.Event-70].Name;;
-[StoryEvents.Event-70].Desc-Owner;;
-[StoryEvents.Event-70].Desc-NonOwner;;
-[StoryEvents.Event-71].Name;;
-[StoryEvents.Event-71].Desc-Owner;;
-[StoryEvents.Event-71].Desc-NonOwner;;
-[StoryEvents.Event-72].Name;;
-[StoryEvents.Event-72].Desc-Owner;;
-[StoryEvents.Event-72].Desc-NonOwner;;
-[StoryEvents.Event-73].Name;;
-[StoryEvents.Event-73].Desc-Owner;;
-[StoryEvents.Event-73].Desc-NonOwner;;
-[StoryEvents.Event-74].Name;;
-[StoryEvents.Event-74].Desc-Owner;;
-[StoryEvents.Event-74].Desc-NonOwner;;
-[StoryEvents.Event-75].Name;;
-[StoryEvents.Event-75].Desc-Owner;;
-[StoryEvents.Event-75].Desc-NonOwner;;
-[StoryEvents.Event-76].Name;;
-[StoryEvents.Event-76].Desc-Owner;;
-[StoryEvents.Event-76].Desc-NonOwner;;
-[StoryEvents.Event-77].Name;;
-[StoryEvents.Event-77].Desc-Owner;;
-[StoryEvents.Event-77].Desc-NonOwner;;
-[StoryEvents.Event-78].Name;;
-[StoryEvents.Event-78].Desc-Owner;;
-[StoryEvents.Event-78].Desc-NonOwner;;
-[StoryEvents.Event-79].Name;;
-[StoryEvents.Event-79].Desc-Owner;;
-[StoryEvents.Event-79].Desc-NonOwner;;
-[StoryEvents.Event-80].Name;;
-[StoryEvents.Event-80].Desc-Owner;;
-[StoryEvents.Event-80].Desc-NonOwner;;
-[StoryEvents.Event-81].Name;;
-[StoryEvents.Event-81].Desc-Owner;;
-[StoryEvents.Event-81].Desc-NonOwner;;
-[StoryEvents.Event-82].Name;;
-[StoryEvents.Event-82].Desc-Owner;;
-[StoryEvents.Event-82].Desc-NonOwner;;
-ScenarioName;;
-ScenarioDescription;;
-ScenarioVictoryDescription;;
-ScenarioLoseDescription;;
-[Groups.monolith.:main].Spy1-Name;;
-[Groups.monolith.:main].Spy2-Name;;
-[Groups.monolith.:main].Spy3-Name;;
-[Groups.monolith.:main].Spy4-Name;;
-[Groups.monolith.:main].Name;;
-[Groups.monolith.:main].Description;;
-[Groups.monolith.:main].DiplomacyText-Question-War;;
-[Groups.monolith.:main].DiplomacyText-Question-Neutral;;
-[Groups.monolith.:main].DiplomacyText-Question-Alliance;;
-[Groups.monolith.:main].DiplomacyText-Question-BreakAlliance;;
-[Groups.monolith.:main].DiplomacyText-RequestMoney-Ask;;
-[Groups.monolith.:main].DiplomacyText-Ans-0-Down;;
-[Groups.monolith.:main].DiplomacyText-Ans-1-Down;;
-[Groups.monolith.:main].DiplomacyText-Ans-1-No;;
-[Groups.monolith.:main].DiplomacyText-Ans-1-Yes;;
-[Groups.monolith.:main].DiplomacyText-Ans-2-No;;
-[Groups.monolith.:main].DiplomacyText-Ans-2-Yes;;
-[Groups.monolith.:main].DiplomacyText-RequestMoney-Ans-No;;
-[Groups.monolith.:main].DiplomacyText-RequestMoney-Ans-Yes;;
-[Groups.monolith.:main].DiplomacyText-Question-Neutral-No;;
-[Groups.monolith.:main].DiplomacyText-Question-Neutral-Yes;;
-[Groups.monolith.:main].DiplomacyText-Question-Alliance-No;;
-[Groups.monolith.:main].DiplomacyText-Question-Alliance-Yes;;
-[Groups.monolith.:main].Text-End-Step-Victory;;
-[Groups.monolith.:main].Text-End-EventFlag-Victory;;
-[Groups.monolith.:main].Text-End-Standart-Lose;;
-[Groups.monolith.:main].Text-End-Step-Lose;;
-[Groups.monolith.:main].Text-End-EventFlag-Lose;;
-[Groups.monolith.Anarchy].Text-End-Standart-Victory;;
-[Groups.monolith.AntiZone].Text-End-Standart-Victory;;
-[Groups.monolith.Control].Text-End-Standart-Victory;;
-[Groups.monolith.Crime].Text-End-Standart-Victory;;
-[Groups.monolith.Exploring].Text-End-Standart-Victory;;
-[Groups.monolith.Growth].Text-End-Standart-Victory;;
-[Groups.monolith.Mercenary].Text-End-Standart-Victory;;
-[Groups.monolith.Sectarianism].Text-End-Standart-Victory;;
-[Groups.monolith.Stability].Text-End-Standart-Victory;;
-[Groups.monolith.Stalkers].Text-End-Standart-Victory;;
-[Groups.monolith.Unknow].Text-End-Standart-Victory;;
-[Groups.monolith.Zombie].Text-End-Standart-Victory;;
-[Groups.soldiers.:main].Spy1-Name;;
-[Groups.soldiers.:main].Spy2-Name;;
-[Groups.soldiers.:main].Spy3-Name;;
-[Groups.soldiers.:main].Spy4-Name;;
-[Groups.soldiers.:main].Name;;
-[Groups.soldiers.:main].Description;;
-[Groups.soldiers.:main].DiplomacyText-Question-War;;
-[Groups.soldiers.:main].DiplomacyText-Question-Neutral;;
-[Groups.soldiers.:main].DiplomacyText-Question-Alliance;;
-[Groups.soldiers.:main].DiplomacyText-Question-BreakAlliance;;
-[Groups.soldiers.:main].DiplomacyText-RequestMoney-Ask;;
-[Groups.soldiers.:main].DiplomacyText-Ans-0-Down;;
-[Groups.soldiers.:main].DiplomacyText-Ans-1-Down;;
-[Groups.soldiers.:main].DiplomacyText-Ans-1-No;;
-[Groups.soldiers.:main].DiplomacyText-Ans-1-Yes;;
-[Groups.soldiers.:main].DiplomacyText-Ans-2-No;;
-[Groups.soldiers.:main].DiplomacyText-Ans-2-Yes;;
-[Groups.soldiers.:main].DiplomacyText-RequestMoney-Ans-No;;
-[Groups.soldiers.:main].DiplomacyText-RequestMoney-Ans-Yes;;
-[Groups.soldiers.:main].DiplomacyText-Question-Neutral-No;;
-[Groups.soldiers.:main].DiplomacyText-Question-Neutral-Yes;;
-[Groups.soldiers.:main].DiplomacyText-Question-Alliance-No;;
-[Groups.soldiers.:main].DiplomacyText-Question-Alliance-Yes;;
-[Groups.soldiers.:main].Text-End-Step-Victory;;
-[Groups.soldiers.:main].Text-End-EventFlag-Victory;;
-[Groups.soldiers.:main].Text-End-Standart-Lose;;
-[Groups.soldiers.:main].Text-End-Step-Lose;;
-[Groups.soldiers.:main].Text-End-EventFlag-Lose;;
-[Groups.soldiers.Anarchy].Text-End-Standart-Victory;;
-[Groups.soldiers.AntiZone].Text-End-Standart-Victory;;
-[Groups.soldiers.Control].Text-End-Standart-Victory;;
-[Groups.soldiers.Control].Text-End-Standart-Lose;;
-[Groups.soldiers.Crime].Text-End-Standart-Victory;;
-[Groups.soldiers.Exploring].Text-End-Standart-Victory;;
-[Groups.soldiers.Growth].Text-End-Standart-Victory;;
-[Groups.soldiers.Growth].Text-End-Standart-Lose;;
-[Groups.soldiers.Mercenary].Text-End-Standart-Victory;;
-[Groups.soldiers.Sectarianism].Text-End-Standart-Victory;;
-[Groups.soldiers.Stability].Text-End-Standart-Victory;;
-[Groups.soldiers.Stalkers].Text-End-Standart-Victory;;
-[Groups.soldiers.Unknow].Text-End-Standart-Victory;;
-[Groups.soldiers.Unknow].Text-End-Standart-Lose;;
-[Groups.soldiers.Zombie].Text-End-Standart-Victory;;
+[Rules.Rule-1].Name;Maximum decentralization
+[Rules.Rule-2].Name;Decentralization
+[Rules.Rule-3].Name;Balanced management
+[Rules.Rule-4].Name;Centralization
+[Rules.Rule-5].Name;Maximum centralization
+[Rules.Rule-6].Name;Fully automated artifact search
+[Rules.Rule-7].Name;Partial automation of artifact search
+[Rules.Rule-8].Name;Balanced search
+[Rules.Rule-9].Name;Anomaly mapping
+[Rules.Rule-10].Name;Anomaly monitoring
+[Rules.Rule-11].Name;Paranoid counterrecon
+[Rules.Rule-12].Name;Focus on counterrecon
+[Rules.Rule-13].Name;Balanced recon
+[Rules.Rule-14].Name;Focus on recon
+[Rules.Rule-15].Name;Recon network
+[Rules.Rule-16].Name;All-round defense
+[Rules.Rule-17].Name;Focus on defense
+[Rules.Rule-18].Name;Balance
+[Rules.Rule-19].Name;Focus on attack
+[Rules.Rule-20].Name;Large-scale offense
+[Advisors.Advisor-0].Name;Unknown
+[Advisors.Advisor-3].Name;Unknown
+[Advisors.Advisor-6].Name;Unknown
+[Advisors.Advisor-11].Name;Unknown
+[Advisors.Advisor-13].Name;Collective mind
+[Advisors.Advisor-47].Name;Captain Klimenko
+[Advisors.Advisor-48].Name;Captain Tarasov
+[Advisors.Advisor-49].Name;Lieutenant Kirillov
+[Advisors.Advisor-50].Name;Lieutenant Podorozhny
+[Advisors.Advisor-51].Name;Lieutenant Rogovets
+[Advisors.Advisor-52].Name;Lieutenant Sergeev
+[Advisors.Advisor-53].Name;Lieutenant Skelya
+[Advisors.Advisor-54].Name;Lieutenant Stetsenko
+[Advisors.Advisor-55].Name;Ensign Valentir
+[Advisors.Advisor-56].Name;Sergeant Valyushok
+[Advisors.Advisor-57].Name;Senior Sergeant Morozov
+[Advisors.Advisor-58].Name;Sergeant Merkulov
+[Advisors.Advisor-59].Name;Sergeant Ostrovsky
+[Advisors.Advisor-60].Name;Sergeant Yarmoshuk
+[Advisors.Advisor-61].Name;Strider
+[Advisors.Advisor-62].Name;Degtyarev
+[Advisors.Advisor-72].Name;Preacher
+[Advisors.Advisor-73].Name;Devotee
+[Advisors.Advisor-74].Name;Messiah
+[Advisors.Advisor-75].Name;Strider
+[Advisors.Advisor-112].Name;Controller
+[Achievements.Achiv-1].Name;The Monolith will return!
+[Achievements.Achiv-1].Desc;New achievement unlocked! Capture the Eastern Pripyat location as the Monolith faction on Master difficulty!
+[Achievements.Achiv-1].Desc-Logo;Capture the Eastern Pripyat location for the Monolith faction on Master difficulty.
+[Achievements.Achiv-2].Name;No evacuation necessary!
+[Achievements.Achiv-2].Desc;New achievement unlocked! Capture the Eastern Pripyat location as the Military faction on Master difficulty.
+[Achievements.Achiv-2].Desc-Logo;Capture the Eastern Pripyat location for the Military faction on Master difficulty.
+[Achievements.Achiv-3].Name;Big wash!
+[Achievements.Achiv-3].Desc;New achievement unlocked! Capture the Laundry area in the Eastern Pripyat location within 6 turns and hold it for 1 turn as the Monolith faction!
+[Achievements.Achiv-3].Desc-Logo;Capture the Laundry area of ??the Eastern Pripyat location within 6 turns and hold it for 1 turn as the Monolith faction.
+[Achievements.Achiv-4].Name;Back to school!
+[Achievements.Achiv-4].Desc;New achievement unlocked! Capture School No. 1 in the Eastern Pripyat location within 2 turns and hold it for 1 turn as the Military faction on Veteran difficulty or higher.
+[Achievements.Achiv-4].Desc-Logo;Capture the School No. 1 territory in the Eastern Pripyat location within 2 turns and hold it for 1 turn as the Military faction on Veteran difficulty or higher.
+[Achievements.Achiv-5].Name;Pripyat Pirates!
+[Achievements.Achiv-5].Desc;New achievement unlocked! Embrace the Criminal ideology for 20 turns as the Military faction on Veteran difficulty or higher and survive for 1 turn.
+[Achievements.Achiv-5].Desc-Logo;Embrace the Criminal ideology for 20 turns as the Military faction on Veteran difficulty or higher and survive for 1 turn.
+[Achievements.Achiv-6].Name;Dangerous experiment!
+[Achievements.Achiv-6].Desc;New achievement unlocked! Embrace the Study ideology for 20 turns as the Military faction on Experienced difficulty or higher and survive for 1 turn.
+[Achievements.Achiv-6].Desc-Logo;Embrace the Study ideology for 20 turns as the Military faction on Experienced difficulty or higher and survive for 1 turn.
+[Traders.YourGroup].Name;Trader of your faction
+[Traders.YourGroup].NeedText;You can always trade with your merchant. Price:
+[Traders.OtherGroup].Name;Trader of another faction
+[Traders.OtherGroup].NeedText;To trade with other factions, first select the other's territory on the map.
+[StoryEvents.Event-1].Name;Degtyarev's appearance
+[StoryEvents.Event-1].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-1].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-2].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-2].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-2].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-3].Name;Degtyarev met with Kovalsky
+[StoryEvents.Event-3].Desc-Owner;Degtyarev is now available as a deputy candidate
+[StoryEvents.Event-3].Desc-NonOwner;If you see this, it's an event bug.
+[StoryEvents.Event-4].Name;Degtyarev continues to walk
+[StoryEvents.Event-4].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-4].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-5].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-5].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-5].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-6].Name;Degtyarev continues to walk
+[StoryEvents.Event-6].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-6].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-7].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-7].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-7].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-8].Name;Lost contact with the reconnaissance detachment
+[StoryEvents.Event-8].Desc-Owner;Captain Klimenko, Sergeant Ostrovsky, Sergeant Valyushok and Lieutenant Sergeyev have stopped communicating.
+[StoryEvents.Event-8].Desc-NonOwner;If you see this text, it's an event bug.
+[StoryEvents.Event-9].Name;Lost contact with reconnaissance squad 2
+[StoryEvents.Event-9].Desc-Owner;If you see this text, it's an event bug.
+[StoryEvents.Event-9].Desc-NonOwner;If you see this text, it's an event bug.
+[StoryEvents.Event-10].Name;Lost contact with reconnaissance squad 3
+[StoryEvents.Event-10].Desc-Owner;If you see this text, it's an event bug.
+[StoryEvents.Event-10].Desc-NonOwner;If you see this text, it's an event bug.
+[StoryEvents.Event-11].Name;Lost contact with reconnaissance squad 4
+[StoryEvents.Event-11].Desc-Owner;If you see this text, it's an event bug.
+[StoryEvents.Event-11].Desc-NonOwner;If you see this text, it's an event bug.
+[StoryEvents.Event-12].Name;Degtyarev continues to walk
+[StoryEvents.Event-12].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-12].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-13].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-13].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-13].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-14].Name;Degtyarev continues to walk
+[StoryEvents.Event-14].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-14].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-15].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-15].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-15].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-16].Name;Degtyarev continues to walk
+[StoryEvents.Event-16].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-16].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-17].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-17].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-17].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-18].Name;Degtyarev continues to walk
+[StoryEvents.Event-18].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-18].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-19].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-19].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-19].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-20].Name;Psi radiation in the Book Store
+[StoryEvents.Event-20].Desc-Owner;Degtyarev destroyed the portable Psi-installation in the %0:s area of ??the %1:s location, and there is no more psi radiation there!
+[StoryEvents.Event-20].Desc-NonOwner;Rumor has it that Degtyarev destroyed the portable Psi-installation in the %0:s area of ??the %1:s location and there is no more psi radiation there!
+[StoryEvents.Event-21].Name;Degtyarev continues to walk
+[StoryEvents.Event-21].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-21].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-22].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-22].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-22].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-23].Name;Degtyarev continues to walk
+[StoryEvents.Event-23].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-23].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-24].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-24].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-24].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-25].Name;Degtyarev is back in Pripyat
+[StoryEvents.Event-25].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-25].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-26].Name;Degtyarev attacked the garrison of the territory again
+[StoryEvents.Event-26].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-26].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-27].Name;Degtyarev continues to walk
+[StoryEvents.Event-27].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-27].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-28].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-28].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-28].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-29].Name;Degtyarev continues to walk
+[StoryEvents.Event-29].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-29].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-30].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-30].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-30].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-31].Name;Degtyarev continues to walk
+[StoryEvents.Event-31].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-31].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-32].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-32].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-32].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-33].Name;Degtyarev continues to walk
+[StoryEvents.Event-33].Desc-Owner;The stalker Degtyarev was spotted in the X-8 Laboratory. Our garrison missed him.
+[StoryEvents.Event-33].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the X-8 Laboratory.
+[StoryEvents.Event-34].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-34].Desc-Owner;Damn it! Some stalker started a fight in Lab X-8! Our losses:
+[StoryEvents.Event-34].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle at X-8 Lab.
+[StoryEvents.Event-35].Name;Lost contact with the reconnaissance detachment
+[StoryEvents.Event-35].Desc-Owner;Lieutenant Skelya, Sergeant Yarmoshuk, and Sergeant Merkulov have stopped communicating.
+[StoryEvents.Event-35].Desc-NonOwner;If you see this text, it's an event bug.
+[StoryEvents.Event-36].Name;Lost contact with reconnaissance squad 2
+[StoryEvents.Event-36].Desc-Owner;If you see this text, it's an event bug.
+[StoryEvents.Event-36].Desc-NonOwner;If you see this text, it's an event bug.
+[StoryEvents.Event-37].Name;Lost contact with reconnaissance squad 2
+[StoryEvents.Event-37].Desc-Owner;If you see this text, it's an event bug.
+[StoryEvents.Event-37].Desc-NonOwner;If you see this text, it's an event bug.
+[StoryEvents.Event-38].Name;Degtyarev continues to walk
+[StoryEvents.Event-38].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-38].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-39].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-39].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-39].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-40].Name;Degtyarev continues to walk
+[StoryEvents.Event-40].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-40].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-41].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-41].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-41].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-42].Name;Degtyarev continues to walk
+[StoryEvents.Event-42].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-42].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-43].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-43].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-43].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-44].Name;A guard died
+[StoryEvents.Event-44].Desc-Owner;Lieutenant Stetsenko died!
+[StoryEvents.Event-44].Desc-NonOwner;If you see this, it's an event bug!
+[StoryEvents.Event-45].Name;Degtyarev continues to walk
+[StoryEvents.Event-45].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-45].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-46].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-46].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-46].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-47].Name;Degtyarev continues to walk
+[StoryEvents.Event-47].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-47].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-48].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-48].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-48].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-49].Name;Degtyarev continues to walk
+[StoryEvents.Event-49].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-49].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-50].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-50].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-50].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-51].Name;Degtyarev continues to walk
+[StoryEvents.Event-51].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-51].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-52].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-52].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-52].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-53].Name;Degtyarev continues to walk
+[StoryEvents.Event-53].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-53].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-54].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-54].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-54].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-55].Name;Degtyarev continues to walk
+[StoryEvents.Event-55].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-55].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-56].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-56].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-56].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-57].Name;Degtyarev continues to walk
+[StoryEvents.Event-57].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-57].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-58].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-58].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-58].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-59].Name;Psi radiation in kindergarten
+[StoryEvents.Event-59].Desc-Owner;Degtyarev destroyed the portable Psi-installation in the %0:s area of ??the %1:s location, and there is no more psi radiation there!
+[StoryEvents.Event-59].Desc-NonOwner;Rumor has it that Degtyarev destroyed the portable Psi-installation in the %0:s area of ??the %1:s location and there is no more psi radiation there!
+[StoryEvents.Event-60].Name;Degtyarev continues to walk
+[StoryEvents.Event-60].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-60].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-61].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-61].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-61].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-62].Name;Degtyarev continues to walk
+[StoryEvents.Event-62].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-62].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-63].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-63].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-63].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-64].Name;Degtyarev continues to walk
+[StoryEvents.Event-64].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-64].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-65].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-65].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-65].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-66].Name;Degtyarev continues to walk
+[StoryEvents.Event-66].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-66].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-67].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-67].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-67].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-68].Name;Degtyarev continues to walk
+[StoryEvents.Event-68].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-68].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-69].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-69].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-69].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-70].Name;Degtyarev continues to walk
+[StoryEvents.Event-70].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-70].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-71].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-71].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-71].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-72].Name;Degtyarev continues to walk
+[StoryEvents.Event-72].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-72].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-73].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-73].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-73].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-74].Name;Degtyarev continues to walk
+[StoryEvents.Event-74].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-74].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-75].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-75].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-75].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-76].Name;Degtyarev continues to walk
+[StoryEvents.Event-76].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-76].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-77].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-77].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-77].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-78].Name;Degtyarev continues to walk
+[StoryEvents.Event-78].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-78].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-79].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-79].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-79].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-80].Name;Degtyarev continues to walk
+[StoryEvents.Event-80].Desc-Owner;The stalker Degtyarev has been spotted in our territory, location %0:s, %1:s. Our garrison missed him.
+[StoryEvents.Event-80].Desc-NonOwner;Rumor has it that stalker Degtyarev was spotted in the %0:s area of ??location %1:s.
+[StoryEvents.Event-81].Name;Degtyarev attacked the garrison of the territory
+[StoryEvents.Event-81].Desc-Owner;Damn it! Some stalker started a fight in the %0:s area of ??the %1:s location! Our losses:
+[StoryEvents.Event-81].Desc-NonOwner;Rumor has it that some unknown stalker has entered the battle on the territory of %0:s, location %1:s.
+[StoryEvents.Event-82].Name;Evacuation
+[StoryEvents.Event-82].Desc-Owner;Degtyarev and a group of military personnel evacuated from Pripyat by helicopter!
+[StoryEvents.Event-82].Desc-NonOwner;The soldiers report that Degtyarev and a group of soldiers were evacuated from Pripyat by helicopter!
+ScenarioName;The Last Hope. Call of Pripyat
+ScenarioDescription;This scenario recreates the final part of the original game's plot. The scenario has a limited number of turns. You must capture all of Eastern Pripyat before Degtyarev and his detachment of Military personnel reach the extraction point. Diplomacy between the factions is close to canon.
+ScenarioVictoryDescription;Victory conditions: capture all territories on the map and hold them for 1 turn.
+ScenarioLoseDescription;Defeat conditions: lose all controlled territories or fail to meet the victory conditions within approximately 41 turns.
+[Groups.monolith.:main].Spy1-Name;Newbie
+[Groups.monolith.:main].Spy2-Name;Experienced
+[Groups.monolith.:main].Spy3-Name;Veteran
+[Groups.monolith.:main].Spy4-Name;Master
+[Groups.monolith.:main].Name;Monolith
+[Groups.monolith.:main].Description;Monolith is a faction that serves as the O-Consciousness' shield. Its primary goal is to protect the Zone from any external interference. It is extremely hostile to all other factions. Despite its superior weaponry, it has difficulty controlling its territory, as it is located in the northern part of the Zone.
+[Groups.monolith.:main].DiplomacyText-Question-War;Find and eradicate!
+[Groups.monolith.:main].DiplomacyText-Question-Neutral;The Monolith has commanded us to make peace with you. Do you agree or not?
+[Groups.monolith.:main].DiplomacyText-Question-Alliance;The Monolith told us to become your friends.
+[Groups.monolith.:main].DiplomacyText-Question-BreakAlliance;The Monolith is unhappy with our union!
+[Groups.monolith.:main].DiplomacyText-RequestMoney-Ask;By the will of the Great Monolith, we are sending you a request for a money transfer for our brothers in the following amount:
+[Groups.monolith.:main].DiplomacyText-Ans-0-Down;Detect and eradicate! *The interlocutor has added you to the blacklist*
+[Groups.monolith.:main].DiplomacyText-Ans-1-Down;Monolith would definitely not approve of this! *The interlocutor has removed you from their friends list*
+[Groups.monolith.:main].DiplomacyText-Ans-1-No;You will know the wrath of the Monolith! *The interlocutor has left the chat*
+[Groups.monolith.:main].DiplomacyText-Ans-1-Yes;And the day will come, and the Monolith will shine again in its glory! *The interlocutor has left the chat*
+[Groups.monolith.:main].DiplomacyText-Ans-2-No;The Monolith definitely won't give its consent. *The interlocutor has left the chat*
+[Groups.monolith.:main].DiplomacyText-Ans-2-Yes;Trust no one but Monolith and its brothers, no one. *The interlocutor has added you as a friend*
+[Groups.monolith.:main].DiplomacyText-RequestMoney-Ans-No;Monolith said to show no mercy to the infidels! *The interlocutor has excluded you from the chat*
+[Groups.monolith.:main].DiplomacyText-RequestMoney-Ans-Yes;The Monolith told me to show compassion to the blind and make you a money transfer.
+[Groups.monolith.:main].DiplomacyText-Question-Neutral-No;Then we will find you and destroy you!
+[Groups.monolith.:main].DiplomacyText-Question-Neutral-Yes;It couldn't be otherwise. Everything is by the will of the Great Monolith!
+[Groups.monolith.:main].DiplomacyText-Question-Alliance-No;It is in vain that you do not follow the will of the Monolith.
+[Groups.monolith.:main].DiplomacyText-Question-Alliance-Yes;Let our brothers rejoice and our enemies be terrified!
+[Groups.monolith.:main].Text-End-Step-Victory;You survived! Victory!
+[Groups.monolith.:main].Text-End-EventFlag-Victory;Victory by event flag!
+[Groups.monolith.:main].Text-End-Standart-Lose;The faction was completely destroyed, now the Zone will be divided between other factions. Defeat!
+[Groups.monolith.:main].Text-End-Step-Lose;Time's up, you failed to gain control of the Zone. Defeat!
+[Groups.monolith.:main].Text-End-EventFlag-Lose;Time's up, you failed to gain control of the Zone. Defeat!
+[Groups.monolith.Anarchy].Text-End-Standart-Victory;"Victory! The Monolith has secure control of the Zone. But that's only an appearance from the outside. Due to the lack of power from their psionic installations, people in the southern Zone are gradually regaining consciousness. Many are regaining their memories. In some places, clashes are brewing. Preachers are already reporting a rise in resistance. Entire units are refusing to obey orders. It appears they are planning to liberate their comrades in the north... A new ""War in the Zone"" is coming..."
+[Groups.monolith.AntiZone].Text-End-Standart-Victory;"Victory! The Monolith has secure control of the Zone. But that's only an appearance from the outside. Due to the lack of power from their psionic installations, people in the southern Zone are gradually regaining consciousness. Many are regaining their memories. In some places, clashes are brewing. Preachers are already reporting a rise in resistance. Entire units are refusing to obey orders. It appears they are planning to liberate their comrades in the north... A new ""War in the Zone"" is coming..."
+[Groups.monolith.Control].Text-End-Standart-Victory;"Victory! The Monolith has secure control of the Zone. But that's only an appearance from the outside. Due to the lack of power from their psionic installations, people in the southern Zone are gradually regaining consciousness. Many are regaining their memories. In some places, clashes are brewing. Preachers are already reporting a rise in resistance. Entire units are refusing to obey orders. It appears they are planning to liberate their comrades in the north... A new ""War in the Zone"" is coming..."
+[Groups.monolith.Crime].Text-End-Standart-Victory;"Victory! The Monolith has secure control of the Zone. But that's only an appearance from the outside. Due to the lack of power from their psionic installations, people in the southern Zone are gradually regaining consciousness. Many are regaining their memories. In some places, clashes are brewing. Preachers are already reporting a rise in resistance. Entire units are refusing to obey orders. It appears they are planning to liberate their comrades in the north... A new ""War in the Zone"" is coming..."
+[Groups.monolith.Exploring].Text-End-Standart-Victory;"Victory! The Monolith has secure control of the Zone. But that's only an appearance from the outside. Due to the lack of power from their psionic installations, people in the southern Zone are gradually regaining consciousness. Many are regaining their memories. In some places, clashes are brewing. Preachers are already reporting a rise in resistance. Entire units are refusing to obey orders. It appears they are planning to liberate their comrades in the north... A new ""War in the Zone"" is coming..."
+[Groups.monolith.Growth].Text-End-Standart-Victory;Victory! The Monoliths have secured control of Eastern Pripyat. Not a single stalker squad sent out to scout has returned. Contact with them was lost before they even reached Eastern Pripyat. The Monoliths are shooting anyone attempting to enter this sector. Soon, Eastern Pripyat is completely closed to outsiders...
+[Groups.monolith.Mercenary].Text-End-Standart-Victory;"Victory! The Monolith has secure control of the Zone. But that's only an appearance from the outside. Due to the lack of power from their psionic installations, people in the southern Zone are gradually regaining consciousness. Many are regaining their memories. In some places, clashes are brewing. Preachers are already reporting a rise in resistance. Entire units are refusing to obey orders. It appears they are planning to liberate their comrades in the north... A new ""War in the Zone"" is coming..."
+[Groups.monolith.Sectarianism].Text-End-Standart-Victory;Victory! The Monoliths have secured control of Eastern Pripyat. Not a single stalker squad sent out to scout has returned. Contact with them was lost before they even reached Eastern Pripyat. The Monoliths are shooting anyone attempting to enter this sector. Soon, Eastern Pripyat is completely closed to outsiders...
+[Groups.monolith.Stability].Text-End-Standart-Victory;"Victory! The Monolith has secure control of the Zone. But that's only an appearance from the outside. Due to the lack of power from their psionic installations, people in the southern Zone are gradually regaining consciousness. Many are regaining their memories. In some places, clashes are brewing. Preachers are already reporting a rise in resistance. Entire units are refusing to obey orders. It appears they are planning to liberate their comrades in the north... A new ""War in the Zone"" is coming..."
+[Groups.monolith.Stalkers].Text-End-Standart-Victory;"Victory! The Monolith has secure control of the Zone. But that's only an appearance from the outside. Due to the lack of power from their psionic installations, people in the southern Zone are gradually regaining consciousness. Many are regaining their memories. In some places, clashes are brewing. Preachers are already reporting a rise in resistance. Entire units are refusing to obey orders. It appears they are planning to liberate their comrades in the north... A new ""War in the Zone"" is coming..."
+[Groups.monolith.Unknow].Text-End-Standart-Victory;Victory! The Monoliths have secured control of Eastern Pripyat. Not a single stalker squad sent out to scout has returned. Contact with them was lost before they even reached Eastern Pripyat. The Monoliths are shooting anyone attempting to enter this sector. Soon, Eastern Pripyat is completely closed to outsiders...
+[Groups.monolith.Zombie].Text-End-Standart-Victory;Victory! The Monolith is now safe. Soon, psi-radiation blanketed the entire Zone thanks to the increased number of emitters. Even the Cordon became dangerous. The government, while keeping mutants out of the Zone, no longer attempted to retake it...
+[Groups.soldiers.:main].Spy1-Name;Newbie
+[Groups.soldiers.:main].Spy2-Name;Experienced
+[Groups.soldiers.:main].Spy3-Name;Veteran
+[Groups.soldiers.:main].Spy4-Name;Master
+[Groups.soldiers.:main].Name;Military
+[Groups.soldiers.:main].Description;The Military is the state force within the Zone. They consider all living things within the perimeter to be their enemies, except for the Ecologists. They have excellent equipment for fighting any stalkers, but are ill-equipped to deal with the Zone's anomalous creatures.
+[Groups.soldiers.:main].DiplomacyText-Question-War;Your presence in the Zone is now considered illegal. If caught, you'll be shot on the spot!
+[Groups.soldiers.:main].DiplomacyText-Question-Neutral;Command believes we need to reduce operational activity. How about a ceasefire?
+[Groups.soldiers.:main].DiplomacyText-Question-Alliance;Command believes we need an ally in the Zone to conduct operations. Do you agree?
+[Groups.soldiers.:main].DiplomacyText-Question-BreakAlliance;We will no longer cooperate!
+[Groups.soldiers.:main].DiplomacyText-RequestMoney-Ask;The government requires financial assistance for a new mansion for the general... Ahem. For... For the performance of special tasks in this amount. Can you help?
+[Groups.soldiers.:main].DiplomacyText-Ans-0-Down;We'll grind you into dust!
+[Groups.soldiers.:main].DiplomacyText-Ans-1-Down;How else should this be understood?
+[Groups.soldiers.:main].DiplomacyText-Ans-1-No;No, we cannot turn a blind eye to your presence in the Zone.
+[Groups.soldiers.:main].DiplomacyText-Ans-1-Yes;Okay, we'll turn a blind eye to your presence in the Zone...
+[Groups.soldiers.:main].DiplomacyText-Ans-2-No;No, we cannot turn a blind eye to your presence in the Zone.
+[Groups.soldiers.:main].DiplomacyText-Ans-2-Yes;The army needs an ally in the Zone. Okay, we agree.
+[Groups.soldiers.:main].DiplomacyText-RequestMoney-Ans-No;No, we do not provide financial assistance!
+[Groups.soldiers.:main].DiplomacyText-RequestMoney-Ans-Yes;Yes,our management has agreed to help you with finances.
+[Groups.soldiers.:main].DiplomacyText-Question-Neutral-No;Refused? Well... That was a mistake!
+[Groups.soldiers.:main].DiplomacyText-Question-Neutral-Yes;Excellent, it?s good that you agreed!
+[Groups.soldiers.:main].DiplomacyText-Question-Alliance-No;Refused? Well... That was a mistake!
+[Groups.soldiers.:main].DiplomacyText-Question-Alliance-Yes;Excellent, it?s good that you agreed!
+[Groups.soldiers.:main].Text-End-Step-Victory;You survived! Victory!
+[Groups.soldiers.:main].Text-End-EventFlag-Victory;Victory by event flag!
+[Groups.soldiers.:main].Text-End-Standart-Lose;The faction was completely destroyed, now the Zone will be divided between other factions. Defeat!
+[Groups.soldiers.:main].Text-End-Step-Lose;Time's up, you failed to gain control of the Zone. You have been demoted. Defeat!
+[Groups.soldiers.:main].Text-End-EventFlag-Lose;Time's up, you failed to gain control of the Zone. You have been demoted. Defeat!
+[Groups.soldiers.Anarchy].Text-End-Standart-Victory;Victory! The government took control of the Zone, and as soon as it reviewed the documents from the laboratories, it decided to immediately classify everything. But some of the documentation somehow ended up in the public's hands. Weapons, human experiments, the reason for the Zone's creation... Now much of this has become public knowledge...
+[Groups.soldiers.AntiZone].Text-End-Standart-Victory;Victory! The government took control of the Zone, and as soon as they reviewed the documents from the laboratories, they decided to immediately classify everything. Weapons, human experiments, the reason for the Zone's existence... Now it will forever remain a secret... The new priority became the destruction of any manifestations of the Zone. The main target: mutants. Special teams armed with shotguns and flamethrowers were formed to exterminate any creature, even small rats. Eliminating the anomalous manifestations of the Zone is the new government order that must be carried out.
+[Groups.soldiers.Control].Text-End-Standart-Victory;Victory! The government took control of the Zone, and as soon as they reviewed the documents from the laboratories, they decided to immediately classify everything. The weapons, the human experiments, the reason for the Zone's creation... Now it will remain a secret forever...
+[Groups.soldiers.Control].Text-End-Standart-Lose;There are no military personnel left in the Zone... Now it's unknown how things will end without government forces. You are demoted for failure! Defeat!
+[Groups.soldiers.Crime].Text-End-Standart-Victory;Victory! The government took control of the Zone. But corruption and neglect flourished. For some reason, there wasn't enough ammunition for raids against mutants, either because it was unusable or because the necessary supplies were out of stock. The perimeter guards weren't guarding, but rather collecting bribes to transport prohibited items, like artifacts. It's unclear what this lack of attention to the Zone will lead to, but it's unlikely to be anything good.
+[Groups.soldiers.Exploring].Text-End-Standart-Victory;Victory! Government forces had taken control of the entire exclusion zone and were now rapidly restoring order. Ensuring the safety of research teams became a new priority. Various small units of special forces soldiers were formed for operations in particularly dangerous conditions. This was the name given to the underground complexes and laboratories, which, to the generals' surprise, turned out to be several times larger than initially anticipated. All information obtained was quickly classified, and the public knew only what the government told them about the Zone.
+[Groups.soldiers.Growth].Text-End-Standart-Victory;Victory! The government took control of the Zone, and as soon as they reviewed the documents from the laboratories, they decided to immediately classify everything. The weapons, the human experiments, the reason for the Zone's creation... Now it will remain a secret forever...
+[Groups.soldiers.Growth].Text-End-Standart-Lose;There are no military personnel left in the Zone... Now it's unknown how things will end without government forces. You are demoted for failure! Defeat!
+[Groups.soldiers.Mercenary].Text-End-Standart-Victory;"Victory! Government forces had taken control of the entire territory of Eastern Pripyat and were now rapidly restoring order. But corruption was rampant among the commanders. Some began to profit from dubious contracts with private firms. Various small detachments of soldiers formed, collecting artifacts and capturing mutants for private ""collectors."" Service or money? This was the question everyone was asking themselves..."
+[Groups.soldiers.Sectarianism].Text-End-Standart-Victory;"Victory! Government forces had taken control of the entire exclusion zone and were now rapidly restoring order. But corruption was rampant among the commanders. Some began to profit from dubious contracts with private firms. Various small detachments of soldiers formed, collecting artifacts and capturing mutants for private ""collectors."" Service or money? This was the question everyone was asking themselves..."
+[Groups.soldiers.Stability].Text-End-Standart-Victory;Victory! Government forces have taken control of the entire territory of Eastern Pripyat and are now rapidly restoring order. Various small units of special forces soldiers have been formed for operations in particularly dangerous conditions. This is the name given to the underground complexes and laboratories, which, to the generals' surprise, turned out to be several times larger than initially anticipated. All information obtained was quickly classified, and the public knew only what the government told them about the Zone.
+[Groups.soldiers.Stalkers].Text-End-Standart-Victory;Victory! Government forces had managed to take control of the entire exclusion zone and were now rapidly restoring order. Various small units of special forces soldiers were formed for operations in particularly dangerous conditions. This was the name given to the underground complexes and laboratories, which, to the generals' surprise, turned out to be several times larger than initially anticipated. All information obtained was quickly classified, and the public knew only what the government told them about the Zone.
+[Groups.soldiers.Unknow].Text-End-Standart-Victory;Victory! The government took control of Eastern Pripyat, and as soon as they reviewed the documents from the laboratories, they decided to immediately classify everything. The weapons, the human experiments, the reason for the Zone's creation... Now it will remain a secret forever...
+[Groups.soldiers.Unknow].Text-End-Standart-Lose;There are no military personnel left in the Zone... Now it's unknown how things will end without government forces. You are demoted for failure! Defeat!
+[Groups.soldiers.Zombie].Text-End-Standart-Victory;Victory! Now O-Consciousness is safe. Soon, psi-radiation covered the entire Zone thanks to the increased number of emitters. Even the Cordon became dangerous. The government, although didn't release mutants from the Zone, no longer tried to retake it...
