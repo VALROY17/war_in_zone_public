@@ -192,13 +192,3 @@
 [Territories.Name].Zona192;Восточная низина
 [Territories.Name].Zona193;Западная низина
 [Territories.Name].Zona194;Южный КПП
-[Locations.BunkerMonolith].Name;Бункер управления Монолитом
-[Locations.CHAES1].Name;ЧАЭС-1
-[Locations.LabX10].Name;Лаборатория X-10
-[Locations.LabX16].Name;Лаборатория X-16
-[Locations.LabX18].Name;Лаборатория X-18
-[Locations.PripyatCentral].Name;Припять
-[Locations.Radar].Name;Радар
-[Locations.Rostok].Name;Завод Росток
-[Locations.Sarcophagus].Name;Саркофаг
-[Locations.WildTerritory].Name;Дикая территория

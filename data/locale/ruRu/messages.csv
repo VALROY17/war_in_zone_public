@@ -1232,16 +1232,36 @@
 [Goods.Volker-Modified].Desc;Модифицированный вариант отличного пистолета для новичков.
 [Goods.Volker].Name;Волкер
 [Goods.Volker].Desc;Отличный пистолет для новичков.
+[Locations.None].Name;Неизвестно
 [Locations.Agroprom].Name;НИИ Агропром
 [Locations.AgropromUnderground].Name;Подземелье НИИ Агропром
-[Locations.BaseLocation].Name;Потерянный район
 [Locations.CHAES2].Name;ЧАЭС-2
+[Locations.CHAES1].Name;ЧАЭС-1
 [Locations.DarkVallery].Name;Тёмная долина
 [Locations.Escape].Name;Кордон
 [Locations.Garbage].Name;Свалка
 [Locations.Military].Name;Армейские склады
-[Locations.None].Name;Неизвестно
 [Locations.Yantar].Name;Янтарь
+[Locations.BunkerMonolith].Name;Бункер управления Монолитом
+[Locations.LabX10].Name;Лаборатория X-10
+[Locations.LabX16].Name;Лаборатория X-16
+[Locations.LabX18].Name;Лаборатория X-18
+[Locations.PripyatCentral].Name;Припять
+[Locations.Radar].Name;Радар
+[Locations.Rostok].Name;Завод Росток
+[Locations.Sarcophagus].Name;Саркофаг
+[Locations.WildTerritory].Name;Дикая территория
+[Locations.Hospital].Name;Госпиталь
+[Locations.Limansk].Name;Лиманск
+[Locations.RedForest].Name;Рыжий лес
+[Locations.Swamp].Name;Болото
+[Locations.Zaton].Name;Затон
+[Locations.LabX8].Name;Лаборатория X-8
+[Locations.PripyatEast].Name;Восточная Припять
+[Locations.Puteprovod].Name;Путепровод Припять
+[Locations.Upiter].Name;Окрестности Юпитера
+[Locations.BaseLocation].Name;Потерянный район
+[Locations.FactoryWorkshops].Name;Приборный завод
 [TypeLands.BarRostok].Name;Бар 100 рентген
 [TypeLands.BaseArmStorage].Name;База Армейских складов
 [TypeLands.BaseMillitaryAgroprom].Name;Военные постройки Агропром
