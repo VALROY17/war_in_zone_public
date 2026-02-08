@@ -785,8 +785,8 @@ ScenarioLoseDescription;Условия поражения: потерять вс
 [Groups.stalkersOrest.:main].Spy2-Name;Опытный
 [Groups.stalkersOrest.:main].Spy3-Name;Ветеран
 [Groups.stalkersOrest.:main].Spy4-Name;Мастер
-[Groups.stalkersOrest.:main].Name;Сталкеры Агропрома
-[Groups.stalkersOrest.:main].Description;Сталкеры Агропрома – группа без четких идеологических и боевых задач. Преимуществом можно считать их предрасположенность к поиску артефактов, что благоприятно скажется на финансовом положении в умелых руках. Группировке необходимо расширить зону влияния и закрепиться на Агропроме, иначе на локации со временем останется только Долг.
+[Groups.stalkersOrest.:main].Name;Охотники
+[Groups.stalkersOrest.:main].Description;Охотники – группа без четких идеологических и боевых задач. Помогают Долгу бороться с мутантами на Агропроме. Группировка изначально заточена на охоту, но ее стоит развивать и в других направлениях, иначе на локации со временем останется только Долг.
 [Groups.stalkersOrest.:main].DiplomacyText-Question-War;Мы объявляем вам войну!
 [Groups.stalkersOrest.:main].DiplomacyText-Question-Neutral;Пора закончить эту бойню, мы готовы к миру, а Вы?
 [Groups.stalkersOrest.:main].DiplomacyText-Question-Alliance;Мы хотим заключить с вами союз. Вы согласны?
