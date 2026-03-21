@@ -593,7 +593,7 @@
 [Common_Strings].NeedSomeTroops;Не назначены войска!
 [Common_Strings].NeedOtherUpgrade;Не куплено требуемое улучшение!
 [Common_Strings].FaultTraderConnect;Вам не удалось установить связь с торговцем %s! Можете попробовать еще раз.
-[Common_Strings].NeedToControllZona;Вам необходимо контролировать территорию %s, чтобы установить связь с торговцем %s!
+[Common_Strings].NeedToControllZona;Вам необходимо контролировать территорию %s локации %s, чтобы установить связь с торговцем!
 [Common_Strings].NotEnoughMaster;Не хватает рекрутов мастеров!
 [Common_Strings].NotEnoughVeteran;Не хватает рекрутов ветеранов!
 [Common_Strings].NotEnoughSkilled;Не хватает опытных рекрутов!

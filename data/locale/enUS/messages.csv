@@ -593,7 +593,7 @@
 [Common_Strings].NeedSomeTroops;Troops not assigned!
 [Common_Strings].NeedOtherUpgrade;The required upgrade was not purchased!
 [Common_Strings].FaultTraderConnect;You were unable to contact merchant %s! Please try again.
-[Common_Strings].NeedToControllZona;You need to control the territory of %s to establish contact with the merchant %s!
+[Common_Strings].NeedToControllZona;You need to control the territory of %s location of %s to establish contact with the merchant!
 [Common_Strings].NotEnoughMaster;There is a shortage of master recruits!
 [Common_Strings].NotEnoughVeteran;There is a shortage of veteran recruits!
 [Common_Strings].NotEnoughSkilled;There is a shortage of experienced recruits!
