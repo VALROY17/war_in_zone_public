@@ -73,8 +73,8 @@
 [StoryEvents.Event-EveryStep-CheckVictory5].Desc-NonOwner;Technical event to change the winning event flag
 ScenarioName;Part 8. Tutorial
 ScenarioDescription;This is a training scenario in which you will learn how to appoint deputies, change the rules in the faction, and understand the ideology.
-ScenarioVictoryDescription;Victory conditions: complete the task from the tutorial before turn 6.
-ScenarioLoseDescription;Conditions of defeat: lose all controlled territories or fail the training task, or fail to complete the task by turn 6.
+ScenarioVictoryDescription;Victory conditions: complete the task from the tutorial.
+ScenarioLoseDescription;Defeat conditions: lose all controlled territories or fail the training mission.
 [Groups.Bandits.:main].Spy1-Name;Newbie
 [Groups.Bandits.:main].Spy2-Name;Experienced
 [Groups.Bandits.:main].Spy3-Name;Veteran

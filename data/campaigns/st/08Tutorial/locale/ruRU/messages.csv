@@ -73,8 +73,8 @@
 [StoryEvents.Event-EveryStep-CheckVictory5].Desc-NonOwner;Техническое событие на изменение победного ивентного флага
 ScenarioName;Часть 8. Обучение
 ScenarioDescription;Это обучающий сценарий, в котором вы научитесь назначать заместителей, менять правила в группировке и разберётесь с идеологией.
-ScenarioVictoryDescription;Условия победы: выполнить задание из обучения до 6 хода.
-ScenarioLoseDescription;Условия поражения: потерять все подконтрольные территории или провалить задание из обучения, или до 6 хода не выполнить задание.
+ScenarioVictoryDescription;Условия победы: выполнить задание из обучения.
+ScenarioLoseDescription;Условия поражения: потерять все подконтрольные территории или провалить задание из обучения.
 [Groups.Bandits.:main].Spy1-Name;Новичок
 [Groups.Bandits.:main].Spy2-Name;Опытный
 [Groups.Bandits.:main].Spy3-Name;Ветеран
