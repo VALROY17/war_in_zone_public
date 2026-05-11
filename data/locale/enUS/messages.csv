@@ -2544,3 +2544,8 @@
 [Groups.zombie.Unknow].Text-End-Standart-Victory;Victory! Now O-Consciousness is safe. Soon, psi-radiation covered the entire Zone thanks to the increased number of emitters. Even the Cordon became dangerous. The government, although didn't release mutants from the Zone, no longer tried to retake it...
 [Groups.zombie.Zombie].Text-End-Standart-Victory;Victory! Now O-Consciousness is safe. Soon, psi-radiation covered the entire Zone thanks to the increased number of emitters. Even the Cordon became dangerous. The government, although didn't release mutants from the Zone, no longer tried to retake it...
 [Form_ZonaMenu].Text2;Constructed buildings:
+[Common_Strings].WinParamsText;Дополнительные условия победы
+[Common_Strings].WinParamType1;Disabled
+[Common_Strings].WinParamType2;Part
+[Common_Strings].WinParamType3;Group
+[Common_Strings].WinParamType4;Part and Group
