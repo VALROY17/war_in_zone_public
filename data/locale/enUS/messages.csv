@@ -1,4 +1,4 @@
-[Form_MainMenu].Update.NewVersion.Text;The new version of the game is out. You can download it from the game's launcher!
+﻿[Form_MainMenu].Update.NewVersion.Text;The new version of the game is out. You can download it from the game's launcher!
 [Form_MainMenu].Version.Part.Text;Version
 [Form_Campanings].TitleText;Choose a campaign
 [Form_Campanings].Tutorial.Text;Please play the tutorial first! || The game has a fairly high entry barrier, so the tutorial will help you get up to speed faster! You don't have to complete the entire tutorial. Completing any one scenario is enough.
