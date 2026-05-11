@@ -24,7 +24,7 @@
 [Form_Options].Text.All;Все
 [Form_Options].Text.No;Нет
 [Form_OptionsInterface].Text1;Подробный вывод в игровой лог:
-[Form_OptionsInterface].Text2;Отображение отчетов о боях поле начала хода:
+[Form_OptionsInterface].Text2;Отображение отчетов о боях после начала хода:
 [Form_OptionsInterface].Text3;Показ игрового лога в конце хода:
 [Form_OptionsInterface].Text4;Масштабирование интерфейса:
 [Form_OptionsInterface].Text5;Авто смена фона главного меню:

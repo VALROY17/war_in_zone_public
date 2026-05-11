@@ -153,7 +153,7 @@
 [Form_BuyUnits].F_Hint1;Number of ammunition in stock
 [Form_BuyUnits].F_Hint2;Name of the soldier rank
 [Form_BuyUnits].F_Hint3;The cost of one soldier
-[Form_Diplomacy].TitleText;Дипломатия
+[Form_Diplomacy].TitleText;Diplomacy
 [Form_Diplomacy].Text1;Current relationship status
 [Form_Diplomacy].Text2;Action cost:
 [Form_Diplomacy].Text3;Available actions:
@@ -1222,7 +1222,7 @@
 [Goods.Val-Modified].Desc;A modified version. A weapon for special forces. For experts.
 [Goods.Val].Name;Val
 [Goods.Val].Desc;Special forces weapons. For experts.
-[Goods.Veteran].Name;Ветеран
+[Goods.Veteran].Name;Veteran
 [Goods.Veteran].Desc;
 [Goods.Vintarez-Modified].Name;Vintar-M
 [Goods.Vintarez-Modified].Desc;A modified version. The cheapest rifle for veterans.
@@ -2515,10 +2515,10 @@
 [Groups.zombie.:main].DiplomacyText-Question-BreakAlliance;M-m-m-m-u-u-u-r-r-d-d-d-ah!!!!!!!
 [Groups.zombie.:main].DiplomacyText-RequestMoney-Ask;N-n-e-e-d mo-o-o-o-ney! G-i-i-i-i-ve:
 [Groups.zombie.:main].DiplomacyText-Ans-0-Down;M-m-m-m-u-u-u-r-r-d-d-d-ah!!!!!!!
-[Groups.zombie.:main].DiplomacyText-Ans-1-Down;М-м-м-м!!!
+[Groups.zombie.:main].DiplomacyText-Ans-1-Down;Z-o-m-b-i-e!!!
 [Groups.zombie.:main].DiplomacyText-Ans-1-No;M-m-m-m-u-u-u-r-r-d-d-d-ah!!!!!!!
 [Groups.zombie.:main].DiplomacyText-Ans-1-Yes;M-m-m-m-u-u-u-r-r-d-d-d-ah!!!!!!!
-[Groups.zombie.:main].DiplomacyText-Ans-2-No;М-м-м-м!!!
+[Groups.zombie.:main].DiplomacyText-Ans-2-No;Z-o-m-b-i-e!!!
 [Groups.zombie.:main].DiplomacyText-Ans-2-Yes;H-e-e-e-e-e-y-y-y-y-y!
 [Groups.zombie.:main].DiplomacyText-RequestMoney-Ans-No;N-n-o-o-o?
 [Groups.zombie.:main].DiplomacyText-RequestMoney-Ans-Yes;N-n-e-e-d mo-o-o-o-ney! G-i-i-i-i-ve:
