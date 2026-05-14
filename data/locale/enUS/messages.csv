@@ -2552,3 +2552,7 @@
 ScenarioVictoryDescription;Victory conditions:||Capture all territories on the map and hold them for 1 turn.||With partial victory conditions enabled, you must capture approximately 75% of all territories on the map and hold them for 1 turn.||With group victory enabled, an alliance of factions must completely control the map and hold them for 1 turn.||Partial-group victory - one faction or alliance of factions must control a total of 75% of all territories on the map and hold them for 1 turn.
 ScenarioLoseDescription;Defeat conditions: lose all controlled territories.
 [Form_Rating].Sklad_Hint;View the contents of a group warehouse;
+[Form_ScenarioSettings].VictoryHint_0;There are no additional conditions.
+[Form_ScenarioSettings].VictoryHint_1;A partial victory can be achieved by capturing approximately 75% of the total number of territories on the map.
+[Form_ScenarioSettings].VictoryHint_2;Group victory is achieved by capturing all territories by an alliance of groups.
+[Form_ScenarioSettings].VictoryHint_3;A partial-group victory is a combination of partial and group victories, which additionally includes the condition that not only one group, but also an alliance of groups can capture approximately 75% of all territories for victory.
