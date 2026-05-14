@@ -177,8 +177,6 @@
 [Traders.Trader3].NeedText;
 ScenarioName;
 ScenarioDescription;
-ScenarioVictoryDescription;
-ScenarioLoseDescription;
 [Groups.BanditsKaban.:main].Spy1-Name;
 [Groups.BanditsKaban.:main].Spy2-Name;
 [Groups.BanditsKaban.:main].Spy3-Name;

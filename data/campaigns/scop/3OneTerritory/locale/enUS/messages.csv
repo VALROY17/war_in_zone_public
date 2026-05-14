@@ -209,8 +209,6 @@
 [StoryEvents.Event-18].Desc-NonOwner;If you see this message, it's a bug in event #14.
 ScenarioName;The Last Frontier. Call of Pripyat
 ScenarioDescription;This scenario is not based on lore. Each faction has one territory. There is no time limit. Victory is achieved by capturing the entire Zone, and defeat is achieved by losing the last territory. Diplomacy between the factions is far from canon.
-ScenarioVictoryDescription;Victory conditions: capture all territories on the map and hold them for 1 turn.
-ScenarioLoseDescription;Defeat conditions: lose all controlled territories.
 [Groups.bandits.:main].Spy1-Name;Newbie
 [Groups.bandits.:main].Spy2-Name;Experiences
 [Groups.bandits.:main].Spy3-Name;Veteran

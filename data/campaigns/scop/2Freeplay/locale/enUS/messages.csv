@@ -209,8 +209,6 @@
 [StoryEvents.Event-18].Desc-NonOwner;If you see this message, it's a bug in event #14.
 ScenarioName;Free Play: Call of Pripyat
 ScenarioDescription;Free Play is a copy of the story mode, but with the story disabled and a few minor differences. There are no time limits. Victory is achieved by capturing the entire Zone, and defeat is achieved by losing the last territory. Diplomacy between factions may deviate from the canon during the game.
-ScenarioVictoryDescription;Victory conditions: capture all territories on the map and hold them for 1 turn.
-ScenarioLoseDescription;Defeat conditions: lose all controlled territories.
 [Groups.bandits.:main].Spy1-Name;Newbie
 [Groups.bandits.:main].Spy2-Name;Experiences
 [Groups.bandits.:main].Spy3-Name;Veteran

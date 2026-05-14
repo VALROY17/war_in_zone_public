@@ -314,7 +314,6 @@
 [StoryEvents.Event-82].Desc-NonOwner;The soldiers report that Degtyarev and a group of soldiers were evacuated from Pripyat by helicopter!
 ScenarioName;The Last Hope. Call of Pripyat
 ScenarioDescription;This scenario recreates the final part of the original game's plot. The scenario has a limited number of turns. You must capture all of Eastern Pripyat before Degtyarev and his detachment of Military personnel reach the extraction point. Diplomacy between the factions is close to canon.
-ScenarioVictoryDescription;Victory conditions: capture all territories on the map and hold them for 1 turn.
 ScenarioLoseDescription;Defeat conditions: lose all controlled territories or fail to meet the victory conditions within approximately 41 turns.
 [Groups.monolith.:main].Spy1-Name;Newbie
 [Groups.monolith.:main].Spy2-Name;Experienced

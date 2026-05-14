@@ -1085,7 +1085,6 @@
 [StoryEvents.Event-End-3].Desc-NonOwner;
 ScenarioName;
 ScenarioDescription;
-ScenarioVictoryDescription;
 ScenarioLoseDescription;
 [Groups.bandits.:main].Spy1-Name;
 [Groups.bandits.:main].Spy2-Name;

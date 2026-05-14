@@ -870,7 +870,6 @@
 [StoryEvents.Event-238].Desc-NonOwner;The soldiers report that Degtyarev and a group of soldiers were evacuated from Pripyat by helicopter!
 ScenarioName;Plot. Call of Pripyat
 ScenarioDescription;This scenario recreates the plot of the original game. It has a limited number of turns. You must capture the entire Zone before Degtyarev reaches the Military detachment in Pripyat and evacuates. Diplomacy between the factions is close to canon.
-ScenarioVictoryDescription;Victory conditions: capture all territories on the map and hold them for 1 turn.
 ScenarioLoseDescription;Defeat conditions: lose all controlled territories or fail to meet the victory conditions within approximately 118 turns.
 [Groups.bandits.:main].Spy1-Name;Newbie
 [Groups.bandits.:main].Spy2-Name;Experienced

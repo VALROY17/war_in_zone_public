@@ -174,8 +174,6 @@
 [StoryEvents.Event-Boost-12].Desc-NonOwner;
 ScenarioName;
 ScenarioDescription;
-ScenarioVictoryDescription;
-ScenarioLoseDescription;
 [Groups.bandits.:main].Spy1-Name;
 [Groups.bandits.:main].Spy2-Name;
 [Groups.bandits.:main].Spy3-Name;

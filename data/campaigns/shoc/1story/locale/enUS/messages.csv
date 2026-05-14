@@ -1515,5 +1515,4 @@
 [StoryEvents.Event-Ending-Zombie].Desc-NonOwner;
 ScenarioName;
 ScenarioDescription;
-ScenarioVictoryDescription;
 ScenarioLoseDescription;

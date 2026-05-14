@@ -124,5 +124,3 @@
 [StoryEvents.Event-Boost-AddUnit-8].Desc-NonOwner;
 ScenarioName;
 ScenarioDescription;
-ScenarioVictoryDescription;
-ScenarioLoseDescription;
