@@ -2565,7 +2565,7 @@
 [Groups.zombie.Zombie].Text-End-Standart-Victory;Победа! Теперь О-Сознание в безопасности. Вскоре пси-излучение покрыло всю Зону благодаря увеличению числа излучателей. Даже Кордон стал опасен. Правительство хоть и не выпускало мутантов из Зоны, но больше не пыталось вернуть ее...
 [Form_ZonaMenu].Text2;Сооруженные постройки:
 [Common_Strings].WinParamsText;Дополнительные условия победы:
-[Common_Strings].WinParamType1;Отключенны
+[Common_Strings].WinParamType1;Отключены
 [Common_Strings].WinParamType2;Частичная
 [Common_Strings].WinParamType3;Групповая
 [Common_Strings].WinParamType4;Частичная и групповая
