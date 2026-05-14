@@ -1,0 +1,849 @@
+M	Launcher.exe
+M	ModdingHelp.html
+M	ScenarioEditorTools.exe
+M	WAR IN ZONE.exe
+M	data/Engine_Settings.ini
+M	"data/FAQ \320\277\320\276 \321\201\320\276\320\267\320\264\320\260\320\275\320\270\321\216 \320\274\320\276\320\264\320\276\320\262 \320\272 \320\270\320\263\321\200\320\265.rtf"
+A	data/campaigns/sac/1FirstBreakthrough/AI.ini
+A	data/campaigns/sac/1FirstBreakthrough/Achievements.ini
+A	data/campaigns/sac/1FirstBreakthrough/Advisors.ini
+A	data/campaigns/sac/1FirstBreakthrough/Difficulty.Ini
+A	data/campaigns/sac/1FirstBreakthrough/Events_Story.ini
+A	data/campaigns/sac/1FirstBreakthrough/Groups/Soldiers.ini
+A	data/campaigns/sac/1FirstBreakthrough/Groups/SoldiersAI.ini
+A	data/campaigns/sac/1FirstBreakthrough/Groups/mutantsA.ini
+A	data/campaigns/sac/1FirstBreakthrough/Groups/mutantsE.ini
+A	data/campaigns/sac/1FirstBreakthrough/Groups/mutantsFW.ini
+A	data/campaigns/sac/1FirstBreakthrough/Groups/mutantsU.ini
+R100	data/campanings/st/01Tutorial/Groups/zombie.ini	data/campaigns/sac/1FirstBreakthrough/Groups/zombie.ini
+A	data/campaigns/sac/1FirstBreakthrough/Settings.ini
+A	data/campaigns/sac/1FirstBreakthrough/SpecialEvents/IdeologyUnitsLeave.ini
+A	data/campaigns/sac/1FirstBreakthrough/SpecialEvents/NoFood.ini
+R100	data/campanings/shoc/2Freeplay/TraderGoods.ini	data/campaigns/sac/1FirstBreakthrough/TraderGoods.ini
+A	data/campaigns/sac/1FirstBreakthrough/Traders.ini
+A	data/campaigns/sac/1FirstBreakthrough/Tutorial.ini
+A	data/campaigns/sac/1FirstBreakthrough/gfx/Scenario_Logo.png
+A	data/campaigns/sac/1FirstBreakthrough/gfx/Scenario_Logo_Active.png
+R100	data/campanings/st/08Tutorial/gfx/Tutorial/tutorial_img1.png	data/campaigns/sac/1FirstBreakthrough/gfx/Tutorial/tutorial_img1.png
+R100	data/campanings/st/08Tutorial/gfx/Tutorial/tutorial_img2.png	data/campaigns/sac/1FirstBreakthrough/gfx/Tutorial/tutorial_img2.png
+R100	data/campanings/st/08Tutorial/gfx/Tutorial/tutorial_img3.png	data/campaigns/sac/1FirstBreakthrough/gfx/Tutorial/tutorial_img3.png
+R100	data/campanings/st/08Tutorial/gfx/Tutorial/tutorial_img4.png	data/campaigns/sac/1FirstBreakthrough/gfx/Tutorial/tutorial_img4.png
+R100	data/campanings/st/08Tutorial/gfx/Tutorial/tutorial_img5.png	data/campaigns/sac/1FirstBreakthrough/gfx/Tutorial/tutorial_img5.png
+R100	data/campanings/st/08Tutorial/gfx/Tutorial/tutorial_img6.png	data/campaigns/sac/1FirstBreakthrough/gfx/Tutorial/tutorial_img6.png
+R100	data/campanings/st/08Tutorial/gfx/Tutorial/tutorial_img7.png	data/campaigns/sac/1FirstBreakthrough/gfx/Tutorial/tutorial_img7.png
+A	data/campaigns/sac/1FirstBreakthrough/gfx/icons/map/MCIcon-Attack.png
+A	data/campaigns/sac/1FirstBreakthrough/gfx/icons/map/MCIcon-Move.png
+A	data/campaigns/sac/1FirstBreakthrough/locale/ruru/messages.csv
+A	data/campaigns/sac/1FirstBreakthrough/main.ini
+R100	data/campanings/scop/1Story/AI.ini	data/campaigns/scop/1Story/AI.ini
+R100	data/campanings/scop/1Story/Achievements.ini	data/campaigns/scop/1Story/Achievements.ini
+R100	data/campanings/scop/1Story/Advisors.ini	data/campaigns/scop/1Story/Advisors.ini
+R100	data/campanings/scop/1Story/Events_Story.ini	data/campaigns/scop/1Story/Events_Story.ini
+R100	data/campanings/scop/1Story/Main.ini	data/campaigns/scop/1Story/Main.ini
+R092	data/campanings/scop/1Story/Settings.ini	data/campaigns/scop/1Story/Settings.ini
+R100	data/campanings/scop/1Story/TraderGoods.ini	data/campaigns/scop/1Story/TraderGoods.ini
+R100	data/campanings/scop/1Story/Traders.ini	data/campaigns/scop/1Story/Traders.ini
+R100	data/campanings/scop/1Story/gfx/Scenario_Logo_Story-Active.png	data/campaigns/scop/1Story/gfx/Scenario_Logo_Story-Active.png
+R100	data/campanings/scop/1Story/gfx/Scenario_Logo_Story.png	data/campaigns/scop/1Story/gfx/Scenario_Logo_Story.png
+R100	data/campanings/scop/1Story/groups/Duty.ini	data/campaigns/scop/1Story/groups/Duty.ini
+R100	data/campanings/scop/1Story/groups/Mercenaries.ini	data/campaigns/scop/1Story/groups/Mercenaries.ini
+R100	data/campanings/scop/1Story/groups/bandits.ini	data/campaigns/scop/1Story/groups/bandits.ini
+R100	data/campanings/scop/1Story/groups/freedom.ini	data/campaigns/scop/1Story/groups/freedom.ini
+R100	data/campanings/scop/1Story/groups/monolith.ini	data/campaigns/scop/1Story/groups/monolith.ini
+R100	data/campanings/scop/1Story/groups/scientists.ini	data/campaigns/scop/1Story/groups/scientists.ini
+R100	data/campanings/scop/1Story/groups/soldiers.ini	data/campaigns/scop/1Story/groups/soldiers.ini
+R100	data/campanings/scop/1Story/groups/stalkers.ini	data/campaigns/scop/1Story/groups/stalkers.ini
+R100	data/campanings/scop/1Story/interface.ini	data/campaigns/scop/1Story/interface.ini
+R099	data/campanings/scop/1Story/locale/enUS/messages.csv	data/campaigns/scop/1Story/locale/enUS/messages.csv
+R099	data/campanings/scop/1Story/locale/ruRu/messages.csv	data/campaigns/scop/1Story/locale/ruRu/messages.csv
+R100	data/campanings/scop/2Freeplay/AI.ini	data/campaigns/scop/2Freeplay/AI.ini
+R100	data/campanings/scop/2Freeplay/Achievements.ini	data/campaigns/scop/2Freeplay/Achievements.ini
+R100	data/campanings/scop/2Freeplay/Advisors.ini	data/campaigns/scop/2Freeplay/Advisors.ini
+R100	data/campanings/scop/2Freeplay/Events_Story.ini	data/campaigns/scop/2Freeplay/Events_Story.ini
+R100	data/campanings/scop/2Freeplay/Main.ini	data/campaigns/scop/2Freeplay/Main.ini
+R098	data/campanings/scop/2Freeplay/Settings.ini	data/campaigns/scop/2Freeplay/Settings.ini
+R100	data/campanings/scop/2Freeplay/TraderGoods.ini	data/campaigns/scop/2Freeplay/TraderGoods.ini
+R100	data/campanings/scop/2Freeplay/Traders.ini	data/campaigns/scop/2Freeplay/Traders.ini
+R100	data/campanings/scop/2Freeplay/gfx/Scenario_Logo_Non_Story-Active.png	data/campaigns/scop/2Freeplay/gfx/Scenario_Logo_Non_Story-Active.png
+R100	data/campanings/scop/2Freeplay/gfx/Scenario_Logo_Non_Story.png	data/campaigns/scop/2Freeplay/gfx/Scenario_Logo_Non_Story.png
+R100	data/campanings/scop/2Freeplay/groups/Duty.ini	data/campaigns/scop/2Freeplay/groups/Duty.ini
+R100	data/campanings/scop/2Freeplay/groups/Mercenaries.ini	data/campaigns/scop/2Freeplay/groups/Mercenaries.ini
+R100	data/campanings/scop/2Freeplay/groups/bandits.ini	data/campaigns/scop/2Freeplay/groups/bandits.ini
+R100	data/campanings/scop/2Freeplay/groups/freedom.ini	data/campaigns/scop/2Freeplay/groups/freedom.ini
+R100	data/campanings/scop/2Freeplay/groups/monolith.ini	data/campaigns/scop/2Freeplay/groups/monolith.ini
+R100	data/campanings/scop/2Freeplay/groups/scientists.ini	data/campaigns/scop/2Freeplay/groups/scientists.ini
+R100	data/campanings/scop/2Freeplay/groups/soldiers.ini	data/campaigns/scop/2Freeplay/groups/soldiers.ini
+R100	data/campanings/scop/2Freeplay/groups/stalkers.ini	data/campaigns/scop/2Freeplay/groups/stalkers.ini
+R100	data/campanings/scop/2Freeplay/interface.ini	data/campaigns/scop/2Freeplay/interface.ini
+A	data/campaigns/scop/2Freeplay/locale/enUS/messages.csv
+R099	data/campanings/scop/2Freeplay/locale/ruRu/messages.csv	data/campaigns/scop/2Freeplay/locale/ruRu/messages.csv
+R100	data/campanings/scop/3OneTerritory/AI.ini	data/campaigns/scop/3OneTerritory/AI.ini
+R100	data/campanings/scop/3OneTerritory/Achievements.ini	data/campaigns/scop/3OneTerritory/Achievements.ini
+R100	data/campanings/scop/3OneTerritory/Advisors.ini	data/campaigns/scop/3OneTerritory/Advisors.ini
+R100	data/campanings/scop/3OneTerritory/Events_Story.ini	data/campaigns/scop/3OneTerritory/Events_Story.ini
+R100	data/campanings/scop/3OneTerritory/Main.ini	data/campaigns/scop/3OneTerritory/Main.ini
+R092	data/campanings/scop/3OneTerritory/Settings.ini	data/campaigns/scop/3OneTerritory/Settings.ini
+R100	data/campanings/scop/3OneTerritory/TraderGoods.ini	data/campaigns/scop/3OneTerritory/TraderGoods.ini
+R100	data/campanings/scop/3OneTerritory/Traders.ini	data/campaigns/scop/3OneTerritory/Traders.ini
+R100	data/campanings/scop/3OneTerritory/groups/Duty.ini	data/campaigns/scop/3OneTerritory/groups/Duty.ini
+R100	data/campanings/scop/3OneTerritory/groups/Mercenaries.ini	data/campaigns/scop/3OneTerritory/groups/Mercenaries.ini
+R100	data/campanings/scop/3OneTerritory/groups/bandits.ini	data/campaigns/scop/3OneTerritory/groups/bandits.ini
+R100	data/campanings/scop/3OneTerritory/groups/freedom.ini	data/campaigns/scop/3OneTerritory/groups/freedom.ini
+R100	data/campanings/scop/3OneTerritory/groups/monolith.ini	data/campaigns/scop/3OneTerritory/groups/monolith.ini
+R100	data/campanings/scop/3OneTerritory/groups/scientists.ini	data/campaigns/scop/3OneTerritory/groups/scientists.ini
+R100	data/campanings/scop/3OneTerritory/groups/soldiers.ini	data/campaigns/scop/3OneTerritory/groups/soldiers.ini
+R100	data/campanings/scop/3OneTerritory/groups/stalkers.ini	data/campaigns/scop/3OneTerritory/groups/stalkers.ini
+R100	data/campanings/scop/3OneTerritory/interface.ini	data/campaigns/scop/3OneTerritory/interface.ini
+A	data/campaigns/scop/3OneTerritory/locale/enUS/messages.csv
+R099	data/campanings/scop/3OneTerritory/locale/ruRu/messages.csv	data/campaigns/scop/3OneTerritory/locale/ruRu/messages.csv
+R100	data/campanings/scop/4Pripyat/AI.ini	data/campaigns/scop/4Pripyat/AI.ini
+R100	data/campanings/scop/4Pripyat/Achievements.ini	data/campaigns/scop/4Pripyat/Achievements.ini
+R100	data/campanings/scop/4Pripyat/Advisors.ini	data/campaigns/scop/4Pripyat/Advisors.ini
+R100	data/campanings/scop/4Pripyat/Difficulty.Ini	data/campaigns/scop/4Pripyat/Difficulty.Ini
+R100	data/campanings/scop/4Pripyat/Events_Story.ini	data/campaigns/scop/4Pripyat/Events_Story.ini
+R100	data/campanings/scop/4Pripyat/Main.ini	data/campaigns/scop/4Pripyat/Main.ini
+R100	data/campanings/scop/4Pripyat/Rules.ini	data/campaigns/scop/4Pripyat/Rules.ini
+R092	data/campanings/scop/4Pripyat/Settings.ini	data/campaigns/scop/4Pripyat/Settings.ini
+R100	data/campanings/scop/4Pripyat/TraderGoods.ini	data/campaigns/scop/4Pripyat/TraderGoods.ini
+R100	data/campanings/scop/4Pripyat/Traders.ini	data/campaigns/scop/4Pripyat/Traders.ini
+R100	data/campanings/scop/4Pripyat/gfx/Scenario_Logo_Story-Active.png	data/campaigns/scop/4Pripyat/gfx/Scenario_Logo_Story-Active.png
+R100	data/campanings/scop/4Pripyat/gfx/Scenario_Logo_Story.png	data/campaigns/scop/4Pripyat/gfx/Scenario_Logo_Story.png
+R100	data/campanings/scop/4Pripyat/groups/monolith.ini	data/campaigns/scop/4Pripyat/groups/monolith.ini
+R100	data/campanings/scop/4Pripyat/groups/soldiers.ini	data/campaigns/scop/4Pripyat/groups/soldiers.ini
+A	data/campaigns/scop/4Pripyat/locale/enUS/messages.csv
+R100	data/campanings/scop/4Pripyat/locale/ruRu/messages.csv	data/campaigns/scop/4Pripyat/locale/ruRu/messages.csv
+R100	data/campanings/scop/5Zaton/AI.ini	data/campaigns/scop/5Zaton/AI.ini
+R100	data/campanings/scop/5Zaton/Achievements.ini	data/campaigns/scop/5Zaton/Achievements.ini
+R100	data/campanings/scop/5Zaton/Advisors.ini	data/campaigns/scop/5Zaton/Advisors.ini
+R100	data/campanings/scop/5Zaton/Difficulty.Ini	data/campaigns/scop/5Zaton/Difficulty.Ini
+R100	data/campanings/scop/5Zaton/Events_Story.ini	data/campaigns/scop/5Zaton/Events_Story.ini
+R100	data/campanings/scop/5Zaton/Main.ini	data/campaigns/scop/5Zaton/Main.ini
+R092	data/campanings/scop/5Zaton/Settings.ini	data/campaigns/scop/5Zaton/Settings.ini
+R100	data/campanings/scop/5Zaton/TraderGoods.ini	data/campaigns/scop/5Zaton/TraderGoods.ini
+R100	data/campanings/scop/5Zaton/Traders.ini	data/campaigns/scop/5Zaton/Traders.ini
+R100	data/campanings/scop/5Zaton/gfx/Scenario_Logo_Story-Active.png	data/campaigns/scop/5Zaton/gfx/Scenario_Logo_Story-Active.png
+R100	data/campanings/scop/5Zaton/gfx/Scenario_Logo_Story.png	data/campaigns/scop/5Zaton/gfx/Scenario_Logo_Story.png
+R100	data/campanings/scop/5Zaton/groups/Mercenaries.ini	data/campaigns/scop/5Zaton/groups/Mercenaries.ini
+R100	data/campanings/scop/5Zaton/groups/bandits.ini	data/campaigns/scop/5Zaton/groups/bandits.ini
+R100	data/campanings/scop/5Zaton/groups/stalkers.ini	data/campaigns/scop/5Zaton/groups/stalkers.ini
+R100	data/campanings/scop/5Zaton/interface.ini	data/campaigns/scop/5Zaton/interface.ini
+R099	data/campanings/scop/5Zaton/locale/enUS/messages.csv	data/campaigns/scop/5Zaton/locale/enUS/messages.csv
+R100	data/campanings/scop/5Zaton/locale/ruRU/messages.csv	data/campaigns/scop/5Zaton/locale/ruRU/messages.csv
+R100	data/campanings/scop/6Fragmentation/AI.ini	data/campaigns/scop/6Fragmentation/AI.ini
+R100	data/campanings/scop/6Fragmentation/Achievements.ini	data/campaigns/scop/6Fragmentation/Achievements.ini
+R100	data/campanings/scop/6Fragmentation/Advisors.ini	data/campaigns/scop/6Fragmentation/Advisors.ini
+R100	data/campanings/scop/6Fragmentation/Events_Story.ini	data/campaigns/scop/6Fragmentation/Events_Story.ini
+R100	data/campanings/scop/6Fragmentation/Main.ini	data/campaigns/scop/6Fragmentation/Main.ini
+R092	data/campanings/scop/6Fragmentation/Settings.ini	data/campaigns/scop/6Fragmentation/Settings.ini
+R100	data/campanings/scop/6Fragmentation/TraderGoods.ini	data/campaigns/scop/6Fragmentation/TraderGoods.ini
+R100	data/campanings/scop/6Fragmentation/Traders.ini	data/campaigns/scop/6Fragmentation/Traders.ini
+R100	data/campanings/scop/6Fragmentation/groups/Duty.ini	data/campaigns/scop/6Fragmentation/groups/Duty.ini
+R100	data/campanings/scop/6Fragmentation/groups/Mercenaries.ini	data/campaigns/scop/6Fragmentation/groups/Mercenaries.ini
+R100	data/campanings/scop/6Fragmentation/groups/Noon.ini	data/campaigns/scop/6Fragmentation/groups/Noon.ini
+R100	data/campanings/scop/6Fragmentation/groups/bandits.ini	data/campaigns/scop/6Fragmentation/groups/bandits.ini
+R100	data/campanings/scop/6Fragmentation/groups/banditsKillers.ini	data/campaigns/scop/6Fragmentation/groups/banditsKillers.ini
+R100	data/campanings/scop/6Fragmentation/groups/banditsShishak.ini	data/campaigns/scop/6Fragmentation/groups/banditsShishak.ini
+R100	data/campanings/scop/6Fragmentation/groups/banditsValet.ini	data/campaigns/scop/6Fragmentation/groups/banditsValet.ini
+R100	data/campanings/scop/6Fragmentation/groups/freedom.ini	data/campaigns/scop/6Fragmentation/groups/freedom.ini
+R100	data/campanings/scop/6Fragmentation/groups/monolith.ini	data/campaigns/scop/6Fragmentation/groups/monolith.ini
+R100	data/campanings/scop/6Fragmentation/groups/scientists.ini	data/campaigns/scop/6Fragmentation/groups/scientists.ini
+R100	data/campanings/scop/6Fragmentation/groups/soldiers.ini	data/campaigns/scop/6Fragmentation/groups/soldiers.ini
+R100	data/campanings/scop/6Fragmentation/groups/stalkers.ini	data/campaigns/scop/6Fragmentation/groups/stalkers.ini
+R100	data/campanings/scop/6Fragmentation/groups/stalkersNoy.ini	data/campaigns/scop/6Fragmentation/groups/stalkersNoy.ini
+R100	data/campanings/scop/6Fragmentation/groups/stalkersSpartak.ini	data/campaigns/scop/6Fragmentation/groups/stalkersSpartak.ini
+R100	data/campanings/scop/6Fragmentation/groups/stalkersYanov.ini	data/campaigns/scop/6Fragmentation/groups/stalkersYanov.ini
+R100	data/campanings/scop/6Fragmentation/interface.ini	data/campaigns/scop/6Fragmentation/interface.ini
+R100	data/campanings/scop/6Fragmentation/leaders/Leader-Killers.ini	data/campaigns/scop/6Fragmentation/leaders/Leader-Killers.ini
+R100	data/campanings/scop/6Fragmentation/leaders/Leader-Noon.ini	data/campaigns/scop/6Fragmentation/leaders/Leader-Noon.ini
+R100	data/campanings/scop/6Fragmentation/leaders/Leader-Noy.ini	data/campaigns/scop/6Fragmentation/leaders/Leader-Noy.ini
+R100	data/campanings/scop/6Fragmentation/leaders/Leader-Shishak.ini	data/campaigns/scop/6Fragmentation/leaders/Leader-Shishak.ini
+R100	data/campanings/scop/6Fragmentation/leaders/Leader-Spartak.ini	data/campaigns/scop/6Fragmentation/leaders/Leader-Spartak.ini
+R100	data/campanings/scop/6Fragmentation/leaders/Leader-Sultan.ini	data/campaigns/scop/6Fragmentation/leaders/Leader-Sultan.ini
+R100	data/campanings/scop/6Fragmentation/leaders/Leader-Valet.ini	data/campaigns/scop/6Fragmentation/leaders/Leader-Valet.ini
+R099	data/campanings/scop/6Fragmentation/locale/enUS/messages.csv	data/campaigns/scop/6Fragmentation/locale/enUS/messages.csv
+R099	data/campanings/scop/6Fragmentation/locale/ruRU/messages.csv	data/campaigns/scop/6Fragmentation/locale/ruRU/messages.csv
+R100	data/campanings/scs/1story/AI.ini	data/campaigns/scs/1story/AI.ini
+R100	data/campanings/scs/1story/Achievements.ini	data/campaigns/scs/1story/Achievements.ini
+R100	data/campanings/scs/1story/Advisors.ini	data/campaigns/scs/1story/Advisors.ini
+R100	data/campanings/scs/1story/Events_Story.ini	data/campaigns/scs/1story/Events_Story.ini
+R100	data/campanings/scs/1story/Main.ini	data/campaigns/scs/1story/Main.ini
+R092	data/campanings/scs/1story/Settings.ini	data/campaigns/scs/1story/Settings.ini
+R100	data/campanings/scs/1story/TraderGoods.ini	data/campaigns/scs/1story/TraderGoods.ini
+R100	data/campanings/scs/1story/Traders.ini	data/campaigns/scs/1story/Traders.ini
+R100	data/campanings/scs/1story/gfx/Scenario_Logo_Story-Active.png	data/campaigns/scs/1story/gfx/Scenario_Logo_Story-Active.png
+R100	data/campanings/scs/1story/gfx/Scenario_Logo_Story.png	data/campaigns/scs/1story/gfx/Scenario_Logo_Story.png
+R100	data/campanings/scs/1story/groups/Duty.ini	data/campaigns/scs/1story/groups/Duty.ini
+R100	data/campanings/scs/1story/groups/Mercenaries.ini	data/campaigns/scs/1story/groups/Mercenaries.ini
+R100	data/campanings/scs/1story/groups/bandits.ini	data/campaigns/scs/1story/groups/bandits.ini
+R100	data/campanings/scs/1story/groups/freedom.ini	data/campaigns/scs/1story/groups/freedom.ini
+R100	data/campanings/scs/1story/groups/monolith.ini	data/campaigns/scs/1story/groups/monolith.ini
+R100	data/campanings/scs/1story/groups/scientists.ini	data/campaigns/scs/1story/groups/scientists.ini
+R100	data/campanings/scs/1story/groups/soldiers.ini	data/campaigns/scs/1story/groups/soldiers.ini
+R100	data/campanings/scs/1story/groups/stalkers.ini	data/campaigns/scs/1story/groups/stalkers.ini
+R099	data/campanings/scs/1story/locale/enUS/messages.csv	data/campaigns/scs/1story/locale/enUS/messages.csv
+R099	data/campanings/scs/1story/locale/ruRU/messages.csv	data/campaigns/scs/1story/locale/ruRU/messages.csv
+R100	data/campanings/scs/2Freeplay/AI.ini	data/campaigns/scs/2Freeplay/AI.ini
+R100	data/campanings/scs/2Freeplay/Achievements.ini	data/campaigns/scs/2Freeplay/Achievements.ini
+R100	data/campanings/scs/2Freeplay/Advisors.ini	data/campaigns/scs/2Freeplay/Advisors.ini
+R100	data/campanings/scs/2Freeplay/Events_Story.ini	data/campaigns/scs/2Freeplay/Events_Story.ini
+R100	data/campanings/scs/2Freeplay/Main.ini	data/campaigns/scs/2Freeplay/Main.ini
+R092	data/campanings/scs/2Freeplay/Settings.ini	data/campaigns/scs/2Freeplay/Settings.ini
+R100	data/campanings/scs/2Freeplay/TraderGoods.ini	data/campaigns/scs/2Freeplay/TraderGoods.ini
+R100	data/campanings/scs/2Freeplay/Traders.ini	data/campaigns/scs/2Freeplay/Traders.ini
+R100	data/campanings/scs/2Freeplay/gfx/Scenario_Logo_Non_Story-Active.png	data/campaigns/scs/2Freeplay/gfx/Scenario_Logo_Non_Story-Active.png
+R100	data/campanings/scs/2Freeplay/gfx/Scenario_Logo_Non_Story.png	data/campaigns/scs/2Freeplay/gfx/Scenario_Logo_Non_Story.png
+R100	data/campanings/scs/2Freeplay/groups/Duty.ini	data/campaigns/scs/2Freeplay/groups/Duty.ini
+R100	data/campanings/scs/2Freeplay/groups/Mercenaries.ini	data/campaigns/scs/2Freeplay/groups/Mercenaries.ini
+R100	data/campanings/scs/2Freeplay/groups/bandits.ini	data/campaigns/scs/2Freeplay/groups/bandits.ini
+R100	data/campanings/scs/2Freeplay/groups/freedom.ini	data/campaigns/scs/2Freeplay/groups/freedom.ini
+R100	data/campanings/scs/2Freeplay/groups/monolith.ini	data/campaigns/scs/2Freeplay/groups/monolith.ini
+R100	data/campanings/scs/2Freeplay/groups/scientists.ini	data/campaigns/scs/2Freeplay/groups/scientists.ini
+R100	data/campanings/scs/2Freeplay/groups/soldiers.ini	data/campaigns/scs/2Freeplay/groups/soldiers.ini
+R100	data/campanings/scs/2Freeplay/groups/stalkers.ini	data/campaigns/scs/2Freeplay/groups/stalkers.ini
+R099	data/campanings/scs/2Freeplay/locale/enUS/messages.csv	data/campaigns/scs/2Freeplay/locale/enUS/messages.csv
+R099	data/campanings/scs/2Freeplay/locale/ruRU/messages.csv	data/campaigns/scs/2Freeplay/locale/ruRU/messages.csv
+R100	data/campanings/scs/3OneTerritory/AI.ini	data/campaigns/scs/3OneTerritory/AI.ini
+R100	data/campanings/scs/3OneTerritory/Achievements.ini	data/campaigns/scs/3OneTerritory/Achievements.ini
+R100	data/campanings/scs/3OneTerritory/Advisors.ini	data/campaigns/scs/3OneTerritory/Advisors.ini
+R100	data/campanings/scs/3OneTerritory/Events_Story.ini	data/campaigns/scs/3OneTerritory/Events_Story.ini
+R100	data/campanings/scs/3OneTerritory/Main.ini	data/campaigns/scs/3OneTerritory/Main.ini
+R092	data/campanings/scs/3OneTerritory/Settings.ini	data/campaigns/scs/3OneTerritory/Settings.ini
+R100	data/campanings/scs/3OneTerritory/TraderGoods.ini	data/campaigns/scs/3OneTerritory/TraderGoods.ini
+R100	data/campanings/scs/3OneTerritory/Traders.ini	data/campaigns/scs/3OneTerritory/Traders.ini
+R100	data/campanings/scs/3OneTerritory/groups/Duty.ini	data/campaigns/scs/3OneTerritory/groups/Duty.ini
+R100	data/campanings/scs/3OneTerritory/groups/Mercenaries.ini	data/campaigns/scs/3OneTerritory/groups/Mercenaries.ini
+R100	data/campanings/scs/3OneTerritory/groups/bandits.ini	data/campaigns/scs/3OneTerritory/groups/bandits.ini
+R100	data/campanings/scs/3OneTerritory/groups/freedom.ini	data/campaigns/scs/3OneTerritory/groups/freedom.ini
+R100	data/campanings/scs/3OneTerritory/groups/monolith.ini	data/campaigns/scs/3OneTerritory/groups/monolith.ini
+R100	data/campanings/scs/3OneTerritory/groups/scientists.ini	data/campaigns/scs/3OneTerritory/groups/scientists.ini
+R100	data/campanings/scs/3OneTerritory/groups/soldiers.ini	data/campaigns/scs/3OneTerritory/groups/soldiers.ini
+R100	data/campanings/scs/3OneTerritory/groups/stalkers.ini	data/campaigns/scs/3OneTerritory/groups/stalkers.ini
+R099	data/campanings/scs/3OneTerritory/locale/enUS/messages.csv	data/campaigns/scs/3OneTerritory/locale/enUS/messages.csv
+R099	data/campanings/scs/3OneTerritory/locale/ruRU/messages.csv	data/campaigns/scs/3OneTerritory/locale/ruRU/messages.csv
+R100	data/campanings/scs/4Border/AI.ini	data/campaigns/scs/4Border/AI.ini
+R100	data/campanings/scs/4Border/Achievements.ini	data/campaigns/scs/4Border/Achievements.ini
+R100	data/campanings/scs/4Border/Advisors.ini	data/campaigns/scs/4Border/Advisors.ini
+R100	data/campanings/scs/4Border/Events_Story.ini	data/campaigns/scs/4Border/Events_Story.ini
+R100	data/campanings/scs/4Border/Main.ini	data/campaigns/scs/4Border/Main.ini
+R100	data/campanings/scs/4Border/Rules.ini	data/campaigns/scs/4Border/Rules.ini
+R092	data/campanings/scs/4Border/Settings.ini	data/campaigns/scs/4Border/Settings.ini
+R100	data/campanings/scs/4Border/TraderGoods.ini	data/campaigns/scs/4Border/TraderGoods.ini
+R100	data/campanings/scs/4Border/Traders.ini	data/campaigns/scs/4Border/Traders.ini
+R100	data/campanings/scs/4Border/gfx/Scenario_Logo_Border-Active.png	data/campaigns/scs/4Border/gfx/Scenario_Logo_Border-Active.png
+R100	data/campanings/scs/4Border/gfx/Scenario_Logo_Border.png	data/campaigns/scs/4Border/gfx/Scenario_Logo_Border.png
+R100	data/campanings/scs/4Border/groups/Duty.ini	data/campaigns/scs/4Border/groups/Duty.ini
+R100	data/campanings/scs/4Border/groups/Mercenaries.ini	data/campaigns/scs/4Border/groups/Mercenaries.ini
+R100	data/campanings/scs/4Border/groups/freedom.ini	data/campaigns/scs/4Border/groups/freedom.ini
+R100	data/campanings/scs/4Border/groups/monolith.ini	data/campaigns/scs/4Border/groups/monolith.ini
+R100	data/campanings/scs/4Border/groups/mutants.ini	data/campaigns/scs/4Border/groups/mutants.ini
+R100	data/campanings/scs/4Border/groups/soldiers.ini	data/campaigns/scs/4Border/groups/soldiers.ini
+R100	data/campanings/scs/4Border/groups/stalkers.ini	data/campaigns/scs/4Border/groups/stalkers.ini
+R100	data/campanings/scs/4Border/locale/enUS/messages.csv	data/campaigns/scs/4Border/locale/enUS/messages.csv
+R099	data/campanings/scs/4Border/locale/ruRU/messages.csv	data/campaigns/scs/4Border/locale/ruRU/messages.csv
+R100	data/campanings/scs/5Limansk/AI.ini	data/campaigns/scs/5Limansk/AI.ini
+R100	data/campanings/scs/5Limansk/Achievements.ini	data/campaigns/scs/5Limansk/Achievements.ini
+R100	data/campanings/scs/5Limansk/Advisors.ini	data/campaigns/scs/5Limansk/Advisors.ini
+R100	data/campanings/scs/5Limansk/Events_Story.ini	data/campaigns/scs/5Limansk/Events_Story.ini
+R100	data/campanings/scs/5Limansk/Main.ini	data/campaigns/scs/5Limansk/Main.ini
+R093	data/campanings/scs/5Limansk/Settings.ini	data/campaigns/scs/5Limansk/Settings.ini
+R100	data/campanings/scs/5Limansk/TraderGoods.ini	data/campaigns/scs/5Limansk/TraderGoods.ini
+R100	data/campanings/scs/5Limansk/Traders.ini	data/campaigns/scs/5Limansk/Traders.ini
+R100	data/campanings/scs/5Limansk/gfx/Scenario_Logo_Limansk-Active.png	data/campaigns/scs/5Limansk/gfx/Scenario_Logo_Limansk-Active.png
+R100	data/campanings/scs/5Limansk/gfx/Scenario_Logo_Limansk.png	data/campaigns/scs/5Limansk/gfx/Scenario_Logo_Limansk.png
+R100	data/campanings/scs/5Limansk/groups/Duty.ini	data/campaigns/scs/5Limansk/groups/Duty.ini
+R100	data/campanings/scs/5Limansk/groups/Mercenaries.ini	data/campaigns/scs/5Limansk/groups/Mercenaries.ini
+R100	data/campanings/scs/5Limansk/groups/bandits.ini	data/campaigns/scs/5Limansk/groups/bandits.ini
+R100	data/campanings/scs/5Limansk/groups/clearsky.ini	data/campaigns/scs/5Limansk/groups/clearsky.ini
+R100	data/campanings/scs/5Limansk/groups/freedom.ini	data/campaigns/scs/5Limansk/groups/freedom.ini
+R100	data/campanings/scs/5Limansk/groups/monolith.ini	data/campaigns/scs/5Limansk/groups/monolith.ini
+R100	data/campanings/scs/5Limansk/groups/soldiers.ini	data/campaigns/scs/5Limansk/groups/soldiers.ini
+R100	data/campanings/scs/5Limansk/leaders/Leader-0.ini	data/campaigns/scs/5Limansk/leaders/Leader-0.ini
+R100	data/campanings/scs/5Limansk/leaders/Leader-10.ini	data/campaigns/scs/5Limansk/leaders/Leader-10.ini
+R100	data/campanings/scs/5Limansk/leaders/Leader-7.ini	data/campaigns/scs/5Limansk/leaders/Leader-7.ini
+R100	data/campanings/scs/5Limansk/leaders/Leader-Chehov.ini	data/campaigns/scs/5Limansk/leaders/Leader-Chehov.ini
+R100	data/campanings/scs/5Limansk/leaders/Leader-General.ini	data/campaigns/scs/5Limansk/leaders/Leader-General.ini
+R100	data/campanings/scs/5Limansk/leaders/Leader-Krylov.ini	data/campaigns/scs/5Limansk/leaders/Leader-Krylov.ini
+R100	data/campanings/scs/5Limansk/leaders/Leader-Monolith.ini	data/campaigns/scs/5Limansk/leaders/Leader-Monolith.ini
+R100	data/campanings/scs/5Limansk/leaders/Leader-Spectator.ini	data/campaigns/scs/5Limansk/leaders/Leader-Spectator.ini
+R100	data/campanings/scs/5Limansk/leaders/Leader-Yoga.ini	data/campaigns/scs/5Limansk/leaders/Leader-Yoga.ini
+R100	data/campanings/scs/5Limansk/locale/enUS/messages.csv	data/campaigns/scs/5Limansk/locale/enUS/messages.csv
+R099	data/campanings/scs/5Limansk/locale/ruRU/messages.csv	data/campaigns/scs/5Limansk/locale/ruRU/messages.csv
+R100	data/campanings/scs/6Fragmentation/AI.ini	data/campaigns/scs/6Fragmentation/AI.ini
+R100	data/campanings/scs/6Fragmentation/Achievements.ini	data/campaigns/scs/6Fragmentation/Achievements.ini
+R100	data/campanings/scs/6Fragmentation/Advisors.ini	data/campaigns/scs/6Fragmentation/Advisors.ini
+R100	data/campanings/scs/6Fragmentation/Events_Story.ini	data/campaigns/scs/6Fragmentation/Events_Story.ini
+R100	data/campanings/scs/6Fragmentation/Main.ini	data/campaigns/scs/6Fragmentation/Main.ini
+R092	data/campanings/scs/6Fragmentation/Settings.ini	data/campaigns/scs/6Fragmentation/Settings.ini
+R100	data/campanings/scs/6Fragmentation/TraderGoods.ini	data/campaigns/scs/6Fragmentation/TraderGoods.ini
+R100	data/campanings/scs/6Fragmentation/Traders.ini	data/campaigns/scs/6Fragmentation/Traders.ini
+R100	data/campanings/scs/6Fragmentation/groups/BlackHand.ini	data/campaigns/scs/6Fragmentation/groups/BlackHand.ini
+R100	data/campanings/scs/6Fragmentation/groups/Duty.ini	data/campaigns/scs/6Fragmentation/groups/Duty.ini
+R100	data/campanings/scs/6Fragmentation/groups/Mercenaries.ini	data/campaigns/scs/6Fragmentation/groups/Mercenaries.ini
+R100	data/campanings/scs/6Fragmentation/groups/RenegatsKosoy.ini	data/campaigns/scs/6Fragmentation/groups/RenegatsKosoy.ini
+R100	data/campanings/scs/6Fragmentation/groups/RenegatsKruk.ini	data/campaigns/scs/6Fragmentation/groups/RenegatsKruk.ini
+R100	data/campanings/scs/6Fragmentation/groups/SoldiersMilitary.ini	data/campaigns/scs/6Fragmentation/groups/SoldiersMilitary.ini
+R100	data/campanings/scs/6Fragmentation/groups/bandits.ini	data/campaigns/scs/6Fragmentation/groups/bandits.ini
+R100	data/campanings/scs/6Fragmentation/groups/freedom.ini	data/campaigns/scs/6Fragmentation/groups/freedom.ini
+R100	data/campanings/scs/6Fragmentation/groups/monolith.ini	data/campaigns/scs/6Fragmentation/groups/monolith.ini
+R100	data/campanings/scs/6Fragmentation/groups/scientists.ini	data/campaigns/scs/6Fragmentation/groups/scientists.ini
+R100	data/campanings/scs/6Fragmentation/groups/soldiers.ini	data/campaigns/scs/6Fragmentation/groups/soldiers.ini
+R100	data/campanings/scs/6Fragmentation/groups/stalkers.ini	data/campaigns/scs/6Fragmentation/groups/stalkers.ini
+R100	data/campanings/scs/6Fragmentation/groups/stalkersDiggers.ini	data/campaigns/scs/6Fragmentation/groups/stalkersDiggers.ini
+R100	data/campanings/scs/6Fragmentation/groups/stalkersMilitary.ini	data/campaigns/scs/6Fragmentation/groups/stalkersMilitary.ini
+R100	data/campanings/scs/6Fragmentation/groups/stalkersOrest.ini	data/campaigns/scs/6Fragmentation/groups/stalkersOrest.ini
+R100	data/campanings/scs/6Fragmentation/groups/stalkersWolf.ini	data/campaigns/scs/6Fragmentation/groups/stalkersWolf.ini
+R100	data/campanings/scs/6Fragmentation/leaders/Leader-1.ini	data/campaigns/scs/6Fragmentation/leaders/Leader-1.ini
+R100	data/campanings/scs/6Fragmentation/leaders/Leader-Diggers.ini	data/campaigns/scs/6Fragmentation/leaders/Leader-Diggers.ini
+R100	data/campanings/scs/6Fragmentation/leaders/Leader-Kosoy.ini	data/campaigns/scs/6Fragmentation/leaders/Leader-Kosoy.ini
+R100	data/campanings/scs/6Fragmentation/leaders/Leader-Kruk.ini	data/campaigns/scs/6Fragmentation/leaders/Leader-Kruk.ini
+R100	data/campanings/scs/6Fragmentation/leaders/Leader-Orest.ini	data/campaigns/scs/6Fragmentation/leaders/Leader-Orest.ini
+R100	data/campanings/scs/6Fragmentation/leaders/Leader-Soldiers1.ini	data/campaigns/scs/6Fragmentation/leaders/Leader-Soldiers1.ini
+R100	data/campanings/scs/6Fragmentation/leaders/Leader-Soldiers2.ini	data/campaigns/scs/6Fragmentation/leaders/Leader-Soldiers2.ini
+R100	data/campanings/scs/6Fragmentation/leaders/Leader-StalkersMilitary.ini	data/campaigns/scs/6Fragmentation/leaders/Leader-StalkersMilitary.ini
+R100	data/campanings/scs/6Fragmentation/leaders/Leader-Wolf.ini	data/campaigns/scs/6Fragmentation/leaders/Leader-Wolf.ini
+R099	data/campanings/scs/6Fragmentation/locale/enUS/messages.csv	data/campaigns/scs/6Fragmentation/locale/enUS/messages.csv
+R099	data/campanings/scs/6Fragmentation/locale/ruRU/messages.csv	data/campaigns/scs/6Fragmentation/locale/ruRU/messages.csv
+R100	data/campanings/shoc/1story/AI.ini	data/campaigns/shoc/1story/AI.ini
+R100	data/campanings/shoc/1story/Achievements.ini	data/campaigns/shoc/1story/Achievements.ini
+R100	data/campanings/shoc/1story/Advisors.ini	data/campaigns/shoc/1story/Advisors.ini
+R100	data/campanings/shoc/1story/Events_Story.ini	data/campaigns/shoc/1story/Events_Story.ini
+R100	data/campanings/shoc/1story/Main.ini	data/campaigns/shoc/1story/Main.ini
+R092	data/campanings/shoc/1story/Settings.ini	data/campaigns/shoc/1story/Settings.ini
+R100	data/campanings/shoc/1story/SpecialEvents/Burst.ini	data/campaigns/shoc/1story/SpecialEvents/Burst.ini
+R100	data/campanings/shoc/1story/TraderGoods.ini	data/campaigns/shoc/1story/TraderGoods.ini
+R100	data/campanings/shoc/1story/Traders.ini	data/campaigns/shoc/1story/Traders.ini
+R100	data/campanings/shoc/1story/gfx/Scenario_Logo_Story-Active.png	data/campaigns/shoc/1story/gfx/Scenario_Logo_Story-Active.png
+R100	data/campanings/shoc/1story/gfx/Scenario_Logo_Story.png	data/campaigns/shoc/1story/gfx/Scenario_Logo_Story.png
+R099	data/campanings/shoc/1story/locale/enUS/messages.csv	data/campaigns/shoc/1story/locale/enUS/messages.csv
+R099	data/campanings/shoc/1story/locale/ruRU/messages.csv	data/campaigns/shoc/1story/locale/ruRU/messages.csv
+R100	data/campanings/shoc/2Freeplay/AI.ini	data/campaigns/shoc/2Freeplay/AI.ini
+R100	data/campanings/shoc/2Freeplay/Achievements.ini	data/campaigns/shoc/2Freeplay/Achievements.ini
+R100	data/campanings/shoc/2Freeplay/Advisors.ini	data/campaigns/shoc/2Freeplay/Advisors.ini
+R100	data/campanings/shoc/2Freeplay/Events_Story.ini	data/campaigns/shoc/2Freeplay/Events_Story.ini
+R100	data/campanings/shoc/2Freeplay/Main.ini	data/campaigns/shoc/2Freeplay/Main.ini
+R092	data/campanings/shoc/2Freeplay/Settings.ini	data/campaigns/shoc/2Freeplay/Settings.ini
+R100	data/campanings/shoc/3OneTerritory/TraderGoods.ini	data/campaigns/shoc/2Freeplay/TraderGoods.ini
+R100	data/campanings/shoc/2Freeplay/Traders.ini	data/campaigns/shoc/2Freeplay/Traders.ini
+R100	data/campanings/shoc/2Freeplay/gfx/Scenario_Logo_Non_Story-Active.png	data/campaigns/shoc/2Freeplay/gfx/Scenario_Logo_Non_Story-Active.png
+R100	data/campanings/shoc/2Freeplay/gfx/Scenario_Logo_Non_Story.png	data/campaigns/shoc/2Freeplay/gfx/Scenario_Logo_Non_Story.png
+R098	data/campanings/shoc/2Freeplay/locale/enUS/messages.csv	data/campaigns/shoc/2Freeplay/locale/enUS/messages.csv
+R097	data/campanings/shoc/2Freeplay/locale/ruRU/messages.csv	data/campaigns/shoc/2Freeplay/locale/ruRU/messages.csv
+R100	data/campanings/shoc/3OneTerritory/AI.ini	data/campaigns/shoc/3OneTerritory/AI.ini
+R100	data/campanings/shoc/3OneTerritory/Achievements.ini	data/campaigns/shoc/3OneTerritory/Achievements.ini
+R100	data/campanings/shoc/3OneTerritory/Advisors.ini	data/campaigns/shoc/3OneTerritory/Advisors.ini
+R100	data/campanings/shoc/3OneTerritory/Events_Story.ini	data/campaigns/shoc/3OneTerritory/Events_Story.ini
+R100	data/campanings/shoc/3OneTerritory/Main.ini	data/campaigns/shoc/3OneTerritory/Main.ini
+R092	data/campanings/shoc/3OneTerritory/Settings.ini	data/campaigns/shoc/3OneTerritory/Settings.ini
+R100	data/campanings/shoc/3OneTerritory/SpecialEvents/Burst.ini	data/campaigns/shoc/3OneTerritory/SpecialEvents/Burst.ini
+R100	data/campanings/shoc/4Monolith/TraderGoods.ini	data/campaigns/shoc/3OneTerritory/TraderGoods.ini
+R100	data/campanings/shoc/3OneTerritory/Traders.ini	data/campaigns/shoc/3OneTerritory/Traders.ini
+R098	data/campanings/shoc/3OneTerritory/locale/enUS/messages.csv	data/campaigns/shoc/3OneTerritory/locale/enUS/messages.csv
+R097	data/campanings/shoc/3OneTerritory/locale/ruRU/messages.csv	data/campaigns/shoc/3OneTerritory/locale/ruRU/messages.csv
+R100	data/campanings/shoc/4Monolith/AI.ini	data/campaigns/shoc/4Monolith/AI.ini
+R100	data/campanings/shoc/4Monolith/Achievements.ini	data/campaigns/shoc/4Monolith/Achievements.ini
+R100	data/campanings/shoc/4Monolith/Advisors.ini	data/campaigns/shoc/4Monolith/Advisors.ini
+R100	data/campanings/shoc/4Monolith/Events_Story.ini	data/campaigns/shoc/4Monolith/Events_Story.ini
+R100	data/campanings/shoc/4Monolith/Main.ini	data/campaigns/shoc/4Monolith/Main.ini
+R093	data/campanings/shoc/4Monolith/Settings.ini	data/campaigns/shoc/4Monolith/Settings.ini
+R100	data/campanings/shoc/4Monolith/SpecialEvents/Burst.ini	data/campaigns/shoc/4Monolith/SpecialEvents/Burst.ini
+R100	data/campanings/st/01Tutorial/TraderGoods.ini	data/campaigns/shoc/4Monolith/TraderGoods.ini
+R100	data/campanings/shoc/4Monolith/Traders.ini	data/campaigns/shoc/4Monolith/Traders.ini
+R100	data/campanings/shoc/4Monolith/gfx/Scenario_Logo_OpMonolith-Active.png	data/campaigns/shoc/4Monolith/gfx/Scenario_Logo_OpMonolith-Active.png
+R100	data/campanings/shoc/4Monolith/gfx/Scenario_Logo_OpMonolith.png	data/campaigns/shoc/4Monolith/gfx/Scenario_Logo_OpMonolith.png
+R100	data/campanings/shoc/4Monolith/groups/Duty.ini	data/campaigns/shoc/4Monolith/groups/Duty.ini
+R100	data/campanings/shoc/4Monolith/groups/freedom.ini	data/campaigns/shoc/4Monolith/groups/freedom.ini
+R100	data/campanings/shoc/4Monolith/groups/monolith.ini	data/campaigns/shoc/4Monolith/groups/monolith.ini
+R100	data/campanings/shoc/4Monolith/groups/soldiers.ini	data/campaigns/shoc/4Monolith/groups/soldiers.ini
+R100	data/campanings/shoc/4Monolith/groups/stalkers.ini	data/campaigns/shoc/4Monolith/groups/stalkers.ini
+R100	data/campanings/shoc/4Monolith/leaders/Leader-4.ini	data/campaigns/shoc/4Monolith/leaders/Leader-4.ini
+R100	data/campanings/shoc/4Monolith/leaders/Leader-5.ini	data/campaigns/shoc/4Monolith/leaders/Leader-5.ini
+R100	data/campanings/shoc/4Monolith/leaders/Leader-6.ini	data/campaigns/shoc/4Monolith/leaders/Leader-6.ini
+R100	data/campanings/shoc/4Monolith/locale/enUS/messages.csv	data/campaigns/shoc/4Monolith/locale/enUS/messages.csv
+R099	data/campanings/shoc/4Monolith/locale/ruRU/messages.csv	data/campaigns/shoc/4Monolith/locale/ruRU/messages.csv
+R100	data/campanings/shoc/5Garbage/AI.ini	data/campaigns/shoc/5Garbage/AI.ini
+R100	data/campanings/shoc/5Garbage/Achievements.ini	data/campaigns/shoc/5Garbage/Achievements.ini
+R100	data/campanings/shoc/5Garbage/Advisors.ini	data/campaigns/shoc/5Garbage/Advisors.ini
+R100	data/campanings/shoc/5Garbage/Events_Story.ini	data/campaigns/shoc/5Garbage/Events_Story.ini
+R100	data/campanings/shoc/5Garbage/Main.ini	data/campaigns/shoc/5Garbage/Main.ini
+R092	data/campanings/shoc/5Garbage/Settings.ini	data/campaigns/shoc/5Garbage/Settings.ini
+R100	data/campanings/shoc/5Garbage/SpecialEvents/Burst.ini	data/campaigns/shoc/5Garbage/SpecialEvents/Burst.ini
+R100	data/campanings/shoc/5Garbage/TraderGoods.ini	data/campaigns/shoc/5Garbage/TraderGoods.ini
+R100	data/campanings/shoc/5Garbage/Traders.ini	data/campaigns/shoc/5Garbage/Traders.ini
+R100	data/campanings/shoc/5Garbage/gfx/Scenario_Logo_Story-Active.png	data/campaigns/shoc/5Garbage/gfx/Scenario_Logo_Story-Active.png
+R100	data/campanings/shoc/5Garbage/gfx/Scenario_Logo_Story.png	data/campaigns/shoc/5Garbage/gfx/Scenario_Logo_Story.png
+R100	data/campanings/shoc/5Garbage/groups/Duty.ini	data/campaigns/shoc/5Garbage/groups/Duty.ini
+R100	data/campanings/shoc/5Garbage/groups/bandits.ini	data/campaigns/shoc/5Garbage/groups/bandits.ini
+R100	data/campanings/shoc/5Garbage/groups/stalkers.ini	data/campaigns/shoc/5Garbage/groups/stalkers.ini
+R099	data/campanings/shoc/5Garbage/locale/enUS/messages.csv	data/campaigns/shoc/5Garbage/locale/enUS/messages.csv
+R099	data/campanings/shoc/5Garbage/locale/ruRU/messages.csv	data/campaigns/shoc/5Garbage/locale/ruRU/messages.csv
+R100	data/campanings/shoc/6Fragmentation/AI.ini	data/campaigns/shoc/6Fragmentation/AI.ini
+R099	data/campanings/shoc/6Fragmentation/Achievements.ini	data/campaigns/shoc/6Fragmentation/Achievements.ini
+R100	data/campanings/shoc/6Fragmentation/Advisors.ini	data/campaigns/shoc/6Fragmentation/Advisors.ini
+R100	data/campanings/shoc/6Fragmentation/Events_Story.ini	data/campaigns/shoc/6Fragmentation/Events_Story.ini
+R100	data/campanings/shoc/6Fragmentation/Groups/BanditsHunters.ini	data/campaigns/shoc/6Fragmentation/Groups/BanditsHunters.ini
+R100	data/campanings/shoc/6Fragmentation/Groups/BanditsKaban.ini	data/campaigns/shoc/6Fragmentation/Groups/BanditsKaban.ini
+R100	data/campanings/shoc/6Fragmentation/Groups/Crazy.ini	data/campaigns/shoc/6Fragmentation/Groups/Crazy.ini
+R100	data/campanings/shoc/6Fragmentation/Groups/Deserters.ini	data/campaigns/shoc/6Fragmentation/Groups/Deserters.ini
+R100	data/campanings/shoc/6Fragmentation/Groups/DutyCherep.ini	data/campaigns/shoc/6Fragmentation/Groups/DutyCherep.ini
+R100	data/campanings/shoc/6Fragmentation/Groups/Patrol.ini	data/campaigns/shoc/6Fragmentation/Groups/Patrol.ini
+R100	data/campanings/shoc/6Fragmentation/Groups/StalkersBar.ini	data/campaigns/shoc/6Fragmentation/Groups/StalkersBar.ini
+R100	data/campanings/shoc/6Fragmentation/Groups/StalkersBes.ini	data/campaigns/shoc/6Fragmentation/Groups/StalkersBes.ini
+R100	data/campanings/shoc/6Fragmentation/Groups/StalkersDV.ini	data/campaigns/shoc/6Fragmentation/Groups/StalkersDV.ini
+R100	data/campanings/shoc/6Fragmentation/Groups/StalkersDiggers.ini	data/campaigns/shoc/6Fragmentation/Groups/StalkersDiggers.ini
+R100	data/campanings/shoc/6Fragmentation/Groups/StalkersLis.ini	data/campaigns/shoc/6Fragmentation/Groups/StalkersLis.ini
+R100	data/campanings/shoc/6Fragmentation/Groups/StalkersMilitary.ini	data/campaigns/shoc/6Fragmentation/Groups/StalkersMilitary.ini
+R100	data/campanings/shoc/6Fragmentation/Groups/StalkersSeriy.ini	data/campaigns/shoc/6Fragmentation/Groups/StalkersSeriy.ini
+R100	data/campanings/shoc/6Fragmentation/Groups/ZombieRadar.ini	data/campaigns/shoc/6Fragmentation/Groups/ZombieRadar.ini
+R100	data/campanings/shoc/6Fragmentation/Leaders/Leader-Arm.ini	data/campaigns/shoc/6Fragmentation/Leaders/Leader-Arm.ini
+R100	data/campanings/shoc/6Fragmentation/Leaders/Leader-Bar.ini	data/campaigns/shoc/6Fragmentation/Leaders/Leader-Bar.ini
+R100	data/campanings/shoc/6Fragmentation/Leaders/Leader-Bes.ini	data/campaigns/shoc/6Fragmentation/Leaders/Leader-Bes.ini
+R100	data/campanings/shoc/6Fragmentation/Leaders/Leader-Cherep.ini	data/campaigns/shoc/6Fragmentation/Leaders/Leader-Cherep.ini
+R100	data/campanings/shoc/6Fragmentation/Leaders/Leader-Crazy.ini	data/campaigns/shoc/6Fragmentation/Leaders/Leader-Crazy.ini
+R100	data/campanings/shoc/6Fragmentation/Leaders/Leader-DV.ini	data/campaigns/shoc/6Fragmentation/Leaders/Leader-DV.ini
+R100	data/campanings/shoc/6Fragmentation/Leaders/Leader-Deserter.ini	data/campaigns/shoc/6Fragmentation/Leaders/Leader-Deserter.ini
+R100	data/campanings/shoc/6Fragmentation/Leaders/Leader-Hunters.ini	data/campaigns/shoc/6Fragmentation/Leaders/Leader-Hunters.ini
+R100	data/campanings/shoc/6Fragmentation/Leaders/Leader-Kaban.ini	data/campaigns/shoc/6Fragmentation/Leaders/Leader-Kaban.ini
+R100	data/campanings/shoc/6Fragmentation/Leaders/Leader-Krot.ini	data/campaigns/shoc/6Fragmentation/Leaders/Leader-Krot.ini
+R100	data/campanings/shoc/6Fragmentation/Leaders/Leader-Lis.ini	data/campaigns/shoc/6Fragmentation/Leaders/Leader-Lis.ini
+R100	data/campanings/shoc/6Fragmentation/Leaders/Leader-Patrol.ini	data/campaigns/shoc/6Fragmentation/Leaders/Leader-Patrol.ini
+R100	data/campanings/shoc/6Fragmentation/Leaders/Leader-Seriy.ini	data/campaigns/shoc/6Fragmentation/Leaders/Leader-Seriy.ini
+R100	data/campanings/shoc/6Fragmentation/Leaders/Leader-Wolf.ini	data/campaigns/shoc/6Fragmentation/Leaders/Leader-Wolf.ini
+R100	data/campanings/shoc/6Fragmentation/Main.ini	data/campaigns/shoc/6Fragmentation/Main.ini
+R092	data/campanings/shoc/6Fragmentation/Settings.ini	data/campaigns/shoc/6Fragmentation/Settings.ini
+R100	data/campanings/shoc/6Fragmentation/SpecialEvents/BrainMixer.ini	data/campaigns/shoc/6Fragmentation/SpecialEvents/BrainMixer.ini
+R100	data/campanings/shoc/6Fragmentation/SpecialEvents/BrainPsy.ini	data/campaigns/shoc/6Fragmentation/SpecialEvents/BrainPsy.ini
+R100	data/campanings/shoc/6Fragmentation/SpecialEvents/Burst.ini	data/campaigns/shoc/6Fragmentation/SpecialEvents/Burst.ini
+R100	data/campanings/shoc/6Fragmentation/SpecialEvents/IdeologyUnitsLeave.ini	data/campaigns/shoc/6Fragmentation/SpecialEvents/IdeologyUnitsLeave.ini
+R100	data/campanings/shoc/6Fragmentation/SpecialEvents/NoFood.ini	data/campaigns/shoc/6Fragmentation/SpecialEvents/NoFood.ini
+R100	data/campanings/shoc/6Fragmentation/TraderGoods.ini	data/campaigns/shoc/6Fragmentation/TraderGoods.ini
+R100	data/campanings/shoc/6Fragmentation/Traders.ini	data/campaigns/shoc/6Fragmentation/Traders.ini
+R099	data/campanings/shoc/6Fragmentation/locale/enUS/messages.csv	data/campaigns/shoc/6Fragmentation/locale/enUS/messages.csv
+R099	data/campanings/shoc/6Fragmentation/locale/ruRU/messages.csv	data/campaigns/shoc/6Fragmentation/locale/ruRU/messages.csv
+R100	data/campanings/snet/1-2players/AI.ini	data/campaigns/snet/1-2players/AI.ini
+R100	data/campanings/snet/1-2players/Achievements.ini	data/campaigns/snet/1-2players/Achievements.ini
+R100	data/campanings/snet/1-2players/Advisors.ini	data/campaigns/snet/1-2players/Advisors.ini
+R100	data/campanings/snet/1-2players/Difficulty.Ini	data/campaigns/snet/1-2players/Difficulty.Ini
+R100	data/campanings/snet/1-2players/Events_Story.ini	data/campaigns/snet/1-2players/Events_Story.ini
+R100	data/campanings/snet/1-2players/Main.ini	data/campaigns/snet/1-2players/Main.ini
+R092	data/campanings/snet/1-2players/Settings.ini	data/campaigns/snet/1-2players/Settings.ini
+R100	data/campanings/snet/1-2players/SpecialEvents/BrainPsy.ini	data/campaigns/snet/1-2players/SpecialEvents/BrainPsy.ini
+R100	data/campanings/snet/1-2players/SpecialEvents/BrainPsyStatus.ini	data/campaigns/snet/1-2players/SpecialEvents/BrainPsyStatus.ini
+R100	data/campanings/snet/1-2players/TraderGoods.ini	data/campaigns/snet/1-2players/TraderGoods.ini
+R100	data/campanings/snet/1-2players/Traders.ini	data/campaigns/snet/1-2players/Traders.ini
+R100	data/campanings/snet/1-2players/gfx/Scenario_Logo-Active.png	data/campaigns/snet/1-2players/gfx/Scenario_Logo-Active.png
+R100	data/campanings/snet/1-2players/gfx/Scenario_Logo.png	data/campaigns/snet/1-2players/gfx/Scenario_Logo.png
+R096	data/campanings/snet/1-2players/locale/enUS/messages.csv	data/campaigns/snet/1-2players/locale/enUS/messages.csv
+R092	data/campanings/snet/1-2players/locale/ruRU/messages.csv	data/campaigns/snet/1-2players/locale/ruRU/messages.csv
+R100	data/campanings/snet/2-3players/AI.ini	data/campaigns/snet/2-3players/AI.ini
+R100	data/campanings/snet/2-3players/Achievements.ini	data/campaigns/snet/2-3players/Achievements.ini
+R100	data/campanings/snet/2-3players/Advisors.ini	data/campaigns/snet/2-3players/Advisors.ini
+R100	data/campanings/snet/2-3players/Difficulty.Ini	data/campaigns/snet/2-3players/Difficulty.Ini
+R100	data/campanings/snet/2-3players/Events_Story.ini	data/campaigns/snet/2-3players/Events_Story.ini
+R100	data/campanings/snet/2-3players/Main.ini	data/campaigns/snet/2-3players/Main.ini
+R092	data/campanings/snet/2-3players/Settings.ini	data/campaigns/snet/2-3players/Settings.ini
+R100	data/campanings/snet/2-3players/SpecialEvents/BrainPsy.ini	data/campaigns/snet/2-3players/SpecialEvents/BrainPsy.ini
+R100	data/campanings/snet/2-3players/SpecialEvents/BrainPsyStatus.ini	data/campaigns/snet/2-3players/SpecialEvents/BrainPsyStatus.ini
+R100	data/campanings/snet/2-3players/TraderGoods.ini	data/campaigns/snet/2-3players/TraderGoods.ini
+R100	data/campanings/snet/2-3players/Traders.ini	data/campaigns/snet/2-3players/Traders.ini
+R100	data/campanings/snet/2-3players/gfx/Scenario_Logo-Active.png	data/campaigns/snet/2-3players/gfx/Scenario_Logo-Active.png
+R100	data/campanings/snet/2-3players/gfx/Scenario_Logo.png	data/campaigns/snet/2-3players/gfx/Scenario_Logo.png
+R097	data/campanings/snet/2-3players/locale/enUS/messages.csv	data/campaigns/snet/2-3players/locale/enUS/messages.csv
+R093	data/campanings/snet/2-3players/locale/ruRU/messages.csv	data/campaigns/snet/2-3players/locale/ruRU/messages.csv
+R100	data/campanings/snet/3-4players/AI.ini	data/campaigns/snet/3-4players/AI.ini
+R100	data/campanings/snet/3-4players/Achievements.ini	data/campaigns/snet/3-4players/Achievements.ini
+R100	data/campanings/snet/3-4players/Advisors.ini	data/campaigns/snet/3-4players/Advisors.ini
+R100	data/campanings/snet/3-4players/Difficulty.Ini	data/campaigns/snet/3-4players/Difficulty.Ini
+R100	data/campanings/snet/3-4players/Events_Story.ini	data/campaigns/snet/3-4players/Events_Story.ini
+R100	data/campanings/snet/3-4players/Main.ini	data/campaigns/snet/3-4players/Main.ini
+R092	data/campanings/snet/3-4players/Settings.ini	data/campaigns/snet/3-4players/Settings.ini
+R100	data/campanings/snet/3-4players/SpecialEvents/BrainPsy.ini	data/campaigns/snet/3-4players/SpecialEvents/BrainPsy.ini
+R100	data/campanings/snet/3-4players/SpecialEvents/BrainPsyStatus.ini	data/campaigns/snet/3-4players/SpecialEvents/BrainPsyStatus.ini
+R100	data/campanings/snet/3-4players/TraderGoods.ini	data/campaigns/snet/3-4players/TraderGoods.ini
+R100	data/campanings/snet/3-4players/Traders.ini	data/campaigns/snet/3-4players/Traders.ini
+R100	data/campanings/snet/3-4players/gfx/Scenario_Logo-Active.png	data/campaigns/snet/3-4players/gfx/Scenario_Logo-Active.png
+R100	data/campanings/snet/3-4players/gfx/Scenario_Logo.png	data/campaigns/snet/3-4players/gfx/Scenario_Logo.png
+R098	data/campanings/snet/3-4players/locale/enUS/messages.csv	data/campaigns/snet/3-4players/locale/enUS/messages.csv
+R093	data/campanings/snet/3-4players/locale/ruRU/messages.csv	data/campaigns/snet/3-4players/locale/ruRU/messages.csv
+R100	data/campanings/snet/4-4players/AI.ini	data/campaigns/snet/4-4players/AI.ini
+R100	data/campanings/snet/4-4players/Achievements.ini	data/campaigns/snet/4-4players/Achievements.ini
+R100	data/campanings/snet/4-4players/Advisors.ini	data/campaigns/snet/4-4players/Advisors.ini
+R100	data/campanings/snet/4-4players/Difficulty.Ini	data/campaigns/snet/4-4players/Difficulty.Ini
+R100	data/campanings/snet/4-4players/Events_Story.ini	data/campaigns/snet/4-4players/Events_Story.ini
+R100	data/campanings/snet/4-4players/Main.ini	data/campaigns/snet/4-4players/Main.ini
+R092	data/campanings/snet/4-4players/Settings.ini	data/campaigns/snet/4-4players/Settings.ini
+R100	data/campanings/snet/4-4players/SpecialEvents/BrainPsy.ini	data/campaigns/snet/4-4players/SpecialEvents/BrainPsy.ini
+R100	data/campanings/snet/4-4players/SpecialEvents/BrainPsyStatus.ini	data/campaigns/snet/4-4players/SpecialEvents/BrainPsyStatus.ini
+R100	data/campanings/snet/4-4players/TraderGoods.ini	data/campaigns/snet/4-4players/TraderGoods.ini
+R100	data/campanings/snet/4-4players/Traders.ini	data/campaigns/snet/4-4players/Traders.ini
+R100	data/campanings/snet/4-4players/gfx/Scenario_Logo-Active.png	data/campaigns/snet/4-4players/gfx/Scenario_Logo-Active.png
+R100	data/campanings/snet/4-4players/gfx/Scenario_Logo.png	data/campaigns/snet/4-4players/gfx/Scenario_Logo.png
+R097	data/campanings/snet/4-4players/locale/enUS/messages.csv	data/campaigns/snet/4-4players/locale/enUS/messages.csv
+R093	data/campanings/snet/4-4players/locale/ruRU/messages.csv	data/campaigns/snet/4-4players/locale/ruRU/messages.csv
+R100	data/campanings/snet/5-5players/AI.ini	data/campaigns/snet/5-5players/AI.ini
+R100	data/campanings/snet/5-5players/Achievements.ini	data/campaigns/snet/5-5players/Achievements.ini
+R100	data/campanings/snet/5-5players/Advisors.ini	data/campaigns/snet/5-5players/Advisors.ini
+R100	data/campanings/snet/5-5players/Difficulty.Ini	data/campaigns/snet/5-5players/Difficulty.Ini
+R100	data/campanings/snet/5-5players/Events_Story.ini	data/campaigns/snet/5-5players/Events_Story.ini
+R100	data/campanings/snet/5-5players/Main.ini	data/campaigns/snet/5-5players/Main.ini
+R092	data/campanings/snet/5-5players/Settings.ini	data/campaigns/snet/5-5players/Settings.ini
+R100	data/campanings/snet/5-5players/SpecialEvents/BrainPsy.ini	data/campaigns/snet/5-5players/SpecialEvents/BrainPsy.ini
+R100	data/campanings/snet/5-5players/SpecialEvents/BrainPsyStatus.ini	data/campaigns/snet/5-5players/SpecialEvents/BrainPsyStatus.ini
+R100	data/campanings/snet/5-5players/TraderGoods.ini	data/campaigns/snet/5-5players/TraderGoods.ini
+R100	data/campanings/snet/5-5players/Traders.ini	data/campaigns/snet/5-5players/Traders.ini
+R100	data/campanings/snet/5-5players/gfx/Scenario_Logo-Active.png	data/campaigns/snet/5-5players/gfx/Scenario_Logo-Active.png
+R100	data/campanings/snet/5-5players/gfx/Scenario_Logo.png	data/campaigns/snet/5-5players/gfx/Scenario_Logo.png
+R097	data/campanings/snet/5-5players/locale/enUS/messages.csv	data/campaigns/snet/5-5players/locale/enUS/messages.csv
+R094	data/campanings/snet/5-5players/locale/ruRU/messages.csv	data/campaigns/snet/5-5players/locale/ruRU/messages.csv
+R100	data/campanings/snet/6-6players/AI.ini	data/campaigns/snet/6-6players/AI.ini
+R100	data/campanings/snet/6-6players/Achievements.ini	data/campaigns/snet/6-6players/Achievements.ini
+R100	data/campanings/snet/6-6players/Advisors.ini	data/campaigns/snet/6-6players/Advisors.ini
+R100	data/campanings/snet/6-6players/Difficulty.Ini	data/campaigns/snet/6-6players/Difficulty.Ini
+R100	data/campanings/snet/6-6players/Events_Story.ini	data/campaigns/snet/6-6players/Events_Story.ini
+R100	data/campanings/snet/6-6players/Main.ini	data/campaigns/snet/6-6players/Main.ini
+R092	data/campanings/snet/6-6players/Settings.ini	data/campaigns/snet/6-6players/Settings.ini
+R100	data/campanings/snet/6-6players/SpecialEvents/BrainPsy.ini	data/campaigns/snet/6-6players/SpecialEvents/BrainPsy.ini
+R100	data/campanings/snet/6-6players/SpecialEvents/BrainPsyStatus.ini	data/campaigns/snet/6-6players/SpecialEvents/BrainPsyStatus.ini
+R100	data/campanings/snet/6-6players/TraderGoods.ini	data/campaigns/snet/6-6players/TraderGoods.ini
+R100	data/campanings/snet/6-6players/Traders.ini	data/campaigns/snet/6-6players/Traders.ini
+R100	data/campanings/snet/6-6players/gfx/Scenario_Logo-Active.png	data/campaigns/snet/6-6players/gfx/Scenario_Logo-Active.png
+R100	data/campanings/snet/6-6players/gfx/Scenario_Logo.png	data/campaigns/snet/6-6players/gfx/Scenario_Logo.png
+R097	data/campanings/snet/6-6players/locale/enUS/messages.csv	data/campaigns/snet/6-6players/locale/enUS/messages.csv
+R094	data/campanings/snet/6-6players/locale/ruRU/messages.csv	data/campaigns/snet/6-6players/locale/ruRU/messages.csv
+R100	data/campanings/snet/7-7players/AI.ini	data/campaigns/snet/7-7players/AI.ini
+R100	data/campanings/snet/7-7players/Achievements.ini	data/campaigns/snet/7-7players/Achievements.ini
+R100	data/campanings/snet/7-7players/Advisors.ini	data/campaigns/snet/7-7players/Advisors.ini
+R100	data/campanings/snet/7-7players/Difficulty.Ini	data/campaigns/snet/7-7players/Difficulty.Ini
+R100	data/campanings/snet/7-7players/Events_Story.ini	data/campaigns/snet/7-7players/Events_Story.ini
+R100	data/campanings/snet/7-7players/Main.ini	data/campaigns/snet/7-7players/Main.ini
+R092	data/campanings/snet/7-7players/Settings.ini	data/campaigns/snet/7-7players/Settings.ini
+R100	data/campanings/snet/7-7players/SpecialEvents/BrainPsy.ini	data/campaigns/snet/7-7players/SpecialEvents/BrainPsy.ini
+R100	data/campanings/snet/7-7players/SpecialEvents/BrainPsyStatus.ini	data/campaigns/snet/7-7players/SpecialEvents/BrainPsyStatus.ini
+R100	data/campanings/snet/7-7players/TraderGoods.ini	data/campaigns/snet/7-7players/TraderGoods.ini
+R100	data/campanings/snet/7-7players/Traders.ini	data/campaigns/snet/7-7players/Traders.ini
+R100	data/campanings/snet/7-7players/gfx/Scenario_Logo-Active.png	data/campaigns/snet/7-7players/gfx/Scenario_Logo-Active.png
+R100	data/campanings/snet/7-7players/gfx/Scenario_Logo.png	data/campaigns/snet/7-7players/gfx/Scenario_Logo.png
+R098	data/campanings/snet/7-7players/locale/enUS/messages.csv	data/campaigns/snet/7-7players/locale/enUS/messages.csv
+R095	data/campanings/snet/7-7players/locale/ruRU/messages.csv	data/campaigns/snet/7-7players/locale/ruRU/messages.csv
+R100	data/campanings/snet/8-8players/AI.ini	data/campaigns/snet/8-8players/AI.ini
+R100	data/campanings/snet/8-8players/Achievements.ini	data/campaigns/snet/8-8players/Achievements.ini
+R100	data/campanings/snet/8-8players/Advisors.ini	data/campaigns/snet/8-8players/Advisors.ini
+R100	data/campanings/snet/8-8players/Difficulty.Ini	data/campaigns/snet/8-8players/Difficulty.Ini
+R100	data/campanings/snet/8-8players/Events_Story.ini	data/campaigns/snet/8-8players/Events_Story.ini
+R100	data/campanings/snet/8-8players/Main.ini	data/campaigns/snet/8-8players/Main.ini
+R092	data/campanings/snet/8-8players/Settings.ini	data/campaigns/snet/8-8players/Settings.ini
+R100	data/campanings/snet/8-8players/SpecialEvents/BrainPsy.ini	data/campaigns/snet/8-8players/SpecialEvents/BrainPsy.ini
+R100	data/campanings/snet/8-8players/SpecialEvents/BrainPsyStatus.ini	data/campaigns/snet/8-8players/SpecialEvents/BrainPsyStatus.ini
+R100	data/campanings/snet/8-8players/TraderGoods.ini	data/campaigns/snet/8-8players/TraderGoods.ini
+R100	data/campanings/snet/8-8players/Traders.ini	data/campaigns/snet/8-8players/Traders.ini
+R100	data/campanings/snet/8-8players/gfx/Scenario_Logo-Active.png	data/campaigns/snet/8-8players/gfx/Scenario_Logo-Active.png
+R100	data/campanings/snet/8-8players/gfx/Scenario_Logo.png	data/campaigns/snet/8-8players/gfx/Scenario_Logo.png
+R098	data/campanings/snet/8-8players/locale/enUS/messages.csv	data/campaigns/snet/8-8players/locale/enUS/messages.csv
+R096	data/campanings/snet/8-8players/locale/ruRU/messages.csv	data/campaigns/snet/8-8players/locale/ruRU/messages.csv
+R100	data/campanings/st/01Tutorial/AI.ini	data/campaigns/st/01Tutorial/AI.ini
+R100	data/campanings/st/01Tutorial/Achievements.ini	data/campaigns/st/01Tutorial/Achievements.ini
+R100	data/campanings/st/01Tutorial/Advisors.ini	data/campaigns/st/01Tutorial/Advisors.ini
+R100	data/campanings/st/01Tutorial/Difficulty.Ini	data/campaigns/st/01Tutorial/Difficulty.Ini
+R100	data/campanings/st/01Tutorial/Events_Story.ini	data/campaigns/st/01Tutorial/Events_Story.ini
+R100	data/campanings/st/01Tutorial/Groups/Bandits.ini	data/campaigns/st/01Tutorial/Groups/Bandits.ini
+R100	data/campanings/st/01Tutorial/Groups/Soldiers.ini	data/campaigns/st/01Tutorial/Groups/Soldiers.ini
+R100	data/campanings/st/01Tutorial/Groups/Stalkers.ini	data/campaigns/st/01Tutorial/Groups/Stalkers.ini
+R100	data/campanings/st/02Tutorial/Groups/zombie.ini	data/campaigns/st/01Tutorial/Groups/zombie.ini
+R100	data/campanings/st/01Tutorial/Main.ini	data/campaigns/st/01Tutorial/Main.ini
+R093	data/campanings/st/01Tutorial/Settings.ini	data/campaigns/st/01Tutorial/Settings.ini
+R100	data/campanings/st/02Tutorial/TraderGoods.ini	data/campaigns/st/01Tutorial/TraderGoods.ini
+R100	data/campanings/st/01Tutorial/Traders.ini	data/campaigns/st/01Tutorial/Traders.ini
+R100	data/campanings/st/01Tutorial/Tutorial.ini	data/campaigns/st/01Tutorial/Tutorial.ini
+R100	data/campanings/st/01Tutorial/gfx/Scenario_Logo.png	data/campaigns/st/01Tutorial/gfx/Scenario_Logo.png
+R100	data/campanings/st/01Tutorial/gfx/Scenario_Logo_Active.png	data/campaigns/st/01Tutorial/gfx/Scenario_Logo_Active.png
+R100	data/campanings/st/01Tutorial/gfx/Tutorial/tutorial_img1.png	data/campaigns/st/01Tutorial/gfx/Tutorial/tutorial_img1.png
+R100	data/campanings/st/01Tutorial/gfx/Tutorial/tutorial_img2.png	data/campaigns/st/01Tutorial/gfx/Tutorial/tutorial_img2.png
+R100	data/campanings/st/01Tutorial/gfx/Tutorial/tutorial_img3.png	data/campaigns/st/01Tutorial/gfx/Tutorial/tutorial_img3.png
+R100	data/campanings/st/01Tutorial/gfx/Tutorial/tutorial_img4.png	data/campaigns/st/01Tutorial/gfx/Tutorial/tutorial_img4.png
+R100	data/campanings/st/01Tutorial/locale/enUS/messages.csv	data/campaigns/st/01Tutorial/locale/enUS/messages.csv
+R100	data/campanings/st/01Tutorial/locale/ruRU/messages.csv	data/campaigns/st/01Tutorial/locale/ruRU/messages.csv
+R100	data/campanings/st/01Tutorial/map/backgroundobjects.ini	data/campaigns/st/01Tutorial/map/backgroundobjects.ini
+R100	data/campanings/st/01Tutorial/map/links.ini	data/campaigns/st/01Tutorial/map/links.ini
+R100	data/campanings/st/01Tutorial/map/locale/ruRu/MapMessages.csv	data/campaigns/st/01Tutorial/map/locale/ruRu/MapMessages.csv
+R100	data/campanings/st/01Tutorial/map/map.bt	data/campaigns/st/01Tutorial/map/map.bt
+R100	data/campanings/st/01Tutorial/map/territories.ini	data/campaigns/st/01Tutorial/map/territories.ini
+R100	data/campanings/st/01Tutorial/map/territories_icon_coordinates.ini	data/campaigns/st/01Tutorial/map/territories_icon_coordinates.ini
+R100	data/campanings/st/01Tutorial/map/territoriesinfo.ini	data/campaigns/st/01Tutorial/map/territoriesinfo.ini
+R100	data/campanings/st/02Tutorial/AI.ini	data/campaigns/st/02Tutorial/AI.ini
+R100	data/campanings/st/02Tutorial/Achievements.ini	data/campaigns/st/02Tutorial/Achievements.ini
+R100	data/campanings/st/02Tutorial/Advisors.ini	data/campaigns/st/02Tutorial/Advisors.ini
+R100	data/campanings/st/02Tutorial/Difficulty.Ini	data/campaigns/st/02Tutorial/Difficulty.Ini
+R100	data/campanings/st/02Tutorial/Events_Story.ini	data/campaigns/st/02Tutorial/Events_Story.ini
+R100	data/campanings/st/02Tutorial/Groups/Bandits.ini	data/campaigns/st/02Tutorial/Groups/Bandits.ini
+R100	data/campanings/st/02Tutorial/Groups/Mercenaries.ini	data/campaigns/st/02Tutorial/Groups/Mercenaries.ini
+R100	data/campanings/st/02Tutorial/Groups/Monolith.ini	data/campaigns/st/02Tutorial/Groups/Monolith.ini
+R100	data/campanings/st/02Tutorial/Groups/Soldiers.ini	data/campaigns/st/02Tutorial/Groups/Soldiers.ini
+R100	data/campanings/st/02Tutorial/Groups/Stalkers.ini	data/campaigns/st/02Tutorial/Groups/Stalkers.ini
+R100	data/campanings/st/03Tutorial/Groups/zombie.ini	data/campaigns/st/02Tutorial/Groups/zombie.ini
+R100	data/campanings/st/02Tutorial/Main.ini	data/campaigns/st/02Tutorial/Main.ini
+R092	data/campanings/st/02Tutorial/Settings.ini	data/campaigns/st/02Tutorial/Settings.ini
+R100	data/campanings/st/03Tutorial/TraderGoods.ini	data/campaigns/st/02Tutorial/TraderGoods.ini
+R100	data/campanings/st/02Tutorial/Traders.ini	data/campaigns/st/02Tutorial/Traders.ini
+R100	data/campanings/st/02Tutorial/Tutorial.ini	data/campaigns/st/02Tutorial/Tutorial.ini
+R100	data/campanings/st/02Tutorial/gfx/Scenario_Logo.png	data/campaigns/st/02Tutorial/gfx/Scenario_Logo.png
+R100	data/campanings/st/02Tutorial/gfx/Scenario_Logo_Active.png	data/campaigns/st/02Tutorial/gfx/Scenario_Logo_Active.png
+R100	data/campanings/st/02Tutorial/gfx/Tutorial/tutorial_img1.png	data/campaigns/st/02Tutorial/gfx/Tutorial/tutorial_img1.png
+R100	data/campanings/st/02Tutorial/gfx/Tutorial/tutorial_img2.png	data/campaigns/st/02Tutorial/gfx/Tutorial/tutorial_img2.png
+R100	data/campanings/st/02Tutorial/gfx/Tutorial/tutorial_img3.png	data/campaigns/st/02Tutorial/gfx/Tutorial/tutorial_img3.png
+R100	data/campanings/st/02Tutorial/gfx/Tutorial/tutorial_img4.png	data/campaigns/st/02Tutorial/gfx/Tutorial/tutorial_img4.png
+R100	data/campanings/st/02Tutorial/gfx/Tutorial/tutorial_img5.png	data/campaigns/st/02Tutorial/gfx/Tutorial/tutorial_img5.png
+R100	data/campanings/st/02Tutorial/gfx/Tutorial/tutorial_img6.png	data/campaigns/st/02Tutorial/gfx/Tutorial/tutorial_img6.png
+R100	data/campanings/st/02Tutorial/gfx/Tutorial/tutorial_img7.png	data/campaigns/st/02Tutorial/gfx/Tutorial/tutorial_img7.png
+R100	data/campanings/st/02Tutorial/locale/enUS/messages.csv	data/campaigns/st/02Tutorial/locale/enUS/messages.csv
+R100	data/campanings/st/02Tutorial/locale/ruRU/messages.csv	data/campaigns/st/02Tutorial/locale/ruRU/messages.csv
+R100	data/campanings/st/02Tutorial/map/links.ini	data/campaigns/st/02Tutorial/map/links.ini
+R100	data/campanings/st/02Tutorial/map/locale/ruRu/MapMessages.csv	data/campaigns/st/02Tutorial/map/locale/ruRu/MapMessages.csv
+R100	data/campanings/st/02Tutorial/map/map.bt	data/campaigns/st/02Tutorial/map/map.bt
+R100	data/campanings/st/02Tutorial/map/territories.ini	data/campaigns/st/02Tutorial/map/territories.ini
+R100	data/campanings/st/02Tutorial/map/territories_icon_coordinates.ini	data/campaigns/st/02Tutorial/map/territories_icon_coordinates.ini
+R100	data/campanings/st/02Tutorial/map/territoriesinfo.ini	data/campaigns/st/02Tutorial/map/territoriesinfo.ini
+R100	data/campanings/st/03Tutorial/AI.ini	data/campaigns/st/03Tutorial/AI.ini
+R100	data/campanings/st/03Tutorial/Achievements.ini	data/campaigns/st/03Tutorial/Achievements.ini
+R100	data/campanings/st/03Tutorial/Advisors.ini	data/campaigns/st/03Tutorial/Advisors.ini
+R100	data/campanings/st/03Tutorial/Difficulty.Ini	data/campaigns/st/03Tutorial/Difficulty.Ini
+R100	data/campanings/st/03Tutorial/Events_Story.ini	data/campaigns/st/03Tutorial/Events_Story.ini
+R100	data/campanings/st/03Tutorial/Groups/Bandits.ini	data/campaigns/st/03Tutorial/Groups/Bandits.ini
+R100	data/campanings/st/03Tutorial/Groups/Mercenaries.ini	data/campaigns/st/03Tutorial/Groups/Mercenaries.ini
+R100	data/campanings/st/03Tutorial/Groups/Monolith.ini	data/campaigns/st/03Tutorial/Groups/Monolith.ini
+R100	data/campanings/st/03Tutorial/Groups/Soldiers.ini	data/campaigns/st/03Tutorial/Groups/Soldiers.ini
+R100	data/campanings/st/03Tutorial/Groups/Stalkers.ini	data/campaigns/st/03Tutorial/Groups/Stalkers.ini
+R100	data/campanings/st/04Tutorial/Groups/zombie.ini	data/campaigns/st/03Tutorial/Groups/zombie.ini
+R100	data/campanings/st/03Tutorial/Main.ini	data/campaigns/st/03Tutorial/Main.ini
+R092	data/campanings/st/03Tutorial/Settings.ini	data/campaigns/st/03Tutorial/Settings.ini
+R100	data/campanings/st/04Tutorial/TraderGoods.ini	data/campaigns/st/03Tutorial/TraderGoods.ini
+R100	data/campanings/st/03Tutorial/Traders.ini	data/campaigns/st/03Tutorial/Traders.ini
+R100	data/campanings/st/03Tutorial/Tutorial.ini	data/campaigns/st/03Tutorial/Tutorial.ini
+R100	data/campanings/st/03Tutorial/gfx/Scenario_Logo.png	data/campaigns/st/03Tutorial/gfx/Scenario_Logo.png
+R100	data/campanings/st/03Tutorial/gfx/Scenario_Logo_Active.png	data/campaigns/st/03Tutorial/gfx/Scenario_Logo_Active.png
+R100	data/campanings/st/03Tutorial/gfx/Tutorial/tutorial_img1.png	data/campaigns/st/03Tutorial/gfx/Tutorial/tutorial_img1.png
+R100	data/campanings/st/03Tutorial/gfx/Tutorial/tutorial_img2.png	data/campaigns/st/03Tutorial/gfx/Tutorial/tutorial_img2.png
+R100	data/campanings/st/03Tutorial/gfx/Tutorial/tutorial_img3.png	data/campaigns/st/03Tutorial/gfx/Tutorial/tutorial_img3.png
+R100	data/campanings/st/03Tutorial/gfx/Tutorial/tutorial_img4.png	data/campaigns/st/03Tutorial/gfx/Tutorial/tutorial_img4.png
+R100	data/campanings/st/03Tutorial/gfx/Tutorial/tutorial_img5.png	data/campaigns/st/03Tutorial/gfx/Tutorial/tutorial_img5.png
+R100	data/campanings/st/03Tutorial/locale/enUS/messages.csv	data/campaigns/st/03Tutorial/locale/enUS/messages.csv
+R100	data/campanings/st/03Tutorial/locale/ruRU/messages.csv	data/campaigns/st/03Tutorial/locale/ruRU/messages.csv
+R100	data/campanings/st/03Tutorial/map/links.ini	data/campaigns/st/03Tutorial/map/links.ini
+R100	data/campanings/st/03Tutorial/map/locale/ruRu/MapMessages.csv	data/campaigns/st/03Tutorial/map/locale/ruRu/MapMessages.csv
+R100	data/campanings/st/03Tutorial/map/map.bt	data/campaigns/st/03Tutorial/map/map.bt
+R100	data/campanings/st/03Tutorial/map/territories.ini	data/campaigns/st/03Tutorial/map/territories.ini
+R100	data/campanings/st/03Tutorial/map/territories_icon_coordinates.ini	data/campaigns/st/03Tutorial/map/territories_icon_coordinates.ini
+R100	data/campanings/st/03Tutorial/map/territoriesinfo.ini	data/campaigns/st/03Tutorial/map/territoriesinfo.ini
+R100	data/campanings/st/04Tutorial/AI.ini	data/campaigns/st/04Tutorial/AI.ini
+R100	data/campanings/st/04Tutorial/Achievements.ini	data/campaigns/st/04Tutorial/Achievements.ini
+R100	data/campanings/st/04Tutorial/Advisors.ini	data/campaigns/st/04Tutorial/Advisors.ini
+R100	data/campanings/st/04Tutorial/Difficulty.Ini	data/campaigns/st/04Tutorial/Difficulty.Ini
+R100	data/campanings/st/04Tutorial/Events_Story.ini	data/campaigns/st/04Tutorial/Events_Story.ini
+R100	data/campanings/st/04Tutorial/Groups/Bandits.ini	data/campaigns/st/04Tutorial/Groups/Bandits.ini
+R100	data/campanings/st/04Tutorial/Groups/Mercenaries.ini	data/campaigns/st/04Tutorial/Groups/Mercenaries.ini
+R100	data/campanings/st/04Tutorial/Groups/Monolith.ini	data/campaigns/st/04Tutorial/Groups/Monolith.ini
+R100	data/campanings/st/04Tutorial/Groups/Soldiers.ini	data/campaigns/st/04Tutorial/Groups/Soldiers.ini
+R100	data/campanings/st/04Tutorial/Groups/Stalkers.ini	data/campaigns/st/04Tutorial/Groups/Stalkers.ini
+R100	data/campanings/st/05Tutorial/Groups/zombie.ini	data/campaigns/st/04Tutorial/Groups/zombie.ini
+R100	data/campanings/st/04Tutorial/Main.ini	data/campaigns/st/04Tutorial/Main.ini
+R092	data/campanings/st/04Tutorial/Settings.ini	data/campaigns/st/04Tutorial/Settings.ini
+R100	data/campanings/st/05Tutorial/TraderGoods.ini	data/campaigns/st/04Tutorial/TraderGoods.ini
+R100	data/campanings/st/04Tutorial/Traders.ini	data/campaigns/st/04Tutorial/Traders.ini
+R100	data/campanings/st/04Tutorial/Tutorial.ini	data/campaigns/st/04Tutorial/Tutorial.ini
+R100	data/campanings/st/04Tutorial/gfx/Scenario_Logo.png	data/campaigns/st/04Tutorial/gfx/Scenario_Logo.png
+R100	data/campanings/st/04Tutorial/gfx/Scenario_Logo_Active.png	data/campaigns/st/04Tutorial/gfx/Scenario_Logo_Active.png
+R100	data/campanings/st/04Tutorial/gfx/Tutorial/tutorial_img1.png	data/campaigns/st/04Tutorial/gfx/Tutorial/tutorial_img1.png
+R100	data/campanings/st/04Tutorial/gfx/Tutorial/tutorial_img2.png	data/campaigns/st/04Tutorial/gfx/Tutorial/tutorial_img2.png
+R100	data/campanings/st/04Tutorial/locale/enUS/messages.csv	data/campaigns/st/04Tutorial/locale/enUS/messages.csv
+R099	data/campanings/st/04Tutorial/locale/ruRU/messages.csv	data/campaigns/st/04Tutorial/locale/ruRU/messages.csv
+R100	data/campanings/st/04Tutorial/map/links.ini	data/campaigns/st/04Tutorial/map/links.ini
+R100	data/campanings/st/04Tutorial/map/locale/ruRu/MapMessages.csv	data/campaigns/st/04Tutorial/map/locale/ruRu/MapMessages.csv
+R100	data/campanings/st/04Tutorial/map/map.bt	data/campaigns/st/04Tutorial/map/map.bt
+R100	data/campanings/st/04Tutorial/map/territories.ini	data/campaigns/st/04Tutorial/map/territories.ini
+R100	data/campanings/st/04Tutorial/map/territories_icon_coordinates.ini	data/campaigns/st/04Tutorial/map/territories_icon_coordinates.ini
+R100	data/campanings/st/04Tutorial/map/territoriesinfo.ini	data/campaigns/st/04Tutorial/map/territoriesinfo.ini
+R100	data/campanings/st/05Tutorial/AI.ini	data/campaigns/st/05Tutorial/AI.ini
+R100	data/campanings/st/05Tutorial/Achievements.ini	data/campaigns/st/05Tutorial/Achievements.ini
+R100	data/campanings/st/05Tutorial/Advisors.ini	data/campaigns/st/05Tutorial/Advisors.ini
+R100	data/campanings/st/05Tutorial/Difficulty.Ini	data/campaigns/st/05Tutorial/Difficulty.Ini
+R100	data/campanings/st/05Tutorial/Events_Story.ini	data/campaigns/st/05Tutorial/Events_Story.ini
+R100	data/campanings/st/05Tutorial/Groups/Bandits.ini	data/campaigns/st/05Tutorial/Groups/Bandits.ini
+R100	data/campanings/st/05Tutorial/Groups/Mercenaries.ini	data/campaigns/st/05Tutorial/Groups/Mercenaries.ini
+R100	data/campanings/st/05Tutorial/Groups/Monolith.ini	data/campaigns/st/05Tutorial/Groups/Monolith.ini
+R100	data/campanings/st/05Tutorial/Groups/Soldiers.ini	data/campaigns/st/05Tutorial/Groups/Soldiers.ini
+R100	data/campanings/st/05Tutorial/Groups/Stalkers.ini	data/campaigns/st/05Tutorial/Groups/Stalkers.ini
+R100	data/campanings/st/07Tutorial/Groups/zombie.ini	data/campaigns/st/05Tutorial/Groups/zombie.ini
+R100	data/campanings/st/05Tutorial/Main.ini	data/campaigns/st/05Tutorial/Main.ini
+R092	data/campanings/st/05Tutorial/Settings.ini	data/campaigns/st/05Tutorial/Settings.ini
+R100	data/campanings/st/06Tutorial/TraderGoods.ini	data/campaigns/st/05Tutorial/TraderGoods.ini
+R100	data/campanings/st/05Tutorial/Traders.ini	data/campaigns/st/05Tutorial/Traders.ini
+R100	data/campanings/st/05Tutorial/Tutorial.ini	data/campaigns/st/05Tutorial/Tutorial.ini
+R100	data/campanings/st/05Tutorial/gfx/Scenario_Logo.png	data/campaigns/st/05Tutorial/gfx/Scenario_Logo.png
+R100	data/campanings/st/05Tutorial/gfx/Scenario_Logo_Active.png	data/campaigns/st/05Tutorial/gfx/Scenario_Logo_Active.png
+R100	data/campanings/st/05Tutorial/gfx/Tutorial/tutorial_img1.png	data/campaigns/st/05Tutorial/gfx/Tutorial/tutorial_img1.png
+R100	data/campanings/st/05Tutorial/gfx/Tutorial/tutorial_img2.png	data/campaigns/st/05Tutorial/gfx/Tutorial/tutorial_img2.png
+R100	data/campanings/st/05Tutorial/gfx/Tutorial/tutorial_img3.png	data/campaigns/st/05Tutorial/gfx/Tutorial/tutorial_img3.png
+R100	data/campanings/st/05Tutorial/gfx/Tutorial/tutorial_img4.png	data/campaigns/st/05Tutorial/gfx/Tutorial/tutorial_img4.png
+R100	data/campanings/st/05Tutorial/gfx/Tutorial/tutorial_img5.png	data/campaigns/st/05Tutorial/gfx/Tutorial/tutorial_img5.png
+R100	data/campanings/st/05Tutorial/locale/enUS/messages.csv	data/campaigns/st/05Tutorial/locale/enUS/messages.csv
+R100	data/campanings/st/05Tutorial/locale/ruRU/messages.csv	data/campaigns/st/05Tutorial/locale/ruRU/messages.csv
+R100	data/campanings/st/05Tutorial/map/links.ini	data/campaigns/st/05Tutorial/map/links.ini
+R100	data/campanings/st/05Tutorial/map/locale/ruRu/MapMessages.csv	data/campaigns/st/05Tutorial/map/locale/ruRu/MapMessages.csv
+R100	data/campanings/st/05Tutorial/map/map.bt	data/campaigns/st/05Tutorial/map/map.bt
+R100	data/campanings/st/05Tutorial/map/territories.ini	data/campaigns/st/05Tutorial/map/territories.ini
+R100	data/campanings/st/05Tutorial/map/territories_icon_coordinates.ini	data/campaigns/st/05Tutorial/map/territories_icon_coordinates.ini
+R100	data/campanings/st/05Tutorial/map/territoriesinfo.ini	data/campaigns/st/05Tutorial/map/territoriesinfo.ini
+R100	data/campanings/st/06Tutorial/AI.ini	data/campaigns/st/06Tutorial/AI.ini
+R100	data/campanings/st/06Tutorial/Achievements.ini	data/campaigns/st/06Tutorial/Achievements.ini
+R100	data/campanings/st/06Tutorial/Advisors.ini	data/campaigns/st/06Tutorial/Advisors.ini
+R100	data/campanings/st/06Tutorial/Difficulty.Ini	data/campaigns/st/06Tutorial/Difficulty.Ini
+R100	data/campanings/st/06Tutorial/Events_Story.ini	data/campaigns/st/06Tutorial/Events_Story.ini
+R100	data/campanings/st/06Tutorial/Groups/Bandits.ini	data/campaigns/st/06Tutorial/Groups/Bandits.ini
+R100	data/campanings/st/06Tutorial/Groups/Soldiers.ini	data/campaigns/st/06Tutorial/Groups/Soldiers.ini
+R100	data/campanings/st/06Tutorial/Groups/Stalkers.ini	data/campaigns/st/06Tutorial/Groups/Stalkers.ini
+R100	data/campanings/st/06Tutorial/Main.ini	data/campaigns/st/06Tutorial/Main.ini
+R092	data/campanings/st/06Tutorial/Settings.ini	data/campaigns/st/06Tutorial/Settings.ini
+R100	data/campanings/st/07Tutorial/TraderGoods.ini	data/campaigns/st/06Tutorial/TraderGoods.ini
+R100	data/campanings/st/06Tutorial/Traders.ini	data/campaigns/st/06Tutorial/Traders.ini
+R100	data/campanings/st/06Tutorial/Tutorial.ini	data/campaigns/st/06Tutorial/Tutorial.ini
+R100	data/campanings/st/06Tutorial/gfx/Scenario_Logo.png	data/campaigns/st/06Tutorial/gfx/Scenario_Logo.png
+R100	data/campanings/st/06Tutorial/gfx/Scenario_Logo_Active.png	data/campaigns/st/06Tutorial/gfx/Scenario_Logo_Active.png
+R100	data/campanings/st/06Tutorial/gfx/Tutorial/tutorial_img1.png	data/campaigns/st/06Tutorial/gfx/Tutorial/tutorial_img1.png
+R100	data/campanings/st/06Tutorial/gfx/Tutorial/tutorial_img2.png	data/campaigns/st/06Tutorial/gfx/Tutorial/tutorial_img2.png
+R100	data/campanings/st/06Tutorial/gfx/Tutorial/tutorial_img3.png	data/campaigns/st/06Tutorial/gfx/Tutorial/tutorial_img3.png
+R100	data/campanings/st/06Tutorial/locale/enUS/messages.csv	data/campaigns/st/06Tutorial/locale/enUS/messages.csv
+R100	data/campanings/st/06Tutorial/locale/ruRU/messages.csv	data/campaigns/st/06Tutorial/locale/ruRU/messages.csv
+R100	data/campanings/st/06Tutorial/map/links.ini	data/campaigns/st/06Tutorial/map/links.ini
+R100	data/campanings/st/06Tutorial/map/locale/ruRu/MapMessages.csv	data/campaigns/st/06Tutorial/map/locale/ruRu/MapMessages.csv
+R100	data/campanings/st/06Tutorial/map/map.bt	data/campaigns/st/06Tutorial/map/map.bt
+R100	data/campanings/st/06Tutorial/map/territories.ini	data/campaigns/st/06Tutorial/map/territories.ini
+R100	data/campanings/st/06Tutorial/map/territories_icon_coordinates.ini	data/campaigns/st/06Tutorial/map/territories_icon_coordinates.ini
+R100	data/campanings/st/06Tutorial/map/territoriesinfo.ini	data/campaigns/st/06Tutorial/map/territoriesinfo.ini
+R100	data/campanings/st/07Tutorial/AI.ini	data/campaigns/st/07Tutorial/AI.ini
+R100	data/campanings/st/07Tutorial/Achievements.ini	data/campaigns/st/07Tutorial/Achievements.ini
+R100	data/campanings/st/07Tutorial/Advisors.ini	data/campaigns/st/07Tutorial/Advisors.ini
+R100	data/campanings/st/07Tutorial/Difficulty.Ini	data/campaigns/st/07Tutorial/Difficulty.Ini
+R100	data/campanings/st/07Tutorial/Events_Story.ini	data/campaigns/st/07Tutorial/Events_Story.ini
+R100	data/campanings/st/07Tutorial/Groups/Bandits.ini	data/campaigns/st/07Tutorial/Groups/Bandits.ini
+R100	data/campanings/st/07Tutorial/Groups/Mercenaries.ini	data/campaigns/st/07Tutorial/Groups/Mercenaries.ini
+R100	data/campanings/st/07Tutorial/Groups/Monolith.ini	data/campaigns/st/07Tutorial/Groups/Monolith.ini
+R100	data/campanings/st/07Tutorial/Groups/Soldiers.ini	data/campaigns/st/07Tutorial/Groups/Soldiers.ini
+R100	data/campanings/st/07Tutorial/Groups/Stalkers.ini	data/campaigns/st/07Tutorial/Groups/Stalkers.ini
+R100	data/campanings/st/08Tutorial/Groups/zombie.ini	data/campaigns/st/07Tutorial/Groups/zombie.ini
+R100	data/campanings/st/07Tutorial/Main.ini	data/campaigns/st/07Tutorial/Main.ini
+R092	data/campanings/st/07Tutorial/Settings.ini	data/campaigns/st/07Tutorial/Settings.ini
+R100	data/campanings/st/08Tutorial/TraderGoods.ini	data/campaigns/st/07Tutorial/TraderGoods.ini
+R100	data/campanings/st/07Tutorial/Traders.ini	data/campaigns/st/07Tutorial/Traders.ini
+R100	data/campanings/st/07Tutorial/Tutorial.ini	data/campaigns/st/07Tutorial/Tutorial.ini
+R100	data/campanings/st/07Tutorial/gfx/Scenario_Logo.png	data/campaigns/st/07Tutorial/gfx/Scenario_Logo.png
+R100	data/campanings/st/07Tutorial/gfx/Scenario_Logo_Active.png	data/campaigns/st/07Tutorial/gfx/Scenario_Logo_Active.png
+R100	data/campanings/st/07Tutorial/gfx/Tutorial/tutorial_img1.png	data/campaigns/st/07Tutorial/gfx/Tutorial/tutorial_img1.png
+R100	data/campanings/st/07Tutorial/gfx/Tutorial/tutorial_img2.png	data/campaigns/st/07Tutorial/gfx/Tutorial/tutorial_img2.png
+R100	data/campanings/st/07Tutorial/gfx/Tutorial/tutorial_img3.png	data/campaigns/st/07Tutorial/gfx/Tutorial/tutorial_img3.png
+R100	data/campanings/st/07Tutorial/locale/enUS/messages.csv	data/campaigns/st/07Tutorial/locale/enUS/messages.csv
+R100	data/campanings/st/07Tutorial/locale/ruRU/messages.csv	data/campaigns/st/07Tutorial/locale/ruRU/messages.csv
+R100	data/campanings/st/07Tutorial/map/links.ini	data/campaigns/st/07Tutorial/map/links.ini
+R100	data/campanings/st/07Tutorial/map/locale/ruRu/MapMessages.csv	data/campaigns/st/07Tutorial/map/locale/ruRu/MapMessages.csv
+R100	data/campanings/st/07Tutorial/map/map.bt	data/campaigns/st/07Tutorial/map/map.bt
+R100	data/campanings/st/07Tutorial/map/territories.ini	data/campaigns/st/07Tutorial/map/territories.ini
+R100	data/campanings/st/07Tutorial/map/territories_icon_coordinates.ini	data/campaigns/st/07Tutorial/map/territories_icon_coordinates.ini
+R100	data/campanings/st/07Tutorial/map/territoriesinfo.ini	data/campaigns/st/07Tutorial/map/territoriesinfo.ini
+R100	data/campanings/st/08Tutorial/AI.ini	data/campaigns/st/08Tutorial/AI.ini
+R100	data/campanings/st/08Tutorial/Achievements.ini	data/campaigns/st/08Tutorial/Achievements.ini
+R100	data/campanings/st/08Tutorial/Advisors.ini	data/campaigns/st/08Tutorial/Advisors.ini
+R100	data/campanings/st/08Tutorial/Difficulty.Ini	data/campaigns/st/08Tutorial/Difficulty.Ini
+R100	data/campanings/st/08Tutorial/Events_Story.ini	data/campaigns/st/08Tutorial/Events_Story.ini
+R100	data/campanings/st/08Tutorial/Groups/Bandits.ini	data/campaigns/st/08Tutorial/Groups/Bandits.ini
+R100	data/campanings/st/08Tutorial/Groups/Soldiers.ini	data/campaigns/st/08Tutorial/Groups/Soldiers.ini
+R100	data/campanings/st/08Tutorial/Groups/Stalkers.ini	data/campaigns/st/08Tutorial/Groups/Stalkers.ini
+A	data/campaigns/st/08Tutorial/Groups/zombie.ini
+R100	data/campanings/st/08Tutorial/Main.ini	data/campaigns/st/08Tutorial/Main.ini
+R092	data/campanings/st/08Tutorial/Settings.ini	data/campaigns/st/08Tutorial/Settings.ini
+A	data/campaigns/st/08Tutorial/TraderGoods.ini
+R100	data/campanings/st/08Tutorial/Traders.ini	data/campaigns/st/08Tutorial/Traders.ini
+R100	data/campanings/st/08Tutorial/Tutorial.ini	data/campaigns/st/08Tutorial/Tutorial.ini
+R100	data/campanings/st/08Tutorial/gfx/Scenario_Logo.png	data/campaigns/st/08Tutorial/gfx/Scenario_Logo.png
+R100	data/campanings/st/08Tutorial/gfx/Scenario_Logo_Active.png	data/campaigns/st/08Tutorial/gfx/Scenario_Logo_Active.png
+A	data/campaigns/st/08Tutorial/gfx/Tutorial/tutorial_img1.png
+A	data/campaigns/st/08Tutorial/gfx/Tutorial/tutorial_img2.png
+A	data/campaigns/st/08Tutorial/gfx/Tutorial/tutorial_img3.png
+A	data/campaigns/st/08Tutorial/gfx/Tutorial/tutorial_img4.png
+A	data/campaigns/st/08Tutorial/gfx/Tutorial/tutorial_img5.png
+A	data/campaigns/st/08Tutorial/gfx/Tutorial/tutorial_img6.png
+A	data/campaigns/st/08Tutorial/gfx/Tutorial/tutorial_img7.png
+R099	data/campanings/st/08Tutorial/locale/enUS/messages.csv	data/campaigns/st/08Tutorial/locale/enUS/messages.csv
+R099	data/campanings/st/08Tutorial/locale/ruRU/messages.csv	data/campaigns/st/08Tutorial/locale/ruRU/messages.csv
+D	data/campanings/scop/2Freeplay/locale/enUS/messages.csv
+D	data/campanings/scop/3OneTerritory/locale/enUS/messages.csv
+D	data/campanings/scop/4Pripyat/locale/enUS/messages.csv
+A	data/default/Goods/MutantsA-1-Armor.ini
+A	data/default/Goods/MutantsA-1-Weapon.ini
+A	data/default/Goods/MutantsA-2-Armor.ini
+A	data/default/Goods/MutantsA-2-Weapon.ini
+A	data/default/Goods/MutantsA-3-Armor.ini
+A	data/default/Goods/MutantsA-3-Weapon.ini
+A	data/default/Goods/MutantsA-4-Armor.ini
+A	data/default/Goods/MutantsA-4-Weapon.ini
+A	data/default/Goods/MutantsE-1-Armor.ini
+A	data/default/Goods/MutantsE-1-Weapon.ini
+A	data/default/Goods/MutantsE-2-Armor.ini
+A	data/default/Goods/MutantsE-2-Weapon.ini
+A	data/default/Goods/MutantsE-3-Armor.ini
+A	data/default/Goods/MutantsE-3-Weapon.ini
+A	data/default/Goods/MutantsE-4-Armor.ini
+A	data/default/Goods/MutantsE-4-Weapon.ini
+A	data/default/Goods/MutantsFW-1-Armor.ini
+A	data/default/Goods/MutantsFW-1-Weapon.ini
+A	data/default/Goods/MutantsFW-2-Armor.ini
+A	data/default/Goods/MutantsFW-2-Weapon.ini
+A	data/default/Goods/MutantsFW-3-Armor.ini
+A	data/default/Goods/MutantsFW-3-Weapon.ini
+A	data/default/Goods/MutantsFW-4-Armor.ini
+A	data/default/Goods/MutantsFW-4-Weapon.ini
+A	data/default/Goods/MutantsU-2-Armor.ini
+A	data/default/Goods/MutantsU-2-Weapon.ini
+A	data/default/Goods/MutantsU-3-Armor.ini
+A	data/default/Goods/MutantsU-3-Weapon.ini
+A	data/default/Goods/MutantsU-4-Weapon.ini
+M	data/default/interface.ini
+A	data/default/leaders/Leader-SAC-Tachenko1.ini
+A	data/default/leaders/Leader-SAC-Tachenko2.ini
+A	data/default/leaders/Leader-SAC-Tachenko3.ini
+A	data/default/leaders/Leader-SAC-Tachenko4.ini
+A	data/gfx/icons/achievements_SAC/unlock/1.png
+A	data/gfx/icons/achievements_SAC/unlock/2.png
+A	data/gfx/icons/story_SAC/1.png
+A	data/gfx/icons/story_SAC/2.png
+M	data/gfx/icons/territories/SoC/Pripyat/backup_27 (2).png
+M	data/gfx/icons/territories/SoC/Pripyat/backup_27.png
+M	data/locale/enUS/messages.csv
+M	data/locale/ruRu/messages.csv
+M	data/maps/CS_Battle_For_Limansk/locale/ruRu/MapMessages.csv
+M	data/maps/CS_Standard/locale/ruRu/MapMessages.csv
+M	data/maps/CoP_Map_Classic/locale/ruRu/MapMessages.csv
+M	data/maps/CoP_Map_Pripyat/locale/ruRu/MapMessages.csv
+M	data/maps/CoP_Map_Zaton/locale/ruRu/MapMessages.csv
+A	data/maps/SAC_LFFB/backgroundobjects.ini
+A	data/maps/SAC_LFFB/links.ini
+A	data/maps/SAC_LFFB/locale/ruRu/MapMessages.csv
+A	data/maps/SAC_LFFB/map.bt
+A	data/maps/SAC_LFFB/map.png
+A	data/maps/SAC_LFFB/settings.ini
+A	data/maps/SAC_LFFB/territories.ini
+A	data/maps/SAC_LFFB/territories_icon_coordinates.ini
+A	data/maps/SAC_LFFB/territoriesinfo.ini
+M	data/maps/SHOC_Monolith/locale/ruRu/MapMessages.csv
+M	data/maps/SHOC_Standard/locale/ruRu/MapMessages.csv
+A	data/music/Clock running.ogg
+A	data/music/Covert surveillance.ogg
+A	data/music/Determination.ogg
+D	data/music/Dirt City.mp3
+D	data/music/Enemy spotted.ogg
+A	data/music/Expectation.ogg
+D	data/music/Myst.mp3
+R052	data/music/conflict.ogg	data/music/Preparation.ogg
+D	data/music/Road.mp3
+A	data/music/Steadfastness.ogg
+A	data/music/Time.ogg
+D	data/music/Trance.mp3
+A	data/music/Waiting for hope.ogg
+A	data/music/WarHand.ogg
+D	data/music/Wind.mp3
