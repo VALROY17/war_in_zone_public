@@ -1,0 +1,134 @@
+﻿ScenarioName;Lost Contact. Additional Content
+ScenarioDescription;This scenario depicts events from the period of the first military incursion into the Zone, which had only recently formed. Several military groups have been assembled, including Captain Tachenko's squad. The Army was not yet familiar with the mutants and anomalies about which rumors had already begun to circulate. But who needs rumors? A soldier needs an order! The order has been given... Double-time march into the unknown!
+ScenarioVictoryDescription;Victory conditions: Complete all orders from Operation HQ.
+ScenarioLoseDescription;Defeat conditions: lose all controlled territories or fail to meet victory conditions within approximately 50 turns.
+[Groups.Soldiers.:main].Text-End-EventFlag-Lose;The squad failed to complete the mission. You have been ordered to return to base for investigation and court-martial. Defeat!
+[Groups.MutantsE.:main].Name;Mutants;
+[Groups.MutantsFW.:main].Name;Mutants;
+[Groups.MutantsA.:main].Name;Mutants;
+[Groups.MutantsU.:main].Name;Mutants;
+[Groups.MutantsE.:main].Description;Mutants;
+[Groups.MutantsFW.:main].Description;Mutants;
+[Groups.MutantsA.:main].Description;Mutants;
+[Groups.MutantsU.:main].Description;Mutants;
+[Groups.Soldiers.:main].Name;Tachenko's Squad;
+[Groups.Soldiers.:AntiZone].Name;Duty;
+[Groups.SoldiersAI.:main].Name;Military;
+[Groups.Soldiers.:main].Description;Tachenko's Squad – a small, hastily assembled detachment for a push deep into the Zone;
+[Advisors.Advisor-Soldiers-1].Name;Unknown;
+[Leaders.leader-sac-tachenko1].Name;Captain Tachenko;
+[Leaders.leader-sac-tachenko2].Name;Captain Tachenko;
+[Leaders.leader-sac-tachenko3].Name;Captain Tachenko;
+[Leaders.leader-sac-tachenko4].Name;Captain Tachenko;
+[Traders.Trader10].Name;Commander of Unknown Squad;
+[Traders.Trader10].NeedText;Trading requires control of the Western Sector territory at the Instrument Plant location;
+[Tutorial.Page-1].Text;Greetings, Captain Tachenko! Glad to have you at the staging area of the 3rd Special Purpose Detachment "Osprey". This small village is our starting point. There's some chaos in the command ranks right now. Contradictory orders are coming in. Plus, there's a rumor that some convoy is heading to CNPP along the road. I hope you can bring some clarity to the situation, because the men are on edge. Especially after what they saw behind the houses near the village. You've never seen anything like it! It's like in the movies! The air swirls and distorts around a specific spot, and when one of our guys threw some gravel into it, there was a loud bang, almost like a grenade! Come on, I'll show you. If the convoy goes through, the main thing is not to run into something like that, because after the CNPP incident, there are all sorts of rumors. And we've seen all kinds of disfigured animals through binoculars... Sends shivers down your spine to see such a sight. Command said you'd have a radio through which we'll receive further orders. You've arrived, which means the order should come soon. We just need to wait.
+[Tutorial.Page-2].Text;In my humble opinion, Captain, we'll be tasked with moving ahead of the convoy, securing a key point on the route, and waiting for it there. Or maybe some reconnaissance along the route. By the way, I think since there are no order papers with you due to this mess, contacting HQ via that button in the top right corner with the hourglass icon is a good idea.
+[Achievements.Achiv-1].Name;Lost Contact!
+[Achievements.Achiv-1].Desc;New achievement unlocked! Complete the scenario on Master difficulty.
+[Achievements.Achiv-1].Desc-Logo;Complete the scenario on Master difficulty.
+[Achievements.Achiv-2].Name;Absolute Compliance!
+[Achievements.Achiv-2].Desc;New achievement unlocked! Fully secure the entire route of the Military convoy on the Cordon location on any difficulty.
+[Achievements.Achiv-2].Desc-Logo;Fully secure the entire route of the Military convoy on the Cordon location on any difficulty. The convoy must not engage in combat with mutants even once.
+[StoryEvents.Event-Escape-1].Name;Operation Start. First Mission
+[StoryEvents.Event-Escape-1].Desc-NonOwner;An order has been received from HQ. The objective is to capture the key point south of the railway. That's the Bus Depot. Control must be established as soon as possible to ensure a safe path for the convoy and reconnoiter the situation;
+[StoryEvents.Event-Escape-Check-1].Name;Key Point Captured!
+[StoryEvents.Event-Escape-Check-1].Desc-Owner;Territory %0:s at location %1:s is now under our control! After reporting to HQ, Tachenko's squad received three tasks. First – hold the Bus Depot until the convoy arrives to ensure it passes with minimal risk. Second – take control of the Northern Checkpoint soon to stabilize the situation. Third (optional) – ensure a safe path for the convoy by taking all territories along its route under control.
+[StoryEvents.Event-Escape-Check-2].Name;Key Point Captured!
+[StoryEvents.Event-Escape-Check-2].Desc-Owner;Territory %0:s at location %1:s is now under our control!||The path north is blocked by clusters of anomalies.||A new order has been received from HQ. Take a couple of fighters and go to meet the long-range recon squad near the southeastern outskirts of the Instrument Plant.|| || Thanks to the experience gained, Tachenko has acquired new skills and characteristics as a leader.
+[StoryEvents.Event-Escape-FailMission-1].Name;Mission Failed!
+[StoryEvents.Event-Escape-FailMission-1].Desc-NonOwner;You failed to complete the order in time!
+[StoryEvents.Event-Escape-FailMission-2].Name;Mission Failed!
+[StoryEvents.Event-Escape-FailMission-2].Desc-NonOwner;You failed to complete the order in time!
+[StoryEvents.Event-Escape-FailMission-3].Name;Mission Failed!
+[StoryEvents.Event-Escape-FailMission-3].Desc-NonOwner;You failed to complete the order in time!
+[StoryEvents.Event-FW-Invasion-1].Name;Battle on the Outskirts!
+[StoryEvents.Event-FW-Invasion-1].Desc-NonOwner;Upon approaching the designated meeting point, the Captain saw a recon squad observing mutants in territory %0:s at location %1:s. Uniting the squads under Tachenko's command, the group attempted to take the territory under control.
+[StoryEvents.Event-FW-Check-1].Name;Key Point Captured!
+[StoryEvents.Event-FW-Check-1].Desc-Owner;Territory %0:s at location %1:s is now under our control!||After reporting to command via radio, an order was received to capture the Factory Administration Building and subsequently open a safe somewhere in the basement. The code to open it has been provided to you (you simply need to take the territory under control for the objective to count). Do not open the folder with the found documents. After successful completion, report to HQ.
+[StoryEvents.Event-FW-Check-2].Name;Key Point Captured!
+[StoryEvents.Event-FW-Check-2].Desc-Owner;Territory %0:s at location %1:s is now under our control!||The squad managed to find the safe. After extracting the needed documents from under a pile of others, Tachenko reported success to HQ.||A new order was issued: "You must transfer this folder to a group of civilians who will be escorted by armed individuals without insignia. Do not open fire, do not provoke, do not engage in conversation. After completion – report." Finishing negotiations with HQ, the Captain began to ponder. Such an order seemed unusual to him. Something was off about it. Some people with weapons in the CEZ during a Military operation walking around armed? Don't shoot? Don't talk? What is this all about?!||These thoughts wouldn't leave him alone, but an order is an order and it must be carried out.
+[StoryEvents.Event-FW-Check-3].Name;Key Point Captured!
+[StoryEvents.Event-FW-Check-3].Desc-Owner;Territory %0:s at location %1:s is now under our control!||A couple hundred meters before the meeting point, the squad noticed a group of unknowns. They took positions skillfully – in a military fashion. But without any camouflage. Apparently, precisely so they could be seen from afar. The clothing on the people was mostly foreign... "But where did guys like this come from here?" – Tachenko whispered a rhetorical question to himself as he examined the squad through binoculars. "Well. Nothing to be done. Order received. Time to make contact" – Tachenko said louder now, so the fighters could hear.|| ||During a brief conversation with the commander of the unknown squad, some details became clear.||The group is part of some Private Military Company, which itself is not happy about the sudden order regarding documents. "We were hunting here and cutting up various game for trophies, which that guy in the black cloak pays well for" – said the PMC squad leader without an accent, nodding towards one of the group whose clothing clearly differed from the rest of the squad. After the unknowns left the meeting place, the fighters began actively discussing what had happened.|| ||The presence of such a group in the CEZ is a direct violation that command permits. Inexplicable mutants that have harmed fighters, implausible recon data from the briefing before entering the Cordon, additional tasks that were not known in advance. Running low on ammunition. Anomalies that contradict the laws of physics. They've gone much deeper than in the original operation plan. The fighters, like Tachenko, have developed a strong feeling that HQ is "using" them in such a way that they won't be able to return. Discontent was brewing.|| ||Hoping for an order to return to base, Tachenko made contact with HQ and reported the mission's success. But instead of the expected response, a new order arrived... Move to the outskirts of the Agroprom Research Institute, meet another squad there, take it under command, and contact HQ for further instructions.|| An angry Tachenko relayed the HQ order to the fighters through clenched teeth. Everyone was dissatisfied, but they decided to obey the orders and head to the objective. || ||Captain Tachenko has acquired new skills and characteristics as a squad leader.
+[StoryEvents.Event-FW-FailMission-1].Name;Mission Failed!
+[StoryEvents.Event-FW-FailMission-1].Desc-NonOwner;You failed to complete the order in time!
+[StoryEvents.Event-FW-FailMission-2].Name;Mission Failed!
+[StoryEvents.Event-FW-FailMission-2].Desc-NonOwner;You failed to complete the order in time!
+[StoryEvents.Event-FW-FailMission-3].Name;Mission Failed!
+[StoryEvents.Event-FW-FailMission-3].Desc-NonOwner;You failed to complete the order in time!
+[StoryEvents.Event-A-Invasion-1].Name;Battle on the Outskirts!
+[StoryEvents.Event-A-Invasion-1].Desc-NonOwner;Upon approaching the designated meeting point, you saw a recon squad observing mutants in territory %0:s at location %1:s. Uniting the squads under your command, you attempted to take the territory under control.
+[StoryEvents.Event-A-Check-1].Name;Key Point Captured!
+[StoryEvents.Event-A-Check-1].Desc-Owner;Territory %0:s at location %1:s is now under our control!||After reporting to command via radio, an order was received to capture the Agroprom Research Institute Complex with the now-familiar objective – documents. When Tachenko tried to object and report the problems, HQ brushed him off, ordering him to complete the assigned task and terminated the communication session. Well... An order is an order. Forward, into the unknown!
+[StoryEvents.Event-A-Check-2].Name;Key Point Captured!
+[StoryEvents.Event-A-Check-2].Desc-Owner;Territory %0:s at location %1:s is now under our control!||After sending fighters to scout the surroundings, Tachenko opened the found documents. "I wish I hadn't known this..." – the Captain said in a lost voice, closing the folder. Resentment, anger, and disappointment overwhelmed Tachenko. Under the influence of emotions, deciding not to contact HQ, the Captain began studying all documents that came to hand. There weren't many documents. Someone had clearly evacuated them in advance. Someone knew about the impending second catastrophe, because of which he and the fighters were sent into the CEZ. Someone knew about the planned military operation to break through to CNPP. The enemy – and that's how Tachenko characterized the people behind all this – acted cunningly and quickly. Not having time to ponder his conclusions, the Captain was brought back to reality from his thoughts by fighters who returned from scouting the surroundings.||||"Mutants everywhere. Their numbers are growing right before our eyes. And from the basement, there's a terrible howling. My head even starts to feel fuzzy... I'm starting to hear foreign voices in my head calling me to go down. Something inhuman down there...", – a fighter who ran up to the Captain began reporting with fear in his voice.||"Commander, what did HQ say?" – another fighter asked. Opening his mouth and picking up the radio, Tachenko wanted to contact HQ, but then the radio began broadcasting with interference: "Can anyone hear me? Over! Operation failed! Convoy destroyed! Cargo lost! Mutants everywhere! HQ is completely @#!?!#@! No evacuation! Everyone who went deep is now on their own! So many guys already dead! Over! Can anyone hear me? Over!". Several seconds of dead silence in the room. Trying to comprehend the situation, Tachenko switched the radio to his other hand and, hesitating slightly, reached to press the button, but the radio spoke again with heavy interference: "Re..ad! Any..ne..? Need help! This is Kestrel squad! I'm the onl..... one who survived! Requesting assistance! Moving to outskirts of Agroprom Resear... From the north! Over!". This time, the Captain reacted instantly: "Kestrel, copy! This is Osprey! We're at Agroprom! Heading north to meet you! Over!". A couple seconds later, the radio responded with interference: "Osprey? You're here, @#!?!#@, from where? How.. .. .. glad to hear you! @#!?!#@! Meet us! Over!". Commanding the squad to move out, the Captain tossed the documents aside and ran out of the room. || ||Your objective now is to take control of the Northern Outskirts of the Agroprom Research Institute. You have little time.|| ||After the events he experienced, Captain Tachenko has changed greatly and acquired new characteristics as a leader.
+[StoryEvents.Event-A-Check-3].Name;Key Point Captured!
+[StoryEvents.Event-A-Check-3].Desc-Owner;Territory %0:s at location %1:s is now under our control!||All that remains is to wait for the survivor from Kestrel squad!
+[StoryEvents.Event-A-SaveSoldier-1].Name;Soldier Rescued!
+[StoryEvents.Event-A-SaveSoldier-1].Desc-Owner;Scanning the surroundings through binoculars, Tachenko noticed a running fighter with a weapon and a bag. A second later, the Captain saw a large number of small mutants pursuing the soldier. "Men, fall in behind him. Don't shoot, wait for him to reach us, then we open fire, or we might hit our own by accident", – the Commander said, lowering the binoculars. Ten seconds later, the "runner", having caught up with the squad, drops his bag with a cry: "There's ammo in there!!!" – turns, drops to one knee, and begins firing accurately at the mutants. The fighters, quickly assessing the situation, opened fire.
+[StoryEvents.Event-A-FailMission-1].Name;Mission Failed!
+[StoryEvents.Event-A-FailMission-1].Desc-NonOwner;You failed to complete the order in time!
+[StoryEvents.Event-A-FailMission-2].Name;Mission Failed!
+[StoryEvents.Event-A-FailMission-2].Desc-NonOwner;You failed to complete the order in time!
+[StoryEvents.Event-A-FailMission-3].Name;Mission Failed!
+[StoryEvents.Event-A-FailMission-3].Desc-NonOwner;You failed to rescue the survivor in time! The fighters demanded contact with HQ!
+[StoryEvents.Event-A-FailMission-4].Name;Mission Failed!
+[StoryEvents.Event-A-FailMission-4].Desc-NonOwner;The survivor died! The fighters demanded contact with HQ!
+[StoryEvents.Event-Escape-Award-1].Name;Support from HQ!
+[StoryEvents.Event-Escape-Award-1].Desc-Owner;In light of your successes, HQ has allocated you additional resources from reserves.
+[StoryEvents.Event-Escape-Award-2].Name;Support from HQ!
+[StoryEvents.Event-Escape-Award-2].Desc-Owner;In light of your successes, HQ has allocated you additional resources from reserves.
+[StoryEvents.Event-Escape-Award-3].Name;Support from HQ!
+[StoryEvents.Event-Escape-Award-3].Desc-Owner;In light of your successes, HQ has allocated you additional resources from reserves.
+[StoryEvents.Event-Escape-Award-4].Name;Support from HQ!
+[StoryEvents.Event-Escape-Award-4].Desc-Owner;In light of your successes, HQ has allocated you additional resources from reserves.
+[StoryEvents.Event-Escape-Award-5].Name;Support from HQ!
+[StoryEvents.Event-Escape-Award-5].Desc-Owner;In light of your successes, HQ has allocated you additional resources from reserves.
+[StoryEvents.Event-Escape-Award-6].Name;Support from HQ!
+[StoryEvents.Event-Escape-Award-6].Desc-Owner;In light of your successes, HQ has allocated you additional resources from reserves.
+[StoryEvents.Event-Escape-Award-7].Name;Support from HQ!
+[StoryEvents.Event-Escape-Award-7].Desc-Owner;In light of your successes, HQ has allocated you additional resources from reserves.
+[StoryEvents.Event-Escape-Award-8].Name;Support from HQ!
+[StoryEvents.Event-Escape-Award-8].Desc-Owner;In light of your successes, HQ has allocated you additional resources from reserves.
+[StoryEvents.Event-Escape-ArmyMove-1].Name;Convoy Moving!
+[StoryEvents.Event-Escape-ArmyMove-1].Desc-Owner;A convoy with equipment has passed your fighters! Your fighters were able to ensure the convoy's safety in territory %0:s at location %1:s! Command was pleased with your success!
+[StoryEvents.Event-Escape-ArmyMove-1].Desc-NonOwner;The convoy is moving through secure territory! Its current location – %0:s at location %1:s! If the next territory on the convoy's route is under your control, you will receive additional resources from HQ!
+[StoryEvents.Event-Escape-ArmyAttack-1].Name;Convoy Attacked!
+[StoryEvents.Event-Escape-ArmyAttack-1].Desc-NonOwner;In territory %0:s at location %1:s, the equipment convoy came under attack! Command is displeased that you failed to ensure its safety!
+[StoryEvents.Event-Escape-ArmyMove-2].Name;Convoy Moving!
+[StoryEvents.Event-Escape-ArmyMove-2].Desc-Owner;A convoy with equipment has passed your fighters! Your fighters were able to ensure the convoy's safety in territory %0:s at location %1:s! Command was pleased with your success!
+[StoryEvents.Event-Escape-ArmyMove-2].Desc-NonOwner;The convoy is moving through secure territory! Its current location – %0:s at location %1:s! If the next territory on the convoy's route is under your control, you will receive additional resources from HQ!
+[StoryEvents.Event-Escape-ArmyAttack-2].Name;Convoy Attacked!
+[StoryEvents.Event-Escape-ArmyAttack-2].Desc-NonOwner;In territory %0:s at location %1:s, the equipment convoy came under attack! Command is displeased that you failed to ensure its safety!
+[StoryEvents.Event-Escape-ArmyMove-3].Name;Convoy Moving!
+[StoryEvents.Event-Escape-ArmyMove-3].Desc-Owner;A convoy with equipment has passed your fighters! Your fighters were able to ensure the convoy's safety in territory %0:s at location %1:s! Command was pleased with your success!
+[StoryEvents.Event-Escape-ArmyMove-3].Desc-NonOwner;The convoy is moving through secure territory! Its current location – %0:s at location %1:s! If the next territory on the convoy's route is under your control, you will receive additional resources from HQ!
+[StoryEvents.Event-Escape-ArmyAttack-3].Name;Convoy Attacked!
+[StoryEvents.Event-Escape-ArmyAttack-3].Desc-NonOwner;In territory %0:s at location %1:s, the equipment convoy came under attack! Command is displeased that you failed to ensure its safety!
+[StoryEvents.Event-Escape-ArmyMove-4].Name;Convoy Moving!
+[StoryEvents.Event-Escape-ArmyMove-4].Desc-Owner;A convoy with equipment has passed your fighters! Your fighters were able to ensure the convoy's safety in territory %0:s at location %1:s! Command was pleased with your success!
+[StoryEvents.Event-Escape-ArmyMove-4].Desc-NonOwner;The convoy is moving through secure territory! Its current location – %0:s at location %1:s! If the next territory on the convoy's route is under your control, you will receive additional resources from HQ!
+[StoryEvents.Event-Escape-ArmyAttack-4].Name;Convoy Attacked!
+[StoryEvents.Event-Escape-ArmyAttack-4].Desc-NonOwner;In territory %0:s at location %1:s, the equipment convoy came under attack! Command is displeased that you failed to ensure its safety!
+[StoryEvents.Event-Escape-ArmyMove-5].Name;Convoy Moving!
+[StoryEvents.Event-Escape-ArmyMove-5].Desc-Owner;A convoy with equipment has passed your fighters! Your fighters were able to ensure the convoy's safety in territory %0:s at location %1:s! Command was pleased with your success!
+[StoryEvents.Event-Escape-ArmyMove-5].Desc-NonOwner;The convoy is moving through secure territory! Its current location – %0:s at location %1:s! If the next territory on the convoy's route is under your control, you will receive additional resources from HQ!
+[StoryEvents.Event-Escape-ArmyAttack-5].Name;Convoy Attacked!
+[StoryEvents.Event-Escape-ArmyAttack-5].Desc-NonOwner;In territory %0:s at location %1:s, the equipment convoy came under attack! Command is displeased that you failed to ensure its safety!
+[StoryEvents.Event-Escape-ArmyMove-6].Name;Convoy Moving!
+[StoryEvents.Event-Escape-ArmyMove-6].Desc-Owner;A convoy with equipment has passed your fighters! Your fighters were able to ensure the convoy's safety in territory %0:s at location %1:s! Command was pleased with your success!
+[StoryEvents.Event-Escape-ArmyMove-6].Desc-NonOwner;The convoy is moving through secure territory! Its current location – %0:s at location %1:s! If the next territory on the convoy's route is under your control, you will receive additional resources from HQ!
+[StoryEvents.Event-Escape-ArmyAttack-6].Name;Convoy Attacked!
+[StoryEvents.Event-Escape-ArmyAttack-6].Desc-NonOwner;In territory %0:s at location %1:s, the equipment convoy came under attack! Due to an unfortunate set of circumstances, key personnel among the convoy command were killed! HQ is furious!
+[StoryEvents.Event-Escape-ArmyMove-7].Name;Convoy Moving!
+[StoryEvents.Event-Escape-ArmyMove-7].Desc-Owner;A convoy with equipment has passed your fighters! Your fighters were able to ensure the convoy's safety in territory %0:s at location %1:s! Command was pleased with your success!
+[StoryEvents.Event-Escape-ArmyMove-7].Desc-NonOwner;The convoy is moving through secure territory! Its current location – %0:s at location %1:s! If the next territory on the convoy's route is under your control, you will receive additional resources from HQ!
+[StoryEvents.Event-Escape-ArmyAttack-7].Name;Convoy Attacked!
+[StoryEvents.Event-Escape-ArmyAttack-7].Desc-NonOwner;In territory %0:s at location %1:s, the equipment convoy came under attack! Command is displeased that you failed to ensure its safety!
+[StoryEvents.Event-Escape-ArmyMove-8].Name;Convoy Moving!
+[StoryEvents.Event-Escape-ArmyMove-8].Desc-Owner;A convoy with equipment has passed your fighters! Your fighters were able to ensure the convoy's safety in territory %0:s at location %1:s! Command was pleased with your success!
+[StoryEvents.Event-Escape-ArmyMove-8].Desc-NonOwner;The convoy is moving through secure territory! Its current location – %0:s at location %1:s!
+[StoryEvents.Event-Escape-ArmyAttack-8].Name;Convoy Attacked!
+[StoryEvents.Event-Escape-ArmyAttack-8].Desc-NonOwner;In territory %0:s at location %1:s, the equipment convoy came under attack! Command is displeased that you failed to ensure its safety!
+[StoryEvents.Event-A-CheckVictory].Name;A Fateful Decision
+[StoryEvents.Event-A-CheckVictory].Desc-Owner;After the battle, the Captain managed to speak with the fighter. He's an assistant machine gunner from Kestrel squad. The only one who survived. HQ also refused evacuation when their squad was almost entirely wiped out in an anomalous house in one of the nearby villages. After that, the squad decided to return to base on their own, but a day ago they fell into an anomaly again. Only he survived, as he was the rearguard.||A couple minutes after talking with the other guys, the newcomer pulled Tachenko aside and let him read the documents. The fighters didn't hear the conversation between the soldier and the Captain, but they saw from his face that the Commander, after reading the documents, was furious. Then they fell silent and watched what was happening. The newcomer returned to the squad, and the Captain, standing for a moment, brought the radio to his lips. The soldiers saw Tachenko's lips moving, but couldn't hear his voice due to the distance. Then the Commander lowered the radio and headed toward the fighters. Approaching the group, he threw the documents on the ground before the soldiers and said: "HQ refused evacuation. Sends us further north. I believe it's necessary to tell HQ to go to @!* and head back to the Complex. We'll hole up in the railcars there, rest, and regroup. We're on our own now. And you know, guys, I read a lot in the documents that HQ tasked us to collect. The government was doing all sorts of bad things here. And ordinary soldiers are supposed to clean it up. These snot-nosed conscripts, torn from mama's apron strings, won't clean anything up. They'll drop like flies and their families will suffer. I think only we, together with the other surviving contractors, can bring order here. We need to cleanse everything of mutants and stop this nightmare. I believe this is our DUTY."||The fighters, after a few seconds of silence, supported the Commander. No one in the squad doubted that this was truly their duty – to stop the nightmare happening here. And no one thought that in fact, Captain Tachenko, the future founder of one of the first factions in the Zone called "Duty", had not contacted HQ at all, but merely simulated the negotiations... No one knew about this for a very long time. And years later, someone in the vicinity of the Jupiter Plant, at the Cooling Towers, would find a corpse fallen from an anomaly – that of General Tachenko – with a note in his PDA about the events of the lost contact with HQ. That very loss of contact which Tachenko himself decided to make, telling no one. And only facing death did he confess, leaving a note in his PDA. It was this decision that marked the beginning of the "Fight against the Zone" by a group of people who would one day call themselves "Duty"...
