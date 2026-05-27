@@ -71,417 +71,416 @@
 [Advisors.Advisor-ClearSky-Vasilenko].Name;Vasilenko
 [Advisors.Advisor-ClearSky-Petrenko].Name;Petrenko
 [Advisors.Advisor-Zombie-Controler].Name;Controller
-[Achievements.Achiv-1].Name;
-[Achievements.Achiv-1].Desc;
-[Achievements.Achiv-1].Desc-Logo;
-[Achievements.Achiv-2].Name;
-[Achievements.Achiv-2].Desc;
-[Achievements.Achiv-2].Desc-Logo;
-[Achievements.Achiv-3].Name;
-[Achievements.Achiv-3].Desc;
-[Achievements.Achiv-3].Desc-Logo;
-[Achievements.Achiv-4].Name;
-[Achievements.Achiv-4].Desc;
-[Achievements.Achiv-4].Desc-Logo;
-[Achievements.Achiv-5].Name;
-[Achievements.Achiv-5].Desc;
-[Achievements.Achiv-5].Desc-Logo;
-[Achievements.Achiv-6].Name;
-[Achievements.Achiv-6].Desc;
-[Achievements.Achiv-6].Desc-Logo;
-[Traders.World].Name;
-[Traders.World].NeedText;
-[Traders.YourGroup].Name;
-[Traders.YourGroup].NeedText;
-[Traders.OtherGroup].Name;
-[Traders.OtherGroup].NeedText;
-[StoryEvents.Event-Info-1].Name;
-[StoryEvents.Event-Info-1].Desc-Owner;
-[StoryEvents.Event-Info-1].Desc-NonOwner;
-[StoryEvents.Event-Invasion-Mercenaries-1].Name;
-[StoryEvents.Event-Invasion-Mercenaries-1].Desc-Owner;
-[StoryEvents.Event-Invasion-Mercenaries-1].Desc-NonOwner;
-[StoryEvents.Event-Info-2].Name;
-[StoryEvents.Event-Info-2].Desc-Owner;
-[StoryEvents.Event-Info-2].Desc-NonOwner;
-[StoryEvents.Event-Info-3].Name;
-[StoryEvents.Event-Info-3].Desc-Owner;
-[StoryEvents.Event-Info-3].Desc-NonOwner;
-[StoryEvents.Event-Info-4].Name;
-[StoryEvents.Event-Info-4].Desc-Owner;
-[StoryEvents.Event-Info-4].Desc-NonOwner;
-[StoryEvents.Event-Limansk-1].Name;
-[StoryEvents.Event-Limansk-1].Desc-Owner;
-[StoryEvents.Event-Limansk-1].Desc-NonOwner;
-[StoryEvents.Event-Limansk-2].Name;
-[StoryEvents.Event-Limansk-2].Desc-Owner;
-[StoryEvents.Event-Limansk-2].Desc-NonOwner;
-[StoryEvents.Event-RemoveArmy-1].Name;
-[StoryEvents.Event-RemoveArmy-1].Desc-Owner;
-[StoryEvents.Event-RemoveArmy-1].Desc-NonOwner;
-[StoryEvents.Event-ChangeZonaOwner-ClearSky-1].Name;
-[StoryEvents.Event-ChangeZonaOwner-ClearSky-1].Desc-Owner;
-[StoryEvents.Event-ChangeZonaOwner-ClearSky-1].Desc-NonOwner;
-[StoryEvents.Event-AddArmy-1].Name;
-[StoryEvents.Event-AddArmy-1].Desc-Owner;
-[StoryEvents.Event-AddArmy-1].Desc-NonOwner;
-[StoryEvents.Event-Invasion-ClearSky-1].Name;
-[StoryEvents.Event-Invasion-ClearSky-1].Desc-Owner;
-[StoryEvents.Event-Invasion-ClearSky-1].Desc-NonOwner;
-[StoryEvents.Event-Limansk-3].Name;
-[StoryEvents.Event-Limansk-3].Desc-Owner;
-[StoryEvents.Event-Limansk-3].Desc-NonOwner;
-[StoryEvents.Event-Limansk-4].Name;
-[StoryEvents.Event-Limansk-4].Desc-Owner;
-[StoryEvents.Event-Limansk-4].Desc-NonOwner;
-[StoryEvents.Event-Limansk-5].Name;
-[StoryEvents.Event-Limansk-5].Desc-Owner;
-[StoryEvents.Event-Limansk-5].Desc-NonOwner;
-[StoryEvents.Event-Limansk-6].Name;
-[StoryEvents.Event-Limansk-6].Desc-Owner;
-[StoryEvents.Event-Limansk-6].Desc-NonOwner;
-[StoryEvents.Event-Limansk-7].Name;
-[StoryEvents.Event-Limansk-7].Desc-Owner;
-[StoryEvents.Event-Limansk-7].Desc-NonOwner;
-[StoryEvents.Event-Limansk-8].Name;
-[StoryEvents.Event-Limansk-8].Desc-Owner;
-[StoryEvents.Event-Limansk-8].Desc-NonOwner;
-[StoryEvents.Event-Limansk-9].Name;
-[StoryEvents.Event-Limansk-9].Desc-Owner;
-[StoryEvents.Event-Limansk-9].Desc-NonOwner;
-[StoryEvents.Event-Limansk-10].Name;
-[StoryEvents.Event-Limansk-10].Desc-Owner;
-[StoryEvents.Event-Limansk-10].Desc-NonOwner;
-[StoryEvents.Event-RemoveArmy-2].Name;
-[StoryEvents.Event-RemoveArmy-2].Desc-Owner;
-[StoryEvents.Event-RemoveArmy-2].Desc-NonOwner;
-[StoryEvents.Event-ChangeZonaOwner-ClearSky-2].Name;
-[StoryEvents.Event-ChangeZonaOwner-ClearSky-2].Desc-Owner;
-[StoryEvents.Event-ChangeZonaOwner-ClearSky-2].Desc-NonOwner;
-[StoryEvents.Event-AddArmy-2].Name;
-[StoryEvents.Event-AddArmy-2].Desc-Owner;
-[StoryEvents.Event-AddArmy-2].Desc-NonOwner;
-[StoryEvents.Event-Invasion-ClearSky-2].Name;
-[StoryEvents.Event-Invasion-ClearSky-2].Desc-Owner;
-[StoryEvents.Event-Invasion-ClearSky-2].Desc-NonOwner;
-[StoryEvents.Event-Limansk-11].Name;
-[StoryEvents.Event-Limansk-11].Desc-Owner;
-[StoryEvents.Event-Limansk-11].Desc-NonOwner;
-[StoryEvents.Event-Limansk-12].Name;
-[StoryEvents.Event-Limansk-12].Desc-Owner;
-[StoryEvents.Event-Limansk-12].Desc-NonOwner;
-[StoryEvents.Event-Limansk-13].Name;
-[StoryEvents.Event-Limansk-13].Desc-Owner;
-[StoryEvents.Event-Limansk-13].Desc-NonOwner;
-[StoryEvents.Event-Limansk-14].Name;
-[StoryEvents.Event-Limansk-14].Desc-Owner;
-[StoryEvents.Event-Limansk-14].Desc-NonOwner;
-[StoryEvents.Event-Limansk-15].Name;
-[StoryEvents.Event-Limansk-15].Desc-Owner;
-[StoryEvents.Event-Limansk-15].Desc-NonOwner;
-[StoryEvents.Event-Limansk-16].Name;
-[StoryEvents.Event-Limansk-16].Desc-Owner;
-[StoryEvents.Event-Limansk-16].Desc-NonOwner;
-[StoryEvents.Event-Limansk-17].Name;
-[StoryEvents.Event-Limansk-17].Desc-Owner;
-[StoryEvents.Event-Limansk-17].Desc-NonOwner;
-[StoryEvents.Event-Limansk-18].Name;
-[StoryEvents.Event-Limansk-18].Desc-Owner;
-[StoryEvents.Event-Limansk-18].Desc-NonOwner;
-[StoryEvents.Event-RemoveArmy-3].Name;
-[StoryEvents.Event-RemoveArmy-3].Desc-Owner;
-[StoryEvents.Event-RemoveArmy-3].Desc-NonOwner;
-[StoryEvents.Event-ChangeZonaOwner-ClearSky-3].Name;
-[StoryEvents.Event-ChangeZonaOwner-ClearSky-3].Desc-Owner;
-[StoryEvents.Event-ChangeZonaOwner-ClearSky-3].Desc-NonOwner;
-[StoryEvents.Event-AddArmy-3].Name;
-[StoryEvents.Event-AddArmy-3].Desc-Owner;
-[StoryEvents.Event-AddArmy-3].Desc-NonOwner;
-[StoryEvents.Event-Invasion-ClearSky-3].Name;
-[StoryEvents.Event-Invasion-ClearSky-3].Desc-Owner;
-[StoryEvents.Event-Invasion-ClearSky-3].Desc-NonOwner;
-[StoryEvents.Event-Limansk-19].Name;
-[StoryEvents.Event-Limansk-19].Desc-Owner;
-[StoryEvents.Event-Limansk-19].Desc-NonOwner;
-[StoryEvents.Event-Limansk-20].Name;
-[StoryEvents.Event-Limansk-20].Desc-Owner;
-[StoryEvents.Event-Limansk-20].Desc-NonOwner;
-[StoryEvents.Event-Hospital-1].Name;
-[StoryEvents.Event-Hospital-1].Desc-Owner;
-[StoryEvents.Event-Hospital-1].Desc-NonOwner;
-[StoryEvents.Event-CHAES-0].Name;
-[StoryEvents.Event-CHAES-0].Desc-Owner;
-[StoryEvents.Event-CHAES-0].Desc-NonOwner;
-[StoryEvents.Event-CHAES-5].Name;
-[StoryEvents.Event-CHAES-5].Desc-Owner;
-[StoryEvents.Event-CHAES-5].Desc-NonOwner;
-[StoryEvents.Event-End-1].Name;
-[StoryEvents.Event-End-1].Desc-Owner;
-[StoryEvents.Event-End-1].Desc-NonOwner;
-[StoryEvents.Event-End-2].Name;
-[StoryEvents.Event-End-2].Desc-Owner;
-[StoryEvents.Event-End-2].Desc-NonOwner;
-ScenarioName;
-ScenarioDescription;
-ScenarioVictoryDescription;
-ScenarioLoseDescription;
-[Groups.bandits.:main].Spy1-Name;
-[Groups.bandits.:main].Spy2-Name;
-[Groups.bandits.:main].Spy3-Name;
-[Groups.bandits.:main].Spy4-Name;
-[Groups.bandits.:main].Name;
-[Groups.bandits.:main].Description;
-[Groups.bandits.:main].DiplomacyText-Question-War;
-[Groups.bandits.:main].DiplomacyText-Question-Neutral;
-[Groups.bandits.:main].DiplomacyText-Question-Alliance;
-[Groups.bandits.:main].DiplomacyText-Question-BreakAlliance;
-[Groups.bandits.:main].DiplomacyText-RequestMoney-Ask;
-[Groups.bandits.:main].DiplomacyText-Ans-0-Down;
-[Groups.bandits.:main].DiplomacyText-Ans-1-Down;
-[Groups.bandits.:main].DiplomacyText-Ans-1-No;
-[Groups.bandits.:main].DiplomacyText-Ans-1-Yes;
-[Groups.bandits.:main].DiplomacyText-Ans-2-No;
-[Groups.bandits.:main].DiplomacyText-Ans-2-Yes;
-[Groups.bandits.:main].DiplomacyText-RequestMoney-Ans-No;
-[Groups.bandits.:main].DiplomacyText-RequestMoney-Ans-Yes;
-[Groups.bandits.:main].DiplomacyText-Question-Neutral-No;
-[Groups.bandits.:main].DiplomacyText-Question-Neutral-Yes;
-[Groups.bandits.:main].DiplomacyText-Question-Alliance-No;
-[Groups.bandits.:main].DiplomacyText-Question-Alliance-Yes;
-[Groups.bandits.:main].Text-End-Standart-Victory;
-[Groups.bandits.:main].Text-End-Step-Victory;
-[Groups.bandits.:main].Text-End-EventFlag-Victory;
-[Groups.bandits.:main].Text-End-Standart-Lose;
-[Groups.bandits.:main].Text-End-Step-Lose;
-[Groups.bandits.:main].Text-End-EventFlag-Lose;
-[Groups.bandits.Crime].Text-End-Standart-Victory;
-[Groups.bandits.Crime].Text-End-Standart-Lose;
-[Groups.bandits.Crime].Text-End-Step-Lose;
-[Groups.bandits.Growth].Text-End-Standart-Victory;
-[Groups.bandits.Growth].Text-End-Standart-Lose;
-[Groups.bandits.Growth].Text-End-Step-Lose;
-[Groups.bandits.Unknow].Text-End-Standart-Victory;
-[Groups.bandits.Unknow].Text-End-Standart-Lose;
-[Groups.bandits.Unknow].Text-End-Step-Lose;
-[Groups.clearsky.:main].Spy1-Name;
-[Groups.clearsky.:main].Spy2-Name;
-[Groups.clearsky.:main].Spy3-Name;
-[Groups.clearsky.:main].Spy4-Name;
-[Groups.clearsky.:main].Name;
-[Groups.clearsky.:main].Description;
-[Groups.clearsky.:main].DiplomacyText-Question-War;
-[Groups.clearsky.:main].DiplomacyText-Question-Neutral;
-[Groups.clearsky.:main].DiplomacyText-Question-Alliance;
-[Groups.clearsky.:main].DiplomacyText-Question-BreakAlliance;
-[Groups.clearsky.:main].DiplomacyText-RequestMoney-Ask;
-[Groups.clearsky.:main].DiplomacyText-Ans-0-Down;
-[Groups.clearsky.:main].DiplomacyText-Ans-1-Down;
-[Groups.clearsky.:main].DiplomacyText-Ans-1-No;
-[Groups.clearsky.:main].DiplomacyText-Ans-1-Yes;
-[Groups.clearsky.:main].DiplomacyText-Ans-2-No;
-[Groups.clearsky.:main].DiplomacyText-Ans-2-Yes;
-[Groups.clearsky.:main].DiplomacyText-RequestMoney-Ans-No;
-[Groups.clearsky.:main].DiplomacyText-RequestMoney-Ans-Yes;
-[Groups.clearsky.:main].DiplomacyText-Question-Neutral-No;
-[Groups.clearsky.:main].DiplomacyText-Question-Neutral-Yes;
-[Groups.clearsky.:main].DiplomacyText-Question-Alliance-No;
-[Groups.clearsky.:main].DiplomacyText-Question-Alliance-Yes;
-[Groups.clearsky.:main].Text-End-Standart-Victory;
-[Groups.clearsky.:main].Text-End-Step-Victory;
-[Groups.clearsky.:main].Text-End-EventFlag-Victory;
-[Groups.clearsky.:main].Text-End-Standart-Lose;
-[Groups.clearsky.:main].Text-End-Step-Lose;
-[Groups.clearsky.:main].Text-End-EventFlag-Lose;
-[Groups.clearsky.Growth].Text-End-Standart-Victory;
-[Groups.clearsky.Growth].Text-End-Standart-Lose;
-[Groups.clearsky.Stability].Text-End-Standart-Victory;
-[Groups.clearsky.Stability].Text-End-Standart-Lose;
-[Groups.clearsky.Unknow].Text-End-Standart-Victory;
-[Groups.clearsky.Unknow].Text-End-Standart-Lose;
-[Groups.Duty.:main].Spy1-Name;
-[Groups.Duty.:main].Spy2-Name;
-[Groups.Duty.:main].Spy3-Name;
-[Groups.Duty.:main].Spy4-Name;
-[Groups.Duty.:main].Name;
-[Groups.Duty.:main].Description;
-[Groups.Duty.:main].DiplomacyText-Question-War;
-[Groups.Duty.:main].DiplomacyText-Question-Neutral;
-[Groups.Duty.:main].DiplomacyText-Question-Alliance;
-[Groups.Duty.:main].DiplomacyText-Question-BreakAlliance;
-[Groups.Duty.:main].DiplomacyText-RequestMoney-Ask;
-[Groups.Duty.:main].DiplomacyText-Ans-0-Down;
-[Groups.Duty.:main].DiplomacyText-Ans-1-Down;
-[Groups.Duty.:main].DiplomacyText-Ans-1-No;
-[Groups.Duty.:main].DiplomacyText-Ans-1-Yes;
-[Groups.Duty.:main].DiplomacyText-Ans-2-No;
-[Groups.Duty.:main].DiplomacyText-Ans-2-Yes;
-[Groups.Duty.:main].DiplomacyText-RequestMoney-Ans-No;
-[Groups.Duty.:main].DiplomacyText-RequestMoney-Ans-Yes;
-[Groups.Duty.:main].DiplomacyText-Question-Neutral-No;
-[Groups.Duty.:main].DiplomacyText-Question-Neutral-Yes;
-[Groups.Duty.:main].DiplomacyText-Question-Alliance-No;
-[Groups.Duty.:main].DiplomacyText-Question-Alliance-Yes;
-[Groups.Duty.:main].Text-End-Standart-Victory;
-[Groups.Duty.:main].Text-End-Step-Victory;
-[Groups.Duty.:main].Text-End-EventFlag-Victory;
-[Groups.Duty.:main].Text-End-Standart-Lose;
-[Groups.Duty.:main].Text-End-Step-Lose;
-[Groups.Duty.:main].Text-End-EventFlag-Lose;
-[Groups.Duty.AntiZone].Text-End-Standart-Victory;
-[Groups.Duty.AntiZone].Text-End-Standart-Lose;
-[Groups.Duty.Growth].Text-End-Standart-Lose;
-[Groups.Duty.Unknow].Text-End-Standart-Victory;
-[Groups.Duty.Unknow].Text-End-Standart-Lose;
-[Groups.freedom.:main].Spy1-Name;
-[Groups.freedom.:main].Spy2-Name;
-[Groups.freedom.:main].Spy3-Name;
-[Groups.freedom.:main].Spy4-Name;
-[Groups.freedom.:main].Name;
-[Groups.freedom.:main].Description;
-[Groups.freedom.:main].DiplomacyText-Question-War;
-[Groups.freedom.:main].DiplomacyText-Question-Neutral;
-[Groups.freedom.:main].DiplomacyText-Question-Alliance;
-[Groups.freedom.:main].DiplomacyText-Question-BreakAlliance;
-[Groups.freedom.:main].DiplomacyText-RequestMoney-Ask;
-[Groups.freedom.:main].DiplomacyText-Ans-0-Down;
-[Groups.freedom.:main].DiplomacyText-Ans-1-Down;
-[Groups.freedom.:main].DiplomacyText-Ans-1-No;
-[Groups.freedom.:main].DiplomacyText-Ans-1-Yes;
-[Groups.freedom.:main].DiplomacyText-Ans-2-No;
-[Groups.freedom.:main].DiplomacyText-Ans-2-Yes;
-[Groups.freedom.:main].DiplomacyText-RequestMoney-Ans-No;
-[Groups.freedom.:main].DiplomacyText-RequestMoney-Ans-Yes;
-[Groups.freedom.:main].DiplomacyText-Question-Neutral-No;
-[Groups.freedom.:main].DiplomacyText-Question-Neutral-Yes;
-[Groups.freedom.:main].DiplomacyText-Question-Alliance-No;
-[Groups.freedom.:main].DiplomacyText-Question-Alliance-Yes;
-[Groups.freedom.:main].Text-End-Standart-Victory;
-[Groups.freedom.:main].Text-End-Step-Victory;
-[Groups.freedom.:main].Text-End-EventFlag-Victory;
-[Groups.freedom.:main].Text-End-Standart-Lose;
-[Groups.freedom.:main].Text-End-Step-Lose;
-[Groups.freedom.:main].Text-End-EventFlag-Lose;
-[Groups.freedom.Anarchy].Text-End-Standart-Victory;
-[Groups.freedom.Anarchy].Text-End-Standart-Lose;
-[Groups.freedom.Growth].Text-End-Standart-Victory;
-[Groups.freedom.Growth].Text-End-Standart-Lose;
-[Groups.freedom.Unknow].Text-End-Standart-Victory;
-[Groups.freedom.Unknow].Text-End-Standart-Lose;
-[Groups.Mercenaries.:main].Spy1-Name;
-[Groups.Mercenaries.:main].Spy2-Name;
-[Groups.Mercenaries.:main].Spy3-Name;
-[Groups.Mercenaries.:main].Spy4-Name;
-[Groups.Mercenaries.:main].Name;
-[Groups.Mercenaries.:main].Description;
-[Groups.Mercenaries.:main].DiplomacyText-Question-War;
-[Groups.Mercenaries.:main].DiplomacyText-Question-Neutral;
-[Groups.Mercenaries.:main].DiplomacyText-Question-Alliance;
-[Groups.Mercenaries.:main].DiplomacyText-Question-BreakAlliance;
-[Groups.Mercenaries.:main].DiplomacyText-RequestMoney-Ask;
-[Groups.Mercenaries.:main].DiplomacyText-Ans-0-Down;
-[Groups.Mercenaries.:main].DiplomacyText-Ans-1-Down;
-[Groups.Mercenaries.:main].DiplomacyText-Ans-1-No;
-[Groups.Mercenaries.:main].DiplomacyText-Ans-1-Yes;
-[Groups.Mercenaries.:main].DiplomacyText-Ans-2-No;
-[Groups.Mercenaries.:main].DiplomacyText-Ans-2-Yes;
-[Groups.Mercenaries.:main].DiplomacyText-RequestMoney-Ans-No;
-[Groups.Mercenaries.:main].DiplomacyText-RequestMoney-Ans-Yes;
-[Groups.Mercenaries.:main].DiplomacyText-Question-Neutral-No;
-[Groups.Mercenaries.:main].DiplomacyText-Question-Neutral-Yes;
-[Groups.Mercenaries.:main].DiplomacyText-Question-Alliance-No;
-[Groups.Mercenaries.:main].DiplomacyText-Question-Alliance-Yes;
-[Groups.Mercenaries.:main].Text-End-Standart-Victory;
-[Groups.Mercenaries.:main].Text-End-Step-Victory;
-[Groups.Mercenaries.:main].Text-End-EventFlag-Victory;
-[Groups.Mercenaries.:main].Text-End-Standart-Lose;
-[Groups.Mercenaries.:main].Text-End-Step-Lose;
-[Groups.Mercenaries.:main].Text-End-EventFlag-Lose;
-[Groups.Mercenaries.Mercenary].Text-End-Standart-Victory;
-[Groups.Mercenaries.Mercenary].Text-End-Standart-Lose;
-[Groups.monolith.:main].Spy1-Name;
-[Groups.monolith.:main].Spy2-Name;
-[Groups.monolith.:main].Spy3-Name;
-[Groups.monolith.:main].Spy4-Name;
-[Groups.monolith.:main].Name;
-[Groups.monolith.:main].Description;
-[Groups.monolith.:main].DiplomacyText-Question-War;
-[Groups.monolith.:main].DiplomacyText-Question-Neutral;
-[Groups.monolith.:main].DiplomacyText-Question-Alliance;
-[Groups.monolith.:main].DiplomacyText-Question-BreakAlliance;
-[Groups.monolith.:main].DiplomacyText-RequestMoney-Ask;
-[Groups.monolith.:main].DiplomacyText-Ans-0-Down;
-[Groups.monolith.:main].DiplomacyText-Ans-1-Down;
-[Groups.monolith.:main].DiplomacyText-Ans-1-No;
-[Groups.monolith.:main].DiplomacyText-Ans-1-Yes;
-[Groups.monolith.:main].DiplomacyText-Ans-2-No;
-[Groups.monolith.:main].DiplomacyText-Ans-2-Yes;
-[Groups.monolith.:main].DiplomacyText-RequestMoney-Ans-No;
-[Groups.monolith.:main].DiplomacyText-RequestMoney-Ans-Yes;
-[Groups.monolith.:main].DiplomacyText-Question-Neutral-No;
-[Groups.monolith.:main].DiplomacyText-Question-Neutral-Yes;
-[Groups.monolith.:main].DiplomacyText-Question-Alliance-No;
-[Groups.monolith.:main].DiplomacyText-Question-Alliance-Yes;
-[Groups.monolith.:main].Text-End-Step-Victory;
-[Groups.monolith.:main].Text-End-EventFlag-Victory;
-[Groups.monolith.:main].Text-End-Standart-Lose;
-[Groups.monolith.:main].Text-End-Step-Lose;
-[Groups.monolith.:main].Text-End-EventFlag-Lose;
-[Groups.monolith.Anarchy].Text-End-Standart-Victory;
-[Groups.monolith.AntiZone].Text-End-Standart-Victory;
-[Groups.monolith.Control].Text-End-Standart-Victory;
-[Groups.monolith.Crime].Text-End-Standart-Victory;
-[Groups.monolith.Exploring].Text-End-Standart-Victory;
-[Groups.monolith.Growth].Text-End-Standart-Victory;
-[Groups.monolith.Growth].Text-End-Standart-Lose;
-[Groups.monolith.Mercenary].Text-End-Standart-Victory;
-[Groups.monolith.Sectarianism].Text-End-Standart-Victory;
-[Groups.monolith.Sectarianism].Text-End-Standart-Lose;
-[Groups.monolith.Stability].Text-End-Standart-Victory;
-[Groups.monolith.Stalkers].Text-End-Standart-Victory;
-[Groups.monolith.Unknow].Text-End-Standart-Victory;
-[Groups.monolith.Unknow].Text-End-Standart-Lose;
-[Groups.monolith.Zombie].Text-End-Standart-Victory;
-[Groups.soldiers.:main].Spy1-Name;
-[Groups.soldiers.:main].Spy2-Name;
-[Groups.soldiers.:main].Spy3-Name;
-[Groups.soldiers.:main].Spy4-Name;
-[Groups.soldiers.:main].Name;
-[Groups.soldiers.:main].Description;
-[Groups.soldiers.:main].DiplomacyText-Question-War;
-[Groups.soldiers.:main].DiplomacyText-Question-Neutral;
-[Groups.soldiers.:main].DiplomacyText-Question-Alliance;
-[Groups.soldiers.:main].DiplomacyText-Question-BreakAlliance;
-[Groups.soldiers.:main].DiplomacyText-RequestMoney-Ask;
-[Groups.soldiers.:main].DiplomacyText-Ans-0-Down;
-[Groups.soldiers.:main].DiplomacyText-Ans-1-Down;
-[Groups.soldiers.:main].DiplomacyText-Ans-1-No;
-[Groups.soldiers.:main].DiplomacyText-Ans-1-Yes;
-[Groups.soldiers.:main].DiplomacyText-Ans-2-No;
-[Groups.soldiers.:main].DiplomacyText-Ans-2-Yes;
-[Groups.soldiers.:main].DiplomacyText-RequestMoney-Ans-No;
-[Groups.soldiers.:main].DiplomacyText-RequestMoney-Ans-Yes;
-[Groups.soldiers.:main].DiplomacyText-Question-Neutral-No;
-[Groups.soldiers.:main].DiplomacyText-Question-Neutral-Yes;
-[Groups.soldiers.:main].DiplomacyText-Question-Alliance-No;
-[Groups.soldiers.:main].DiplomacyText-Question-Alliance-Yes;
-[Groups.soldiers.:main].Text-End-Standart-Victory;
-[Groups.soldiers.:main].Text-End-Step-Victory;
-[Groups.soldiers.:main].Text-End-EventFlag-Victory;
-[Groups.soldiers.:main].Text-End-Standart-Lose;
-[Groups.soldiers.:main].Text-End-Step-Lose;
-[Groups.soldiers.:main].Text-End-EventFlag-Lose;
-[Groups.soldiers.Anarchy].Text-End-Standart-Victory;
-[Groups.soldiers.AntiZone].Text-End-Standart-Victory;
-[Groups.soldiers.Control].Text-End-Standart-Victory;
-[Groups.soldiers.Control].Text-End-Standart-Lose;
-[Groups.soldiers.Crime].Text-End-Standart-Victory;
-[Groups.soldiers.Exploring].Text-End-Standart-Victory;
-[Groups.soldiers.Growth].Text-End-Standart-Victory;
-[Groups.soldiers.Growth].Text-End-Standart-Lose;
-[Groups.soldiers.Mercenary].Text-End-Standart-Victory;
-[Groups.soldiers.Sectarianism].Text-End-Standart-Victory;
-[Groups.soldiers.Stability].Text-End-Standart-Victory;
-[Groups.soldiers.Stalkers].Text-End-Standart-Victory;
-[Groups.soldiers.Unknow].Text-End-Standart-Victory;
-[Groups.soldiers.Unknow].Text-End-Standart-Lose;
-[Groups.soldiers.Zombie].Text-End-Standart-Victory;
+[Achievements.Achiv-1].Name;Free Spirit
+[Achievements.Achiv-1].Desc;New achievement unlocked! Survive the destruction of the Duty faction playing as Freedom on any difficulty.
+[Achievements.Achiv-1].Desc-Logo;Survive the destruction of the Duty faction playing as Freedom on any difficulty.
+[Achievements.Achiv-2].Name;Proper Order
+[Achievements.Achiv-2].Desc;New achievement unlocked! Survive the destruction of the Freedom faction playing as Duty on Experienced difficulty or higher.
+[Achievements.Achiv-2].Desc-Logo;Survive the destruction of the Freedom faction playing as Duty on Experienced difficulty or higher.
+[Achievements.Achiv-3].Name;D-Day
+[Achievements.Achiv-3].Desc;New achievement unlocked! Capture Limansk and hold it for 1 turn until scenario end playing as the Military on Veteran difficulty or higher.
+[Achievements.Achiv-3].Desc-Logo;Capture Limansk and hold it for 1 turn until scenario end playing as the Military on Veteran difficulty or higher.
+[Achievements.Achiv-4].Name;Clicked, Kicked, Checkmated!
+[Achievements.Achiv-4].Desc;New achievement unlocked! Capture Limansk and hold it for 1 turn until scenario end playing as the Bandits on Master difficulty.
+[Achievements.Achiv-4].Desc-Logo;Capture Limansk and hold it for 1 turn until scenario end playing as the Bandits on Master difficulty.
+[Achievements.Achiv-5].Name;Fighter Against the Unclean!
+[Achievements.Achiv-5].Desc;New achievement unlocked! Adopt the Anti-Zone ideology playing as the Military on Master difficulty within 10 turns from scenario start.
+[Achievements.Achiv-5].Desc-Logo;Adopt the Anti-Zone ideology playing as the Military on Master difficulty within 10 turns from scenario start.
+[Achievements.Achiv-6].Name;Stable Racket!
+[Achievements.Achiv-6].Desc;New achievement unlocked! Adopt the Stability ideology playing as the Bandits on Master difficulty within 20 turns from scenario start.
+[Achievements.Achiv-6].Desc-Logo;Adopt the Stability ideology playing as the Bandits on Master difficulty within 20 turns from scenario start.
+[Traders.World].Name;Outside World
+[Traders.World].NeedText;Contact with the Outside World cannot always be established. Cost per connection attempt:
+[Traders.YourGroup].Name;Your Faction Trader
+[Traders.YourGroup].NeedText;You can always trade with your faction trader. Cost:
+[Traders.OtherGroup].Name;Enemy Faction Trader
+[Traders.OtherGroup].NeedText;To trade with other factions, first select an enemy territory on the map.
+[StoryEvents.Event-Info-1].Name;Scar's Whereabouts
+[StoryEvents.Event-Info-1].Desc-Owner;Scar is en route to Limansk. His arrival is expected in approximately 15 turns.
+[StoryEvents.Event-Info-1].Desc-NonOwner;Scar is en route to Limansk. His arrival is expected in approximately 15 turns.
+[StoryEvents.Event-Invasion-Mercenaries-1].Name;Mercenaries
+[StoryEvents.Event-Invasion-Mercenaries-1].Desc-Owner;A Mercenary group has invaded territory %0:s at location %1:s. Apparently %1:s interests them too now!
+[StoryEvents.Event-Invasion-Mercenaries-1].Desc-NonOwner;A Mercenary group has invaded territory %0:s at location %1:s. Apparently %1:s interests them too now!
+[StoryEvents.Event-Info-2].Name;Scar Is Approaching
+[StoryEvents.Event-Info-2].Desc-Owner;We received intelligence that a Clear Sky group is assembling to assault the bridge in Limansk, guarded by Renegades. Scar is expected to participate in this assault.
+[StoryEvents.Event-Info-2].Desc-NonOwner;We received intelligence that a Clear Sky group is assembling to assault the bridge in Limansk, guarded by Renegades. Scar is expected to participate in this assault.
+[StoryEvents.Event-Info-3].Name;Battle at the Bridge
+[StoryEvents.Event-Info-3].Desc-Owner;We received intelligence that fighting between Clear Sky and Renegades is underway at the Limansk bridge. Scar has joined the fight on Clear Sky's side.
+[StoryEvents.Event-Info-3].Desc-NonOwner;We received intelligence that fighting between Clear Sky and Renegades is underway at the Limansk bridge. Scar has joined the fight on Clear Sky's side.
+[StoryEvents.Event-Info-4].Name;Bridge Captured
+[StoryEvents.Event-Info-4].Desc-Owner;Clear Sky has captured the bridge in Limansk. They will be here next turn. According to intel, these aren't ordinary Clear Sky fighters - they're from an elite assault squad and are heavily armed!
+[StoryEvents.Event-Info-4].Desc-NonOwner;Clear Sky has captured the bridge in Limansk. They will be here next turn. According to intel, these aren't ordinary Clear Sky fighters - they're from an elite assault squad and are heavily armed!
+[StoryEvents.Event-Limansk-1].Name;Scar is on the move
+[StoryEvents.Event-Limansk-1].Desc-Owner;Mercenary Scar has been spotted in our territory %0:s at location %1:s. Our garrison let him through.
+[StoryEvents.Event-Limansk-1].Desc-NonOwner;Rumors say that mercenary Scar was spotted in territory %0:s at location %1:s.
+[StoryEvents.Event-Limansk-2].Name;Scar Attacked the Territory Garrison
+[StoryEvents.Event-Limansk-2].Desc-Owner;Our patrols encountered the mercenary known as Scar. We lost the engagement in territory %0:s at location %1:s... Our casualties:
+[StoryEvents.Event-Limansk-2].Desc-NonOwner;Rumors say that mercenary Scar was spotted in territory %0:s at location %1:s.
+[StoryEvents.Event-RemoveArmy-1].Name;Technical Event #1
+[StoryEvents.Event-RemoveArmy-1].Desc-Owner;If you see this, it's a bug in event Event-RemoveArmy-1.
+[StoryEvents.Event-RemoveArmy-1].Desc-NonOwner;If you see this, it's a bug in event Event-RemoveArmy-1.
+[StoryEvents.Event-ChangeZonaOwner-ClearSky-1].Name;Clear Sky
+[StoryEvents.Event-ChangeZonaOwner-ClearSky-1].Desc-Owner;Damn it! Clear Sky is pressuring us and threatening war. We were forced to cede territory %0:s at location %1:s to them.
+[StoryEvents.Event-ChangeZonaOwner-ClearSky-1].Desc-NonOwner;We received intelligence that territory %0:s at location %1:s is now controlled by the Clear Sky faction. Judging by the absence of battle reports, the territory was likely acquired by other means.
+[StoryEvents.Event-AddArmy-1].Name;Technical Event #2
+[StoryEvents.Event-AddArmy-1].Desc-Owner;If you see this, it's a bug in event Event-AddArmy-1.
+[StoryEvents.Event-AddArmy-1].Desc-NonOwner;If you see this, it's a bug in event Event-AddArmy-1.
+[StoryEvents.Event-Invasion-ClearSky-1].Name;Clear Sky
+[StoryEvents.Event-Invasion-ClearSky-1].Desc-Owner;A Clear Sky group has invaded territory %0:s at location %1:s. Apparently %1:s interests them too now!
+[StoryEvents.Event-Invasion-ClearSky-1].Desc-NonOwner;A Clear Sky group has invaded territory %0:s at location %1:s. Apparently %1:s interests them too now!
+[StoryEvents.Event-Limansk-3].Name;Scar is on the move
+[StoryEvents.Event-Limansk-3].Desc-Owner;Mercenary Scar has been spotted in our territory %0:s at location %1:s. Our garrison let him through.
+[StoryEvents.Event-Limansk-3].Desc-NonOwner;Rumors say that mercenary Scar was spotted in territory %0:s at location %1:s.
+[StoryEvents.Event-Limansk-4].Name;Scar Attacked the Territory Garrison
+[StoryEvents.Event-Limansk-4].Desc-Owner;Our patrols encountered the mercenary known as Scar. We lost the engagement in territory %0:s at location %1:s... Our casualties:
+[StoryEvents.Event-Limansk-4].Desc-NonOwner;Rumors say that mercenary Scar was spotted in territory %0:s at location %1:s.
+[StoryEvents.Event-Limansk-5].Name;Scar is on the move
+[StoryEvents.Event-Limansk-5].Desc-Owner;Mercenary Scar has been spotted in our territory %0:s at location %1:s. Our garrison let him through.
+[StoryEvents.Event-Limansk-5].Desc-NonOwner;Rumors say that mercenary Scar was spotted in territory %0:s at location %1:s.
+[StoryEvents.Event-Limansk-6].Name;Scar Attacked the Territory Garrison
+[StoryEvents.Event-Limansk-6].Desc-Owner;Our patrols encountered the mercenary known as Scar. We lost the engagement in territory %0:s at location %1:s... Our casualties:
+[StoryEvents.Event-Limansk-6].Desc-NonOwner;Rumors say that mercenary Scar was spotted in territory %0:s at location %1:s.
+[StoryEvents.Event-Limansk-7].Name;Scar is on the move
+[StoryEvents.Event-Limansk-7].Desc-Owner;Mercenary Scar has been spotted in our territory %0:s at location %1:s. Our garrison let him through.
+[StoryEvents.Event-Limansk-7].Desc-NonOwner;Rumors say that mercenary Scar was spotted in territory %0:s at location %1:s.
+[StoryEvents.Event-Limansk-8].Name;Scar Attacked the Territory Garrison
+[StoryEvents.Event-Limansk-8].Desc-Owner;Our patrols encountered the mercenary known as Scar. We lost the engagement in territory %0:s at location %1:s... Our casualties:
+[StoryEvents.Event-Limansk-8].Desc-NonOwner;Rumors say that mercenary Scar was spotted in territory %0:s at location %1:s.
+[StoryEvents.Event-Limansk-9].Name;Scar is on the move
+[StoryEvents.Event-Limansk-9].Desc-Owner;Mercenary Scar has been spotted in our territory %0:s at location %1:s. Our garrison let him through.
+[StoryEvents.Event-Limansk-9].Desc-NonOwner;Rumors say that mercenary Scar was spotted in territory %0:s at location %1:s.
+[StoryEvents.Event-Limansk-10].Name;Scar Attacked the Territory Garrison
+[StoryEvents.Event-Limansk-10].Desc-Owner;Our patrols encountered the mercenary known as Scar. We lost the engagement in territory %0:s at location %1:s... Our casualties:
+[StoryEvents.Event-Limansk-10].Desc-NonOwner;Rumors say that mercenary Scar was spotted in territory %0:s at location %1:s.
+[StoryEvents.Event-RemoveArmy-2].Name;Technical Event #3
+[StoryEvents.Event-RemoveArmy-2].Desc-Owner;If you see this, it's a bug in event Event-RemoveArmy-2.
+[StoryEvents.Event-RemoveArmy-2].Desc-NonOwner;If you see this, it's a bug in event Event-RemoveArmy-2.
+[StoryEvents.Event-ChangeZonaOwner-ClearSky-2].Name;Clear Sky
+[StoryEvents.Event-ChangeZonaOwner-ClearSky-2].Desc-Owner;Damn it! Clear Sky is pressuring us and threatening war. We were forced to cede territory %0:s at location %1:s to them.
+[StoryEvents.Event-ChangeZonaOwner-ClearSky-2].Desc-NonOwner;We received intelligence that territory %0:s at location %1:s is now controlled by the Clear Sky faction. Judging by the absence of battle reports, the territory was likely acquired by other means.
+[StoryEvents.Event-AddArmy-2].Name;Technical Event #4
+[StoryEvents.Event-AddArmy-2].Desc-Owner;If you see this, it's a bug in event Event-AddArmy-2.
+[StoryEvents.Event-AddArmy-2].Desc-NonOwner;If you see this, it's a bug in event Event-AddArmy-2.
+[StoryEvents.Event-Invasion-ClearSky-2].Name;Clear Sky
+[StoryEvents.Event-Invasion-ClearSky-2].Desc-Owner;A Clear Sky group has invaded territory %0:s at location %1:s. Apparently %1:s interests them too now!
+[StoryEvents.Event-Invasion-ClearSky-2].Desc-NonOwner;A Clear Sky group has invaded territory %0:s at location %1:s. Apparently %1:s interests them too now!
+[StoryEvents.Event-Limansk-11].Name;Scar is on the move
+[StoryEvents.Event-Limansk-11].Desc-Owner;Mercenary Scar has been spotted in our territory %0:s at location %1:s. Our garrison let him through.
+[StoryEvents.Event-Limansk-11].Desc-NonOwner;Rumors say that mercenary Scar was spotted in territory %0:s at location %1:s.
+[StoryEvents.Event-Limansk-12].Name;Scar Attacked the Territory Garrison
+[StoryEvents.Event-Limansk-12].Desc-Owner;Our patrols encountered the mercenary known as Scar. We lost the engagement in territory %0:s at location %1:s... Our casualties:
+[StoryEvents.Event-Limansk-12].Desc-NonOwner;Rumors say that mercenary Scar was spotted in territory %0:s at location %1:s.
+[StoryEvents.Event-Limansk-13].Name;Scar is on the move
+[StoryEvents.Event-Limansk-13].Desc-Owner;Mercenary Scar has been spotted in our territory %0:s at location %1:s. Our garrison let him through.
+[StoryEvents.Event-Limansk-13].Desc-NonOwner;Rumors say that mercenary Scar was spotted in territory %0:s at location %1:s.
+[StoryEvents.Event-Limansk-14].Name;Scar Attacked the Territory Garrison
+[StoryEvents.Event-Limansk-14].Desc-Owner;Our patrols encountered the mercenary known as Scar. We lost the engagement in territory %0:s at location %1:s... Our casualties:
+[StoryEvents.Event-Limansk-14].Desc-NonOwner;Rumors say that mercenary Scar was spotted in territory %0:s at location %1:s.
+[StoryEvents.Event-Limansk-15].Name;Scar is on the move
+[StoryEvents.Event-Limansk-15].Desc-Owner;Mercenary Scar has been spotted in our territory %0:s at location %1:s. Our garrison let him through.
+[StoryEvents.Event-Limansk-15].Desc-NonOwner;Rumors say that mercenary Scar was spotted in territory %0:s at location %1:s.
+[StoryEvents.Event-Limansk-16].Name;Scar Attacked the Territory Garrison
+[StoryEvents.Event-Limansk-16].Desc-Owner;Our patrols encountered the mercenary known as Scar. We lost the engagement in territory %0:s at location %1:s... Our casualties:
+[StoryEvents.Event-Limansk-16].Desc-NonOwner;Rumors say that mercenary Scar was spotted in territory %0:s at location %1:s.
+[StoryEvents.Event-Limansk-17].Name;Scar is on the move
+[StoryEvents.Event-Limansk-17].Desc-Owner;Mercenary Scar has been spotted in our territory %0:s at location %1:s. Our garrison let him through.
+[StoryEvents.Event-Limansk-17].Desc-NonOwner;Rumors say that mercenary Scar was spotted in territory %0:s at location %1:s.
+[StoryEvents.Event-Limansk-18].Name;Scar Attacked the Territory Garrison
+[StoryEvents.Event-Limansk-18].Desc-Owner;Our patrols encountered the mercenary known as Scar. We lost the engagement in territory %0:s at location %1:s... Our casualties:
+[StoryEvents.Event-Limansk-18].Desc-NonOwner;Rumors say that mercenary Scar was spotted in territory %0:s at location %1:s.
+[StoryEvents.Event-RemoveArmy-3].Name;Technical Event #5
+[StoryEvents.Event-RemoveArmy-3].Desc-Owner;If you see this, it's a bug in event Event-RemoveArmy-3.
+[StoryEvents.Event-RemoveArmy-3].Desc-NonOwner;If you see this, it's a bug in event Event-RemoveArmy-3.
+[StoryEvents.Event-ChangeZonaOwner-ClearSky-3].Name;Clear Sky
+[StoryEvents.Event-ChangeZonaOwner-ClearSky-3].Desc-Owner;Damn it! Clear Sky is pressuring us and threatening war. We were forced to cede territory %0:s at location %1:s to them.
+[StoryEvents.Event-ChangeZonaOwner-ClearSky-3].Desc-NonOwner;We received intelligence that territory %0:s at location %1:s is now controlled by the Clear Sky faction. Judging by the absence of battle reports, the territory was likely acquired by other means.
+[StoryEvents.Event-AddArmy-3].Name;Technical Event #6
+[StoryEvents.Event-AddArmy-3].Desc-Owner;If you see this, it's a bug in event Event-AddArmy-3.
+[StoryEvents.Event-AddArmy-3].Desc-NonOwner;If you see this, it's a bug in event Event-AddArmy-3.
+[StoryEvents.Event-Invasion-ClearSky-3].Name;Clear Sky
+[StoryEvents.Event-Invasion-ClearSky-3].Desc-Owner;A Clear Sky group has invaded territory %0:s at location %1:s. Apparently %1:s interests them too now!
+[StoryEvents.Event-Invasion-ClearSky-3].Desc-NonOwner;A Clear Sky group has invaded territory %0:s at location %1:s. Apparently %1:s interests them too now!
+[StoryEvents.Event-Limansk-19].Name;Scar is on the move
+[StoryEvents.Event-Limansk-19].Desc-Owner;Mercenary Scar has been spotted in our territory %0:s at location %1:s. Our garrison let him through.
+[StoryEvents.Event-Limansk-19].Desc-NonOwner;Rumors say that mercenary Scar was spotted in territory %0:s at location %1:s.
+[StoryEvents.Event-Limansk-20].Name;Scar Attacked the Territory Garrison
+[StoryEvents.Event-Limansk-20].Desc-Owner;Our patrols encountered the mercenary known as Scar. We lost the engagement in territory %0:s at location %1:s... Our casualties:
+[StoryEvents.Event-Limansk-20].Desc-NonOwner;Rumors say that mercenary Scar was spotted in territory %0:s at location %1:s.
+[StoryEvents.Event-Hospital-1].Name;Hospital
+[StoryEvents.Event-Hospital-1].Desc-Owner;We received intelligence that fighting between Clear Sky and Monolith is underway at the Hospital.
+[StoryEvents.Event-Hospital-1].Desc-NonOwner;We received intelligence that fighting between Clear Sky and Monolith is underway at the Hospital.
+[StoryEvents.Event-CHAES-0].Name;The Climax Approaches
+[StoryEvents.Event-CHAES-0].Desc-Owner;We received intelligence that Scar is en route to CNPP. It seems the climax of these events is near!
+[StoryEvents.Event-CHAES-0].Desc-NonOwner;We received intelligence that Scar is en route to CNPP. It seems the climax of these events is near!
+[StoryEvents.Event-CHAES-5].Name;Scar Almost Catches Strelok
+[StoryEvents.Event-CHAES-5].Desc-Owner;We received intelligence that a battle is underway at CNPP. It appears everything will conclude next turn.
+[StoryEvents.Event-CHAES-5].Desc-NonOwner;We received intelligence that a battle is underway at CNPP. It appears everything will conclude next turn.
+[StoryEvents.Event-End-1].Name;Strelok's Protection Deactivated
+[StoryEvents.Event-End-1].Desc-Owner;Scar managed to deactivate Strelok's protection. According to information from various sources, disabling this protection was supposed to halt the approaching Emission, but the data appears to have been flawed. What went wrong?
+[StoryEvents.Event-End-1].Desc-NonOwner;We received reports that in the northern sector of CNPP, the mercenary nearly caught up with the stalker and even managed to disable his protection. Intelligence suggested that deactivating Strelok's protection would stop the approaching Emission, but the information seems incorrect. What went wrong?
+[StoryEvents.Event-End-2].Name;Strelok's Plan Failed
+[StoryEvents.Event-End-2].Desc-Owner;Scar succeeded in deactivating Strelok's protection. We must eliminate everyone who breached our defenses in Limansk and reached CNPP. The Great Monolith will bring down an Emission upon them. The faithless are doomed!
+[StoryEvents.Event-End-2].Desc-NonOwner;We received reports that in the northern sector of CNPP, the mercenary nearly caught up with the stalker and even managed to disable his protection. Intelligence suggested that deactivating Strelok's protection would stop the approaching Emission, but the information seems incorrect. What went wrong?
+ScenarioName;Battle for Limansk. Clear Sky
+ScenarioDescription;A lore-friendly scenario where events take place closer to the end of the original game. You must fully capture the Limansk location before Scar stops Strelok at CNPP. You have approximately 30 turns. Diplomacy between factions may diverge from canon during gameplay.
+ScenarioLoseDescription;Defeat conditions: lose all controlled territories or fail to meet victory conditions within approximately 30 turns.
+[Groups.bandits.:main].Spy1-Name;Novice
+[Groups.bandits.:main].Spy2-Name;Experienced
+[Groups.bandits.:main].Spy3-Name;Veteran
+[Groups.bandits.:main].Spy4-Name;Master
+[Groups.bandits.:main].Name;Bandits
+[Groups.bandits.:main].Description;Bandits - the criminal element of the Zone. They control significant territories closer to the southern parts of the Zone. Several groups have made it to Limansk and are now attempting to seize key territories to earn additional money by charging tolls for passage through their controlled areas later.
+[Groups.bandits.:main].DiplomacyText-Question-War;Well, sucker, had your fun? Time to face the music! The boys are comin' for ya!
+[Groups.bandits.:main].DiplomacyText-Question-Neutral;Hey-hey! Bro, chill out, yeah? Time to stop shootin' at each other, capiche?
+[Groups.bandits.:main].DiplomacyText-Question-Alliance;Hey, Bro, how 'bout we team up, yeah? Y'know... shoot some guys together... and all that. Whaddya say? Deal?
+[Groups.bandits.:main].DiplomacyText-Question-BreakAlliance;Nah, man, you're a real sucker, a total loser. From now on, everyone's on their own!
+[Groups.bandits.:main].DiplomacyText-RequestMoney-Ask;Hey, listen up, pal, got any spare change, yeah? We could use about this much:
+[Groups.bandits.:main].DiplomacyText-Ans-0-Down;Who do you think you're messin' with, tough guy? You're dead meat, ya hear?!
+[Groups.bandits.:main].DiplomacyText-Ans-1-Down;Well, that's just... wow, man...
+[Groups.bandits.:main].DiplomacyText-Ans-1-No;We'll find some - and cut it into strips!
+[Groups.bandits.:main].DiplomacyText-Ans-1-Yes;Listen, we won't touch ya, word is bond, for real!
+[Groups.bandits.:main].DiplomacyText-Ans-2-No;Nah, nah, that's totally not it, you're bluffing!
+[Groups.bandits.:main].DiplomacyText-Ans-2-Yes;Hang tight, bro, everything's gonna be smooth real soon...
+[Groups.bandits.:main].DiplomacyText-RequestMoney-Ans-No;Did you hit your head or somethin'? Where would we get that kind of cash! We could use some ourselves...
+[Groups.bandits.:main].DiplomacyText-RequestMoney-Ans-Yes;Bro, here's the dough!
+[Groups.bandits.:main].DiplomacyText-Question-Neutral-No;Bro, that was really uncalled for! Shouldn't have done that...
+[Groups.bandits.:main].DiplomacyText-Question-Neutral-Yes;Hey, bro, that's what I'm talkin' about! Good job...
+[Groups.bandits.:main].DiplomacyText-Question-Alliance-No;Bro, that was really uncalled for! Shouldn't have done that...
+[Groups.bandits.:main].DiplomacyText-Question-Alliance-Yes;Oh, bro, excellent! Now we'll be shootin' suckers together!
+[Groups.bandits.:main].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.bandits.:main].Text-End-Step-Victory;You survived! Victory!
+[Groups.bandits.:main].Text-End-EventFlag-Victory;Victory by event flag!
+[Groups.bandits.:main].Text-End-Standart-Lose;The faction has been completely wiped out. Now other factions will divide Limansk among themselves. Defeat!
+[Groups.bandits.:main].Text-End-Step-Lose;Time's up. You failed to gain control over the Zone. Defeat!
+[Groups.bandits.:main].Text-End-EventFlag-Lose;You failed to complete the assigned objectives! Defeat!
+[Groups.bandits.Crime].Text-End-Standart-Victory;Victory! The faction has taken the city and is preparing to push toward CNPP! Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.bandits.Crime].Text-End-Standart-Lose;The last Bandit caught a bullet. There is no more place for the criminal world in Limansk... Defeat!
+[Groups.bandits.Crime].Text-End-Step-Lose;"Time's up. The boys say you're no ""boss"" at all... Defeat!"
+[Groups.bandits.Growth].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.bandits.Growth].Text-End-Standart-Lose;The last Bandit caught a bullet. There is no more place for the criminal world in Limansk... Defeat!
+[Groups.bandits.Growth].Text-End-Step-Lose;"Time's up. The boys say you're no ""boss"" at all... Defeat!"
+[Groups.bandits.Unknow].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.bandits.Unknow].Text-End-Standart-Lose;The last Bandit caught a bullet. There is no more place for the criminal world in Limansk... Defeat!
+[Groups.bandits.Unknow].Text-End-Step-Lose;"Time's up. The boys say you're no ""boss"" at all... Defeat!"
+[Groups.clearsky.:main].Spy1-Name;Guard
+[Groups.clearsky.:main].Spy2-Name;Patrolman
+[Groups.clearsky.:main].Spy3-Name;Assault Trooper
+[Groups.clearsky.:main].Spy4-Name;Elite
+[Groups.clearsky.:main].Name;Clear Sky
+[Groups.clearsky.:main].Description;Clear Sky - a little-known faction with questionable goals, organized by suspicious figures. According to some rumors, the leadership consists of former "Institute" personnel who later became the C-Consciousness, but almost no one knows this, so they are treated with relative loyalty. A problematic location and weak weaponry for experienced fighters will require the leader to employ thoughtful tactical management.
+[Groups.clearsky.:main].DiplomacyText-Question-War;You are hindering us. We will destroy you!
+[Groups.clearsky.:main].DiplomacyText-Question-Neutral;We propose a ceasefire. Do you agree?
+[Groups.clearsky.:main].DiplomacyText-Question-Alliance;We propose an alliance. Do you agree?
+[Groups.clearsky.:main].DiplomacyText-Question-BreakAlliance;An alliance with you is no longer in our plans.
+[Groups.clearsky.:main].DiplomacyText-RequestMoney-Ask;Greetings! We require financial assistance in the amount of:
+[Groups.clearsky.:main].DiplomacyText-Ans-0-Down;War it is, then!
+[Groups.clearsky.:main].DiplomacyText-Ans-1-Down;Very unfortunate...
+[Groups.clearsky.:main].DiplomacyText-Ans-1-No;There is no necessity for this.
+[Groups.clearsky.:main].DiplomacyText-Ans-1-Yes;We agree to a ceasefire.
+[Groups.clearsky.:main].DiplomacyText-Ans-2-No;We are certain this is not needed at the moment.
+[Groups.clearsky.:main].DiplomacyText-Ans-2-Yes;We agree to cooperate.
+[Groups.clearsky.:main].DiplomacyText-RequestMoney-Ans-No;We cannot assist you with that amount.
+[Groups.clearsky.:main].DiplomacyText-RequestMoney-Ans-Yes;Very well, the sum has been transferred.
+[Groups.clearsky.:main].DiplomacyText-Question-Neutral-No;Regrettable. War with you was not in our plans.
+[Groups.clearsky.:main].DiplomacyText-Question-Neutral-Yes;Excellent, agreed.
+[Groups.clearsky.:main].DiplomacyText-Question-Alliance-No;A pity. We share common goals.
+[Groups.clearsky.:main].DiplomacyText-Question-Alliance-Yes;Excellent. This war served neither of us.
+[Groups.clearsky.:main].Text-End-Standart-Victory;Victory! The faction has taken the city and is preparing to push toward CNPP! Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.clearsky.:main].Text-End-Step-Victory;You survived! Victory!
+[Groups.clearsky.:main].Text-End-EventFlag-Victory;Victory by event flag!
+[Groups.clearsky.:main].Text-End-Standart-Lose;Your faction has been completely destroyed in Limansk and failed to achieve its objectives. Due to its secretive nature, it was never widely known among stalkers, so it will soon be forgotten entirely...
+[Groups.clearsky.:main].Text-End-Step-Lose;Time's up. You failed to gain control over the Zone. Defeat!
+[Groups.clearsky.:main].Text-End-EventFlag-Lose;You failed to complete the assigned objectives! Defeat!
+[Groups.clearsky.Growth].Text-End-Standart-Victory;Victory! The faction has taken the city and is preparing to push toward CNPP! Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.clearsky.Growth].Text-End-Standart-Lose;The Zone is a dangerous place. After the destruction of the Limansk group, command decided it would no longer take such risks. Defeat!
+[Groups.clearsky.Stability].Text-End-Standart-Victory;Victory! The faction has taken the city and is preparing to push toward CNPP! Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.clearsky.Stability].Text-End-Standart-Lose;Your faction has been completely destroyed in Limansk. Clear Sky failed to achieve its objectives. All main forces were lost in battle, and what remained in the Swamps lost morale and decided to leave the faction. Due to Clear Sky's secretive nature, it was never widely known among stalkers, so it will soon be forgotten entirely...
+[Groups.clearsky.Unknow].Text-End-Standart-Victory;Victory! The faction has taken the city and is preparing to push toward CNPP! Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.clearsky.Unknow].Text-End-Standart-Lose;The Zone is a dangerous place. After the destruction of the Clear Sky group in Limansk, command decided it would no longer take such risks. Defeat!
+[Groups.Duty.:main].Spy1-Name;Novice
+[Groups.Duty.:main].Spy2-Name;Experienced
+[Groups.Duty.:main].Spy3-Name;Veteran
+[Groups.Duty.:main].Spy4-Name;Master
+[Groups.Duty.:main].Name;Duty
+[Groups.Duty.:main].Description;Duty - the faction's goal is to protect the world from the contamination of the Zone. A fairly powerful militarized faction. A favorable position, good weaponry, and a predisposition to fighting mutants guarantee success in capable hands.
+[Groups.Duty.:main].DiplomacyText-Question-War;You and your gang are a threat to the world. Time to deal with you!
+[Groups.Duty.:main].DiplomacyText-Question-Neutral;We want to establish a ceasefire with you. Do you agree?
+[Groups.Duty.:main].DiplomacyText-Question-Alliance;We propose an alliance. Together we could carry out a couple of operations against our enemies. Do you agree?
+[Groups.Duty.:main].DiplomacyText-Question-BreakAlliance;We will no longer cooperate!
+[Groups.Duty.:main].DiplomacyText-RequestMoney-Ask;Got any spare funds? Times are tough for us. We could use about this much:
+[Groups.Duty.:main].DiplomacyText-Ans-0-Down;Understood. We'll cleanse the Zone of you too!
+[Groups.Duty.:main].DiplomacyText-Ans-1-Down;Pity... but if you insist, so be it.
+[Groups.Duty.:main].DiplomacyText-Ans-1-No;No, we definitely won't go for that right now.
+[Groups.Duty.:main].DiplomacyText-Ans-1-Yes;We hope for further cooperation.
+[Groups.Duty.:main].DiplomacyText-Ans-2-No;No, we definitely won't go for that right now.
+[Groups.Duty.:main].DiplomacyText-Ans-2-Yes;Ri-i-ight, excellent, we have a deal!
+[Groups.Duty.:main].DiplomacyText-RequestMoney-Ans-No;No, we cannot help at the moment.
+[Groups.Duty.:main].DiplomacyText-RequestMoney-Ans-Yes;Very well, we will help you.
+[Groups.Duty.:main].DiplomacyText-Question-Neutral-No;Oh, what a shame you refused!
+[Groups.Duty.:main].DiplomacyText-Question-Neutral-Yes;Good, that's encouraging!
+[Groups.Duty.:main].DiplomacyText-Question-Alliance-No;Oh, what a shame you refused!
+[Groups.Duty.:main].DiplomacyText-Question-Alliance-Yes;Good, that's encouraging!
+[Groups.Duty.:main].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.Duty.:main].Text-End-Step-Victory;You survived! Victory!
+[Groups.Duty.:main].Text-End-EventFlag-Victory;Victory by event flag!
+[Groups.Duty.:main].Text-End-Standart-Lose;The faction has been completely wiped out. Now other factions will divide Limansk among themselves. Defeat!
+[Groups.Duty.:main].Text-End-Step-Lose;Time's up. You failed to gain control over the Zone. Defeat!
+[Groups.Duty.:main].Text-End-EventFlag-Lose;You failed to complete the assigned objectives! Defeat!
+[Groups.Duty.AntiZone].Text-End-Standart-Victory;Victory! The faction has taken the city and is preparing to push toward CNPP! Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.Duty.AntiZone].Text-End-Standart-Lose;Your faction has been completely destroyed in Limansk. Duty decided to change priorities and no longer venture so far... Defeat!
+[Groups.Duty.Growth].Text-End-Standart-Lose;Your faction has been completely destroyed in Limansk. The last Duty members scattered in all directions, lacking the will to fight for Duty's ideals. Defeat!
+[Groups.Duty.Unknow].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.Duty.Unknow].Text-End-Standart-Lose;Your faction has been completely destroyed in Limansk. The last Duty members scattered in all directions, lacking the will to fight for Duty's ideals. Defeat!
+[Groups.freedom.:main].Spy1-Name;Novice
+[Groups.freedom.:main].Spy2-Name;Experienced
+[Groups.freedom.:main].Spy3-Name;Veteran
+[Groups.freedom.:main].Spy4-Name;Master
+[Groups.freedom.:main].Name;Freedom
+[Groups.freedom.:main].Description;Freedom - an anarchist faction that is hostile to government troops and research groups. A favorable position, experienced fighters who are also well-armed... Almost the perfect recipe for a successful faction in capable hands.
+[Groups.freedom.:main].DiplomacyText-Question-War;Alright, man, get ready! We're comin' for you and your crew.
+[Groups.freedom.:main].DiplomacyText-Question-Neutral;Dude, maybe we can call it a day, huh?
+[Groups.freedom.:main].DiplomacyText-Question-Alliance;Hey man, how about an alliance? Whaddya think?
+[Groups.freedom.:main].DiplomacyText-Question-BreakAlliance;Sorry, dude, but our paths diverge.
+[Groups.freedom.:main].DiplomacyText-RequestMoney-Ask;Hey, man! Freedom's runnin' low on free cash... Could you spare us an amount like this:
+[Groups.freedom.:main].DiplomacyText-Ans-0-Down;Looks like coffins are gonna get expensive!
+[Groups.freedom.:main].DiplomacyText-Ans-1-Down;O-o-oh... Got it, man, whatever.
+[Groups.freedom.:main].DiplomacyText-Ans-1-No;Nah, we're not down with that.
+[Groups.freedom.:main].DiplomacyText-Ans-1-Yes;Okay, we're cool!
+[Groups.freedom.:main].DiplomacyText-Ans-2-No;Nah, dude, we're passin' on this one.
+[Groups.freedom.:main].DiplomacyText-Ans-2-Yes;O-o-oh, sweet, it's a deal!
+[Groups.freedom.:main].DiplomacyText-RequestMoney-Ans-No;Man, nah, what? We ain't ready to drop that kinda cash right now...
+[Groups.freedom.:main].DiplomacyText-RequestMoney-Ans-Yes;Dude, no problem! Already sent!
+[Groups.freedom.:main].DiplomacyText-Question-Neutral-No;Man, that's bad news...
+[Groups.freedom.:main].DiplomacyText-Question-Neutral-Yes;Dude, that's great news!
+[Groups.freedom.:main].DiplomacyText-Question-Alliance-No;O-o-oh... Got it, man, whatever.
+[Groups.freedom.:main].DiplomacyText-Question-Alliance-Yes;Man, that's awesome!
+[Groups.freedom.:main].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.freedom.:main].Text-End-Step-Victory;You survived! Victory!
+[Groups.freedom.:main].Text-End-EventFlag-Victory;Victory by event flag!
+[Groups.freedom.:main].Text-End-Standart-Lose;The faction has been completely wiped out. Now other factions will divide Limansk among themselves. Defeat!
+[Groups.freedom.:main].Text-End-Step-Lose;Time's up. You failed to gain control over the Zone. Defeat!
+[Groups.freedom.:main].Text-End-EventFlag-Lose;You failed to complete the assigned objectives! Defeat!
+[Groups.freedom.Anarchy].Text-End-Standart-Victory;Victory! The faction has taken the city and is preparing to push toward CNPP! Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.freedom.Anarchy].Text-End-Standart-Lose;Your faction has been completely destroyed in Limansk. The faction decided to no longer engage in such ventures, relocate its base to Army Warehouses, and dig in for a stubborn defense. Defeat!
+[Groups.freedom.Growth].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.freedom.Growth].Text-End-Standart-Lose;Your faction has been completely destroyed in Limansk. The last Freedom members scattered in all directions, lacking the will to fight for Freedom's ideals. Defeat!
+[Groups.freedom.Unknow].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.freedom.Unknow].Text-End-Standart-Lose;Your faction has been completely destroyed in Limansk. The last Freedom members scattered in all directions, lacking the will to fight for Freedom's ideals. Defeat!
+[Groups.Mercenaries.:main].Spy1-Name;Novice
+[Groups.Mercenaries.:main].Spy2-Name;Experienced
+[Groups.Mercenaries.:main].Spy3-Name;Veteran
+[Groups.Mercenaries.:main].Spy4-Name;Master
+[Groups.Mercenaries.:main].Name;Mercenaries
+[Groups.Mercenaries.:main].Description;Mercenaries - a fairly secretive militarized faction specializing in fulfilling various contracts received both from within the Zone and from outside. They have a somewhat inconvenient location for controlling their territories, so the leader's goal will likely be to relocate the faction's base to a more thoughtful and convenient position.
+[Groups.Mercenaries.:main].DiplomacyText-Question-War;A contract has been issued for you. Nothing personal. Just business.
+[Groups.Mercenaries.:main].DiplomacyText-Question-Neutral;This war benefits neither of us. How about peace?
+[Groups.Mercenaries.:main].DiplomacyText-Question-Alliance;Closer cooperation with you would be advantageous for us. Do you agree?
+[Groups.Mercenaries.:main].DiplomacyText-Question-BreakAlliance;We will no longer cooperate with you.
+[Groups.Mercenaries.:main].DiplomacyText-RequestMoney-Ask;We've had a couple of hiccups with certain contracts. We could use some financial assistance in the amount of:
+[Groups.Mercenaries.:main].DiplomacyText-Ans-0-Down;We won't be doing any more business with you!
+[Groups.Mercenaries.:main].DiplomacyText-Ans-1-Down;Pity. You're missing out on your profit.
+[Groups.Mercenaries.:main].DiplomacyText-Ans-1-No;That's not advantageous for us right now.
+[Groups.Mercenaries.:main].DiplomacyText-Ans-1-Yes;Very well. We hope for a mutually beneficial partnership.
+[Groups.Mercenaries.:main].DiplomacyText-Ans-2-No;That's not advantageous for us at the moment.
+[Groups.Mercenaries.:main].DiplomacyText-Ans-2-Yes;Okay, that works for us.
+[Groups.Mercenaries.:main].DiplomacyText-RequestMoney-Ans-No;We don't have many contract bonuses right now, so we can't help.
+[Groups.Mercenaries.:main].DiplomacyText-RequestMoney-Ans-Yes;Alright, transferred.
+[Groups.Mercenaries.:main].DiplomacyText-Question-Neutral-No;Refused? Fine then.
+[Groups.Mercenaries.:main].DiplomacyText-Question-Neutral-Yes;Excellent, glad you agreed!
+[Groups.Mercenaries.:main].DiplomacyText-Question-Alliance-No;Refused? Fine then.
+[Groups.Mercenaries.:main].DiplomacyText-Question-Alliance-Yes;Excellent, glad you agreed!
+[Groups.Mercenaries.:main].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.Mercenaries.:main].Text-End-Step-Victory;You survived! Victory!
+[Groups.Mercenaries.:main].Text-End-EventFlag-Victory;Victory by event flag!
+[Groups.Mercenaries.:main].Text-End-Standart-Lose;The faction has been completely wiped out. Now other factions will divide Limansk among themselves. Defeat!
+[Groups.Mercenaries.:main].Text-End-Step-Lose;Time's up. You failed to gain control over the Zone. Defeat!
+[Groups.Mercenaries.:main].Text-End-EventFlag-Lose;You failed to complete the assigned objectives! Defeat!
+[Groups.Mercenaries.Mercenary].Text-End-Standart-Victory;Victory! The faction has taken the city and is preparing to push toward CNPP! Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.Mercenaries.Mercenary].Text-End-Standart-Lose;"Your faction has been completely destroyed in Limansk. The contractors are furious. The faction is forced to pay penalties... Looks like the faction won't be seeing any ""serious"" contracts anymore. Defeat!"
+[Groups.monolith.:main].Spy1-Name;Initiate
+[Groups.monolith.:main].Spy2-Name;Fanatic
+[Groups.monolith.:main].Spy3-Name;Veteran
+[Groups.monolith.:main].Spy4-Name;Elite
+[Groups.monolith.:main].Name;Monolith
+[Groups.monolith.:main].Description;Monolith - a faction serving as the shield of the C-Consciousness. Main goal: protect the Zone from any external interference. Extremely hostile to all other factions. Despite superior weaponry, they struggle to control their territories due to their northern location.
+[Groups.monolith.:main].DiplomacyText-Question-War;Locate and eradicate!
+[Groups.monolith.:main].DiplomacyText-Question-Neutral;The Monolith commands us to make peace with you. Do you comply?
+[Groups.monolith.:main].DiplomacyText-Question-Alliance;The Monolith decrees we shall become your allies.
+[Groups.monolith.:main].DiplomacyText-Question-BreakAlliance;The Monolith is displeased with our alliance!
+[Groups.monolith.:main].DiplomacyText-RequestMoney-Ask;By the will of the Great Monolith, we submit a request for a funds transfer to our brethren in the amount of:
+[Groups.monolith.:main].DiplomacyText-Ans-0-Down;Locate and eradicate! *Interlocutor has blacklisted you*
+[Groups.monolith.:main].DiplomacyText-Ans-1-Down;The Monolith would never approve of this! *Interlocutor removed you from friends*
+[Groups.monolith.:main].DiplomacyText-Ans-1-No;You shall know the wrath of the Monolith! *Interlocutor exited the chat*
+[Groups.monolith.:main].DiplomacyText-Ans-1-Yes;And the day shall come when the Monolith shines once more in all its glory! *Interlocutor exited the chat*
+[Groups.monolith.:main].DiplomacyText-Ans-2-No;The Monolith will surely not grant His consent. *Interlocutor exited the chat*
+[Groups.monolith.:main].DiplomacyText-Ans-2-Yes;Trust no one but the Monolith and His brethren, no one. *Interlocutor added you to friends*
+[Groups.monolith.:main].DiplomacyText-RequestMoney-Ans-No;The Monolith commands no mercy for the faithless! *Interlocutor removed you from chat*
+[Groups.monolith.:main].DiplomacyText-RequestMoney-Ans-Yes;The Monolith commands pity for the blind and has ordered a funds transfer to you.
+[Groups.monolith.:main].DiplomacyText-Question-Neutral-No;Then we shall find you and destroy you!
+[Groups.monolith.:main].DiplomacyText-Question-Neutral-Yes;It could be no other way. All by the will of the Great Monolith!
+[Groups.monolith.:main].DiplomacyText-Question-Alliance-No;You defy the will of the Monolith to your detriment.
+[Groups.monolith.:main].DiplomacyText-Question-Alliance-Yes;May our brethren rejoice and our enemies tremble!
+[Groups.monolith.:main].Text-End-Step-Victory;You survived! Victory!
+[Groups.monolith.:main].Text-End-EventFlag-Victory;Victory by event flag!
+[Groups.monolith.:main].Text-End-Standart-Lose;The faction has been completely wiped out. Now other factions will divide Limansk among themselves. Defeat!
+[Groups.monolith.:main].Text-End-Step-Lose;Time's up. You failed to gain control over the Zone. Defeat!
+[Groups.monolith.:main].Text-End-EventFlag-Lose;You failed to complete the assigned objectives! Defeat!
+[Groups.monolith.Anarchy].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.monolith.AntiZone].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.monolith.Control].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.monolith.Crime].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.monolith.Exploring].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.monolith.Growth].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.monolith.Growth].Text-End-Standart-Lose;"C-Consciousness is in panic. Its loyal hound - the Monolith faction - has been completely destroyed in Limansk! A new plan to protect key ""Institute"" personnel is already being drafted."
+[Groups.monolith.Mercenary].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.monolith.Sectarianism].Text-End-Standart-Victory;Victory! The faction has taken the city and stopped the attempt to break through to CNPP! Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.monolith.Sectarianism].Text-End-Standart-Lose;"C-Consciousness is in panic. Its loyal hound - the Monolith faction - has been completely destroyed in Limansk! Preparing the ""last stand"" at the Hospital..."
+[Groups.monolith.Stability].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.monolith.Stalkers].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.monolith.Unknow].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.monolith.Unknow].Text-End-Standart-Lose;"C-Consciousness is in panic. Its loyal hound - the Monolith faction - has been completely destroyed in Limansk! A new plan to protect key ""Institute"" personnel is already being drafted."
+[Groups.monolith.Zombie].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
+[Groups.soldiers.:main].Spy1-Name;Sergeant
+[Groups.soldiers.:main].Spy2-Name;Lieutenant
+[Groups.soldiers.:main].Spy3-Name;Captain
+[Groups.soldiers.:main].Spy4-Name;Major
+[Groups.soldiers.:main].Name;Military
+[Groups.soldiers.:main].Description;Military - government forces operating within the Zone. Consider all life inside the perimeter enemies except Scientists. Excellent gear for engaging stalkers, but poorly adapted to anomalous Zone threats.
+[Groups.soldiers.:main].DiplomacyText-Question-War;Your presence in the Zone is now deemed illegal. If caught, execution on sight!
+[Groups.soldiers.:main].DiplomacyText-Question-Neutral;Command believes we should reduce operational activity. How about a ceasefire?
+[Groups.soldiers.:main].DiplomacyText-Question-Alliance;Command believes we need an ally in the Zone for joint operations. Do you agree?
+[Groups.soldiers.:main].DiplomacyText-Question-BreakAlliance;We will no longer cooperate!
+[Groups.soldiers.:main].DiplomacyText-RequestMoney-Ask;Government forces require financial assistance for a new general's mansion... Ahem. For... For special operations in the amount of. Will you help?
+[Groups.soldiers.:main].DiplomacyText-Ans-0-Down;We'll grind you to dust!
+[Groups.soldiers.:main].DiplomacyText-Ans-1-Down;How exactly are we to interpret that?
+[Groups.soldiers.:main].DiplomacyText-Ans-1-No;No, we cannot overlook your presence in the Zone.
+[Groups.soldiers.:main].DiplomacyText-Ans-1-Yes;Alright, we will overlook your presence in the Zone...
+[Groups.soldiers.:main].DiplomacyText-Ans-2-No;No, we cannot overlook your presence in the Zone.
+[Groups.soldiers.:main].DiplomacyText-Ans-2-Yes;The army needs an ally in the Zone. Very well, we agree.
+[Groups.soldiers.:main].DiplomacyText-RequestMoney-Ans-No;No, we do not provide financial assistance!
+[Groups.soldiers.:main].DiplomacyText-RequestMoney-Ans-Yes;Yes, command has agreed to assist you financially.
+[Groups.soldiers.:main].DiplomacyText-Question-Neutral-No;Refused? Well... That was a mistake on your part!
+[Groups.soldiers.:main].DiplomacyText-Question-Neutral-Yes;Excellent, glad you agreed!
+[Groups.soldiers.:main].DiplomacyText-Question-Alliance-No;Refused? Well... That was a mistake on your part!
+[Groups.soldiers.:main].DiplomacyText-Question-Alliance-Yes;Excellent, glad you agreed!
+[Groups.soldiers.:main].Text-End-Standart-Victory;Victory! The government has taken control of Limansk, but quickly lost contact with units in the city. The commander, with support from his fighters, decided to desert and form a new faction, which most former fighters immediately joined. Dissenters were sent to feed the fish. Plans were drawn up, key routes were targeted for enrichment, but soon a powerful Emission struck and Limansk became a "closed" city once again. The deserter fighters were never seen again...
+[Groups.soldiers.:main].Text-End-Step-Victory;You survived! Victory!
+[Groups.soldiers.:main].Text-End-EventFlag-Victory;Victory by event flag!
+[Groups.soldiers.:main].Text-End-Standart-Lose;The faction has been completely wiped out. Now other factions will divide Limansk among themselves. Defeat!
+[Groups.soldiers.:main].Text-End-Step-Lose;Time's up. You failed to gain control over the Zone. You are demoted. Defeat!
+[Groups.soldiers.:main].Text-End-EventFlag-Lose;You failed to complete the assigned objectives! Defeat!
+[Groups.soldiers.Anarchy].Text-End-Standart-Victory;Victory! The government has taken control of Limansk, but quickly lost contact with units in the city. The commander, with support from his fighters, decided to desert and form a new faction, which most former fighters immediately joined. Dissenters were sent to feed the fish. Plans were drawn up, key routes were targeted for enrichment, but soon a powerful Emission struck and Limansk became a "closed" city once again. The deserter fighters were never seen again...
+[Groups.soldiers.AntiZone].Text-End-Standart-Victory;Victory! The government has taken control of Limansk, but quickly lost contact with units in the city. The commander, with support from his fighters, decided to desert and form a new faction, which most former fighters immediately joined. Dissenters were sent to feed the fish. Plans were drawn up, key routes were targeted for enrichment, but soon a powerful Emission struck and Limansk became a "closed" city once again. The deserter fighters were never seen again...
+[Groups.soldiers.Control].Text-End-Standart-Victory;Victory! The government has taken control of Limansk, but soon a powerful Emission struck and Limansk became a "closed" city once again. The fighters were never seen again...
+[Groups.soldiers.Control].Text-End-Standart-Lose;No Military remain in Limansk... It is now unknown how this will end without government forces. You are demoted for failure! Defeat!
+[Groups.soldiers.Crime].Text-End-Standart-Victory;Victory! The government has taken control of Limansk, but quickly lost contact with units in the city. The commander, with support from his fighters, decided to desert and form a new faction, which most former fighters immediately joined. Dissenters were sent to feed the fish. Plans were drawn up, key routes were targeted for enrichment, but soon a powerful Emission struck and Limansk became a "closed" city once again. The deserter fighters were never seen again...
+[Groups.soldiers.Exploring].Text-End-Standart-Victory;Victory! The government has taken control of Limansk, but quickly lost contact with units in the city. The commander, with support from his fighters, decided to desert and form a new faction, which most former fighters immediately joined. Dissenters were sent to feed the fish. Plans were drawn up, key routes were targeted for enrichment, but soon a powerful Emission struck and Limansk became a "closed" city once again. The deserter fighters were never seen again...
+[Groups.soldiers.Growth].Text-End-Standart-Victory;Victory! The government has taken control of Limansk, but quickly lost contact with units in the city. The commander, with support from his fighters, decided to desert and form a new faction, which most former fighters immediately joined. Dissenters were sent to feed the fish. Plans were drawn up, key routes were targeted for enrichment, but soon a powerful Emission struck and Limansk became a "closed" city once again. The deserter fighters were never seen again...
+[Groups.soldiers.Growth].Text-End-Standart-Lose;No Military remain in Limansk... It is now unknown how this will end without government forces. You are demoted for failure! Defeat!
+[Groups.soldiers.Mercenary].Text-End-Standart-Victory;Victory! The government has taken control of Limansk, but quickly lost contact with units in the city. The commander, with support from his fighters, decided to desert and form a new faction, which most former fighters immediately joined. Dissenters were sent to feed the fish. Plans were drawn up, key routes were targeted for enrichment, but soon a powerful Emission struck and Limansk became a "closed" city once again. The deserter fighters were never seen again...
+[Groups.soldiers.Sectarianism].Text-End-Standart-Victory;Victory! The government has taken control of Limansk, but quickly lost contact with units in the city. The commander, with support from his fighters, decided to desert and form a new faction, which most former fighters immediately joined. Dissenters were sent to feed the fish. Plans were drawn up, key routes were targeted for enrichment, but soon a powerful Emission struck and Limansk became a "closed" city once again. The deserter fighters were never seen again...
+[Groups.soldiers.Stability].Text-End-Standart-Victory;Victory! The government has taken control of Limansk, but quickly lost contact with units in the city. The commander, with support from his fighters, decided to desert and form a new faction, which most former fighters immediately joined. Dissenters were sent to feed the fish. Plans were drawn up, key routes were targeted for enrichment, but soon a powerful Emission struck and Limansk became a "closed" city once again. The deserter fighters were never seen again...
+[Groups.soldiers.Stalkers].Text-End-Standart-Victory;Victory! The government has taken control of Limansk, but quickly lost contact with units in the city. The commander, with support from his fighters, decided to desert and form a new faction, which most former fighters immediately joined. Dissenters were sent to feed the fish. Plans were drawn up, key routes were targeted for enrichment, but soon a powerful Emission struck and Limansk became a "closed" city once again. The deserter fighters were never seen again...
+[Groups.soldiers.Unknow].Text-End-Standart-Victory;Victory! The government has taken control of Limansk, but quickly lost contact with units in the city. The commander, with support from his fighters, decided to desert and form a new faction, which most former fighters immediately joined. Dissenters were sent to feed the fish. Plans were drawn up, key routes were targeted for enrichment, but soon a powerful Emission struck and Limansk became a "closed" city once again. The deserter fighters were never seen again...
+[Groups.soldiers.Unknow].Text-End-Standart-Lose;No Military remain in Limansk... It is now unknown how this will end without government forces. You are demoted for failure! Defeat!
+[Groups.soldiers.Zombie].Text-End-Standart-Victory;Victory! The government has taken control of Limansk, but quickly lost contact with units in the city. The commander, with support from his fighters, decided to desert and form a new faction, which most former fighters immediately joined. Dissenters were sent to feed the fish. Plans were drawn up, key routes were targeted for enrichment, but soon a powerful Emission struck and Limansk became a "closed" city once again. The deserter fighters were never seen again...
