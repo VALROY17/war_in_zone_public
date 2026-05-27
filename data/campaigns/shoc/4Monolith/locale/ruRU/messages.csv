@@ -86,8 +86,8 @@
 [StoryEvents.Event-Radar-SoldiersIsDie-1].Desc-Owner;Отряд Военных, который внезапно оказался на территории %0:s локации %1:s был уничтожен сталкером Меченым!
 [StoryEvents.Event-Radar-SoldiersIsDie-1].Desc-NonOwner;Поступила информация, что на территории %0:s локации %1:s был бой с отрядом Военных. Среди того отряда выживших нет.
 [StoryEvents.Event-Radar-ChangeZoneOwner-1].Name;Технический ивент
-[StoryEvents.Event-Radar-ChangeZoneOwner-1].Desc-Owner;Если вы видите эо сообщение, то это баг ивента Event-Radar-ChangeZoneOwner-1!
-[StoryEvents.Event-Radar-ChangeZoneOwner-1].Desc-NonOwner;Если вы видите эо сообщение, то это баг ивента Event-Radar-ChangeZoneOwner-1!
+[StoryEvents.Event-Radar-ChangeZoneOwner-1].Desc-Owner;Если вы видите это сообщение, то это баг ивента Event-Radar-ChangeZoneOwner-1!
+[StoryEvents.Event-Radar-ChangeZoneOwner-1].Desc-NonOwner;Если вы видите это сообщение, то это баг ивента Event-Radar-ChangeZoneOwner-1!
 [StoryEvents.Event-Radar-Invasion-0].Name;Отряд Одиночек
 [StoryEvents.Event-Radar-Invasion-0].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд группировки Одиночки!
 [StoryEvents.Event-Radar-Invasion-0].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует отряд группировки Одиночки!
@@ -220,16 +220,16 @@
 [StoryEvents.Event-Pripyat-SetFlag1-4].Name;Технический ивент
 [StoryEvents.Event-Pripyat-SetFlag1-4].Desc-Owner;Если вы это видите, то это баг ивента Event-Pripyat-SetFlag1-3
 [StoryEvents.Event-Pripyat-SetFlag1-4].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Pripyat-SetFlag1-3
-[StoryEvents.Event-OperationMonolith-HelicopterAttack-1].Name;Атака веролётом
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-1].Name;Атака вертолётом
 [StoryEvents.Event-OperationMonolith-HelicopterAttack-1].Desc-Owner;Территорию %0:s локации %1:s обстрелял вертолёт Военных!
 [StoryEvents.Event-OperationMonolith-HelicopterAttack-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-HelicopterAttack-1
 [StoryEvents.Event-OperationMonolith-Invasion-1].Name;Операция Монолит. Квартет.
 [StoryEvents.Event-OperationMonolith-Invasion-1].Desc-Owner;Территорию %0:s локации %1:s штурмуют Военные!
 [StoryEvents.Event-OperationMonolith-Invasion-1].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмуют Военные!
-[StoryEvents.Event-OperationMonolith-HelicopterAttack-2].Name;Атака веролётом
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-2].Name;Атака вертолётом
 [StoryEvents.Event-OperationMonolith-HelicopterAttack-2].Desc-Owner;Территорию %0:s локации %1:s обстрелял вертолёт Военных!
 [StoryEvents.Event-OperationMonolith-HelicopterAttack-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-HelicopterAttack-2
-[StoryEvents.Event-OperationMonolith-HelicopterAttack-3].Name;Атака веролётом
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-3].Name;Атака вертолётом
 [StoryEvents.Event-OperationMonolith-HelicopterAttack-3].Desc-Owner;Территорию %0:s локации %1:s обстрелял вертолёт Военных!
 [StoryEvents.Event-OperationMonolith-HelicopterAttack-3].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-HelicopterAttack-3
 [StoryEvents.Event-OperationMonolith-Bridge-1].Name;Битва у моста
@@ -241,7 +241,7 @@
 [StoryEvents.Event-CHAES-2].Name;Меченый напал на гарнизон территории
 [StoryEvents.Event-CHAES-2].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
 [StoryEvents.Event-CHAES-2].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
-[StoryEvents.Event-OperationMonolith-HelicopterAttack-4].Name;Атака веролётом
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-4].Name;Атака вертолётом
 [StoryEvents.Event-OperationMonolith-HelicopterAttack-4].Desc-Owner;Территорию %0:s локации %1:s обстрелял вертолёт Военных!
 [StoryEvents.Event-OperationMonolith-HelicopterAttack-4].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-HelicopterAttack-4
 [StoryEvents.Event-OperationMonolith-Invasion-2].Name;Отряд Коршун
@@ -265,7 +265,7 @@
 [StoryEvents.Event-CHAES-4].Name;Меченый напал на гарнизон территории
 [StoryEvents.Event-CHAES-4].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
 [StoryEvents.Event-CHAES-4].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
-[StoryEvents.Event-OperationMonolith-HelicopterAttack-5].Name;Атака веролётом
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-5].Name;Атака вертолётом
 [StoryEvents.Event-OperationMonolith-HelicopterAttack-5].Desc-Owner;Территорию %0:s локации %1:s обстрелял вертолёт Военных!
 [StoryEvents.Event-OperationMonolith-HelicopterAttack-5].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-HelicopterAttack-5
 [StoryEvents.Event-OperationMonolith-Invasion-5].Name;Операция Монолит
@@ -274,7 +274,7 @@
 [StoryEvents.Event-OperationMonolith-HelicopterShotdown-2].Name;Сбит вертолёт
 [StoryEvents.Event-OperationMonolith-HelicopterShotdown-2].Desc-Owner;Над локацией %1:s был сбит вертолёт Военных!
 [StoryEvents.Event-OperationMonolith-HelicopterShotdown-2].Desc-NonOwner;Над локацией %1:s был сбит вертолёт Военных!
-[StoryEvents.Event-OperationMonolith-HelicopterAttack-6].Name;Атака веролётом
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-6].Name;Атака вертолётом
 [StoryEvents.Event-OperationMonolith-HelicopterAttack-6].Desc-Owner;Территорию %0:s локации %1:s обстрелял вертолёт Военных!
 [StoryEvents.Event-OperationMonolith-HelicopterAttack-6].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-HelicopterAttack-6
 [StoryEvents.Event-OperationMonolith-Reinforcement-2].Name;Отряд Сокол
@@ -283,7 +283,7 @@
 [StoryEvents.Event-OperationMonolith-Invasion-6].Name;Отряд Сокол
 [StoryEvents.Event-OperationMonolith-Invasion-6].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд Военных!
 [StoryEvents.Event-OperationMonolith-Invasion-6].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует отряд Военных!
-[StoryEvents.Event-OperationMonolith-HelicopterAttack-7].Name;Атака веролётом
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-7].Name;Атака вертолётом
 [StoryEvents.Event-OperationMonolith-HelicopterAttack-7].Desc-Owner;Территорию %0:s локации %1:s обстрелял вертолёт Военных!
 [StoryEvents.Event-OperationMonolith-HelicopterAttack-7].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-HelicopterAttack-7
 [StoryEvents.Event-OperationMonolith-Reinforcement-3].Name;Отряд Канюк
@@ -298,7 +298,7 @@
 [StoryEvents.Event-CHAES-6].Name;Меченый напал на гарнизон территории
 [StoryEvents.Event-CHAES-6].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
 [StoryEvents.Event-CHAES-6].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
-[StoryEvents.Event-OperationMonolith-HelicopterAttack-8].Name;Атака веролётом
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-8].Name;Атака вертолётом
 [StoryEvents.Event-OperationMonolith-HelicopterAttack-8].Desc-Owner;Территорию %0:s локации %1:s обстрелял вертолёт Военных!
 [StoryEvents.Event-OperationMonolith-HelicopterAttack-8].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-HelicopterAttack-8
 [StoryEvents.Event-OperationMonolith-Reinforcement-4].Name;Отряд Пустельга
@@ -310,7 +310,7 @@
 [StoryEvents.Event-OperationMonolith-BurstAlarm-1].Name;Приборы зашкаливают
 [StoryEvents.Event-OperationMonolith-BurstAlarm-1].Desc-Owner;Внимание! Скоро состоится Выброс!
 [StoryEvents.Event-OperationMonolith-BurstAlarm-1].Desc-NonOwner;Поступила информация, что скоро состоится Выброс! Измерительные приборы зашкаливают!
-[StoryEvents.Event-OperationMonolith-HelicopterAttack-9].Name;Атака веролётом
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-9].Name;Атака вертолётом
 [StoryEvents.Event-OperationMonolith-HelicopterAttack-9].Desc-Owner;Территорию %0:s локации %1:s обстрелял вертолёт Военных!
 [StoryEvents.Event-OperationMonolith-HelicopterAttack-9].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-HelicopterAttack-9
 [StoryEvents.Event-OperationMonolith-Reinforcement-5].Name;Отряд Лунь
@@ -325,7 +325,7 @@
 [StoryEvents.Event-CHAES-8].Name;Меченый напал на гарнизон территории
 [StoryEvents.Event-CHAES-8].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
 [StoryEvents.Event-CHAES-8].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
-[StoryEvents.Event-OperationMonolith-HelicopterAttack-10].Name;Атака веролётом
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-10].Name;Атака вертолётом
 [StoryEvents.Event-OperationMonolith-HelicopterAttack-10].Desc-Owner;Территорию %0:s локации %1:s обстрелял вертолёт Военных!
 [StoryEvents.Event-OperationMonolith-HelicopterAttack-10].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-HelicopterAttack-10
 [StoryEvents.Event-OperationMonolith-Reinforcement-6].Name;Отряд Сова
@@ -334,7 +334,7 @@
 [StoryEvents.Event-OperationMonolith-Invasion-10].Name;Отряд Сова
 [StoryEvents.Event-OperationMonolith-Invasion-10].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд Военных!
 [StoryEvents.Event-OperationMonolith-Invasion-10].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует отряд Военных!
-[StoryEvents.Event-OperationMonolith-HelicopterAttack-11].Name;Атака веролётом
+[StoryEvents.Event-OperationMonolith-HelicopterAttack-11].Name;Атака вертолётом
 [StoryEvents.Event-OperationMonolith-HelicopterAttack-11].Desc-Owner;Территорию %0:s локации %1:s обстрелял вертолёт Военных!
 [StoryEvents.Event-OperationMonolith-HelicopterAttack-11].Desc-NonOwner;Если вы это видите, то это баг ивента Event-OperationMonolith-HelicopterAttack-11
 [StoryEvents.Event-OperationMonolith-Reinforcement-7].Name;Отряд Гриф

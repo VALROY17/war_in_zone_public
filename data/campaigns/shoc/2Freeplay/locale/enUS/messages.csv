@@ -65,62 +65,62 @@
 [Advisors.Advisor-Scientists-Semenov].Name;Semenov
 [Advisors.Advisor-Scientists-Zob].Name;Zob
 [Advisors.Advisor-Zombie-Kontroler].Name;Controller
-[Achievements.Achiv-1].Name;
-[Achievements.Achiv-1].Desc;
-[Achievements.Achiv-1].Desc-Logo;
-[Achievements.Achiv-2].Name;
-[Achievements.Achiv-2].Desc;
-[Achievements.Achiv-2].Desc-Logo;
-[Achievements.Achiv-3].Name;
-[Achievements.Achiv-3].Desc;
-[Achievements.Achiv-3].Desc-Logo;
-[Achievements.Achiv-4].Name;
-[Achievements.Achiv-4].Desc;
-[Achievements.Achiv-4].Desc-Logo;
-[Achievements.Achiv-5].Name;
-[Achievements.Achiv-5].Desc;
-[Achievements.Achiv-5].Desc-Logo;
-[Achievements.Achiv-6].Name;
-[Achievements.Achiv-6].Desc;
-[Achievements.Achiv-6].Desc-Logo;
-[Traders.World].Name;
-[Traders.World].NeedText;
-[Traders.YourGroup].Name;
-[Traders.YourGroup].NeedText;
-[Traders.OtherGroup].Name;
-[Traders.OtherGroup].NeedText;
-[Traders.Trader1].Name;
-[Traders.Trader1].NeedText;
-[Traders.Trader2].Name;
-[Traders.Trader2].NeedText;
-[Traders.Trader3].Name;
-[Traders.Trader3].NeedText;
-[StoryEvents.Event-Boost-1].Name;
-[StoryEvents.Event-Boost-1].Desc-Owner;
-[StoryEvents.Event-Boost-1].Desc-NonOwner;
-[StoryEvents.Event-Boost-AddUnit-1].Name;
-[StoryEvents.Event-Boost-AddUnit-1].Desc-Owner;
-[StoryEvents.Event-Boost-AddUnit-1].Desc-NonOwner;
-[StoryEvents.Event-Boost-AddUnit-2].Name;
-[StoryEvents.Event-Boost-AddUnit-2].Desc-Owner;
-[StoryEvents.Event-Boost-AddUnit-2].Desc-NonOwner;
-[StoryEvents.Event-Boost-AddUnit-3].Name;
-[StoryEvents.Event-Boost-AddUnit-3].Desc-Owner;
-[StoryEvents.Event-Boost-AddUnit-3].Desc-NonOwner;
-[StoryEvents.Event-Boost-AddUnit-4].Name;
-[StoryEvents.Event-Boost-AddUnit-4].Desc-Owner;
-[StoryEvents.Event-Boost-AddUnit-4].Desc-NonOwner;
-[StoryEvents.Event-Boost-AddUnit-5].Name;
-[StoryEvents.Event-Boost-AddUnit-5].Desc-Owner;
-[StoryEvents.Event-Boost-AddUnit-5].Desc-NonOwner;
-[StoryEvents.Event-Boost-AddUnit-6].Name;
-[StoryEvents.Event-Boost-AddUnit-6].Desc-Owner;
-[StoryEvents.Event-Boost-AddUnit-6].Desc-NonOwner;
-[StoryEvents.Event-Boost-AddUnit-7].Name;
-[StoryEvents.Event-Boost-AddUnit-7].Desc-Owner;
-[StoryEvents.Event-Boost-AddUnit-7].Desc-NonOwner;
-[StoryEvents.Event-Boost-AddUnit-8].Name;
-[StoryEvents.Event-Boost-AddUnit-8].Desc-Owner;
-[StoryEvents.Event-Boost-AddUnit-8].Desc-NonOwner;
-ScenarioName;
-ScenarioDescription;
+[Achievements.Achiv-1].Name;Hold Me Back, Seven!
+[Achievements.Achiv-1].Desc;New achievement unlocked! Capture the entire Zone playing as the Scientists faction on Master difficulty.
+[Achievements.Achiv-1].Desc-Logo;Capture the entire Zone playing as the Scientists faction on Master difficulty.
+[Achievements.Achiv-2].Name;I Am the Law!
+[Achievements.Achiv-2].Desc;New achievement unlocked! Capture the entire Zone playing as the Military faction.
+[Achievements.Achiv-2].Desc-Logo;Capture the entire Zone playing as the Military faction.
+[Achievements.Achiv-3].Name;Locate and Eradicate!
+[Achievements.Achiv-3].Desc;New achievement unlocked! Capture the Cordon location playing as the Monolith faction.
+[Achievements.Achiv-3].Desc-Logo;Capture the Cordon location playing as the Monolith faction.
+[Achievements.Achiv-4].Name;Not Your Comrade!
+[Achievements.Achiv-4].Desc;New achievement unlocked! Capture the Duty Base (Rostok) and Military Base (Army Warehouses) territories and hold them for 1 turn playing as the Loners faction.
+[Achievements.Achiv-4].Desc-Logo;Capture the Duty Base (Rostok) and Military Base (Army Warehouses) territories and hold them for 1 turn playing as the Loners faction.
+[Achievements.Achiv-5].Name;Beyond the Test Tubes!
+[Achievements.Achiv-5].Desc;New achievement unlocked! Adopt the Legality ideology playing as the Scientists faction and survive for 1 turn.
+[Achievements.Achiv-5].Desc-Logo;Adopt the Legality ideology playing as the Scientists faction and survive for 1 turn.
+[Achievements.Achiv-6].Name;Money Over Ideals!
+[Achievements.Achiv-6].Desc;New achievement unlocked! Adopt the Mercenary ideology playing as the Duty faction on Master difficulty and survive for 1 turn.
+[Achievements.Achiv-6].Desc-Logo;Adopt the Mercenary ideology playing as the Duty faction on Master difficulty and survive for 1 turn.
+[Traders.World].Name;Outside World
+[Traders.World].NeedText;Contact with the Outside World cannot always be established. Chance: 50%. Cost per connection attempt:
+[Traders.YourGroup].Name;Your Faction Trader
+[Traders.YourGroup].NeedText;You can always trade with your faction trader. Cost:
+[Traders.OtherGroup].Name;Enemy Faction Trader
+[Traders.OtherGroup].NeedText;To trade with other factions, first select an enemy territory on the map.
+[Traders.Trader1].Name;Sidorovich
+[Traders.Trader1].NeedText;Trading with him is possible only if you control the Novice Village territory on the Cordon. Cost:
+[Traders.Trader2].Name;Barman
+[Traders.Trader2].NeedText;Barman will be available for trading only if you control the 100 Rads Bar territory. Cost:
+[Traders.Trader3].Name;Sakharov
+[Traders.Trader3].NeedText;Sakharov is available only if you control the Bunker territory on the Yantar location. Cost:
+[StoryEvents.Event-Boost-1].Name;Selected Game Mode
+[StoryEvents.Event-Boost-1].Desc-Owner;A mode with reinforcements for Monolith was selected, granting this faction additional fighters. Reinforcements arrive only within the current turn.
+[StoryEvents.Event-Boost-1].Desc-NonOwner;A mode with reinforcements for Monolith was selected, granting this faction additional fighters. Reinforcements arrive only within the current turn.
+[StoryEvents.Event-Boost-AddUnit-1].Name;Reinforcements Arrived!
+[StoryEvents.Event-Boost-AddUnit-1].Desc-Owner;Reinforcements have arrived at territory %0:s at location %1:s!
+[StoryEvents.Event-Boost-AddUnit-1].Desc-NonOwner;If you see this, it's a bug in event Event-Boost-AddUnit-1.
+[StoryEvents.Event-Boost-AddUnit-2].Name;Reinforcements Arrived!
+[StoryEvents.Event-Boost-AddUnit-2].Desc-Owner;Reinforcements have arrived at territory %0:s at location %1:s!
+[StoryEvents.Event-Boost-AddUnit-2].Desc-NonOwner;If you see this, it's a bug in event Event-Boost-AddUnit-2.
+[StoryEvents.Event-Boost-AddUnit-3].Name;Reinforcements Arrived!
+[StoryEvents.Event-Boost-AddUnit-3].Desc-Owner;Reinforcements have arrived at territory %0:s at location %1:s!
+[StoryEvents.Event-Boost-AddUnit-3].Desc-NonOwner;If you see this, it's a bug in event Event-Boost-AddUnit-3.
+[StoryEvents.Event-Boost-AddUnit-4].Name;Reinforcements Arrived!
+[StoryEvents.Event-Boost-AddUnit-4].Desc-Owner;Reinforcements have arrived at territory %0:s at location %1:s!
+[StoryEvents.Event-Boost-AddUnit-4].Desc-NonOwner;If you see this, it's a bug in event Event-Boost-AddUnit-4.
+[StoryEvents.Event-Boost-AddUnit-5].Name;Reinforcements Arrived!
+[StoryEvents.Event-Boost-AddUnit-5].Desc-Owner;Reinforcements have arrived at territory %0:s at location %1:s!
+[StoryEvents.Event-Boost-AddUnit-5].Desc-NonOwner;If you see this, it's a bug in event Event-Boost-AddUnit-5.
+[StoryEvents.Event-Boost-AddUnit-6].Name;Reinforcements Arrived!
+[StoryEvents.Event-Boost-AddUnit-6].Desc-Owner;Reinforcements have arrived at territory %0:s at location %1:s!
+[StoryEvents.Event-Boost-AddUnit-6].Desc-NonOwner;If you see this, it's a bug in event Event-Boost-AddUnit-6.
+[StoryEvents.Event-Boost-AddUnit-7].Name;Reinforcements Arrived!
+[StoryEvents.Event-Boost-AddUnit-7].Desc-Owner;Reinforcements have arrived at territory %0:s at location %1:s!
+[StoryEvents.Event-Boost-AddUnit-7].Desc-NonOwner;If you see this, it's a bug in event Event-Boost-AddUnit-7.
+[StoryEvents.Event-Boost-AddUnit-8].Name;Reinforcements Arrived!
+[StoryEvents.Event-Boost-AddUnit-8].Desc-Owner;Reinforcements have arrived at territory %0:s at location %1:s!
+[StoryEvents.Event-Boost-AddUnit-8].Desc-NonOwner;If you see this, it's a bug in event Event-Boost-AddUnit-8.
+ScenarioName;Free Play. Shadow of Chernobyl
+ScenarioDescription;Free Play mode is a copy of the story mode but with the storyline disabled. There are no time limits. Victory is achieved by capturing the entire Zone; defeat occurs upon losing your last territory. Diplomacy between factions may diverge from canon during gameplay.

@@ -14,40 +14,40 @@
 [Leaders.Leader-Patrol].Name;Ara
 [Leaders.Leader-Cherep].Name;Colonel Skull
 [Leaders.Leader-7].Name;Wolfhound
-[Groups.Stalkers.:main].Name;
-[Groups.StalkersSeriy.:main].Name;
-[Groups.StalkersBes.:main].Name;
-[Groups.StalkersDiggers.:main].Name;
-[Groups.StalkersDV.:main].Name;
-[Groups.StalkersBar.:main].Name;
-[Groups.StalkersMilitary.:main].Name;
-[Groups.BanditsKaban.:main].Name;
-[Groups.DutyCherep.:main].Name;
-[Groups.Patrol.:main].Name;
-[Groups.BanditsHunters.:main].Name;
-[Groups.Deserters.:main].Name;
-[Groups.StalkersLis.:main].Name;
-[Groups.Zombie.:main].Name;
-[Groups.ZombieRadar.:main].Name;
-[Groups.Crazy.:main].Name;
-[Groups.Mercenaries.:main].Name;
-[Groups.Stalkers.:main].Description;
-[Groups.StalkersSeriy.:main].Description;
-[Groups.StalkersBes.:main].Description;
-[Groups.StalkersDiggers.:main].Description;
-[Groups.StalkersDV.:main].Description;
-[Groups.StalkersBar.:main].Description;
-[Groups.StalkersMilitary.:main].Description;
-[Groups.BanditsKaban.:main].Description;
-[Groups.DutyCherep.:main].Description;
-[Groups.Patrol.:main].Description;
-[Groups.BanditsHunters.:main].Description;
-[Groups.Deserters.:main].Description;
-[Groups.StalkersLis.:main].Description;
-[Groups.Zombie.:main].Description;
-[Groups.ZombieRadar.:main].Description;
-[Groups.Crazy.:main].Description;
-[Groups.Mercenaries.:main].Description;
+[Groups.Stalkers.:main].Name;Wolf's Group
+[Groups.StalkersSeriy.:main].Name;Gray's Group
+[Groups.StalkersBes.:main].Name;Bes's Group
+[Groups.StalkersDiggers.:main].Name;Diggers
+[Groups.StalkersDV.:main].Name;The Rotten
+[Groups.StalkersBar.:main].Name;Loners
+[Groups.StalkersMilitary.:main].Name;Masters' Group
+[Groups.BanditsKaban.:main].Name;Boar's Gang
+[Groups.DutyCherep.:main].Name;Skull's Group
+[Groups.Patrol.:main].Name;The Watch
+[Groups.BanditsHunters.:main].Name;Trappers' Gang
+[Groups.Deserters.:main].Name;Deserters
+[Groups.StalkersLis.:main].Name;Fox's Group
+[Groups.Zombie.:main].Name;Yantar Zombies
+[Groups.ZombieRadar.:main].Name;Radar Zombies
+[Groups.Crazy.:main].Name;The Madmen
+[Groups.Mercenaries.:main].Name;Volkodav's Squad
+[Groups.Stalkers.:main].Description;Wolf's Group - poorly organized squads of rookie stalkers located in the southern part of the Cordon. No one takes this group seriously. It will take skilled leadership and luck to overcome threats like the Military and Bandits.
+[Groups.StalkersSeriy.:main].Description;Gray's Group - a small stalker group in the Hangar on the Garbage. On the verge of destruction due to bandits. Must find a way to survive without Strelok's help.
+[Groups.StalkersBes.:main].Description;Bes's Group - a small stalker team in the south of the Garbage. Trying to hold a key location point. Surrounded on almost all sides by Bandits. The group is on the verge of destruction.
+[Groups.StalkersDiggers.:main].Description;Diggers - a serious force at Agroprom. Must expand control around the base and capture artifact points for further successful development. Beware of the Military and "guests" from the Garbage.
+[Groups.StalkersDV.:main].Description;The Rotten - a suspicious stalker group from Dark Valley. They have a bad reputation. Rumors say they scam people out of money. Despite a decent location, they have several drawbacks, the most obvious being their proximity to the Bandit base.
+[Groups.StalkersBar.:main].Description;Loners lack a clear hierarchy and a single leader. Their advantage lies in a predisposition for artifact hunting, which will greatly benefit their finances in capable hands. Located at the Rostok Factory. The faction must decide on its developmental priorities.
+[Groups.StalkersMilitary.:main].Description;Masters' Group - several stalkers from Krivaya Balka at Army Warehouses. Their central location on the map allows for expansion in any direction. They face problems with stalker recruitment and desperately need to capture an artifact point.
+[Groups.BanditsKaban.:main].Description;Boar's Gang - a small gang based on the outskirts of the Garbage. They start by controlling an artifact point, which is a significant plus, but the lack of manpower forces them to seek expansion paths, which may lead to conflict with the main Bandit faction. Must find the right developmental vectors for this small faction.
+[Groups.DutyCherep.:main].Description;Skull's Group - a splinter Duty detachment led by Colonel Skull. The squad consists of Duty's elite. They are also called "Duty Special Forces" due to their experience, training, and gear. The group declares its main goal as decisive action against Freedom, including capturing their base. Must decide on developmental priorities and prevent the squad from falling under Freedom's assault.
+[Groups.Patrol.:main].Description;The Watch - a Mercenary squad guarding a checkpoint on the outskirts of Army Warehouses. Despite excellent weaponry, their survival prospects are doubtful against more numerous factions unless they focus on the economic side of the group.
+[Groups.BanditsHunters.:main].Description;Trappers' Gang - a small Bandit group whose goal is to lure stalkers into traps to kill and rob them. Due to the small size of the group, survival chances are almost non-existent.
+[Groups.Deserters.:main].Description;Deserters - military personnel who abandoned their posts for various reasons but remained in the Zone with highly uncertain prospects.
+[Groups.StalkersLis.:main].Description;Fox's Group - a group with extremely doubtful survival chances. Based in the northern part of the Cordon.
+[Groups.Zombie.:main].Description;Yantar Zombies - stalkers who fell under the emitter's influence at Yantar and became captives of the "Brain in a Jar".
+[Groups.ZombieRadar.:main].Description;Radar Zombies - stalkers who fell under the emitter's influence at Radar and lost their minds due to the "Brain Scorcher".
+[Groups.Crazy.:main].Description;The Madmen - those who say "I'm a fool and I have a certificate to prove it!"
+[Groups.Mercenaries.:main].Description;Volkodav's Squad - a large Mercenary detachment led by Volkodav. Holds a key location at the Wild Territory, features strong fighters and a steady resource flow. Such a squad is unlikely to face obstacles in the early game.
 [Advisors.Advisor-Mutants-1].Name;Unknown
 [Advisors.Advisor-Stalkers-1].Name;Unknown
 [Advisors.Advisor-StalkersLis-1].Name;Unknown
@@ -79,7 +79,7 @@
 [Advisors.Advisor-Stalkers-Tolik].Name;Tolik
 [Advisors.Advisor-StalkersBes-Urik].Name;Yurik
 [Advisors.Advisor-StalkersBes-Duplet].Name;Zheka Duplet
-[Advisors.Advisor-StalkersBar-Demon].Name;"Oleg ""Fiend"" Guasrov"
+[Advisors.Advisor-StalkersBar-Demon].Name;Oleg "Fiend" Guasrov
 [Advisors.Advisor-StalkersBar-Lelik].Name;Lyolik
 [Advisors.Advisor-StalkersBar-Amir].Name;Amir the Scared
 [Advisors.Advisor-StalkersBar-Alkash].Name;Dimon the Drunkard
@@ -109,7 +109,7 @@
 [Advisors.Advisor-Soldiers-Chuguykin].Name;Lieutenant Chuguykin
 [Advisors.Advisor-Soldiers-Specialist].Name;Specialist
 [Advisors.Advisor-Soldiers-Poproshayko].Name;Major Poproshaiko
-[Advisors.Advisor-Deserters-Sokolov].Name;"Alex ""Sokol"" Sokolov"
+[Advisors.Advisor-Deserters-Sokolov].Name;Alex "Sokol" Sokolov
 [Advisors.Advisor-Deserters-Steck].Name;Stack
 [Advisors.Advisor-Duty-Petrenko].Name;Colonel Petrenko
 [Advisors.Advisor-Duty-Ivancov].Name;Captain Ivantsov
@@ -120,8 +120,8 @@
 [Advisors.Advisor-Duty-Barin].Name;Barin
 [Advisors.Advisor-Duty-Pulya].Name;Bullet
 [Advisors.Advisor-Duty-Brom].Name;Brome
-[Advisors.Advisor-DutyCherep-Second].Name;"""Second"""
-[Advisors.Advisor-DutyCherep-Sixth].Name;"""Sixth"""
+[Advisors.Advisor-DutyCherep-Second].Name;"Second"
+[Advisors.Advisor-DutyCherep-Sixth].Name;"Sixth"
 [Advisors.Advisor-Freedom-Ugrumiy].Name;Murk
 [Advisors.Advisor-Freedom-Kep].Name;Cap
 [Advisors.Advisor-Freedom-Skryaga].Name;Skinflint
@@ -135,7 +135,7 @@
 [Advisors.Advisor-Mercenaries-Avtobus].Name;Lyokha Bus
 [Advisors.Advisor-Mercenaries-Rzhaviy].Name;Valera Rusty
 [Advisors.Advisor-Mercenaries-Shtirlic].Name;Tolyan Stirlitz
-[Advisors.Advisor-Mercenaries-Dollar].Name;"Ivan ""One Dollar"""
+[Advisors.Advisor-Mercenaries-Dollar].Name;Ivan "One Dollar"
 [Advisors.Advisor-Mercenaries-Plintus].Name;Timur Plintus
 [Advisors.Advisor-Patrol-Courier].Name;Petka Courier
 [Advisors.Advisor-Scientists-Kruglov].Name;Professor Kruglov
@@ -145,594 +145,311 @@
 [Advisors.Advisor-Crazy-Zver].Name;Beast
 [Advisors.Advisor-Zombie-Kontroler].Name;Controller
 [Advisors.Advisor-ZombieRadar-Vidra].Name;Otter
-[Achievements.Achiv-1].Name;
-[Achievements.Achiv-1].Desc;
-[Achievements.Achiv-1].Desc-Logo;
-[Achievements.Achiv-2].Name;
-[Achievements.Achiv-2].Desc;
-[Achievements.Achiv-2].Desc-Logo;
-[Achievements.Achiv-3].Name;
-[Achievements.Achiv-3].Desc;
-[Achievements.Achiv-3].Desc-Logo;
-[Achievements.Achiv-4].Name;
-[Achievements.Achiv-4].Desc;
-[Achievements.Achiv-4].Desc-Logo;
-[Achievements.Achiv-5].Name;
-[Achievements.Achiv-5].Desc;
-[Achievements.Achiv-5].Desc-Logo;
-[Achievements.Achiv-6].Name;
-[Achievements.Achiv-6].Desc;
-[Achievements.Achiv-6].Desc-Logo;
-[Traders.World].Name;
-[Traders.World].NeedText;
-[Traders.YourGroup].Name;
-[Traders.YourGroup].NeedText;
-[Traders.OtherGroup].Name;
-[Traders.OtherGroup].NeedText;
-[Traders.Trader1].Name;
-[Traders.Trader1].NeedText;
-[Traders.Trader2].Name;
-[Traders.Trader2].NeedText;
-[Traders.Trader3].Name;
-[Traders.Trader3].NeedText;
-ScenarioName;
-ScenarioDescription;
-[Groups.BanditsKaban.:main].Spy1-Name;
-[Groups.BanditsKaban.:main].Spy2-Name;
-[Groups.BanditsKaban.:main].Spy3-Name;
-[Groups.BanditsKaban.:main].Spy4-Name;
-[Groups.BanditsHunters.:main].Spy1-Name;
-[Groups.BanditsHunters.:main].Spy2-Name;
-[Groups.BanditsHunters.:main].Spy3-Name;
-[Groups.BanditsHunters.:main].Spy4-Name;
-[Groups.DutyCherep.:main].Spy1-Name;
-[Groups.DutyCherep.:main].Spy2-Name;
-[Groups.DutyCherep.:main].Spy3-Name;
-[Groups.DutyCherep.:main].Spy4-Name;
-[Groups.Patrol.:main].Spy1-Name;
-[Groups.Patrol.:main].Spy2-Name;
-[Groups.Patrol.:main].Spy3-Name;
-[Groups.Patrol.:main].Spy4-Name;
-[Groups.Crazy.:main].Spy1-Name;
-[Groups.Crazy.:main].Spy2-Name;
-[Groups.Crazy.:main].Spy3-Name;
-[Groups.Crazy.:main].Spy4-Name;
-[Groups.Deserters.:main].Spy1-Name;
-[Groups.Deserters.:main].Spy2-Name;
-[Groups.Deserters.:main].Spy3-Name;
-[Groups.Deserters.:main].Spy4-Name;
-[Groups.ZombieRadar.:main].Spy1-Name;
-[Groups.ZombieRadar.:main].Spy2-Name;
-[Groups.ZombieRadar.:main].Spy3-Name;
-[Groups.ZombieRadar.:main].Spy4-Name;
-[Groups.StalkersLis.:main].Spy1-Name;
-[Groups.StalkersLis.:main].Spy2-Name;
-[Groups.StalkersLis.:main].Spy3-Name;
-[Groups.StalkersLis.:main].Spy4-Name;
-[Groups.StalkersBes.:main].Spy1-Name;
-[Groups.StalkersBes.:main].Spy2-Name;
-[Groups.StalkersBes.:main].Spy3-Name;
-[Groups.StalkersBes.:main].Spy4-Name;
-[Groups.StalkersSeriy.:main].Spy1-Name;
-[Groups.StalkersSeriy.:main].Spy2-Name;
-[Groups.StalkersSeriy.:main].Spy3-Name;
-[Groups.StalkersSeriy.:main].Spy4-Name;
-[Groups.StalkersDiggers.:main].Spy1-Name;
-[Groups.StalkersDiggers.:main].Spy2-Name;
-[Groups.StalkersDiggers.:main].Spy3-Name;
-[Groups.StalkersDiggers.:main].Spy4-Name;
-[Groups.StalkersDV.:main].Spy1-Name;
-[Groups.StalkersDV.:main].Spy2-Name;
-[Groups.StalkersDV.:main].Spy3-Name;
-[Groups.StalkersDV.:main].Spy4-Name;
-[Groups.StalkersBar.:main].Spy1-Name;
-[Groups.StalkersBar.:main].Spy2-Name;
-[Groups.StalkersBar.:main].Spy3-Name;
-[Groups.StalkersBar.:main].Spy4-Name;
-[Groups.StalkersMilitary.:main].Spy1-Name;
-[Groups.StalkersMilitary.:main].Spy2-Name;
-[Groups.StalkersMilitary.:main].Spy3-Name;
-[Groups.StalkersMilitary.:main].Spy4-Name;
-[Groups.BanditsKaban.:main].DiplomacyText-Question-War;
-[Groups.BanditsKaban.:main].DiplomacyText-Question-Neutral;
-[Groups.BanditsKaban.:main].DiplomacyText-Question-Alliance;
-[Groups.BanditsKaban.:main].DiplomacyText-Question-BreakAlliance;
-[Groups.BanditsKaban.:main].DiplomacyText-RequestMoney-Ask;
-[Groups.BanditsKaban.:main].DiplomacyText-Ans-0-Down;
-[Groups.BanditsKaban.:main].DiplomacyText-Ans-1-Down;
-[Groups.BanditsKaban.:main].DiplomacyText-Ans-1-No;
-[Groups.BanditsKaban.:main].DiplomacyText-Ans-1-Yes;
-[Groups.BanditsKaban.:main].DiplomacyText-Ans-2-No;
-[Groups.BanditsKaban.:main].DiplomacyText-Ans-2-Yes;
-[Groups.BanditsKaban.:main].DiplomacyText-RequestMoney-Ans-No;
-[Groups.BanditsKaban.:main].DiplomacyText-RequestMoney-Ans-Yes;
-[Groups.BanditsKaban.:main].DiplomacyText-Question-Neutral-No;
-[Groups.BanditsKaban.:main].DiplomacyText-Question-Neutral-Yes;
-[Groups.BanditsKaban.:main].DiplomacyText-Question-Alliance-No;
-[Groups.BanditsKaban.:main].DiplomacyText-Question-Alliance-Yes;
-[Groups.BanditsKaban.:main].Text-End-Step-Victory;
-[Groups.BanditsKaban.:main].Text-End-EventFlag-Victory;
-[Groups.BanditsKaban.:main].Text-End-Standart-Lose;
-[Groups.BanditsKaban.:main].Text-End-Step-Lose;
-[Groups.BanditsKaban.:main].Text-End-EventFlag-Lose;
-[Groups.BanditsHunters.:main].DiplomacyText-Question-War;
-[Groups.BanditsHunters.:main].DiplomacyText-Question-Neutral;
-[Groups.BanditsHunters.:main].DiplomacyText-Question-Alliance;
-[Groups.BanditsHunters.:main].DiplomacyText-Question-BreakAlliance;
-[Groups.BanditsHunters.:main].DiplomacyText-RequestMoney-Ask;
-[Groups.BanditsHunters.:main].DiplomacyText-Ans-0-Down;
-[Groups.BanditsHunters.:main].DiplomacyText-Ans-1-Down;
-[Groups.BanditsHunters.:main].DiplomacyText-Ans-1-No;
-[Groups.BanditsHunters.:main].DiplomacyText-Ans-1-Yes;
-[Groups.BanditsHunters.:main].DiplomacyText-Ans-2-No;
-[Groups.BanditsHunters.:main].DiplomacyText-Ans-2-Yes;
-[Groups.BanditsHunters.:main].DiplomacyText-RequestMoney-Ans-No;
-[Groups.BanditsHunters.:main].DiplomacyText-RequestMoney-Ans-Yes;
-[Groups.BanditsHunters.:main].DiplomacyText-Question-Neutral-No;
-[Groups.BanditsHunters.:main].DiplomacyText-Question-Neutral-Yes;
-[Groups.BanditsHunters.:main].DiplomacyText-Question-Alliance-No;
-[Groups.BanditsHunters.:main].DiplomacyText-Question-Alliance-Yes;
-[Groups.BanditsHunters.:main].Text-End-Step-Victory;
-[Groups.BanditsHunters.:main].Text-End-EventFlag-Victory;
-[Groups.BanditsHunters.:main].Text-End-Standart-Lose;
-[Groups.BanditsHunters.:main].Text-End-Step-Lose;
-[Groups.BanditsHunters.:main].Text-End-EventFlag-Lose;
-[Groups.DutyCherep.:main].DiplomacyText-Question-War;
-[Groups.DutyCherep.:main].DiplomacyText-Question-Neutral;
-[Groups.DutyCherep.:main].DiplomacyText-Question-Alliance;
-[Groups.DutyCherep.:main].DiplomacyText-Question-BreakAlliance;
-[Groups.DutyCherep.:main].DiplomacyText-RequestMoney-Ask;
-[Groups.DutyCherep.:main].DiplomacyText-Ans-0-Down;
-[Groups.DutyCherep.:main].DiplomacyText-Ans-1-Down;
-[Groups.DutyCherep.:main].DiplomacyText-Ans-1-No;
-[Groups.DutyCherep.:main].DiplomacyText-Ans-1-Yes;
-[Groups.DutyCherep.:main].DiplomacyText-Ans-2-No;
-[Groups.DutyCherep.:main].DiplomacyText-Ans-2-Yes;
-[Groups.DutyCherep.:main].DiplomacyText-RequestMoney-Ans-No;
-[Groups.DutyCherep.:main].DiplomacyText-RequestMoney-Ans-Yes;
-[Groups.DutyCherep.:main].DiplomacyText-Question-Neutral-No;
-[Groups.DutyCherep.:main].DiplomacyText-Question-Neutral-Yes;
-[Groups.DutyCherep.:main].DiplomacyText-Question-Alliance-No;
-[Groups.DutyCherep.:main].DiplomacyText-Question-Alliance-Yes;
-[Groups.DutyCherep.:main].Text-End-Step-Victory;
-[Groups.DutyCherep.:main].Text-End-EventFlag-Victory;
-[Groups.DutyCherep.:main].Text-End-Standart-Lose;
-[Groups.DutyCherep.:main].Text-End-Step-Lose;
-[Groups.DutyCherep.:main].Text-End-EventFlag-Lose;
-[Groups.Patrol.:main].DiplomacyText-Question-War;
-[Groups.Patrol.:main].DiplomacyText-Question-Neutral;
-[Groups.Patrol.:main].DiplomacyText-Question-Alliance;
-[Groups.Patrol.:main].DiplomacyText-Question-BreakAlliance;
-[Groups.Patrol.:main].DiplomacyText-RequestMoney-Ask;
-[Groups.Patrol.:main].DiplomacyText-Ans-0-Down;
-[Groups.Patrol.:main].DiplomacyText-Ans-1-Down;
-[Groups.Patrol.:main].DiplomacyText-Ans-1-No;
-[Groups.Patrol.:main].DiplomacyText-Ans-1-Yes;
-[Groups.Patrol.:main].DiplomacyText-Ans-2-No;
-[Groups.Patrol.:main].DiplomacyText-Ans-2-Yes;
-[Groups.Patrol.:main].DiplomacyText-RequestMoney-Ans-No;
-[Groups.Patrol.:main].DiplomacyText-RequestMoney-Ans-Yes;
-[Groups.Patrol.:main].DiplomacyText-Question-Neutral-No;
-[Groups.Patrol.:main].DiplomacyText-Question-Neutral-Yes;
-[Groups.Patrol.:main].DiplomacyText-Question-Alliance-No;
-[Groups.Patrol.:main].DiplomacyText-Question-Alliance-Yes;
-[Groups.Patrol.:main].Text-End-Step-Victory;
-[Groups.Patrol.:main].Text-End-EventFlag-Victory;
-[Groups.Patrol.:main].Text-End-Standart-Lose;
-[Groups.Patrol.:main].Text-End-Step-Lose;
-[Groups.Patrol.:main].Text-End-EventFlag-Lose;
-[Groups.StalkersLis.:main].DiplomacyText-Question-War;
-[Groups.StalkersLis.:main].DiplomacyText-Question-Neutral;
-[Groups.StalkersLis.:main].DiplomacyText-Question-Alliance;
-[Groups.StalkersLis.:main].DiplomacyText-Question-BreakAlliance;
-[Groups.StalkersLis.:main].DiplomacyText-RequestMoney-Ask;
-[Groups.StalkersLis.:main].DiplomacyText-Ans-0-Down;
-[Groups.StalkersLis.:main].DiplomacyText-Ans-1-Down;
-[Groups.StalkersLis.:main].DiplomacyText-Ans-1-No;
-[Groups.StalkersLis.:main].DiplomacyText-Ans-1-Yes;
-[Groups.StalkersLis.:main].DiplomacyText-Ans-2-No;
-[Groups.StalkersLis.:main].DiplomacyText-Ans-2-Yes;
-[Groups.StalkersLis.:main].DiplomacyText-RequestMoney-Ans-No;
-[Groups.StalkersLis.:main].DiplomacyText-RequestMoney-Ans-Yes;
-[Groups.StalkersLis.:main].DiplomacyText-Question-Neutral-No;
-[Groups.StalkersLis.:main].DiplomacyText-Question-Neutral-Yes;
-[Groups.StalkersLis.:main].DiplomacyText-Question-Alliance-No;
-[Groups.StalkersLis.:main].DiplomacyText-Question-Alliance-Yes;
-[Groups.StalkersLis.:main].Text-End-Step-Victory;
-[Groups.StalkersLis.:main].Text-End-EventFlag-Victory;
-[Groups.StalkersLis.:main].Text-End-Standart-Lose;
-[Groups.StalkersLis.:main].Text-End-Step-Lose;
-[Groups.StalkersLis.:main].Text-End-EventFlag-Lose;
-[Groups.StalkersBes.:main].DiplomacyText-Question-War;
-[Groups.StalkersBes.:main].DiplomacyText-Question-Neutral;
-[Groups.StalkersBes.:main].DiplomacyText-Question-Alliance;
-[Groups.StalkersBes.:main].DiplomacyText-Question-BreakAlliance;
-[Groups.StalkersBes.:main].DiplomacyText-RequestMoney-Ask;
-[Groups.StalkersBes.:main].DiplomacyText-Ans-0-Down;
-[Groups.StalkersBes.:main].DiplomacyText-Ans-1-Down;
-[Groups.StalkersBes.:main].DiplomacyText-Ans-1-No;
-[Groups.StalkersBes.:main].DiplomacyText-Ans-1-Yes;
-[Groups.StalkersBes.:main].DiplomacyText-Ans-2-No;
-[Groups.StalkersBes.:main].DiplomacyText-Ans-2-Yes;
-[Groups.StalkersBes.:main].DiplomacyText-RequestMoney-Ans-No;
-[Groups.StalkersBes.:main].DiplomacyText-RequestMoney-Ans-Yes;
-[Groups.StalkersBes.:main].DiplomacyText-Question-Neutral-No;
-[Groups.StalkersBes.:main].DiplomacyText-Question-Neutral-Yes;
-[Groups.StalkersBes.:main].DiplomacyText-Question-Alliance-No;
-[Groups.StalkersBes.:main].DiplomacyText-Question-Alliance-Yes;
-[Groups.StalkersBes.:main].Text-End-Step-Victory;
-[Groups.StalkersBes.:main].Text-End-EventFlag-Victory;
-[Groups.StalkersBes.:main].Text-End-Standart-Lose;
-[Groups.StalkersBes.:main].Text-End-Step-Lose;
-[Groups.StalkersBes.:main].Text-End-EventFlag-Lose;
-[Groups.StalkersSeriy.:main].DiplomacyText-Question-War;
-[Groups.StalkersSeriy.:main].DiplomacyText-Question-Neutral;
-[Groups.StalkersSeriy.:main].DiplomacyText-Question-Alliance;
-[Groups.StalkersSeriy.:main].DiplomacyText-Question-BreakAlliance;
-[Groups.StalkersSeriy.:main].DiplomacyText-RequestMoney-Ask;
-[Groups.StalkersSeriy.:main].DiplomacyText-Ans-0-Down;
-[Groups.StalkersSeriy.:main].DiplomacyText-Ans-1-Down;
-[Groups.StalkersSeriy.:main].DiplomacyText-Ans-1-No;
-[Groups.StalkersSeriy.:main].DiplomacyText-Ans-1-Yes;
-[Groups.StalkersSeriy.:main].DiplomacyText-Ans-2-No;
-[Groups.StalkersSeriy.:main].DiplomacyText-Ans-2-Yes;
-[Groups.StalkersSeriy.:main].DiplomacyText-RequestMoney-Ans-No;
-[Groups.StalkersSeriy.:main].DiplomacyText-RequestMoney-Ans-Yes;
-[Groups.StalkersSeriy.:main].DiplomacyText-Question-Neutral-No;
-[Groups.StalkersSeriy.:main].DiplomacyText-Question-Neutral-Yes;
-[Groups.StalkersSeriy.:main].DiplomacyText-Question-Alliance-No;
-[Groups.StalkersSeriy.:main].DiplomacyText-Question-Alliance-Yes;
-[Groups.StalkersSeriy.:main].Text-End-Step-Victory;
-[Groups.StalkersSeriy.:main].Text-End-EventFlag-Victory;
-[Groups.StalkersSeriy.:main].Text-End-Standart-Lose;
-[Groups.StalkersSeriy.:main].Text-End-Step-Lose;
-[Groups.StalkersSeriy.:main].Text-End-EventFlag-Lose;
-[Groups.StalkersDiggers.:main].DiplomacyText-Question-War;
-[Groups.StalkersDiggers.:main].DiplomacyText-Question-Neutral;
-[Groups.StalkersDiggers.:main].DiplomacyText-Question-Alliance;
-[Groups.StalkersDiggers.:main].DiplomacyText-Question-BreakAlliance;
-[Groups.StalkersDiggers.:main].DiplomacyText-RequestMoney-Ask;
-[Groups.StalkersDiggers.:main].DiplomacyText-Ans-0-Down;
-[Groups.StalkersDiggers.:main].DiplomacyText-Ans-1-Down;
-[Groups.StalkersDiggers.:main].DiplomacyText-Ans-1-No;
-[Groups.StalkersDiggers.:main].DiplomacyText-Ans-1-Yes;
-[Groups.StalkersDiggers.:main].DiplomacyText-Ans-2-No;
-[Groups.StalkersDiggers.:main].DiplomacyText-Ans-2-Yes;
-[Groups.StalkersDiggers.:main].DiplomacyText-RequestMoney-Ans-No;
-[Groups.StalkersDiggers.:main].DiplomacyText-RequestMoney-Ans-Yes;
-[Groups.StalkersDiggers.:main].DiplomacyText-Question-Neutral-No;
-[Groups.StalkersDiggers.:main].DiplomacyText-Question-Neutral-Yes;
-[Groups.StalkersDiggers.:main].DiplomacyText-Question-Alliance-No;
-[Groups.StalkersDiggers.:main].DiplomacyText-Question-Alliance-Yes;
-[Groups.StalkersDiggers.:main].Text-End-Step-Victory;
-[Groups.StalkersDiggers.:main].Text-End-EventFlag-Victory;
-[Groups.StalkersDiggers.:main].Text-End-Standart-Lose;
-[Groups.StalkersDiggers.:main].Text-End-Step-Lose;
-[Groups.StalkersDiggers.:main].Text-End-EventFlag-Lose;
-[Groups.StalkersDV.:main].DiplomacyText-Question-War;
-[Groups.StalkersDV.:main].DiplomacyText-Question-Neutral;
-[Groups.StalkersDV.:main].DiplomacyText-Question-Alliance;
-[Groups.StalkersDV.:main].DiplomacyText-Question-BreakAlliance;
-[Groups.StalkersDV.:main].DiplomacyText-RequestMoney-Ask;
-[Groups.StalkersDV.:main].DiplomacyText-Ans-0-Down;
-[Groups.StalkersDV.:main].DiplomacyText-Ans-1-Down;
-[Groups.StalkersDV.:main].DiplomacyText-Ans-1-No;
-[Groups.StalkersDV.:main].DiplomacyText-Ans-1-Yes;
-[Groups.StalkersDV.:main].DiplomacyText-Ans-2-No;
-[Groups.StalkersDV.:main].DiplomacyText-Ans-2-Yes;
-[Groups.StalkersDV.:main].DiplomacyText-RequestMoney-Ans-No;
-[Groups.StalkersDV.:main].DiplomacyText-RequestMoney-Ans-Yes;
-[Groups.StalkersDV.:main].DiplomacyText-Question-Neutral-No;
-[Groups.StalkersDV.:main].DiplomacyText-Question-Neutral-Yes;
-[Groups.StalkersDV.:main].DiplomacyText-Question-Alliance-No;
-[Groups.StalkersDV.:main].DiplomacyText-Question-Alliance-Yes;
-[Groups.StalkersDV.:main].Text-End-Step-Victory;
-[Groups.StalkersDV.:main].Text-End-EventFlag-Victory;
-[Groups.StalkersDV.:main].Text-End-Standart-Lose;
-[Groups.StalkersDV.:main].Text-End-Step-Lose;
-[Groups.StalkersDV.:main].Text-End-EventFlag-Lose;
-[Groups.StalkersBar.:main].DiplomacyText-Question-War;
-[Groups.StalkersBar.:main].DiplomacyText-Question-Neutral;
-[Groups.StalkersBar.:main].DiplomacyText-Question-Alliance;
-[Groups.StalkersBar.:main].DiplomacyText-Question-BreakAlliance;
-[Groups.StalkersBar.:main].DiplomacyText-RequestMoney-Ask;
-[Groups.StalkersBar.:main].DiplomacyText-Ans-0-Down;
-[Groups.StalkersBar.:main].DiplomacyText-Ans-1-Down;
-[Groups.StalkersBar.:main].DiplomacyText-Ans-1-No;
-[Groups.StalkersBar.:main].DiplomacyText-Ans-1-Yes;
-[Groups.StalkersBar.:main].DiplomacyText-Ans-2-No;
-[Groups.StalkersBar.:main].DiplomacyText-Ans-2-Yes;
-[Groups.StalkersBar.:main].DiplomacyText-RequestMoney-Ans-No;
-[Groups.StalkersBar.:main].DiplomacyText-RequestMoney-Ans-Yes;
-[Groups.StalkersBar.:main].DiplomacyText-Question-Neutral-No;
-[Groups.StalkersBar.:main].DiplomacyText-Question-Neutral-Yes;
-[Groups.StalkersBar.:main].DiplomacyText-Question-Alliance-No;
-[Groups.StalkersBar.:main].DiplomacyText-Question-Alliance-Yes;
-[Groups.StalkersBar.:main].Text-End-Step-Victory;
-[Groups.StalkersBar.:main].Text-End-EventFlag-Victory;
-[Groups.StalkersBar.:main].Text-End-Standart-Lose;
-[Groups.StalkersBar.:main].Text-End-Step-Lose;
-[Groups.StalkersBar.:main].Text-End-EventFlag-Lose;
-[Groups.StalkersMilitary.:main].DiplomacyText-Question-War;
-[Groups.StalkersMilitary.:main].DiplomacyText-Question-Neutral;
-[Groups.StalkersMilitary.:main].DiplomacyText-Question-Alliance;
-[Groups.StalkersMilitary.:main].DiplomacyText-Question-BreakAlliance;
-[Groups.StalkersMilitary.:main].DiplomacyText-RequestMoney-Ask;
-[Groups.StalkersMilitary.:main].DiplomacyText-Ans-0-Down;
-[Groups.StalkersMilitary.:main].DiplomacyText-Ans-1-Down;
-[Groups.StalkersMilitary.:main].DiplomacyText-Ans-1-No;
-[Groups.StalkersMilitary.:main].DiplomacyText-Ans-1-Yes;
-[Groups.StalkersMilitary.:main].DiplomacyText-Ans-2-No;
-[Groups.StalkersMilitary.:main].DiplomacyText-Ans-2-Yes;
-[Groups.StalkersMilitary.:main].DiplomacyText-RequestMoney-Ans-No;
-[Groups.StalkersMilitary.:main].DiplomacyText-RequestMoney-Ans-Yes;
-[Groups.StalkersMilitary.:main].DiplomacyText-Question-Neutral-No;
-[Groups.StalkersMilitary.:main].DiplomacyText-Question-Neutral-Yes;
-[Groups.StalkersMilitary.:main].DiplomacyText-Question-Alliance-No;
-[Groups.StalkersMilitary.:main].DiplomacyText-Question-Alliance-Yes;
-[Groups.StalkersMilitary.:main].Text-End-Step-Victory;
-[Groups.StalkersMilitary.:main].Text-End-EventFlag-Victory;
-[Groups.StalkersMilitary.:main].Text-End-Standart-Lose;
-[Groups.StalkersMilitary.:main].Text-End-Step-Lose;
-[Groups.StalkersMilitary.:main].Text-End-EventFlag-Lose;
-[Groups.Deserters.:main].DiplomacyText-Question-War;
-[Groups.Deserters.:main].DiplomacyText-Question-Neutral;
-[Groups.Deserters.:main].DiplomacyText-Question-Alliance;
-[Groups.Deserters.:main].DiplomacyText-Question-BreakAlliance;
-[Groups.Deserters.:main].DiplomacyText-RequestMoney-Ask;
-[Groups.Deserters.:main].DiplomacyText-Ans-0-Down;
-[Groups.Deserters.:main].DiplomacyText-Ans-1-Down;
-[Groups.Deserters.:main].DiplomacyText-Ans-1-No;
-[Groups.Deserters.:main].DiplomacyText-Ans-1-Yes;
-[Groups.Deserters.:main].DiplomacyText-Ans-2-No;
-[Groups.Deserters.:main].DiplomacyText-Ans-2-Yes;
-[Groups.Deserters.:main].DiplomacyText-RequestMoney-Ans-No;
-[Groups.Deserters.:main].DiplomacyText-RequestMoney-Ans-Yes;
-[Groups.Deserters.:main].DiplomacyText-Question-Neutral-No;
-[Groups.Deserters.:main].DiplomacyText-Question-Neutral-Yes;
-[Groups.Deserters.:main].DiplomacyText-Question-Alliance-No;
-[Groups.Deserters.:main].DiplomacyText-Question-Alliance-Yes;
-[Groups.Deserters.:main].Text-End-Step-Victory;
-[Groups.Deserters.:main].Text-End-EventFlag-Victory;
-[Groups.Deserters.:main].Text-End-Standart-Lose;
-[Groups.Deserters.:main].Text-End-Step-Lose;
-[Groups.Deserters.:main].Text-End-EventFlag-Lose;
-[Groups.zombieRadar.:main].DiplomacyText-Question-War;
-[Groups.zombieRadar.:main].DiplomacyText-Question-Neutral;
-[Groups.zombieRadar.:main].DiplomacyText-Question-Alliance;
-[Groups.zombieRadar.:main].DiplomacyText-Question-BreakAlliance;
-[Groups.zombieRadar.:main].DiplomacyText-RequestMoney-Ask;
-[Groups.zombieRadar.:main].DiplomacyText-Ans-0-Down;
-[Groups.zombieRadar.:main].DiplomacyText-Ans-1-Down;
-[Groups.zombieRadar.:main].DiplomacyText-Ans-1-No;
-[Groups.zombieRadar.:main].DiplomacyText-Ans-1-Yes;
-[Groups.zombieRadar.:main].DiplomacyText-Ans-2-No;
-[Groups.zombieRadar.:main].DiplomacyText-Ans-2-Yes;
-[Groups.zombieRadar.:main].DiplomacyText-RequestMoney-Ans-No;
-[Groups.zombieRadar.:main].DiplomacyText-RequestMoney-Ans-Yes;
-[Groups.zombieRadar.:main].DiplomacyText-Question-Neutral-No;
-[Groups.zombieRadar.:main].DiplomacyText-Question-Neutral-Yes;
-[Groups.zombieRadar.:main].DiplomacyText-Question-Alliance-No;
-[Groups.zombieRadar.:main].DiplomacyText-Question-Alliance-Yes;
-[Groups.zombieRadar.:main].Text-End-Step-Victory;
-[Groups.zombieRadar.:main].Text-End-EventFlag-Victory;
-[Groups.zombieRadar.:main].Text-End-Standart-Lose;
-[Groups.zombieRadar.:main].Text-End-Step-Lose;
-[Groups.zombieRadar.:main].Text-End-EventFlag-Lose;
-[Groups.zombieRadar.Anarchy].Text-End-Standart-Victory;
-[Groups.zombieRadar.AntiZone].Text-End-Standart-Victory;
-[Groups.zombieRadar.Control].Text-End-Standart-Victory;
-[Groups.zombieRadar.Crime].Text-End-Standart-Victory;
-[Groups.zombieRadar.Exploring].Text-End-Standart-Victory;
-[Groups.zombieRadar.Growth].Text-End-Standart-Victory;
-[Groups.zombieRadar.Mercenary].Text-End-Standart-Victory;
-[Groups.zombieRadar.Sectarianism].Text-End-Standart-Victory;
-[Groups.zombieRadar.Stability].Text-End-Standart-Victory;
-[Groups.zombieRadar.Stalkers].Text-End-Standart-Victory;
-[Groups.zombieRadar.Unknow].Text-End-Standart-Victory;
-[Groups.zombieRadar.Zombie].Text-End-Standart-Victory;
-[Groups.Crazy.:main].DiplomacyText-Question-War;
-[Groups.Crazy.:main].DiplomacyText-Question-Neutral;
-[Groups.Crazy.:main].DiplomacyText-Question-Alliance;
-[Groups.Crazy.:main].DiplomacyText-Question-BreakAlliance;
-[Groups.Crazy.:main].DiplomacyText-RequestMoney-Ask;
-[Groups.Crazy.:main].DiplomacyText-Ans-0-Down;
-[Groups.Crazy.:main].DiplomacyText-Ans-1-Down;
-[Groups.Crazy.:main].DiplomacyText-Ans-1-No;
-[Groups.Crazy.:main].DiplomacyText-Ans-1-Yes;
-[Groups.Crazy.:main].DiplomacyText-Ans-2-No;
-[Groups.Crazy.:main].DiplomacyText-Ans-2-Yes;
-[Groups.Crazy.:main].DiplomacyText-RequestMoney-Ans-No;
-[Groups.Crazy.:main].DiplomacyText-RequestMoney-Ans-Yes;
-[Groups.Crazy.:main].DiplomacyText-Question-Neutral-No;
-[Groups.Crazy.:main].DiplomacyText-Question-Neutral-Yes;
-[Groups.Crazy.:main].DiplomacyText-Question-Alliance-No;
-[Groups.Crazy.:main].DiplomacyText-Question-Alliance-Yes;
-[Groups.Crazy.:main].Text-End-Step-Victory;
-[Groups.Crazy.:main].Text-End-EventFlag-Victory;
-[Groups.Crazy.:main].Text-End-Standart-Lose;
-[Groups.Crazy.:main].Text-End-Step-Lose;
-[Groups.Crazy.:main].Text-End-EventFlag-Lose;
-[Groups.Crazy.Anarchy].Text-End-Standart-Victory;
-[Groups.Crazy.AntiZone].Text-End-Standart-Victory;
-[Groups.Crazy.Control].Text-End-Standart-Victory;
-[Groups.Crazy.Crime].Text-End-Standart-Victory;
-[Groups.Crazy.Exploring].Text-End-Standart-Victory;
-[Groups.Crazy.Growth].Text-End-Standart-Victory;
-[Groups.Crazy.Mercenary].Text-End-Standart-Victory;
-[Groups.Crazy.Sectarianism].Text-End-Standart-Victory;
-[Groups.Crazy.Stability].Text-End-Standart-Victory;
-[Groups.Crazy.Stalkers].Text-End-Standart-Victory;
-[Groups.Crazy.Unknow].Text-End-Standart-Victory;
-[Groups.Crazy.Zombie].Text-End-Standart-Victory;
-[Groups.BanditsKaban.Anarchy].Text-End-Standart-Victory;
-[Groups.BanditsKaban.AntiZone].Text-End-Standart-Victory;
-[Groups.BanditsKaban.Control].Text-End-Standart-Victory;
-[Groups.BanditsKaban.Crime].Text-End-Standart-Victory;
-[Groups.BanditsKaban.Crime].Text-End-Standart-Lose;
-[Groups.BanditsKaban.Crime].Text-End-Step-Lose;
-[Groups.BanditsKaban.Exploring].Text-End-Standart-Victory;
-[Groups.BanditsKaban.Growth].Text-End-Standart-Victory;
-[Groups.BanditsKaban.Growth].Text-End-Standart-Lose;
-[Groups.BanditsKaban.Growth].Text-End-Step-Lose;
-[Groups.BanditsKaban.Mercenary].Text-End-Standart-Victory;
-[Groups.BanditsKaban.Sectarianism].Text-End-Standart-Victory;
-[Groups.BanditsKaban.Stability].Text-End-Standart-Victory;
-[Groups.BanditsKaban.Stalkers].Text-End-Standart-Victory;
-[Groups.BanditsKaban.Unknow].Text-End-Standart-Victory;
-[Groups.BanditsKaban.Unknow].Text-End-Standart-Lose;
-[Groups.BanditsKaban.Unknow].Text-End-Step-Lose;
-[Groups.BanditsKaban.Zombie].Text-End-Standart-Victory;
-[Groups.BanditsHunters.Anarchy].Text-End-Standart-Victory;
-[Groups.BanditsHunters.AntiZone].Text-End-Standart-Victory;
-[Groups.BanditsHunters.Control].Text-End-Standart-Victory;
-[Groups.BanditsHunters.Crime].Text-End-Standart-Victory;
-[Groups.BanditsHunters.Crime].Text-End-Standart-Lose;
-[Groups.BanditsHunters.Crime].Text-End-Step-Lose;
-[Groups.BanditsHunters.Exploring].Text-End-Standart-Victory;
-[Groups.BanditsHunters.Growth].Text-End-Standart-Victory;
-[Groups.BanditsHunters.Growth].Text-End-Standart-Lose;
-[Groups.BanditsHunters.Growth].Text-End-Step-Lose;
-[Groups.BanditsHunters.Mercenary].Text-End-Standart-Victory;
-[Groups.BanditsHunters.Sectarianism].Text-End-Standart-Victory;
-[Groups.BanditsHunters.Stability].Text-End-Standart-Victory;
-[Groups.BanditsHunters.Stalkers].Text-End-Standart-Victory;
-[Groups.BanditsHunters.Unknow].Text-End-Standart-Victory;
-[Groups.BanditsHunters.Unknow].Text-End-Standart-Lose;
-[Groups.BanditsHunters.Unknow].Text-End-Step-Lose;
-[Groups.BanditsHunters.Zombie].Text-End-Standart-Victory;
-[Groups.DutyCherep.Anarchy].Text-End-Standart-Victory;
-[Groups.DutyCherep.AntiZone].Text-End-Standart-Victory;
-[Groups.DutyCherep.AntiZone].Text-End-Standart-Lose;
-[Groups.DutyCherep.Control].Text-End-Standart-Victory;
-[Groups.DutyCherep.Crime].Text-End-Standart-Victory;
-[Groups.DutyCherep.Exploring].Text-End-Standart-Victory;
-[Groups.DutyCherep.Growth].Text-End-Standart-Victory;
-[Groups.DutyCherep.Growth].Text-End-Standart-Lose;
-[Groups.DutyCherep.Mercenary].Text-End-Standart-Victory;
-[Groups.DutyCherep.Sectarianism].Text-End-Standart-Victory;
-[Groups.DutyCherep.Stability].Text-End-Standart-Victory;
-[Groups.DutyCherep.Stalkers].Text-End-Standart-Victory;
-[Groups.DutyCherep.Unknow].Text-End-Standart-Victory;
-[Groups.DutyCherep.Unknow].Text-End-Standart-Lose;
-[Groups.DutyCherep.Zombie].Text-End-Standart-Victory;
-[Groups.StalkersMilitary.Anarchy].Text-End-Standart-Victory;
-[Groups.StalkersMilitary.AntiZone].Text-End-Standart-Victory;
-[Groups.StalkersMilitary.Control].Text-End-Standart-Victory;
-[Groups.StalkersMilitary.Crime].Text-End-Standart-Victory;
-[Groups.StalkersMilitary.Exploring].Text-End-Standart-Victory;
-[Groups.StalkersMilitary.Growth].Text-End-Standart-Victory;
-[Groups.StalkersMilitary.Growth].Text-End-Standart-Lose;
-[Groups.StalkersMilitary.Mercenary].Text-End-Standart-Victory;
-[Groups.StalkersMilitary.Sectarianism].Text-End-Standart-Victory;
-[Groups.StalkersMilitary.Stability].Text-End-Standart-Victory;
-[Groups.StalkersMilitary.Stalkers].Text-End-Standart-Victory;
-[Groups.StalkersMilitary.Stalkers].Text-End-Standart-Lose;
-[Groups.StalkersMilitary.Unknow].Text-End-Standart-Victory;
-[Groups.StalkersMilitary.Unknow].Text-End-Standart-Lose;
-[Groups.StalkersMilitary.Zombie].Text-End-Standart-Victory;
-[Groups.StalkersLis.Anarchy].Text-End-Standart-Victory;
-[Groups.StalkersLis.AntiZone].Text-End-Standart-Victory;
-[Groups.StalkersLis.Control].Text-End-Standart-Victory;
-[Groups.StalkersLis.Crime].Text-End-Standart-Victory;
-[Groups.StalkersLis.Exploring].Text-End-Standart-Victory;
-[Groups.StalkersLis.Growth].Text-End-Standart-Victory;
-[Groups.StalkersLis.Growth].Text-End-Standart-Lose;
-[Groups.StalkersLis.Mercenary].Text-End-Standart-Victory;
-[Groups.StalkersLis.Sectarianism].Text-End-Standart-Victory;
-[Groups.StalkersLis.Stability].Text-End-Standart-Victory;
-[Groups.StalkersLis.Stalkers].Text-End-Standart-Victory;
-[Groups.StalkersLis.Stalkers].Text-End-Standart-Lose;
-[Groups.StalkersLis.Unknow].Text-End-Standart-Victory;
-[Groups.StalkersLis.Unknow].Text-End-Standart-Lose;
-[Groups.StalkersLis.Zombie].Text-End-Standart-Victory;
-[Groups.StalkersBes.Anarchy].Text-End-Standart-Victory;
-[Groups.StalkersBes.AntiZone].Text-End-Standart-Victory;
-[Groups.StalkersBes.Control].Text-End-Standart-Victory;
-[Groups.StalkersBes.Crime].Text-End-Standart-Victory;
-[Groups.StalkersBes.Exploring].Text-End-Standart-Victory;
-[Groups.StalkersBes.Growth].Text-End-Standart-Victory;
-[Groups.StalkersBes.Growth].Text-End-Standart-Lose;
-[Groups.StalkersBes.Mercenary].Text-End-Standart-Victory;
-[Groups.StalkersBes.Sectarianism].Text-End-Standart-Victory;
-[Groups.StalkersBes.Stability].Text-End-Standart-Victory;
-[Groups.StalkersBes.Stalkers].Text-End-Standart-Victory;
-[Groups.StalkersBes.Stalkers].Text-End-Standart-Lose;
-[Groups.StalkersBes.Unknow].Text-End-Standart-Victory;
-[Groups.StalkersBes.Unknow].Text-End-Standart-Lose;
-[Groups.StalkersBes.Zombie].Text-End-Standart-Victory;
-[Groups.StalkersSeriy.Anarchy].Text-End-Standart-Victory;
-[Groups.StalkersSeriy.AntiZone].Text-End-Standart-Victory;
-[Groups.StalkersSeriy.Control].Text-End-Standart-Victory;
-[Groups.StalkersSeriy.Crime].Text-End-Standart-Victory;
-[Groups.StalkersSeriy.Exploring].Text-End-Standart-Victory;
-[Groups.StalkersSeriy.Growth].Text-End-Standart-Victory;
-[Groups.StalkersSeriy.Growth].Text-End-Standart-Lose;
-[Groups.StalkersSeriy.Mercenary].Text-End-Standart-Victory;
-[Groups.StalkersSeriy.Sectarianism].Text-End-Standart-Victory;
-[Groups.StalkersSeriy.Stability].Text-End-Standart-Victory;
-[Groups.StalkersSeriy.Stalkers].Text-End-Standart-Victory;
-[Groups.StalkersSeriy.Stalkers].Text-End-Standart-Lose;
-[Groups.StalkersSeriy.Unknow].Text-End-Standart-Victory;
-[Groups.StalkersSeriy.Unknow].Text-End-Standart-Lose;
-[Groups.StalkersSeriy.Zombie].Text-End-Standart-Victory;
-[Groups.StalkersDiggers.Anarchy].Text-End-Standart-Victory;
-[Groups.StalkersDiggers.AntiZone].Text-End-Standart-Victory;
-[Groups.StalkersDiggers.Control].Text-End-Standart-Victory;
-[Groups.StalkersDiggers.Crime].Text-End-Standart-Victory;
-[Groups.StalkersDiggers.Exploring].Text-End-Standart-Victory;
-[Groups.StalkersDiggers.Growth].Text-End-Standart-Victory;
-[Groups.StalkersDiggers.Growth].Text-End-Standart-Lose;
-[Groups.StalkersDiggers.Mercenary].Text-End-Standart-Victory;
-[Groups.StalkersDiggers.Sectarianism].Text-End-Standart-Victory;
-[Groups.StalkersDiggers.Stability].Text-End-Standart-Victory;
-[Groups.StalkersDiggers.Stalkers].Text-End-Standart-Victory;
-[Groups.StalkersDiggers.Stalkers].Text-End-Standart-Lose;
-[Groups.StalkersDiggers.Unknow].Text-End-Standart-Victory;
-[Groups.StalkersDiggers.Unknow].Text-End-Standart-Lose;
-[Groups.StalkersDiggers.Zombie].Text-End-Standart-Victory;
-[Groups.StalkersBar.Anarchy].Text-End-Standart-Victory;
-[Groups.StalkersBar.AntiZone].Text-End-Standart-Victory;
-[Groups.StalkersBar.Control].Text-End-Standart-Victory;
-[Groups.StalkersBar.Crime].Text-End-Standart-Victory;
-[Groups.StalkersBar.Exploring].Text-End-Standart-Victory;
-[Groups.StalkersBar.Growth].Text-End-Standart-Victory;
-[Groups.StalkersBar.Growth].Text-End-Standart-Lose;
-[Groups.StalkersBar.Mercenary].Text-End-Standart-Victory;
-[Groups.StalkersBar.Sectarianism].Text-End-Standart-Victory;
-[Groups.StalkersBar.Stability].Text-End-Standart-Victory;
-[Groups.StalkersBar.Stalkers].Text-End-Standart-Victory;
-[Groups.StalkersBar.Stalkers].Text-End-Standart-Lose;
-[Groups.StalkersBar.Unknow].Text-End-Standart-Victory;
-[Groups.StalkersBar.Unknow].Text-End-Standart-Lose;
-[Groups.StalkersBar.Zombie].Text-End-Standart-Victory;
-[Groups.StalkersDV.Anarchy].Text-End-Standart-Victory;
-[Groups.StalkersDV.AntiZone].Text-End-Standart-Victory;
-[Groups.StalkersDV.Control].Text-End-Standart-Victory;
-[Groups.StalkersDV.Crime].Text-End-Standart-Victory;
-[Groups.StalkersDV.Exploring].Text-End-Standart-Victory;
-[Groups.StalkersDV.Growth].Text-End-Standart-Victory;
-[Groups.StalkersDV.Growth].Text-End-Standart-Lose;
-[Groups.StalkersDV.Mercenary].Text-End-Standart-Victory;
-[Groups.StalkersDV.Sectarianism].Text-End-Standart-Victory;
-[Groups.StalkersDV.Stability].Text-End-Standart-Victory;
-[Groups.StalkersDV.Stalkers].Text-End-Standart-Victory;
-[Groups.StalkersDV.Stalkers].Text-End-Standart-Lose;
-[Groups.StalkersDV.Unknow].Text-End-Standart-Victory;
-[Groups.StalkersDV.Unknow].Text-End-Standart-Lose;
-[Groups.StalkersDV.Zombie].Text-End-Standart-Victory;
-[Groups.Deserters.Anarchy].Text-End-Standart-Victory;
-[Groups.Deserters.AntiZone].Text-End-Standart-Victory;
-[Groups.Deserters.Control].Text-End-Standart-Victory;
-[Groups.Deserters.Crime].Text-End-Standart-Victory;
-[Groups.Deserters.Exploring].Text-End-Standart-Victory;
-[Groups.Deserters.Growth].Text-End-Standart-Victory;
-[Groups.Deserters.Growth].Text-End-Standart-Lose;
-[Groups.Deserters.Mercenary].Text-End-Standart-Victory;
-[Groups.Deserters.Sectarianism].Text-End-Standart-Victory;
-[Groups.Deserters.Stability].Text-End-Standart-Victory;
-[Groups.Deserters.Stalkers].Text-End-Standart-Victory;
-[Groups.Deserters.Stalkers].Text-End-Standart-Lose;
-[Groups.Deserters.Unknow].Text-End-Standart-Victory;
-[Groups.Deserters.Unknow].Text-End-Standart-Lose;
-[Groups.Deserters.Zombie].Text-End-Standart-Victory;
+[Achievements.Achiv-1].Name;Utopia!
+[Achievements.Achiv-1].Desc;New achievement unlocked! Capture the entire Zone playing as the Loners faction on any difficulty.
+[Achievements.Achiv-1].Desc-Logo;Capture the entire Zone playing as the Loners faction on any difficulty.
+[Achievements.Achiv-2].Name;Autumn Gloom!
+[Achievements.Achiv-2].Desc;New achievement unlocked! Capture the entire Zone playing as Gray's Group on Experienced difficulty or higher.
+[Achievements.Achiv-2].Desc-Logo;Capture the entire Zone playing as Gray's Group on Experienced difficulty or higher.
+[Achievements.Achiv-3].Name;Underground Operations!
+[Achievements.Achiv-3].Desc;New achievement unlocked! Capture the Catacombs (Monolith Control Bunker), Lab X-10, Lab X-16, Lab X-18, and Agroprom Research Institute Underground territories playing as the Diggers faction on Veteran difficulty or higher.
+[Achievements.Achiv-3].Desc-Logo;Capture the Catacombs (Monolith Control Bunker), Lab X-10, Lab X-16, Lab X-18, and Agroprom Research Institute Underground territories playing as the Diggers faction on Veteran difficulty or higher.
+[Achievements.Achiv-4].Name;Where Are We Going?
+[Achievements.Achiv-4].Desc;New achievement unlocked! Capture the Cordon, Garbage, and Dark Valley locations playing as Boar's Gang on Master difficulty.
+[Achievements.Achiv-4].Desc-Logo;Capture the Cordon, Garbage, and Dark Valley locations playing as Boar's Gang on Master difficulty.
+[Achievements.Achiv-5].Name;Return Journey!
+[Achievements.Achiv-5].Desc;New achievement unlocked! Adopt the Anti-Zone ideology playing as Skull's Group and survive for 1 turn within the first 5 turns of the scenario.
+[Achievements.Achiv-5].Desc-Logo;Adopt the Anti-Zone ideology playing as Skull's Group and survive for 1 turn within the first 5 turns of the scenario.
+[Achievements.Achiv-6].Name;Too Many Action Movies!
+[Achievements.Achiv-6].Desc;New achievement unlocked! Adopt the Mercenary ideology playing as Wolf's Group on Master difficulty and survive for 1 turn within the first 15 turns of the scenario.
+[Achievements.Achiv-6].Desc-Logo;Adopt the Mercenary ideology playing as Wolf's Group on Master difficulty and survive for 1 turn within the first 15 turns of the scenario.
+[Traders.World].Name;Outside World
+[Traders.World].NeedText;Contact with the Outside World cannot always be established. Chance: 50%. Cost per connection attempt:
+[Traders.YourGroup].Name;Your Faction Trader
+[Traders.YourGroup].NeedText;You can always trade with your faction trader. Cost:
+[Traders.OtherGroup].Name;Enemy Faction Trader
+[Traders.OtherGroup].NeedText;To trade with other factions, first select an enemy territory on the map.
+[Traders.Trader1].Name;Sidorovich
+[Traders.Trader1].NeedText;Trading with him is possible only if you control the Novice Village territory on the Cordon. Cost:
+[Traders.Trader2].Name;Barman
+[Traders.Trader2].NeedText;Barman will be available for trading only if you control the 100 Rads Bar territory. Cost:
+[Traders.Trader3].Name;Sakharov
+[Traders.Trader3].NeedText;Sakharov is available only if you control the Bunker territory on the Yantar location. Cost:
+ScenarioName;Half-Life Period. Shadow of Chernobyl
+ScenarioDescription;A scenario without a storyline, where factions are divided according to local leaders rather than a unified structure. There are no time limits. Victory is achieved by capturing the entire Zone; defeat occurs upon losing your last territory. The scenario is non-canonical, so diplomacy diverges significantly from canon.
+[Groups.BanditsKaban.:main].Spy1-Name;Novice
+[Groups.BanditsKaban.:main].Spy2-Name;Experienced
+[Groups.BanditsKaban.:main].Spy3-Name;Veteran
+[Groups.BanditsKaban.:main].Spy4-Name;Master
+[Groups.BanditsHunters.:main].Spy1-Name;Novice
+[Groups.BanditsHunters.:main].Spy2-Name;Experienced
+[Groups.BanditsHunters.:main].Spy3-Name;Veteran
+[Groups.BanditsHunters.:main].Spy4-Name;Master
+[Groups.DutyCherep.:main].Spy1-Name;Novice
+[Groups.DutyCherep.:main].Spy2-Name;Experienced
+[Groups.DutyCherep.:main].Spy3-Name;Veteran
+[Groups.DutyCherep.:main].Spy4-Name;Master
+[Groups.Patrol.:main].Spy1-Name;Novice
+[Groups.Patrol.:main].Spy2-Name;Experienced
+[Groups.Patrol.:main].Spy3-Name;Veteran
+[Groups.Patrol.:main].Spy4-Name;Master
+[Groups.Crazy.:main].Spy1-Name;Novice
+[Groups.Crazy.:main].Spy2-Name;Experienced
+[Groups.Crazy.:main].Spy3-Name;Veteran
+[Groups.Crazy.:main].Spy4-Name;Master
+[Groups.Deserters.:main].Spy1-Name;Novice
+[Groups.Deserters.:main].Spy2-Name;Experienced
+[Groups.Deserters.:main].Spy3-Name;Veteran
+[Groups.Deserters.:main].Spy4-Name;Master
+[Groups.ZombieRadar.:main].Spy1-Name;Novice
+[Groups.ZombieRadar.:main].Spy2-Name;Experienced
+[Groups.ZombieRadar.:main].Spy3-Name;Veteran
+[Groups.ZombieRadar.:main].Spy4-Name;Master
+[Groups.StalkersLis.:main].Spy1-Name;Novice
+[Groups.StalkersLis.:main].Spy2-Name;Experienced
+[Groups.StalkersLis.:main].Spy3-Name;Veteran
+[Groups.StalkersLis.:main].Spy4-Name;Master
+[Groups.StalkersBes.:main].Spy1-Name;Novice
+[Groups.StalkersBes.:main].Spy2-Name;Experienced
+[Groups.StalkersBes.:main].Spy3-Name;Veteran
+[Groups.StalkersBes.:main].Spy4-Name;Master
+[Groups.StalkersSeriy.:main].Spy1-Name;Novice
+[Groups.StalkersSeriy.:main].Spy2-Name;Experienced
+[Groups.StalkersSeriy.:main].Spy3-Name;Veteran
+[Groups.StalkersSeriy.:main].Spy4-Name;Master
+[Groups.StalkersDiggers.:main].Spy1-Name;Novice
+[Groups.StalkersDiggers.:main].Spy2-Name;Experienced
+[Groups.StalkersDiggers.:main].Spy3-Name;Veteran
+[Groups.StalkersDiggers.:main].Spy4-Name;Master
+[Groups.StalkersDV.:main].Spy1-Name;Novice
+[Groups.StalkersDV.:main].Spy2-Name;Experienced
+[Groups.StalkersDV.:main].Spy3-Name;Veteran
+[Groups.StalkersDV.:main].Spy4-Name;Master
+[Groups.StalkersBar.:main].Spy1-Name;Novice
+[Groups.StalkersBar.:main].Spy2-Name;Experienced
+[Groups.StalkersBar.:main].Spy3-Name;Veteran
+[Groups.StalkersBar.:main].Spy4-Name;Master
+[Groups.StalkersMilitary.:main].Spy1-Name;Novice
+[Groups.StalkersMilitary.:main].Spy2-Name;Experienced
+[Groups.StalkersMilitary.:main].Spy3-Name;Veteran
+[Groups.StalkersMilitary.:main].Spy4-Name;Master
+[Groups.BanditsKaban.:main].DiplomacyText-Question-War;Well, sucker, had your fun? Time to face the music! The boys are comin' for ya!
+[Groups.BanditsKaban.:main].DiplomacyText-Question-Neutral;Hey-hey! Bro, chill out, yeah? Time to stop shootin' at each other, capiche?
+[Groups.BanditsKaban.:main].DiplomacyText-Question-Alliance;Hey, Bro, how 'bout we team up, yeah? Y'know... shoot some guys together... and all that. Whaddya say? Deal?
+[Groups.BanditsKaban.:main].DiplomacyText-Question-BreakAlliance;Nah, man, you're a real sucker, a total loser. From now on, everyone's on their own!
+[Groups.BanditsKaban.:main].DiplomacyText-RequestMoney-Ask;Hey, listen up, pal, got any spare change, yeah? We could use about this much:
+[Groups.BanditsKaban.:main].DiplomacyText-Ans-0-Down;Who do you think you're messin' with, tough guy? You're dead meat, ya hear?!
+[Groups.BanditsKaban.:main].DiplomacyText-Ans-1-Down;Well, that's just... wow, man...
+[Groups.BanditsKaban.:main].DiplomacyText-Ans-1-No;We'll find some – and cut it into strips!
+[Groups.BanditsKaban.:main].DiplomacyText-Ans-1-Yes;Listen, we won't touch ya, word is bond, for real!
+[Groups.BanditsKaban.:main].DiplomacyText-Ans-2-No;Nah, nah, that's totally not it, you're bluffing!
+[Groups.BanditsKaban.:main].DiplomacyText-Ans-2-Yes;Hang tight, bro, everything's gonna be smooth real soon...
+[Groups.BanditsKaban.:main].DiplomacyText-RequestMoney-Ans-No;Did you hit your head or somethin'? Where would we get that kind of cash! We could use some ourselves...
+[Groups.BanditsKaban.:main].DiplomacyText-RequestMoney-Ans-Yes;Bro, here's the dough!
+[Groups.BanditsKaban.:main].DiplomacyText-Question-Neutral-No;Bro, that was really uncalled for! Shouldn't have done that...
+[Groups.BanditsKaban.:main].DiplomacyText-Question-Neutral-Yes;Hey, bro, that's what I'm talkin' about! Good job...
+[Groups.BanditsKaban.:main].DiplomacyText-Question-Alliance-No;Bro, that was really uncalled for! Shouldn't have done that...
+[Groups.BanditsKaban.:main].DiplomacyText-Question-Alliance-Yes;Oh, bro, excellent! Now we'll be shootin' suckers together!
+[Groups.BanditsKaban.:main].Text-End-Step-Victory;You survived! Victory!
+[Groups.BanditsKaban.:main].Text-End-EventFlag-Victory;Victory by event flag!
+[Groups.BanditsKaban.:main].Text-End-Standart-Lose;The faction has been completely wiped out. Now other factions will divide the Zone among themselves. Defeat!
+[Groups.BanditsKaban.:main].Text-End-Step-Lose;Time's up. You failed to gain control over the Zone. Defeat!
+[Groups.BanditsKaban.:main].Text-End-EventFlag-Lose;Time's up. You failed to gain control over the Zone. Defeat!
+[Groups.BanditsHunters.:main].DiplomacyText-Question-War;Well, sucker, had your fun? Time to face the music! The boys are comin' for ya!
+[Groups.BanditsHunters.:main].DiplomacyText-Question-Neutral;Hey-hey! Bro, chill out, yeah? Time to stop shootin' at each other, capiche?
+[Groups.BanditsHunters.:main].DiplomacyText-Question-Alliance;Hey, Bro, how 'bout we team up, yeah? Y'know... shoot some guys together... and all that. Whaddya say? Deal?
+[Groups.BanditsHunters.:main].DiplomacyText-Question-BreakAlliance;Nah, man, you're a real sucker, a total loser. From now on, everyone's on their own!
+[Groups.BanditsHunters.:main].DiplomacyText-RequestMoney-Ask;Hey, listen up, pal, got any spare change, yeah? We could use about this much:
+[Groups.BanditsHunters.:main].DiplomacyText-Ans-0-Down;Who do you think you're messin' with, tough guy? You're dead meat, ya hear?!
+[Groups.BanditsHunters.:main].DiplomacyText-Ans-1-Down;Well, that's just... wow, man...
+[Groups.BanditsHunters.:main].DiplomacyText-Ans-1-No;We'll find some – and cut it into strips!
+[Groups.BanditsHunters.:main].DiplomacyText-Ans-1-Yes;Listen, we won't touch ya, word is bond, for real!
+[Groups.BanditsHunters.:main].DiplomacyText-Ans-2-No;Nah, nah, that's totally not it, you're bluffing!
+[Groups.BanditsHunters.:main].DiplomacyText-Ans-2-Yes;Hang tight, bro, everything's gonna be smooth real soon...
+[Groups.BanditsHunters.:main].DiplomacyText-RequestMoney-Ans-No;Did you hit your head or somethin'? Where would we get that kind of cash! We could use some ourselves...
+[Groups.BanditsHunters.:main].DiplomacyText-RequestMoney-Ans-Yes;Bro, here's the dough!
+[Groups.BanditsHunters.:main].DiplomacyText-Question-Neutral-No;Bro, that was really uncalled for! Shouldn't have done that...
+[Groups.BanditsHunters.:main].DiplomacyText-Question-Neutral-Yes;Hey, bro, that's what I'm talkin' about! Good job...
+[Groups.BanditsHunters.:main].DiplomacyText-Question-Alliance-No;Bro, that was really uncalled for! Shouldn't have done that...
+[Groups.BanditsHunters.:main].DiplomacyText-Question-Alliance-Yes;Oh, bro, excellent! Now we'll be shootin' suckers together!
+[Groups.BanditsHunters.:main].Text-End-Step-Victory;You survived! Victory!
+[Groups.BanditsHunters.:main].Text-End-EventFlag-Victory;Victory by event flag!
+[Groups.BanditsHunters.:main].Text-End-Standart-Lose;The faction has been completely wiped out. Now other factions will divide the Zone among themselves. Defeat!
+[Groups.BanditsHunters.:main].Text-End-Step-Lose;Time's up. You failed to gain control over the Zone. Defeat!
+[Groups.BanditsHunters.:main].Text-End-EventFlag-Lose;Time's up. You failed to gain control over the Zone. Defeat!
+[Groups.DutyCherep.:main].DiplomacyText-Question-War;You and your gang are a threat to the world. Time to deal with you!
+[Groups.DutyCherep.:main].DiplomacyText-Question-Neutral;We want to establish a ceasefire with you. Do you agree?
+[Groups.DutyCherep.:main].DiplomacyText-Question-Alliance;We propose an alliance. Together we could carry out a couple of operations against our enemies. Do you agree?
+[Groups.DutyCherep.:main].DiplomacyText-Question-BreakAlliance;We will no longer cooperate!
+[Groups.DutyCherep.:main].DiplomacyText-RequestMoney-Ask;Got any spare funds? Times are tough for us. We could use about this much:
+[Groups.DutyCherep.:main].DiplomacyText-Ans-0-Down;Understood. We'll cleanse the Zone of you too!
+[Groups.DutyCherep.:main].DiplomacyText-Ans-1-Down;Pity... but if you insist, so be it.
+[Groups.DutyCherep.:main].DiplomacyText-Ans-1-No;No, we definitely won't go for that right now.
+[Groups.DutyCherep.:main].DiplomacyText-Ans-1-Yes;We hope for further cooperation.
+[Groups.DutyCherep.:main].DiplomacyText-Ans-2-No;No, we definitely won't go for that right now.
+[Groups.DutyCherep.:main].DiplomacyText-Ans-2-Yes;Ri-i-ight, excellent, we have a deal!
+[Groups.DutyCherep.:main].DiplomacyText-RequestMoney-Ans-No;No, we cannot help at the moment.
+[Groups.DutyCherep.:main].DiplomacyText-RequestMoney-Ans-Yes;Very well, we will help you.
+[Groups.DutyCherep.:main].DiplomacyText-Question-Neutral-No;Oh, what a shame you refused!
+[Groups.DutyCherep.:main].DiplomacyText-Question-Neutral-Yes;Good, that's encouraging!
+[Groups.DutyCherep.:main].DiplomacyText-Question-Alliance-No;Oh, what a shame you refused!
+[Groups.DutyCherep.:main].DiplomacyText-Question-Alliance-Yes;Good, that's encouraging!
+[Groups.DutyCherep.:main].Text-End-Step-Victory;You survived! Victory!
+[Groups.DutyCherep.:main].Text-End-EventFlag-Victory;Victory by event flag!
+[Groups.DutyCherep.:main].Text-End-Standart-Lose;The faction has been completely wiped out. Now other factions will divide the Zone among themselves. Defeat!
+[Groups.DutyCherep.:main].Text-End-Step-Lose;Time's up. You failed to gain control over the Zone. Defeat!
+[Groups.DutyCherep.:main].Text-End-EventFlag-Lose;Time's up. You failed to gain control over the Zone. Defeat!
+[Groups.Patrol.:main].DiplomacyText-Question-War;A contract has been issued for you. Nothing personal. Just business.
+[Groups.Patrol.:main].DiplomacyText-Question-Neutral;This war benefits neither of us. How about peace?
+[Groups.Patrol.:main].DiplomacyText-Question-Alliance;Closer cooperation with you would be advantageous for us. Do you agree?
+[Groups.Patrol.:main].DiplomacyText-Question-BreakAlliance;We will no longer cooperate with you.
+[Groups.Patrol.:main].DiplomacyText-RequestMoney-Ask;We've had a couple of hiccups with certain contracts. We could use some financial assistance in the amount of:
+[Groups.Patrol.:main].DiplomacyText-Ans-0-Down;We won't be doing any more business with you!
+[Groups.Patrol.:main].DiplomacyText-Ans-1-Down;Pity. You're missing out on your profit.
+[Groups.Patrol.:main].DiplomacyText-Ans-1-No;That's not advantageous for us right now.
+[Groups.Patrol.:main].DiplomacyText-Ans-1-Yes;Very well. We hope for a mutually beneficial partnership.
+[Groups.Patrol.:main].DiplomacyText-Ans-2-No;That's not advantageous for us at the moment.
+[Groups.Patrol.:main].DiplomacyText-Ans-2-Yes;Okay, that works for us.
+[Groups.Patrol.:main].DiplomacyText-RequestMoney-Ans-No;We don't have many contract bonuses right now, so we can't help.
+[Groups.Patrol.:main].DiplomacyText-RequestMoney-Ans-Yes;Alright, transferred.
+[Groups.Patrol.:main].DiplomacyText-Question-Neutral-No;Refused? Fine then.
+[Groups.Patrol.:main].DiplomacyText-Question-Neutral-Yes;Excellent, glad you agreed!
+[Groups.Patrol.:main].DiplomacyText-Question-Alliance-No;Refused? Fine then.
+[Groups.Patrol.:main].DiplomacyText-Question-Alliance-Yes;Excellent, glad you agreed!
+[Groups.Patrol.:main].Text-End-Step-Victory;You survived! Victory!
+[Groups.Patrol.:main].Text-End-EventFlag-Victory;Victory by event flag!
+[Groups.Patrol.:main].Text-End-Standart-Lose;The faction has been completely wiped out. Now other factions will divide the Zone among themselves. Defeat!
+[Groups.Patrol.:main].Text-End-Step-Lose;Time's up. You failed to gain control over the Zone. Defeat!
+[Groups.Patrol.:main].Text-End-EventFlag-Lose;Time's up. You failed to gain control over the Zone. Defeat!
+[Groups.StalkersLis.:main].DiplomacyText-Question-War;We declare war on you!
+[Groups.StalkersLis.:main].DiplomacyText-Question-Neutral;Time to end this bloodshed. We're ready for peace. Are you?
+[Groups.StalkersLis.:main].DiplomacyText-Question-Alliance;We wish to form an alliance with you. Do you agree?
+[Groups.StalkersLis.:main].DiplomacyText-Question-BreakAlliance;We are terminating the alliance!
+[Groups.StalkersLis.:main].DiplomacyText-RequestMoney-Ask;We've hit some financial difficulties. Could use some help. We're looking for a sum like this:
+[Groups.StalkersLis.:main].DiplomacyText-Ans-0-Down;You backstabbing rat! War it is, then!
+[Groups.StalkersLis.:main].DiplomacyText-Ans-1-Down;So be it.
+[Groups.StalkersLis.:main].DiplomacyText-Ans-1-No;We see no necessity for that at the moment.
+[Groups.StalkersLis.:main].DiplomacyText-Ans-1-Yes;Yes, we agree to a ceasefire.
+[Groups.StalkersLis.:main].DiplomacyText-Ans-2-No;We are not sure this is needed right now.
+[Groups.StalkersLis.:main].DiplomacyText-Ans-2-Yes;Yes, we agree to cooperate.
+[Groups.StalkersLis.:main].DiplomacyText-RequestMoney-Ans-No;Regrettably, we are not in a position to provide that amount at this time.
+[Groups.StalkersLis.:main].DiplomacyText-RequestMoney-Ans-Yes;Alright, we will transfer that sum to you.
+[Groups.StalkersLis.:main].DiplomacyText-Question-Neutral-No;It's a shame you refused!
+[Groups.StalkersLis.:main].DiplomacyText-Question-Neutral-Yes;Good! We're glad you agreed!
+[Groups.StalkersLis.:main].DiplomacyText-Question-Alliance-No;It's a shame you refused!
+[Groups.StalkersLis.:main].DiplomacyText-Question-Alliance-Yes;Good! We're glad you agreed!
+[Groups.StalkersLis.:main].Text-End-Step-Victory;You survived! Victory!
+[Groups.StalkersLis.:main].Text-End-EventFlag-Victory;Victory by event flag!
+[Groups.StalkersLis.:main].Text-End-Standart-Lose;The faction has been completely wiped out. Now other factions will divide the Zone among themselves. Defeat!
+[Groups.StalkersLis.:main].Text-End-Step-Lose;Time's up. You failed to gain control over the Zone. Defeat!
+[Groups.StalkersLis.:main].Text-End-EventFlag-Lose;Time's up. You failed to gain control over the Zone. Defeat!
+[Groups.StalkersBes.:main].DiplomacyText-Question-War;We declare war on you!
+[Groups.StalkersBes.:main].DiplomacyText-Question-Neutral;Time to end this bloodshed. We're ready for peace. Are you?
+[Groups.StalkersBes.:main].DiplomacyText-Question-Alliance;We wish to form an alliance with you. Do you agree?
+[Groups.StalkersBes.:main].DiplomacyText-Question-BreakAlliance;We are terminating the alliance!
+[Groups.StalkersBes.:main].DiplomacyText-RequestMoney-Ask;We've hit some financial difficulties. Could use some help. We're looking for a sum like this:
+[Groups.StalkersBes.:main].DiplomacyText-Ans-0-Down;You backstabbing rat! War it is, then!
+[Groups.StalkersBes.:main].DiplomacyText-Ans-1-Down;So be it.
+[Groups.StalkersBes.:main].DiplomacyText-Ans-1-No;We see no necessity for that at the moment.
+[Groups.StalkersBes.:main].DiplomacyText-Ans-1-Yes;Yes, we agree to a ceasefire.
+[Groups.StalkersBes.:main].DiplomacyText-Ans-2-No;We are not sure this is needed right now.
+[Groups.StalkersBes.:main].DiplomacyText-Ans-2-Yes;Yes, we agree to cooperate.
+[Groups.StalkersBes.:main].DiplomacyText-RequestMoney-Ans-No;Regrettably, we are not in a position to provide that amount at this time.
+[Groups.StalkersBes.:main].DiplomacyText-RequestMoney-Ans-Yes;Alright, we will transfer that sum to you.
+[Groups.StalkersBes.:main].DiplomacyText-Question-Neutral-No;It's a shame you refused!
+[Groups.StalkersBes.:main].DiplomacyText-Question-Neutral-Yes;Good! We're glad you agreed!
+[Groups.StalkersBes.:main].DiplomacyText-Question-Alliance-No;It's a shame you refused!
+[Groups.StalkersBes.:main].DiplomacyText-Question-Alliance-Yes;Good! We're glad you agreed!
+[Groups.StalkersBes.:main].Text-End-Step-Victory;You survived! Victory!
+[Groups.StalkersBes.:main].Text-End-EventFlag-Victory;Victory by event flag!
+[Groups.StalkersBes.:main].Text-End-Standart-Lose;The faction has been completely wiped out. Now other factions will divide the Zone among themselves. Defeat!
+[Groups.StalkersBes.:main].Text-End-Step-Lose;Time's up. You failed to gain control over the Zone. Defeat!
+[Groups.StalkersBes.:main].Text-End-EventFlag-Lose;Time's up. You failed to gain control over the Zone. Defeat!
+[Groups.StalkersSeriy.:main].DiplomacyText-Question-War;We declare war on you!
+[Groups.StalkersSeriy.:main].DiplomacyText-Question-Neutral;Time to end this bloodshed. We're ready for peace. Are you?
+[Groups.StalkersSeriy.:main].DiplomacyText-Question-Alliance;We wish to form an alliance with you. Do you agree?
+[Groups.StalkersSeriy.:main].DiplomacyText-Question-BreakAlliance;We are terminating the alliance!
+[Groups.StalkersSeriy.:main].DiplomacyText-RequestMoney-Ask;We've hit some financial difficulties. Could use some help. We're looking for a sum like this:
+[Groups.StalkersSeriy.:main].DiplomacyText-Ans-0-Down;You backstabbing rat! War it is, then!
+[Groups.StalkersSeriy.:main].DiplomacyText-Ans-1-Down;So be it.
+[Groups.StalkersSeriy.:main].DiplomacyText-Ans-1-No;We see no necessity for that at the moment.
+[Groups.StalkersSeriy.:main].DiplomacyText-Ans-1-Yes;Yes, we agree to a ceasefire.
+[Groups.StalkersSeriy.:main].DiplomacyText-Ans-2-No;We are not sure this is needed right now.
+[Groups.StalkersSeriy.:main].DiplomacyText-Ans-2-Yes;Yes, we agree to cooperate.
+[Groups.StalkersSeriy.:main].DiplomacyText-RequestMoney-Ans-No;Regrettably, we are not in a position to provide that amount at this time.
+[Groups.StalkersSeriy.:main].DiplomacyText-RequestMoney-Ans-Yes;Alright, we will transfer that sum to you.
+[Groups.StalkersSeriy.:main].DiplomacyText-Question-Neutral-No;It's a shame you refused!
+[Groups.StalkersSeriy.:main].DiplomacyText-Question-Neutral-Yes;Good! We're glad you agreed!
+[Groups.StalkersSeriy.:main].DiplomacyText-Question-Alliance-No;It's a shame you refused!
+[Groups.StalkersSeriy.:main].DiplomacyText-Question-Alliance-Yes;Good! We're glad you agreed!
+[Groups.StalkersSeriy.:main].Text-End-Step-Victory;You survived! Victory!
+[Groups.StalkersSeriy.:main].Text-End-EventFlag-Victory;Victory by event flag!
+[Groups.StalkersSeriy.:main].Text-End-Standart-Lose;The faction has been completely wiped out. Now other factions will divide the Zone among themselves. Defeat!
+[Groups.StalkersSeriy.:main].Text-End-Step-Lose;Time's up. You failed to gain control over the Zone. Defeat!
+[Groups.StalkersSeriy.:main].Text-End-EventFlag-Lose;Time's up. You failed to gain control over the Zone. Defeat!
+[Groups.StalkersDiggers.:main].DiplomacyText-Question-War;We declare war on you!
+[Groups.StalkersDiggers.:main].DiplomacyText-Question-Neutral;Time to end this bloodshed. We're ready for peace. Are you?
+[Groups.StalkersDiggers.:main].DiplomacyText-Question-Alliance;We wish to form an alliance with you. Do you agree?
+[Groups.StalkersDiggers.:main].DiplomacyText-Question-BreakAlliance;We are terminating the alliance!
+[Groups.StalkersDiggers.:main].DiplomacyText-RequestMoney-Ask;We've hit some financial difficulties. Could use some help. We're looking for a sum like this:
+[Groups.StalkersDiggers.:main].DiplomacyText-Ans-0-Down;You backstabbing rat! War it is, then!
+[Groups.StalkersDiggers.:main].DiplomacyText-Ans-1-Down;So be it.
+[Groups.StalkersDiggers.:main].DiplomacyText-Ans-1-No;We see no necessity for that at the moment.
+[Groups.StalkersDiggers.:main].DiplomacyText-Ans-1-Yes;Yes, we agree to a ceasefire.
+[Groups.StalkersDiggers.:main].DiplomacyText-Ans-2-No;We are not sure this is needed right now.
+[Groups.StalkersDiggers.:main].DiplomacyText-Ans-2-Yes;Yes, we agree to cooperate.
+[Groups.StalkersDiggers.:main].DiplomacyText-RequestMoney-Ans-No;Regrettably, we are not in a position to provide that amount at this time.
+[Groups.StalkersDiggers.:main].DiplomacyText-RequestMoney-Ans-Yes;Alright, we will transfer that sum to you.
+[Groups.StalkersDiggers.:main].DiplomacyText-Question-Neutral-No;It's a shame you refused!
+[Groups.StalkersDiggers.:main].DiplomacyText-Question-Neutral-Yes;Good! We're glad you agreed!
+[Groups.StalkersDiggers.:main].DiplomacyText-Question-Alliance-No;It's a shame you refused!
+[Groups.StalkersDiggers.:main].DiplomacyText-Question-Alliance-Yes;Good! We're glad you agreed!
+[Groups.StalkersDiggers.:main].Text-End-Step-Victory;You survived! Victory!
+[Groups.StalkersDiggers.:main].Text-End-EventFlag-Victory;Victory by event flag!
+[Groups.StalkersDiggers.:main].Text-End-Standart-Lose;The faction has been completely wiped out. Now other factions will divide the Zone among themselves. Defeat!
+[Groups.StalkersDiggers.:main].Text-End-Step-Lose;Time's up. You failed to gain control over the Zone. Defeat!
+[Groups.StalkersDiggers.:main].Text-End-EventFlag-Lose;Time's up. You failed to gain control over the Zone. Defeat!
+[Groups.StalkersDV.:main].DiplomacyText-Question-War;We declare war on you!
+[Groups.StalkersDV.:main].DiplomacyText-Question-Neutral;Time to end this bloodshed. We're ready for peace. Are you?
+[Groups.StalkersDV.:main].DiplomacyText-Question-Alliance;We wish to form an alliance with you. Do you agree?
+[Groups.StalkersDV.:main].DiplomacyText-Question-BreakAlliance;We are terminating the alliance!
+[Groups.StalkersDV.:main].DiplomacyText-RequestMoney-Ask;We've hit some financial difficulties. Could use some help. We're looking for a sum like this:
+[Groups.StalkersDV.:main].DiplomacyText-Ans-0-Down;You backstabbing rat! War it is, then!
+[Groups.StalkersDV.:main].DiplomacyText-Ans-1-Down;So be it.
+[Groups.StalkersDV.:main].DiplomacyText-Ans-1-No;We see no necessity for that at the moment.
+[Groups.StalkersDV.:main].DiplomacyText-Ans-1-Yes;Yes, we agree to a ceasefire.
+[Groups.StalkersDV.:main].DiplomacyText-Ans-2-No;We are not sure this is needed right now.
+[Groups.StalkersDV.:main].DiplomacyText-Ans-2-Yes;Yes, we agree to cooperate.
+[Groups.StalkersDV.:main].DiplomacyText-RequestMoney-Ans-No;Regrettably, we are not in a position to provide that amount at this time.
+[Groups.StalkersDV.:main].DiplomacyText-RequestMoney-Ans-Yes;Alright, we will transfer that sum to you.
+[Groups.StalkersDV.:main].DiplomacyText-Question-Neutral-No;It's a shame you refused!
+[Groups.StalkersDV.:main].DiplomacyText-Question-Neutral-Yes;Good! We're glad you agreed!
+[Groups.StalkersDV.:main].DiplomacyText-Question-Alliance-No;It's a shame you refused!
+[Groups.StalkersDV.:main].DiplomacyText-Question-Alliance-Yes;Good! We're glad you agreed!
+[Groups.StalkersDV.:main].Text-End-Step-Victory;You survived! Victory!
+[Groups.StalkersDV.:main].Text-End-EventFlag-Victory;Victory by event flag!
+[Groups.StalkersDV.:main].Text-End-Standart-Lose;The faction has been completely wiped out. Now other factions will divide the Zone among themselves. Defeat!
+[Groups.StalkersDV.:main].Text-End-Step-Lose;Time's up. You failed to gain control over the Zone. Defeat!
+[Groups.StalkersDV.:main].Text-End-EventFlag-Lose;Time's up. You failed to gain control over the Zone. Defeat!
+[Groups.StalkersBar.:main].DiplomacyText-Question-War;We declare war on you!
+[Groups.StalkersBar.:main].DiplomacyText-Question-Neutral;Time to end this bloodshed. We're ready for peace. Are you?
+[Groups.StalkersBar.:main].DiplomacyText-Question-Alliance;We wish to form an alliance with you. Do you agree?
+[Groups.StalkersBar.:main].DiplomacyText-Question-BreakAlliance;We are terminating the alliance!
+[Groups.StalkersBar.:main].DiplomacyText-RequestMoney-Ask;We've hit some financial difficulties. Could use some help. We're looking for a sum like this:
+[Groups.StalkersBar.:main].DiplomacyText-Ans-0-Down;You backstabbing rat! War it is, then!
+[Groups.StalkersBar.:main].DiplomacyText-Ans-1-Down;So be it.
+[Groups.StalkersBar.:main].DiplomacyText-Ans-1-No;We see no necessity for that at the moment.
+[Groups.StalkersBar.:main].DiplomacyText-Ans-1-Yes;Yes, we agree to a ceasefire.
+[Groups.StalkersBar.:main].DiplomacyText-Ans-2-No;We are not sure this is needed right now.
+[Groups.StalkersBar.:main].DiplomacyText-Ans-2-Yes;Yes, we agree to cooperate.
+[Groups.StalkersBar.:main].DiplomacyText-RequestMoney-Ans-No;Regrettably, we are not in a position to provide that amount at this time.
+[Groups.StalkersBar.:main].DiplomacyText-RequestMoney-Ans-Yes;Alright, we will transfer that sum to you.
+[Groups.StalkersBar.:main].DiplomacyText-Question-Neutral-No;It's a shame you refused!
+[Groups.StalkersBar.:main].DiplomacyText-Question-Neutral-Yes;Good! We're glad you agreed!
+[Groups.StalkersBar.:main].DiplomacyText-Question-Alliance-No;It's a shame you refused!
+[Groups.StalkersBar.:main].DiplomacyText-Question-Alliance-Yes;Good! We're glad you agreed!
+[Groups.StalkersBar.:main].Text-End-Step-Victory;You survived! Victory!
+[Groups.StalkersBar.:main].Text-End-EventFlag-Victory;Victory by event flag!
+[Groups.StalkersBar.:main].Text-End-Standart-Lose;The faction has been completely wiped out. Now other factions will divide the Zone among themselves. Defeat!
+[Groups.StalkersBar.:main].Text-End-Step-Lose;Time's up. You failed to gain control over the Zone. Defeat!
+[Groups.StalkersBar.:main].Text-End-EventFlag-Lose;Time's up. You failed to gain control over the Zone. Defeat!
