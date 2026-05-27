@@ -595,11 +595,11 @@
 [StoryEvents.Event-Monolith-02].Desc-Owner;Если вы видите этот ивент, то это баг ивента Event-Monolith-02
 [StoryEvents.Event-Monolith-02].Desc-NonOwner;Если вы видите этот ивент, то это баг ивента Event-Monolith-02
 [StoryEvents.Event-Monolith-03].Name;Пробуждение Монолита 3
-[StoryEvents.Event-Monolith-03].Desc-Owner;Если вы видите этот ивент, то это баг ивента Event-Monolith-02
-[StoryEvents.Event-Monolith-03].Desc-NonOwner;Если вы видите этот ивент, то это баг ивента Event-Monolith-02
+[StoryEvents.Event-Monolith-03].Desc-Owner;Если вы видите этот ивент, то это баг ивента Event-Monolith-03
+[StoryEvents.Event-Monolith-03].Desc-NonOwner;Если вы видите этот ивент, то это баг ивента Event-Monolith-03
 [StoryEvents.Event-Monolith-04].Name;Пробуждение Монолита 4
-[StoryEvents.Event-Monolith-04].Desc-Owner;Если вы видите этот ивент, то это баг ивента Event-Monolith-02
-[StoryEvents.Event-Monolith-04].Desc-NonOwner;Если вы видите этот ивент, то это баг ивента Event-Monolith-02
+[StoryEvents.Event-Monolith-04].Desc-Owner;Если вы видите этот ивент, то это баг ивента Event-Monolith-04
+[StoryEvents.Event-Monolith-04].Desc-NonOwner;Если вы видите этот ивент, то это баг ивента Event-Monolith-04
 [StoryEvents.Event-Monolith-05].Name;Пробуждение Монолита 5
 [StoryEvents.Event-Monolith-05].Desc-Owner;Если вы видите этот ивент, то это баг ивента Event-Limansk-Monolith-Check-05
 [StoryEvents.Event-Monolith-05].Desc-NonOwner;Если вы видите этот ивент, то это баг ивента Event-Limansk-Monolith-Check-05
