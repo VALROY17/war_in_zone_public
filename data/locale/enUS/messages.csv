@@ -102,7 +102,7 @@
 [Form_AtackEnd].FT_5;Mutant rampage on the territory
 [Form_AtackEnd].FT_7;Mutants raided the player's territory
 [Form_AtackEnd].FT_8;Mutants attacked the player's territory
-[Form_AtackEnd].FT_11;Clearing the area of ??mutants
+[Form_AtackEnd].FT_11;Clearing the area of mutants
 [Form_AtackEnd].FT_12;The player went on reconnaissance mission into mutant territory.
 [Form_AtackEnd].FT_13;The player went into a battle to capture mutant territory.
 [Form_AtackEnd].FT_14;The player went on a reconnaissance mission into enemy territory.
@@ -182,7 +182,7 @@
 [Form_Diplomacy].BTN_Send_Neutral.Hint;Offer a truce. After offering a truce, you must wait for a response, which will be received on the next turn.
 [Form_Diplomacy].BTN_Break_Alliace.Hint;Break alliance. The alliance is broken immediately after pressing the button.
 [Form_Diplomacy].BTN_Request_Money.Hint;Send a request to transfer money to you. You must wait for a response, which will be received on the next turn.
-[Form_KillMutants].TitleText;Clearing the area of ??mutants
+[Form_KillMutants].TitleText;Clearing the area of mutants
 [Form_KillMutants].Text1;Garrison
 [Form_KillMutants].Text2;Garrison
 [Form_KillMutants].Text3;Garrison
@@ -195,7 +195,7 @@
 [Form_KillMutants].Text10;Number of people:
 [Form_KillMutants].Text11;Number of people:
 [Form_KillMutants].Text12;Number of people:
-[Form_KillMutants].BTN_Next;Send the specified soldiers to clear the area of ??mutants.
+[Form_KillMutants].BTN_Next;Send the specified soldiers to clear the area of mutants.
 [Form_KillMutants].BTN_Back;Cancel the clearing of the area from mutants
 [Form_MoreInfo].TitleText;Additional information
 [Form_MoreInfo].Text1;Current total number of soldiers in the group:
@@ -373,9 +373,9 @@
 [Form_ZonaMenu].ZonaTypeLandHint9;Range bonus for defenders: %d%%
 [Form_ZonaMenu].BTNHint1;Send recons to find out the number of soldiers in the area
 [Form_ZonaMenu].BTNHint2;Conduct diplomatic negotiations with the group
-[Form_ZonaMenu].BTNHint3;Sell ??or buy ammunition, resources and other goods
+[Form_ZonaMenu].BTNHint3;Sell or buy ammunition, resources and other goods
 [Form_ZonaMenu].BTNHint4;Send soldiers to search for artifacts on the territory
-[Form_ZonaMenu].BTNHint5;Send soldiers to clear the area of ??mutants
+[Form_ZonaMenu].BTNHint5;Send soldiers to clear the area of mutants
 [Form_ZonaMenu].BTNHint6;Send the soldiers into the attack
 [Form_ZonaMenu].BTNHint7;Send soldiers to another territory
 [Form_ZonaMenu].BTNHint8;Recruit new soldiers and change the faction's weapons
@@ -685,7 +685,7 @@
 [GameLog].LT_1;%d Faction %s turn: %s
 [GameLog].LT_2;%d Total turn: %s
 [GameLog].LT_3;Attacked the territory from %s location %s 
-[GameLog].LT_4;Began clearing the area of ??mutants
+[GameLog].LT_4;Began clearing the area of mutants
 [GameLog].LT_5;They started to run amok on the territory
 [GameLog].LT_6;Organized an invasion of the territory
 [GameLog].LT_7;draw
@@ -829,7 +829,7 @@
 [Other].Exception_56;Unknown resource %s
 [Other].Exception_57;The %s section is duplicated in Events_Story.ini
 [Other].Exception_58;The %s section is duplicated in Advisors.ini
-[Other].Exception_59;For faction %s, the AI ??has a deputy %s belonging to another faction.
+[Other].Exception_59;For faction %s, the AI has a deputy %s belonging to another faction.
 [Other].Exception_60;Faction %s has a non-existent deputy %s installed on the AI.
 [Other].Exception_61;The scenario uses a brain burner and %s is allowed to control it, but no control zone is specified.
 [Other].Exception_62;The script uses a psi installation and %s is allowed to control it, but no control zone is specified.
@@ -1556,7 +1556,7 @@
 [Groups.Bandits.:main].Text-End-Step-Lose;Time's up, you failed to gain control of the Zone. Defeat!
 [Groups.Bandits.:main].Text-End-EventFlag-Lose;Time's up, you failed to gain control of the Zone. Defeat!
 [Groups.Bandits.Anarchy].Text-End-Standart-Victory;"Victory! The faction's behavior soon became less and less like its original form. Yes, there was still crime, but it was diminishing. The elite tried to promote a theme close to that advocated by the ""Freedom"" faction, while the lower ranks were slow to embrace these new ideals, as the old methods of robbery and looting seemed simpler and more understandable. The group was splintering before our eyes. Every new day brought new instances of disobedience by individual groups. A new conflict in the Zone was about to begin..."
-[Groups.Bandits.AntiZone].Text-End-Standart-Victory;"Victory! The gang's behavior soon became less and less like its original self. The criminal element diminished significantly. The leadership increasingly pushed the idea of ??fighting the Zone. Yes, many understood that there was no one left to rob, everyone was part of the faction, and they agreed. But since the gang also included real criminals, separate groups formed to rob those same ""their own."" Localized fighting broke out all around. The Zone once again found itself on the brink of a full-scale war of all against all..."
+[Groups.Bandits.AntiZone].Text-End-Standart-Victory;"Victory! The gang's behavior soon became less and less like its original self. The criminal element diminished significantly. The leadership increasingly pushed the idea of fighting the Zone. Yes, many understood that there was no one left to rob, everyone was part of the faction, and they agreed. But since the gang also included real criminals, separate groups formed to rob those same ""their own."" Localized fighting broke out all around. The Zone once again found itself on the brink of a full-scale war of all against all..."
 [Groups.Bandits.Control].Text-End-Standart-Victory;"Victory! The faction's behavior soon became less and less like its original form. Crime levels dropped significantly. A strict hierarchy was established. The name ""Penal Battalion"" best described the situation. Rumors circulated among the faction's members that the top brass had caved in to the government's influence. Many accepted this, but there were also those in power with the ""big shots"" who disagreed with this arrangement. A new, large-scale conflict was brewing, this time within the group..."
 [Groups.Bandits.Crime].Text-End-Standart-Victory;Victory! The Zone had become a criminal quasi-state. The Zone began to live by its own rules. Soon, there was no one left to rob, and the gang became mired in infighting. Instead of shooting monsters and looting artifacts, the Bandits started shooting at each other...
 [Groups.Bandits.Crime].Text-End-Standart-Lose;The last bandit got the bullet. There's no more room for the criminal underworld in the Zone... Defeat!
@@ -2107,7 +2107,7 @@
 [Groups.Renegats.:main].Text-End-Step-Lose;Time's up, you failed to gain control of the Zone. Defeat!
 [Groups.Renegats.:main].Text-End-EventFlag-Lose;Time's up, you failed to gain control of the Zone. Defeat!
 [Groups.Renegats.Anarchy].Text-End-Standart-Victory;"Victory! The faction's behavior soon became less and less like its original form. Yes, there was still crime, but it was diminishing. The elite tried to promote a theme close to that advocated by the ""Freedom"" group, while the lower ranks were slow to embrace these new ideals, as the old methods of robbery and looting seemed simpler and more understandable. The faction was splintering before our eyes. Every new day brought new instances of disobedience by individual groups. A new conflict in the Zone was about to begin..."
-[Groups.Renegats.AntiZone].Text-End-Standart-Victory;"Victory! The gang's behavior soon became less and less like its original self. The criminal element diminished significantly. The leadership increasingly pushed the idea of ??fighting the Zone. Yes, many understood that there was no one left to rob, everyone was part of the faction, and they agreed. But since the gang also included real criminals, separate groups formed to rob those same ""their own."" Localized fighting broke out all around. The Zone once again found itself on the brink of a full-scale war of all against all..."
+[Groups.Renegats.AntiZone].Text-End-Standart-Victory;"Victory! The gang's behavior soon became less and less like its original self. The criminal element diminished significantly. The leadership increasingly pushed the idea of fighting the Zone. Yes, many understood that there was no one left to rob, everyone was part of the faction, and they agreed. But since the gang also included real criminals, separate groups formed to rob those same ""their own."" Localized fighting broke out all around. The Zone once again found itself on the brink of a full-scale war of all against all..."
 [Groups.Renegats.Control].Text-End-Standart-Victory;Victory! The faction's behavior soon became less and less like its original self. Crime levels dropped significantly. A strict hierarchy was established. Rumors circulated among the faction's members that the top brass had caved in to the government's influence. Many accepted this, but there were also those in power who disagreed with this arrangement. A new, large-scale conflict was brewing, this time within the group...
 [Groups.Renegats.Crime].Text-End-Standart-Victory;Victory! The Zone turned into a criminal quasi-state and began to live by its own rules. Soon, there was no one left to rob, and the faction became mired in infighting. Instead of shooting monsters and looting artifacts, the Renegades shot at each other... The group was unable to maintain cohesion and disintegrated into numerous small, bitterly rival gangs.
 [Groups.Renegats.Crime].Text-End-Standart-Lose;Your faction has been completely destroyed. The remaining renegades have scattered in all directions... Stalkers will try to forget about you as quickly as possible, as in the Zone world, your group was considered scum...
