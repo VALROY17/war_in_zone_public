@@ -1232,16 +1232,36 @@
 [Goods.Volker-Modified].Desc;A modified version of an excellent pistol for beginners.
 [Goods.Volker].Name;Walker
 [Goods.Volker].Desc;Great pistol for beginners.
-[Locations.Agroprom].Name;Agroprom Research Institute
+[Locations.None].Name;Unknown
+[Locations.Agroprom].Name;Agroprom
 [Locations.AgropromUnderground].Name;Agroprom Underground
-[Locations.BaseLocation].Name;The Lost Area
-[Locations.CHAES2].Name;Chornobyl NPP
+[Locations.CHAES2].Name;Chornobyl NPP Unit 2
+[Locations.CHAES1].Name;Chornobyl NPP Unit 1
 [Locations.DarkVallery].Name;Dark Valley
 [Locations.Escape].Name;Cordon
-[Locations.Garbage].Name;Garbage
+[Locations.Garbage].Name;The Dump
 [Locations.Military].Name;Army Warehouses
-[Locations.None].Name;Unknown
 [Locations.Yantar].Name;Yantar
+[Locations.WildTerritory].Name;Wild Territory
+[Locations.Radar].Name;Radar
+[Locations.BunkerMonolith].Name;Monolith Control Bunker
+[Locations.LabX10].Name;Laboratory X-10
+[Locations.LabX16].Name;Laboratory X-16
+[Locations.LabX18].Name;Laboratory X-18
+[Locations.PripyatCentral].Name;Pripyat
+[Locations.Rostok].Name;Rostok Factory
+[Locations.Sarcophagus].Name;The Sarcophagus
+[Locations.Hospital].Name;Hospital
+[Locations.Limansk].Name;Limansk
+[Locations.RedForest].Name;Red Forest
+[Locations.Swamp].Name;The Swamp
+[Locations.Zaton].Name;Zaton
+[Locations.LabX8].Name;Laboratory X-8
+[Locations.PripyatEast].Name;Eastern Pripyat
+[Locations.Puteprovod].Name;Pripyat Overpass
+[Locations.Upiter].Name;Jupiter Vicinity
+[Locations.BaseLocation].Name;The Lost Area
+[Locations.FactoryWorkshops].Name;Instrument Plant
 [TypeLands.BarRostok].Name;100 Rads
 [TypeLands.BaseArmStorage].Name;Army Warehouses Base
 [TypeLands.BaseMillitaryAgroprom].Name;Military buildings of Agroprom
