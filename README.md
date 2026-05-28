@@ -25,7 +25,7 @@
 ## 🛡️ Безопасность
 
 - ✅ Скачивайте игру **только** из официальных источников:
-  - Этот репозиторий: [Releases](https://github.com/VALROY17/war_in_zone_public/releases)
+  - Этот репозиторий: [GitHub](https://github.com/VALROY17/war_in_zone_public/)
   - Официальный Discord: https://discord.gg/vyG7rWYxuP
 
 - ⚠️ Мало известные антивирусы в VirusTotal могут показывать ложные срабатывания из-за отсутствия цифровой подписи кода.  
