@@ -79,7 +79,7 @@
 [Advisors.Advisor-Stalkers-Tolik].Name;Tolik
 [Advisors.Advisor-StalkersBes-Urik].Name;Yurik
 [Advisors.Advisor-StalkersBes-Duplet].Name;Zheka Duplet
-[Advisors.Advisor-StalkersBar-Demon].Name;Oleg "Fiend" Guasrov
+[Advisors.Advisor-StalkersBar-Demon].Name;Oleg «Sokol» Guasrov
 [Advisors.Advisor-StalkersBar-Lelik].Name;Lyolik
 [Advisors.Advisor-StalkersBar-Amir].Name;Amir the Scared
 [Advisors.Advisor-StalkersBar-Alkash].Name;Dimon the Drunkard
@@ -109,7 +109,7 @@
 [Advisors.Advisor-Soldiers-Chuguykin].Name;Lieutenant Chuguykin
 [Advisors.Advisor-Soldiers-Specialist].Name;Specialist
 [Advisors.Advisor-Soldiers-Poproshayko].Name;Major Poproshaiko
-[Advisors.Advisor-Deserters-Sokolov].Name;Alex "Sokol" Sokolov
+[Advisors.Advisor-Deserters-Sokolov].Name;Alex «Sokol» Sokolov
 [Advisors.Advisor-Deserters-Steck].Name;Stack
 [Advisors.Advisor-Duty-Petrenko].Name;Colonel Petrenko
 [Advisors.Advisor-Duty-Ivancov].Name;Captain Ivantsov
@@ -120,8 +120,8 @@
 [Advisors.Advisor-Duty-Barin].Name;Barin
 [Advisors.Advisor-Duty-Pulya].Name;Bullet
 [Advisors.Advisor-Duty-Brom].Name;Brome
-[Advisors.Advisor-DutyCherep-Second].Name;"Second"
-[Advisors.Advisor-DutyCherep-Sixth].Name;"Sixth"
+[Advisors.Advisor-DutyCherep-Second].Name;Second
+[Advisors.Advisor-DutyCherep-Sixth].Name;Sixth
 [Advisors.Advisor-Freedom-Ugrumiy].Name;Murk
 [Advisors.Advisor-Freedom-Kep].Name;Cap
 [Advisors.Advisor-Freedom-Skryaga].Name;Skinflint
@@ -135,7 +135,7 @@
 [Advisors.Advisor-Mercenaries-Avtobus].Name;Lyokha Bus
 [Advisors.Advisor-Mercenaries-Rzhaviy].Name;Valera Rusty
 [Advisors.Advisor-Mercenaries-Shtirlic].Name;Tolyan Stirlitz
-[Advisors.Advisor-Mercenaries-Dollar].Name;Ivan "One Dollar"
+[Advisors.Advisor-Mercenaries-Dollar].Name;Ivan «One Dollar»
 [Advisors.Advisor-Mercenaries-Plintus].Name;Timur Plintus
 [Advisors.Advisor-Patrol-Courier].Name;Petka Courier
 [Advisors.Advisor-Scientists-Kruglov].Name;Professor Kruglov
