@@ -60,7 +60,7 @@
 [Advisors.Advisor-Mercenaries-Avtobus].Name;Lyokha Bus
 [Advisors.Advisor-Mercenaries-Rzhaviy].Name;Valera Rusty
 [Advisors.Advisor-Mercenaries-Shtirlic].Name;Tolyan Stirlitz
-[Advisors.Advisor-Mercenaries-Dollar].Name;"Ivan ""One Dollar"""
+[Advisors.Advisor-Mercenaries-Dollar].Name;"Ivan "One Dollar""
 [Advisors.Advisor-Mercenaries-Plintus].Name;Timur Plintus
 [Advisors.Advisor-ClearSky-Kalancha].Name;Kalancha
 [Advisors.Advisor-ClearSky-Suslov].Name;Suslov
@@ -255,13 +255,13 @@ ScenarioLoseDescription;Defeat conditions: lose all controlled territories or fa
 [Groups.bandits.:main].Text-End-EventFlag-Lose;You failed to complete the assigned objectives! Defeat!
 [Groups.bandits.Crime].Text-End-Standart-Victory;Victory! The faction has taken the city and is preparing to push toward CNPP! Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
 [Groups.bandits.Crime].Text-End-Standart-Lose;The last Bandit caught a bullet. There is no more place for the criminal world in Limansk... Defeat!
-[Groups.bandits.Crime].Text-End-Step-Lose;"Time's up. The boys say you're no ""boss"" at all... Defeat!"
+[Groups.bandits.Crime].Text-End-Step-Lose;"Time's up. The boys say you're no "boss" at all... Defeat!"
 [Groups.bandits.Growth].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
 [Groups.bandits.Growth].Text-End-Standart-Lose;The last Bandit caught a bullet. There is no more place for the criminal world in Limansk... Defeat!
-[Groups.bandits.Growth].Text-End-Step-Lose;"Time's up. The boys say you're no ""boss"" at all... Defeat!"
+[Groups.bandits.Growth].Text-End-Step-Lose;"Time's up. The boys say you're no "boss" at all... Defeat!"
 [Groups.bandits.Unknow].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
 [Groups.bandits.Unknow].Text-End-Standart-Lose;The last Bandit caught a bullet. There is no more place for the criminal world in Limansk... Defeat!
-[Groups.bandits.Unknow].Text-End-Step-Lose;"Time's up. The boys say you're no ""boss"" at all... Defeat!"
+[Groups.bandits.Unknow].Text-End-Step-Lose;"Time's up. The boys say you're no "boss" at all... Defeat!"
 [Groups.clearsky.:main].Spy1-Name;Guard
 [Groups.clearsky.:main].Spy2-Name;Patrolman
 [Groups.clearsky.:main].Spy3-Name;Assault Trooper
@@ -396,7 +396,7 @@ ScenarioLoseDescription;Defeat conditions: lose all controlled territories or fa
 [Groups.Mercenaries.:main].Text-End-Step-Lose;Time's up. You failed to gain control over the Zone. Defeat!
 [Groups.Mercenaries.:main].Text-End-EventFlag-Lose;You failed to complete the assigned objectives! Defeat!
 [Groups.Mercenaries.Mercenary].Text-End-Standart-Victory;Victory! The faction has taken the city and is preparing to push toward CNPP! Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
-[Groups.Mercenaries.Mercenary].Text-End-Standart-Lose;"Your faction has been completely destroyed in Limansk. The contractors are furious. The faction is forced to pay penalties... Looks like the faction won't be seeing any ""serious"" contracts anymore. Defeat!"
+[Groups.Mercenaries.Mercenary].Text-End-Standart-Lose;"Your faction has been completely destroyed in Limansk. The contractors are furious. The faction is forced to pay penalties... Looks like the faction won't be seeing any "serious" contracts anymore. Defeat!"
 [Groups.monolith.:main].Spy1-Name;Initiate
 [Groups.monolith.:main].Spy2-Name;Fanatic
 [Groups.monolith.:main].Spy3-Name;Veteran
@@ -431,14 +431,14 @@ ScenarioLoseDescription;Defeat conditions: lose all controlled territories or fa
 [Groups.monolith.Crime].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
 [Groups.monolith.Exploring].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
 [Groups.monolith.Growth].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
-[Groups.monolith.Growth].Text-End-Standart-Lose;"C-Consciousness is in panic. Its loyal hound - the Monolith faction - has been completely destroyed in Limansk! A new plan to protect key ""Institute"" personnel is already being drafted."
+[Groups.monolith.Growth].Text-End-Standart-Lose;"C-Consciousness is in panic. Its loyal hound - the Monolith faction - has been completely destroyed in Limansk! A new plan to protect key "Institute" personnel is already being drafted."
 [Groups.monolith.Mercenary].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
 [Groups.monolith.Sectarianism].Text-End-Standart-Victory;Victory! The faction has taken the city and stopped the attempt to break through to CNPP! Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
-[Groups.monolith.Sectarianism].Text-End-Standart-Lose;"C-Consciousness is in panic. Its loyal hound - the Monolith faction - has been completely destroyed in Limansk! Preparing the ""last stand"" at the Hospital..."
+[Groups.monolith.Sectarianism].Text-End-Standart-Lose;"C-Consciousness is in panic. Its loyal hound - the Monolith faction - has been completely destroyed in Limansk! Preparing the "last stand" at the Hospital..."
 [Groups.monolith.Stability].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
 [Groups.monolith.Stalkers].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
 [Groups.monolith.Unknow].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
-[Groups.monolith.Unknow].Text-End-Standart-Lose;"C-Consciousness is in panic. Its loyal hound - the Monolith faction - has been completely destroyed in Limansk! A new plan to protect key ""Institute"" personnel is already being drafted."
+[Groups.monolith.Unknow].Text-End-Standart-Lose;"C-Consciousness is in panic. Its loyal hound - the Monolith faction - has been completely destroyed in Limansk! A new plan to protect key "Institute" personnel is already being drafted."
 [Groups.monolith.Zombie].Text-End-Standart-Victory;Victory! The faction has taken Limansk, but has undergone some ideological changes. A conflict is imminent between the Limansk group and the main faction body over differing visions of future goals and development. Other factions, meanwhile, seem to be catching their breath - the battle for Limansk proved too bloody...
 [Groups.soldiers.:main].Spy1-Name;Sergeant
 [Groups.soldiers.:main].Spy2-Name;Lieutenant

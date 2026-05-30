@@ -79,9 +79,9 @@
 [Advisors.Advisor-Mercenaries-Avtobus].Name;Лёха Автобус
 [Advisors.Advisor-Mercenaries-Rzhaviy].Name;Валера Ржавый
 [Advisors.Advisor-Mercenaries-Shtirlic].Name;Толян Штирлиц
-[Advisors.Advisor-Mercenaries-Dollar].Name;"Иван ""Один доллар"""
+[Advisors.Advisor-Mercenaries-Dollar].Name;Иван "Один доллар"
 [Advisors.Advisor-Mercenaries-Plintus].Name;Тимур Плинтус
-[Advisors.Advisor-Zombie-Controler].Name;Контролер
+[Advisors.Advisor-Zombie-Controler].Name;Контролёр
 [Achievements.Achiv-1].Name;Быстрее молнии!
 [Achievements.Achiv-1].Desc;Получено новое достижение! За 10 ходов захватить всю локацию.
 [Achievements.Achiv-1].Desc-Logo;За 10 ходов захватить всю локацию.
@@ -101,11 +101,11 @@
 [Achievements.Achiv-6].Desc;Получено новое достижение! Принять идеологию Изучение за любую группировку и продержаться 1 ход.
 [Achievements.Achiv-6].Desc-Logo;Принять идеологию Изучение за любую группировку и продержаться 1 ход.
 [Traders.World].Name;Внешний мир
-[Traders.World].NeedText;Связь с внешним миром не всегда удается установить. Цена попытки установить связь:
+[Traders.World].NeedText;Связь с внешним миром не всегда удаётся установить. Цена попытки установить связь:
 [Traders.YourGroup].Name;Торговец вашей группировки
 [Traders.YourGroup].NeedText;Вы всегда можете поторговать со своим торговцем. Цена:
 [Traders.OtherGroup].Name;Торговец чужой группировки
-[Traders.OtherGroup].NeedText;Чтобы торговать с чужими группировками сначала выберите на карте чужую территорию
+[Traders.OtherGroup].NeedText;Чтобы торговать с чужими группировками, сначала выберите на карте чужую территорию
 [StoryEvents.Event-Info-1].Name;Шрам
 [StoryEvents.Event-Info-1].Desc-Owner;Наёмник Шрам по заданию Лесника идет на локацию %1:s и скоро появится на территории %0:s
 [StoryEvents.Event-Info-1].Desc-NonOwner;Наёмник Шрам по заданию Лесника идет на локацию %1:s и скоро появится на территории %0:s
@@ -296,7 +296,7 @@ ScenarioLoseDescription;Условия поражения: потерять вс
 [Groups.Duty.:main].Name;Долг
 [Groups.Duty.:main].Description;Долг - цель группировки защитить мир от заразы Зоны. Достаточно мощная военизированная группировка. Хорошее вооружение и предрасположенность к борьбе с мутантами гарантируют успех в умелых руках.
 [Groups.Duty.:main].DiplomacyText-Question-War;Вы и ваша шайка угроза миру, пора с вами разобраться!
-[Groups.Duty.:main].DiplomacyText-Question-Neutral;Мы хотим заключить с вами перемирие, Вы cогласны?
+[Groups.Duty.:main].DiplomacyText-Question-Neutral;Мы хотим заключить с вами перемирие, Вы согласны?
 [Groups.Duty.:main].DiplomacyText-Question-Alliance;Мы предлагаем союз. Вместе мы сможем провернуть пару операций против наших врагов. Вы согласны?
 [Groups.Duty.:main].DiplomacyText-Question-BreakAlliance;Мы больше не будем сотрудничать!
 [Groups.Duty.:main].DiplomacyText-RequestMoney-Ask;Лишних денег не найдется? А то времена у нас тяжелые. Нам бы вот столько:
@@ -345,7 +345,7 @@ ScenarioLoseDescription;Условия поражения: потерять вс
 [Groups.freedom.:main].Text-End-Standart-Victory;Победа! Группировка теперь контролирует Армейские склады. Монолит отброшен к Радару, а Военные на складах полностью уничтожены. Ситуация стабилизировалась, но есть понимание, что это не продлится долго. Монолит явно будет прорываться еще, поэтому руководство группировки ускоряет перенос базы на Армейские склады. Предполагается, что данный успех удастся развить в будущем и прорваться дальше на сервер через Выжигатель мозгов. На данный момент к нему не приблизиться. Нужно, чтобы кто-то его отключил, поэтому пока что придется подождать…
 [Groups.freedom.:main].Text-End-Step-Victory;Вы выжили! Победа!
 [Groups.freedom.:main].Text-End-EventFlag-Victory;Победа по ивент флагу!
-[Groups.freedom.:main].Text-End-Standart-Lose;Отряды группировки были полностью уничтожены на Армейских складах, теперь неизвестно что будет дальше, так как на север через Лиманск не прорваться - посланная туда группа была уничтожена, там сейчас горячая точка, а плацдарма на Складах группировка лишилась… Планы по переносы базы на север пошли прахом. Поражение!
+[Groups.freedom.:main].Text-End-Standart-Lose;Отряды группировки были полностью уничтожены на Армейских складах, теперь неизвестно что будет дальше, так как на север через Лиманск не прорваться - посланная туда группа была уничтожена, там сейчас горячая точка, а плацдарма на Складах группировка лишилась… Планы по переносу базы на север пошли прахом. Поражение!
 [Groups.freedom.:main].Text-End-Step-Lose;Время истекло, Вы не смогли добиться контроля над Армейскими складами. Поражение!
 [Groups.freedom.:main].Text-End-EventFlag-Lose;Время истекло, Вы не смогли добиться контроля над Армейскими складами. Поражение!
 [Groups.Mercenaries.:main].Spy1-Name;Новичок
@@ -382,12 +382,12 @@ ScenarioLoseDescription;Условия поражения: потерять вс
 [Groups.monolith.:main].Spy3-Name;Ветеран
 [Groups.monolith.:main].Spy4-Name;Элита
 [Groups.monolith.:main].Name;Монолит
-[Groups.monolith.:main].Description;Монолит - группировка, служащая щитом О-Сознания. Главная цель - защита Зоны от какого-либо внешнего вмешательства. Крайне враждебна к любым другим группировкам. Несмотря на преимущество в вооружении имеет проблемы с продвижением на локации Армейские склады, так как сосредоточила основные силы в Лиманске.
+[Groups.monolith.:main].Description;Монолит - группировка, служащая щитом О-Сознания. Главная цель - защита Зоны от какого-либо внешнего вмешательства. Крайне враждебна к любым другим группировкам. Несмотря на преимущество в вооружении, имеет проблемы с продвижением на локации Армейские склады, так как сосредоточила основные силы в Лиманске.
 [Groups.monolith.:main].DiplomacyText-Question-War;Найти и искоренить!
 [Groups.monolith.:main].DiplomacyText-Question-Neutral;Монолит повелел нам заключить с вами мир. Вы согласны или как?
 [Groups.monolith.:main].DiplomacyText-Question-Alliance;Монолит велел нам стать вашими друзьями.
 [Groups.monolith.:main].DiplomacyText-Question-BreakAlliance;Монолит недоволен нашим союзом!
-[Groups.monolith.:main].DiplomacyText-RequestMoney-Ask;По воле Великого Монолита мы отправяем вам запрос на денежный перевод для наших братьев в таком вот размере:
+[Groups.monolith.:main].DiplomacyText-RequestMoney-Ask;По воле Великого Монолита мы отправляем вам запрос на денежный перевод для наших братьев в таком вот размере:
 [Groups.monolith.:main].DiplomacyText-Ans-0-Down;Обнаружить и искоренить! *Собеседник добавил вас в черный список*
 [Groups.monolith.:main].DiplomacyText-Ans-1-Down;Такое Монолит точно не одобрит! *Собеседник удалил вас из друзей*
 [Groups.monolith.:main].DiplomacyText-Ans-1-No;Ты познаешь гнев Монолита! *Собеседник вышел из чата*

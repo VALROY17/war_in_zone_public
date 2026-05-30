@@ -61,13 +61,13 @@
 [Advisors.Advisor-Mercenaries-Avtobus].Name;Лёха Автобус
 [Advisors.Advisor-Mercenaries-Rzhaviy].Name;Валера Ржавый
 [Advisors.Advisor-Mercenaries-Shtirlic].Name;Толян Штирлиц
-[Advisors.Advisor-Mercenaries-Dollar].Name;"Иван ""Один доллар"""
+[Advisors.Advisor-Mercenaries-Dollar].Name;Иван "Один доллар"
 [Advisors.Advisor-Mercenaries-Plintus].Name;Тимур Плинтус
 [Advisors.Advisor-Scientists-Kruglov].Name;Профессор Круглов
 [Advisors.Advisor-Scientists-Nachalnik].Name;Начальник охраны
 [Advisors.Advisor-Scientists-Semenov].Name;Семенов
 [Advisors.Advisor-Scientists-Zob].Name;Зоб
-[Advisors.Advisor-Zombie-Kontroler].Name;Контролер
+[Advisors.Advisor-Zombie-Kontroler].Name;Контролёр
 [Achievements.Achiv-1].Name;Анархия мать порядка!
 [Achievements.Achiv-1].Desc;Получено новое достижение! Захватить локацию Завод Росток за группировку Свобода и удержать ее 1 ход.
 [Achievements.Achiv-1].Desc-Logo;Захватить локацию Завод Росток за группировку Свобода и удержать ее 1 ход.
@@ -87,11 +87,11 @@
 [Achievements.Achiv-6].Desc;Получено новое достижение! Принять идеологию Сталкерство за любую группировку, кроме Одиночек и продержаться 1 ход.
 [Achievements.Achiv-6].Desc-Logo;Принять идеологию Сталкерство за любую группировку, кроме Одиночек и продержаться 1 ход.
 [Traders.World].Name;Внешний мир
-[Traders.World].NeedText;Связь с внешним миром не всегда удается установить. Шанс 50%. Цена попытки установить связь:
+[Traders.World].NeedText;Связь с внешним миром не всегда удаётся установить. Шанс 50%. Цена попытки установить связь:
 [Traders.YourGroup].Name;Торговец вашей группировки
 [Traders.YourGroup].NeedText;Вы всегда можете поторговать со своим торговцем. Цена:
 [Traders.OtherGroup].Name;Торговец чужой группировки
-[Traders.OtherGroup].NeedText;Чтобы торговать с чужими группировками сначала выберите на карте чужую территорию
+[Traders.OtherGroup].NeedText;Чтобы торговать с чужими группировками, сначала выберите на карте чужую территорию
 [Traders.Trader1].Name;Сидорович
 [Traders.Trader1].NeedText;Торговать с ним можно при условии контролирования территории Деревня на Кордоне. Цена:
 [Traders.Trader2].Name;Бармен

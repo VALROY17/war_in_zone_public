@@ -60,13 +60,13 @@
 [Advisors.Advisor-Mercenaries-Avtobus].Name;Лёха Автобус
 [Advisors.Advisor-Mercenaries-Rzhaviy].Name;Валера Ржавый
 [Advisors.Advisor-Mercenaries-Shtirlic].Name;Толян Штирлиц
-[Advisors.Advisor-Mercenaries-Dollar].Name;"Иван ""Один доллар"""
+[Advisors.Advisor-Mercenaries-Dollar].Name;Иван "Один доллар"
 [Advisors.Advisor-Mercenaries-Plintus].Name;Тимур Плинтус
 [Advisors.Advisor-Scientists-Kruglov].Name;Профессор Круглов
 [Advisors.Advisor-Scientists-Nachalnik].Name;Начальник охраны
 [Advisors.Advisor-Scientists-Semenov].Name;Семенов
 [Advisors.Advisor-Scientists-Zob].Name;Зоб
-[Advisors.Advisor-Zombie-Kontroler].Name;Контролер
+[Advisors.Advisor-Zombie-Kontroler].Name;Контролёр
 [Achievements.Achiv-1].Name;Загадавший желание!
 [Achievements.Achiv-1].Desc;Получено новое достижение! Захватить Саркофаг за любую группировку, кроме Монолит и Мутанты и удержать его в течении 1 хода.
 [Achievements.Achiv-1].Desc-Logo;Захватить Саркофаг за любую группировку, кроме Монолит и Мутанты и удержать его в течении 1 хода.
@@ -86,11 +86,11 @@
 [Achievements.Achiv-6].Desc;Получено новое достижение! Принять идеологию Стабильность за группировку Военные на уровне сложности Мастер и продержаться 1 ход.
 [Achievements.Achiv-6].Desc-Logo;Принять идеологию Стабильность за группировку Военные на уровне сложности Мастер и продержаться 1 ход.
 [Traders.World].Name;Внешний мир
-[Traders.World].NeedText;Связь с внешним миром не всегда удается установить. Шанс 50%. Цена попытки установить связь:
+[Traders.World].NeedText;Связь с внешним миром не всегда удаётся установить. Шанс 50%. Цена попытки установить связь:
 [Traders.YourGroup].Name;Торговец вашей группировки
 [Traders.YourGroup].NeedText;Вы всегда можете поторговать со своим торговцем. Цена:
 [Traders.OtherGroup].Name;Торговец чужой группировки
-[Traders.OtherGroup].NeedText;Чтобы торговать с чужими группировками сначала выберите на карте чужую территорию
+[Traders.OtherGroup].NeedText;Чтобы торговать с чужими группировками, сначала выберите на карте чужую территорию
 [Traders.Trader1].Name;Сидорович
 [Traders.Trader1].NeedText;Торговать с ним можно при условии контролирования территории Деревня на Кордоне. Цена:
 [Traders.Trader2].Name;Бармен
@@ -470,8 +470,8 @@
 [StoryEvents.Event-DarkVallery-SetFlag1-2].Desc-Owner;Если вы это видите, то это баг ивента Event-DarkVallery-SetFlag1-2
 [StoryEvents.Event-DarkVallery-SetFlag1-2].Desc-NonOwner;Если вы это видите, то это баг ивента Event-DarkVallery-SetFlag1-2
 [StoryEvents.Event-DarkVallery-ChangeLeader].Name;Смерть Борова
-[StoryEvents.Event-DarkVallery-ChangeLeader].Desc-Owner;"В результате нападения Меченого погиб глава группировки. Ряд ""авторитетов"" организовали сходку, на которой решили временно управлять группировкой через коллективные решения. Несмотря на сохранение единства группировки, это привело к некоторому ухудшению ее управляемости."
-[StoryEvents.Event-DarkVallery-ChangeLeader].Desc-NonOwner;"В результате нападения Меченого погиб глава группировки. Ряд ""авторитетов"" организовали сходку, на которой решили временно управлять группировкой через коллективные решения. Несмотря на сохранение единства группировки, это привело к некоторому ухудшению ее управляемости."
+[StoryEvents.Event-DarkVallery-ChangeLeader].Desc-Owner;"В результате нападения Меченого погиб глава группировки. Ряд "авторитетов" организовали сходку, на которой решили временно управлять группировкой через коллективные решения. Несмотря на сохранение единства группировки, это привело к некоторому ухудшению ее управляемости."
+[StoryEvents.Event-DarkVallery-ChangeLeader].Desc-NonOwner;"В результате нападения Меченого погиб глава группировки. Ряд "авторитетов" организовали сходку, на которой решили временно управлять группировкой через коллективные решения. Несмотря на сохранение единства группировки, это привело к некоторому ухудшению ее управляемости."
 [StoryEvents.Event-DarkVallery-11].Name;Меченый продолжает идти
 [StoryEvents.Event-DarkVallery-11].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
 [StoryEvents.Event-DarkVallery-11].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
@@ -752,8 +752,8 @@
 [StoryEvents.Event-Yantar-14].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
 [StoryEvents.Event-Yantar-14].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
 [StoryEvents.Event-Yantar-HeadsetPsyBlocker-1].Name;Экспериментальный образец
-[StoryEvents.Event-Yantar-HeadsetPsyBlocker-1].Desc-Owner;Сахарову удалось создать экспериментальный образец блокировщика пси излучения и отдать его Меченому, который сразу же отправился в лабораторию X-16!
-[StoryEvents.Event-Yantar-HeadsetPsyBlocker-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый заполучил некий уникальный предмет, который способен либо блокировать пси излучение, либо значительно его снизить!
+[StoryEvents.Event-Yantar-HeadsetPsyBlocker-1].Desc-Owner;Сахарову удалось создать экспериментальный образец блокировщика пси-излучения и отдать его Меченому, который сразу же отправился в лабораторию X-16!
+[StoryEvents.Event-Yantar-HeadsetPsyBlocker-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый заполучил некий уникальный предмет, который способен либо блокировать пси-излучение, либо значительно его снизить!
 [StoryEvents.Event-Yantar-15].Name;Меченый продолжает идти
 [StoryEvents.Event-Yantar-15].Desc-Owner;На нашей территории %0:s на локации %1:s замечен сталкер Меченый. Наш гарнизон пропустил его.
 [StoryEvents.Event-Yantar-15].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
@@ -790,7 +790,7 @@
 [StoryEvents.Event-Yantar-26].Name;Меченый напал на гарнизон территории
 [StoryEvents.Event-Yantar-26].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
 [StoryEvents.Event-Yantar-26].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
-[StoryEvents.Event-Yantar-BrainPsyDisable-1].Name;Пси установка серьезно повреждена!
+[StoryEvents.Event-Yantar-BrainPsyDisable-1].Name;Пси-установка серьезно повреждена!
 [StoryEvents.Event-Yantar-BrainPsyDisable-1].Desc-Owner;Меченый вывел из строя пси установку на территории %0:s локации %1:s!
 [StoryEvents.Event-Yantar-BrainPsyDisable-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый вывел из строя пси установку на территории %0:s локации %1:s!
 [StoryEvents.Event-Yantar-27].Name;Меченый продолжает идти
@@ -1066,7 +1066,7 @@
 [StoryEvents.Event-Radar-18].Name;Меченый напал на гарнизон территории
 [StoryEvents.Event-Radar-18].Desc-Owner;Наши патрули наткнулись на сталкера с прозвищем Меченый. Мы проиграли бой на территории %0:s локации %1:s... Наши потери:
 [StoryEvents.Event-Radar-18].Desc-NonOwner;Ходят слухи, что сталкер Меченый был замечен на территории %0:s локации %1:s
-[StoryEvents.Event-Radar-BrainMixerDisable-1].Name;Пси установка серьезно повреждена!
+[StoryEvents.Event-Radar-BrainMixerDisable-1].Name;Пси-установка серьезно повреждена!
 [StoryEvents.Event-Radar-BrainMixerDisable-1].Desc-Owner;Меченый вывел из строя пси установку на территории %0:s локации %1:s!
 [StoryEvents.Event-Radar-BrainMixerDisable-1].Desc-NonOwner;Ходят слухи, что сталкер Меченый вывел из строя пси установку на территории %0:s локации %1:s!
 [StoryEvents.Event-Radar-SetFlag1-1].Name;Технический ивент
@@ -1177,9 +1177,9 @@
 [StoryEvents.Event-Pripyat-SetFlag1-1].Name;Технический ивент
 [StoryEvents.Event-Pripyat-SetFlag1-1].Desc-Owner;Если вы это видите, то это баг ивента Event-Pripyat-SetFlag1-1
 [StoryEvents.Event-Pripyat-SetFlag1-1].Desc-NonOwner;Если вы это видите, то это баг ивента Event-Pripyat-SetFlag1-1
-[StoryEvents.Event-StartOperationMonolith].Name;"Операция ""Монолит"""
-[StoryEvents.Event-StartOperationMonolith].Desc-Owner;"К нам поступила информация, что вертолёты, которые летят к ЧАЭС это часть масштабной операции Военных под кодовым названием ""Монолит"". Похоже это начало масштабного штурма!"
-[StoryEvents.Event-StartOperationMonolith].Desc-NonOwner;"Руководство Военных начинают операцию ""Монолит"" на севере Зоны!"
+[StoryEvents.Event-StartOperationMonolith].Name;"Операция "Монолит""
+[StoryEvents.Event-StartOperationMonolith].Desc-Owner;"К нам поступила информация, что вертолёты, которые летят к ЧАЭС это часть масштабной операции Военных под кодовым названием "Монолит". Похоже это начало масштабного штурма!"
+[StoryEvents.Event-StartOperationMonolith].Desc-NonOwner;"Руководство Военных начинают операцию "Монолит" на севере Зоны!"
 [StoryEvents.Event-Pripyat-Invasion-1].Name;В Припяти сбит вертолёт
 [StoryEvents.Event-Pripyat-Invasion-1].Desc-Owner;Территорию %0:s локации %1:s штурмует отряд Военных, часть которого уцелела при аварийной посадке вертолёта!
 [StoryEvents.Event-Pripyat-Invasion-1].Desc-NonOwner;К нам поступила информация, что территорию %0:s локации %1:s штурмует остатки отряда группировки Военных, которые уцелели при аварийной посадке подбитого вертолёта!
@@ -1469,10 +1469,10 @@
 [StoryEvents.Event-OperationMonolith-Finishing-Lose-2].Desc-Owner;Мы смогли защитить %0:s! Мы отбились от Военных!
 [StoryEvents.Event-OperationMonolith-Finishing-Lose-2].Desc-NonOwner;Государственные силы так и не смогли взять %0:s под контроль! Это полная катастрофа для них?
 [StoryEvents.Event-OperationMonolith-Finishing-Lose-3].Name;Неоднозначные итоги
-[StoryEvents.Event-OperationMonolith-Finishing-Lose-3].Desc-Owner;"Мы смогли захватить %0:s! Именно мы, а не ""эти"" Военные! Мы - защита этого мира от заразы Зоны!"
+[StoryEvents.Event-OperationMonolith-Finishing-Lose-3].Desc-Owner;"Мы смогли захватить %0:s! Именно мы, а не "эти" Военные! Мы - защита этого мира от заразы Зоны!"
 [StoryEvents.Event-OperationMonolith-Finishing-Lose-3].Desc-NonOwner;Государственные силы так и не смогли взять %0:s под контроль! Это полная катастрофа для них или был какой-то договор с Долгом?
 [StoryEvents.Event-OperationMonolith-Finishing-Lose-4].Name;Необычные итоги
-[StoryEvents.Event-OperationMonolith-Finishing-Lose-4].Desc-Owner;"Мы смогли захватить %0:s! Именно мы, а не ""эти"" Военные! Мы - передовые отряды науки и знаний!"
+[StoryEvents.Event-OperationMonolith-Finishing-Lose-4].Desc-Owner;"Мы смогли захватить %0:s! Именно мы, а не "эти" Военные! Мы - передовые отряды науки и знаний!"
 [StoryEvents.Event-OperationMonolith-Finishing-Lose-4].Desc-NonOwner;Военные не смогли взять под контроль %0:s, но вместо них это сделали Экологи! Эти ребята с приборами и пробирками доказали всем, что с ними шутки плохи!
 [StoryEvents.Event-OperationMonolith-Finishing-Victory].Name;Итоги операции
 [StoryEvents.Event-OperationMonolith-Finishing-Victory].Desc-Owner;Не смотря на все жертвы, %0:s захвачен! Успех, но мы за свои потери в этой кампании, похоже, представимся перед трибуналом...
@@ -1512,7 +1512,7 @@
 [StoryEvents.Event-Ending-Monolith].Desc-NonOwner;Ходят слухи, что Меченый уничтожил некое О-Сознание, которое использовало Исполнитель желаний и управляло группировкой Монолит! Интересно, правда ли это?
 [StoryEvents.Event-Ending-Zombie].Name;Меченый присоединился к О-Сознанию!
 [StoryEvents.Event-Ending-Zombie].Desc-Owner;Что ж. Меченый присоединился к О-Сознанию. Он завоевал себе место в кругу хозяев Зоны!
-[StoryEvents.Event-Ending-Zombie].Desc-NonOwner;"Ходят слухи, что Меченый смог пробраться внутрь ЧАЭС. Но каких-либо подтверждений этому или информации о том, что было с ним дальше нету. Некоторые предполагают, что он присоединился к группировке Монолит, а кто-то даже говорит, что он загадал желание что-то в виде ""Я хочу стать хозяином Зоны"". В общем слухи ходят разные, а Зона стала стремительно расширяться... Скоро Кордон уже не будет окраиной..."
+[StoryEvents.Event-Ending-Zombie].Desc-NonOwner;"Ходят слухи, что Меченый смог пробраться внутрь ЧАЭС. Но каких-либо подтверждений этому или информации о том, что было с ним дальше нету. Некоторые предполагают, что он присоединился к группировке Монолит, а кто-то даже говорит, что он загадал желание что-то в виде "Я хочу стать хозяином Зоны". В общем слухи ходят разные, а Зона стала стремительно расширяться... Скоро Кордон уже не будет окраиной..."
 ScenarioName;Сюжет. Тень Чернобыля
 ScenarioDescription;В данном сценарии воспроизводится сюжет оригинальной игры. Поход Меченого в центр Зоны в поисках Стрелка. Данный сценарий имеет ограничение по количеству ходов. Вам необходимо захватить всю Зону до того, как Меченый доберется c Кордона до О-Сознания или Монолита (концовки разные, зависят от определённых условий). Дипломатия между группировками близка к канону. Выброс имеет мощность в два раза больше, но происходит в два раза реже.
 ScenarioLoseDescription;Условия поражения: потерять все подконтрольные территории или не выполнить условия победы примерно за 148-149 ходов.

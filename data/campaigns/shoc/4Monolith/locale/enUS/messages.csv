@@ -18,7 +18,7 @@
 [Advisors.Advisor-Stalkers-Bes].Name;Bes
 [Advisors.Advisor-Stalkers-Urik].Name;Yurik
 [Advisors.Advisor-Stalkers-Seriy].Name;Seriy
-[Advisors.Advisor-Stalkers-Demon].Name;"Oleg ""Friend"" Gusarov"
+[Advisors.Advisor-Stalkers-Demon].Name;"Oleg "Friend" Gusarov"
 [Advisors.Advisor-Stalkers-Upir].Name;Vampire
 [Advisors.Advisor-Stalkers-Arni].Name;Arnie
 [Advisors.Advisor-Stalkers-Krot].Name;Mole
@@ -428,7 +428,7 @@
 [StoryEvents.Event-OperationMonolith-Finishing-Lose-2].Desc-Owner;We managed to defend %0:s! We repelled the Military!
 [StoryEvents.Event-OperationMonolith-Finishing-Lose-2].Desc-NonOwner;Government forces failed to take control of %0:s! Is this a complete disaster for them?
 [StoryEvents.Event-OperationMonolith-Finishing-Lose-3].Name;Ambiguous Outcome
-[StoryEvents.Event-OperationMonolith-Finishing-Lose-3].Desc-Owner;"We managed to capture %0:s! Us, not ""those"" Military! We are the protection of this world from the Zone's contamination!"
+[StoryEvents.Event-OperationMonolith-Finishing-Lose-3].Desc-Owner;"We managed to capture %0:s! Us, not "those" Military! We are the protection of this world from the Zone's contamination!"
 [StoryEvents.Event-OperationMonolith-Finishing-Lose-3].Desc-NonOwner;Government forces failed to take control of %0:s! Is this a complete disaster for them, or was there some kind of deal with Duty?
 [StoryEvents.Event-OperationMonolith-Finishing-Victory].Name;Operation Results
 [StoryEvents.Event-OperationMonolith-Finishing-Victory].Desc-Owner;Despite all the casualties, %0:s has been captured! It's a success, but given our losses in this campaign, we'll probably be summoned before a court-martial...

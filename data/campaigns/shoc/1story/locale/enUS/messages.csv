@@ -18,7 +18,7 @@
 [Advisors.Advisor-Stalkers-Bes].Name;Bes
 [Advisors.Advisor-Stalkers-Urik].Name;Yurik
 [Advisors.Advisor-Stalkers-Seriy].Name;Seriy
-[Advisors.Advisor-Stalkers-Demon].Name;"Oleg ""Friend"" Gusarov"
+[Advisors.Advisor-Stalkers-Demon].Name;"Oleg "Friend" Gusarov"
 [Advisors.Advisor-Stalkers-Upir].Name;Vampire
 [Advisors.Advisor-Stalkers-Arni].Name;Arnie
 [Advisors.Advisor-Stalkers-Krot].Name;Mole
@@ -60,7 +60,7 @@
 [Advisors.Advisor-Mercenaries-Avtobus].Name;Lyokha Bus
 [Advisors.Advisor-Mercenaries-Rzhaviy].Name;Valera Rusty
 [Advisors.Advisor-Mercenaries-Shtirlic].Name;Tolyan Stirlitz
-[Advisors.Advisor-Mercenaries-Dollar].Name;"Ivan ""One Dollar"""
+[Advisors.Advisor-Mercenaries-Dollar].Name;"Ivan "One Dollar""
 [Advisors.Advisor-Mercenaries-Plintus].Name;Timur Plintus
 [Advisors.Advisor-Scientists-Kruglov].Name;Professor Kruglov
 [Advisors.Advisor-Scientists-Nachalnik].Name;Head of security
@@ -470,8 +470,8 @@
 [StoryEvents.Event-DarkVallery-SetFlag1-2].Desc-Owner;If you see this, it's a bug in event Event-DarkVallery-SetFlag1-2.
 [StoryEvents.Event-DarkVallery-SetFlag1-2].Desc-NonOwner;If you see this, it's a bug in event Event-DarkVallery-SetFlag1-2.
 [StoryEvents.Event-DarkVallery-ChangeLeader].Name;Death of Boar
-[StoryEvents.Event-DarkVallery-ChangeLeader].Desc-Owner;"As a result of the Marked One's attack, the faction leader has been killed. Several ""authorities"" organized a meeting and decided to temporarily manage the faction through collective decision-making. Despite maintaining faction unity, this has led to a slight decrease in manageability."
-[StoryEvents.Event-DarkVallery-ChangeLeader].Desc-NonOwner;"As a result of the Marked One's attack, the faction leader has been killed. Several ""authorities"" organized a meeting and decided to temporarily manage the faction through collective decision-making. Despite maintaining faction unity, this has led to a slight decrease in manageability."
+[StoryEvents.Event-DarkVallery-ChangeLeader].Desc-Owner;"As a result of the Marked One's attack, the faction leader has been killed. Several "authorities" organized a meeting and decided to temporarily manage the faction through collective decision-making. Despite maintaining faction unity, this has led to a slight decrease in manageability."
+[StoryEvents.Event-DarkVallery-ChangeLeader].Desc-NonOwner;"As a result of the Marked One's attack, the faction leader has been killed. Several "authorities" organized a meeting and decided to temporarily manage the faction through collective decision-making. Despite maintaining faction unity, this has led to a slight decrease in manageability."
 [StoryEvents.Event-DarkVallery-11].Name;The Marked One continues his journey
 [StoryEvents.Event-DarkVallery-11].Desc-Owner;The stalker known as the Marked One has been spotted in our territory %0:s at location %1:s. Our garrison let him pass.
 [StoryEvents.Event-DarkVallery-11].Desc-NonOwner;Rumors say that the stalker known as the Marked One was spotted in territory %0:s at location %1:s.
@@ -1364,10 +1364,10 @@
 [StoryEvents.Event-OperationMonolith-Finishing-Lose-2].Desc-Owner;We managed to defend %0:s! We repelled the Military!
 [StoryEvents.Event-OperationMonolith-Finishing-Lose-2].Desc-NonOwner;Government forces failed to take control of %0:s! Is this a complete disaster for them?
 [StoryEvents.Event-OperationMonolith-Finishing-Lose-3].Name;Ambiguous Outcome
-[StoryEvents.Event-OperationMonolith-Finishing-Lose-3].Desc-Owner;"We managed to capture %0:s! Us, not ""those"" Military! We are the protection of this world from the Zone's contamination!"
+[StoryEvents.Event-OperationMonolith-Finishing-Lose-3].Desc-Owner;"We managed to capture %0:s! Us, not "those" Military! We are the protection of this world from the Zone's contamination!"
 [StoryEvents.Event-OperationMonolith-Finishing-Lose-3].Desc-NonOwner;Government forces failed to take control of %0:s! Is this a complete disaster for them, or was there some kind of deal with Duty?
 [StoryEvents.Event-OperationMonolith-Finishing-Lose-4].Name;Unusual Outcome
-[StoryEvents.Event-OperationMonolith-Finishing-Lose-4].Desc-Owner;"We managed to capture %0:s! Us, not ""those"" Military! We are the vanguard of science and knowledge!"
+[StoryEvents.Event-OperationMonolith-Finishing-Lose-4].Desc-Owner;"We managed to capture %0:s! Us, not "those" Military! We are the vanguard of science and knowledge!"
 [StoryEvents.Event-OperationMonolith-Finishing-Lose-4].Desc-NonOwner;The Military failed to take control of %0:s, but the Scientists did instead! Those guys with instruments and test tubes proved to everyone that you don't mess with them!
 [StoryEvents.Event-OperationMonolith-Finishing-Victory].Name;Operation Results
 [StoryEvents.Event-OperationMonolith-Finishing-Victory].Desc-Owner;Despite all the casualties, %0:s has been captured! It's a success, but given our losses in this campaign, we'll probably be summoned before a court-martial...
@@ -1407,7 +1407,7 @@
 [StoryEvents.Event-Ending-Monolith].Desc-NonOwner;Rumors say that the Marked One destroyed a certain C-Consciousness, which used the Wish Granter and controlled the Monolith faction! I wonder if it's true?
 [StoryEvents.Event-Ending-Zombie].Name;The Marked One Joined the C-Consciousness!
 [StoryEvents.Event-Ending-Zombie].Desc-Owner;So it is. The Marked One has joined the C-Consciousness. He has earned his place among the masters of the Zone!
-[StoryEvents.Event-Ending-Zombie].Desc-NonOwner;"Rumors say that the Marked One managed to sneak inside CNPP. But there's no confirmation or information on what happened to him afterwards. Some assume he joined the Monolith faction, while others even claim he made a wish like ""I want to become the master of the Zone"". Anyway, rumors vary, and the Zone has begun expanding rapidly... Soon the Cordon will no longer be the outskirts..."
+[StoryEvents.Event-Ending-Zombie].Desc-NonOwner;"Rumors say that the Marked One managed to sneak inside CNPP. But there's no confirmation or information on what happened to him afterwards. Some assume he joined the Monolith faction, while others even claim he made a wish like "I want to become the master of the Zone". Anyway, rumors vary, and the Zone has begun expanding rapidly... Soon the Cordon will no longer be the outskirts..."
 ScenarioName;Story. Shadow of Chernobyl
 ScenarioDescription;This scenario recreates the plot of the original game. The Marked One's journey to the center of the Zone in search of Strelok. This scenario has a turn limit. You must capture the entire Zone before the Marked One reaches the C-Consciousness or Monolith from the Cordon (endings vary depending on specific conditions). Diplomacy between factions is close to canon. Emissions have double the power but occur half as frequently.
 ScenarioLoseDescription;Defeat conditions: lose all controlled territories or fail to meet victory conditions within approximately 148-149 turns.
