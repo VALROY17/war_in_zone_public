@@ -1,3 +1,7 @@
+A	.upgrade/9c4cfc6745495248f21ed5b7d42ea9f0a062344d
+M	ScenarioEditorTools.exe
+M	WAR IN ZONE.exe
+M	data/campaigns/sac/1FirstBreakthrough/Events_Story.ini
 M	data/campaigns/sac/1FirstBreakthrough/locale/enUS/messages.csv
 M	data/campaigns/sac/1FirstBreakthrough/locale/ruru/messages.csv
 M	data/campaigns/scop/1Story/locale/enUS/messages.csv
@@ -52,6 +56,7 @@ M	data/campaigns/st/07Tutorial/locale/enUS/messages.csv
 M	data/campaigns/st/07Tutorial/locale/ruRU/messages.csv
 M	data/campaigns/st/08Tutorial/locale/enUS/messages.csv
 M	data/campaigns/st/08Tutorial/locale/ruRU/messages.csv
+A	data/gfx/icons/story_SAC/3.png
 M	data/locale/enUS/messages.csv
 M	data/locale/ruRu/messages.csv
 M	data/maps/CS_Battle_For_Limansk/locale/enUS/MapMessages.csv
