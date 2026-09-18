@@ -458,6 +458,164 @@
                 font-size: 16px;
             }
         }
+		        /* ============================================
+           SEARCH IN SIDEBAR
+           ============================================ */
+        /* Переопределение базовых правил сайдбара под flex-структуру */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .sidebar-title {
+            margin-bottom: 14px;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .sidebar ul li a {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .sidebar-header {
+            flex-shrink: 0;
+            padding: 20px 15px 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .sidebar-scroll {
+            flex: 1;
+            overflow-y: auto;
+            padding: 12px 15px 24px;
+        }
+
+        /* --- Поле ввода --- */
+        .search-box {
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 8px 30px 8px 30px;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 0.85rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .search-input::placeholder {
+            color: var(--text-secondary);
+            opacity: 0.65;
+        }
+
+        .search-input:focus {
+            border-color: var(--accent);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 9px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 12px;
+            pointer-events: none;
+            opacity: 0.55;
+        }
+
+        .search-clear {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            padding: 0;
+            border: none;
+            border-radius: 4px;
+            background: transparent;
+            color: var(--text-secondary);
+            font-size: 16px;
+            line-height: 1;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .search-clear:hover {
+            color: var(--text-primary);
+            background-color: var(--bg-secondary);
+        }
+
+        .search-clear.is-visible {
+            display: flex;
+        }
+
+        /* --- Строка статуса под полем --- */
+        .search-status {
+            min-height: 1.2em;
+            margin-top: 7px;
+            font-size: 0.72rem;
+            line-height: 1.3;
+            color: var(--text-secondary);
+        }
+
+        /* --- Пункты меню при поиске --- */
+        .nav-text {
+            flex: 1;
+            min-width: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .nav-text mark {
+            background-color: var(--accent);
+            color: var(--bg-primary);
+            border-radius: 2px;
+            padding: 0 1px;
+        }
+
+        .search-badge {
+            flex-shrink: 0;
+            min-width: 18px;
+            height: 18px;
+            padding: 0 5px;
+            margin-left: auto;
+            border-radius: 9px;
+            background-color: var(--accent);
+            color: var(--bg-primary);
+            font-size: 0.68rem;
+            font-weight: 700;
+            line-height: 18px;
+            text-align: center;
+        }
+
+        .search-no-result {
+            display: none;
+            padding: 24px 12px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .search-no-result.is-visible {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar-scroll {
+                max-height: 45vh;
+            }
+        }
     </style>
 </head>
 <body>
@@ -468,7 +626,23 @@
              LEFT SIDEBAR (NAVIGATION)
              ============================================ -->
         <nav class="sidebar">
-            <div class="sidebar-title">📚 Справка мододела</div>
+            <div class="sidebar-header">
+                <div class="sidebar-title">📚 Справка мододела</div>
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text"
+                           class="search-input"
+                           id="searchInput"
+                           placeholder="Поиск по справке..."
+                           title="Поиск по названиям глав и их содержимому. Горячая клавиша: /"
+                           autocomplete="off"
+                           spellcheck="false">
+                    <button class="search-clear" id="searchClear" type="button" title="Очистить (Esc)">×</button>
+                </div>
+                <div class="search-status" id="searchStatus"></div>
+            </div>
+
+            <div class="sidebar-scroll">
 
             <div class="sidebar-section-label">Для новичков</div>
             <ul>
@@ -519,6 +693,12 @@
                 <li><a href="#mapBT">🔧 map.bt</a></li>
                 <li><a href="#mapImage">🖼 Изображение карты</a></li>
             </ul>
+
+            <div class="search-no-result" id="searchNoResult">
+                😕 Ничего не найдено
+            </div>
+
+            </div><!-- /.sidebar-scroll -->
         </nav>
 
         <!-- ============================================
@@ -637,7 +817,7 @@
 
                 <div class="faq-item">
                     <div class="faq-question">Вопрос №20: Как дать группировке иммунитет к Выбросу? И к уходу бойцов из-за нехватки еды?</div>
-                    <div class="faq-answer">В файле <code>Events_Special.ini</code> необходимо указать индекс группировки у соответствующего события (Выброс и/или уход бойцов) и увеличить число параметра <code>NotWorkFractionCount</code> на столько, насколько будет добавлено новых группировок.</div>
+                    <div class="faq-answer">В папке <code>SpecialEvents</code> есть файл посвященный выбросу. В нем необходимо указать техническое название группировки у соответствующего события и увеличить число параметра <code>NotWorkFractionCount</code> на столько, насколько будет добавлено новых группировок.</div>
                 </div>
 
                 <div class="faq-item">
@@ -735,7 +915,7 @@
                     <li>В этом сценарии будут достижения для игрока?</li>
                 </ul>
                 <p>Это был лишь краткий список вопросов. И чем больше ответов "Нет" будет на вопросы, тем быстрее и проще можно сделать мод.</p>
-                <p>В своем первом моде рекомендую использовать существующую карту, а не бежать делать новую, так как многие из-за этого собирают кучу багов не понимания что они делают не так.</p>
+                <p>В своем первом моде рекомендую использовать существующую карту, а не бежать делать новую, так как многие из-за этого собирают кучу багов не понимая что они делают не так.</p>
 
                 <h3>Уровни сложности модов</h3>
 
@@ -798,7 +978,7 @@
 
             <!-- КОДИРОВКА -->
             <div class="section" id="filestypecode">
-                <h2>📝 В какой кодировки сохранять абсолютно все файлы с текстом?</h2>
+                <h2>📝 В какой кодировке сохранять абсолютно все файлы с текстом?</h2>
                 <div class="callout callout-warning">
                     <div class="callout-title">⚠️ Критически важно</div>
                     Используйте юникод. В Notepad++ это <strong>UTF-8 с BOM</strong>.
@@ -814,7 +994,7 @@
                     <li>Прежде чем садиться делать мод ответить сам себе на вопросы из раздела "С чего лучше начать?". Учти, что создание мода первого уровня у тебя займёт скорее всего час (в случае, если мододел является новичком), а каждый последующий уровень будет умножать затраченное время минимум в два раза.</li>
                     <li>Уровни модов и их последовательность на странице "С чего лучше начать?" не просто так прописаны. Это один из оптимальных путей в продвижении разработки мода.</li>
                     <li>Нет смысла добавлять 100500 новых типов оружия или брони. Во-первых игроку сложнее ориентироваться в огромном количестве, во-вторых добавлять долго, в-третьих игрок большинством пользоваться и не будет.</li>
-                    <li>За чем нужна куча новых группировок, если они будут отличаться друг от друга только набором территорий и логотипом? Лучше добавить парочку, но качественно их прописать, например с уникальной амуницией, идеологией, озвучкой, ИИ для бота и набором из десятка кандидатов в заместители.</li>
+                    <li>Зачем нужна куча новых группировок, если они будут отличаться друг от друга только набором территорий и логотипом? Лучше добавить парочку, но качественно их прописать, например с уникальной амуницией, идеологией, озвучкой, ИИ для бота и набором из десятка кандидатов в заместители.</li>
                     <li>Нет смысла рисовать огромные карты локаций на 300+ территорий. Кто это всё будет сидеть захватывать? За чем? Чем локации будут принципиально друг от друга отличаться? А смысл они будут иметь или только "чтобы захватить"?</li>
                     <li>В оригинальной игре есть разные сценарии. Есть, которые пытаются воспроизвести оригинальный сталкер, есть для сетевой игры, есть чистые песочницы, есть большие и маленькие и есть исключительно для одиночной игры на вечерок. Стоит изначально решить в какой тип сценариев целится мод. Может быть мод будет на одну локацию, но с сюжетом, а может быть на несколько локаций, без сюжета, но с необычным балансом.</li>
                     <li>Брать себе в разработку нужно такой мод, который точно сможешь самостоятельно осилить без помощников. Потому что они "сегодня" помогают, а "завтра" им уже не интересно.</li>
@@ -1161,7 +1341,7 @@
                             <tr><td><code>DiplomacyVoice-Ans-1-Down</code></td><td>Ответ группировки в случае, если игрок разорвал с ней союз</td></tr>
                             <tr><td><code>DiplomacyVoice-Question-War</code></td><td>Фраза группировки, когда она объявила войну игроку</td></tr>
                             <tr><td><code>DiplomacyVoice-Question-Neutral</code></td><td>Фраза группировки, когда она предлагает перемирие игроку</td></tr>
-                            <tr><td><code>DiplomacyVoice-Question-Alliance</code></td><td>Фраза группировки, когда она разрывает союз с игроком</td></tr>
+                            <tr><td><code>DiplomacyVoice-Question-Alliance</code></td><td>Фраза группировки, когда она предлагает союз игроку</td></tr>
                             <tr><td><code>DiplomacyVoice-Question-BreakAlliance</code></td><td>Фраза группировки, когда она разрывает союз с игроком</td></tr>
                             <tr><td><code>DiplomacyVoice-Question-Neutral-Yes</code></td><td>Реакция группировки, когда игрок согласился на ее предложение перемирия</td></tr>
                             <tr><td><code>DiplomacyVoice-Question-Neutral-No</code></td><td>Реакция группировки, когда игрок отказался на ее предложение перемирия</td></tr>
@@ -1322,7 +1502,7 @@
                             <tr><td><code>RemoveMutants</code></td><td>Убирает указанное число указанных мутантов с территории (фоновых мутантов, а не гарнизонных!)</td></tr>
                             <tr><td><code>AddUnits</code></td><td>Добавляет указанное число юнитов указанных рангов</td></tr>
                             <tr><td><code>AddMutants</code></td><td>Добавляет указанное число указанных мутантов на территорию (фоновых мутантов, а не гарнизонных!)</td></tr>
-                            <tr><td><code>Invasion</code></td><td>Из неоткуда происходит вторжение указанного числа указанных рангов юнитов указанного владельца на указанную территорию</td></tr>
+                            <tr><td><code>Invasion</code></td><td>Из ниоткуда происходит вторжение указанного числа указанных рангов юнитов указанного владельца на указанную территорию</td></tr>
                             <tr><td><code>ChangeLeader</code></td><td>Сменить лидера группировки на указанного в NewLeader</td></tr>
                             <tr><td><code>ChangeAdvisor</code></td><td>Сменить заместителя на указанного в NewAdvisor</td></tr>
                             <tr><td><code>ChangeStatusUpgrade</code></td><td>Изучить бесплатно указанное в TargetUpgradeIndex индекс улучшения</td></tr>
@@ -1365,7 +1545,7 @@
                             <tr><td><code>NewLeader</code></td><td>Техническое имя лидера из файлов Leaders, которое указанно в названии файла</td></tr>
                             <tr><td><code>NewAdvisor</code></td><td>Техническое имя заместителя из файла Advisors.ini, которое указанно в []</td></tr>
                             <tr><td><code>IdeologyName</code></td><td>Техническое название идеологии</td></tr>
-                            <tr><td><code>NotWorkFractions</code></td><td>Перечисление через запятую технических названий фракций. Если территорий будет принадлежать кому-либо из этих фракций, то событие не произойдёт.</td></tr>
+                            <tr><td><code>NotWorkFractions</code></td><td>Перечисление через запятую технических названий фракций. Если территория будет принадлежать кому-либо из этих фракций, то событие не произойдёт.</td></tr>
                             <tr><td><code>FromUnitType</code></td><td>Ранг юнита (указывается цифра ранга от 1 до 4. Указывается только одна цифра) оружие или броня которого используется в AddArmor, AddWeapon, RemoveArmor, RemoveWeapon</td></tr>
                             <tr><td><code>BuildingName</code></td><td>Техническое наименование постройки, которое является названием файла без указания формата из папки Buildings</td></tr>
                         </tbody>
@@ -1418,11 +1598,11 @@
                         <tbody>
                             <tr><td><code>Img</code></td><td>Изображение выброса</td></tr>
                             <tr><td><code>BurstEverySteps</code></td><td>Число ходов через которые выброс повторяется</td></tr>
-                            <tr><td><code>ActiveMuntantUp</code></td><td>Будет ли повышать активность мутантов</td></tr>
+                            <tr><td><code>ActiveMutantUp</code></td><td>Будет ли повышать активность мутантов</td></tr>
                             <tr><td><code>BurstActiveMutantUpCount</code></td><td>На сколько повышает активность мутантов</td></tr>
                             <tr><td><code>KillUnits</code></td><td>Пытается ли убить юнитов</td></tr>
                             <tr><td><code>MedicCanSave</code></td><td>Медикаменты могут спасти от выброса</td></tr>
-                            <tr><td><code>MedicForSaveCount</code></td><td>Сколько нужно медикаментов на спасения одного</td></tr>
+                            <tr><td><code>MedicForSaveCount</code></td><td>Сколько нужно медикаментов на спасение одного</td></tr>
                             <tr><td><code>TargetResourceImg</code></td><td>Картинка медикаментов</td></tr>
                             <tr><td><code>NotWorkFractionCount</code></td><td>Число фракций игнорирующих выброс</td></tr>
                             <tr><td><code>FractionX</code></td><td>X перечисляемый номер. Значение это техническое название фракции</td></tr>
@@ -1712,10 +1892,10 @@
                         </thead>
                         <tbody>
                             <tr><td><code>BuyUnitForAtackMotivationModificator</code></td><td>Бот будет нанимать бойцов на территорию для атаки до тех пор пока у соседней вражеской территории войска больше (войско соседа * на этот коэффициент). <strong>МОЖНО ДРОБНЫЕ ЧИСЛА</strong></td></tr>
-                            <tr><td><code>BuyBaseGuardBehindMotivationModificator</code></td><td>Бот будет покупать бойцов для базы в тылу в количестве которое нужно для остановки роста % активности мутатов умноженное на число из этого модификатора. <strong>МОЖНО ДРОБНЫЕ ЧИСЛА</strong></td></tr>
-                            <tr><td><code>BuyBaseGuardFrontEnemyMotivationModificator</code></td><td>Бот будет нанимать бойцов на базу на границе до тех пор пока у соседней вражеской территории войска больше (войско соседа * на этот коэффициент). <strong>МОЖНО ДРОБНЫЕ ЧИСЛА</strong></td></tr>
-                            <tr><td><code>BuyBaseGuardFrontNeutralMotivationModificator</code></td><td>Бот будет нанимать бойцов на базу границе до тех пор пока у соседней нейтральной территории войска больше (войско соседа * на этот коэффициент). <strong>МОЖНО ДРОБНЫЕ ЧИСЛА</strong></td></tr>
-                            <tr><td><code>BuyBaseGuardFrontAlliesMotivationModificator</code></td><td>Бот будет нанимать бойцов на базу на границе до тех пор пока у соседней союзной территории войска больше (войско соседа * на этот коэффициент). <strong>МОЖНО ДРОБНЫЕ ЧИСЛА</strong></td></tr>
+                            <tr><td><code>BuyBaseGuardBehindMotivationModificator</code></td><td>Бот будет покупать бойцов для главной базы в тылу в количестве которое нужно для остановки роста % активности мутантов умноженное на число из этого модификатора. <strong>МОЖНО ДРОБНЫЕ ЧИСЛА</strong></td></tr>
+                            <tr><td><code>BuyBaseGuardFrontEnemyMotivationModificator</code></td><td>Бот будет нанимать бойцов на главную базу, которая находится на границе до тех пор пока у соседней вражеской территории войска больше (войско соседа * на этот коэффициент). <strong>МОЖНО ДРОБНЫЕ ЧИСЛА</strong></td></tr>
+                            <tr><td><code>BuyBaseGuardFrontNeutralMotivationModificator</code></td><td>Бот будет нанимать бойцов на главную базу, которая находится на границе до тех пор пока у соседней нейтральной территории войска больше (войско соседа * на этот коэффициент). <strong>МОЖНО ДРОБНЫЕ ЧИСЛА</strong></td></tr>
+                            <tr><td><code>BuyBaseGuardFrontAlliesMotivationModificator</code></td><td>Бот будет нанимать бойцов главную на базу, которая находится на границе до тех пор пока у соседней союзной территории войска больше (войско соседа * на этот коэффициент). <strong>МОЖНО ДРОБНЫЕ ЧИСЛА</strong></td></tr>
                             <tr><td><code>BuyUnitForGarrisonMotivationModificator</code></td><td>Бот будет нанимать бойцов на территорию для достижения требования числа бойцов для остановки роста % активности мутантов. Число будет умножено на этот модификатор. <strong>МОЖНО ДРОБНЫЕ ЧИСЛА</strong></td></tr>
                             <tr><td><code>BuyUnitForGuardBorderWithEnemyMotivationModificator</code></td><td>Бот будет нанимать бойцов на территорию-границу до тех пор пока у соседней вражеской территории войска больше (войско соседа * на этот коэффициент). <strong>МОЖНО ДРОБНЫЕ ЧИСЛА</strong></td></tr>
                             <tr><td><code>BuyUnitForGuardBorderWithNeutralMotivationModificator</code></td><td>Бот будет нанимать бойцов на территорию-границу до тех пор пока у соседней нейтральной территории войска больше (войско соседа * на этот коэффициент). <strong>МОЖНО ДРОБНЫЕ ЧИСЛА</strong></td></tr>
@@ -1771,14 +1951,14 @@
                             <tr><th>Параметр</th><th>Описание</th></tr>
                         </thead>
                         <tbody>
-                            <tr><td><code>Diplomacy-CanEveryStep</code></td><td>Может дипломатить каждое указанно число ходов</td></tr>
-                            <tr><td><code>Diplomacy-CanDeaclareMoreOneWar</code></td><td>Может объявить войну когда уже с кем-то воюет</td></tr>
+                            <tr><td><code>Diplomacy-CanEveryStep</code></td><td>Может дипломатить каждое указанное число ходов</td></tr>
+                            <tr><td><code>Diplomacy-CanDeclareMoreOneWar</code></td><td>Может объявить войну когда уже с кем-то воюет</td></tr>
                             <tr><td><code>Diplomacy-DeclareWarIfNoBorder</code></td><td>Может объявлять войну тем, с кем не граничит</td></tr>
                             <tr><td><code>Diplomacy-BreakAllianceIfNoBorder</code></td><td>Может ли разрывать союз с теми, с кем не граничит</td></tr>
-                            <tr><td><code>Diplomacy-ModificatorWithBorderForAlliance</code></td><td>Во сколько раз рейтинг армии одной группировки (для союза) должно превышать рейтинг армии другой при условии, что они граничат, для согласия. <strong>ТОЛЬКО ЦЕЛЫЕ ЧИСЛА</strong></td></tr>
-                            <tr><td><code>Diplomacy-ModificatorWithoutBorderForAlliance</code></td><td>Во сколько раз рейтинг армии одной группировки (для союза) должно превышать рейтинг армии другой при условии, что они не граничат, для согласия. <strong>ТОЛЬКО ЦЕЛЫЕ ЧИСЛА</strong></td></tr>
-                            <tr><td><code>Diplomacy-ModificatorWithBorderForNeutral</code></td><td>Во сколько раз рейтинг армии одной группировки (для нейтралитета) должно превышать рейтинг армии другой при условии, что они граничат, для согласия. <strong>ТОЛЬКО ЦЕЛЫЕ ЧИСЛА</strong></td></tr>
-                            <tr><td><code>Diplomacy-ModificatorWithoutBorderForNeutral</code></td><td>Во сколько раз рейтинг армии одной группировки (для нейтралитета) должно превышать рейтинг армии другой при условии, что они не граничат, для согласия. <strong>ТОЛЬКО ЦЕЛЫЕ ЧИСЛА</strong></td></tr>
+                            <tr><td><code>Diplomacy-ModificatorWithBorderForAlliance</code></td><td>Во сколько раз рейтинг армии одной группировки (для союза) должен превышать рейтинг армии другой при условии, что они граничат, для согласия. <strong>ТОЛЬКО ЦЕЛЫЕ ЧИСЛА</strong></td></tr>
+                            <tr><td><code>Diplomacy-ModificatorWithoutBorderForAlliance</code></td><td>Во сколько раз рейтинг армии одной группировки (для союза) должен превышать рейтинг армии другой при условии, что они не граничат, для согласия. <strong>ТОЛЬКО ЦЕЛЫЕ ЧИСЛА</strong></td></tr>
+                            <tr><td><code>Diplomacy-ModificatorWithBorderForNeutral</code></td><td>Во сколько раз рейтинг армии одной группировки (для нейтралитета) должен превышать рейтинг армии другой при условии, что они граничат, для согласия. <strong>ТОЛЬКО ЦЕЛЫЕ ЧИСЛА</strong></td></tr>
+                            <tr><td><code>Diplomacy-ModificatorWithoutBorderForNeutral</code></td><td>Во сколько раз рейтинг армии одной группировки (для нейтралитета) должен превышать рейтинг армии другой при условии, что они не граничат, для согласия. <strong>ТОЛЬКО ЦЕЛЫЕ ЧИСЛА</strong></td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -1850,7 +2030,7 @@
                         <tbody>
                             <tr><td><code>MainBaseBuildings</code></td><td>Список построек для главной базы через запятую, порядок обозначает приоритет постройки</td></tr>
                             <tr><td><code>BorderBuildings</code></td><td>Список построек для приграничных территорий</td></tr>
-                            <tr><td><code>MaxBuildingCount</code></td><td>Максимальное кол-во построек выполнение одного блока в списке блоков (если Buildings указан 1 раз а MaxBuildingCount=1, то ИИ построит максимум одну постройку, если MaxBuildingCount=2, то две постройки</td></tr>
+                            <tr><td><code>MaxBuildingCount</code></td><td>Максимальное количество построек, возводимых за один проход блока Building (если Buildings указан 1 раз а MaxBuildingCount=1, то ИИ построит максимум одну постройку, если MaxBuildingCount=2, то две постройки</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -1865,7 +2045,7 @@
                             <tr><td><code>Cheat-CountResources</code></td><td>Число ресурсов, которые будут добавляться/убавляться блоком. Т.е., если надо менять только деньги, то указываем 1, если деньги и КР, то 2, если еще и патроны, то 3 и т.д.</td></tr>
                             <tr><td><code>Cheat-ResourceX</code></td><td>Название ресурса, а X это номер ресурса, которое не может быть больше числа из Cheat-CountResources</td></tr>
                             <tr><td><code>Cheat-ResourceCountX</code></td><td>Количество ресурса. Если указывается со знаком минус, то будет отниматься. X это номер ресурса, которое не может быть больше числа из Cheat-CountResources</td></tr>
-                            <tr><td><code>Cheat-CanEveryStepUseCheat</code></td><td>Может читерить каждое указанно число ходов</td></tr>
+                            <tr><td><code>Cheat-CanEveryStepUseCheat</code></td><td>Может читерить каждое указанное число ходов</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -1882,7 +2062,7 @@
                     <code>[StoryEvents.&lt;техническое название&gt;].Desc-NonOwner</code> - текст описания в случае, если ивент показываемый НЕ владельцу территории
                 </div>
 
-                <h3>Список типов ивентов (всего 34)</h3>
+                <h3>Список типов ивентов (всего 35)</h3>
                 <div class="table-wrapper">
                     <table>
                         <thead>
@@ -1893,7 +2073,7 @@
                             <tr><td><code>RemoveUnits</code></td><td>Убирает указанные числа юнитов</td></tr>
                             <tr><td><code>RemoveResources</code></td><td>Убирает указанное число указанного ресурса</td></tr>
                             <tr><td><code>RemoveMutantsActive</code></td><td>Убирает указанное число % активности мутантов на территории</td></tr>
-                            <tr><td><code>RemoveMutants</code></td><td>Убирает указанное число мутантов указанных мутантов с территории для владельца территории не Мутанты</td></tr>
+                            <tr><td><code>RemoveMutants</code></td><td>Убирает указанное число указанных мутантов с территории для владельца территории (убираются фоновые мутанты)</td></tr>
                             <tr><td><code>RemoveWeapon</code></td><td>Отнять оружие, которое на вооружении указанного юнита</td></tr>
                             <tr><td><code>RemoveArmor</code></td><td>Отнять броню, которое на вооружении указанного юнита</td></tr>
                             <tr><td><code>AddUnits</code></td><td>Добавляет указанное число юнитов указанных рангов</td></tr>
@@ -1901,9 +2081,9 @@
                             <tr><td><code>AddMutantsActive</code></td><td>Добавляет указанное число % активности мутантов (CountParam)</td></tr>
                             <tr><td><code>AddMutants</code></td><td>Добавляет указанное число указанных мутантов на территорию для владельца территории не Мутанты</td></tr>
                             <tr><td><code>AddWeapon</code></td><td>Добавить оружие, которое на вооружении указанного юнита</td></tr>
-                            <tr><td><code>AddArmor</code></td><td>Добавить броню, которое на вооружения указанного юнита</td></tr>
+                            <tr><td><code>AddArmor</code></td><td>Добавить броню, которое на вооружении указанного юнита</td></tr>
                             <tr><td><code>ChangeZonaOwner</code></td><td>Меняет владельца (только меняет и всё) территории на указанного в NewOwner</td></tr>
-                            <tr><td><code>Invasion</code></td><td>Из неоткуда происходит вторжение указанного числа указанных рангов юнитов указанного владельца на указанную территорию</td></tr>
+                            <tr><td><code>Invasion</code></td><td>Из ниоткуда происходит вторжение указанного числа указанных рангов юнитов указанного владельца на указанную территорию</td></tr>
                             <tr><td><code>ChangeLeader</code></td><td>Сменить лидера группировки на указанного в NewLeader</td></tr>
                             <tr><td><code>ChangeAdvisor</code></td><td>Сменить заместителя на указанного в NewAdvisor</td></tr>
                             <tr><td><code>AvailableAdvisor</code></td><td>Включить/отключить доступность заместителя (StatusAdvisor=True/False) указанного в TargetAdvisor, если отключается текущий выбранный группировкой, то ставится заместителем указанный в NewAdvisor</td></tr>
@@ -1923,7 +2103,7 @@
                             <tr><td><code>CheckLessResources</code></td><td>Проверяет кол-во CountResources ресурсов NameResources у группировки. Если меньше, то указанный флаг в EventFlagResult будет=True, иначе False</td></tr>
                             <tr><td><code>Build</code></td><td>Строит бесплатно постройку из BuildingName на указанной территории</td></tr>
                             <tr><td><code>Destroy</code></td><td>Уничтожает бесплатно постройку из BuildingName на указанной территории</td></tr>
-                            <tr><td><code>ChangeDiplomacy</code></td><td>Меняет дипломатические отношения между фракциям Fraction1 и Fraction2 на DiplomacyStatus</td></tr>
+                            <tr><td><code>ChangeDiplomacy</code></td><td>Меняет дипломатические отношения между фракциями Fraction1 и Fraction2 на DiplomacyStatus</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -2031,7 +2211,7 @@
                             <tr><td><code>[PsyControl]</code></td><td>Начальное состояние работы излучателей</td></tr>
                             <tr><td><code>[MainZoneFraction]</code></td><td>У какой группировки (ее техническое название) какая территория (индекс) считается главной базой</td></tr>
                             <tr><td><code>[Advisors]</code></td><td>Список кандидатов в заместители с указанием доступности их в списке (Тут только технические названия указаны. Сами параметры хранятся в <code>Advisors.ini</code>)</td></tr>
-                            <tr><td><code>[Diplomacy]</code></td><td>Отношения между группировками: <code>-1</code> - Вечная война, <code>0</code> - Война, <code>1</code> - Нейтралитет, <code>2</code> - Союз, <code>3</code> - Не рушимый союз</td></tr>
+                            <tr><td><code>[Diplomacy]</code></td><td>Отношения между группировками: <code>-1</code> - Вечная война, <code>0</code> - Война, <code>1</code> - Нейтралитет, <code>2</code> - Союз, <code>3</code> - Нерушимый союз</td></tr>
                             <tr><td><code>[Group-UnitIndex]</code></td><td>К какой группировки какой тип юнитов (шаблон) принадлежит</td></tr>
                             <tr><td><code>[Group-Leaders]</code></td><td>Лидеры группировок</td></tr>
                             <tr><td><code>[Group-Advisor]</code></td><td>Кто назначен со старта заместителем лидера группировки (указывается техническое имя персона из <code>Advisors.ini</code>)</td></tr>
@@ -2141,7 +2321,7 @@
                             <tr><td><code>SpyBasedCostMoneyForReconnaissance</code></td><td>Базовая цена по деньгам для отправки разведки в сценарии (к нему прибавляются все остальные бонусы)</td></tr>
                             <tr><td><code>MusicCheckTimer</code></td><td>Таймер проверки закончилась ли предыдущая музыка или нет</td></tr>
                             <tr><td><code>BasedChanceForSearchArts</code></td><td>Базовый шанс для поиска артефактов в сценарии</td></tr>
-                            <tr><td><code>BasedChanceOfDethForSearchArts</code></td><td>Базовый шанс смерти бойца при поиске артефакта</td></tr>
+                            <tr><td><code>BasedChanceOfDeathForSearchArts</code></td><td>Базовый шанс смерти бойца при поиске артефакта</td></tr>
                             <tr><td><code>ExcludedUpgrades</code></td><td>Список улучшений которые недоступны в сценарии (через запятую)</td></tr>
                             <tr><td><code>ExcludedBuildings</code></td><td>Запрещённые постройки (список через запятую)</td></tr>
                             <tr><td><code>BasedCostArmyMove</code></td><td>Базовая стоимость передислокации бойцов</td></tr>
@@ -2156,17 +2336,17 @@
                             <tr><td><code>BrainMixer</code></td><td>Включен ли выжигатель мозгов в сценарии</td></tr>
                             <tr><td><code>BrainPsy-PlayerCanChangeStatus</code></td><td>Включена ли возможность игроку вкл/выкл установку пси излучения</td></tr>
                             <tr><td><code>BrainMixer-PlayerCanChangeStatus</code></td><td>Включена ли возможность игроку вкл/выкл выжигатель мозгов</td></tr>
-                            <tr><td><code>BrainPsyBasedZona</code></td><td>Территория где базируется пси излучатель (на той территории им можно управлять)</td></tr>
-                            <tr><td><code>BrainMixerBasedZona</code></td><td>Территория где базируется выжигатель мозгов (на той территории им можно управлять)</td></tr>
-                            <tr><td><code>BurstNumEvent</code></td><td>Индекс ивента выброса из <code>Event_Special.ini</code></td></tr>
-                            <tr><td><code>NoFoodNumEvent</code></td><td>Индекс ивента нехватки еды из <code>Event_Special.ini</code></td></tr>
-                            <tr><td><code>BrainPsyWorkNumEvent</code></td><td>Индекс ивента последствий пси излучателя из <code>Event_Special.ini</code></td></tr>
-                            <tr><td><code>BrainMixerWorkNumEvent</code></td><td>Индекс ивента последствий выжигателя мозгов из <code>Event_Special.ini</code></td></tr>
-                            <tr><td><code>BrainPsyAlarmNumEvent</code></td><td>Индекс ивента оповещения переключения состояния пси излучения из <code>Event_Special.ini</code></td></tr>
-                            <tr><td><code>BrainMixerAlarmNumEvent</code></td><td>Индекс ивента оповещения переключения состояния выжигателя мозгов из <code>Event_Special.ini</code></td></tr>
-                            <tr><td><code>IdeologyLeaveUnitsNumEvent</code></td><td>Индекс ивента оповещения при уходе бойцов из-за разногласий на основе идеологии</td></tr>
-                            <tr><td><code>AutoSearchMaxArtsEvent</code></td><td>Индекс ивента оповещения при полном авто поиске артефактов</td></tr>
-                            <tr><td><code>AutoSearchPartArtsEvent</code></td><td>Индекс ивента оповещения при частичном авто поиске артефактов</td></tr>
+                            <tr><td><code>BrainPsyBasedZona</code></td><td>Территория, где базируется пси излучатель (на той территории им можно управлять)</td></tr>
+                            <tr><td><code>BrainMixerBasedZona</code></td><td>Территория, где базируется выжигатель мозгов (на той территории им можно управлять)</td></tr>
+                            <tr><td><code>BurstNumEvent</code></td><td>Техническое название ивента выброса из папки <code>SpecialEvents</code></td></tr>
+                            <tr><td><code>NoFoodNumEvent</code></td><td>Техническое название ивента нехватки еды из папки <code>SpecialEvents</code></td></tr>
+                            <tr><td><code>BrainPsyWorkNumEvent</code></td><td>Техническое название ивента последствий пси излучателя из папки <code>SpecialEvents</code></td></tr>
+                            <tr><td><code>BrainMixerWorkNumEvent</code></td><td>Техническое название ивента последствий выжигателя мозгов из папки <code>SpecialEvents</code></td></tr>
+                            <tr><td><code>BrainPsyAlarmNumEvent</code></td><td>Техническое название ивента оповещения переключения состояния пси излучения из папки <code>SpecialEvents</code></td></tr>
+                            <tr><td><code>BrainMixerAlarmNumEvent</code></td><td>Техническое название ивента оповещения переключения состояния выжигателя мозгов из папки <code>SpecialEvents</code></td></tr>
+                            <tr><td><code>IdeologyLeaveUnitsNumEvent</code></td><td>Техническое название ивента оповещения при уходе бойцов из-за разногласий на основе идеологии из папки <code>SpecialEvents</code></td></tr>
+                            <tr><td><code>AutoSearchMaxArtsEvent</code></td><td>Техническое название ивента оповещения при полном авто поиске артефактов из папки <code>SpecialEvents</code></td></tr>
+                            <tr><td><code>AutoSearchPartArtsEvent</code></td><td>Техническое название ивента оповещения при частичном авто поиске артефактов из папки <code>SpecialEvents</code></td></tr>
                             <tr><td><code>BrainControlChangeBasedCost</code></td><td>Базовая стоимость переключения состояния установки</td></tr>
                             <tr><td><code>DiplomacyActionCost</code></td><td>Базовая стоимость в КР дипломатического действия</td></tr>
                             <tr><td><code>BasedCostNewRule</code></td><td>Базовая стоимость в КР для смены внутреннего правила группировки</td></tr>
@@ -2174,7 +2354,7 @@
                             <tr><td><code>PartAutoArtsNameRule</code></td><td>Индекс правила, которое включает частично автоматический поиск артефактов</td></tr>
                             <tr><td><code>BasedCostDestroyBuildComands</code></td><td>Базовая стоимость разрушения постройки в КР</td></tr>
                             <tr><td><code>BasedCostForUpgradeAmmo-Money</code></td><td>Базовый множитель цены на модификацию амуниции в деньгах (можно указывать дробные значения)</td></tr>
-                            <tr><td><code>BasedCostForUpgardeAmmo-Comands</code></td><td>Базовая стоимость в КР на привлечение одной мастерской к модификации амуниции</td></tr>
+                            <tr><td><code>BasedCostForUpgradeAmmo-Comands</code></td><td>Базовая стоимость в КР на привлечение одной мастерской к модификации амуниции</td></tr>
                             <tr><td><code>BasedImprovementProductivityWorkshop</code></td><td>Базовая продуктивность одной мастерской для модификации чего-либо в течении хода</td></tr>
                             <tr><td><code>BasedCostForLeaveZone</code></td><td>Базовая стоимость в КР, чтобы покинуть территорию</td></tr>
                             <tr><td><code>OwnerFractionOfAbandonedZone</code></td><td>Техническое название группировки, которая станет новым владельцем после того как территорию покинет ее владелец</td></tr>
@@ -2396,7 +2576,7 @@ GroupX-XXXXX = True/False</code></pre>
 
                 <div class="callout callout-info">
                     <div class="callout-title">Рекомендация по формату</div>
-                    Лучший форматом для карты является <strong>bmp</strong>, так как движок этот формат грузит быстрее остальных.<br>
+                    Лучшим форматом для карты является <strong>bmp</strong>, так как движок этот формат грузит быстрее остальных.<br>
                     Еще можно использовать <strong>png</strong>, который грузится дольше, но не существенно.<br>
                     И наконец <strong>jpg</strong>, чтобы карта меньше всего весила, но грузится будет существенно дольше.
                 </div>
@@ -2473,8 +2653,6 @@ GroupX-XXXXX = True/False</code></pre>
             'randomevents':                  'RandomEvents',
             'receipts':                      'Receipts',
             'specialevents':                 'SpecialEvents',
-            'events_special.ini':            'SpecialEvents',
-            'event_special.ini':             'SpecialEvents',
             'events_story.ini':              'Events_Story',
             'typelands':                     'TypeLands',
             'backgroundobjects':             'BackgroundObjects',
@@ -2540,6 +2718,195 @@ GroupX-XXXXX = True/False</code></pre>
         }
 
         linkifyRefs();
+		        /* ============================================================
+           4. ПОИСК ПО СПРАВКЕ
+              Фильтр по названию главы + полнотекстовый поиск
+              по содержимому всех разделов
+           ============================================================ */
+        (function () {
+            const searchInput  = document.getElementById('searchInput');
+            const searchClear  = document.getElementById('searchClear');
+            const searchStatus = document.getElementById('searchStatus');
+            const noResult     = document.getElementById('searchNoResult');
+
+            // Защита: если HTML-патч не применён — просто выходим
+            if (!searchInput) return;
+
+            const sectionLabels = Array.from(document.querySelectorAll('.sidebar-section-label'));
+            const menuLists     = Array.from(document.querySelectorAll('.sidebar-scroll > ul'));
+
+            /* ---------- 4.1. Индекс и подготовка пунктов меню ---------- */
+            const items = navLinks.map(link => {
+                const id  = link.getAttribute('href').slice(1);
+                const sec = document.getElementById(id);
+                const title = link.textContent;
+
+                // Оборачиваем текст, чтобы можно было подсвечивать совпадения
+                const textSpan = document.createElement('span');
+                textSpan.className = 'nav-text';
+                textSpan.textContent = title;
+
+                // Бейдж с количеством совпадений в содержимом
+                const badge = document.createElement('span');
+                badge.className = 'search-badge';
+                badge.style.display = 'none';
+
+                link.textContent = '';
+                link.appendChild(textSpan);
+                link.appendChild(badge);
+                link.title = title;
+
+                return {
+                    link,
+                    li: link.parentElement,
+                    title,
+                    titleLower: title.toLowerCase(),
+                    textSpan,
+                    badge,
+                    content: sec ? sec.textContent.toLowerCase() : ''
+                };
+            });
+
+            /* ---------- 4.2. Вспомогательные функции ---------- */
+            function countOccurrences(haystack, needle) {
+                let count = 0, pos = 0;
+                while ((pos = haystack.indexOf(needle, pos)) !== -1) {
+                    count++;
+                    pos += needle.length;
+                }
+                return count;
+            }
+
+            function escapeRegExp(s) {
+                return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            }
+
+            function escapeHtml(s) {
+                return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            }
+
+            function highlight(text, query) {
+                const safe = escapeHtml(text);
+                if (!query) return safe;
+                const re = new RegExp('(' + escapeRegExp(escapeHtml(query)) + ')', 'gi');
+                return safe.replace(re, '<mark>$1</mark>');
+            }
+
+            // Склонение: [1, 2-4, 5+]
+            function plural(n, forms) {
+                const m10 = n % 10, m100 = n % 100;
+                if (m10 === 1 && m100 !== 11) return forms[0];
+                if (m10 >= 2 && m10 <= 4 && (m100 < 10 || m100 >= 20)) return forms[1];
+                return forms[2];
+            }
+
+            /* ---------- 4.3. Сброс меню в исходное состояние ---------- */
+            function resetMenu() {
+                items.forEach(it => {
+                    it.li.style.display = '';
+                    it.badge.style.display = 'none';
+                    it.badge.textContent = '';
+                    it.textSpan.innerHTML = escapeHtml(it.title);
+                });
+                sectionLabels.forEach(l => { l.style.display = ''; });
+                menuLists.forEach(ul => { ul.style.display = ''; });
+                noResult.classList.remove('is-visible');
+                searchStatus.textContent = '';
+            }
+
+            /* ---------- 4.4. Основной поиск ---------- */
+            function runSearch() {
+                const raw = searchInput.value.trim();
+                const q   = raw.toLowerCase();
+
+                searchClear.classList.toggle('is-visible', raw.length > 0);
+
+                if (!q) { resetMenu(); return; }
+
+                let matchedSections = 0;
+                let totalHits       = 0;
+
+                items.forEach(it => {
+                    const titleMatch   = it.titleLower.includes(q);
+                    const contentCount = countOccurrences(it.content, q);
+                    const visible      = titleMatch || contentCount > 0;
+
+                    it.li.style.display = visible ? '' : 'none';
+                    it.textSpan.innerHTML = highlight(it.title, raw);
+
+                    if (contentCount > 0) {
+                        it.badge.textContent = contentCount > 99 ? '99+' : contentCount;
+                        it.badge.title = 'Совпадений в разделе: ' + contentCount;
+                        it.badge.style.display = '';
+                        totalHits += contentCount;
+                    } else {
+                        it.badge.style.display = 'none';
+                    }
+
+                    if (visible) matchedSections++;
+                });
+
+                // Прячем списки и заголовки групп, где ничего не найдено
+                menuLists.forEach(ul => {
+                    const anyVisible = Array.from(ul.children).some(li => li.style.display !== 'none');
+                    ul.style.display = anyVisible ? '' : 'none';
+                });
+                sectionLabels.forEach(label => {
+                    const ul = label.nextElementSibling;
+                    label.style.display = (ul && ul.tagName === 'UL' && ul.style.display !== 'none') ? '' : 'none';
+                });
+
+                // Строка статуса
+                if (matchedSections === 0) {
+                    noResult.classList.add('is-visible');
+                    searchStatus.textContent = '';
+                } else {
+                    noResult.classList.remove('is-visible');
+                    let status = 'Найдено в ' + matchedSections + ' ' +
+                                 plural(matchedSections, ['разделе', 'разделах', 'разделах']);
+                    if (totalHits > 0) {
+                        status += ' · ' + totalHits + ' ' +
+                                  plural(totalHits, ['совпадение', 'совпадения', 'совпадений']);
+                    }
+                    searchStatus.textContent = status;
+                }
+            }
+
+            /* ---------- 4.5. Обработчики ---------- */
+            let debounceTimer;
+            searchInput.addEventListener('input', () => {
+                clearTimeout(debounceTimer);
+                debounceTimer = setTimeout(runSearch, 120);
+            });
+
+            searchClear.addEventListener('click', () => {
+                searchInput.value = '';
+                runSearch();
+                searchInput.focus();
+            });
+
+            searchInput.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    searchInput.value = '';
+                    runSearch();
+                    searchInput.blur();
+                }
+                if (e.key === 'Enter') {
+                    const first = items.find(it => it.li.style.display !== 'none');
+                    if (first) first.link.click();
+                }
+            });
+
+            // Горячая клавиша "/" — фокус на поиск
+            document.addEventListener('keydown', (e) => {
+                const tag = document.activeElement && document.activeElement.tagName;
+                if (e.key === '/' && tag !== 'INPUT' && tag !== 'TEXTAREA') {
+                    e.preventDefault();
+                    searchInput.focus();
+                    searchInput.select();
+                }
+            });
+        })();
     </script>
 </body>
 </html>
