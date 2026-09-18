@@ -1000,7 +1000,9 @@
                     <li>Брать себе в разработку нужно такой мод, который точно сможешь самостоятельно осилить без помощников. Потому что они "сегодня" помогают, а "завтра" им уже не интересно.</li>
                     <li>Все игровые параметры логично расположены по файлам. Например, все динамичные параметры находятся в <code>Main.ini</code>, для конкретики рассмотрим тему с пси-установками. Включена ли со старта какая-либо пси-установка хранится в <code>Main.ini</code>, а вот возможность отключать/включать их во время игры хранится в <code>Settings.ini</code>, так как это статичный параметр и в процессе игры не меняется.</li>
                     <li>Добавление чего-либо нового в игру всегда ведет к тому, что необходимо будет пополнить файл локализации, где хранится весь игровой текст. Например добавили нового заместителя - значит надо добавить его имя в локализацию. Аналогично с идеологиями, амуницией, улучшениями, постройками и так далее.</li>
-                    <li>Название, назначение и тип значений абсолютно всех игровых параметров всех игровых файлов хранится в этом справочном файле, который вы читаете. Тут есть всё.</li>
+                    <li>В конфиг файлах названия секций типа <code>[Main]</code> или ключей типа <code>DifficultyLevel =</code> не является регистрозависимыми, но рекомендуем всё таки писать <code>[Main]</code>, а не <code>[main]</code> и т.д., так как вам самим потом проще будет ориентироваться</li>
+					<li>Если у параметра можно указывать десятичные доли, то рекомендуется это делать через запятую. Например полтора следует писать как 1,5</li>
+					<li>Название, назначение и тип значений абсолютно всех игровых параметров всех игровых файлов хранится в этом справочном файле, который вы читаете. Тут есть всё.</li>
                 </ol>
             </div>
 
@@ -1028,7 +1030,7 @@
                             <tr><td><code>TargetIdeology</code></td><td>Техническое название идеологии, которую нужно принять</td></tr>
                             <tr><td><code>LimitStep</code></td><td>Достижение будет проверяться до указанного хода включительно</td></tr>
                             <tr><td><code>StartStep</code></td><td>Достижение будет проверяться с указанного хода включительно</td></tr>
-                            <tr><td><code>ID</code></td><td>Достижение использует id для сохранения. Если делаете своё, используйте из <code>data.ini</code>, иначе его выполнят в другом сценарии!!!</td></tr>
+                            <tr><td><code>ID</code></td><td>Достижение использует id для сохранения. Если делаете своё достижение, то убедитесь, что оно имеет id, которое отличается от всех id других достижений во всех файлах <code>Achievements.ini</code> игры. Для гарантии можно сделать так ID = modNameYourModX, где NameYourMod - название мода без пробелов, а X - двух циферный номер достижения, например 01, 02, 03, 04 и т.д.</td></tr>
                             <tr><td><code>SoundFX</code></td><td>Есть ли звук при получении ачивки</td></tr>
                             <tr><td><code>SoundFXWayFile</code></td><td>Путь к файлу звука получения ачивки</td></tr>
                             <tr><td><code>CountNeedZona</code></td><td>Число территорий для получения ачивки</td></tr>
@@ -1188,7 +1190,7 @@
                             <tr><td><code>Img</code></td><td>Путь до крупного изображения ресурса в игре, используется например при торговле или на складе</td></tr>
                             <tr><td><code>Type</code></td><td>Тип: ресурс или товар</td></tr>
                             <tr><td><code>Cost</code></td><td>Базовая денежная цена без учета какого-либо коэффициента</td></tr>
-                            <tr><td><code>Category</code></td><td>Категория товара (еда, медик, припасы, броня, оружие). Можно создавать собственные категории. Категории нужны для регулировки множителя цены при продажи/покупки торговцем в <code>Trades.ini</code></td></tr>
+                            <tr><td><code>Category</code></td><td>Категория товара (еда, медик, припасы, броня, оружие). Можно создавать собственные категории. Категории нужны для регулировки множителя цены при продажи/покупки торговцем в <code>Traders.ini</code></td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -1607,6 +1609,8 @@
                             <tr><td><code>NotWorkFractionCount</code></td><td>Число фракций игнорирующих выброс</td></tr>
                             <tr><td><code>FractionX</code></td><td>X перечисляемый номер. Значение это техническое название фракции</td></tr>
                             <tr><td><code>AddToGameLog</code></td><td>Отображать сообщение в логе игровых событий</td></tr>
+							<tr><td><code>SoundFXForOwner</code></td><td>Воспроизводится ли звук у события, которое происходит у владельца территории, где это событие произошло</td></tr>
+							<tr><td><code>SoundFXForOwnerFile</code></td><td>Путь к звуку события, которое происходит у владельца территории, где это событие произошло</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -1687,7 +1691,7 @@
                             <tr><td><code>Cost_Money</code></td><td>Число требуемых денег для изучения</td></tr>
                             <tr><td><code>Bonus</code></td><td>Тип бонуса захардкожен, но этот коэффициент можно менять</td></tr>
                             <tr><td><code>Need</code></td><td>Технология, которая требуется для изучения</td></tr>
-                            <tr><td><code>Logo</code></td><td>Изображение технологии</td></tr>
+                            <tr><td><code>Logo-NonActive</code></td><td>Изображение технологии. Остальные Logo строчки можно не заполнять, так как являются рудиментом, потому что движок их пишет автоматически у себя в уме. Поэтому иметь соответствующие изображения в соответствующих папках и с соответствующими названиями строго обязательно. Какие названия и в каких папках - смотрите любой дефолтный конфиг улучшения, так как там рудименты эти прописаны для понятности.</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -1705,7 +1709,7 @@
                             <tr><td><code>UpPartCountAfterKillMutant</code></td><td>* к трофеям от мутантов</td></tr>
                             <tr><td><code>UpCashCountAfterKillStalker</code></td><td>* к хабару с убитых сталкеров</td></tr>
                             <tr><td><code>UpChanceCountForReconnaissance</code></td><td>+ к шансу успеха разведчика</td></tr>
-                            <tr><td><code>DownCountCRForKillMutant</code></td><td>- к стоимости зачистки в КР</td></tr>
+                            <tr><td><code>DownCountCRForKillMutants</code></td><td>- к стоимости зачистки в КР</td></tr>
                             <tr><td><code>DownCountCRForMoveAndBattle</code></td><td>- к стоимости Передислокации и Баттлов</td></tr>
                             <tr><td><code>DownCountCRForReconnaissance</code></td><td>/ к стоимости отправки разведчика</td></tr>
                             <tr><td><code>UpRecruitsCountLimit</code></td><td>+ к лимиту каждого ранга</td></tr>
@@ -1722,7 +1726,7 @@
             <!-- DIFFICULTY -->
             <div class="section" id="Difficulty">
                 <h2>🎯 Настройка выбора сложности (Difficulty.ini)</h2>
-                <p>Файл для редактирования влияния уровня сложности на стартовые ресурсы игрока (Player) и бота (AI). Техническое название в <code>[]</code> не трогать.</p>
+                <p>Файл для редактирования влияния уровня сложности на стартовые ресурсы игрока ([Novice-Player], [Skilled-Player], [Veteran-Player], [Master-Player]) и бота ([Novice-AI], [Skilled-AI], [Veteran-AI], [Master-AI]). Техническое название в <code>[]</code> не трогать, так как в движке это хардкод</p>
 
                 <h3>Параметры</h3>
                 <div class="table-wrapper">
@@ -1955,10 +1959,14 @@
                             <tr><td><code>Diplomacy-CanDeclareMoreOneWar</code></td><td>Может объявить войну когда уже с кем-то воюет</td></tr>
                             <tr><td><code>Diplomacy-DeclareWarIfNoBorder</code></td><td>Может объявлять войну тем, с кем не граничит</td></tr>
                             <tr><td><code>Diplomacy-BreakAllianceIfNoBorder</code></td><td>Может ли разрывать союз с теми, с кем не граничит</td></tr>
-                            <tr><td><code>Diplomacy-ModificatorWithBorderForAlliance</code></td><td>Во сколько раз рейтинг армии одной группировки (для союза) должен превышать рейтинг армии другой при условии, что они граничат, для согласия. <strong>ТОЛЬКО ЦЕЛЫЕ ЧИСЛА</strong></td></tr>
-                            <tr><td><code>Diplomacy-ModificatorWithoutBorderForAlliance</code></td><td>Во сколько раз рейтинг армии одной группировки (для союза) должен превышать рейтинг армии другой при условии, что они не граничат, для согласия. <strong>ТОЛЬКО ЦЕЛЫЕ ЧИСЛА</strong></td></tr>
-                            <tr><td><code>Diplomacy-ModificatorWithBorderForNeutral</code></td><td>Во сколько раз рейтинг армии одной группировки (для нейтралитета) должен превышать рейтинг армии другой при условии, что они граничат, для согласия. <strong>ТОЛЬКО ЦЕЛЫЕ ЧИСЛА</strong></td></tr>
-                            <tr><td><code>Diplomacy-ModificatorWithoutBorderForNeutral</code></td><td>Во сколько раз рейтинг армии одной группировки (для нейтралитета) должен превышать рейтинг армии другой при условии, что они не граничат, для согласия. <strong>ТОЛЬКО ЦЕЛЫЕ ЧИСЛА</strong></td></tr>
+                            <tr><td><code>Diplomacy-ModificatorWithBorderForAlliance</code></td><td>Во сколько раз рейтинг армии одной группировки (для союза и вечного союза) должен превышать рейтинг армии другой при условии, если они граничат, для согласия. <strong>ТОЛЬКО ЦЕЛЫЕ ЧИСЛА</strong></td></tr>
+                            <tr><td><code>Diplomacy-ModificatorWithoutBorderForAlliance</code></td><td>Во сколько раз рейтинг армии одной группировки (для союза и вечного союза) должен превышать рейтинг армии другой при условии, если они не граничат, для согласия. <strong>ТОЛЬКО ЦЕЛЫЕ ЧИСЛА</strong></td></tr>
+                            <tr><td><code>Diplomacy-ModificatorWithBorderForNeutral</code></td><td>Во сколько раз рейтинг армии одной группировки (для нейтралитета) должен превышать рейтинг армии другой при условии, если они граничат, для согласия. <strong>ТОЛЬКО ЦЕЛЫЕ ЧИСЛА</strong></td></tr>
+                            <tr><td><code>Diplomacy-ModificatorWithoutBorderForNeutral</code></td><td>Во сколько раз рейтинг армии одной группировки (для нейтралитета) должен превышать рейтинг армии другой при условии, если они не граничат, для согласия. <strong>ТОЛЬКО ЦЕЛЫЕ ЧИСЛА</strong></td></tr>
+							<tr><td><code>Diplomacy-ModificatorWithBorderForWar</code></td><td>Во сколько раз рейтинг армии одной группировки (для вечной войны и войны) должен превышать рейтинг армии другой при условии, если они граничат. <strong>ТОЛЬКО ЦЕЛЫЕ ЧИСЛА</strong></td></tr>
+							<tr><td><code>Diplomacy-ModificatorWithoutBorderForWar</code></td><td>Во сколько раз рейтинг армии одной группировки (для вечной войны и войны) должен превышать рейтинг армии другой при условии, если они не граничат. <strong>ТОЛЬКО ЦЕЛЫЕ ЧИСЛА</strong></td></tr>
+							<tr><td><code>Diplomacy-ModificatorWithBorderForBrokenAlliance</code></td><td>Во сколько раз рейтинг армии одной группировки (для союза и вечного союза) должен превышать рейтинг армии другой при условии, если они граничат. <strong>ТОЛЬКО ЦЕЛЫЕ ЧИСЛА</strong></td></tr>
+							<tr><td><code>Diplomacy-ModificatorWithoutBorderForBrokenAlliance</code></td><td>Во сколько раз рейтинг армии одной группировки (для союза и вечного союза) должен превышать рейтинг армии другой при условии, если они не граничат. <strong>ТОЛЬКО ЦЕЛЫЕ ЧИСЛА</strong></td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -2243,6 +2251,30 @@
                         </tbody>
                     </table>
                 </div>
+				
+				<h3>Параметры, которые нет смысла трогать в [Scenario]</h3>
+                <p>Так как движок их при старте сценария перезапишет у себя в памяти</p>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr><th>Параметр</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><code>ActivePlayerIndex</code></td></tr>
+                            <tr><td><code>AtackArmyThroughtAllyEnabled</code></td></tr>
+                            <tr><td><code>BurstEnabled</code></td></tr>
+                            <tr><td><code>MoveArmyThroughAllyEnabled</code></td></tr>
+                            <tr><td><code>PlayerGroup-X</code></td></tr>
+                            <tr><td><code>PlayersCount</code></td></tr>
+							<tr><td><code>RandomEventsEnabled</code></td></tr>
+							<tr><td><code>StoryEventsEnabled</code></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+				
+				<h3>Параметры, которые нет смысла трогать в [EventFlag]</h3>
+                <p>Все ивент флаги из этого раздела нет смысла трогать, так как при старте сценария движок им сам прописывает состояние = False</p>
+				
             </div>
 
             <!-- MESSAGES -->
@@ -2392,7 +2424,7 @@ GroupX-XXXXX = True/False</code></pre>
                         </thead>
                         <tbody>
                             <tr><td><code>World</code></td><td>Внешний мир</td></tr>
-                            <tr><td><code>TraderX</code></td><td>Торговец из <code>Trades.ini</code></td></tr>
+                            <tr><td><code>TraderX</code></td><td>Торговец из <code>Traders.ini</code></td></tr>
                             <tr><td><code>GroupX-XXXXX</code></td><td>Группировка X и идеология XXXXX</td></tr>
                         </tbody>
                     </table>
@@ -2422,11 +2454,10 @@ GroupX-XXXXX = True/False</code></pre>
                             <tr><th>Секция</th><th>Описание</th></tr>
                         </thead>
                         <tbody>
-                            <tr><td><code>[Main]</code></td><td>Глобальные переключатели доступности торговца в сценарии</td></tr>
                             <tr><td><code>[World]</code></td><td>Все параметры у этого торговца можно спокойно менять или делать копию этого торговца</td></tr>
                             <tr><td><code>[YourGroup]</code></td><td>Тут Need движок учитывать не будет, так как идет автоматическая привязка к группировке</td></tr>
                             <tr><td><code>[OtherGroup]</code></td><td>Тут Need движок учитывать не будет, так как идет автоматическая привязка к группировке</td></tr>
-                            <tr><td><code>[Trader]</code></td><td>Настройки таких торговцев как Сидорович</td></tr>
+                            <tr><td><code>[TraderX]</code></td><td>Настройки таких торговцев как Сидорович</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -2443,15 +2474,15 @@ GroupX-XXXXX = True/False</code></pre>
                             <tr><td><code>Chance</code></td><td>Шанс успеха попытки установки связи. Значения от 1 до 100</td></tr>
                             <tr><td><code>StartStep</code></td><td>После какого хода торговец доступен для торговли (0 - всегда)</td></tr>
                             <tr><td><code>EndStep</code></td><td>До какого хода торговец доступен для торговли (0 - торговец не отключается)</td></tr>
-                            <tr><td><code>Coef-Sell</code></td><td>Множитель цены продажи категории товаров торговцем</td></tr>
-                            <tr><td><code>Coef-Buy</code></td><td>Множитель цены покупки категории товаров торговцем</td></tr>
+                            <tr><td><code>Coef-Sell-X</code></td><td>Множитель цены продажи категории товаров торговцем.</td></tr>
+                            <tr><td><code>Coef-Buy-X</code></td><td>Множитель цены покупки категории товаров торговцем</td></tr>
                         </tbody>
                     </table>
                 </div>
 
                 <div class="callout callout-info">
                     <div class="callout-title">Категории товаров</div>
-                    Можно создавать свои категории товаров для регулировки множителя цены. Чтобы товар попал в нужную категорию, необходимо эту категорию указывать в файле с техническим названием товара в атрибуте <code>Category</code>
+                    Можно создавать свои категории товаров для регулировки множителя цены. Чтобы товар попал в нужную категорию, необходимо эту категорию указывать в файле с техническим названием товара в атрибуте <code>Category</code>. Стандартные категории, которые существуют в игре: Food, Medic, Supplies, Parts, Arts, Weapon, Armor, BuildingMaterials, AmmoComponents.
                 </div>
             </div>
 
@@ -2669,7 +2700,6 @@ GroupX-XXXXX = True/False</code></pre>
             'settings.ini':                  'Settings',
             'tradergoods.ini':               'TraderGoods',
             'traders.ini':                   'Traders',
-            'trades.ini':                    'Traders',
             'tutorial.ini':                  'Tutorial',
             'links.ini':                     'mapLinks',
             'territories.ini':               'mapTerritories',
