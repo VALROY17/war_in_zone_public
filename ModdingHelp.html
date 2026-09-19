@@ -2336,6 +2336,302 @@ NotWorkFractions=Mutants,Stalkers,Monolith
 				<h3>Параметры, которые нет смысла трогать в [EventFlag]</h3>
                 <p>Все ивент флаги из этого раздела нет смысла трогать, так как при старте сценария движок им сам прописывает состояние = False</p>
 				
+				<h4>Примеры заполнения секций</h4>
+
+<div class="code-block">
+<h5>[PsyControl] — начальное состояние излучателей</h5>
+<pre><code>[PsyControl]
+BrainMixer=False
+BrainPsy=True</code></pre>
+</div>
+
+<div class="code-block">
+<h5>[MainZoneFraction] — главные базы группировок</h5>
+<p>Формат: <code>ТехНазвание_группировки=Индекс_территории</code></p>
+<pre><code>[MainZoneFraction]
+Soldiers=93
+Duty=74
+Freedom=63
+Monolith=50
+Mercenaries=41</code></pre>
+</div>
+
+<div class="code-block">
+<h5>[Advisors] — доступность заместителей в сценарии</h5>
+<p>Формат: <code>ТехНазвание_заместителя=True/False</code>. True — доступен для выбора игроком/ботом с самого начала.</p>
+<pre><code>[Advisors]
+Advisor-0=True
+Advisor-1=True
+Advisor-101=False
+Advisor-102=True
+Advisor-103=False</code></pre>
+</div>
+
+<div class="code-block">
+<h5>[Diplomacy] — отношения между группировками</h5>
+<p>Формат: <code>Группировка1-Группировка2=Статус</code>. Значения: <code>-1</code> — Вечная война, <code>0</code> — Война, <code>1</code> — Нейтралитет, <code>2</code> — Союз, <code>3</code> — Нерушимый союз.</p>
+<pre><code>[Diplomacy]
+Mutants-Stalkers=-1
+Mutants-Bandits=-1
+Mutants-Soldiers=-1
+Stalkers-Bandits=0
+Stalkers-Monolith=-1
+Soldiers-Scientists=2
+Monolith-Zombie=2</code></pre>
+</div>
+
+<div class="code-block">
+<h5>[Group-UnitIndex] — шаблоны юнитов группировок</h5>
+<p>Формат: <code>Группировка-Ранг=ТехНазвание_шаблона</code>. Ранг: 1=Новичок, 2=Опытный, 3=Ветеран, 4=Мастер.</p>
+<pre><code>[Group-UnitIndex]
+Mutants-1=Mutants1
+Mutants-2=Mutants2
+Mutants-3=Mutants3
+Mutants-4=Mutants4
+Stalkers-1=Stalkers1
+Stalkers-2=Stalkers2
+Stalkers-3=Stalkers3
+Stalkers-4=Stalkers4
+Duty-1=Duty1
+Duty-2=Duty2
+Duty-3=Duty3
+Duty-4=Duty4</code></pre>
+</div>
+
+<div class="code-block">
+<h5>[Group-Leaders] — лидеры группировок</h5>
+<p>Формат: <code>Группировка=ТехНазвание_лидера</code> (из файла leaders).</p>
+<pre><code>[Group-Leaders]
+Mutants=Leader-0
+Stalkers=Leader-1-COP
+Bandits=Leader-2-COP
+Soldiers=Leader-Kovalskiy-COP
+Duty=Leader-Shulga-COP
+Freedom=Leader-Loki-COP
+Monolith=Leader-6-COP
+Mercenaries=Leader-Shakal-COP
+Scientists=Leader-German-COP
+Zombie=Leader-17</code></pre>
+</div>
+
+<div class="code-block">
+<h5>[Group-Advisor] — стартовые заместители</h5>
+<p>Формат: <code>Группировка=ТехНазвание_заместителя</code> (из Advisors.ini).</p>
+<pre><code>[Group-Advisor]
+Mutants=Advisor-0
+Stalkers=Advisor-1
+Bandits=Advisor-2
+Soldiers=Advisor-3
+Duty=Advisor-4
+Freedom=Advisor-5
+Monolith=Advisor-6
+Mercenaries=Advisor-7
+Scientists=Advisor-08
+Zombie=Advisor-11</code></pre>
+</div>
+
+<div class="code-block">
+<h5>[Group-Rules] — стартовые правила группировок</h5>
+<p>Формат: <code>Группировка-RuleX=Индекс_правила</code>. Правило 1=макс. децентрализация, 5=макс. централизация.</p>
+<pre><code>[Group-Rules]
+Mutants-Rule1=3
+Mutants-Rule2=3
+Mutants-Rule3=3
+Mutants-Rule4=3
+Stalkers-Rule1=3
+Stalkers-Rule2=3
+Stalkers-Rule3=3
+Stalkers-Rule4=3
+Soldiers-Rule1=5
+Soldiers-Rule2=3
+Soldiers-Rule3=4
+Soldiers-Rule4=3
+Monolith-Rule1=1
+Monolith-Rule2=3
+Monolith-Rule3=3
+Monolith-Rule4=2</code></pre>
+</div>
+
+<div class="code-block">
+<h5>[Group-Ideology] — стартовые идеологии</h5>
+<p>Формат: <code>Группировка=ТехНазвание_идеологии</code> (из ideologies).</p>
+<pre><code>[Group-Ideology]
+Mutants=Growth
+Stalkers=Stalkers
+Bandits=Crime
+Soldiers=Control
+Duty=AntiZone
+Freedom=Anarchy
+Monolith=Sectarianism
+Mercenaries=Mercenary
+Scientists=Exploring
+Zombie=Zombie</code></pre>
+</div>
+
+<div class="code-block">
+<h5>[Group-Ideology-Percent] — процент идеологий в группировке</h5>
+<p>Формат: <code>Группировка-Идеология=Процент</code>. Сумма по одной группировке должна быть 100%.</p>
+<pre><code>[Group-Ideology-Percent]
+Mutants-Growth=100
+Stalkers-Stalkers=51
+Stalkers-Crime=16
+Stalkers-Control=5
+Stalkers-AntiZone=5
+Stalkers-Anarchy=5
+Stalkers-Sectarianism=3
+Stalkers-Mercenary=5
+Stalkers-Exploring=5
+Stalkers-Stability=5
+Bandits-Crime=70
+Bandits-Anarchy=10
+Bandits-Mercenary=10
+Bandits-Stalkers=5
+Bandits-Sectarianism=5
+Duty-AntiZone=60
+Duty-Stalkers=10
+Duty-Control=10
+Duty-Exploring=10
+Duty-Crime=5
+Duty-Stability=5
+Zombie-Zombie=100</code></pre>
+</div>
+
+<div class="code-block">
+<h5>[Group-Resources] — ресурсы и склады группировок</h5>
+<p>Формат: <code>Группировка-Ресурс=Количество</code>. Можно указывать базовые ресурсы (Money, Comands, Supplies, Medic, Food), рекрутов (Novice, Skilled, Veteran, Master), а также любые товары из папки Goods (оружие, броня, артефакты, части мутантов, стройматериалы и т.д.).</p>
+<pre><code>[Group-Resources]
+; Базовые ресурсы
+Stalkers-Money=25000
+Stalkers-Comands=35
+Stalkers-Supplies=15000
+Stalkers-Medic=100
+Stalkers-Food=300
+
+; Рекруты
+Stalkers-Novice=4
+Stalkers-Skilled=3
+
+; Товары со склада (оружие, броня, артефакты)
+Stalkers-PM=8
+Stalkers-Obrez=4
+Stalkers-Gun=4
+Stalkers-MP5=1
+Stalkers-AKU=4
+Stalkers-AKM=3
+Stalkers-Abakan=2
+Stalkers-Grom=2
+Stalkers-Stalker-1=8
+Stalkers-Stalker-2=4
+Stalkers-Stalker-3A=2
+Stalkers-Stalker-3B=2
+Stalkers-Stalker-4=2
+Stalkers-MediumArts=3
+Stalkers-LowParts=5
+Stalkers-MediumParts=4
+
+; Пример для Мутантов (много всего)
+Mutants-Money=500000
+Mutants-Comands=300
+Mutants-Supplies=9999
+Mutants-Medic=999
+Mutants-Food=99999
+Mutants-Novice=100
+Mutants-Skilled=100
+Mutants-Veteran=100
+Mutants-Master=100
+Mutants-DogW=999
+Mutants-DogA=999
+Mutants-KabanW=999
+Mutants-KabanA=999</code></pre>
+</div>
+
+<div class="code-block">
+<h5>[Units-About] — конфигурация шаблонов юнитов</h5>
+<p>Формат: <code>Шаблон-Параметр=Значение</code>. Шаблон — то, что указано в [Group-UnitIndex] справа от знака =. Параметры: Armor (броня), Weapon (оружие), Img (иконка), Name (имя в бою).</p>
+<pre><code>[Units-About]
+; Шаблон Mutants1 (Слепой пёс)
+Mutants1-Armor=doga
+Mutants1-Img=gfx\icons\units\Mutants\1.png
+Mutants1-Name=Слепой пёс
+Mutants1-Weapon=dogw
+
+; Шаблон Stalkers1 (Новичок-Сталкер)
+Stalkers1-Armor=Stalker-1
+Stalkers1-Img=gfx\icons\units\Stalkers_COP\2.gif
+Stalkers1-Name=Новичок
+Stalkers1-Weapon=PM
+
+; Шаблон Duty3 (Ветеран-Долг)
+Duty3-Armor=Duty-3A
+Duty3-Img=gfx\icons\units\Duty_COP\15.png
+Duty3-Name=Ветеран
+Duty3-Weapon=Abakan</code></pre>
+</div>
+
+<div class="code-block">
+<h5>[Group-Upgrades] — улучшения, купленные со старта</h5>
+<p>Формат: <code>Группировка=Улучшение1,Улучшение2,...</code> (технические названия из upgrades).</p>
+<pre><code>[Group-Upgrades]
+Stalkers=Upgrade-6,Upgrade-11
+Bandits=Upgrade-18
+Soldiers=Upgrade-13,Upgrade-22
+Duty=Upgrade-11,Upgrade-13
+Freedom=Upgrade-1,Upgrade-13
+Monolith=Upgrade-6
+Mercenaries=Upgrade-18,Upgrade-20
+Scientists=Upgrade-6,Upgrade-7,Upgrade-8,Upgrade-9</code></pre>
+</div>
+
+<div class="code-block">
+<h5>[ProcessedItemCount] — произведённая амуниция на текущем ходу</h5>
+<p>Формат: <code>Группировка=Число</code>. Обычно 0. Не трогайте, если не нужно ограничить производство на первом ходу.</p>
+<pre><code>[ProcessedItemCount]
+Mutants=0
+Stalkers=0
+Bandits=0
+Soldiers=0
+Duty=0
+Freedom=0
+Monolith=0
+Mercenaries=0
+Scientists=0
+Zombie=0</code></pre>
+</div>
+
+<div class="code-block">
+<h5>[ZonaX] — параметры территории (пример)</h5>
+<p>X — индекс территории (от 1 до N). См. также таблицу «Параметры территории [ZonaX]» ниже.</p>
+<pre><code>[Zona1]
+Owner=Mutants
+Buildings-Count=0
+Unit2=1
+NeedUnitsForBlockUpActiveMutants=1
+
+[Zona6]
+Owner=Zombie
+Buildings-Count=0
+Unit1=8
+Unit2=8
+Unit3=5
+NeedUnitsForBlockUpActiveMutants=3
+
+[Zona74]
+Owner=Duty
+Buildings-Count=0
+Unit2=2
+Unit3=1
+Unit4=1
+NeedUnitsForBlockUpActiveMutants=3
+
+[Zona93]
+Owner=Soldiers
+Buildings-Count=0
+Unit2=3
+Unit3=9
+Unit4=4
+NeedUnitsForBlockUpActiveMutants=1</code></pre>
+</div>
+				
             </div>
 
             <!-- MESSAGES -->
