@@ -802,7 +802,7 @@
 
                 <div class="faq-item">
                     <div class="faq-question">Вопрос №17: Можно ли как-то менять существующие улучшения?</div>
-                    <div class="faq-answer">Можно. Каждое улучшение имеет соответствующий тип, к которому относится. Список типов прописан там же где и улучшения. Папка <code>data\default\scenario\upgrades\</code>, а для изменения улучшений необходимо скопировать файл с улучшением в папку <code>upgrades</code> своего сценария. Если этой папки нет, то создайте ее.</div>
+                    <div class="faq-answer">Можно. Каждое улучшение имеет соответствующий тип, к которому относится. Список типов прописан там же где и улучшения. Папка <code>data\default\upgrades\</code>, а для изменения улучшений необходимо скопировать файл с улучшением в папку <code>upgrades</code> своего сценария. Если этой папки нет, то создайте ее.</div>
                 </div>
 
                 <div class="faq-item">
@@ -832,7 +832,7 @@
 
                 <div class="faq-item">
                     <div class="faq-question">Вопрос №23: Можно ли увеличить число правил для группировок?</div>
-                    <div class="faq-answer">Нет. Но можно менять бонусы, которые дают текущие в файле <code>Rules.ini</code> (скопируйте тот файл из <code>data\default\scenario\</code> в папку вашего сценария).</div>
+                    <div class="faq-answer">Нет. Но можно менять бонусы, которые дают текущие в файле <code>Rules.ini</code> (скопируйте тот файл из <code>data\default\</code> в папку вашего сценария).</div>
                 </div>
 
                 <div class="faq-item">
@@ -1010,10 +1010,11 @@
             <div class="section" id="Achievements">
                 <h2>🏆 Достижения (Achievements.ini)</h2>
                 <div class="callout callout-info">
-                    <div class="callout-title">Локализация (размещать в messages.csv)</div>
+                    <div class="callout-title">Локализация (размещать в messages.csv).</div>
                     <code>[Achievements.&lt;Название&gt;].Name</code> - название<br>
                     <code>[Achievements.&lt;Название&gt;].Desc</code> - Полное описание достижения для окна ивента<br>
                     <code>[Achievements.&lt;Название&gt;].Desc-Logo</code> - Описание ачивки в окне выбора сценария
+					<p>"Название" это техническое название ивента из секции []</p>
                 </div>
 
                 <h3>Параметры</h3>
@@ -1024,6 +1025,7 @@
                         </thead>
                         <tbody>
                             <tr><td><code>Img</code></td><td>Изображение ачивки для окна ивента</td></tr>
+							<tr><td><code>ImgLogoEnabled</code></td><td>Путь к изображению ачивки, которая считается полученной. Изображение не полученной ачивки движок делает самостоятельно делая аачивку черно-белой</td></tr>
                             <tr><td><code>DifficultyLevel</code></td><td>Требуемый уровень сложности. Any - любой, Novice - новичок и т.д.</td></tr>
                             <tr><td><code>Type</code></td><td>Тип условия получения ачивки (см. ниже)</td></tr>
                             <tr><td><code>TargetKillFraction</code></td><td>Техническое название фракции, которую необходимо пережить</td></tr>
@@ -1066,7 +1068,7 @@
                     <div class="callout-title">Локализация (размещать в messages.csv)</div>
                     <code>[Advisors.&lt;техническое название&gt;].Name</code> - название отображаемое в игре
                 </div>
-                <p><code>[]</code> - техническое название персонажа, использовать только не повторяющиеся англ названия</p>
+                <p><code>[]</code> - техническое название персонажа, использовать только не повторяющиеся англ названия. В оригинальный файлах можно встретить даже такое: [Advisor-Stalkers-Wolf]. Это сделано разработчиков просто для собственного удобства, где он использовал схему [ТипПерсонажа-Группировка-Персонаж]. Такая схема не является обязательной. Чисто для удобства.</p>
 
                 <h3>Параметры</h3>
                 <div class="table-wrapper">
@@ -1083,7 +1085,7 @@
                             <tr><td><code>BonusDamagePVPForDefenders</code></td><td>Бонус к урону обороняющимся %</td></tr>
                             <tr><td><code>BonusDamagePVMForAtackers</code></td><td>Бонус к урону нападающим % (мутанты)</td></tr>
                             <tr><td><code>BonusDamagePVMForDefenders</code></td><td>Бонус к урону обороняющимся % (мутанты)</td></tr>
-                            <tr><td><code>BonusRangeForAtacker</code></td><td>Бонус к дальности нападающим %</td></tr>
+                            <tr><td><code>BonusRangeForAtackers</code></td><td>Бонус к дальности нападающим %</td></tr>
                             <tr><td><code>BonusRangeForDefenders</code></td><td>Бонус к дальности обороняющимся %</td></tr>
                             <tr><td><code>Recruit-Novice</code></td><td>Бонус к приросту новичков</td></tr>
                             <tr><td><code>Recruit-Skilled</code></td><td>Бонус к приросту опытных</td></tr>
@@ -1287,7 +1289,10 @@
                         <tbody>
                             <tr><td><code>LockedResources</code></td><td>Ресурсы, которые группировка не потеряет в случае захвата ее главной базы</td></tr>
                             <tr><td><code>UnitWayFace</code></td><td>Путь к папке где хранятся изображения юнитов группировки (например, для перевооружения)</td></tr>
-                            <tr><td><code>SpyX-Face</code></td><td>Путь к изображению разведчика группировки</td></tr>
+                            <tr><td><code>Spy1-Face</code></td><td>Путь к изображению разведчика первого ранга у группировки</td></tr>
+							<tr><td><code>Spy2-Face</code></td><td>Путь к изображению разведчика второго ранга у группировки</td></tr>
+							<tr><td><code>Spy3-Face</code></td><td>Путь к изображению разведчика третьего ранга у группировки</td></tr>
+							<tr><td><code>Spy4-Face</code></td><td>Путь к изображению разведчика четвёртого ранга у группировки</td></tr>
                             <tr><td><code>CanGiveDiplomacyMoney</code></td><td>Группировка может получить деньги через дипломатию (True/False)</td></tr>
                             <tr><td><code>CanOrderDiplomacyMoney</code></td><td>Группировка может запрашивать деньги у других группировок (True/False)</td></tr>
                             <tr><td><code>BaseUpCR</code></td><td>Базовый прирост КР группировки (ТОЛЬКО ЦЕЛОЕ ЧИСЛО)</td></tr>
@@ -1589,7 +1594,7 @@
                     <div class="callout-title">Локализация (размещать в messages.csv)</div>
                     <code>[SpecialEvents.&lt;техническое название&gt;].Name</code> - название<br>
                     <code>[SpecialEvents.&lt;техническое название&gt;].Desc-Yes</code> - Описание события у владельца территории или в случае положительного исхода, например у Выброса будет этот текст, если хватило медикаментов<br>
-                    <code>[SpecialEvents.&lt;техническое название&gt;].Desc-No</code> - Описание события у НЕ владельца территории или в случае положительного исхода, например у Выброса будет этот текст, если НЕ хватило медикаментов
+                    <code>[SpecialEvents.&lt;техническое название&gt;].Desc-No</code> - Описание события у НЕ владельца территории или в случае отрицательного исхода, например у Выброса будет этот текст, если НЕ хватило медикаментов
                 </div>
 
                 <h3>Параметры</h3>
@@ -1619,7 +1624,7 @@
                 </div>
 				<div class="callout callout-tip">
                     <div class="callout-title">💡 Примечание</div>
-                    Часть параметров, которые влияют на работу специальных ивентов вынесено в <code>Settings.ini</code>. 
+                    Часть параметров, которые влияют на работу специальных ивентов вынесено в <code>Settings.ini</code>, остальные нюансы захардкодены. Если вам не хватает информации про какой-то специальный ивент - обратитесь к разработчику на дискорд сервере игры. 
                 </div>
             </div>
 
@@ -1779,7 +1784,7 @@
                             <tr><th>Параметр</th><th>Описание</th></tr>
                         </thead>
                         <tbody>
-                            <tr><td><code>Img</code></td><td>Изображение</td></tr>
+                            <tr><td><code>Img-Available</code></td><td>Относительный путь к изображению правила. Остальные параметры касательно правил, имеющие в названии параметра слово Img являются рудиментом, который не надо указывать в конфиге правила, но необходимо физически размещать изображение в соответствующих папках. Это важно.</td></tr>
                             <tr><td><code>BonusForSpy</code></td><td>Бонус своим разведчикам %</td></tr>
                             <tr><td><code>BonusForEnemySpy</code></td><td>Бонус вражеским разведчикам %</td></tr>
                             <tr><td><code>BonusSearchArts</code></td><td>Бонус к поиску артефактов %</td></tr>
@@ -1943,7 +1948,7 @@
                         </thead>
                         <tbody>
                             <tr><td><code>Economic-CanSearchArts</code></td><td>Может ли искать артефакты</td></tr>
-                            <tr><td><code>Economic-CountTagetSellResources</code></td><td>Число названий ресурсов для продажи</td></tr>
+                            <tr><td><code>Economic-CountTargetSellResources</code></td><td>Число названий ресурсов для продажи</td></tr>
                             <tr><td><code>Economic-TargetSellResource-X</code></td><td>Название ресурса для продажи</td></tr>
                             <tr><td><code>Economic-SellGoodsIfThisNotUseUnits</code></td><td>Продавать товары, если они не используются для найма юнитов</td></tr>
                             <tr><td><code>Economic-CanBuyResources</code></td><td>Может покупать ресурсы</td></tr>
@@ -2092,33 +2097,33 @@
                             <tr><td><code>RemoveWeapon</code></td><td>Отнять оружие, которое на вооружении указанного юнита</td></tr>
                             <tr><td><code>RemoveArmor</code></td><td>Отнять броню, которое на вооружении указанного юнита</td></tr>
                             <tr><td><code>AddUnits</code></td><td>Добавляет указанное число юнитов указанных рангов</td></tr>
-                            <tr><td><code>AddResources</code></td><td>Добавляет указанное число (CountResources) указанного ресурса (NameResources)</td></tr>
-                            <tr><td><code>AddMutantsActive</code></td><td>Добавляет указанное число % активности мутантов (CountParam)</td></tr>
+                            <tr><td><code>AddResources</code></td><td>Добавляет указанное число (<code>CountResources</code>) указанного ресурса (<code>NameResources</code>)</td></tr>
+                            <tr><td><code>AddMutantsActive</code></td><td>Добавляет указанное число % активности мутантов (<code>CountParam</code>)</td></tr>
                             <tr><td><code>AddMutants</code></td><td>Добавляет указанное число указанных мутантов на территорию для владельца территории не Мутанты</td></tr>
                             <tr><td><code>AddWeapon</code></td><td>Добавить оружие, которое на вооружении указанного юнита</td></tr>
                             <tr><td><code>AddArmor</code></td><td>Добавить броню, которое на вооружении указанного юнита</td></tr>
-                            <tr><td><code>ChangeZonaOwner</code></td><td>Меняет владельца (только меняет и всё) территории на указанного в NewOwner</td></tr>
+                            <tr><td><code>ChangeZonaOwner</code></td><td>Меняет владельца (только меняет и всё) территории на указанного в <code>NewOwner</code></td></tr>
                             <tr><td><code>Invasion</code></td><td>Из ниоткуда происходит вторжение указанного числа указанных рангов юнитов указанного владельца на указанную территорию</td></tr>
-                            <tr><td><code>ChangeLeader</code></td><td>Сменить лидера группировки на указанного в NewLeader</td></tr>
-                            <tr><td><code>ChangeAdvisor</code></td><td>Сменить заместителя на указанного в NewAdvisor</td></tr>
-                            <tr><td><code>AvailableAdvisor</code></td><td>Включить/отключить доступность заместителя (StatusAdvisor=True/False) указанного в TargetAdvisor, если отключается текущий выбранный группировкой, то ставится заместителем указанный в NewAdvisor</td></tr>
-                            <tr><td><code>ChangeStatusUpgrade</code></td><td>Изучить бесплатно указанное в TargetUpgradeIndex индекс улучшения</td></tr>
+                            <tr><td><code>ChangeLeader</code></td><td>Сменить лидера группировки на указанного в <code>NewLeader</code></td></tr>
+                            <tr><td><code>ChangeAdvisor</code></td><td>Сменить заместителя на указанного в <code>NewAdvisor</code></td></tr>
+                            <tr><td><code>AvailableAdvisor</code></td><td>Включить/отключить доступность заместителя (<code>StatusAdvisor</code>=True/False) указанного в <code>TargetAdvisor</code>, если отключается текущий выбранный группировкой, то ставится заместителем указанный в <code>NewAdvisor</code></td></tr>
+                            <tr><td><code>ChangeStatusUpgrade</code></td><td>Изучить бесплатно указанное в <code>TargetUpgradeIndex</code> индекс улучшения</td></tr>
                             <tr><td><code>ChangeStatusBrainPsy</code></td><td>Изменить состояние пси излучателя вкл (Status=True) или выкл (Status=False)</td></tr>
                             <tr><td><code>ChangeStatusBrainMixer</code></td><td>Изменить состояние выжигателя мозгов вкл (Status=True) или выкл (Status=False)</td></tr>
-                            <tr><td><code>ChangeIdeologyPercent</code></td><td>Добавить % какой-либо идеологии группировке (IdeologyName - название, CountParam - число. <strong>НЕ ИСПОЛЬЗОВАТЬ ОТРИЦАТЕЛЬНЫЕ ЧИСЛА!!!</strong>)</td></tr>
-                            <tr><td><code>ChangeIdeology</code></td><td>Меняет идеологию владельцу территории на указанную в IdeologyName</td></tr>
-                            <tr><td><code>MCMove</code></td><td>Работает как и Info, но используется для перемещения ГГ (Меченый, Шрам, Дегтярёв)</td></tr>
-                            <tr><td><code>MCAttack</code></td><td>Работает как и RemoveUnits, но используется для перемещения ГГ (Меченый, Шрам, Дегтярёв)</td></tr>
-                            <tr><td><code>CheckBuilding</code></td><td>Проверяет наличие указанной в BuildingName постройки на территории. Если она есть, то указанный флаг в EventFlagResult будет=True, иначе False</td></tr>
-                            <tr><td><code>CheckEqualResources</code></td><td>Проверяет кол-во CountResources ресурсов NameResources у группировки. Если совпадает, то указанный флаг в EventFlagResult будет=True, иначе False</td></tr>
-                            <tr><td><code>CheckNotEqualResources</code></td><td>Проверяет кол-во CountResources ресурсов NameResources у группировки. Если не совпадает, то указанный флаг в EventFlagResult будет=True, иначе False</td></tr>
-                            <tr><td><code>CheckGreaterOrEqualResources</code></td><td>Проверяет кол-во CountResources ресурсов NameResources у группировки. Если больше или совпадает, то указанный флаг в EventFlagResult будет=True, иначе False</td></tr>
-                            <tr><td><code>CheckLessOrEqualResources</code></td><td>Проверяет кол-во CountResources ресурсов NameResources у группировки. Если меньше или совпадает, то указанный флаг в EventFlagResult будет=True, иначе False</td></tr>
-                            <tr><td><code>CheckGreaterResources</code></td><td>Проверяет кол-во CountResources ресурсов NameResources у группировки. Если больше, то указанный флаг в EventFlagResult будет=True, иначе False</td></tr>
-                            <tr><td><code>CheckLessResources</code></td><td>Проверяет кол-во CountResources ресурсов NameResources у группировки. Если меньше, то указанный флаг в EventFlagResult будет=True, иначе False</td></tr>
-                            <tr><td><code>Build</code></td><td>Строит бесплатно постройку из BuildingName на указанной территории</td></tr>
-                            <tr><td><code>Destroy</code></td><td>Уничтожает бесплатно постройку из BuildingName на указанной территории</td></tr>
-                            <tr><td><code>ChangeDiplomacy</code></td><td>Меняет дипломатические отношения между фракциями Fraction1 и Fraction2 на DiplomacyStatus</td></tr>
+                            <tr><td><code>ChangeIdeologyPercent</code></td><td>Добавить % какой-либо идеологии группировке (<code>IdeologyName</code> - название, <code>CountParam</code> - число. <strong>НЕ ИСПОЛЬЗОВАТЬ ОТРИЦАТЕЛЬНЫЕ ЧИСЛА!!!</strong>)</td></tr>
+                            <tr><td><code>ChangeIdeology</code></td><td>Меняет идеологию владельцу территории на указанную в <code>IdeologyName</code></td></tr>
+                            <tr><td><code>MCMove</code></td><td>Работает как и <code>Info</code>, но используется для перемещения ГГ (Меченый, Шрам, Дегтярёв)</td></tr>
+                            <tr><td><code>MCAttack</code></td><td>Работает как и <code>RemoveUnits</code>, но используется для перемещения ГГ (Меченый, Шрам, Дегтярёв)</td></tr>
+                            <tr><td><code>CheckBuilding</code></td><td>Проверяет наличие указанной в <code>BuildingName</code> постройки на территории. Если она есть, то указанный флаг в <code>EventFlagResult</code> будет=True, иначе False</td></tr>
+                            <tr><td><code>CheckEqualResources</code></td><td>Проверяет кол-во CountResources ресурсов <code>NameResources</code> у группировки. Если совпадает, то указанный флаг в <code>EventFlagResult</code> будет=True, иначе False</td></tr>
+                            <tr><td><code>CheckNotEqualResources</code></td><td>Проверяет кол-во CountResources ресурсов <code>NameResources</code> у группировки. Если не совпадает, то указанный флаг в <code>EventFlagResult</code> будет=True, иначе False</td></tr>
+                            <tr><td><code>CheckGreaterOrEqualResources</code></td><td>Проверяет кол-во <code>CountResources</code> ресурсов NameResources у группировки. Если больше или совпадает, то указанный флаг в <code>EventFlagResult</code> будет=True, иначе False</td></tr>
+                            <tr><td><code>CheckLessOrEqualResources</code></td><td>Проверяет кол-во <code>CountResources</code> ресурсов NameResources у группировки. Если меньше или совпадает, то указанный флаг в <code>EventFlagResult</code> будет=True, иначе False</td></tr>
+                            <tr><td><code>CheckGreaterResources</code></td><td>Проверяет кол-во <code>CountResources</code> ресурсов NameResources у группировки. Если больше, то указанный флаг в <code>EventFlagResult</code> будет=True, иначе False</td></tr>
+                            <tr><td><code>CheckLessResources</code></td><td>Проверяет кол-во <code>CountResources</code> ресурсов <code>NameResources</code> у группировки. Если меньше, то указанный флаг в <code>EventFlagResult</code> будет=True, иначе False</td></tr>
+                            <tr><td><code>Build</code></td><td>Строит бесплатно постройку из <code>BuildingName</code> на указанной территории</td></tr>
+                            <tr><td><code>Destroy</code></td><td>Уничтожает бесплатно постройку из <code>BuildingName</code> на указанной территории</td></tr>
+                            <tr><td><code>ChangeDiplomacy</code></td><td>Меняет дипломатические отношения между фракциями Fraction1 и Fraction2 на <code>DiplomacyStatus</code></td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -2127,7 +2132,7 @@
                 <p>Это способ передать значение Да и Нет (True/False) между ивентами, когда появление одного ивента зависит от того произошел ли другой ивент. Число флагов неограничено. Пример как назвать флаг: <code>FlagDuty</code> или <code>Flag-1</code>. Для победы и поражения по ивент флагу зарезервированы <code>EndVictory</code> и <code>EndLose</code>.</p>
 
 				<h4>Пример с Ивент флагом</h4>
-                <p>Представим, что у нас в сценарии есть четыре группировки - Mutants, Stalkers, Duty, Monolith. Вот конфиг двух событий. Первой ивент сработает (при чем это сделает скрытно, игрок этого даже не увидит), если территория 10 принадлежит фракции Stalkers на момент 12-го хода, то флаг MonolithCanInvasion станет True и второе событие, которое требует этот флаг, при условии, что Duty контролирует территорию 20 на 30-ом ходе сможет произойти</p>
+                <p>Представим, что у нас в сценарии есть четыре группировки - Mutants, Stalkers, Duty, Monolith. Вот конфиг двух событий. Первый ивент сработает (при чем это сделает скрытно, игрок этого даже не увидит), если территория 10 принадлежит фракции Stalkers на момент 12-го хода, то флаг MonolithCanInvasion станет True и второе событие, которое требует этот флаг, при условии, что Duty контролирует территорию 20 на 30-ом ходе сможет произойти</p>
 					<div class="code-example">
 					<pre><code>
 [Event-Escape-Check-1]
@@ -2209,6 +2214,7 @@ NotWorkFractions=Mutants,Stalkers,Monolith
                             <tr><td><code>NewLeader</code></td><td>Техническое имя лидера, являющееся названием файла без указания формата из папки leaders</td></tr>
                             <tr><td><code>NewAdvisor</code></td><td>Техническое имя заместителя из файла Advisors.ini, которое указанно в []</td></tr>
                             <tr><td><code>TargetAdvisor</code></td><td>Техническое имя заместителя из файла Advisors.ini, которое указанно в []</td></tr>
+							<tr><td><code>StatusAdvisor</code></td><td>Изменения статуса/доступности заместителя</td></tr>
                             <tr><td><code>EventFlag</code></td><td>Наименование ивент флага, состояние которого проверяется как условие запуска события</td></tr>
                             <tr><td><code>EventFlagStatusNeed</code></td><td>Требуемое состояние флага True/False для того, чтобы ивент произошел</td></tr>
                             <tr><td><code>EventFlagStatusSet</code></td><td>Состояние флага True/False, которое получит указанный в <code>EventFlagResult</code> флаг при условии, что данное событие произойдет</td></tr>
@@ -2302,6 +2308,7 @@ NotWorkFractions=Mutants,Stalkers,Monolith
                             <tr><td><code>MutantX</code></td><td>Число фоновых мутантов на территории указанного ранга</td></tr>
                             <tr><td><code>NeedUnitsForBlockUpActiveMutants</code></td><td>Число бойцов для остановки роста активности мутантов на территории</td></tr>
                             <tr><td><code>MutantsActive</code></td><td>% активности мутантов</td></tr>
+							<tr><td><code>NumStepAfterSearchArts</code></td><td>число ходов после последнего найденного артефакта</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -2376,6 +2383,8 @@ NotWorkFractions=Mutants,Stalkers,Monolith
                         <tbody>
                             <tr><td><code>isTutorial</code></td><td>Если True, то после старта сценария сразу открывается окно обучения, по умолчанию False</td></tr>
                             <tr><td><code>Map</code></td><td>Название файла/папки глобальной карты</td></tr>
+							<tr><td><code>DefaultLocale</code></td><td>Дефолтная для сценария локализация</td></tr>
+							<tr><td><code>GroupsForPlayer</code></td><td>Параметр отвечаающий за какие группировки могут играть игроки. Судя пишутся технические наименования группировок через запятую.</td></tr>
                             <tr><td><code>MedicName</code></td><td>Название ресурса используемого вместо медикаментов, по умолчанию medic</td></tr>
                             <tr><td><code>SuppliesName</code></td><td>Название ресурса используемого вместо боеприпасов, по умолчанию Supplies</td></tr>
                             <tr><td><code>FoodName</code></td><td>Название ресурса используемого вместо еды, по умолчанию Food</td></tr>
@@ -2425,6 +2434,8 @@ NotWorkFractions=Mutants,Stalkers,Monolith
                             <tr><td><code>BrainMixer-PlayerCanChangeStatus</code></td><td>Включена ли возможность игроку вкл/выкл выжигатель мозгов</td></tr>
                             <tr><td><code>BrainPsyBasedZona</code></td><td>Территория, где базируется пси излучатель (на той территории им можно управлять)</td></tr>
                             <tr><td><code>BrainMixerBasedZona</code></td><td>Территория, где базируется выжигатель мозгов (на той территории им можно управлять)</td></tr>
+							<tr><td><code>BrainPsyAffectedZones</code></td><td>Список индексов территорий, на которые распространяется влияние пси установки/чего-то там что работает по механике пси установки</td></tr>
+							<tr><td><code>BrainMixerAffectedZones</code></td><td>Список индексов территорий, на которые распространяется влияние выжигателя мозгов/чего-то там что работает по механике выжигателя мозгов</td></tr>
                             <tr><td><code>BurstNumEvent</code></td><td>Техническое название ивента выброса из папки <code>SpecialEvents</code></td></tr>
                             <tr><td><code>NoFoodNumEvent</code></td><td>Техническое название ивента нехватки еды из папки <code>SpecialEvents</code></td></tr>
                             <tr><td><code>BrainPsyWorkNumEvent</code></td><td>Техническое название ивента последствий пси излучателя из папки <code>SpecialEvents</code></td></tr>
@@ -2434,6 +2445,7 @@ NotWorkFractions=Mutants,Stalkers,Monolith
                             <tr><td><code>IdeologyLeaveUnitsNumEvent</code></td><td>Техническое название ивента оповещения при уходе бойцов из-за разногласий на основе идеологии из папки <code>SpecialEvents</code></td></tr>
                             <tr><td><code>AutoSearchMaxArtsNumEvent</code></td><td>Техническое название ивента оповещения при полном авто поиске артефактов из папки <code>SpecialEvents</code></td></tr>
                             <tr><td><code>AutoSearchPartArtsNumEvent</code></td><td>Техническое название ивента оповещения при частичном авто поиске артефактов из папки <code>SpecialEvents</code></td></tr>
+							<tr><td><code>MoveMoneyNumEvent</code></td><td>Техническое название ивента связанного с механикой передачи денег между фракциями из папки <code>SpecialEvents</code></td></tr>
                             <tr><td><code>BrainControlChangeBasedCost</code></td><td>Базовая стоимость переключения состояния установки</td></tr>
                             <tr><td><code>DiplomacyActionCost</code></td><td>Базовая стоимость в КР дипломатического действия</td></tr>
                             <tr><td><code>BasedCostNewRule</code></td><td>Базовая стоимость в КР для смены внутреннего правила группировки</td></tr>
@@ -2446,11 +2458,13 @@ NotWorkFractions=Mutants,Stalkers,Monolith
                             <tr><td><code>BasedCostForLeaveZone</code></td><td>Базовая стоимость в КР, чтобы покинуть территорию</td></tr>
                             <tr><td><code>OwnerFractionOfAbandonedZone</code></td><td>Техническое название группировки, которая станет новым владельцем после того как территорию покинет ее владелец</td></tr>
                             <tr><td><code>BasedCostChangeMainZone</code></td><td>Базовая стоимость в КР переноса главной базы группировки на другую территорию</td></tr>
+							<tr><td><code>BasedPercentLostResources</code></td><td>Дефолтный коэфициент в сценарии, который является % по потере ресурсов группировкой в случае захвата ее главной базы. Если прописать 50, то группировкаа будет терять половину своих ресурсов</td></tr>
                             <tr><td><code>DisabledZonesForMainBase</code></td><td>Перечисление индексов территорий на которых невозможно установить главную базу группировки</td></tr>
                             <tr><td><code>FogOfWar</code></td><td>Туман войны (бета версия). Включить True, выключить False</td></tr>
                             <tr><td><code>NoBaseNeeded</code></td><td>У каких группировок иммунитет к принудительной автоматической установки базы при нажатии конец хода. Перечислять через запятую технические названия группировок</td></tr>
                             <tr><td><code>MoneyRequestLimit</code></td><td>Сумма денег, которая является максимальной для запроса через дипломатию. Значение по умолчанию = 50000</td></tr>
                             <tr><td><code>MinimalControlToWin</code></td><td>Кол-во территорий больше половины необходимых для захвата в частичной победе (если территорий на карте 99, то 1 будет означать необходимость захвата 50 (99 / 2 + 1) территорий для победы)</td></tr>
+							<tr><td><code>StandardWinTypesDefault</code></td><td>Дефолтный параметр, который является параметром по умолчанию при запуске окна настроек/выбора группировки перед стартом сценария. Отвечает выбранный изначально дополнительный тип победы</td></tr>
                         </tbody>
                     </table>
                 </div>
