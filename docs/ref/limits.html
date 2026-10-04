@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Лимиты движка — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="limits">
+            <h2>📏 Лимиты движка</h2>
+            <p>Что в игре ограничено жёстко, что не ограничено вовсе, а что нельзя расширить,
+               потому что зашито в движок. Собрано из <a href="faq.html#faq">FAQ</a> и структуры конфигов
+               в одну таблицу, чтобы не искать по всему документу.</p>
+
+            <h3>🔒 Жёсткие лимиты (не обойти)</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Что</th><th>Лимит</th><th>Где описано</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Типов бойцов у группировки</td>
+                            <td><strong>Максимум 4</strong></td>
+                            <td><a href="faq.html#faq-5">FAQ №5</a></td>
+                        </tr>
+                        <tr>
+                            <td>Внутренние правила группировки</td>
+                            <td><strong>Добавлять нельзя.</strong> Можно только менять бонусы существующих</td>
+                            <td><a href="faq.html#faq-23">FAQ №23</a> · <a href="rules.html#Rules">Rules.ini</a></td>
+                        </tr>
+                        <tr>
+                            <td>Ранги бойцов</td>
+                            <td><strong>4</strong> — 1 новичок, 2 опытный, 3 ветеран, 4 мастер</td>
+                            <td><a href="goods.html#Goods">Goods</a> (<code>Level @@ЦЕЛОЕ 1-4</code>)</td>
+                        </tr>
+                        <tr>
+                            <td>Правила централизации</td>
+                            <td><strong>5</strong> — индексы 1…5 (1 макс. децентрализация, 5 макс. централизация)</td>
+                            <td><a href="groups.html#Groups">Groups</a> · <a href="ideologies.html#ideologies">Ideologies</a></td>
+                        </tr>
+                        <tr>
+                            <td>Типы фоновых мутантов</td>
+                            <td><strong>4</strong> — собаки, кабаны, кровососы, контролёры</td>
+                            <td><a href="random-events.html#RandomEvents">RandomEvents</a> (<code>CountMutants1…4</code>)</td>
+                        </tr>
+                        <tr>
+                            <td>Дипломатические статусы</td>
+                            <td><strong>5</strong> — от <code>-1</code> (вечная война) до <code>3</code> (нерушимый союз)</td>
+                            <td><a href="events-story.html#Events_Story">Events_Story.ini</a> (<code>DiplomacyStatus</code>)</td>
+                        </tr>
+                        <tr>
+                            <td>Входные ресурсы в рецепте для мастерской</td>
+                            <td><strong>2</strong> — слоты <code>Upgrade0-*</code> и <code>Upgrade1-*</code></td>
+                            <td><a href="receipts.html#Receipts">Receipts</a></td>
+                        </tr>
+                        <tr>
+                            <td>Типов ивента в одном событии</td>
+                            <td><strong>1</strong> — параметр <code>Type</code> может быть только один</td>
+                            <td><a href="events-story.html#Events_Story">Events_Story.ini</a></td>
+                        </tr>
+                        <tr>
+                            <td>Уровней сложности</td>
+                            <td><strong>4</strong> — Novice, Skilled, Veteran, Master (× Player и AI)</td>
+                            <td><a href="difficulty.html#Difficulty">Difficulty.ini</a></td>
+                        </tr>
+                        <tr>
+                            <td>Собственный шрифт</td>
+                            <td><strong>Нельзя.</strong> Шрифт общий для всей игры и захардкожен</td>
+                            <td><a href="faq.html#faq-27">FAQ №27</a></td>
+                        </tr>
+                        <tr>
+                            <td>Достижения</td>
+                            <td><strong>16</strong> штук на один сценарий</td>
+                            <td><a href="achievements.html#Achievements">Achievements.ini</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>♾ Без лимита</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Что</th><th>Комментарий</th><th>Где описано</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Группировок на карте</td>
+                            <td>—</td>
+                            <td><a href="faq.html#faq-4">FAQ №4</a></td>
+                        </tr>
+                        <tr>
+                            <td>Товаров (<code>Goods/</code>)</td>
+                            <td>—</td>
+                            <td><a href="faq.html#faq-6">FAQ №6</a></td>
+                        </tr>
+                        <tr>
+                            <td>Идеологий</td>
+                            <td>—</td>
+                            <td><a href="faq.html#faq-21">FAQ №21</a></td>
+                        </tr>
+                        <tr>
+                            <td>Торговцев</td>
+                            <td>Все, кто не привязан к группировкам (не являются торговцами самих группировок)</td>
+                            <td><a href="faq.html#faq-16">FAQ №16</a> · <a href="faq.html#faq-34">№34</a></td>
+                        </tr>
+                        <tr>
+                            <td>Кандидатов в заместители</td>
+                            <td>—</td>
+                            <td><a href="faq.html#faq-22">FAQ №22</a></td>
+                        </tr>
+                        <tr>
+                            <td>Улучшений</td>
+                            <td>Но тип эффекта захардкоден</td>
+                            <td><a href="faq.html#faq-29">FAQ №29</a></td>
+                        </tr>
+                        <tr>
+                            <td>Построек</td>
+                            <td>—</td>
+                            <td><a href="faq.html#faq-30">FAQ №30</a></td>
+                        </tr>
+                        <tr>
+                            <td>Территорий</td>
+                            <td>Число нигде не задаётся — игра считает нарисованное автоматически</td>
+                            <td><a href="faq.html#faq-19">FAQ №19</a></td>
+                        </tr>
+                        <tr>
+                            <td>Сценариев в кампании</td>
+                            <td>—</td>
+                            <td><a href="faq.html#faq-1">FAQ №1</a></td>
+                        </tr>
+                        <tr>
+                            <td>Ивент-флагов</td>
+                            <td>Число флагов не ограничено</td>
+                            <td><a href="events-story.html#Events_Story">Events_Story.ini</a></td>
+                        </tr>
+                        <tr>
+                            <td>Сюжетных и случайных событий</td>
+                            <td>—</td>
+                            <td><a href="events-story.html#Events_Story">Events_Story</a> ·
+                                <a href="random-events.html#RandomEvents">RandomEvents</a></td>
+                        </tr>
+                        <tr>
+                            <td>Категорий товаров</td>
+                            <td>Можно создавать собственные</td>
+                            <td><a href="goods.html#Goods">Goods</a> · <a href="traders.html#Traders">Traders.ini</a></td>
+                        </tr>
+                        <tr>
+                            <td>Страниц в обучении</td>
+                            <td>Задаётся в <code>CountPages</code></td>
+                            <td><a href="tutorial.html#Tutorial">Tutorial.ini</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>🧱 Захардкожено в движке (расширить нельзя)</h3>
+            <p>Эти наборы значений зашиты в код. Конфиги их только <em>используют</em>, но не <em>определяют</em>.</p>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Что</th><th>Сколько</th><th>Где</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Типы сюжетных ивентов</td><td><strong>35</strong></td><td><a href="events-story.html#Events_Story">Events_Story.ini</a></td></tr>
+                        <tr><td>Типы случайных ивентов</td><td><strong>22</strong></td><td><a href="random-events.html#RandomEvents">RandomEvents</a></td></tr>
+                        <tr><td>Типы улучшений</td><td><strong>15</strong></td><td><a href="upgrades.html#upgrades">upgrades/</a></td></tr>
+                        <tr><td>Логические блоки ИИ</td><td><strong>18</strong></td><td><a href="ai.html#AI">AI.ini</a></td></tr>
+                        <tr><td>Типы достижений</td><td><strong>5</strong> — ZonaControl, KillFraction, Conquest, IdeologyOnly, EventFlag</td><td><a href="achievements.html#Achievements">Achievements.ini</a></td></tr>
+                        <tr><td>Типы построек</td><td><strong>3</strong> — <code>None</code>, <code>Workshop</code>, <code>Production</code></td><td><a href="buildings.html#Buildings">Buildings</a></td></tr>
+                        <tr><td>Названия секций <code>Difficulty.ini</code></td><td><strong>8</strong> — захардкод, не переименовывать</td><td><a href="difficulty.html#Difficulty">Difficulty.ini</a></td></tr>
+                        <tr><td>Названия правил <code>[]</code> в <code>Rules.ini</code></td><td>Фиксированные, не менять</td><td><a href="rules.html#Rules">Rules.ini</a></td></tr>
+                        <tr><td>Зарезервированные ивент-флаги</td><td><code>EndVictory</code>, <code>EndLose</code></td><td><a href="events-story.html#Events_Story">Events_Story.ini</a></td></tr>
+                        <tr><td>Нюансы особых событий</td><td>Часть параметров в <code>Settings.ini</code>, остальные захардкодены</td><td><a href="special-events.html#SpecialEvents">SpecialEvents</a></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Практический вывод</div>
+                Новый тип сюжетного ивента, новый тип улучшения или шестое внутреннее правило
+                <strong>добавить конфигом нельзя</strong>. Это уровень изменений в движке.
+                Если очень нужно — обсуждайте с разработчиком в Discord.
+            </div>
+
+            <h3>🎨 Графика и файлы</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Что</th><th>Ограничение</th></tr></thead>
+                    <tbody>
+                        <tr>
+                            <td>Форматы изображений</td>
+                            <td><code>bmp</code>, <code>jpg</code>, <code>png</code>, анимированный <code>gif</code>,
+                                а также собственный формат <code>.agr</code></td>
+                        </tr>
+                        <tr>
+                            <td>Значки группировок на глобальной карте</td>
+                            <td><strong>Не могут</strong> быть анимированы через <code>gif</code></td>
+                        </tr>
+                        <tr>
+                            <td>Формат карты</td>
+                            <td>Лучший — <code>bmp</code> (грузится быстрее всех).
+                                <code>png</code> — дольше, но несущественно.
+                                <code>jpg</code> — меньше весит, но грузится существенно дольше</td>
+                        </tr>
+                        <tr>
+                            <td>Кодировка всех текстовых файлов</td>
+                            <td><strong>UTF-8 с BOM</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Символ <code>;</code> в тексте <code>messages.csv</code></td>
+                            <td><strong>Запрещён</strong> — это разделитель «ключ;текст»</td>
+                        </tr>
+                        <tr>
+                            <td>Дробные значения</td>
+                            <td>Только там, где стоит бейдж <span class="vt-inline">@@ДРОБНОЕ</span>.
+                                Дробь пишется через запятую: <code>1,5</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>map.bt</code></td>
+                            <td>Создаётся <strong>только</strong> встроенным редактором. Вручную не редактировать</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Связанные разделы</div>
+                <ul>
+                    <li><a href="value-types.html#valuetypes">Обозначения типов значений</a> — что допустимо писать после <code>=</code></li>
+                    <li><a href="dont-touch.html">Рудименты и «не трогать»</a> — параметры, которые не работают или перезапишутся</li>
+                    <li><a href="matrix-bonus.html">Матрица бонусов</a> — где какой бонус доступен</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

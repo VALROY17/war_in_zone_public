@@ -1,0 +1,3522 @@
+[KB-DIRECTIVE]
+Это машинная база знаний по моддингу War In Zone.
+Используй только информацию из этого файла.
+Если параметр, секция, тип, лимит, файл или зависимость не описаны явно — не выдумывай их.
+
+Приоритет правил:
+1. !WARN / ☠ / 🚫 / 🧱 / ⚠️
+2. Лимиты движка и хардкод
+3. Явное описание параметра
+4. Пример (!EXAMPLE)
+5. Общее пояснение
+
+Если написано «не работает», «перезаписывается», «захардкожено», «нельзя», «запрещено», «не используется движком» — это окончательное правило.
+Технические названия, имена секций, ключи, пути, значения, диапазоны и формулы передавай точно.
+Дробные значения допустимы только через запятую и только там, где указан тип @@ДРОБНОЕ / FLOAT, comma.
+Все текстовые файлы игры должны быть в кодировке UTF-8 с BOM.
+
+[SEMANTIC-PRECISION]
+Различай строго:
+«параметр присутствует, но не используется» ≠ «параметр равен 0»: первое означает, что движок игнорирует параметр.
+«не работает» ≠ «работает частично»: не работает означает полное отсутствие эффекта.
+«перезаписывается движком» ≠ «можно настроить»: значение в конфиге не имеет смысла.
+«захардкожено» ≠ «ограничено конфигом»: расширение, переименование или добавление невозможно без движка.
+«доступен» ≠ «назначен»: доступен — виден в меню; назначен — реально активен.
+«глобальный 🌍» ≠ «территориальный 📍»: глобальный действует на всю группировку; территориальный действует только при действии/состоянии на соответствующей территории.
+«абсолютная прибавка» ≠ «модификатор» ≠ «множитель»: например, BootyCash=50 означает +50 к базовому значению, а не ×50.
+«фоновые мутанты» ≠ «гарнизонные юниты»: фоновые мутанты связаны с активностью и появлением; гарнизонные юниты — обычный военный состав территории.
+«статичное» ≠ «динамичное»: Settings.ini — статичные правила, цены, тумблеры, условия; Main.ini — состояние мира на старте и динамические данные.
+«рудимент» ≠ «можно безопасно удалить»: параметр может не требоваться в конфиге, но связанные файлы или изображения могут быть обязательны.
+В .ini имена секций и ключей регистронезависимы, но лучше сохранять оригинальное написание. В messages.csv ключи должны совпадать точно, регистр важен.
+
+[REQUIRED-DEPENDENCIES]
+Новая группировка: обязательные: Groups/<Group>.ini; Main.ini [MainZoneFraction] и/или [ZonaX] Owner; [Group-UnitIndex]; [Group-Leaders]; [Group-Advisor]; [Group-Rules]; [Group-Ideology]; [Group-Ideology-Percent]; messages.csv. При необходимости: AI.ini блок для бота; Settings.ini GroupsForPlayer; Traders.ini/TraderGoods.ini; SpecialEvents NotWorkFractionCount/FractionX; [Group-Resources]; [Units-About].
+Новая идеология: ideologies/<Ideology>.ini; messages.csv; секция идеологии в каждой Groups, где она может стать основной; Main.ini [Group-Ideology] и [Group-Ideology-Percent]; изображение.
+Новый заместитель: Advisors.ini; Main.ini [Advisors] True/False; messages.csv [Advisors.*].Name; для бота: AI.ini Advisor-TargetName.
+Новый лидер: leaders/<Leader>.ini; Main.ini [Group-Leaders]; messages.csv [Leaders.*].Name; изображение.
+Новый товар: Goods/<Good>.ini; messages.csv; TraderGoods.ini для ассортимента; при стартовом складе: Main.ini [Group-Resources]; при экипировке: Main.ini [Units-About].
+Новая постройка: Buildings/<Building>.ini; messages.csv; учитывать TypeLands CountBuildings; для ИИ: AI.ini MainBaseBuildings/BorderBuildings.
+Новое улучшение: upgrades/<Upgrade>.ini; messages.csv; Logo-NonActive; обязательные изображения по схеме рудиментов; учитывать AI.ini и Settings.ini ExcludedUpgrades.
+Новое достижение: Achievements.ini; Settings.ini Achievements=True; AchievementsCount должен совпадать; лимит 16 достижений на сценарий; уникальный ID; messages.csv.
+Новый торговец: Traders.ini [TraderN]; параметры Need, Cost, Chance, StartStep, EndStep; Coef-Sell-X/Coef-Buy-X; messages.csv; TraderGoods.ini.
+Иммунитет фракции к особому событию: в нужном файле SpecialEvents увеличить NotWorkFractionCount и добавить FractionX; число обязано совпадать с количеством FractionX.
+Новая карта: использовать встроенный редактор для map.bt, Links.ini, Territories.ini, TerritoriesIconCoordinates.ini, TerritoriesInfo.ini. Вручную: map/settings.ini, Locations/ с пустыми секциями [Main], messages.csv для локаций. Main.ini [ZonaX] для владельцев и гарнизонов; TypeLands для типов местности.
+
+[META]
+Purpose: modding reference for War In Zone
+Language: RU descriptions, EN technical names
+Important: if !WARN says parameter does not work, is hardcoded, unused by engine, or engine overwrites it, treat that as authoritative.
+
+[LEGEND: TYPES]
+INT = целое число
+FLOAT = целое или дробное; дробь только через запятую: 1,5
+BOOL = True/False
+NAME = техническое название: имя файла без .ini, значение в [] или уникальный ID
+NAMES = список технических названий через запятую
+TEXT = любой текст
+PATH = относительный путь, обратные слэши
+ENUM = одно значение из фиксированного списка
+NUMS = список целых чисел через запятую
+Модификаторы:
+INT 1-4
+INT ≥0
+INT 0-100
+NUMS 1-5
+ENUM 0-2
+FLOAT, comma
+
+[LEGEND: SCOPE]
+🌍 = глобально
+📍 = локально/территориально
+🌗 = смешанная область
+⚠️ = параметр присутствует, но движком не используется или не работает
+
+[LEGEND: TAGS]
+!WARN = критическое предупреждение
+!NOTE = нюанс или уточнение
+!LOC = локализация / messages.csv
+!EXAMPLE = пример конфига
+!LINK = связанные файлы, секции, параметры
+
+
+# value-types — Обозначения типов значений
+
+Таблица типов значений
+
+Бейдж в колонке «Тип значения» показывает, что можно писать после знака =.
+
+!NOTE: Дефолт — целое число. Если явно не указано иное, числовые параметры принимают только целые значения (FAQ#10). @@ЦЕЛОЕ — самый частый бейдж. Дробь допустима только там, где явно стоит @@ДРОБНОЕ.
+
+@@ТЕКСТ → TEXT: Любой текст. Не требует записи в messages.csv. Пример: Mutants1-Name=Слепой пёс
+@@НАЗВАНИЕ → NAME: Техническое название: из [] другого конфига, имя файла без расширения или уникальный ID. Пример: NewLeader=Leader-1-COP
+@@ЦЕЛОЕ → INT: Только целое число. Пример: BaseUpCR=3
+@@ДРОБНОЕ → FLOAT, comma: Целое или дробное. Дробь пишется строго через запятую (написание через точку вызовет ошибку). Пример: BuyUnitForAtackMotivationModificator=1,5
+@@ЧИСЛА → NUMS: Список целых чисел через запятую. Пример: BrainPsyAffectedZones=10, 11, 12
+@@НАЗВАНИЯ → NAMES: Список технических названий через запятую. Пример: GroupsForPlayer=Stalkers,Duty,Zombie
+@@BOOL → BOOL: Только True или False. Пример: isTutorial=True
+@@ВЫБОР → ENUM: Одно значение из фиксированного списка (перечень значений указывается в описании параметра). Пример: Type=Workshop
+@@ПУТЬ → PATH: Относительный путь к файлу, обратные слэши. Пример: Img=gfx\icons\units\1.png
+
+Модификаторы типов
+
+К бейджу может дописываться ограничение, которое уточняет допустимые значения:
+
+@@ЦЕЛОЕ 1-4 → INT 1-4: Целое число от 1 до 4 включительно. Пример: Level=3 (ранг бойца)
+@@ЦЕЛОЕ ≥0 → INT ≥0: Целое число больше или равно нулю. Пример: Step=0 (ход события)
+@@ЦЕЛОЕ 0-100 → INT 0-100: Целое число от 0 до 100 включительно. Пример: MutantsActive=45 (процент активности)
+@@ЧИСЛА 1-5 → NUMS 1-5: Список целых чисел, каждое от 1 до 5. Пример: RulesBranchWithDisabledBuildingForEnemyEnclave=1,2
+@@ВЫБОР 0-2 → ENUM 0-2: Одно значение из списка: 0, 1 или 2. Пример: MoveAndAtackArmyThroughAllyDefault=1
+
+!NOTE: Модификаторы дублируются в тултипе — при наведении на бейдж с модификатором появляется информация о допустимых значениях.
+
+# limits — Лимиты движка
+
+Описание
+
+Что в игре ограничено жёстко, что не ограничено вовсе, а что нельзя расширить, потому что зашито в движок.
+
+🔒 Жёсткие лимиты (не обойти)
+
+Типов бойцов у группировки: Максимум 4. См. FAQ#5
+Внутренние правила группировки: Добавлять нельзя. Можно только менять бонусы существующих. См. FAQ#23, Rules#Rules
+Ранги бойцов: 4 — 1 новичок, 2 опытный, 3 ветеран, 4 мастер. См. Goods (Level INT 1-4)
+Правила централизации: 5 — индексы 1…5 (1 макс. децентрализация, 5 макс. централизация). См. Groups#Groups, Ideologies#ideologies
+Типы фоновых мутантов: 4 — собаки, кабаны, кровососы, контролёры. См. RandomEvents (CountMutants1…4)
+Дипломатические статусы: 5 — от -1 (вечная война) до 3 (нерушимый союз). См. Events_Story (DiplomacyStatus)
+Входные ресурсы в рецепте для мастерской: 2 — слоты Upgrade0- и Upgrade1-. См. Receipts
+Типов ивента в одном событии: 1 — параметр Type может быть только один. См. Events_Story
+Уровней сложности: 4 — Novice, Skilled, Veteran, Master (× Player и AI). См. Difficulty
+Собственный шрифт: Нельзя. Шрифт общий для всей игры и захардкожен. См. FAQ#27
+Достижения: 16 штук на один сценарий. См. Achievements
+
+♾ Без лимита
+
+Группировок на карте. См. FAQ#4
+Товаров (Goods/). См. FAQ#6
+Идеологий. См. FAQ#21
+Торговцев: Все, кто не привязан к группировкам (не являются торговцами самих группировок). См. FAQ#16, FAQ#34
+Кандидатов в заместители. См. FAQ#22
+Улучшений: Но тип эффекта захардкоден. См. FAQ#29
+Построек. См. FAQ#30
+Территорий: Число нигде не задаётся — игра считает нарисованное автоматически. См. FAQ#19
+Сценариев в кампании. См. FAQ#1
+Ивент-флагов: Число флагов не ограничено. См. Events_Story
+Сюжетных и случайных событий. См. Events_Story, RandomEvents
+Категорий товаров: Можно создавать собственные. См. Goods, Traders
+Страниц в обучении: Задаётся в CountPages. См. Tutorial
+
+🧱 Захардкожено в движке (расширить нельзя)
+
+Эти наборы значений зашиты в код. Конфиги их только используют, но не определяют.
+
+Типы сюжетных ивентов: 35. См. Events_Story
+Типы случайных ивентов: 22. См. RandomEvents
+Типы улучшений: 15. См. upgrades/
+Логические блоки ИИ: 18. См. AI
+Типы достижений: 5 — ZonaControl, KillFraction, Conquest, IdeologyOnly, EventFlag. См. Achievements
+Типы построек: 3 — None, Workshop, Production. См. Buildings
+Названия секций Difficulty.ini: 8 — захардкод, не переименовывать. См. Difficulty
+Названия правил [] в Rules.ini: Фиксированные, не менять. См. Rules
+Зарезервированные ивент-флаги: EndVictory, EndLose. См. Events_Story
+Нюансы особых событий: Часть параметров в Settings.ini, остальные захардкодены. См. SpecialEvents
+
+!WARN: Новый тип сюжетного ивента, новый тип улучшения или шестое внутреннее правило добавить конфигом нельзя. Это уровень изменений в движке.
+
+🎨 Графика и файлы
+
+Форматы изображений: bmp, jpg, png, анимированный gif, а также собственный формат .agr
+Значки группировок на глобальной карте: Не могут быть анимированы через gif
+Формат карты: Лучший — bmp (грузится быстрее всех). png — дольше, но несущественно. jpg — меньше весит, но грузится существенно дольше
+Кодировка всех текстовых файлов: UTF-8 с BOM
+Символ ; в тексте messages.csv: Запрещён — это разделитель «ключ;текст»
+Дробные значения: Только там, где стоит бейдж @@ДРОБНОЕ. Дробь пишется через запятую: 1,5
+map.bt: Создаётся только встроенным редактором. Вручную не редактировать
+
+# matrix-bonus — Матрица бонусов
+
+Главное правило
+
+!NOTE: Все применимые бонусы суммируются. Но «применимый» зависит от области действия:
+🌍 глобальный — действует на всю группировку всегда
+📍 территориальный — действует только когда взаимодействие происходит на соответствующей территории
+
+Легенда
+
+🌍: Бонус глобальный — действует на всю группировку
+📍: Бонус территориальный — действует только на своей территории
+⚠️: Параметр есть в конфиге, но движком не используется
+—: Параметр в этом конфиге отсутствует
+
+Источники бонусов
+
+👥 Заместитель (Advisors#Advisors): 🌍 Глобально
+🏗 Постройка (Buildings#Buildings): 🌗 Смешанная — зависит от параметра (см. матрицу)
+🏛 Идеология (Ideologies#ideologies): 🌍 Глобально
+👑 Лидер (Leaders#leaders): 🌍 Глобально
+📜 Внутреннее правило (Rules#Rules): 🌍 Глобально
+🗺 Тип местности (TypeLands#TypeLands): 📍 Только на территориях данного типа
+
+!WARN: Про постройки — Постройка даёт глобальный бонус только пока группировка владеет территорией, на которой она стоит. Потеряли территорию — потеряли и бонус.
+
+🎖 Разведка и артефакты (матрица)
+
+BonusForSpy: Advisors=🌍, Buildings=⚠️, Ideologies=🌍, Leaders=🌍, Rules=🌍, TypeLands=—
+BonusForEnemySpy: Advisors=🌍, Buildings=📍, Ideologies=🌍, Leaders=🌍, Rules=🌍, TypeLands=📍
+BonusSearchArts: Advisors=🌍, Buildings=📍, Ideologies=🌍, Leaders=🌍, Rules=🌍, TypeLands=📍
+
+!WARN: BonusForSpy у построек не работает. Параметр присутствует в конфиге постройки, но движком игры не используется. Если нужен бонус своим разведчикам от постройки — сейчас это невозможно. Используйте заместителя, идеологию, лидера или правило.
+
+⚔ Боевые бонусы (матрица)
+
+BonusDamagePVPForAtackers: Advisors=🌍, Buildings=📍, Ideologies=🌍, Leaders=🌍, Rules=🌍, TypeLands=📍
+BonusDamagePVPForDefenders: Advisors=🌍, Buildings=📍, Ideologies=🌍, Leaders=🌍, Rules=🌍, TypeLands=📍
+BonusDamagePVMForAtackers: Advisors=🌍, Buildings=📍, Ideologies=🌍, Leaders=🌍, Rules=🌍, TypeLands=📍
+BonusDamagePVMForDefenders: Advisors=🌍, Buildings=📍, Ideologies=🌍, Leaders=🌍, Rules=🌍, TypeLands=📍
+BonusRangeForAtackers: Advisors=🌍, Buildings=📍, Ideologies=🌍, Leaders=🌍, Rules=🌍, TypeLands=📍
+BonusRangeForDefenders: Advisors=🌍, Buildings=📍, Ideologies=🌍, Leaders=🌍, Rules=🌍, TypeLands=📍
+
+👢 Рекруты и командные ресурсы (матрица)
+
+Recruit-[Novice/Skilled/Veteran/Master] прирост: Advisors=🌍, Buildings=📍, Ideologies=🌍, Leaders=🌍, Rules=🌍, TypeLands=📍
+LimitRecruit-[Novice/Skilled/Veteran/Master] лимит: Advisors=🌍, Buildings=🌍, Ideologies=🌍, Leaders=🌍, Rules=🌍, TypeLands=🌍
+Comands прирост КР: Advisors=🌍, Buildings=🌍, Ideologies=🌍, Leaders=🌍, Rules=🌍, TypeLands=🌍
+LimitComands лимит КР: Advisors=🌍, Buildings=🌍, Ideologies=🌍, Leaders=🌍, Rules=🌍, TypeLands=🌍
+
+!NOTE: Ключевое отличие у построек и типа местности — У постройки и типа местности лимиты глобальные, а прирост — территориальный. То есть казарма поднимет потолок найма для всей группировки, но самих бойцов будет давать только на своей территории. Comands и LimitComands у постройки и типа местности — оба глобальные.
+
+💰 Экономика и трофеи (матрица)
+
+BootyParts: Advisors=🌍, Buildings=📍, Ideologies=🌍, Leaders=🌍, Rules=🌍, TypeLands=📍
+BootyCash: Advisors=🌍, Buildings=📍, Ideologies=🌍, Leaders=🌍, Rules=🌍, TypeLands=📍
+BonusForCostCPSpy: Advisors=🌍, Buildings=📍, Ideologies=🌍, Leaders=🌍, Rules=🌍, TypeLands=—
+BonusForCostCPAdvisor: Advisors=🌍, Buildings=📍, Ideologies=🌍, Leaders=🌍, Rules=🌍, TypeLands=—
+BonusForCostCPMainBase: Advisors=🌍, Buildings=📍, Ideologies=🌍, Leaders=🌍, Rules=🌍, TypeLands=📍
+BonusPercentLostResources: Advisors=🌍, Buildings=📍, Ideologies=🌍, Leaders=🌍, Rules=🌍, TypeLands=📍
+
+!NOTE: Трофеи у построек и типа местности — BootyParts и BootyCash у постройки/типа местности — это абсолютные значения, которые прибавляются к базовому количеству трофеев только в рамках территории, где постройка стоит. Например, BootyCash=50 — это +50 к деньгам, а не множитель 1.5. Это отмечено и в Buildings#Buildings.
+
+🏗 Полный разбор построек
+
+Единственный источник со смешанной областью действия:
+
+🌍 Глобальные: LimitRecruit-Novice, LimitRecruit-Skilled, LimitRecruit-Veteran, LimitRecruit-Master, Comands, LimitComands
+📍 Территориальные: Recruit-Novice/Skilled/Veteran/Master, BootyParts, BootyCash, BonusForEnemySpy, BonusSearchArts, BonusDamagePVPForAtackers/Defenders, BonusDamagePVMForAtackers/Defenders, BonusRangeForAtackers/Defenders, BonusForCostCPSpy, BonusForCostCPAdvisor, BonusForCostCPMainBase, BonusPercentLostResources
+⚠️ Не работает: BonusForSpy
+
+🗺 Полный разбор типа местности
+
+BonusForEnemySpy: 📍
+BonusSearchArts: 📍
+BonusDamagePVPForAtackers: 📍
+BonusDamagePVPForDefenders: 📍
+BonusDamagePVMForAtackers: 📍
+BonusDamagePVMForDefenders: 📍
+BonusRangeForAtackers: 📍
+BonusRangeForDefenders: 📍
+Recruit-*: 📍
+LimitRecruit-*: 🌍
+Comands: 🌍
+LimitComands: 🌍
+BootyParts: 📍
+BootyCash: 📍
+BonusForCostCPMainBase: 📍
+BonusPercentLostResources: 📍
+
+!NOTE: CountBuildings — не бонус. Задаёт вместимость — сколько построек можно возвести на территории этого типа. Он не суммируется ни с чем и в матрицу бонусов не входит. См. TypeLands#TypeLands.
+
+🧮 Цепочка сложения на практике
+
+Многие боевые и экономические значения считаются от базы в Settings.ini, к которой уже прибавляются бонусы:
+
+SpyBasedChanceCountForReconnaissance INT 0-100: Базовый шанс успеха разведки — «к нему прибавляются все остальные бонусы» (BonusForSpy, BonusForEnemySpy и улучшения)
+SpyBasedCostMoneyForReconnaissance: Базовая цена разведки в деньгах — «к нему прибавляются все остальные бонусы»
+BasedChanceForSearchArts INT 0-100: Базовый шанс поиска артефактов + BonusSearchArts всех источников
+BasedPercentLostResources INT 0-100: Дефолтный % потери ресурсов при захвате главной базы + BonusPercentLostResources
+BasedCostNewAdvisor: Базовая стоимость назначения заместителя + BonusForCostCPAdvisor
+BasedCostChangeMainZone: Базовая стоимость переноса главной базы + BonusForCostCPMainBase
+
+!EXAMPLE: Пример расчёта — Группировка «Долг» атакует чужую территорию. Считаем бонус к урону нападающим (BonusDamagePVPForAtackers):
+
+👥 Заместитель                    +10   🌍 глобально — учитывается всегда
+🏛 Идеология AntiZone у Долга     +5   🌍 глобально — учитывается всегда
+👑 Лидер у Долга                  +5   🌍 глобально — учитывается всегда
+📜 Правило Rule-5 у Долга         +8   🌍 глобально — учитывается всегда
+🏗 Постройка на чужой             -7   📍 учитывается, т.к. атакуем ЧУЖУЮ территорию
+🗺 Тип местности цели             +3   📍 учитывается, т.к. бой идёт на определённой территории
+──────────────────────────────────────────────────────
+Итого                            +24%
+
+!NOTE: Вывод для баланса — Территориальные бонусы «включаются и выключаются» в зависимости от того, где идёт бой. Поэтому постройка-«дебафер атаки» реально полезна при обороне.
+
+⬆ Улучшения — отдельный механизм
+
+Улучшения из upgrades/ тоже дают бонусы, но работают иначе: тип бонуса захардкожен в движке, а в конфиге вы меняете только коэффициент Bonus. Создать улучшение с новым типом эффекта нельзя.
+
+UpRecruitsCountComming: + к приросту каждого рекрута
+UpChanceSearchArtsCount: + к шансу поиска арта
+UpCRCountComming: + к приросту КР группировки
+UpPartCountAfterKillMutant: * к трофеям от мутантов
+UpCashCountAfterKillStalker: * к хабару с убитых сталкеров
+UpChanceCountForReconnaissance: + к шансу успеха разведчика
+DownCountCRForKillMutants: − к стоимости зачистки в КР
+DownCountCRForMoveAndBattle: − к стоимости передислокации и баттлов
+DownCountCRForReconnaissance: / к стоимости отправки разведчика
+UpRecruitsCountLimit: + к лимиту каждого ранга
+UpCRCountLimit: + к лимиту КР
+ImprovementProductivityWorkshop: + к производительности мастерских
+IdeologyChangeBonus: ± к % стоимости (КР) смены идеологии
+RearmBonus: ± к % стоимости (КР) перевооружения
+None: Не влияет ни на что само по себе
+
+# main — Главный конфиг сценария (Main.ini)
+
+💡 Динамика vs статика
+
+!NOTE: Main.ini хранит динамичные параметры — те, что меняются в процессе игры (владелец территории, число бойцов, активность мутантов). Статичные настройки (можно ли игроку переключать пси-установку, стоимость действий, условия победы) живут в Settings.ini. Это разделение подробно описано в совете №8.
+
+⚠️ Наследование от data\default\
+
+!NOTE: Если в вашем сценарии нет Main.ini — игра подгрузит дефолтный файл из data\default\Main.ini. См. Структура сценария.
+
+🚫 Секции, которые трогать НЕ надо
+
+[Scenario]: Все параметры (ActivePlayerIndex, BurstEnabled, RandomEventsEnabled, StoryEventsEnabled, MoveArmyThroughAllyEnabled и др.) движок перезаписывает при старте на основе настроек из Settings.ini и того, что выберет игрок в окне настроек сценария в игре
+
+[EventFlag]: Все ивент-флаги движок сам сбрасывает в False при старте сценария. Сами флаги задаются в Events_Story.ini
+
+[ProcessedItemCount]: Число произведённой амуниции в рамках текущего хода. Трогать только если нужно ограничить производство на первом ходу
+
+🧠 [PsyControl] — состояние пси-установок на старте
+
+BrainPsy [BOOL]: Включён ли пси-излучатель на старте сценария. Возможность им управлять в процессе игры — в Settings.ini → BrainPsy-PlayerCanChangeStatus
+BrainMixer [BOOL]: Включён ли выжигатель мозгов на старте сценария. Аналогично — управление через Settings.ini
+
+!NOTE: Это старт, а не возможность. BrainPsy=True здесь значит «установка работает со старта». Но сможет ли игрок её включать/выключать в процессе игры — задаётся в Settings.ini (BrainPsy-PlayerCanChangeStatus, BrainControlChangeBasedCost, список зон влияния и т.д.), а у бота — в его AI.ini. См. Механика пси-излучения.
+
+🏰 [MainZoneFraction] — главные базы группировок
+
+У каждой группировки есть одна главная база. Её потеря приводит к потере части ресурсов (BasedPercentLostResources + BonusPercentLostResources), кроме LockedResources.
+
+[INT]: Индекс территории, которая является главной базой этой группировки. Формат: Stalkers=85
+
+!EXAMPLE:
+[MainZoneFraction]
+Stalkers=85
+Bandits=112
+Soldiers=166
+Duty=79
+Freedom=71
+Monolith=7
+Mercenaries=84
+Scientists=108
+Zombie=63
+
+!NOTE: Индекс территории. Индекс соответствует номеру секции [ZonaX] ниже. Индекс не обязан совпадать с номером территории на карте — это внутренний идентификатор, который использует движок.
+
+👥 [Advisors] — доступность заместителей в сценарии
+
+Список всех кандидатов из Advisors.ini, которые доступны в этом сценарии со старта.
+
+[BOOL]: True — заместитель доступен в меню назначения, False — скрыт. Формат: Advisor-Stalkers-Wolf=True
+
+!WARN: Доступен ≠ назначен. Этот блок только делает кандидата видимым в меню. Кто реально назначен заместителем со старта — задаётся в секции [Group-Advisor] ниже.
+
+🤝 [Diplomacy] — отношения между группировками
+
+Пары «группировка-группировка» со значениями от -1 до 3.
+
+-1: 🔴 Вечная война (нельзя заключить мир)
+0: ⚔ Война
+1: 🕊 Нейтралитет
+2: 🤝 Союз
+3: 💎 Нерушимый союз (нельзя разорвать)
+
+!EXAMPLE:
+[Diplomacy]
+Mutants-Stalkers=-1
+Stalkers-Bandits=0
+Soldiers-Scientists=2
+Monolith-Zombie=2
+...
+
+!NOTE: Формат ключа. Ключ — пара через дефис: GroupA-GroupB=значение. Техническое название группировки — из файла Groups (имя файла без .ini).
+
+!NOTE: Дипломатия симметрична. Движок считает отношения двусторонними: если задать Stalkers-Bandits=0, то и Bandits-Stalkers автоматически считается равным 0. Достаточно прописать одну строку для каждой пары. Но в дефолтном Main.ini для наглядности прописаны обе — это не ошибка, а стиль разработчика.
+
+🎖 [Group-UnitIndex] — шаблоны юнитов
+
+Привязка рангов бойцов к техническим названиям шаблонов. Жёсткий лимит движка: ровно 4 ранга на группировку.
+
+[NAME]: Техническое название шаблона юнита. Формат: Stalkers-1=Stalkers1 (где 1 — новичок)
+
+!NOTE: Ранги. 1 = новичок, 2 = опытный, 3 = ветеран, 4 = мастер. Это же используется в Goods → параметр Level.
+
+👑 [Group-Leaders] — лидеры группировок
+
+[NAME]: Техническое имя лидера из файлов leaders/ (имя файла без .ini). Формат: Stalkers=Leader-1
+
+👥 [Group-Advisor] — кто назначен со старта
+
+[NAME]: Техническое имя заместителя из Advisors.ini (из квадратных скобок []). Этот кандидат должен быть True в [Advisors]. Формат: Stalkers=Advisor-Stalkers-1
+
+📜 [Group-Rules] — внутренние правила группировок
+
+У каждой группировки есть ровно 4 слота правил (Rule1, Rule2, Rule3, Rule4). В каждый слот записывается индекс правила из Rules.ini.
+
+-Rule [INT]: Формат: Stalkers-Rule1=2, Stalkers-Rule2=6, Stalkers-Rule3=12, Stalkers-Rule4=17
+
+🏛 [Group-Ideology] — стартовая идеология
+
+[NAME]: Техническое название идеологии из файлов ideologies/. Формат: Stalkers=Stalkers, Duty=AntiZone
+
+📊 [Group-Ideology-Percent] — распределение идеологий
+
+Процент бойцов группировки, исповедующих каждую идеологию. Сумма по одной группировке должна быть 100.
+
+[INT 0-100]: Процент. Формат: Stalkers-Stalkers=55, Stalkers-Crime=15 и т.д.
+
+!EXAMPLE:
+[Group-Ideology-Percent]
+Stalkers-Stalkers=55
+Stalkers-Crime=15
+Stalkers-Control=5
+Stalkers-AntiZone=5
+Stalkers-Anarchy=5
+Stalkers-Sectarianism=1
+Stalkers-Mercenary=5
+Stalkers-Exploring=5
+Stalkers-Stability=4
+; Сумма = 100
+
+📦 [Group-Resources] — стартовые ресурсы и склад
+
+Что лежит на складе группировки в момент старта сценария.
+
+-Money [INT]: Деньги
+-Comands [INT]: Командные ресурсы
+-Supplies [INT]: Боеприпасы
+-Medic [INT]: Медикаменты
+-Food [INT]: Еда
+-Novice [INT]: Число новичков на складе
+-Skilled [INT]: Число опытных
+-Veteran [INT]: Число ветеранов
+-Master [INT]: Число мастеров
+[INT]: Любое количество любого товара из Goods/: Stalkers-PM=8, Stalkers-LowArts=1 и т.д.
+
+!NOTE: Не прописывайте нули. Если у группировки нет какого-то ресурса — эту строку можно не писать. Движок сам подставит 0.
+
+!NOTE: LockedResources. Ресурсы из параметра LockedResources в файле группировки не теряются при захвате главной базы. Они остаются у группировки.
+
+🎨 [Units-About] — конфигурация шаблонов юнитов
+
+Описание внешнего вида и экипировки каждого шаблона юнита, заданного в [Group-UnitIndex].
+
+-Armor [NAME]: Тех.название брони из Goods/
+-Weapon [NAME]: Тех.название оружия из Goods/
+-Img [PATH]: Путь к иконке юнита
+-Name [TEXT]: Отображаемое имя ранга (например, «Новичок», «Ветеран»)
+
+!EXAMPLE:
+[Units-About]
+Stalkers1-Armor=Stalker-1
+Stalkers1-Img=gfx\icons\units\Stalkers\Novice_4.png
+Stalkers1-Name=Новичок
+Stalkers1-Weapon=PM
+Stalkers2-Armor=Stalker-2
+Stalkers2-Img=gfx\icons\units\Stalkers\Veteran_1.png
+Stalkers2-Name=Опытный
+Stalkers2-Weapon=Gun
+
+!NOTE: Стоимость юнита. Цена найма считается из Cost оружия, Cost брони и ранга × UnitCostModificator из Settings.ini. См. Goods → «Стоимость юнита».
+
+⬆ [Group-Upgrades] — улучшения, купленные со старта
+
+[NAMES]: Список технических названий файлов улучшений (имя файла без .ini) из папки upgrades/, разделённых запятыми. Формат: Stalkers=Upgrade-6,Upgrade-11 — значит, на старте у сталкеров уже куплены улучшения из файлов Upgrade-6.ini и Upgrade-11.ini
+
+🗺 [ZonaX] — параметры территорий
+
+По одной секции на каждую территорию карты. X — индекс территории (тот самый, что используется в [MainZoneFraction] и в Settings.ini).
+
+Owner [NAME]: Тех.название группировки-владельца. обязательный параметр для каждой территории
+Buildings-Count [INT]: Число построек на территории
+Unit1 [INT]: Число новичков гарнизона
+Unit2 [INT]: Число опытных
+Unit3 [INT]: Число ветеранов
+Unit4 [INT]: Число мастеров
+Mutant1 [INT]: Число фоновых собак
+Mutant2 [INT]: Число фоновых кабанов
+Mutant3 [INT]: Число фоновых кровососов
+Mutant4 [INT]: Число фоновых контролёров
+MutantsActive [INT 0-100]: % активности мутантов на территории. Когда превышает ActiveMutantScaleForMutantUnitX из Settings.ini — мутанты соответствующего типа начинают появляться
+NeedUnitsForBlockUpActiveMutants [INT]: Число бойцов гарнизона, необходимое, чтобы активность мутантов на территории перестала расти
+NumStepAfterSearchArts [INT]: Число ходов с последнего найденного артефакта на этой территории.
+
+!EXAMPLE:
+[Zona85]
+Owner=stalkers
+Buildings-Count=0
+Unit1=4
+MutantsActive=0
+NeedUnitsForBlockUpActiveMutants=3
+Unit2=2
+Unit3=2
+
+!WARN: Пропусков в индексах быть не должно. Секции территорий должны идти строго подряд: [Zona1], [Zona2], [Zona3], …, [ZonaN]. Если на карте 194 территории — должно быть ровно 194 секции без «дыр». В каждой секции обязательно должен быть хотя бы параметр Owner. Остальные параметры (юниты, мутанты, постройки) можно не указывать — движок подставит нули.
+
+!WARN: Фоновые мутанты ≠ гарнизонные. Mutant1…4 — это фоновые мутанты, которые появляются при росте активности. Их нельзя победить обычным способом. Для гарнизонных мутантов (например, у группировки Mutants) используются Unit1…4.
+
+!NOTE: Порядок параметров не важен. В примере видно, что строки идут в произвольном порядке (Unit1, потом MutantsActive, потом снова Unit2). Движок читает их по именам, а не по порядку. Но для читаемости лучше группировать: Owner, затем Unit, затем Mutant, затем остальное.
+
+🗂 Список секций Main.ini
+
+Главные базы: [MainZoneFraction]
+Доступность заместителей: [Advisors]
+Заместитель со старта: [Group-Advisor]
+Лидер: [Group-Leaders]
+Шаблоны юнитов (4 ранга): [Group-UnitIndex]
+Конфигурация шаблонов (броня, оружие, имя): [Units-About]
+Стартовые правила: [Group-Rules]
+Стартовая идеология: [Group-Ideology]
+Распределение идеологий: [Group-Ideology-Percent]
+Стартовый склад: [Group-Resources]
+Купленные улучшения: [Group-Upgrades]
+Параметры территорий: [ZonaX]
+Дипломатия между группировками: [Diplomacy]
+Пси-установки на старте: [PsyControl]
+
+# settings — Основной файл настроек сценария (Settings.ini)
+
+Локализация (размещать в messages.csv)
+
+!LOC:
+ScenarioName;Название сценария
+ScenarioDescription;Описание сценария
+ScenarioVictoryDescription;Описание условий победы
+ScenarioLoseDescription;Описание условий поражения
+
+!NOTE: Эти ключи размещаются в файле messages.csv.
+
+Секция [Main] — основные настройки
+
+📋 Общие параметры
+
+isTutorial [BOOL]: Если True, то после старта сценария сразу открывается окно обучения. По умолчанию False
+Map [NAME]: Название папки с файлами глобальной карты (например, map_sac1). Папка должна находиться в data\default\Map\ или в папке сценария
+DefaultLocale [ENUM]: Локализация по умолчанию для сценария. Значения: ruRU (русский), enUS (английский). Мододел может добавить собственные локализации
+GroupsForPlayer [NAMES]: Список группировок, за которые могут играть игроки. Перечислять технические названия через запятую (например, Stalkers,Bandits,Duty)
+MedicName [NAME]: Техническое название ресурса из Goods, используемого вместо медикаментов. По умолчанию Medic
+SuppliesName [NAME]: Техническое название ресурса из Goods, используемого вместо боеприпасов. По умолчанию Supplies
+FoodName [NAME]: Техническое название ресурса из Goods, используемого вместо еды. По умолчанию Food
+ScenarioLogo-Standart [PATH]: Путь к изображению логотипа сценария (отображается после выбора кампании)
+ScenarioLogo-Active [PATH]: Путь к изображению логотипа сценария при наведении курсора мыши
+
+🏆 Достижения
+
+Achievements [BOOL]: Включены ли достижения в сценарии (True — включены, False — выключены)
+AchievementsCount [INT]: Число достижений в файле Achievements.ini. Должно совпадать с реальным количеством, иначе будут ошибки
+
+🎲 События и выброс
+
+EventsRandomDefault [BOOL]: Состояние случайных событий по умолчанию в меню (True — включены)
+EventsRandomCanChange [BOOL]: Может ли игрок включать/отключать случайные события перед запуском сценария
+EventsStoryDefault [BOOL]: Состояние сюжетных событий по умолчанию в меню (True — включены)
+EventsStoryCanChange [BOOL]: Может ли игрок включать/отключать сюжетные события перед запуском сценария
+BurstDefault [BOOL]: Включён ли выброс по умолчанию в меню настроек сценария
+BurstCanChange [BOOL]: Может ли игрок изменять настройку выброса перед стартом
+
+🏁 Условия победы и поражения
+
+StandardWinCanChange [BOOL]: Может ли игрок изменять настройки стандартной победы перед стартом
+StandardWinTypesDefault [ENUM]: Тип дополнительной победы по умолчанию. Значения: 0 — выключено, 1 — частичная победа (захватить более половины территорий), 2 — групповая победа (победить в составе альянса), 3 — частично-групповая победа
+StandardWinPartyDisabled [BOOL]: Отключить возможность победы союзным альянсом
+End-Standart-Victory [BOOL]: Включена ли стандартная победа по захвату всех территорий Зоны
+End-Standart-Lose [BOOL]: Включено ли стандартное поражение по потере всех территорий
+End-Step-Victory [BOOL]: Включена ли победа, если игрок доживёт до хода, указанного в EndStep
+End-Step-Lose [BOOL]: Включено ли поражение, если игрок достигнет хода, указанного в EndStep
+End-EventFlag-Victory [BOOL]: Включена ли победа по ивент-флагу (в Events_Story.ini использовать флаг EndVictory)
+End-EventFlag-Lose [BOOL]: Включено ли поражение по ивент-флагу (в Events_Story.ini использовать флаг EndLose)
+EndStep [INT]: Номер хода, который считается финальным для End-Step-Victory и End-Step-Lose
+MinimalControlToWin [INT]: Надбавка сверх половины территорий для частичной победы. Например, если на карте 99 территорий, то значение 1 означает необходимость захвата 50 территорий (99÷2=49, 49+1=50)
+
+🧟 Мутанты
+
+ActiveMutantsEveryRound [BOOL]: Включён ли ежеходный рост активности мутантов на всех территориях
+ActiveMutantAddEveryPercent [INT]: Каждые сколько % активности добавляется один мутант каждого типа
+ActiveMutantScaleForMutantUnit1 [INT 0-100]: Минимальный % активности мутантов на территории, с которого начинают появляться собаки
+ActiveMutantScaleForMutantUnit2 [INT 0-100]: Минимальный % активности мутантов на территории, с которого начинают появляться кабаны
+ActiveMutantScaleForMutantUnit3 [INT 0-100]: Минимальный % активности мутантов на территории, с которого начинают появляться кровососы
+ActiveMutantScaleForMutantUnit4 [INT 0-100]: Минимальный % активности мутантов на территории, с которого начинают появляться контролёры
+
+💰 Ресурсы и экономика
+
+EndRoundChangeResources [BOOL]: Происходит ли ежеходное начисление и трата ресурсов (еда, боеприпасы, медикаменты)
+UnitCostModificator [INT]: Модификатор стоимости юнитов. Формула цены найма: цена оружия + цена брони + ранг × UnitCostModificator
+BasedCashBooty [INT]: Базовое значение трофейных денег с тел противников (не мутантов) в случае победы или ничьей
+BasedPercentLostResources [INT 0-100]: Процент потери ресурсов группировкой при захвате её главной базы. Например, 50 означает потерю половины ресурсов
+MoneyRequestLimit [INT]: Максимальная сумма денег, которую можно запросить через дипломатию. По умолчанию 50000
+
+🕵 Разведка и артефакты
+
+SpyCostCRModificator [INT]: Модификатор стоимости отправки разведчиков в КР
+SpyBasedChanceCountForReconnaissance [INT 0-100]: Базовый шанс успеха разведки в %. К нему прибавляются все бонусы из Advisors, Ideologies, Leaders, Rules и улучшений
+SpyBasedCostMoneyForReconnaissance [INT]: Базовая цена отправки разведки в деньгах. К ней прибавляются все бонусы
+BasedChanceForSearchArts [INT 0-100]: Базовый шанс поиска артефактов в %. К нему прибавляется BonusSearchArts из всех источников
+BasedChanceOfDeathForSearchArts [INT 0-100]: Базовый шанс смерти бойца при поиске артефакта в %
+MaxAutoArtsNameRule [INT]: Индекс правила из Rules.ini, которое включает полностью автоматический поиск артефактов (например, 6 для Rule-6)
+PartAutoArtsNameRule [INT]: Индекс правила из Rules.ini, которое включает частично автоматический поиск артефактов
+
+🚫 Исключения и запреты
+
+ExcludedUpgrades [NAMES]: Список технических названий улучшений через запятую, которые недоступны в сценарии. Полная блокировка: если в AI.ini указать запрещённое улучшение, игра выдаст ошибку на ходе бота
+ExcludedBuildings [NAMES]: Список технических названий построек через запятую, которые недоступны в сценарии. Полная блокировка: если в AI.ini указать запрещённую постройку, игра выдаст ошибку
+NoBaseNeeded [NAMES]: Список технических названий группировок через запятую, которым не нужна главная база (например, мутанты, зомби)
+DisabledZonesForMainBase [NUMS]: Список индексов территорий через запятую, на которых невозможно установить главную базу группировки
+
+⚔ Действия и стоимости
+
+BasedCostArmyMove [INT]: Базовая стоимость передислокации бойцов в КР
+BasedCostAtackType1 [INT]: Базовая стоимость разведки боем в КР
+BasedCostAtackType2 [INT]: Базовая стоимость захвата территории в КР
+BasedCostKillMutants [INT]: Базовая стоимость зачистки мутантов в КР
+BasedCostNewAdvisor [INT]: Базовая стоимость назначения нового заместителя в КР. К ней прибавляется BonusForCostCPAdvisor
+BasedCostNewRule [INT]: Базовая стоимость смены внутреннего правила группировки в КР
+BasedCostDestroyBuildComands [INT]: Базовая стоимость разрушения постройки в КР
+BasedCostChangeMainZone [INT]: Базовая стоимость переноса главной базы группировки в КР. К ней прибавляется BonusForCostCPMainBase
+BasedCostForLeaveZone [INT]: Базовая стоимость покидания территории в КР
+DiplomacyActionCost [INT]: Базовая стоимость дипломатического действия в КР
+
+🤝 Движение через союзников
+
+MoveAndAtackArmyThroughAllyDefault [ENUM]: Режим взаимодействия через территорию союзника по умолчанию. Значения: 0 — выключено (нельзя проходить через территорию союзника), 1 — можно передислоцироваться через территорию союзника, 2 — можно передислоцироваться и атаковать через территорию союзника
+MoveAndAtackArmyThroughAllyCanChange [ENUM]: Может ли игрок изменять режим движения через союзников. Значения те же: 0, 1, 2
+
+🔧 Мастерская и производство
+
+BasedCostForUpgradeAmmo-Money [FLOAT, comma]: Базовый множитель цены на модификацию амуниции в деньгах. Можно указывать дробные значения через запятую (например, 1,5)
+BasedCostForUpgradeAmmo-Comands [INT]: Базовая стоимость в КР на привлечение одной мастерской к модификации амуниции
+BasedImprovementProductivityWorkshop [INT]: Базовая продуктивность одной мастерской для модификации чего-либо в течение хода
+
+🧠 Пси-излучатель и выжигатель мозгов
+
+BrainPsy [BOOL]: Включена ли установка пси-излучения в сценарии
+BrainMixer [BOOL]: Включён ли выжигатель мозгов в сценарии
+BrainPsy-PlayerCanChangeStatus [BOOL]: Может ли игрок включать/выключать установку пси-излучения
+BrainMixer-PlayerCanChangeStatus [BOOL]: Может ли игрок включать/выключать выжигатель мозгов
+BrainPsyBasedZona [INT]: Индекс территории, где базируется пси-излучатель (управлять им можно только с этой территории)
+BrainMixerBasedZona [INT]: Индекс территории, где базируется выжигатель мозгов
+BrainPsyAffectedZones [NUMS]: Список индексов территорий через запятую, на которые распространяется влияние пси-установки
+BrainMixerAffectedZones [NUMS]: Список индексов территорий через запятую, на которые распространяется влияние выжигателя мозгов
+BrainControlChangeBasedCost [INT]: Базовая стоимость переключения состояния установки в КР
+
+⚡ Особые события (SpecialEvents)
+
+BurstNumEvent [NAME]: Техническое название ивента выброса из папки SpecialEvents
+NoFoodNumEvent [NAME]: Техническое название ивента нехватки еды из папки SpecialEvents
+BrainPsyWorkNumEvent [NAME]: Техническое название ивента последствий пси-излучателя из папки SpecialEvents
+BrainMixerWorkNumEvent [NAME]: Техническое название ивента последствий выжигателя мозгов из папки SpecialEvents
+BrainPsyAlarmNumEvent [NAME]: Техническое название ивента оповещения о переключении состояния пси-излучения из папки SpecialEvents
+BrainMixerAlarmNumEvent [NAME]: Техническое название ивента оповещения о переключении состояния выжигателя мозгов из папки SpecialEvents
+IdeologyLeaveUnitsNumEvent [NAME]: Техническое название ивента оповещения при уходе бойцов из-за идеологических разногласий из папки SpecialEvents
+AutoSearchMaxArtsNumEvent [NAME]: Техническое название ивента оповещения при полностью автоматическом поиске артефактов из папки SpecialEvents
+AutoSearchPartArtsNumEvent [NAME]: Техническое название ивента оповещения при частично автоматическом поиске артефактов из папки SpecialEvents
+MoveMoneyNumEvent [NAME]: Техническое название ивента, связанного с механикой передачи денег между фракциями из папки SpecialEvents
+
+🌫 Прочее
+
+AmbientSoundTimer [INT]: Интервал в миллисекундах между воспроизведением фоновых звуков
+MusicCheckTimer [INT]: Интервал в миллисекундах для проверки, закончилась ли предыдущая музыка
+OwnerFractionOfAbandonedZone [NAME]: Техническое название группировки, которая станет новым владельцем территории после того, как её покинет предыдущий владелец
+FogOfWar [BOOL]: Туман войны (⚠️ бета-версия). Скрывает неисследованные территории и передвижение вражеских армий. True — включить, False — выключить
+
+Секция [Music]
+
+Список файлов музыки, используемой в сценарии. Каждый файл указывается на отдельной строке:
+
+!EXAMPLE:
+[Music]
+music\track1.ogg
+music\track2.ogg
+music\track3.ogg
+
+Секция [AmbientSounds]
+
+Список файлов фоновых звуков в сценарии. Каждый файл указывается на отдельной строке:
+
+!EXAMPLE:
+[AmbientSounds]
+sfx\ambient\wind.ogg
+sfx\ambient\birds.ogg
+sfx\ambient\distant_explosion.ogg
+
+# groups — Группировки (Groups)
+
+Структура
+
+Папка Groups\ в сценарии состоит из ini-файлов, каждый из которых представляет одну группировку.
+Название файла — техническое название группировки, которое используется в других конфигах.
+
+Секции в файле
+
+Каждый файл содержит секцию [:main] (основные параметры) плюс по одной секции на каждую идеологию ([Stalkers], [AntiZone], [Crime] и т.д.).
+
+!WARN: Добавили новую идеологию — придётся дописать секцию в каждой группировке, где она может стать основной.
+
+Локализация
+
+!LOC: (размещать в messages.csv)
+[Groups..:main].Name — общее название группировки
+[Groups..:main].Description — общее описание
+[Groups..].Name — название при этой идеологии
+[Groups..].Description — описание при этой идеологии
+
+📜 Тексты дипломатии
+
+!LOC: (размещать в messages.csv). Все значения — @@ТЕКСТ. Эти строки отображаются в диалогах дипломатии.
+
+Ответы группировки на действия игрока
+
+DiplomacyText-Ans-0-Down [TEXT]: Ответ группировки при объявлении ей войны
+DiplomacyText-Ans-1-Yes [TEXT]: Ответ группировки, если она согласилась на перемирие от игрока
+DiplomacyText-Ans-1-No [TEXT]: Ответ группировки, если она отказалась от перемирия, которое предложил ей игрок
+DiplomacyText-Ans-2-Yes [TEXT]: Ответ группировки, если она согласилась на союз от игрока
+DiplomacyText-Ans-2-No [TEXT]: Ответ группировки, если она отказалась от союза, который ей предложил игрок
+DiplomacyText-Ans-1-Down [TEXT]: Ответ группировки, если игрок разорвал с ней союз
+
+Фразы и реакции группировки
+
+DiplomacyText-Question-War [TEXT]: Фраза группировки, когда она объявила войну игроку
+DiplomacyText-Question-Neutral [TEXT]: Фраза группировки, когда она предлагает перемирие игроку
+DiplomacyText-Question-Alliance [TEXT]: Фраза группировки, когда она предлагает союз игроку
+DiplomacyText-Question-BreakAlliance [TEXT]: Фраза группировки, когда она разрывает союз с игроком
+DiplomacyText-Question-Neutral-Yes [TEXT]: Реакция группировки, когда игрок согласился на её предложение перемирия
+DiplomacyText-Question-Neutral-No [TEXT]: Реакция группировки, когда игрок отказался от её предложения перемирия
+DiplomacyText-Question-Alliance-Yes [TEXT]: Реакция группировки, когда игрок согласился на её предложение союза
+DiplomacyText-Question-Alliance-No [TEXT]: Реакция группировки, когда игрок отказался от её предложения союза
+
+Запросы денег
+
+DiplomacyText-RequestMoney-Ask [TEXT]: Фраза группировки, когда она запрашивает у игрока деньги
+DiplomacyText-RequestMoney-Ans-Yes [TEXT]: Ответ группировки, когда она соглашается на запрос денег игроком
+DiplomacyText-RequestMoney-Ans-No [TEXT]: Ответ группировки, когда она отказывается от запроса денег игроком
+
+Тексты экранов победы и поражения
+
+Text-End-Standart-Victory [TEXT]: Текст в окне победы при захвате всех территорий
+Text-End-PartialStandard-Victory [TEXT]: Текст в окне победы при захвате части территорий
+Text-End-PartyStandard-Victory [TEXT]: Текст в окне победы при захвате территорий союзным альянсом
+Text-End-Step-Victory [TEXT]: Текст в окне победы, если группировка дожила до определённого хода
+Text-End-EventFlag-Victory [TEXT]: Текст в окне победы, если победила по ивент-флагу
+Text-End-Standart-Lose [TEXT]: Текст в окне поражения при потере всех территорий
+Text-End-PartialStandard-Lose [TEXT]: Текст в окне поражения при потере части территорий
+Text-End-PartyStandard-Lose [TEXT]: Текст в окне поражения, если территории захватил вражеский альянс
+Text-End-Step-Lose [TEXT]: Текст в окне поражения, если не смогла выполнить условия победы к определённому ходу
+Text-End-EventFlag-Lose [TEXT]: Текст в окне поражения, если получила поражение по ивент-флагу
+
+!NOTE: К этим текстам нужны изображения — Каждому Text-End- соответствует свой Img-End- в разделе «Параметры идеологии» ниже. Пути указываются в конфиге, сами строки — в messages.csv не нужны.
+
+Категория [:main] — основные настройки группировки
+
+!NOTE: В блоке [:main] указаны базовые параметры группировки, которые заменяют параметры из [Названиеидеологии]. В блоке [Названиеидеологии] указанные параметры работают только в рамках этой идеологии.
+
+🛡 Ресурсы и бойцы
+
+LockedResources [NAMES]: Список ресурсов через запятую, которые группировка не потеряет в случае захвата её главной базы. Они остаются у группировки и могут быть потрачены — не переходят захватчику и не исчезают
+UnitWayFace [PATH]: Путь к папке, где хранятся изображения юнитов группировки (используется для отображения в интерфейсе)
+Spy1-Face [PATH]: Путь к изображению разведчика первого ранга (новичок)
+Spy2-Face [PATH]: Путь к изображению разведчика второго ранга (опытный)
+Spy3-Face [PATH]: Путь к изображению разведчика третьего ранга (ветеран)
+Spy4-Face [PATH]: Путь к изображению разведчика четвёртого ранга (мастер)
+
+💰 Экономика и дипломатия
+
+CanGiveDiplomacyMoney [BOOL]: Может ли группировка давать деньги другим группировкам через дипломатию
+CanOrderDiplomacyMoney [BOOL]: Может ли группировка запрашивать деньги у других группировок
+BaseUpCR [INT]: Базовый ежедневный прирост командных ресурсов (КР)
+BaseLimit-Comands [INT]: Базовый максимальный лимит КР
+BaseLimit-Novice [INT]: Базовый лимит рекрутов ранга новичок
+BaseLimit-Skilled [INT]: Базовый лимит рекрутов ранга опытный
+BaseLimit-Veteran [INT]: Базовый лимит рекрутов ранга ветеран
+BaseLimit-Master [INT]: Базовый лимит рекрутов ранга мастер
+TypeBooty [ENUM]: Тип трофеев с трупов бойцов этой группировки: values: Cash — деньги, Parts — части тел мутантов
+
+!NOTE: Разница «Base…» и «Bonus…» — BaseUpCR и BaseLimit- здесь — это основа группировки. А Comands / LimitComands / LimitRecruit- из Advisors#Advisors, Buildings#Buildings, Ideologies#ideologies, Leaders#leaders и Rules#Rules — это бонусы, которые к основе прибавляются. См. matrix-bonus.
+
+⚙ Прочее
+
+RatingShow [BOOL]: Показывать ли группировку в рейтинге группировок (таблица лидеров)
+ImmunityForMutantsRampage [BOOL]: Мутанты не будут буйствовать на территориях группировки (игнорируют событие "Буйство мутантов")
+
+🏝 Ограничения действий на анклавах
+
+Группа из 18 параметров, управляющих тем, что разрешено делать на анклавах (изолированных территориях, не имеющих связи с основной территорией группировки) в зависимости от действующего внутреннего правила централизации (Rules#Rules).
+
+Тип значения у всех: NUMS 1-5 — перечень индексов правил (1 = максимальная децентрализация, 5 = максимальная централизация), при которых действие отключается.
+
+Автопоиск артефактов
+
+RulesBranchWithDisabledAutoSearchForEnemyEnclave [NUMS 1-5]: Анклавы в тылу врага
+RulesBranchWithDisabledAutoSearchForNeutralEnclave [NUMS 1-5]: Анклавы в тылу нейтрала
+RulesBranchWithDisabledAutoSearchForSemiEnclave [NUMS 1-5]: Анклавы в тылу союзника
+
+Ручной поиск артефактов
+
+RulesBranchWithDisabledManualSearchForEnemyEnclave [NUMS 1-5]: Анклавы в тылу врага
+RulesBranchWithDisabledManualSearchForNeutralEnclave [NUMS 1-5]: Анклавы в тылу нейтрала
+RulesBranchWithDisabledManualSearchForSemiEnclave [NUMS 1-5]: Анклавы в тылу союзника
+
+Найм бойцов
+
+RulesBranchWithDisabledRecruitingForEnemyEnclave [NUMS 1-5]: Анклавы в тылу врага
+RulesBranchWithDisabledRecruitingForNeutralEnclave [NUMS 1-5]: Анклавы в тылу нейтрала
+RulesBranchWithDisabledRecruitingForSemiEnclave [NUMS 1-5]: Анклавы в тылу союзника
+
+Возможность строить
+
+RulesBranchWithDisabledBuildingForEnemyEnclave [NUMS 1-5]: Анклавы в тылу врага
+RulesBranchWithDisabledBuildingForNeutralEnclave [NUMS 1-5]: Анклавы в тылу нейтрала
+RulesBranchWithDisabledBuildingForSemiEnclave [NUMS 1-5]: Анклавы в тылу союзника
+
+Возможность атаковать с анклава
+
+RulesBranchWithDisabledAttackingFromForEnemyEnclave [NUMS 1-5]: Анклавы в тылу врага
+RulesBranchWithDisabledAttackingFromForNeutralEnclave [NUMS 1-5]: Анклавы в тылу нейтрала
+RulesBranchWithDisabledAttackingFromForSemiEnclave [NUMS 1-5]: Анклавы в тылу союзника
+
+Передислокация
+
+RulesBranchWithDisabledArmyMoveForEnemyEnclave [NUMS 1-5]: Анклавы в тылу врага
+RulesBranchWithDisabledArmyMoveForNeutralEnclave [NUMS 1-5]: Анклавы в тылу нейтрала
+RulesBranchWithDisabledArmyMoveForSemiEnclave [NUMS 1-5]: Анклавы в тылу союзника
+
+!EXAMPLE:
+RulesBranchWithDisabledBuildingForEnemyEnclave=1,2
+— при правилах максимальной и обычной децентрализации строить на своих анклавах в тылу врага нельзя. При правилах 3, 4, 5 — можно. Чтобы отключить действие для всех правил централизации, укажите полный перечень: 1,2,3,4,5.
+
+Параметры идеологии
+
+Могут быть указаны как в [:main], так и в секции конкретной [идеологии]. Если параметр задан в обоих местах, приоритет имеет значение из секции идеологии.
+
+🤖 Поведение
+
+AI [NAME]: Техническое название блока поведения ИИ из AI#AI (например, AI-Stalkers). ИИ будет использовать этот блок для управления группировкой
+
+🔊 Озвучка дипломатии (DiplomacyVoice-*)
+
+Все значения — PATH. Названия параметров зеркалят текстовые DiplomacyText-* из раздела выше.
+
+DiplomacyVoice-Ans-0-Down [PATH]: Голосовой ответ при объявлении войны
+DiplomacyVoice-Ans-1-Yes [PATH]: Согласие на перемирие от игрока
+DiplomacyVoice-Ans-1-No [PATH]: Отказ от перемирия, предложенного игроком
+DiplomacyVoice-Ans-2-Yes [PATH]: Согласие на союз от игрока
+DiplomacyVoice-Ans-2-No [PATH]: Отказ от союза, предложенного игроком
+DiplomacyVoice-Ans-1-Down [PATH]: Реакция на разрыв союза игроком
+DiplomacyVoice-Question-War [PATH]: Объявление войны игроку
+DiplomacyVoice-Question-Neutral [PATH]: Предложение перемирия игроку
+DiplomacyVoice-Question-Alliance [PATH]: Предложение союза игроку
+DiplomacyVoice-Question-BreakAlliance [PATH]: Разрыв союза с игроком
+DiplomacyVoice-Question-Neutral-Yes [PATH]: Реакция на согласие игрока на перемирие
+DiplomacyVoice-Question-Neutral-No [PATH]: Реакция на отказ игрока от перемирия
+DiplomacyVoice-Question-Alliance-Yes [PATH]: Реакция на согласие игрока на союз
+DiplomacyVoice-Question-Alliance-No [PATH]: Реакция на отказ игрока от союза
+DiplomacyVoice-RequestMoney-Ask [PATH]: Запрос денег у игрока
+DiplomacyVoice-RequestMoney-Ans-Yes [PATH]: Согласие на запрос денег игроком
+DiplomacyVoice-RequestMoney-Ans-No [PATH]: Отказ от запроса денег игроком
+
+!NOTE: Озвучка не обязательна — Если прописан текст DiplomacyText-, но не прописан соответствующий DiplomacyVoice- — игра не вылетит. Диалог будет показан как «немое кино»: текст на экране, без звука.
+
+🖼 Логотипы и оформление
+
+Logo-Standart [PATH]: Логотип группировки (используется в окне чата, дипломатии и других интерфейсах)
+IconMap [PATH]: Значок группировки на глобальной карте
+Trader [PATH]: Изображение торговца группировки
+
+!WARN: IconMap не анимируется — Значки группировок на глобальной карте не могут быть анимированы через gif. Используйте статичные изображения (png, jpg). См. FAQ#8.
+
+🏁 Изображения экранов победы и поражения
+
+Все значения — PATH:
+
+Img-End-Standart-Victory [PATH]: Изображение при победе через захват всех территорий
+Img-End-PartialStandard-Victory [PATH]: Изображение при победе через захват части территорий
+Img-End-PartyStandard-Victory [PATH]: Изображение при победе через захват территорий союзным альянсом
+Img-End-Step-Victory [PATH]: Изображение при победе через выживание до определённого хода
+Img-End-EventFlag-Victory [PATH]: Изображение при победе через ивент-флаг
+Img-End-Standart-Lose [PATH]: Изображение при поражении через потерю всех территорий
+Img-End-PartialStandard-Lose [PATH]: Изображение при поражении через потерю части территорий
+Img-End-PartyStandard-Lose [PATH]: Изображение при поражении через потерю территорий вражеским альянсом
+Img-End-Step-Lose [PATH]: Изображение при поражении через невыполнение условий победы к определённому ходу
+Img-End-EventFlag-Lose [PATH]: Изображение при поражении через ивент-флаг
+
+# ai — ИИ компьютерных противников (AI.ini)
+
+Структура файла
+
+Файл AI.ini определяет поведение ботов в сценарии. Каждая группировка использует свой блок настроек ИИ, указанный в параметре AI файла Groups.
+
+Файл содержит один или несколько блоков [Название-ИИ] (например, [AI-Stalkers]). Каждый блок описывает логику поведения одной группировки.
+
+Логическая последовательность (блоки действий)
+
+Поведение бота состоит из последовательности логических блоков, которые выполняются по порядку.
+
+CountBlocks [INT]: Число логических блоков в последовательности
+BlockX [ENUM]: Тип блока действий. X — порядковый номер (от 1 до CountBlocks)
+
+18 типов блоков (BlockX)
+
+Economic: Продажа/покупка амуниции, частей тел мутантов, артефактов
+BuyGarrison: Покупка гарнизона на всех территориях, где гарнизона не хватает для остановки роста % активности мутантов
+KillMutants: Зачистка территорий, если % активности выше указанного в KillMutants-LimitActive
+BuyAtackArmy: Купить бойцов для атаки на пограничной территории
+Atack: Атаковать вражескую группировку, если есть такая на границе
+Diplomacy: Совершить дипломатическое действие раз в указанное число ходов (Diplomacy-CanEveryStep)
+Advisor: Назначить указанного заместителя группировки
+BrainControl: Вкл/выкл пси-излучатель и выжигатель мозгов
+DiplomacyMoney: Запросить деньги у союзника в случае необходимости
+BuyUpgrades: Покупать улучшения
+BuyBorderGuardForEnemy: Покупка бойцов на границе с противником для её охраны
+BuyBorderGuardForNeutral: Покупка бойцов на границе с нейтральным соседом для её охраны
+BuyBorderGuardForAllies: Покупка бойцов на границе с союзником для её охраны
+ChangeMainBase: Смена главной базы группировки
+BuyBaseGuard: Покупка бойцов для охраны главной базы группировки
+RelocationArmy: Передислокация бойцов
+Building: Сооружение построек
+Cheat: Плюс к ресурсам бота. Можно указывать несколько ресурсов
+
+Главная база группировки
+
+MainBase-DeepLimit [INT]: Минимальное расстояние в количестве территорий до границы. Бот не будет переносить базу ближе к фронту
+
+Атака (блок Atack)
+
+Atack-AtackAnyWay [BOOL]: Атакует даже если юнитов в исходящем гарнизоне меньше, чем в целевом
+Atack-UseConquest [BOOL]: Использует режим атаки «Захват» (True), иначе будет использовать «Разведка боем» (False)
+
+Чистка территорий от мутантов (блок KillMutants)
+
+KillMutants-LimitActive [INT 0-100]: % активности мутантов на территории, с которого ИИ начинает зачистку
+KillMutants-AtackAnyWay [BOOL]: Атаковать даже если число гарнизона меньше числа мутантов на подконтрольной территории
+
+Покупка юнитов — модификаторы количества
+
+!NOTE: Все значения ниже — [FLOAT]. Эти коэффициенты определяют, сколько бойцов бот будет нанимать на различные территории.
+
+BuyUnitForAtackMotivationModificator [FLOAT]: Бот будет нанимать бойцов для атаки, пока у соседней вражеской территории войск больше (войско соседа × этот коэффициент)
+BuyBaseGuardBehindMotivationModificator [FLOAT]: Бот будет покупать бойцов для главной базы в тылу (число для остановки роста % активности × этот модификатор)
+BuyBaseGuardFrontEnemyMotivationModificator [FLOAT]: Бот будет нанимать бойцов на главную базу на границе с врагом, пока у соседа войск больше (войско соседа × коэффициент)
+BuyBaseGuardFrontNeutralMotivationModificator [FLOAT]: То же для границы с нейтралом
+BuyBaseGuardFrontAlliesMotivationModificator [FLOAT]: То же для границы с союзником
+BuyUnitForGarrisonMotivationModificator [FLOAT]: Бот будет нанимать бойцов для достижения требования числа бойцов для остановки роста % активности (число × модификатор)
+BuyUnitForGuardBorderWithEnemyMotivationModificator [FLOAT]: Бот будет нанимать бойцов на границу с врагом, пока у соседа войск больше (войско соседа × коэффициент)
+BuyUnitForGuardBorderWithNeutralMotivationModificator [FLOAT]: То же для границы с нейтралом
+BuyUnitForGuardBorderWithAlliesMotivationModificator [FLOAT]: То же для границы с союзником
+
+Покупка юнитов — приоритеты рангов
+
+!NOTE: Все значения ниже — [NUMS 1-4]. Списки приоритета найма рангов (1 = новичок, 2 = опытный, 3 = ветеран, 4 = мастер).
+
+BuyBaseGuardFrontAllies-Priority [NUMS 1-4]: Приоритет найма рангов на базу, граничащую с союзником
+BuyBaseGuardFrontNeutral-Priority [NUMS 1-4]: Приоритет найма рангов на базу, граничащую с нейтралом
+BuyBaseGuardFrontEnemy-Priority [NUMS 1-4]: Приоритет найма рангов на базу, граничащую с врагом
+BuyBaseGuardBehind-Priority [NUMS 1-4]: Приоритет найма рангов на базу в тылу
+BuyUnitForAtack-Priority [NUMS 1-4]: Приоритет найма рангов для атаки. Если ранг не указан, он не нанимается!
+BuyUnitForGuardBorderWithEnemy-Priority [NUMS 1-4]: Приоритет найма рангов на границу с врагом
+BuyUnitForGuardBorderWithNeutral-Priority [NUMS 1-4]: Приоритет найма рангов на границу с нейтралом
+BuyUnitForGuardBorderWithAllies-Priority [NUMS 1-4]: Приоритет найма рангов на границу с союзником
+BuyUnitForGarrison-Priority [NUMS 1-4]: Приоритет найма рангов в тыл. Если ранг не указан, он не нанимается!
+
+!WARN: Осторожно с приоритетами. Если в списке приоритета отсутствует какой-то ранг (например, 1,2,3 без 4), бот никогда не наймёт мастеров для этого действия. Обычно рекомендуется указывать все 4 ранга: 1,2,3,4.
+
+Экономика (блок Economic)
+
+Economic-CanSearchArts [BOOL]: Может ли бот искать артефакты
+Economic-CountTargetSellResources [INT]: Число названий ресурсов для продажи
+Economic-TargetSellResource-X [NAME]: Название ресурса для продажи (где X — номер от 1 до CountTargetSellResources)
+Economic-SellGoodsIfThisNotUseUnits [BOOL]: Продавать товары, если они не используются для найма юнитов
+Economic-CanBuyResources [BOOL]: Может ли бот покупать ресурсы
+Economic-CountTargetBuyResources [INT]: Число названий ресурсов для покупки
+Economic-TargetBuyResource-X [NAME]: Название ресурса для покупки
+Economic-TargetBuyResource-X-CountModificator [INT]: Модификатор, умножаемый на требуемое число ресурса (требуемое захардкожено). Если ресурсов меньше — бот докупает
+Economic-BuyGoodsIfThisUseUnits [BOOL]: Покупает ли фракция товары, которые используются при покупке её юнитов
+
+Дипломатия (блок Diplomacy)
+
+Diplomacy-CanEveryStep [INT]: Может совершать дипломатические действия каждые указанные число ходов
+Diplomacy-CanDeclareMoreOneWar [BOOL]: Может объявить войну, когда уже с кем-то воюет
+Diplomacy-DeclareWarIfNoBorder [BOOL]: Может объявлять войну тем, с кем не граничит
+Diplomacy-BreakAllianceIfNoBorder [BOOL]: Может разрывать союз с теми, с кем не граничит
+Diplomacy-ModificatorWithBorderForAlliance [INT]: Во сколько раз рейтинг армии одной группировки должен превышать рейтинг другой для согласия на союз (если граничат)
+Diplomacy-ModificatorWithoutBorderForAlliance [INT]: То же, если не граничат
+Diplomacy-ModificatorWithBorderForNeutral [INT]: Для согласия на нейтралитет (если граничат)
+Diplomacy-ModificatorWithoutBorderForNeutral [INT]: То же, если не граничат
+Diplomacy-ModificatorWithBorderForWar [INT]: Для объявления войны (если граничат)
+Diplomacy-ModificatorWithoutBorderForWar [INT]: Для объявления войны (если не граничат)
+Diplomacy-ModificatorWithBorderForBrokenAlliance [INT]: Для разрыва союза (если граничат)
+Diplomacy-ModificatorWithoutBorderForBrokenAlliance [INT]: Для разрыва союза (если не граничат)
+
+Дипломатические запросы денег (блок DiplomacyMoney)
+
+DiplomacyMoney-CanOrder [BOOL]: Будет ли бот запрашивать деньги у других
+DiplomacyMoney-BalanceForOrder [INT]: Сумма ниже которой (≤) бот будет просить деньги у союзников
+DiplomacyMoney-PercentForOrder [INT 0-100]: Какой % от суммы союзника бот будет запрашивать
+DiplomacyMoney-CanGive [BOOL]: Может ли принимать запросы на деньги (False = всегда отказывается)
+DiplomacyMoney-BalanceForGive [INT]: Сумма денег ниже которой бот откажется отправлять деньги (остаток после вычета запрошенной суммы)
+
+Заместители (блок Advisor)
+
+Advisor-CanChange [BOOL]: Может ли бот менять заместителя лидера группировки
+Advisor-TargetName [NAME]: Техническое название кандидата из Advisors.ini, которого бот будет назначать
+
+Пси-установки (блок BrainControl)
+
+BrainControl-Psy-CanChange [BOOL]: Может ли бот менять состояние пси-излучателя
+BrainControl-Mixer-CanChange [BOOL]: Может ли бот менять состояние выжигателя мозгов
+BrainControl-Psy-TargetStatus [BOOL]: Состояние пси-излучателя, которое бот установит при контроле территории с установкой
+BrainControl-Mixer-TargetStatus [BOOL]: Состояние выжигателя мозгов, которое бот установит при контроле территории с установкой
+
+Покупка улучшений (блок BuyUpgrades)
+
+Upgrades-Index-Count [INT]: Сколько улучшений бот будет пытаться купить
+Upgrades-Index-X [NAME]: Техническое название улучшения (имя файла без .ini), которое бот будет покупать (где X — порядковый номер)
+Upgrades-LockPass [BOOL]: Если True, бот не будет пытаться купить другое улучшение, если не хватает ресурсов на указанное в списке
+
+!WARN: Заблокированные улучшения. Если бот попытается купить улучшение из ExcludedUpgrades в Settings.ini, игра выдаст ошибку на ходе бота. Убедитесь, что все улучшения в списке доступны.
+
+Сооружение построек (блок Building)
+
+MainBaseBuildings [NAMES]: Список построек для главной базы через запятую. Порядок определяет приоритет постройки
+BorderBuildings [NAMES]: Список построек для приграничных территорий
+MaxBuildingCount [INT ≥0]: Максимальное количество построек за один проход блока Building. Если MaxBuildingCount=2, бот построит до 2 построек за ход
+
+!WARN: Заблокированные сооружения. Если бот попытается купить сооружение из ExcludedBuildings в Settings.ini, игра выдаст ошибку на ходе бота. Убедитесь, что все сооружения в списке доступны.
+
+Читерство бота (блок Cheat)
+
+Cheat-CountResources [INT ≥0]: Число ресурсов, которые будут добавляться/убавляться блоком
+Cheat-ResourceX [NAME]: Название ресурса (где X — номер от 1 до Cheat-CountResources)
+Cheat-ResourceCountX [INT]: Количество ресурса. Отрицательное значение = отнимается
+Cheat-CanEveryStepUseCheat [INT ≥0]: Может использовать чит каждые указанные число ходов
+
+# ideologies — Идеологии (ideologies)
+
+Общее
+
+Папка ideologies\ в сценарии состоит из ini-файлов, каждый из которых представляет одну идеологию. Название файла — техническое название идеологии, которое используется в других конфигах. Каждый файл содержит один блок [Main].
+
+!WARN: Самая «дорогая» сущность при добавлении. Добавление идеологии обязывает прописать её во всех группировках, где она может стать основной: секция [Название_идеологии] в каждом файле Groups, строки [Groups.*.идеология] в messages.csv, озвучка и графика.
+
+Локализация (размещать в messages.csv)
+
+!LOC:
+[Ideologies.].Name - название, отображаемое в игре
+
+🖼 Оформление
+
+Img [PATH]: Путь к изображению идеологии (иконка в интерфейсе)
+
+🎖 Разведка и артефакты
+
+BonusForSpy [INT] 🌍: Модификатор шанса успеха своих разведчиков в %. Положительное значение = помощь, отрицательное = помеха
+BonusForEnemySpy [INT] 🌍: Модификатор шанса успеха вражеских разведчиков в %. Положительное значение = помощь врагу, отрицательное = помеха врагу
+BonusSearchArts [INT] 🌍: Модификатор к поиску артефактов в %. Положительное значение = больше шанс, отрицательное = меньше
+
+⚔ Боевые бонусы
+
+BonusDamagePVPForAtackers [INT] 🌍: Модификатор урона нападающим в PvP-боях %
+BonusDamagePVPForDefenders [INT] 🌍: Модификатор урона обороняющимся в PvP-боях %
+BonusDamagePVMForAtackers [INT] 🌍: Модификатор урона нападающим в PvM-боях (против мутантов) %
+BonusDamagePVMForDefenders [INT] 🌍: Модификатор урона обороняющимся в PvM-боях %
+BonusRangeForAtackers [INT] 🌍: Модификатор дальности атаки нападающим %
+BonusRangeForDefenders [INT] 🌍: Модификатор дальности атаки обороняющимся %
+
+👢 Рекруты и командные ресурсы (КР)
+
+Recruit-Novice [INT] 🌍: Ежеходный прирост (отрицательный = убыль) новичков
+Recruit-Skilled [INT] 🌍: Ежеходный прирост опытных
+Recruit-Veteran [INT] 🌍: Ежеходный прирост ветеранов
+Recruit-Master [INT] 🌍: Ежеходный прирост мастеров
+LimitRecruit-Novice [INT] 🌍: Модификатор к максимальному лимиту новичков
+LimitRecruit-Skilled [INT] 🌍: Модификатор к максимальному лимиту опытных
+LimitRecruit-Veteran [INT] 🌍: Модификатор к максимальному лимиту ветеранов
+LimitRecruit-Master [INT] 🌍: Модификатор к максимальному лимиту мастеров
+Comands [INT] 🌍: Ежеходный прирост (отрицательный = убыль) командных ресурсов
+LimitComands [INT] 🌍: Модификатор к максимальному лимиту КР
+
+💰 Экономика
+
+BootyParts [INT] 🌍: Абсолютная прибавка к трофейным частям мутантов после боя. Например, BootyParts=5 даёт ровно +5 частей к базовому дропу
+BootyCash [INT] 🌍: Абсолютная прибавка к трофейным деньгам после боя. Например, BootyCash=100 даёт ровно +100 к деньгам к базовому дропу
+BonusForCostCPSpy [INT] 🌍: Модификатор стоимости отправки разведчиков в КР. Положительное значение = дороже, отрицательное = дешевле
+BonusForCostCPAdvisor [INT] 🌍: Модификатор стоимости назначения заместителя в КР. Положительное значение = дороже, отрицательное = дешевле
+BonusForCostCPMainBase [INT] 🌍: Бонус в КР к цене по смене главной базы группировки
+BonusPercentLostResources [INT] 🌍: Бонус в % к потере ресурсов при потере главной базы
+
+📜 Доступные внутренние правила
+
+CanUseRule-Rule-1 [BOOL]: Можно ли использовать правило максимальной децентрализации
+CanUseRule-Rule-2 [BOOL]: Можно ли использовать правило обычной децентрализации
+CanUseRule-Rule-3 [BOOL]: Можно ли использовать правило баланса
+CanUseRule-Rule-4 [BOOL]: Можно ли использовать правило централизации
+CanUseRule-Rule-5 [BOOL]: Можно ли использовать правило максимальной централизации
+
+!WARN: Правила нельзя добавлять. Rule-1…Rule-5 — фиксированный набор из Rules.ini. Здесь вы только разрешаете или запрещаете их использование. См. FAQ#23.
+
+Как работает идеология в игре
+
+Стартовая идеология группировки: настраивается в Main.ini → [Group-Ideology]
+Процентное распределение идеологий в группировке (сумма = 100): настраивается в Main.ini → [Group-Ideology-Percent]
+Продвижение идеологии каждым ходом: настраивается через Ideology + IdeologyBonus у заместителя (Advisors) и лидера (Leaders)
+Принудительная смена идеологии: настраивается через Events_Story.ini → тип ChangeIdeology; RandomEvents → тип ChangeIdeology
+Добавить % идеологии: тип события ChangeIdeologyPercent (⚠️ CountParam только положительный — см. «не трогать» (dont-touch))
+Уход бойцов из-за идеологических разногласий: настраивается через Settings.ini → IdeologyLeaveUnitsNumEvent + SpecialEvents
+Стоимость смены идеологии в КР: настраивается через Upgrades → тип IdeologyChangeBonus
+Секция идеологии в конфиге группировки: настраивается в Groups → [Название_идеологии]
+Ачивка за принятие идеологии: настраивается через Achievements.ini → Type=IdeologyOnly, TargetIdeology
+
+
+Создайте ini-файл в папке ideologies\ сценария. Имя файла = техническое название идеологии
+Заполните блок [Main] с параметрами бонусов
+Добавьте строку локализации в messages.csv
+Для каждой группировки, где эта идеология может стать основной:
+Добавьте секцию [Название_идеологии] в файл Groups
+Добавьте строки локализации [Groups..].Name и Description в messages.csv
+Пропишите процент в Main.ini → [Group-Ideology-Percent]
+Создайте изображение идеологии (иконку)
+Если нужно — добавьте озвучку дипломатических фраз
+
+🏷 Идеологии стандартного сценария
+
+Из примера [Group-Ideology] в Main.ini: Stalkers, Crime, Control, AntiZone, Anarchy, Sectarianism, Mercenary, Exploring, Stability, Growth, Zombie.
+
+💡 Пример минимального файла идеологии
+
+!EXAMPLE:
+; Файл: ideologies\MyIdeology.ini
+[Main]
+Img=gfx\icons\Idealogies\MyIdeology.png
+BonusForSpy=5
+BonusForEnemySpy=-5
+BonusSearchArts=10
+BonusDamagePVPForAtackers=5
+BonusDamagePVPForDefenders=5
+BonusDamagePVMForAtackers=-5
+BonusDamagePVMForDefenders=-5
+BonusRangeForAtackers=0
+BonusRangeForDefenders=0
+Recruit-Novice=2
+Recruit-Skilled=1
+Recruit-Veteran=0
+Recruit-Master=0
+LimitRecruit-Novice=5
+LimitRecruit-Skilled=3
+LimitRecruit-Veteran=2
+LimitRecruit-Master=1
+Comands=3
+LimitComands=20
+BootyParts=2
+BootyCash=50
+BonusForCostCPSpy=-1
+BonusForCostCPAdvisor=-2
+BonusForCostCPMainBase=-2
+BonusPercentLostResources=-10
+CanUseRule-Rule-1=False
+CanUseRule-Rule-2=True
+CanUseRule-Rule-3=True
+CanUseRule-Rule-4=True
+CanUseRule-Rule-5=False
+
+# rules — Внутренние правила группировок (Rules.ini)
+
+Общее
+
+Файл Rules.ini описывает внутренние правила управления группировок. Каждое правило даёт набор глобальных бонусов, которые складываются с бонусами от лидера, заместителя, идеологии и других источников (см. Матрицу бонусов).
+
+!WARN: Названия секций — хардкод. Технические названия в [] (Rule-1, Rule-2, …) нельзя переименовывать и нельзя добавлять новые. В движке жёстко зашито 20 правил. Можно только изменять значения бонусов внутри существующих секций. См. Лимиты движка.
+
+Локализация (размещать в messages.csv)
+
+!LOC:
+[Rules.].Name - название, отображаемое в игре (например, «Максимальная децентрализация»)
+
+20 правил и уровни централизации
+
+Правила сгруппированы по 5 уровням централизации (по 4 правила на уровень). У каждой группировки может быть одновременно до 4 активных правил — они задаются в Main.ini → [Group-Rules].
+
+Уровень 1 — максимальная децентрализация: Rule-1, Rule-2, Rule-3, Rule-4. Анклавы максимально автономны, многие действия разрешены
+Уровень 2 — обычная децентрализация: Rule-5, Rule-6, Rule-7, Rule-8. Умеренная автономия анклавов
+Уровень 3 — баланс: Rule-9, Rule-10, Rule-11, Rule-12. Сбалансированный контроль
+Уровень 4 — обычная централизация: Rule-13, Rule-14, Rule-15, Rule-16. Анклавы имеют сокращенный список возможностей
+Уровень 5 — максимальная централизация: Rule-17, Rule-18, Rule-19, Rule-20. На анклавах почти полностью запрещены многие действия
+
+!EXAMPLE:
+[Group-Rules]
+Stalkers-Rule1=1      ; первый слот правил сталкеров использует Rule-1
+Stalkers-Rule2=6      ; второй слот — Rule-6
+Stalkers-Rule3=11     ; третий слот — Rule-11
+Stalkers-Rule4=16     ; четвёртый слот — Rule-16
+
+
+Параметры правил
+
+Все бонусы правил — глобальные (🌍), действуют на всю группировку. Значения складываются с бонусами от других источников.
+
+🖼 Оформление
+
+Img-Available [PATH]: Путь к иконке правила в интерфейсе (основное изображение)
+
+!WARN: Рудименты: другие Img-*. Параметры типа Img-Active, Img-Purchased, Img-PurchasedActive и т.п. не нужно указывать в конфиге — движок автоматически подставит пути на основе Img-Available и технического названия правила. НО сами файлы изображений с правильными именами строго обязательны! Какие именно имена и в каких папках — смотрите любой дефолтный конфиг правила, где рудименты прописаны для наглядности. См. «Рудименты и не трогать».
+
+🎖 Разведка и артефакты
+
+BonusForSpy [INT] 🌍: Модификатор шанса успеха своих разведчиков в %. Положительное = помощь, отрицательное = помеха
+BonusForEnemySpy [INT] 🌍: Модификатор шанса успеха вражеских разведчиков в %. Положительное = помощь врагу, отрицательное = помеха врагу
+BonusSearchArts [INT] 🌍: Модификатор к поиску артефактов в %
+
+⚔ Боевые бонусы
+
+BonusDamagePVPForAtackers [INT] 🌍: Модификатор урона нападающим в PvP-боях %
+BonusDamagePVPForDefenders [INT] 🌍: Модификатор урона обороняющимся в PvP-боях %
+BonusDamagePVMForAtackers [INT] 🌍: Модификатор урона нападающим в PvM-боях (против мутантов) %
+BonusDamagePVMForDefenders [INT] 🌍: Модификатор урона обороняющимся в PvM-боях %
+BonusRangeForAtackers [INT] 🌍: Модификатор дальности атаки нападающим %
+BonusRangeForDefenders [INT] 🌍: Модификатор дальности атаки обороняющимся %
+
+👢 Рекруты и командные ресурсы (КР)
+
+Recruit-[Novice/Skilled/Veteran/Master] [INT] 🌍: Ежеходный прирост (отрицательный = убыль) бойцов соответствующего ранга
+LimitRecruit-[Novice/Skilled/Veteran/Master] [INT] 🌍: Модификатор к максимальному лимиту бойцов соответствующего ранга
+Comands [INT] 🌍: Ежеходный прирост (отрицательный = убыль) командных ресурсов
+LimitComands [INT] 🌍: Модификатор к максимальному лимиту КР
+
+💰 Экономика и трофеи
+
+BootyParts [INT] 🌍: Абсолютная прибавка к трофейным частям мутантов после боя. Например, BootyParts=5 даёт +5 частей к базовому дропу
+BootyCash [INT] 🌍: Абсолютная прибавка к трофейным деньгам после боя. Например, BootyCash=100 даёт +100 к деньгам
+BonusForCostCPSpy [INT] 🌍: Модификатор стоимости отправки разведчиков в КР. Отрицательное = дешевле
+BonusForCostCPAdvisor [INT] 🌍: Модификатор стоимости назначения заместителя в КР
+BonusForCostCPMainBase [INT] 🌍: Модификатор стоимости смены главной базы в КР
+BonusPercentLostResources [INT] 🌍: Модификатор % потери ресурсов при потере главной базы. Отрицательное = меньше теряется
+
+Сравнение с другими источниками бонусов
+
+Правила дают тот же набор из 25 бонусных параметров, что и другие источники.
+
+Область действия: Rules — 🌍 Глобально; Advisors / Leaders / Ideologies — 🌍 Глобально
+Можно добавлять новые: Rules — нет (хардкод 20 правил); Advisors / Leaders / Ideologies — да (безлимитно)
+Можно переименовывать: Rules — нет; Advisors / Leaders / Ideologies — да
+Изображение: Rules — Img-Available; Advisors / Leaders / Ideologies — Img
+Привязка к фракции (Fraction): Rules — нет; Advisors — да (только у Advisors)
+
+
+Скопируйте Rules.ini из data\default\ в папку вашего сценария
+Откройте файл и найдите нужную секцию ([Rule-1], [Rule-2] и т.д.)
+Измените значения параметров (бонусы). Не меняйте название секции
+Если нужно — измените локализацию в messages.csv: [Rules.Rule-X].Name
+Убедитесь, что файлы изображений с правильными именами лежат в нужных папках
+
+!WARN: Чего нельзя делать:
+❌ Добавлять новые секции [Rule-21], [Rule-22] и т.д. — движок их проигнорирует
+❌ Переименовывать секции (например, [Rule-1] → [MyRule]) — игра не найдёт нужное правило
+❌ Забывать про изображения-рудименты (Img-Active, Img-Purchased и др.) — без файлов игра выдаст ошибку
+
+!NOTE: Практический совет по балансу. Обычно правила с более высокой централизацией (Rule-5,10,15,20) дают больше бонусов к приросту КР и лимитов КР, но меньше бонусов к контрразведке и автономии. Правила с низкой централизацией (Rule-1,6,11,16) — наоборот: больше свободы анклавам, но меньше общей эффективности.
+
+# buildings — Постройки (Buildings)
+
+Общее
+
+Папка Buildings\ в сценарии состоит из ini-файлов, каждый из которых представляет одну постройку. Название файла — техническое название постройки, которое используется в других файлах, например, в Main.ini сценария. Каждый файл содержит один блок [Main].
+
+!WARN: Единственный конфиг со смешанной областью бонусов. У постройки лимиты рекрутов и КР — глобальные (🌍), а прирост, боевые, разведка, трофеи и экономика — только на своей территории (📍). Полная таблица — в Матрице бонусов (matrix-bonus). Глобальные бонусы действуют, пока группировка владеет территорией с постройкой.
+
+Локализация (размещать в messages.csv)
+
+!LOC:
+[Buildings.].Name - название, отображаемое в игре
+[Buildings.].Desc - описание постройки
+
+⚙ Основные
+
+CanBeDestroyed [BOOL]: Разрешён ли снос постройки (True или False). default: True
+Logo-NonActive [PATH]: Путь к изображению постройки (единственное изображение, отдельного "активного" состояния у построек нет)
+Type [ENUM]: Тип постройки. values: None — обычная постройка (большинство зданий); Workshop — мастерская для модификации амуниции через рецепты; Production — производит один ресурс из другого (или "из воздуха")
+
+🎖 Разведка и артефакты
+
+BonusForSpy [INT] ⚠️: Бонус своим разведчикам в %. Не работает! См. предупреждение ниже
+BonusForEnemySpy [INT] 📍: Бонус вражеским разведчикам в % (положительное значение = помощь врагу)
+BonusSearchArts [INT] 📍: Бонус к поиску артефактов в %
+
+!WARN: ВНИМАНИЕ! BonusForSpy не работает. Данный параметр не используется движком игры. Если нужен бонус своим разведчикам — используйте заместителя, идеологию, лидера или внутреннее правило. См. Рудименты и «не трогать» (dont-touch).
+
+⚔ Боевые бонусы — все 📍 территориальные
+
+BonusDamagePVPForAtackers [INT] 📍: Бонус к урону нападающим в PvP-боях %
+BonusDamagePVPForDefenders [INT] 📍: Бонус к урону обороняющимся в PvP-боях %
+BonusDamagePVMForAtackers [INT] 📍: Бонус к урону нападающим в PvM-боях (против мутантов) %
+BonusDamagePVMForDefenders [INT] 📍: Бонус к урону обороняющимся в PvM-боях %
+BonusRangeForAtackers [INT] 📍: Бонус к дальности атаки нападающим %
+BonusRangeForDefenders [INT] 📍: Бонус к дальности атаки обороняющимся %
+
+👢 Рекруты и КР — здесь область действия различается!
+
+Recruit-Novice [INT] 📍: Ежеходный прирост новичков на этой территории
+Recruit-Skilled [INT] 📍: Ежеходный прирост опытных на этой территории
+Recruit-Veteran [INT] 📍: Ежеходный прирост ветеранов на этой территории
+Recruit-Master [INT] 📍: Ежеходный прирост мастеров на этой территории
+LimitRecruit-Novice [INT] 🌍: Глобальный бонус к максимальному лимиту новичков
+LimitRecruit-Skilled [INT] 🌍: Глобальный бонус к максимальному лимиту опытных
+LimitRecruit-Veteran [INT] 🌍: Глобальный бонус к максимальному лимиту ветеранов
+LimitRecruit-Master [INT] 🌍: Глобальный бонус к максимальному лимиту мастеров
+Comands [INT] 🌍: Глобальный ежедневный прирост КР
+LimitComands [INT] 🌍: Глобальный бонус к максимальному лимиту КР
+
+💰 Экономика — все 📍 территориальные
+
+BootyParts [INT] 📍: Абсолютная прибавка к трофейным частям мутантов после боя на этой территории (например, BootyParts=5 даёт ровно +5 частей)
+BootyCash [INT] 📍: Абсолютная прибавка к трофейным деньгам после боя на этой территории (например, BootyCash=100 даёт ровно +100 к деньгам)
+BonusForCostCPSpy [INT] 📍: Модификатор стоимости отправки разведчиков в КР
+BonusForCostCPAdvisor [INT] 📍: Модификатор стоимости назначения заместителя в КР
+BonusForCostCPMainBase [INT] 📍: Модификатор стоимости смены главной базы в КР
+BonusPercentLostResources [INT] 📍: Модификатор % потери ресурсов при потере главной базы
+
+!WARN: BootyParts и BootyCash у построек. В отличие от лидеров, заместителей и идеологий (у которых эти бонусы глобальные), у построек они работают только на территории, где стоит постройка. И это всегда абсолютное значение, а не множитель!
+
+🏗 Стоимость постройки
+
+Custom-Resource [NAME]: Техническое название ресурса/товара, которое требуется для постройки. Если дополнительный ресурс не нужен — оставьте пустым
+Cost-Custom [INT]: Количество ресурса из Custom-Resource, требуемое для постройки
+Cost-Money [INT]: Стоимость постройки в деньгах
+Cost-Comands [INT]: Стоимость постройки в КР
+
+🔗 Требования для постройки
+
+Need-UpgradeIndex [NAME]: Техническое название улучшения, которое должно быть исследовано перед постройкой. Если требования нет — оставьте пустым
+Need-Building [NAME]: Техническое название другой постройки, которая должна быть построена на этой территории перед текущей. Если требования нет — оставьте пустым
+
+🏭 Производство (только для Type=Production)
+
+ProductionNameFrom [NAME]: Техническое название ресурса/товара, которое потребляет постройка. Если производит "из воздуха" — оставьте пустым
+ProductionCountFrom [INT]: Сколько потребляет постройка. Укажите 0, если производит "из воздуха"
+ProductionNameTo [NAME]: Техническое название ресурса/товара, которое производится
+ProductionCountTo [INT]: Сколько производится за ход
+
+!NOTE: Пример: производство "из воздуха". Если постройка производит ресурс без потребления другого (например, генерирует деньги из ничего):
+
+!EXAMPLE:
+ProductionNameFrom=
+ProductionCountFrom=0
+ProductionNameTo=Money
+ProductionCountTo=10
+
+# tradergoods — Настройки ассортимента торговцев (TraderGoods.ini)
+
+Общее
+
+В данном файле определяется, у какого торговца продаётся ресурс/товар/предмет. Каждый блок [ТехническоеНазваниеРесурса] описывает один товар, а внутри перечисляются торговцы и группировки, у которых он доступен.
+
+!WARN: Формат ключей: Группировка-Идеология. Ключи вида Stalkers-Crime, Duty-AntiZone — это техническое название группировки + дефис + техническое название идеологии.
+
+Формат файла
+
+!EXAMPLE:
+[ТехническоеНазваниеРесурса]
+World = True/False
+TraderX = True/False
+GroupX-IdeologyY = True/False
+
+Параметры
+
+World [BOOL]: Торговец «Внешний мир». Если True, то у торговца «Внешний мир» появляется данный товар. Этот торговец доступен всем группировкам и нет требований к владению какой-либо территорий
+TraderX [BOOL]: Торговец из Traders.ini. X — номер торговца (например, Trader1, Trader2). Соответствует секциям [Trader1], [Trader2] в Traders.ini
+GroupX-IdeologyY [BOOL]: Торговец группировки X с идеологией Y. X — техническое название группировки из Groups/ (например, Stalkers, Duty, Freedom). Y — техническое название идеологии из ideologies/ (например, Crime, AntiZone, Anarchy, Stalkers, Unknow)
+
+!NOTE: Торговцев с False можно не указывать. Если торговец не должен продавать товар (значение False), эту строку можно просто не писать. Движок по умолчанию считает False.
+
+
+Создайте файл товара в Goods/ (например, MyWeapon.ini)
+Откройте TraderGoods.ini в вашем сценарии (или скопируйте из data\default\)
+Добавьте блок с техническим названием товара: [MyWeapon]
+Укажите, у каких торговцев он доступен (World=True, Trader1=True, Stalkers-Crime=True и т.д.)
+Добавьте локализацию в messages.csv: [Goods.MyWeapon].Name и Desc
+
+Примеры
+
+Базовые ресурсы (доступны всем)
+
+!EXAMPLE:
+[Supplies]
+; Доступен у торговца "Внешний мир"
+World=True
+; Доступен у всех трёх торговцев из Traders.ini
+Trader1=True
+Trader2=True
+Trader3=True
+; Доступен у торговцев группировки Stalkers при любой идеологии
+Stalkers-Unknow=True
+Stalkers-Growth=True
+Stalkers-Stalkers=True
+Stalkers-Crime=True
+Stalkers-Control=True
+Stalkers-AntiZone=True
+Stalkers-Anarchy=True
+Stalkers-Sectarianism=True
+Stalkers-Mercenary=True
+Stalkers-Exploring=True
+Stalkers-Stability=True
+Stalkers-Zombie=True
+; То же самое для Bandits
+Bandits-Unknow=True
+Bandits-Growth=True
+... (все идеологии для всех группировок)
+
+Оружие (доступно не всем идеологиям)
+
+!EXAMPLE:
+[PM]
+; Пистолет Макарова доступен у всех идеологий Stalkers
+Stalkers-Anarchy=True
+Stalkers-AntiZone=True
+Stalkers-Crime=True
+Stalkers-Growth=True
+Stalkers-Sectarianism=True
+Stalkers-Stability=True
+Stalkers-Stalkers=True
+Stalkers-Unknow=True
+Stalkers-Zombie=True
+; И у всех идеологий Bandits
+Bandits-Anarchy=True
+Bandits-AntiZone=True
+...
+; И у всех торговцев
+Trader1=True
+Trader2=True
+Trader3=True
+
+Специфичное оружие (только определённым идеологиям)
+
+!EXAMPLE:
+[Fora]
+; Доступен у торговцев
+Trader1=True
+Trader2=True
+Trader3=True
+; У Stalkers только определённым идеологиям (не анархистам и не сектантам)
+Stalkers-Control=True
+Stalkers-AntiZone=True
+Stalkers-Exploring=True
+; У Bandits те же идеологии
+Bandits-Control=True
+Bandits-AntiZone=True
+Bandits-Exploring=True
+; У Soldiers только базовая идеология
+Soldiers-Unknow=True
+...
+; У Duty только определённым идеологиям
+Duty-Unknow=True
+Duty-Growth=True
+Duty-Stalkers=True
+...
+; У Freedom те же идеологии, что и у Stalkers
+Freedom-Control=True
+Freedom-AntiZone=True
+Freedom-Exploring=True
+...
+; У Monolith те же идеологии
+Monolith-Control=True
+Monolith-AntiZone=True
+Monolith-Exploring=True
+
+Идеология «Unknow»
+
+!NOTE: Что означает Unknow. В файлах часто встречается ключ GroupX-Unknow (например, Stalkers-Unknow, Bandits-Unknow). Это «неизвестная идеология» — используется для группировок, у которых идеология не определена явно, или для начального состояния до смены идеологии. Если в вашем моде все группировки имеют чёткую идеологию, можете игнорировать Unknow-варианты.
+
+Стандартные идеологии
+
+В оригинальной игре встречаются обычно следующие идеологии:
+
+Unknow: Неизвестная / неопределённая идеология
+Growth: Рост / развитие
+Stalkers: Идеология сталкеров (одноимённая группировке)
+Crime: Криминал
+Control: Контроль / порядок
+AntiZone: Против Зоны
+Anarchy: Анархия
+Sectarianism: Сектантство
+Mercenary: Наёмничество
+Exploring: Исследование
+Stability: Стабильность
+Zombie: Зомби (для группировки Zombie)
+
+Частые ошибки
+
+!WARN: Типичные проблемы:
+Товар не появляется в магазине — проверьте, что он указан в TraderGoods.ini с правильным техническим названием (совпадает 1:1 с именем файла в Goods/)
+Опечатка в названии группировки или идеологии — используйте точные названия из файлов Groups/ и ideologies/
+Забыли добавить локализацию — без записей в messages.csv товар будет отображаться как техническое название
+Торговец недоступен игроку — проверьте параметры торговца
+
+# events-story — Сюжетные события (Events_Story.ini)
+
+Events_Story vs RandomEvents
+
+Привязка к территории: здесь обязательна (Zona=X), у случайных событий — всегда случайная.
+Привязка к ходу: здесь обычно есть (Step=X), у случайных — нет.
+Ивент-флаги: только здесь можно создавать ветвящийся сюжет через флаги.
+Типов событий: здесь 35, у случайных 22.
+Проверочные типы (Check*): только здесь.
+События главного героя (MCMove, MCAttack): только здесь.
+Числовые эффекты: здесь всегда точное значение (например, через CountParam, CountUnitX или CountResources), у случайных — часто диапазон CountMin…CountMax.
+
+
+Структура одного события
+
+Каждое событие — это отдельная секция [Название_события]. Название секции само по себе является флагом: если событие сработало, флаг с таким именем автоматически устанавливается в True.
+
+!EXAMPLE:
+[Event-Cordon-1]
+Step=1
+Zona=191
+Type=MCMove
+Img=gfx\icons\story_SHOC\0.png
+TargetResourceImg=gfx\old\NoData_100x100.png
+ShowForOwner=True
+ShowForNonOwner=True
+AddToGameLog=True
+SoundFXForOwner=True
+SoundFXForOwnerFile=sfx\events\message.mp3
+SoundFXForNonOwner=True
+SoundFXForNonOwnerFile=sfx\events\message.mp3
+NotWorkFractions=Mutants,Bandits,Soldiers,Monolith,Mercenaries,Zombie
+
+Основные параметры события
+
+Type [ENUM]: Тип события (один из 35, см. ниже). Может быть только один на событие
+Zona [INT]: обязательный. Индекс территории, к которой привязано событие. Даже чисто информационные события требуют территорию
+Step [INT ≥0]: Ход, на котором сработает событие. 0 или пустое значение = вневременное событие (проверяется каждый ход и срабатывает при выполнении условий)
+Repeatable [BOOL]: Может ли событие повторяться. Работает только при Step=0. Если True — событие будет срабатывать каждый ход при выполнении условий
+
+!WARN: Только один тип на событие. В одном блоке [Event-XXX] может быть только один параметр Type. Если нужно сделать несколько действий — создайте несколько событий с одинаковым Step и Zona, либо используйте ивент-флаги для связывания.
+
+🏷 35 типов событий
+
+👤 События главного героя (MC = Main Character)
+
+MCMove: Передвижение ГГ на указанную территорию
+MCAttack: Передвижение с атакой ГГ на гарнизон территории. Доп: CountUnit1…4 — сколько гарнизонных бойцов каждого ранга погибнет от рук ГГ
+
+📢 Информационные и управленческие
+
+Info: Просто показать сообщение. Часто используется как «триггер» для установки ивент-флага. Доп: EventFlag, EventFlagStatusNeed, EventFlagResult, EventFlagStatusSet
+ChangeZonaOwner: Сменить владельца территории. Доп: NewOwner — тех.название фракции
+ChangeLeader: Сменить лидера фракции-владельца. Доп: NewLeader — тех.название из leaders/
+ChangeAdvisor: Сменить заместителя фракции-владельца. Доп: NewAdvisor — тех.название из Advisors.ini
+AvailableAdvisor: Сделать кандидата доступным/недоступным в меню назначения. Доп: TargetAdvisor, StatusAdvisor (True/False)
+ChangeDiplomacy: Изменить дипломатические отношения между двумя фракциями. Доп: Fraction1, Fraction2 — тех.названия фракций. DiplomacyStatus — новый статус отношений (число от -1 до 3): -1 = вечная война, 0 = война, 1 = нейтралитет, 2 = союз, 3 = нерушимый союз
+
+👥 Юниты и мутанты
+
+AddUnits: Добавить юнитов владельцу территории. Доп: CountUnit1…4
+RemoveUnits: Убрать юнитов у владельца. Доп: CountUnit1…4
+Invasion: Вторжение «из ниоткуда» — чужая группировка пытается захватить территорию. Доп: InvasionOwner, InvasionUnit1…4
+AddMutants: Добавить фоновых мутантов. Доп: CountMutants1…4 (собаки, кабаны, кровососы, контролёры)
+RemoveMutants: Убрать фоновых мутантов. Доп: CountMutants1…4
+AddMutantsActive: Поднять % активности мутантов. Доп: CountParam — точное значение в %
+RemoveMutantsActive: Понизить % активности мутантов. Доп: CountParam — точное значение в %
+
+💰 Ресурсы и экипировка
+
+AddResources: Добавить ресурс владельцу. Доп: NameResources, CountResources
+RemoveResources: Отнять ресурс у владельца. Доп: NameResources, CountResources
+AddWeapon: Добавить оружие на склад того же типа, что и состоит на вооружении указанного ранга. Доп: FromUnitType (1–4), NameResources
+RemoveWeapon: Убрать оружие со склада того же типа, что и состоит на вооружении указанного ранга. Доп: FromUnitType, NameResources
+AddArmor: Добавить броню на склад того же типа, что и состоит на вооружении указанного ранга. Доп: FromUnitType, NameResources
+RemoveArmor: Убрать броню со склада того же типа, что и состоит на вооружении указанного ранга. Доп: FromUnitType, NameResources
+
+🏗 Постройки и улучшения
+
+Build: Бесплатно построить здание на территории. Доп: BuildingName — тех.название из Buildings
+Destroy: Бесплатно уничтожить здание. Доп: BuildingName
+ChangeStatusUpgrade: Бесплатно изучить/забыть улучшение. Доп: TargetUpgradeIndex — индекс из upgrades/
+
+🏛 Идеологии
+
+ChangeIdeology: Сменить идеологию владельцу территории. Доп: IdeologyName — тех.название из ideologies/
+ChangeIdeologyPercent: Добавить % идеологии группировке. Доп: IdeologyName, CountParam
+
+!WARN: ChangeIdeologyPercent. Параметр CountParam для этого типа запрещено делать отрицательным. Отрицательное значение приведёт к непредсказуемому поведению. См. «Рудименты и не трогать».
+
+🧠 Пси-установки
+
+ChangeStatusBrainPsy: Включить/выключить пси-излучатель. Доп: Status (True/False)
+ChangeStatusBrainMixer: Включить/выключить выжигатель мозгов. Доп: Status (True/False)
+
+🔍 Проверочные типы (Check*)
+
+Эти типы не выполняют действие, а только проверяют условие. Если условие не выполнено — событие не произойдёт. Можно комбинировать с параметром Repeatable=True (событие будет происходить хоть каждый ход, пока выполняется условие) или с Step=0, если надо, чтобы произошло один раз за игру в любой ход (как только будут выполнены все условия).
+
+CheckBuilding: Построено ли указанное здание (BuildingName)
+CheckUnits: Есть ли нужное число юнитов (CountUnit1…4)
+CheckResources: Есть ли нужное число ресурса (NameResources, CountResources)
+CheckOwner: Владеет ли указанная группировка территорией
+CheckIdeology: Принята ли указанная идеология
+CheckUpgrade: Изучено ли указанное улучшение
+CheckEventFlag: Установлен ли указанный ивент-флаг
+
+!NOTE: Они позволяют создавать события, которые срабатывают по условию, а не только по ходу. Например: «когда игрок построит мастерскую в Деревне новичков на Кордоне — дать ему 1000 денег и показать диалог». Событие будет вневременным (Step=0) с типом CheckBuilding и каждый ход будет проверять, построена ли мастерская.
+
+🚩 Система ивент-флагов
+
+Ивент-флаги — это «переменные» сюжета. Они позволяют создавать ветвящиеся цепочки событий, где последующие события зависят от того, какие предыдущие уже сработали.
+
+EventFlag [NAME]: Имя флага, состояние которого требует это событие для срабатывания
+EventFlagStatusNeed [BOOL]: Какое состояние флага из EventFlag должно быть, чтобы событие сработало. True — флаг должен быть установлен, False — не установлен
+EventFlagResult [NAME]: Имя флага, которое будет изменено после успешного срабатывания события
+EventFlagStatusSet [BOOL]: Какое состояние установить флагу из EventFlagResult после срабатывания события
+
+!EXAMPLE:
+; Событие 1: устанавливаем Flag1 (невидимо для игрока)
+[Event-SetFlag1]
+Step=10
+Zona=85
+Type=Info
+EventFlag=Flag1
+EventFlagStatusNeed=False     ; только если Flag1 ещё не установлен
+EventFlagResult=Flag1
+EventFlagStatusSet=True       ; устанавливаем его
+ShowForOwner=False
+ShowForNonOwner=False
+AddToGameLog=False
+; Событие 2: сработает только если Flag1 установлен
+[Event-AfterFlag1]
+Step=15
+Zona=85
+Type=AddResources
+NameResources=Comands
+CountResources=10
+EventFlag=Flag1
+EventFlagStatusNeed=True      ; требовать установленный Flag1
+EventFlagResult=Flag1
+EventFlagStatusSet=False      ; отключить Flag1, так как больше не нужен
+
+🏁 Зарезервированные флаги
+
+EndVictory — при установке этого флага сценарий завершается победой (если в Settings.ini включено End-EventFlag-Victory=True)
+EndLose — при установке сценарий завершается поражением (если End-EventFlag-Lose=True)
+
+!NOTE: Все ивент-флаги при старте сценария движок сбрасывает в False. Поэтому их не нужно прописывать в Main.ini → [EventFlag].
+
+🎨 Отображение и звуки
+
+Img [PATH]: Иконка события в диалоге
+TargetResourceImg [PATH]: Изображение связанного ресурса/юнита (если применимо)
+ShowForOwner [BOOL]: Показывать событие владельцу территории
+ShowForNonOwner [BOOL]: Показывать событие НЕ-владельцу
+AddToGameLog [BOOL]: Добавлять в лог игровых событий
+SoundFXForOwner [BOOL]: Будет ли звук для владельца
+SoundFXForOwnerFile [PATH]: Путь к файлу звука для владельца
+SoundFXForNonOwner [BOOL]: Будет ли звук для не-владельца
+SoundFXForNonOwnerFile [PATH]: Путь к файлу звука для не-владельца
+NotWorkFractions [NAMES]: Список фракций через запятую, для которых событие не сработает. Позволяет делать события «только для сталкеров» или «для всех, кроме мутантов»
+
+!NOTE: «Невидимые» служебные события. Если поставить ShowForOwner=False, ShowForNonOwner=False, AddToGameLog=False — событие сработает «за кадром», без единого упоминания. Это часто используется для установки ивент-флагов или для служебных действий (например, автоматическая смена лидера).
+
+📋 Локализация (messages.csv)
+
+!LOC:
+[EventsStory.].Name - краткое название события
+[EventsStory.].Desc - основной текст описания события
+
+!NOTE: «Название события» — это имя секции в квадратных скобках (например, Event-Cordon-1).
+
+⚙ Включение/выключение в меню
+
+Игрок может включать/выключать сюжетные события перед стартом сценария. Настраивается в Settings.ini:
+EventsStoryDefault: Состояние по умолчанию в меню (True/False)
+EventsStoryCanChange: Может ли игрок переключать
+
+🧩 Особенности и подводные камни
+
+Событие с Step=0: Такое событие считается вневременным и может сработать на любом ходе при выполнении условий
+Одноразовое событие не срабатывает повторно: Названия сюжетных событий сами считаются флагами. Если событие выполнилось — флаг с его именем установлен. Чтобы выполнить с нова — нужно сбросить флаг или использовать Repeatable=True (работает только при Step=0)
+Любое событие требует территорию: Каждое событие привязано к территории. Не только вторжение или ресурсы, но и чисто Info, и даже смена лидера
+Флаг устанавливается «сам собой» при выполнении события: Имя секции события = имя флага. Если событие выполнилось — флаг с этим именем автоматически устанавливается в True
+
+🎬 Практический пример: цепочка из 4 событий
+
+Классический сюжетный приём «вертолёты прилетели, высадили десант, зачистили территорию»:
+
+!EXAMPLE:
+; 1. Вертолёт прилетает (информация + установка флага)
+[Event-Agroprom-Helicopter-1]
+Step=21
+Zona=147
+Type=Info
+EventFlag=Flag1
+EventFlagStatusNeed=False
+EventFlagResult=Flag1
+EventFlagStatusSet=True
+Img=gfx\icons\story_SHOC\hel1.png
+ShowForOwner=True
+ShowForNonOwner=False
+AddToGameLog=True
+SoundFXForOwner=True
+SoundFXForOwnerFile=sfx\events\Helicopter.mp3
+NotWorkFractions=Mutants,Soldiers,Duty,Scientists
+; 2. Вертолёт обстреливает территорию (если Flag1 установлен)
+[Event-Agroprom-Helicopter-2]
+Step=23
+Zona=147
+Type=RemoveUnits
+EventFlag=Flag1
+EventFlagStatusNeed=True
+CountUnit1=3
+CountUnit2=3
+CountUnit3=2
+CountUnit4=0
+Img=gfx\icons\story_SHOC\raid1.png
+NotWorkFractions=Soldiers,Duty,Scientists
+; 3. Десант высаживается (если Flag1 установлен)
+[Event-Agroprom-Invasion-1]
+Step=23
+Zona=147
+Type=Invasion
+InvasionOwner=Soldiers
+InvasionUnit1=4
+InvasionUnit2=4
+InvasionUnit3=0
+InvasionUnit4=0
+EventFlag=Flag1
+EventFlagStatusNeed=True
+EventFlagResult=Flag1
+EventFlagStatusSet=False
+Img=gfx\icons\story_SHOC\inv4.png
+NotWorkFractions=Soldiers,Duty,Scientists
+; 4. Сброс флага (завершение цепочки)
+[Event-Agroprom-SetFlag1-2]
+Step=23
+Zona=166
+Type=Info
+EventFlag=Flag1
+EventFlagStatusNeed=True
+EventFlagResult=Flag1
+EventFlagStatusSet=False
+ShowForOwner=False
+ShowForNonOwner=False
+AddToGameLog=False
+
+🗂 Где ещё используется
+
+
+# random-events — Случайные события (RandomEvents)
+
+Общее
+
+Папка RandomEvents\ в сценарии состоит из ini-файлов, каждый из которых представляет одно случайное событие. Каждый файл содержит один блок [Main].
+
+!WARN: Нет привязки к территории. Все случайные события не имеют параметра Zona, так как случайные события всегда происходят на случайной территории. Это главное отличие от Events_Story.ini, где каждое событие привязано к конкретной территории.
+
+!NOTE: Случайность значения. Числовые эффекты задаются диапазоном: CountMin … CountMax. Игра сама выбирает значение внутри диапазона при срабатывании события.
+
+Локализация (размещать в messages.csv)
+
+!LOC:
+[RandomEvents.].Name - краткое название ивента
+[RandomEvents.].Desc-YES - текст описания в случае, если ивент смог отработать
+[RandomEvents.].Desc-NO - текст описания в случае, если ивент НЕ смог отработать
+
+!NOTE: Логика Desc-Yes / Desc-No и SoundFXForOwner / SoundFXForNonOwner. Эти параметры работают по условию. Если у фракции есть ресурс, на который направлено событие (например, кража или находка), срабатывает Desc-YES и SoundFXForOwner. Если ресурса нет — срабатывает Desc-NO и SoundFXForNonOwner. Пример: Событие кражи артефактов. Если у фракции есть артефакты — срабатывает «Owner» (кража успешна). Если артефактов нет — срабатывает «NonOwner» (украсть нечего).
+
+Включаются в Settings.ini
+
+EventsRandomDefault: состояние по умолчанию в меню
+EventsRandomCanChange: может ли игрок их отключить перед стартом
+
+
+Типы ивентов (всего 22)
+
+!WARN: Движок поддерживает ровно 22 типа случайных событий — это жёсткий лимит. В дефолтном сценарии используется только 8 из них, остальные 14 доступны для мододелов.
+
+AddResources: Добавить ресурсы
+RemoveResources: Отнять ресурсы
+AddWeapon: Добавить оружие, которое на вооружении указанного ранга
+RemoveWeapon: Отнять оружие, которое на вооружении указанного ранга
+AddArmor: Добавить броню, которая на вооружении указанного ранга
+RemoveArmor: Отнять броню, которая на вооружении указанного ранга
+AddUnits: Добавляет указанное число юнитов указанных рангов
+RemoveUnits: Убирает указанные числа юнитов
+AddMutants: Добавляет указанное число фоновых мутантов на территорию (не гарнизонных)
+RemoveMutants: Убирает указанное число фоновых мутантов с территории (не гарнизонных)
+AddMutantsActive: Поднять % активности мутантов на территории
+RemoveMutantsActive: Понизить % активности мутантов на территории
+Invasion: Из ниоткуда происходит вторжение указанного числа указанных рангов юнитов указанного владельца на территорию
+ChangeLeader: Сменить лидера группировки на указанного в NewLeader
+ChangeAdvisor: Сменить заместителя на указанного в NewAdvisor
+ChangeStatusUpgrade: Изучить бесплатно указанное в TargetUpgradeIndex улучшение
+ChangeStatusBrainPsy: Изменить состояние пси-излучателя вкл (Status=True) или выкл (Status=False)
+ChangeStatusBrainMixer: Изменить состояние выжигателя мозгов вкл (Status=True) или выкл (Status=False)
+ChangeIdeologyPercent: Добавить % какой-либо идеологии группировке. Понизить % идеологии нельзя — чтобы понизить другие идеологии, достаточно повысить какую-либо одну
+ChangeIdeology: Меняет идеологию владельцу территории на указанную в IdeologyName
+Build: Строит бесплатно постройку из BuildingName на территории
+Destroy: Уничтожает бесплатно постройку из BuildingName на территории
+
+Параметры ивентов
+
+Type [ENUM]: Тип события (один из 22). Может быть только один на событие
+Img [PATH]: Путь к иконке события
+TargetResourceImg [PATH]: Изображение ресурса/юнита, о котором идёт речь в ивенте
+CountMin [INT]: Минимальное число диапазона (движок выбирает случайное значение от CountMin до CountMax)
+CountMax [INT]: Максимальное число диапазона
+AddToGameLog [BOOL]: Отображать сообщение в логе игровых событий
+ShowForOwner [BOOL]: Показывать событие владельцу территории
+ShowForNonOwner [BOOL]: Показывать событие не владельцу территории
+SoundFXForOwner [BOOL]: Будет ли воспроизводиться звук у события владельца
+SoundFXForOwnerFile [PATH]: Путь к файлу звука для владельца
+SoundFXForNonOwner [BOOL]: Будет ли воспроизводиться звук у события не владельца
+SoundFXForNonOwnerFile [PATH]: Путь к файлу звука для не владельца
+CountUnit1 [INT]: Число новичков (если ивент связан с юнитами)
+CountUnit2 [INT]: Число опытных
+CountUnit3 [INT]: Число ветеранов
+CountUnit4 [INT]: Число мастеров
+CountMutants1 [INT]: Число собак (если ивент с добавлением/убиранием мутантов для владельца НЕ Мутанты)
+CountMutants2 [INT]: Число кабанов
+CountMutants3 [INT]: Число кровососов
+CountMutants4 [INT]: Число контролёров
+InvasionUnit1 [INT]: Число новичков вторженца (в случае вторжения)
+InvasionUnit2 [INT]: Число опытных вторженца
+InvasionUnit3 [INT]: Число ветеранов вторженца
+InvasionUnit4 [INT]: Число мастеров вторженца
+InvasionOwner [NAME]: Техническое название владельца войск вторжения
+NewLeader [NAME]: Техническое имя лидера из файлов leaders/ (имя файла без .ini)
+NewAdvisor [NAME]: Техническое имя заместителя из файла Advisors.ini (из квадратных скобок [])
+IdeologyName [NAME]: Техническое название идеологии из файлов ideologies/
+NotWorkFractions [NAMES]: Перечисление через запятую технических названий фракций. Если территория будет принадлежать кому-либо из этих фракций, то событие не произойдёт
+FromUnitType [INT 1-4]: Ранг юнита (цифра от 1 до 4) — оружие/броня которого используется в AddArmor, AddWeapon, RemoveArmor, RemoveWeapon. Движок сам определяет, что на вооружении у указанного ранга
+BuildingName [NAME]: Техническое наименование постройки (имя файла без .ini) из папки Buildings
+NameResources [NAME]: Техническое название ресурса из Goods (для AddResources / RemoveResources)
+Status [BOOL]: True или False (для ChangeStatusBrainPsy, ChangeStatusBrainMixer)
+TargetUpgradeIndex [INT]: Индекс улучшения (для ChangeStatusUpgrade)
+
+Какой тип какие параметры использует
+
+AddResources / RemoveResources: обязательный: NameResources, CountMin, CountMax, TargetResourceImg
+AddWeapon / RemoveWeapon, AddArmor / RemoveArmor: обязательный: FromUnitType, CountMin, CountMax. Параметр NameResources не нужен — движок сам определяет, что на вооружении у указанного ранга
+AddUnits / RemoveUnits: обязательный: CountUnit1…4
+AddMutants / RemoveMutants: обязательный: CountMutants1…4
+AddMutantsActive / RemoveMutantsActive: обязательный: CountMin, CountMax (величина % активности)
+Invasion: обязательный: InvasionOwner, InvasionUnit1…4
+ChangeLeader: обязательный: NewLeader
+ChangeAdvisor: обязательный: NewAdvisor
+ChangeStatusUpgrade: обязательный: TargetUpgradeIndex
+ChangeStatusBrainPsy / ChangeStatusBrainMixer: обязательный: Status (True / False)
+ChangeIdeologyPercent: обязательный: IdeologyName, CountMin, CountMax (величина %). Значения только положительные!
+ChangeIdeology: обязательный: IdeologyName
+Build / Destroy: обязательный: BuildingName
+
+RandomEvents vs Events_Story
+
+Привязка к территории (Zona): RandomEvents — нет, всегда случайная; Events_Story — обязательна для каждого события
+Привязка к ходу (Step): RandomEvents — нет; Events_Story — есть (0 или пусто = вневременное)
+Повторяемость (Repeatable): RandomEvents — нет; Events_Story — есть (только при Step=0)
+Ивент-флаги: RandomEvents — нет; Events_Story — есть (EventFlag, EventFlagResult и др.)
+Числовой эффект: RandomEvents — часто диапазон CountMin…CountMax; Events_Story — только точное значение
+Проверочные типы (Check*): RandomEvents — нет; Events_Story — 7 типов
+Типы с ГГ (MCMove, MCAttack): RandomEvents — нет; Events_Story — есть
+
+# special-events — Особые события (SpecialEvents)
+
+Общее
+
+В папке SpecialEvents\ сценария хранятся конфиги для глобальных механик: Выброс, Нехватка еды, Пси-излучатель, Выжигатель мозгов, Уход бойцов из-за идеологии, Автопоиск артефактов, Передача денег. Имя файла задаётся в Settings.ini (например, BurstNumEvent, NoFoodNumEvent и т.д.). Каждый файл содержит один блок [Main].
+
+!WARN: Это не «события» в обычном смысле. В отличие от RandomEvents и Events_Story, сюда нельзя просто «добавить своё событие». Каждый файл-конфиг обслуживает конкретную глобальную механику движка, а подключается к ней через именованный параметр в Settings.ini.
+
+Карта: механика → параметр в Settings.ini
+
+💥 Выброс: BurstNumEvent. Конфиг выброса. Вкл/выкл — BurstDefault, BurstCanChange
+🍞 Нехватка еды: NoFoodNumEvent. Конфиг последствий нехватки еды
+🧠 Работа пси-излучателя: BrainPsyWorkNumEvent, BrainPsyAlarmNumEvent. Последствия работы + оповещение о переключении состояния
+🔥 Выжигатель мозгов: BrainMixerWorkNumEvent, BrainMixerAlarmNumEvent. Последствия работы + оповещение о переключении состояния
+🚪 Уход бойцов из-за идеологии: IdeologyLeaveUnitsNumEvent. Оповещение при уходе бойцов из-за идеологических разногласий
+🔍 Автопоиск артефактов: AutoSearchMaxArtsNumEvent, AutoSearchPartArtsNumEvent. Полный и частичный автопоиск. Какое правило его включает — MaxAutoArtsNameRule, PartAutoArtsNameRule (FAQ №24)
+💸 Передача денег между фракциями: MoveMoneyNumEvent. Оповещение при передаче денег через дипломатию
+
+🔬 Biohazard — альтернативное оформление пси-механики
+
+В сценарии «Зов Припяти» для пси-излучателя используется конфиг Biohazard.ini и BiohazardStatus.ini вместо стандартных BrainPsy.ini и BrainPsyStatus.ini. Параметры в Settings.ini: BrainPsyWorkNumEvent=Biohazard и BrainPsyAlarmNumEvent=BiohazardStatus. Это та же механика пси-излучения, но с другим визуалом: иконка биологической опасности вместо пси-волн, звук Biohazard1.wav вместо стандартного. Параметры внутри конфига идентичны (NewFractionOwner, DeathChance). Вывод: Biohazard — не отдельная механика, а вариант оформления пси. Используйте его, если хотите «биологическую» тематику вместо «псионической».
+
+Локализация (размещать в messages.csv)
+
+!LOC:
+[SpecialEvents.].Name - название события
+[SpecialEvents.].Desc-Yes - описание события у владельца территории или в случае положительного исхода
+[SpecialEvents.].Desc-No - описание события у НЕ владельца территории или в случае отрицательного исхода
+
+Общие параметры (для всех типов)
+
+Img [PATH]: Путь к изображению события
+TargetResourceImg [PATH]: Путь к изображению ресурса (медикаменты, бойцы и т.д.)
+AddToGameLog [BOOL]: Отображать сообщение в логе игровых событий
+SoundFXForOwner [BOOL]: Воспроизводится ли звук у события у владельца территории
+SoundFXForOwnerFile [PATH]: Путь к файлу звука события у владельца территории
+NotWorkFractionCount [INT]: Число фракций, игнорирующих событие (иммунитет)
+FractionX [NAME]: Техническое название фракции с иммунитетом. X — порядковый номер от 1 до значения NotWorkFractionCount
+
+Специфичные параметры для Выброса
+
+BurstEverySteps [INT]: Число ходов, через которые выброс повторяется
+ActiveMutantUp [BOOL]: Будет ли выброс повышать активность мутантов на территориях
+BurstActiveMutantUpCount [INT]: На сколько процентов повышает активность мутантов
+KillUnits [BOOL]: Пытается ли выброс убить юнитов на территориях
+MedicCanSave [BOOL]: Могут ли медикаменты спасти юнитов от выброса
+MedicForSaveCount [INT]: Сколько нужно медикаментов на спасение одного юнита
+
+Специфичные параметры для пси-излучения / выжигателя мозгов / Biohazard
+
+NewFractionOwner [NAME]: Техническое название группировки, которая станет новым владельцем территории после срабатывания события (например, Zombie или Mutants)
+DeathChance [INT 0-100]: Шанс смерти юнита при срабатывании события (в процентах)
+
+!NOTE: Почему у большинства механик нет специфичных параметров. Механики Нехватка еды, Уход из-за идеологии, Автопоиск артефактов, Передача денег в конфигах SpecialEvents используют только общие параметры (Img, SoundFX*, NotWorkFractionCount и т.д.). Вся логика (сколько еды теряет группировка, сколько бойцов уходит, сколько артефактов находится, сколько денег передаётся) — захардкожена в движке. Конфиг задаёт только визуал (картинку, звук, лог) и иммунитет фракций. Пример: В файле NoFood.ini вы можете изменить картинку, звук и добавить иммунитет для новой группировки, но не можете поменять, сколько бойцов теряется при нехватке еды — это определяется движком.
+
+
+Чтобы группировка игнорировала Выброс (или нехватку еды, или пси-излучение), правится не её собственный конфиг, а конфиг особого события:
+Откройте в папке SpecialEvents\ файл нужного события (для Выброса — тот, что указан в BurstNumEvent в Settings.ini)
+Увеличьте NotWorkFractionCount на столько, насколько добавлено новых группировок с иммунитетом
+Добавьте строки Fraction1, Fraction2, … с техническими названиями группировок, которые должны игнорировать событие
+
+!EXAMPLE:
+Допустим, вы добавили группировку MyGroup и хотите, чтобы она игнорировала выброс. Откройте файл выброса (например, Burst.ini) и измените:
+[Main]
+; ... другие параметры ...
+NotWorkFractionCount=3
+Fraction1=Mutants
+Fraction2=Zombie
+Fraction3=MyGroup
+
+!WARN: NotWorkFractionCount обязан совпадать. Число в NotWorkFractionCount должно равняться реальному количеству строк FractionX. Добавили новую группировку в сценарий — проверьте все конфиги SpecialEvents, где есть иммунитет. Тот же принцип у Achievements.ini.
+
+🧠 Механика пси-излучения и выжигателя мозгов
+
+Параметры включения/выключения пси-установок, их стоимость, зоны влияния и возможность управления задаются в Settings.ini (секция [Main], параметры BrainPsy и BrainMixer).
+
+!NOTE: Начальное состояние — в Main.ini. Включены ли установки со старта сценария задаётся в Main.ini → [PsyControl]: BrainPsy=True, BrainMixer=False. А возможность переключать их в процессе игры — в Settings.ini. Это ровно тот пример разделения «динамичное / статичное», что описан в совете №8.
+
+!NOTE: Бот тоже умеет управлять установками. В AI.ini: блок BrainControl, параметры BrainControl-Psy-CanChange, BrainControl-Mixer-CanChange, BrainControl-Psy-TargetStatus, BrainControl-Mixer-TargetStatus. А переключить состояние принудительно могут Events_Story (типы ChangeStatusBrainPsy, ChangeStatusBrainMixer) и RandomEvents (те же типы).
+
+Один конфиг на несколько механик?
+
+!NOTE: Технически возможно, но не рекомендуется. В Settings.ini можно указать одно имя файла SpecialEvents для нескольких параметров NumEvent. Движок загрузит один конфиг для нескольких механик. Общие параметры (Img, SoundFX, NotWorkFractionCount) будут работать в обеих. Но: • Специфичные параметры одной механики будут проигнорированы другой • Локализация Desc-Yes/No должна подходить под обе • Сложнее понять, что один файл обслуживает несколько механик. Рекомендация: один конфиг на одну механику для ясности.
+
+!EXAMPLE:
+; Файл: SpecialEvents\Burst.ini
+[Main]
+Img=gfx\icons\events\Burst.png
+TargetResourceImg=gfx\icons\goods\Medic.png
+BurstEverySteps=10
+ActiveMutantUp=True
+BurstActiveMutantUpCount=5
+KillUnits=True
+MedicCanSave=True
+MedicForSaveCount=1
+SoundFXForOwner=True
+SoundFXForOwnerFile=sfx\events\Burst.mp3
+AddToGameLog=True
+NotWorkFractionCount=2
+Fraction1=Mutants
+Fraction2=Zombie
+
+# messages — Файл локализации (messages.csv)
+
+Общее
+
+Файл messages.csv содержит все тексты, отображаемые в игре: названия сценариев, группировок, лидеров, заместителей, товаров, событий и многое другое. Каждый конфиг, имеющий отображаемое в игре название или описание, берёт текст именно отсюда.
+
+Чем открывать:
+Для чтения — можно открывать через Excel (но осторожно с кодировкой)
+Для редактирования — используйте Notepad++ или обычный Блокнот Windows. Excel может испортить кодировку при сохранении
+
+Кодировка файла
+
+!WARN: Только UTF-8 с BOM. Файл должен сохраняться строго в кодировке UTF-8 с BOM. Без BOM кириллица в игре будет отображаться «кракозябрами». Подробнее: Кодировка файлов.
+
+Формат строк
+
+Каждая строка файла имеет формат: Ключ;Текст. Разделителем выступает точка с запятой ;.
+
+!WARN: Символ ; запрещён внутри текста. Не используйте ; внутри самого текста, так как это разделитель между технической ссылкой и игровым текстом. Если в тексте нужна точка с запятой — перепишите предложение или используйте запятую.
+
+Структура ключей (тут не всё! Тут лишь часть, чтобы понять принцип)
+
+Ключи имеют формат [Тип.ТехНазвание].Поле или просто НазваниеПоля для глобальных параметров сценария.
+
+Сценарий: КлючБезСкобок. Пример: ScenarioName, ScenarioDescription
+Заместители: [Advisors.ТехНазвание].Поле. Пример: [Advisors.Wolf].Name
+Группировки: [Groups.ТехНазвание.Идеология].Поле. Пример: [Groups.Stalkers.:main].Name
+Лидеры: [Leaders.ТехНазвание].Поле. Пример: [Leaders.Leader-1].Name
+Идеологии: [Ideologies.ТехНазвание].Поле. Пример: [Ideologies.Stalkers].Name
+Товары: [Goods.ТехНазвание].Поле. Пример: [Goods.PM].Name, [Goods.PM].Desc
+Постройки: [Buildings.ТехНазвание].Поле. Пример: [Buildings.Workshop].Name
+Улучшения: [Upgrades.ТехНазвание].Поле. Пример: [Upgrades.Upgrade-1].Name
+Правила: [Rules.ТехНазвание].Поле. Пример: [Rules.Rule-1].Name
+Типы местности: [TypeLands.ТехНазвание].Поле. Пример: [TypeLands.Cordon].Name
+Случайные события: [RandomEvents.ТехНазвание].Поле. Пример: [RandomEvents.FindMoney].Desc-YES
+Сюжетные события: [EventsStory.ТехНазвание].Поле. Пример: [EventsStory.Event-Cordon-5].Name
+Особые события: [SpecialEvents.ТехНазвание].Поле. Пример: [SpecialEvents.Burst].Desc-Yes
+Торговцы: [Traders.ТехНазвание].Поле. Пример: [Traders.Trader1].Name
+Обучение: [Tutorial.НазваниеСтраницы].Поле. Пример: [Tutorial.Page-1].Text
+
+Специальные символы и форматирование
+
+%s: Простая подстановка значения (строка или число). Пример: Вы нашли %s рублей → «Вы нашли 500 рублей»
+%0:s, %1:s, …: Подстановка значения по индексу (формат Delphi). %0:s — первый аргумент, %1:s — второй и т.д. Используется, когда нужно вставить несколько значений. Пример: Сталкер %0:s на территории %1:s → «Сталкер Меченый на территории Кордон»
+||: Перенос следующей части текста на новую строку (красная строка). Пример: Первая строка.||Вторая строка.
+
+!NOTE: Разница между %s и %N:s. %s — простая подстановка, значения вставляются по порядку. %0:s, %1:s — подстановка по индексу, можно менять порядок и использовать одно значение несколько раз: %0:s атакует %1:s, а %1:s защищается. Используйте %N:s, когда в событии передаётся несколько аргументов.
+
+Примеры строк файла
+
+!EXAMPLE:
+; Глобальные параметры сценария
+ScenarioName;Обрыв связи
+ScenarioDescription;Классический сценарий.||Здесь вам предстоит выжить в условиях Зоны.
+ScenarioVictoryDescription;Захватите все территории Зоны.
+ScenarioLoseDescription;Потеряйте все свои территории.
+; Заместители
+[Advisors.Wolf].Name;Волк
+[Advisors.Sidorovich].Name;Сидорович
+; Группировки (общие строки и по идеологиям)
+[Groups.Stalkers.:main].Name;Одиночки
+[Groups.Stalkers.:main].Description;Одиночки, исследующие Зону.
+[Groups.Stalkers.Stalkers].Name;Одиночки-Сталкеры
+[Groups.Stalkers.AntiZone].Name;Одиночки-Антизон
+; Лидеры
+[Leaders.Leader-1].Name;Генерал Воронин
+[Leaders.Leader-2].Name;Доктор
+; Идеологии
+[Ideologies.Stalkers].Name;Сталкерство
+[Ideologies.AntiZone].Name;Анти-Зона
+; Товары
+[Goods.PM].Name;Пистолет Макарова
+[Goods.PM].Desc;Пистолет Макарова со следами ржавчины. Самое то для новичков.
+[Goods.Stalker-1].Name;Кожаная куртка
+[Goods.Stalker-1].Desc;Старая кожаная куртка. Почти не защищает, но лучше, чем ничего.
+; Постройки
+[Buildings.Workshop].Name;Мастерская
+[Buildings.Workshop].Desc;Позволяет модифицировать амуницию по рецептам.
+[Buildings.Barracks].Name;Казарма
+[Buildings.Barracks].Desc;Увеличивает лимит рекрутов.
+; Улучшения
+[Upgrades.Upgrade-1].Name;Тактика боя
+[Upgrades.Upgrade-1].Desc;Увеличивает урон в PvP-боях.
+; Правила
+[Rules.Rule-1].Name;Максимальная децентрализация
+[Rules.Rule-5].Name;Обычная децентрализация
+; Типы местности
+[TypeLands.Cordon].Name;Кордон
+[TypeLands.BarRostok].Name;Бар «Росток»
+; Случайные события (с Desc-YES и Desc-NO)
+[RandomEvents.FindMoney].Name;Находка тайника
+[RandomEvents.FindMoney].Desc-YES;Вы нашли тайник! В нём были спрятаны деньги!
+[RandomEvents.FindMoney].Desc-NO;Вы обыскали территорию, но ничего не нашли.
+; Сюжетные события
+[Events_Story.Event-Cordon-1].Name;Прибытие Меченого
+[Events_Story.Event-Cordon-1].Desc;На территории %0:s замечен сталкер Меченый.
+; Особые события
+[SpecialEvents.Burst].Name;Выброс
+[SpecialEvents.Burst].Desc-Yes;Над Зоной прошёл выброс! %0:s бойцов погибли.
+[SpecialEvents.Burst].Desc-No;Выброс миновал вашу территорию.
+; Торговцы
+[Traders.Trader1].Name;Сидорович
+[Traders.Trader1].NeedText;Требуется контроль территории «Кордон».
+; Обучение
+[Tutorial.Page-1].Text;Добро пожаловать в сценарий!
+[Tutorial.Page-2].Text;Используйте КР для найма бойцов и постройки зданий.
+
+
+Определите тип элемента (товар, лидер, событие и т.д.)
+Откройте messages.csv в Notepad++ (или создайте его в папке сценария)
+Добавьте строки по формату Ключ;Текст
+Убедитесь, что ключ точно совпадает с техническим названием из конфига (регистр важен!)
+Сохраните файл в кодировке UTF-8 с BOM
+Проверьте, что в тексте нет символа ;
+
+Типичные ошибки
+
+Файл сохранён без BOM: Кириллица отображается кракозябрами. Исправление: В Notepad++: Кодировки → Преобразовать в UTF-8-BOM
+Символ ; внутри текста: Строка разбивается на части, текст обрезается. Исправление: Замените ; на запятую или перепишите предложение
+Опечатка в ключе: Текст не отображается, вместо него показывается техническое название. Исправление: Сверьте ключ с техническим названием в конфиге (регистр важен!)
+Забыли .Name или .Desc: Игра не найдёт нужную строку. Исправление: Проверьте формат: [Тип.ТехНазвание].Поле
+Использование кавычек " как в настоящем CSV: Кавычки отображаются как часть текста. Исправление: Не оборачивайте текст в кавычки — формат не классический CSV
+Комментарии через # или ;: Строка считается обычной и ломает парсинг. Исправление: В messages.csv нет комментариев — удаляйте лишние строки
+
+Механизм наследования
+
+Как и с другими файлами, работает механизм наследования от data\default\:
+Если в вашем сценарии нет messages.csv — игра использует дефолтный файл
+Если есть — игра берёт строки из вашего файла, а недостающие — из дефолтного
+Если ключ есть в обоих файлах — ваша версия перезаписывает дефолтную
+
+!NOTE: Перевод существующего сценария. Чтобы перевести существующий сценарий на другой язык: скопируйте messages.csv из сценария, переведите только текстовую часть (после ;), не трогая ключи, сохраните как messages.csv в нужной кодировке. В Settings.ini можно указать DefaultLocale=enUS для английской версии.
+
+# map — Файлы карты
+
+Обзор
+
+Карта сценария состоит из набора взаимосвязанных файлов, которые вместе описывают географию игрового мира: изображение карты, территории, связи между ними, расположение иконок и дополнительную информацию.
+
+!NOTE: Используйте встроенный редактор карт! Большинство файлов карты не нужно заполнять вручную. В игре есть встроенный редактор карт, который сам создаёт все необходимые файлы с правильной структурой. Редактировать вручную имеет смысл только settings.ini и локализацию в messages.csv.
+
+Сводная таблица файлов карты
+
+map.bmp / map.png / map.jpg: Графическое изображение карты. Как создаётся: в любом графическом редакторе
+map.bt: Технический файл — как движок выделяет территории. Как создаётся: только встроенный редактор
+settings.ini: Формат карты и локализация. Как создаётся: вручную
+Links.ini: Связи между территориями (кто с кем граничит). Как создаётся: встроенный редактор
+Territories.ini: Статичные параметры территорий (артефакты, рекруты). Как создаётся: встроенный редактор
+TerritoriesIconCoordinates.ini: Координаты иконок группировок на территориях. Как создаётся: встроенный редактор
+TerritoriesInfo.ini: К какой локации относится территория, изображение в меню. Как создаётся: встроенный редактор
+Locations/: Папка с конфигами локаций (заготовка на будущее). Как создаётся: вручную
+
+!NOTE: Где должны лежать файлы карты для мода. Все файлы карты хранить в папке map/ внутри папки сценария (например, data\campaigns\scs\1story\map\).
+
+
+Конфигурационный файл карты (settings.ini)
+
+Небольшой файл с общими настройками карты. Находится в папке map/ сценария.
+
+!WARN: Не путать с Settings.ini сценария! Это разные файлы: map/settings.ini — настройки карты (этот файл); Settings.ini в корне сценария — настройки самого сценария (см. Settings).
+
+Параметры:
+
+MapFormat [ENUM]: Формат файла изображения карты. Возможные значения: bmp, png, jpg
+DefaultLocale [ENUM]: Какая локализация текста карты является изначальной. Значения: ruRU, enUS
+
+!EXAMPLE:
+; Файл: map\settings.ini
+[Main]
+MapFormat=bmp
+DefaultLocale=ruRU
+
+Форматы изображения карты
+
+bmp: лучший формат. Движок грузит его быстрее остальных
+png: грузится дольше, но несущественно. Поддерживает сжатие без потери качества
+jpg: карта весит меньше всего, но грузится существенно дольше
+
+!NOTE: Рекомендация: используйте bmp для малых и средних карт.
+
+Файл связей между территориями (Links.ini)
+
+Файл Links.ini описывает, какая территория с какой граничит. Движок использует эту информацию для:
+Определения возможности атаки/передислокации между территориями
+Расчёта маршрутов для ботов
+Определения, является ли территория анклавом (изолированной)
+
+!NOTE: Создаётся редактором. Файл не нужно заполнять вручную. Используйте встроенный в игру редактор карт — он автоматически создаст Links.ini на основе того, как вы нарисуете границы территорий на карте.
+
+!WARN: Ручное редактирование не рекомендуется. При ручном редактировании легко нарушить связи, что приведёт к багам: территории могут стать «отрезанными» от остальной карты, либо наоборот — появятся проходы там, где их быть не должно.
+
+
+Статичные параметры территорий (Territories.ini)
+
+Файл Territories.ini описывает статичные параметры каждой территории: какие артефакты могут здесь появляться, сколько рекрутов генерируется и т.д. Эти параметры не меняются в процессе игры (в отличие от динамических в Main.ini → [ZonaX]).
+
+!NOTE: Создаётся редактором. Файл не нужно заполнять вручную. Используйте встроенный в игру редактор карт — он автоматически создаст Territories.ini с правильной структурой.
+
+!NOTE: Territories.ini vs Main.ini [ZonaX]. Territories.ini (файл карты) — статичные параметры, общие для всех игр на этой карте. Main.ini → [ZonaX] — динамичное состояние на старте конкретного сценария (владелец, гарнизон, постройки, активность мутантов). Индексы территорий в обоих файлах совпадают.
+
+!NOTE: Тип местности. Каждая территория имеет тип местности, который задаёт её характеристики (бонусы, вместимость построек). См. TypeLands.
+
+Папка с конфигами локаций (Locations/)
+
+Папка Locations/ содержит по одному ini-файлу на каждую локацию карты (группу территорий). Это заготовка на будущее — сейчас используется не полностью.
+
+Формат файла локации. В каждом файле локации достаточно указать пустую секцию [Main]:
+
+!EXAMPLE:
+; Файл: Locations\Cordon.ini
+[Main]
+
+!WARN: Локализация обязательна. Даже если сам конфиг локации пустой, строки локализации делать обязательно. Без них название локации не будет отображаться в игре.
+
+!LOC:
+[Locations.].Name - название локации
+
+!NOTE: Где размещать локализацию локаций. Обычно мододелы используют файл сценария (messages.csv в папке сценария), а не отдельный файл карты.
+
+
+Координаты иконок территорий (TerritoriesIconCoordinates.ini)
+
+Файл TerritoriesIconCoordinates.ini описывает, где именно на карте отображать иконку группировки-владельца территории (логотип из параметра IconMap в Groups).
+
+!NOTE: Создаётся редактором. Файл не нужно заполнять вручную. Используйте встроенный в игру редактор карт — при размещении территории на карте редактор автоматически сохраняет её координаты.
+
+!NOTE: Формат координат. Координаты задаются в пикселях относительно левого верхнего угла изображения карты. Ось X — горизонталь, Y — вертикаль.
+
+Дополнительная информация о территориях (TerritoriesInfo.ini)
+
+Файл TerritoriesInfo.ini содержит дополнительную информацию о каждой территории:
+К какой локации относится территория (связь с Locations/)
+Какое изображение отображается в меню территории
+
+!NOTE: Создаётся редактором. Файл не нужно заполнять вручную. Используйте встроенный в игру редактор карт — он автоматически создаст TerritoriesInfo.ini с правильной структурой.
+
+Технический файл карты (map.bt)
+
+Файл map.bt — служебный бинарный файл, который говорит движку, как выделять территории на карте при наведении курсора и клике.
+
+!WARN: НЕ редактировать вручную! Файл создаётся только через встроенный в игру редактор карт. Любое ручное редактирование приведёт к повреждению карты и ошибкам игры. См. «Рудименты и не трогать».
+
+!NOTE: Как создаётся. При сохранении карты в редакторе движок автоматически анализирует изображение и границы территорий, создавая map.bt с информацией о «кликабельных» областях каждой территории.
+
+Изображение карты (map.bmp / map.png / map.jpg)
+
+Основной графический файл карты — то, что игрок видит на экране во время игры. Может быть в форматах bmp, png или jpg.
+
+Рекомендации по формату:
+bmp: Скорость загрузки — быстрее всех. Размер файла — больше всех. Когда использовать — рекомендуется для малых и средних карт
+png: Скорость загрузки — чуть дольше bmp. Размер файла — средний. Когда использовать — если нужно сжатие без потерь
+jpg: Скорость загрузки — существенно дольше. Размер файла — меньше всех. Когда использовать — только если критичен размер мода
+
+!NOTE: Как связать изображение и файл настроек. В map/settings.ini параметр MapFormat должен точно соответствовать расширению вашего файла изображения: если файл map.bmp → MapFormat=bmp; если файл map.png → MapFormat=png; если файл map.jpg → MapFormat=jpg.
+
+
+Нарисуйте изображение карты в графическом редакторе (сохраните как map.bmp, map.png или map.jpg)
+Создайте папку map/ в папке вашего сценария
+Положите изображение в папку map/
+Запустите игру и откройте встроенный редактор карт
+Загрузите ваше изображение в редакторе
+Нарисуйте границы территорий — редактор автоматически создаст: map.bt, Links.ini, Territories.ini, TerritoriesIconCoordinates.ini, TerritoriesInfo.ini
+Сохраните карту в редакторе
+Создайте map/settings.ini с параметрами MapFormat и DefaultLocale
+Создайте папку Locations/ с конфигами локаций (по одному файлу на локацию, достаточно пустой секции [Main])
+Добавьте локализацию локаций в messages.csv: [Locations.].Name
+Настройте типы местности через TypeLands
+Пропишите владельцев и гарнизоны территорий в Main.ini → [ZonaX]
+
+!NOTE: Совет: начните с маленькой карты. Перед созданием большой карты (сотни территорий) попробуйте сделать маленькую — 10–15 территорий на одной локации. Так вы наступите на все типовые грабли и поймёте механику работы редактора, прежде чем браться за серьёзный проект. См. «С чего начать мододелу?» — 6-й уровень сложности модов.
+
+# faq — FAQ — 34 частых вопроса по моддингу
+
+📚 Основы моддинга
+
+Вопрос №1: Можно ли в игру добавлять собственные сценарии?
+Да, в кампании может быть неограниченное число сценариев. Папку сценария необходимо размещать по пути: data\campaigns\Название_кампании\.
+
+!NOTE: Рекомендуется класть свои сценарии в папку модов в документах: Документы\war in zone\campaigns\Названиевашегосценария. Так вы не потеряете свои моды при обновлении игры.
+
+Вопрос №2: Можно ли редактировать существующие сценарии?
+Да, можно. Они находятся по пути data\campaigns\Название_кампании\.
+
+!NOTE: Но лучше скопировать сценарий в папку модов и редактировать копию.
+
+Вопрос №3: Как понять какой файл за что отвечает?
+Используйте меню слева (группа «Файлы настроек») или поиск по сайдбару. В разделе «Что вы хотите сделать?» на главной странице есть карточки с кратким описанием каждого файла.
+
+Вопрос №9: Нужно ли знать какие-то скриптовые языки для модифицирования игры?
+Нет, совсем. Новый сценарий с нуля можно сделать с помощью блокнота (редактирование .ini файлов) и Paint (графика). Этого достаточно. Каких-либо специфичных навыков программирования не требуется.
+
+Вопрос №11: В игре нет такого-то параметра или я не понимаю как работает другой параметр. Что делать?
+Обратиться к разработчику игры в Discord.
+
+📁 Структура файлов
+
+Вопрос №7: Обязательно ли моему сценарию хранить графику в той же папке, что и мой сценарий?
+Нет. Посмотрите ini-файлы сценария «Зов Припяти». Только та графика, которая добавлена в ЗП, лежит в папке ЗП, всё остальное лежит в изначальной папке data\gfx. В ini-файлах можно указывать пути к необходимым вам файлам относительно корня данных.
+
+Вопрос №8: Какие графические форматы поддерживает игра?
+Поддерживаются стандартные изображения: bmp, jpg, png, а также анимированный формат gif.
+
+!NOTE: Значки группировок на глобальной карте не могут быть анимированы с помощью gif.
+
+Также в игре есть специфический формат для анимирования любого изображения (даже png и bmp) — это собственный формат .agr (открывается блокнотом). Подробнее про работу формата можно узнать в папках data\gfx\Elements\GlobalMap.
+
+Вопрос №17: Можно ли как-то менять существующие улучшения?
+Можно. Каждое улучшение имеет соответствующий тип. Список типов прописан в папке data\default\upgrades\. Для изменения улучшений необходимо скопировать файл с улучшением в папку upgrades своего сценария. Если этой папки нет — создайте её. Подробнее: Upgrades.
+
+Вопрос №19: Где прописывается число территорий в сценарии?
+Нигде. Игра автоматически подсчитывает нарисованное число территорий в редакторе карт. Подробнее: Файлы карты.
+
+⚙ Конфиги и параметры
+
+Вопрос №10: Допустим, есть числовой параметр в конфиге в виде = 1. Могу я указать дробное значение, например, 0.5?
+Нет. Внимательно смотрите тип значения в справке. Только у параметров с бейджем @@ДРОБНОЕ можно указывать дробь (через запятую: 1,5). У всех параметров с бейджем @@ЦЕЛОЕ — только целые числа!
+Подробнее: «Обозначения типов».
+
+Вопрос №13: Мне требуется подробный вывод информации о том, что происходит при нажатии кнопки «Конец хода».
+В опциях игры выставьте «Подробный вывод в игровой лог состояние» — Включено. После этого в игровой лог (который отображается после нажатия на кнопку «Конец хода») будет выводиться вся информация.
+
+!NOTE: Если нужна ещё и отладочная информация для дебага, дополнительно включите параметр Debug=1 в Settings.ini, который находится в папке Документы\War in zone\.
+
+Вопрос №15: В чём принципиальное отличие Settings.ini сценария и Settings.ini в папке Документы?
+Settings.ini в папке Документы — это настройки движка, они распространяются на все сценарии без исключений. А Settings.ini сценария влияет только на тот сценарий, к которому относится, и может переопределять некоторые глобальные настройки.
+
+Вопрос №24: Как изменить какое правило отвечает за автопоиск артефактов?
+В файле Settings.ini сценария есть параметры MaxAutoArtsNameRule и PartAutoArtsNameRule. В них указывается цифровой индекс из Rules.ini. Например, если техническое правило называется Rule-6, то указывайте цифру 6.
+
+Вопрос №25: В каком файле указывается текущий % идеологий у группировок?
+В файле Main.ini сценария, в секциях территорий [ZonaX].
+
+Вопрос №26: В каком файле указывается, какой группировке какая территория принадлежит?
+В файле Main.ini сценария, в секциях территорий [ZonaX] через параметр Owner.
+
+Вопрос №28: Как добавить своего нового кандидата в заместители в какой-либо сценарий?
+Необходимо:
+Добавить кандидата в файл Advisors.ini
+В файле Main.ini в секции [Advisors] указать, доступен ли он в текущем сценарии со старта (ТехНазвание=True/False)
+Если необходимо, чтобы бот сам назначал себе этого заместителя, укажите это в AI.ini
+
+Вопрос №31: Можно ли как-то самому упорядочить отображение зданий/улучшений в окне списка?
+Да, у каждого здания/улучшения в конфиге есть параметр SortOrder. Чем меньше значение, тем выше элемент в списке.
+
+Вопрос №32: Где и как прописываются главные базы группировок?
+В файле Main.ini сценария, в секции [MainZoneFraction]. В столбик пишется техническое название группировки, затем знак =, далее индекс территории. Например: Stalkers=99.
+
+Вопрос №33: Где прописать, что группировке не нужна главная база?
+В файле Settings.ini сценария есть параметр NoBaseNeeded. После знака = просто перечислите через запятую технические названия группировок. Например: NoBaseNeeded=Mutants,Zombie.
+
+👥 Группировки, юниты и лидеры
+
+Вопрос №4: Сколько всего группировок может быть на карте одновременно?
+Лимита нет.
+
+Вопрос №5: Можно ли больше 4 типов бойцов иметь?
+Нет. Максимум 4 типа бойцов (ранга) у любой группировки. Это жёсткий лимит движка.
+
+Вопрос №6: Можно ли добавить новое оружие и броню? И сколько максимум может быть?
+Да, можно. Для этого надо добавить товар (оружие/броню/предмет) в папку Goods (если её нет — создать) вашего сценария и прописать каждой группировке стартовое количество на складе в Main.ini (если = 0, то прописывать не обязательно).
+Число товаров в сценарии не ограничено. Подробнее: Goods.
+
+Вопрос №12: Как мне зайти за Зомбированных и Мутантов?
+Для активации возможности игры за Мутантов и Зомбированных необходимо в файле Settings.ini, который находится в папке сценария, в параметре GroupsForPlayer в конце строчки добавить через запятую: Zombie, Mutants.
+
+!EXAMPLE:
+GroupsForPlayer=Stalkers,Bandits,Soldiers,Duty,Freedom,Monolith,Mercenaries,Scientists,Zombie,Mutants
+
+Вопрос №20: Как дать группировке иммунитет к Выбросу? И к уходу бойцов из-за нехватки еды?
+В папке SpecialEvents есть файл, посвящённый выбросу (обычно Burst.ini). В нём необходимо:
+Увеличить число параметра NotWorkFractionCount на количество добавляемых группировок
+Добавить строки FractionX=ТехНазвание для каждой группировки (где X — порядковый номер)
+
+!EXAMPLE:
+NotWorkFractionCount=4
+Fraction1=Mutants
+Fraction2=Zombie
+Fraction3=MyGroup1
+Fraction4=MyGroup2
+
+Вопрос №21: Сколько максимум в игре может быть идеологий?
+Число не ограничено. Подробнее: Ideologies.
+
+Вопрос №22: Сколько максимум может быть кандидатов для заместителя группировки?
+Лимита нет. Подробнее: Advisors.
+
+Вопрос №23: Можно ли увеличить число внутренних правил для группировок?
+Нет. Число правил захардкожено в движке. Но можно менять бонусы, которые дают текущие правила, в файле Rules.ini (скопируйте файл из data\default\ в папку вашего сценария).
+
+🛒 Торговцы и экономика
+
+Вопрос №14: Как добавить своё оружие в игру?
+Есть видео, где это демонстрируется: https://youtu.be/COaKZjuCXlg
+Или смотрите раздел Goods (Амуниция).
+
+Вопрос №16: Можно ли добавить своего торговца в игру? И сколько их максимум может быть?
+Добавить можно. Число торговцев неограниченно (по типу Сидоровича, Бармена, Внешнего мира и т.д.).
+
+!NOTE: Также есть торговцы других группировок и торговец своей группировки — их клонировать, как Внешний мир/Сидорович, уже не получится, так как в отличие от любых других они привязаны к группировкам, а не к какой-либо территории. Подробнее: Traders.
+
+Вопрос №34: Сколько максимум торговцев может быть в сценарии?
+Лимита нет.
+
+🗺 Карта и территории
+
+Вопрос №18: Какие файлы отвечают за то, какие территории с какими граничат?
+За границы территорий отвечает файл Links.ini. Рекомендуется к просмотру видео: https://youtu.be/JQ2ixqeOpU8
+Подробнее: Links.ini.
+
+Вопрос №27: Можно ли добавить в свой сценарий собственный шрифт для текста?
+Нет, нельзя. Шрифт общий для всей игры и захардкожен в движке.
+
+Вопрос №29: Сколько максимум может быть улучшений в сценарии?
+Лимита нет. Подробнее: Upgrades.
+
+Вопрос №30: Сколько максимум может быть построек в сценарии?
+Лимита нет. Подробнее: Buildings.
+
+
+# tips — Различные советы по моддингу игры
+
+Советы
+
+Прежде чем садиться делать мод, ответьте себе на вопросы из раздела «С чего лучше начать?» (start). Учтите, что создание мода первого уровня займёт скорее всего час (в случае, если мододел является новичком), а каждый последующий уровень будет умножать затраченное время минимум в два раза.
+
+Уровни модов и их последовательность на странице «С чего лучше начать?» не просто так прописаны. Это один из оптимальных путей в продвижении разработки мода.
+
+Нет смысла добавлять 100500 новых типов оружия или брони. Во-первых, игроку сложнее ориентироваться в огромном количестве. Во-вторых, добавлять долго. В-третьих, игрок большинством пользоваться и не будет. Лучше сделать 5–10 уникальных единиц амуниции с интересными характеристиками.
+
+Зачем нужна куча новых группировок, если они будут отличаться друг от друга только набором территорий и логотипом? Лучше добавить парочку, но качественно их прописать, например, с уникальной амуницией, идеологией, озвучкой, ИИ для бота (AI) и набором из десятка кандидатов в заместители (Advisors).
+
+Нет смысла рисовать огромные карты локаций на 300+ территорий. Кто это всё будет сидеть захватывать? Зачем? Чем локации будут принципиально друг от друга отличаться? А смысл они будут иметь или только «чтобы захватить»? Начните с маленькой карты на 20–30 территорий, чтобы понять механику работы с файлами карты (map).
+
+В оригинальной игре есть разные сценарии. Есть те, которые пытаются воспроизвести оригинальный Сталкер, есть для сетевой игры, есть чистые песочницы, есть большие и маленькие, и есть исключительно для одиночной игры на вечерок. Стоит изначально решить, в какой тип сценариев целится мод. Может быть, мод будет на одну локацию, но с сюжетом (Events_Story.ini), а может быть на несколько локаций, без сюжета, но с необычным балансом.
+
+Брать себе в разработку нужно такой мод, который точно сможешь самостоятельно осилить без помощников. Потому что они «сегодня» помогают, а «завтра» им уже не интересно.
+
+Все игровые параметры логично расположены по файлам. Например, все динамичные параметры находятся в Main.ini. Для конкретики рассмотрим тему с пси-установками: включена ли со старта какая-либо пси-установка хранится в Main.ini → [PsyControl], а вот возможность отключать/включать их во время игры хранится в Settings.ini, так как это статичный параметр и в процессе игры не меняется.
+
+Добавление чего-либо нового в игру всегда ведёт к тому, что необходимо будет пополнить файл локализации messages.csv, где хранится весь игровой текст. Например, добавили нового заместителя — значит, надо добавить его имя в локализацию ([Advisors.*].Name). Аналогично с идеологиями, амуницией, улучшениями, постройками и так далее.
+
+В конфиг-файлах названия секций типа [Main], [Options] или ключей типа DifficultyLevel=, Desc-YES= являются регистронезависимыми, но рекомендуем всё-таки писать [Main], а не [main], и т.д., так как вам самим потом проще будет ориентироваться.
+
+Если у параметра можно указывать десятичные доли, то рекомендуется это делать через запятую. Например, полтора следует писать как 1,5. Это касается параметров с типом @@ДРОБНОЕ.
+
+В этой справке собрано описание большинства игровых параметров и механик. Игра постоянно развивается, и если вы не нашли нужный параметр или не понимаете, как работает какая-то механика
+
+📁 Структура сценария и наследование файлов
+
+Сценарий в игре представляет собой отдельную папку. Её можно разместить в документах (Документы\war in zone\campaigns\Названиевашегосценария\) или в папке с игрой (data\campaigns\Название_кампании\).
+
+!NOTE: Рекомендация. Размещайте свои моды в папке Документы, а не в папке игры. Так вы не потеряете свои моды при обновлении игры и не создадите конфликтов с другими модами.
+
+Механизм наследования (data\default\)
+
+Движок игры использует механизм наследования: при запуске сценария он сначала ищет нужный файл в папке вашего сценария. Если файла там нет, игра подгружает его из глобальной папки data\default\.
+
+!WARN: Не копируйте всё из data\default\! Копируйте в свой мод только те конфиги, которые вы реально планируете изменять. Это сделает ваш мод легче, чище и избавит от конфликтов при обновлениях игры.
+
+Типичная структура папки сценария
+
+!EXAMPLE:
+MyMod/
+│
+├── Main.ini                    ← Главный конфиг сценария
+├── Settings.ini                ← Настройки сценария (карта, лимиты, правила)
+├── messages.csv                ← Файл локализации (все тексты)
+├── AI.ini                      ← Настройки поведения ИИ
+├── Difficulty.ini              ← Настройки сложности
+├── Events_Story.ini            ← Сюжетные события
+├── interface.ini               ← Настройки интерфейса (опционально)
+│
+├── Advisors.ini                ← Кандидаты в заместители
+├── Groups/                     ← Конфиги группировок (один файл на группировку)
+│   ├── Stalkers.ini
+│   ├── Bandits.ini
+│   └── ...
+├── Ideologies/                 ← Конфиги идеологий (один файл на идеологию)
+│   ├── Stalkers.ini
+│   ├── Crime.ini
+│   └── ...
+├── Leaders/                    ← Конфиги лидеров (один файл на лидера)
+│   ├── Leader-1.ini
+│   └── ...
+│
+├── Buildings/                  ← Конфиги построек (один файл на постройку)
+│   ├── Workshop.ini
+│   ├── Barracks.ini
+│   └── ...
+├── Goods/                      ← Конфиги товаров, оружия, брони, артефактов
+│   ├── PM.ini
+│   ├── Stalker-1.ini
+│   └── ...
+├── Receipts/                   ← Рецепты мастерской (один файл на рецепт)
+│   ├── Recipe-PM-Upgraded.ini
+│   └── ...
+│
+├── RandomEvents/               ← Случайные события (один файл на событие)
+│   ├── event01.ini
+│   ├── event02.ini
+│   └── ...
+├── SpecialEvents/              ← Особые события (Выброс, Пси-излучение и т.д.)
+│   ├── Burst.ini
+│   ├── NoFood.ini
+│   ├── BrainPsy.ini
+│   └── ...
+├── upgrades/                   ← Улучшения (один файл на улучшение)
+│   ├── Upgrade-1.ini
+│   ├── Upgrade-2.ini
+│   └── ...
+│
+├── Achievements.ini            ← Достижения сценария (опционально)
+├── Rules.ini                   ← Внутренние правила (опционально)
+├── Traders.ini                 ← Настройки торговцев (опционально)
+├── TraderGoods.ini             ← Ассортимент торговцев (опционально)
+├── Tutorial.ini                ← Обучение (опционально)
+│
+├── gfx/                        ← Графика (иконки, портреты, UI)
+│   ├── icons/
+│   ├── factions/
+│   └── ...
+├── sfx/                        ← Звуки и музыка
+│   ├── events/
+│   ├── ambient/
+│   └── ...
+│
+└── map/                        ← Папка с файлами карты
+    ├── settings.ini            ← Настройки карты
+    ├── map.bmp                 ← Изображение глобальной карты
+    ├── Links.ini               ← Связи между территориями
+    ├── Territories.ini         ← Параметры территорий
+    ├── TerritoriesInfo.ini     ← Дополнительная информация
+    ├── map.bt                  ← Файл, создаваемый редактором карт
+    └── TypeLands/              ← Типы местности
+        ├── Cordon.ini
+        ├── BarRostok.ini
+        └── ...
+
+Минимальный сценарий
+
+Для работы сценария достаточно всего 3 файлов:
+Main.ini — состояние мира на старте
+Settings.ini — настройки сценария
+messages.csv — локализация (хотя бы название сценария)
+
+Все остальные файлы будут подгружены из data\default\.
+
+# dont-touch — Рудименты и «не трогать»
+
+Описание
+
+В игре есть параметры, которые выглядят рабочими, но на деле не используются движком, перезаписываются при старте сценария или являются пережитком прошлых версий. Проверьте этот список, прежде чем искать баг в своём моде.
+
+Легенда
+
+⚠️ Рудимент: параметр не используется движком, но связанные с ним файлы могут быть обязательны
+🚫 Перезапишется: движок затрёт ваше значение при старте сценария
+☠ Запрещено: приведёт к ошибке или непредсказуемому поведению
+🧱 Хардкод: значение зашито в движок, менять бессмысленно
+
+⚠️ Рудименты
+
+Buildings → BonusForSpy: ⚠️ Не работает. Данный параметр не используется движком игры. Бонус своим разведчикам от постройки дать нельзя — используйте заместителя, идеологию, лидера или внутреннее правило.
+Upgrades → Все Logo-*, кроме Logo-NonActive: ⚠️ Указывать эти параметры в конфиге не требуется — движок автоматически подставляет пути к изображениям на основе технического названия улучшения. ☠ НО соответствующие изображения с правильными названиями в нужных папках строго обязательны. Формат путей и названий смотрите в любом дефолтном конфиге улучшения.
+Rules.ini → Все Img-*, кроме Img-Available: ⚠️ Указывать эти параметры в конфиге правила не требуется — движок автоматически подставляет пути. ☠ НО соответствующие изображения с правильными названиями в нужных папках строго обязательны. Формат путей и названий смотрите в любом дефолтном конфиге правила.
+Locations/ → Все файлы локаций: ⚠️ Заготовка на будущее, которая сейчас используется не полностью. В каждом файле достаточно указать пустую секцию [Main] (без параметров внутри). ☠ НО строки локализации делать обязательно: [Locations.].Name
+Traders.ini → Need в секциях [YourGroup] и [OtherGroup]: ⚠️ Движок не учитывает этот параметр — идёт автоматическая привязка к группировке. Параметр имеет смысл только у торговцев, не привязанных к группировкам (нейтральных).
+
+🚫 Движок перезапишет при старте сценария
+
+Main.ini → секция [Scenario]
+
+Следующие параметры перезаписываются движком при старте сценария, поэтому их изменение в конфиге не имеет смысла:
+ActivePlayerIndex
+AtackArmyThroughtAllyEnabled
+BurstEnabled
+MoveArmyThroughAllyEnabled
+PlayerGroup-X
+PlayersCount
+RandomEventsEnabled
+StoryEventsEnabled
+
+!NOTE: Чем управлять вместо этого — Включение/выключение выброса, случайных и сюжетных событий настраивается в Settings:
+Выброс: BurstDefault / BurstCanChange
+Случайные события: EventsRandomDefault / EventsRandomCanChange
+Сюжетные события: EventsStoryDefault / EventsStoryCanChange
+
+Main.ini → секция [EventFlag]
+
+🚫 Все ивент-флаги из этого раздела при старте сценария автоматически сбрасываются в состояние False. Менять их значения в конфиге бессмысленно.
+
+Main.ini → секция [ProcessedItemCount]
+
+🚫 Не трогать, если не надо ограничить число производимой амуниции на первом ходу. Это единственная осмысленная причина её править.
+
+☠ Запрещено
+
+Events_Story.ini → CountParam у типа ChangeIdeologyPercent: НЕ ИСПОЛЬЗОВАТЬ ОТРИЦАТЕЛЬНЫЕ ЧИСЛА!!! Тип ChangeIdeologyPercent добавляет % идеологии группировке. Отрицательное значение в CountParam для этого типа запрещено и может привести к непредсказуемому поведению.
+messages.csv: Использовать символ ; внутри текста. Это разделитель между техническим ключом и игровым текстом. Символ ; в тексте сломает парсинг файла.
+Любой конфиг: Писать дробь там, где указан тип @@ЦЕЛОЕ. Дробные значения допустимы только у параметров с типом @@ДРОБНОЕ. См. FAQ#10
+Любой текстовый файл: Сохранять не в кодировке UTF-8 с BOM. Сломается отображение кириллицы в игре. См. start
+map.bt: Редактировать вручную в текстовом редакторе. Файл создаётся и редактируется только встроенным в игру редактором карт.
+Groups: Больше 4 типов бойцов у группировки. Жёсткий лимит движка. См. FAQ#5
+Rules.ini: Добавлять новые правила. Можно менять только бонусы существующих правил. Добавление новых невозможно без модификации движка. См. FAQ#23
+
+🧱 Хардкод — значения зашиты в движок
+
+Difficulty.ini → Технические названия секций []: Не трогать — названия захардкожены в движке. Допустимые секции: [Novice-Player], [Skilled-Player], [Veteran-Player], [Master-Player], [Novice-AI], [Skilled-AI], [Veteran-AI], [Master-AI]
+Rules.ini → Технические названия секций []: Названия правил фиксированы и захардкожены. Менять можно только значения параметров внутри секций
+Upgrades → Bonus — тип бонуса: Список допустимых типов бонусов захардкожен в движке, но значение самого бонуса можно менять
+AI.ini → Economic-TargetBuyResource-X-CountModificator: Требуемое количество ресурса для покупки ИИ захардкожено — модификатор лишь умножается на это базовое значение
+SpecialEvents → Часть механик особых событий: Часть параметров вынесена в Settings.ini, но многие нюансы логики захардкожены в движке
+Движок → Шрифт текста: Свой шрифт добавить нельзя — используется общий шрифт для всей игры. См. FAQ#27
+
+🧩 Особенности, которые легко принять за баг
+
+Сюжетное событие срабатывает на «случайном» ходе: Если параметр Step не задан или равен 0, событие считается вневременным и может сработать на любом ходе при выполнении всех условий
+Одноразовое событие не срабатывает повторно: Названия сюжетных событий автоматически работают как ивент-флаги. Если событие выполнилось, флаг с его названием устанавливается в True. Чтобы событие сработало снова — сбросьте соответствующий флаг
+Любое событие требует территорию: Каждое событие в игре привязано к территории. Это касается не только вторжений или ресурсов, но и чисто информационных событий (Type=Info), и даже смены лидера
+Случайное событие нельзя привязать к конкретной территории: У RandomEvents нет параметра Zona — они всегда происходят на случайной территории, контролируемой игроком
+Бонус постройки «пропал»: Территориальные бонусы (📍) действуют только пока вы владеете территорией с постройкой. Потеряли территорию — потеряли бонус. См. matrix-bonus
+Неполученная ачивка выглядит чёрно-белой, хотя я задал цветное изображение: Изображение неполученной ачивки движок создаёт автоматически, обесцвечивая ваше изображение из ImgLogoEnabled. Это нормальное поведение
+В справке interface.ini описаны не все параметры: Полный список параметров — в дефолтном файле data\default\interface.ini. Для конкретного сценария обычно актуальны только секции: [Graphics-In-game], [MultiTexture], [Graphics-BTN-Standart], [Graphics-BTN-Active], [Graphics-RadioBTN], [Sounds]
+
+!NOTE: Совет по interface.ini — Чтобы изменить один значок или параметр, не копируйте файл целиком. Создайте в папке сценария файл interface.ini и укажите в нужной секции только изменяемый параметр.
+
+!EXAMPLE:
+[Graphics-In-game]
+BuyUnits-Fon=gfx\custom\mybuyunits.png
+
+!NOTE: Если параметр ведёт себя странно, а его нет в этом списке
+
+# start — С чего начать мододелу
+
+Назначение данной справки
+
+Эта справка — шпаргалка по конфигурационным файлам игры War In Zone. Здесь описан каждый тип параметров в каждом конфиг-файле игры.
+
+!NOTE: Наследование от data\default\. Часть файлов имеет предустановленные версии и хранится в data\default\. Вы можете переопределять только нужные параметры в своём сценарии, не копируя файлы целиком. Подробнее: Структура сценария.
+
+
+🚀 С чего начать мододелу?
+
+Перед началом мода ответьте себе на вопросы:
+Это отдельный сценарий или прокачка всех существующих?
+Будет использоваться уже существующая карта локаций или новая?
+Будут новые группировки?
+Будут изменения в существующие группировки?
+Будет новый сюжет?
+Будут новые случайные события?
+Будут источники пси-излучения?
+Будет Выброс?
+Будут дополнительные условия победы?
+Будут новые постройки?
+Будут новые улучшения?
+Будут новые идеологии?
+Будут новые кандидаты в заместители?
+Будут изменения во внутренних правилах группировок?
+Будет новая амуниция?
+Если новая амуниция — можно ли её модифицировать через мастерскую?
+Будут достижения для игрока?
+
+Чем больше ответов «Нет» — тем быстрее и проще мод.
+
+!NOTE: Совет для первого мода. В первом моде используйте существующую карту, а не создавайте новую. Многие мододелы собирают кучу багов именно из-за попытки сразу создать собственную карту.
+
+Уровни сложности модов
+
+🟢 Мод первого уровня
+Взять существующий сценарий и добавить несколько новых заместителей, пару зданий и улучшений.
+Что нужно знать:
+Advisors.ini — кандидаты в заместители
+Buildings — постройки
+Upgrades — улучшения
+Main.ini — только секция [Advisors]
+
+🟡 Мод второго уровня
+Добавить оружие/броню с прокачкой в мастерской. После добавления необходимо прописать торговцам возможность продажи.
+Что нужно знать:
+Goods — оружие, броня, ресурсы
+Receipts — рецепты для мастерской
+TraderGoods.ini — ассортимент торговцев
+Traders.ini — настройки торговцев
+
+🟠 Мод третьего уровня
+Добавить 1 новую идеологию и указать её заместителям. Важно: добавление новой идеологии требует добавить всё необходимое (конфиги, графика, озвучка) всем группировкам, где эта идеология может стать основной.
+Что нужно знать:
+Ideologies — идеологии
+Groups — секции идеологий в каждой группировке
+Main.ini — [Group-Ideology], [Group-Ideology-Percent]
+
+🔴 Мод четвёртого уровня
+Добавить новые группировки. Потребуется множество конфигов, графики, озвучки для каждой группировки с учётом каждой идеологии.
+Что нужно знать:
+Groups — полные параметры группировок
+Leaders — лидеры
+Main.ini — все секции [Group-*]
+AI.ini — поведение бота для новой группировки
+
+🟣 Мод пятого уровня
+Мод с собственным сюжетом. Долго и непросто.
+Что нужно знать:
+Events_Story.ini — сюжетные события
+RandomEvents — случайные события
+Система ивент-флагов для ветвления сюжета
+
+⚫ Мод шестого уровня
+Собственная карта. Только после успешного прохождения предыдущих уровней. Сначала маленькая карта (одна локация на 10–15 территорий), затем большие карты с сотнями территорий.
+Что нужно знать:
+Встроенный редактор карт в игре
+Иногда придётся лазить в некоторые специальные конфиг файлы
+
+☢ Мод высокого уровня
+Не только сталкерские сценарии — метро, постапокалипсис, средневековье.
+Что нужно знать:
+Все вышеперечисленные файлы
+interface.ini — перерисовка интерфейса
+Собственная графика, звуки, музыка
+
+
+🛠 Программы для моддинга
+
+Минимальный набор
+Мозги, Блокнот и Paint. Этого достаточно для простых модов.
+
+Оптимальный набор
+Мозги + умение ими думать, Notepad++, Paint.NET — достаточно для сценариев любого уровня сложности.
+Notepad++ — продвинутый текстовый редактор с подсветкой синтаксиса, поиском, заменой и правильной кодировкой
+Paint.NET — бесплатный графический редактор с поддержкой слоёв и прозрачности
+
+Расширенный набор
+Notepad++, Photoshop, нейросеть для озвучки.
+Adobe Photoshop или GIMP — для сложной графики
+Нейросети (ElevenLabs, Bark и др.) — для генерации озвучки
+Audacity — для редактирования звуковых файлов
+
+!NOTE: Навыки программирования не требуются. Все конфиги — обычные текстовые файлы в формате .ini или .csv.
+
+📝 Кодировка текстовых файлов
+
+!WARN: Критически важно. Все текстовые файлы (.ini, .csv, .agr и др.) должны сохраняться в кодировке UTF-8 с BOM (Unicode с меткой порядка байтов). Без BOM кириллица в игре будет отображаться «кракозябрами».
+
+Как сохранить в UTF-8 с BOM:
+В Notepad++: Кодировки → Преобразовать в UTF-8-BOM → Сохранить (Ctrl+S). Проверка: в правом нижнем углу должно быть UTF-8-BOM
+В Блокноте Windows: Файл → Сохранить как… → Кодировка: UTF-8 (в Windows 10/11 автоматически добавляет BOM)
+
+# advisors.html — Кандидаты в заместители лидера группировки (Advisors.ini)
+
+Общее
+Файл Advisors.ini находится в папке сценария и описывает всех кандидатов в заместители. Каждая секция [Название] — это один кандидат.
+
+!NOTE: Бонусы этого конфига. Все бонусы заместителя — глобальные, действуют на всю группировку. Как они складываются с бонусами построек, идеологий, лидеров, правил и местности — в Матрице бонусов (matrix-bonus).
+
+Локализация (размещать в messages.csv)
+!LOC:
+[Advisors.].Name - название, отображаемое в игре
+
+!NOTE: Про []. [] — техническое название персонажа. Используйте только неповторяющиеся английские названия. В оригинальных файлах можно встретить формат [Advisor-Stalkers-Wolf]. Это схема разработчика [ТипПерсонажа-Группировка-Персонаж], она не обязательна — это просто для удобства.
+
+Параметры
+
+!WARN: Отрицательные значения. Многие параметры принимают отрицательные числа. Отрицательное значение = штраф вместо бонуса.
+
+🖼 Оформление
+Img [PATH]: Путь к изображению персонажа в интерфейсе
+Fraction [NAME]: Техническое название фракции, к которой относится данный персонаж (например, Stalkers, Bandits)
+
+🎖 Разведка и артефакты
+BonusForSpy [INT] 🌍: Модификатор шанса успеха своих разведчиков в %. Положительное значение = помощь, отрицательное = помеха (например, -15 снижает шанс успеха на 15%)
+BonusForEnemySpy [INT] 🌍: Модификатор шанса успеха вражеских разведчиков в %. Положительное значение = помощь врагу, отрицательное = помеха врагу (например, -15 снижает шанс успеха вражеских разведчиков)
+BonusSearchArts [INT] 🌍: Модификатор к поиску артефактов в %. Положительное значение = больше находок, отрицательное = меньше
+
+⚔ Боевые бонусы
+BonusDamagePVPForAtackers [INT] 🌍: Модификатор урона нападающим в PvP-боях %
+BonusDamagePVPForDefenders [INT] 🌍: Модификатор урона обороняющимся в PvP-боях %
+BonusDamagePVMForAtackers [INT] 🌍: Модификатор урона нападающим в PvM-боях (против мутантов) %
+BonusDamagePVMForDefenders [INT] 🌍: Модификатор урона обороняющимся в PvM-боях %
+BonusRangeForAtackers [INT] 🌍: Модификатор дальности атаки нападающим %
+BonusRangeForDefenders [INT] 🌍: Модификатор дальности атаки обороняющимся %
+
+👢 Рекруты и командные ресурсы (КР)
+Recruit-Novice [INT] 🌍: Ежеходный прирост (отрицательный = убыль) новичков
+Recruit-Skilled [INT] 🌍: Ежеходный прирост опытных
+Recruit-Veteran [INT] 🌍: Ежеходный прирост ветеранов
+Recruit-Master [INT] 🌍: Ежеходный прирост мастеров
+LimitRecruit-Novice [INT] 🌍: Модификатор к максимальному лимиту новичков
+LimitRecruit-Skilled [INT] 🌍: Модификатор к максимальному лимиту опытных
+LimitRecruit-Veteran [INT] 🌍: Модификатор к максимальному лимиту ветеранов
+LimitRecruit-Master [INT] 🌍: Модификатор к максимальному лимиту мастеров
+Comands [INT] 🌍: Ежеходный прирост (отрицательный = убыль) командных ресурсов
+LimitComands [INT] 🌍: Модификатор к максимальному лимиту КР
+
+💰 Экономика
+BootyParts [INT] 🌍: Абсолютная прибавка к трофейным частям мутантов после боя. Например, BootyParts=5 даёт ровно +5 частей к базовому дропу
+BootyCash [INT] 🌍: Абсолютная прибавка к трофейным деньгам после боя. Например, BootyCash=1 даёт ровно +1 к деньгам к базовому дропу
+BonusForCostCPSpy [INT] 🌍: Модификатор стоимости отправки разведчиков в КР. Положительное значение = дороже, отрицательное = дешевле (например, -1 снижает стоимость на 1 КР)
+BonusForCostCPAdvisor [INT] 🌍: Модификатор стоимости назначения именно этого заместителя в КР. Положительное значение = дороже, отрицательное = дешевле
+BonusForCostCPMainBase [INT] 🌍: Бонус в КР к цене по смене главной базы группировки
+BonusPercentLostResources [INT] 🌍: Бонус в % к потере ресурсов при потере главной базы
+
+🏛 Идеология
+Ideology [NAME]: Техническое наименование идеологии, которую продвигает заместитель (например, Stalkers, Crime, AntiZone)
+IdeologyBonus [INT]: Ежеходный прирост в процентных пунктах указанной идеологии. Например, IdeologyBonus=5 даёт ровно +5% к доле этой идеологии в группировке каждый ход. Очень большие значения быстро вытесняют все остальные идеологии
+
+!NOTE: Advisors vs Leaders. Набор параметров у заместителя и лидера почти идентичен. Единственное отличие — у заместителя есть параметр Fraction (привязка к фракции внутри конфига), у лидера привязка к фракции задаётся через Main.ini в секции [Group-Leaders].
+
+
+!NOTE: Не забудьте строку локализации [Advisors.].Name в messages.csv. Источник: FAQ#28.
+
+# leaders.html — Лидеры (leaders)
+
+Общее
+Папка leaders\ в сценарии состоит из ini-файлов, каждый из которых представляет одного лидера. Название файла — техническое название лидера, которое используется в других конфигах. Каждый файл содержит один блок [Main].
+
+!NOTE: Бонусы этого конфига. Все бонусы лидера — глобальные, действуют на всю группировку. См. Матрицу бонусов (matrix-bonus).
+
+Локализация (размещать в messages.csv)
+!LOC:
+[Leaders.].Name - название, отображаемое в игре
+
+Параметры
+
+!WARN: Отрицательные значения. Многие параметры принимают отрицательные числа. Отрицательное значение = штраф вместо бонуса.
+
+🖼 Оформление
+Img [PATH]: Путь к изображению лидера для интерфейса
+
+🎖 Разведка и артефакты
+BonusForSpy [INT] 🌍: Модификатор шанса успеха своих разведчиков в %. Положительное значение = помощь, отрицательное = помеха
+BonusForEnemySpy [INT] 🌍: Модификатор шанса успеха вражеских разведчиков в %. Положительное значение = помощь врагу, отрицательное = помеха врагу
+BonusSearchArts [INT] 🌍: Модификатор к поиску артефактов в %. Положительное значение = больше находок, отрицательное = меньше
+
+⚔ Боевые бонусы
+BonusDamagePVPForAtackers [INT] 🌍: Модификатор урона нападающим в PvP-боях %
+BonusDamagePVPForDefenders [INT] 🌍: Модификатор урона обороняющимся в PvP-боях %
+BonusDamagePVMForAtackers [INT] 🌍: Модификатор урона нападающим в PvM-боях (против мутантов) %
+BonusDamagePVMForDefenders [INT] 🌍: Модификатор урона обороняющимся в PvM-боях %
+BonusRangeForAtackers [INT] 🌍: Модификатор дальности атаки нападающим %
+BonusRangeForDefenders [INT] 🌍: Модификатор дальности атаки обороняющимся %
+
+👢 Рекруты и командные ресурсы (КР)
+Recruit-Novice [INT] 🌍: Ежеходный прирост (отрицательный = убыль) новичков
+Recruit-Skilled [INT] 🌍: Ежеходный прирост опытных
+Recruit-Veteran [INT] 🌍: Ежеходный прирост ветеранов
+Recruit-Master [INT] 🌍: Ежеходный прирост мастеров
+LimitRecruit-Novice [INT] 🌍: Модификатор к максимальному лимиту новичков
+LimitRecruit-Skilled [INT] 🌍: Модификатор к максимальному лимиту опытных
+LimitRecruit-Veteran [INT] 🌍: Модификатор к максимальному лимиту ветеранов
+LimitRecruit-Master [INT] 🌍: Модификатор к максимальному лимиту мастеров
+Comands [INT] 🌍: Ежеходный прирост (отрицательный = убыль) командных ресурсов
+LimitComands [INT] 🌍: Модификатор к максимальному лимиту КР
+
+💰 Экономика
+BootyParts [INT] 🌍: Абсолютная прибавка к трофейным частям мутантов после боя. Например, BootyParts=5 даёт ровно +5 частей к базовому дропу
+BootyCash [INT] 🌍: Абсолютная прибавка к трофейным деньгам после боя. Например, BootyCash=100 даёт ровно +100 к деньгам к базовому дропу
+BonusForCostCPSpy [INT] 🌍: Модификатор стоимости отправки разведчиков в КР. Положительное значение = дороже, отрицательное = дешевле
+BonusForCostCPAdvisor [INT] 🌍: Модификатор стоимости назначения заместителя в КР. Положительное значение = дороже, отрицательное = дешевле
+BonusForCostCPMainBase [INT] 🌍: Модификатор стоимости смены главной базы в КР
+BonusPercentLostResources [INT] 🌍: Модификатор % потери ресурсов при потере главной базы
+
+🏛 Идеология
+Ideology [NAME]: Техническое наименование идеологии, которую продвигает лидер (например, Stalkers, Crime, AntiZone)
+IdeologyBonus [INT]: Ежеходный прирост в процентных пунктах указанной идеологии. Например, IdeologyBonus=5 даёт ровно +5% к доле этой идеологии в группировке каждый ход. Очень большие значения быстро вытесняют все остальные идеологии
+
+Сравнение «бонусной цепочки»
+Лидер, заместитель, идеология и внутреннее правило дают почти один и тот же набор бонусов.
+
+Бонусный блок (25 параметров): Advisors=✅, Leaders=✅, Ideologies=✅, Rules=✅
+Img: Advisors=✅, Leaders=✅, Ideologies=✅, Rules=Img-Available
+Ideology / IdeologyBonus: Advisors=✅, Leaders=✅, Ideologies=—, Rules=—
+Fraction: Advisors=✅, Leaders=—, Ideologies=—, Rules=—
+CanUseRule-Rule-1…5: Advisors=—, Leaders=—, Ideologies=✅, Rules=—
+
+!NOTE: Advisors vs Leaders. Набор параметров у лидера и заместителя почти идентичен. Единственное отличие — у заместителя есть параметр Fraction (привязка к фракции внутри конфига), у лидера привязка к фракции задаётся через Main.ini в секции [Group-Leaders].
+
+
+💡 Пример полного файла лидера
+!EXAMPLE:
+; Файл: leaders\MyLeader.ini
+[Main]
+Img=gfx\icons\leaders\my_leader.png
+BonusForSpy=10
+BonusForEnemySpy=-10
+BonusSearchArts=15
+BonusDamagePVPForAtackers=10
+BonusDamagePVPForDefenders=5
+BonusDamagePVMForAtackers=-5
+BonusDamagePVMForDefenders=10
+BonusRangeForAtackers=5
+BonusRangeForDefenders=0
+Recruit-Novice=3
+Recruit-Skilled=2
+Recruit-Veteran=1
+Recruit-Master=0
+LimitRecruit-Novice=10
+LimitRecruit-Skilled=8
+LimitRecruit-Veteran=5
+LimitRecruit-Master=3
+Comands=5
+LimitComands=30
+BootyParts=3
+BootyCash=150
+BonusForCostCPSpy=-2
+BonusForCostCPAdvisor=-3
+BonusForCostCPMainBase=-5
+BonusPercentLostResources=-15
+Ideology=Stalkers
+IdeologyBonus=8
+
+# upgrades.html — Улучшения (upgrades)
+
+Общее
+Папка upgrades\ в сценарии состоит из ini-файлов, каждый из которых представляет одно улучшение. Название файла — техническое название улучшения, которое используется в других конфигах. Каждый файл содержит один блок [Main].
+
+!NOTE: Как работают улучшения. Улучшения дают глобальные бонусы группировке после их изучения. Тип эффекта захардкожен в движке, но коэффициент Bonus можно менять. Создать улучшение с новым типом эффекта нельзя — только использовать один из 15 доступных типов.
+
+Локализация (размещать в messages.csv)
+!LOC:
+[Upgrades.].Name - название, отображаемое в игре
+[Upgrades.].Desc - описание улучшения
+
+Параметры
+Type [ENUM]: Тип улучшения (один из 15, см. таблицу ниже). Захардкожен — определяет, какой эффект даёт улучшение
+SortOrder [INT]: Порядок отображения в окне улучшений. Чем меньше значение, тем раньше иконка в списке
+Cost_Comands [INT]: Стоимость изучения в командных ресурсах (КР)
+Cost_Money [INT]: Стоимость изучения в деньгах
+Bonus [INT]: Коэффициент бонуса. Может быть положительным или отрицательным. Интерпретация зависит от типа улучшения
+Need [NAME]: Техническое название другого улучшения (имя файла без .ini), которое должно быть изучено перед этим
+Logo-NonActive [PATH]: Путь к иконке улучшения (основное изображение)
+
+!WARN: Рудименты: Logo-Active, Logo-Purchased, Logo-PurchasedActive. Эти три параметра не нужно указывать в конфиге — движок автоматически подставит пути к изображениям на основе Logo-NonActive и технического названия улучшения.
+
+15 типов улучшений
+Типы улучшений захардкожены в движке. Создать новый тип нельзя.
+
+UpRecruitsCountComming: Увеличивает ежедневный прирост рекрутов каждого ранга. Пример: Bonus=1 — +1 рекрут каждого ранга в день
+UpChanceSearchArtsCount: Увеличивает шанс поиска артефактов. Пример: Bonus=10 — +10% к шансу поиска
+UpCRCountComming: Увеличивает ежедневный прирост командных ресурсов. Пример: Bonus=4 — +4 КР в день
+UpPartCountAfterKillMutant: Увеличивает трофейные части мутантов после боя. Пример: Bonus=1 — +1 часть мутанта к базовому дропу
+UpCashCountAfterKillStalker: Увеличивает трофейные деньги после боя со сталкерами. Пример: Bonus=1 — +1 к деньгам к базовому дропу
+UpChanceCountForReconnaissance: Увеличивает шанс успеха разведчиков. Пример: Bonus=10 — +10% к шансу успеха разведки
+DownCountCRForKillMutants: Уменьшает стоимость зачистки мутантов в КР. Пример: Bonus=2 — −2 КР к стоимости зачистки
+DownCountCRForMoveAndBattle: Уменьшает стоимость передислокации и атак в КР. Пример: Bonus=1 — −1 КР к стоимости действий
+DownCountCRForReconnaissance: Уменьшает стоимость отправки разведчиков в КР. Пример: Bonus=2 — делит стоимость на 2 (или уменьшает на 50%)
+UpRecruitsCountLimit: Увеличивает максимальный лимит рекрутов каждого ранга. Пример: Bonus=1 — +1 к лимиту каждого ранга
+UpCRCountLimit: Увеличивает максимальный лимит командных ресурсов. Пример: Bonus=15 — +15 к лимиту КР
+ImprovementProductivityWorkshop: Увеличивает продуктивность мастерских. Пример: Bonus=2 — +2 к производительности мастерских
+IdeologyChangeBonus: Изменяет стоимость смены идеологии в КР. Пример: Bonus=-7 — −7 КР к стоимости смены идеологии
+RearmBonus: Изменяет стоимость перевооружения в КР. Пример: Bonus=-11 — −11 КР к стоимости перевооружения
+None: Не даёт никакого эффекта. Используется как «заглушка» для создания веток дерева технологий. Пример: Bonus=0
+
+Дерево технологий (параметр Need)
+Параметр Need создаёт зависимости между улучшениями. Если указано Need=Upgrade-1, то улучшение Upgrade-2 нельзя изучить, пока не изучено Upgrade-1.
+
+💡 Пример дерева технологий
+!EXAMPLE:
+; Upgrade-1.ini — базовое улучшение (без требований)
+[Main]
+Type=UpRecruitsCountLimit
+SortOrder=10
+Cost_Comands=5
+Cost_Money=1000
+Bonus=1
+Logo-NonActive=gfx\icons\technologies\1.png
+
+; Upgrade-2.ini — требует Upgrade-1
+[Main]
+Type=UpRecruitsCountComming
+SortOrder=20
+Cost_Comands=8
+Cost_Money=1500
+Bonus=1
+Need=Upgrade-1
+Logo-NonActive=gfx\icons\technologies\2.png
+
+; Upgrade-3.ini — требует Upgrade-2
+[Main]
+Type=UpRecruitsCountLimit
+SortOrder=30
+Cost_Comands=10
+Cost_Money=2000
+Bonus=2
+Need=Upgrade-2
+Logo-NonActive=gfx\icons\technologies\3.png
+
+!NOTE: Блокировка улучшений. Улучшения можно полностью заблокировать в сценарии через параметр ExcludedUpgrades в Settings.ini. Если заблокированное улучшение указать в AI.ini, игра выдаст ошибку на ходе бота.
+
+
+💡 Пример полного файла улучшения
+!EXAMPLE:
+; Файл: upgrades\Upgrade-MyMod-1.ini
+[Main]
+Type=UpChanceSearchArtsCount
+SortOrder=500
+Cost_Comands=20
+Cost_Money=10000
+Bonus=15
+Need=Upgrade-10
+Logo-NonActive=gfx\icons\technologies\mymod_1.png
+
+!NOTE: Не забудьте создать 1 файл изображения: mymod_1.png.
+
+# goods.html — Амуниция, ресурсы, товары (Goods)
+
+Общее
+Папка Goods\ в сценарии состоит из ini-файлов, каждый из которых представляет один товар, ресурс или предмет экипировки. Название файла — техническое название товара, которое используется в других конфигах. Каждый файл содержит один блок [Main].
+
+Локализация (размещать в messages.csv)
+!LOC:
+[Goods.].Name - название, отображаемое в игре
+[Goods.].Desc - текстовое описание товара
+
+Общие параметры (для всех типов товаров)
+Img [PATH]: Путь к изображению товара (используется в торговле, на складе, в рецептах)
+Type [ENUM]: Тип товара. values: Weapon — оружие; Armor — броня; Resource — ресурс/товар общего назначения
+Cost [INT]: Базовая денежная цена товара без учёта коэффициентов торговцев
+Category [TEXT]: Категория товара для регулировки множителей цены у торговцев. Можно использовать стандартные или создавать собственные. См. Traders.ini (traders)
+SortOrder [INT]: Порядок отображения в списках (чем меньше значение, тем выше в списке)
+
+!NOTE: Стандартные категории. В оригинальных конфигах используются: Food, Medic, Supplies, Parts, Arts, Weapon, Armor, BuildingMaterials, AmmoComponents. Множители цен по категориям настраиваются в Traders.ini (traders) (параметры Coef-Sell-X, Coef-Buy-X).
+
+⚔ Параметры оружия (Type=Weapon)
+PVP [INT]: Урон по другим сталкерам (базовое значение)
+PVM [INT]: Урон по мутантам (базовое значение)
+Range [INT]: Дальность атаки
+Consum [INT]: Расход боеприпасов за одну атаку
+Level [INT 1-4]: Минимальный ранг бойца для использования этого оружия. 1 = новичок, 2 = опытный, 3 = ветеран, 4 = мастер
+
+🛡 Параметры брони (Type=Armor)
+PVP [INT]: Защита от урона других сталкеров
+PVM [INT]: Защита от урона мутантов
+AntiRad [INT]: Защита от радиации, выброса и аномалий
+Mass [INT]: Вес брони (штраф к мобильности). Чем больше значение, тем сильнее снижается мобильность бойца
+Level [INT 1-4]: Минимальный ранг бойца для использования этой брони. 1 = новичок, 2 = опытный, 3 = ветеран, 4 = мастер
+
+💊 Параметры ресурсов (Type=Resource)
+У обычных ресурсов (еда, медикаменты, артефакты, части мутантов) обычно нет дополнительных параметров помимо общих. Их эффекты задаются через другие системы:
+Еда: параметр FoodName в Settings.ini (settings) указывает, какой товар считается едой
+Медикаменты: параметр MedicName в Settings.ini (settings)
+Припасы: параметр SuppliesName в Settings.ini (settings)
+
+
+Стоимость найма юнита
+!NOTE: Формула из Settings.ini. Цена юнита = цена оружия + цена брони + ранг × UnitCostModificator. Параметр Cost из этого конфига напрямую влияет на стоимость найма бойца. UnitCostModificator настраивается в Settings.ini (settings).
+
+💡 Пример
+!EXAMPLE:
+; Файл: Goods\MyCustomRifle.ini
+[Main]
+Img=gfx\icons\goods\SVD.png
+Type=Weapon
+Cost=5000
+Category=Weapon
+SortOrder=100
+PVP=45
+PVM=30
+Range=8
+Consum=2
+Level=3
+
+# traders.html — Настройки параметров торговцев (Traders.ini)
+
+Общее
+Файл Traders.ini описывает параметры торговцев сценария: стоимость связи, шанс успеха, временные окна доступности и множители цен по категориям товаров. Ассортимент (какие товары у кого продаются) задаётся отдельно в TraderGoods.ini.
+
+📋 Локализация (размещать в messages.csv)
+!LOC:
+[Traders.].Name - название торговца (например, «Сидорович»)
+[Traders.].NeedText - описание условий доступа к торговцу (например, «Требуется контроль Бара»)
+
+Типы торговцев (секции доступности)
+В игре есть 3 типа торговцев, каждый со своей секцией в файле:
+
+[YourGroup]: Торговец своей группировки (привязан к игроку). Параметр Need игнорируется — см. «Рудименты и не трогать» (dont-touch)
+[OtherGroup]: Торговец другой группировки (привязан к конкретной фракции). Параметр Need игнорируется — см. «Рудименты и не трогать» (dont-touch)
+[World], [TraderX]: Нейтральные торговцы типа Сидоровича, Бармена и т.д. X — порядковый номер (Trader1, Trader2, и т.д.). Число торговцев данного типа можно добавлять сколько потребуется (лимита нет)
+
+!WARN: YourGroup и OtherGroup — параметр Need не работает. У торговцев группировок ([YourGroup] и [OtherGroup]) движок автоматически привязывает торговца к его группировке и игнорирует значение Need. Указывать его в этих секциях бессмысленно. Подробнее: «Рудименты и не трогать» (dont-touch).
+
+Параметры торговца
+Need [INT ≥0]: Индекс территории, которой необходимо владеть для доступа к торговцу. 0 — торговец доступен при владении любой территорией. Работает только в секциях [World] / [TraderX]
+Cost [INT]: Стоимость попытки установить связь с торговцем в КР. 0 — бесплатно
+Chance [INT 1-100]: Шанс успеха попытки установить связь в %. 100 — гарантированный успех, 50 — 50/50
+StartStep [INT ≥0]: Номер хода, с которого торговец становится доступен. 0 — доступен с самого начала игры
+EndStep [INT ≥0]: Номер хода, после которого торговец становится недоступен. 0 — торговец не отключается никогда
+Coef-Sell-X [FLOAT, comma]: Множитель цены продажи игроком товаров категории X. 1,0 = 100% цены, 0,5 = 50% цены (торговец даёт меньше денег). Задаётся отдельно для каждой категории
+Coef-Buy-X [FLOAT, comma]: Множитель цены покупки игроком товаров категории X. 1,0 = 100% цены, 1,5 = 150% цены (торговец продаёт дороже). Задаётся отдельно для каждой категории
+
+Категории товаров
+Множители Coef-Sell-X и Coef-Buy-X настраиваются по категориям товаров. Категория товара задаётся в его конфиге параметром Category (см. Goods).
+
+🏷 9 стандартных категорий
+Food — еда
+Medic — медикаменты
+Supplies — боеприпасы
+Parts — части тел мутантов
+Arts — артефакты
+Weapon — оружие
+Armor — броня
+BuildingMaterials — строительные материалы
+AmmoComponents — компоненты боеприпасов
+
+!NOTE: Можно создавать свои категории — просто укажите новое имя в Category товара и добавьте соответствующий Coef-Sell-NewCategory в Traders.ini.
+
+
+Как работает торговля — логика
+Когда игрок пытается открыть магазин торговца, игра выполняет проверку:
+Доступен ли торговец по времени? — проверяется StartStep и EndStep
+Владеет ли игрок нужной территорией? — проверяется Need (для [World] и [TraderX])
+Достаточно ли КР? — списывается Cost
+Бросок на успех — случайное число от 1 до 100 сравнивается с Chance. При успехе магазин открывается, при неудаче — игрок теряет КР впустую
+Проверка дипломатии — для [OtherGroup] проверяется CanTradeIf* в Groups
+
+!NOTE: Совет по балансу множителей. Coef-Sell (игрок продаёт): чем меньше значение, тем невыгоднее продавать. Обычно 0,4–0,8. Coef-Buy (игрок покупает): чем больше значение, тем дороже покупка. Обычно 1,2–2,0. Разница между Sell и Buy создаёт прибыль торговца и дефицит игрока — это основа экономики.
+
+# receipts.html — Рецепты модифицирования через мастерскую (Receipts)
+
+Общее
+Папка Receipts\ в сценарии состоит из ini-файлов, каждый из которых представляет один рецепт для мастерской. Каждый файл содержит один блок [Main].
+
+!NOTE: Как это работает. Рецепт описывает превращение: входные ресурсы → результат. Игрок тратит входные ресурсы в мастерской и получает результат. Это основной механизм прокачки амуниции. См. «С чего начать мододелу?» (start#newbegining).
+
+Параметры
+Upgrade0-Resource [NAME]: Техническое название ресурса из Goods, которое требуется для улучшения (первый входной слот)
+Upgrade0-Quantity [INT]: Сколько нужно ресурса для улучшения. Можно не указывать, по умолчанию 1
+Upgrade1-Resource [NAME]: Техническое название второго ресурса (второй входной слот, опционален)
+Upgrade1-Quantity [INT]: Сколько нужно второго ресурса. Можно не указывать, по умолчанию 1
+Result-Resource [NAME]: Техническое название ресурса или предмета из Goods, в которое улучшается
+Result-Quantity [INT]: Сколько получится ресурса после улучшения. Можно не указывать, по умолчанию 1
+RequiredBuildings [NAMES]: Список построек из Buildings через запятую, необходимых для разблокировки рецепта
+
+!WARN: Максимум 2 входных слота. Upgrade0- и Upgrade1- — это жёсткий лимит движка. Третьего входного ресурса в рецепте быть не может. См. Лимиты движка (limits).
+
+Структура рецепта
+!EXAMPLE:
+[Main]
+; Вход — слот 0 (обязательный)
+Upgrade0-Resource=PM
+Upgrade0-Quantity=1
+; Вход — слот 1 (опциональный, можно не указывать)
+Upgrade1-Resource=Supplies
+Upgrade1-Quantity=50
+; Результат
+Result-Resource=PM-Upgraded
+Result-Quantity=1
+; Какая постройка должна быть, чтобы рецепт открылся
+RequiredBuildings=Workshop
+
+!NOTE: Имена PM, Parts, PM-Upgraded, Workshop в примере — условные. Подставьте свои технические названия из папок Goods/ и Buildings/.
+
+!EXAMPLE:
+; Пример реального рецепта (улучшение пистолета ПМ из дефолтного конфига)
+[Main]
+Upgrade0-Resource=PM
+Upgrade0-Quantity=1
+Upgrade1-Resource=Parts
+Upgrade1-Quantity=3
+Result-Resource=PM-Upgraded
+Result-Quantity=1
+RequiredBuildings=Workshop
+; Этот рецепт требует 1 пистолет ПМ и 3 части мутантов для получения улучшенного ПМ.
+; Рецепт доступен только если на территории есть постройка Workshop.
+
+!NOTE: Локализация рецепта. У рецепта нет собственного ключа в messages.csv. Игра отображает названия, которые берутся из [Goods.*].
+
+Стоимость и продуктивность модификации
+Цена модификации (в рамках мощности мастерских) считается не в рецепте, а в Settings.ini:
+BasedCostForUpgradeAmmo-Money [FLOAT, comma]: Базовый множитель цены на модификацию амуниции в деньгах (можно указывать дробные значения через запятую: 1,5)
+BasedCostForUpgradeAmmo-Comands [INT]: Базовая стоимость в КР на привлечение одной мастерской к модификации амуниции
+BasedImprovementProductivityWorkshop [INT]: Базовая продуктивность одной мастерской для модификации чего-либо в течение хода
+
+!NOTE: Продуктивность можно поднять улучшением. Тип улучшения ImprovementProductivityWorkshop из upgrades/ даёт «+ к производительности мастерских». Коэффициент задаётся в параметре Bonus.
+
+# typelands.html — Типы местности территорий (TypeLands)
+
+Общее
+Папка TypeLands\ в сценарии содержит типы местности. Название файла — техническое название типа местности, который используется в Territories.ini. Каждый файл содержит один блок [Main].
+
+!NOTE: Смешанная область действия. В отличие от заместителей, идеологий, лидеров и правил (у которых все бонусы глобальные), у типа местности часть бонусов территориальные (📍), а часть глобальные (🌍). См. Матрицу бонусов (matrix-bonus).
+
+Локализация (размещать в messages.csv)
+!LOC:
+[TypeLands.].Name - название, отображаемое в игре
+
+Параметры
+
+!NOTE: Все значения — [INT]. Отрицательные значения = штрафы вместо бонусов.
+
+BonusForEnemySpy [INT] 📍: Модификатор шанса успеха вражеских разведчиков в %
+BonusSearchArts [INT] 📍: Модификатор к поиску артефактов в %
+BonusDamagePVPForAtackers [INT] 📍: Модификатор урона нападающим в PvP-боях %
+BonusDamagePVPForDefenders [INT] 📍: Модификатор урона обороняющимся в PvP-боях %
+BonusDamagePVMForAtackers [INT] 📍: Модификатор урона нападающим в PvM-боях (против мутантов) %
+BonusDamagePVMForDefenders [INT] 📍: Модификатор урона обороняющимся в PvM-боях %
+BonusRangeForAtackers [INT] 📍: Модификатор дальности атаки нападающим %
+BonusRangeForDefenders [INT] 📍: Модификатор дальности атаки обороняющимся %
+BootyParts [INT] 📍: Абсолютная прибавка к трофейным частям мутантов после боя на этой территории
+BootyCash [INT] 📍: Абсолютная прибавка к трофейным деньгам после боя на этой территории
+Recruit-Novice [INT] 📍: Ежеходный прирост новичков на этой территории
+Recruit-Skilled [INT] 📍: Ежеходный прирост опытных на этой территории
+Recruit-Veteran [INT] 📍: Ежеходный прирост ветеранов на этой территории
+Recruit-Master [INT] 📍: Ежеходный прирост мастеров на этой территории
+LimitRecruit-Novice [INT] 🌍: Глобальный бонус к максимальному лимиту новичков
+LimitRecruit-Skilled [INT] 🌍: Глобальный бонус к максимальному лимиту опытных
+LimitRecruit-Veteran [INT] 🌍: Глобальный бонус к максимальному лимиту ветеранов
+LimitRecruit-Master [INT] 🌍: Глобальный бонус к максимальному лимиту мастеров
+Comands [INT] 🌍: Глобальный ежедневный прирост КР
+LimitComands [INT] 🌍: Глобальный бонус к максимальному лимиту КР
+BonusForCostCPMainBase [INT] 📍: Модификатор стоимости смены главной базы в КР. Указывайте отрицательное число, если нужно уменьшить цену
+BonusPercentLostResources [INT] 📍: Модификатор % потери ресурсов при потере главной базы. Чем больше значение, тем больше теряется. Указывайте отрицательное число, если нужно уменьшить потери
+CountBuildings [INT]: Число построек, которые могут быть построены на этом типе местности (вместимость)
+
+!WARN: CountBuildings — не бонус. Это вместимость территории, а не бонус. Он не суммируется ни с какими другими источниками и не участвует в Матрице бонусов (matrix-bonus).
+
+Чего у типа местности нет
+По сравнению с заместителями, идеологиями, лидерами и правилами, у TypeLands отсутствуют:
+BonusForSpy: ❌ нет
+BonusForCostCPSpy: ❌ нет
+BonusForCostCPAdvisor: ❌ нет
+
+💡 Пример
+!EXAMPLE:
+; Файл: TypeLands\Cordon.ini
+[Main]
+CountBuildings=3
+BonusForEnemySpy=-5
+BonusSearchArts=10
+BonusDamagePVPForAtackers=5
+BonusDamagePVPForDefenders=5
+BonusDamagePVMForAtackers=0
+BonusDamagePVMForDefenders=0
+BonusRangeForAtackers=3
+BonusRangeForDefenders=3
+BootyParts=2
+BootyCash=50
+Recruit-Novice=1
+Recruit-Skilled=0
+Recruit-Veteran=0
+Recruit-Master=0
+LimitRecruit-Novice=5
+LimitRecruit-Skilled=3
+LimitRecruit-Veteran=2
+LimitRecruit-Master=1
+Comands=2
+LimitComands=10
+BonusForCostCPMainBase=-5
+BonusPercentLostResources=-10
+
+# achievements.html — Достижения (Achievements.ini)
+
+Общее
+Файл Achievements.ini находится в папке каждого сценария (например, data/campaigns/shoc/1story/Achievements.ini) и описывает достижения, которые игрок может получить в этом сценарии.
+
+Локализация (размещать в messages.csv)
+!LOC:
+[Achievements.].Name - название ачивки
+[Achievements.].Desc - полное описание для окна события
+[Achievements.].Desc-Logo - описание в окне выбора сценария
+
+!NOTE: «Название» — это техническое название секции ачивки из [Achiv-X].
+
+Параметры ачивки
+ID [NAME]: обязательный. Уникальный идентификатор для сохранения. Должен отличаться от всех ID других ачивок во всех файлах Achievements.ini игры. Рекомендуемый формат: ID = modNameYourModX, где NameYourMod — название мода без пробелов, а X — двухзначный номер (например, 01, 02, 03)
+Type [ENUM]: Тип условия получения ачивки. values: ZonaControl, KillFraction, Conquest, IdeologyOnly, EventFlag. См. таблицу ниже
+DifficultyLevel [ENUM]: Требуемый уровень сложности. values: Any (любой), Novice (новичок), Skilled (опытный), Veteran (ветеран), Master (мастер)
+Img [PATH]: Путь к изображению ачивки для окна события при её получении
+ImgLogoEnabled [PATH]: Путь к изображению ачивки для окна выбора сценария (когда ачивка уже получена). Для неполученных ачивок движок автоматически делает это изображение чёрно-белым
+SoundFX [BOOL]: Воспроизводить ли звук при получении ачивки (True или False)
+SoundFXWayFile [PATH]: Путь к звуковому файлу, который воспроизводится при получении ачивки
+StartStep [INT]: Ход, с которого начинается проверка условия ачивки (включительно). Значение 0 означает «с самого начала игры»
+LimitStep [INT]: Ход, до которого проверяется условие ачивки (включительно). Значение 0 означает «без ограничения по ходам»
+NotWorkFractionCount [INT]: Количество фракций, которые не учитываются при проверке ачивки (обычно это нейтральные или неигровые фракции)
+FractionX [NAME]: Техническое название фракции, которая игнорируется. X — порядковый номер от 1 до значения NotWorkFractionCount
+
+Параметры для конкретных типов ачивок
+
+Тип: ZonaControl (Контроль территорий)
+CountNeedZona [INT]: Количество территорий, которые нужно контролировать
+Zona-X [INT]: Номер территории, которую нужно контролировать. X — порядковый номер от 1 до значения CountNeedZona
+
+Тип: KillFraction (Пережить уничтожение фракции)
+TargetKillFraction [NAME]: Техническое название фракции, уничтожение которой нужно пережить
+
+Тип: Conquest (Захват всей Зоны)
+Не требует дополнительных параметров. Ачивка выдаётся, когда игрок захватывает все территории на карте.
+
+Тип: IdeologyOnly (Смена идеологии)
+TargetIdeology [NAME]: Техническое название идеологии, которую должна принять фракция игрока
+
+Тип: EventFlag (Активация ивент-флага)
+TargetFlag [NAME]: Техническое наименование ивент-флага, который должен быть активирован в событии из Events_Story.ini. Движок отслеживает результат выполнения ивента по системе, схожей с ивент-флагами
+
+Типы ачивок (сводная таблица)
+ZonaControl: Контролировать указанные территории. Дополнительные параметры: CountNeedZona, Zona-X
+KillFraction: Пережить уничтожение указанной фракции. Дополнительные параметры: TargetKillFraction
+Conquest: Захватить всю Зону. Дополнительные параметры: —
+IdeologyOnly: Сменить идеологию группировки на указанную. Дополнительные параметры: TargetIdeology
+EventFlag: Активировать указанный ивент-флаг в событии. Дополнительные параметры: TargetFlag
+
+!WARN: Не забудьте включить ачивки в сценарии. Достижения работают только если в Settings.ini задано Achievements=True и параметр AchievementsCount совпадает с реальным числом ачивок в файле.
+
+!WARN: Лимит ачивок. Максимальное число ачивок в одном сценарии = 16
+
+💡 Пример полной секции ачивки
+!EXAMPLE:
+[Achiv-1]
+ID=myMod01
+Type=ZonaControl
+DifficultyLevel=Any
+Img=gfx\icons\achievements_SHOC\Taked.png
+ImgLogoEnabled=gfx\icons\achievements_SHOC\unlock\1.png
+SoundFX=True
+SoundFXWayFile=sfx\achiv.wav
+StartStep=0
+LimitStep=0
+CountNeedZona=3
+Zona-1=85
+Zona-2=108
+Zona-3=191
+NotWorkFractionCount=2
+Fraction1=Mutants
+Fraction2=Zombie
+
+# background-objects.html — Фоновые иконки объектов на карте (BackgroundObjects.ini)
+
+Общее
+Файл содержит список декоративных (некликабельных) объектов на глобальной карте сценария. Находится в папке сценария рядом с другими файлами карты.
+
+!NOTE: Что такое декоративный объект. Это чисто декоративная иконка на глобальной карте: она не является территорией, не взаимодействует с игроком и ни на что не влияет в игровом процессе. Подходит для визуальных отметок — например, знака радиации, аномалии, руин или любого другого атмосферного элемента.
+
+Параметры
+[Main] → Count [INT]: Количество декоративных объектов в файле. Должно точно совпадать с числом блоков [Element]
+[Element] → X [INT]: Горизонтальная координата объекта в пикселях (от левого края текстуры карты)
+[Element] → Y [INT]: Вертикальная координата объекта в пикселях (от верхнего края текстуры карты)
+[Element] → Name [PATH]: Относительный путь к файлу изображения (PNG). Например, gfx\Elements\GlobalMap\anomaliesVulkan.agr
+
+Где  — порядковый индекс объекта (от 1 до значения Count).
+
+Пример структуры
+!EXAMPLE:
+[Main]
+Count=2
+
+[Element1]
+X=120
+Y=340
+Name=gfx\Elements\GlobalMap\anomaliesVulkan.agr
+
+[Element2]
+X=880
+Y=210
+Name=gfx\Elements\GlobalMap\DarkRuins.png
+
+!WARN: Что будет, если Count не совпадёт. Если число в Count больше реального количества блоков [Element] — игра выдаст ошибку при загрузке сценария. Если число меньше реального — движок просто прочитает столько элементов, сколько указано в Count, остальные проигнорирует. Индексы элементов должны идти строго подряд, начиная с 1.
+
+# difficulty.html — Настройка сложности (Difficulty.ini)
+
+Общее
+Файл Difficulty.ini определяет стартовые бонусы и штрафы для игрока и бота в зависимости от выбранного уровня сложности. Файл содержит 8 жёстко закодированных секций (4 для игрока + 4 для бота).
+
+!WARN: Названия секций — хардкод. Технические названия в [] нельзя переименовывать, так как они захардкожены в движке. Также нельзя добавлять новые секции. Можно только изменять значения параметров внутри существующих секций. См. Лимиты движка (limits).
+
+8 жёстко закодированных секций
+[Novice-Player]: Для игрока — бонусы для новичка
+[Skilled-Player]: Для игрока — бонусы для опытного (обычно нулевые значения)
+[Veteran-Player]: Для игрока — штрафы для ветерана
+[Master-Player]: Для игрока — штрафы для мастера (обычно отрицательные значения)
+[Novice-AI]: Для бота — штрафы для бота-новичка (обычно отрицательные значения)
+[Skilled-AI]: Для бота — бонусы для опытного бота (обычно нулевые значения)
+[Veteran-AI]: Для бота — бонусы для бота-ветерана
+[Master-AI]: Для бота — бонусы для мастера-бота
+
+Параметры
+!NOTE: Все значения — [INT]. Могут быть положительными (бонусы) или отрицательными (штрафы).
+
+AddMoney [INT]: Деньги на старте. Пример: AddMoney=500 (новичок), AddMoney=-250 (мастер)
+AddComands [INT]: Командные ресурсы (КР) на старте. Пример: AddComands=10 (новичок), AddComands=-5 (мастер)
+AddSupplies [INT]: Боеприпасы на старте. Пример: AddSupplies=200
+AddMedic [INT]: Медикаменты на старте. Пример: AddMedic=20
+AddFood [INT]: Продукты на старте. Пример: AddFood=100
+AddLowArts [INT]: Дешёвые артефакты на старте. Пример: AddLowArts=2
+AddMediumArts [INT]: Дорогие артефакты на старте. Пример: AddMediumArts=1
+AddHighArts [INT]: Редкие артефакты на старте. Пример: AddHighArts=0
+AddLowParts [INT]: Дешёвые части тел мутантов на старте. Пример: AddLowParts=0
+AddMediumParts [INT]: Дорогие части тел мутантов на старте. Пример: AddMediumParts=0
+AddHighParts [INT]: Редкие части тел мутантов на старте. Пример: AddHighParts=0
+AddNovice [INT]: Рекруты-новички на старте. Пример: AddNovice=10
+AddSkilled [INT]: Опытные рекруты на старте. Пример: AddSkilled=5
+AddVeteran [INT]: Ветераны на старте. Пример: AddVeteran=2
+AddMaster [INT]: Мастера на старте. Пример: AddMaster=1
+
+Как это работает в игре
+При старте сценария игрок выбирает уровень сложности в меню. Движок берёт значения из соответствующей секции:
+Для игрока — из секций [Novice-Player], [Skilled-Player], [Veteran-Player], [Master-Player]
+Для ботов — из секций [Novice-AI], [Skilled-AI], [Veteran-AI], [Master-AI]
+
+Значения прибавляются к стартовым ресурсам группировки, заданным в Main.ini (main) → [Group-Resources].
+
+!EXAMPLE:
+; Файл: Difficulty.ini
+[Novice-Player]
+AddMoney=500
+AddComands=10
+AddSupplies=200
+AddMedic=20
+AddFood=100
+AddLowArts=2
+AddMediumArts=1
+AddHighArts=0
+AddLowParts=0
+AddMediumParts=0
+AddHighParts=0
+AddNovice=10
+AddSkilled=5
+AddVeteran=2
+AddMaster=1
+
+
+!WARN: Не меняйте названия секций. Если вы измените название секции (например, [Novice-Player] → [Easy-Player]), движок не найдёт нужные значения и будет использовать нули.
+
+!NOTE: Совет по балансу.
+Novice — щедрые бонусы для новичков (много денег, ресурсов, рекрутов)
+Skilled — умеренные бонусы
+Veteran — нейтральный уровень (все нули — стартовые ресурсы только из Main.ini (main))
+Master — штрафы для опытных игроков (отрицательные значения)
+
+Связь с достижениями
+В Achievements.ini (achievements) параметр DifficultyLevel позволяет требовать определённый уровень сложности для получения ачивки. Значения: Any, Novice, Skilled, Veteran, Master.
+
+# tutorial.html — Приветственное окно после запуска сценария (Tutorial.ini)
+
+Общее
+Файл Tutorial.ini описывает многостраничное окно обучения, которое показывается игроку после старта сценария. В игре его можно увидеть в самом обучении и в сценарии «Обрыв связи».
+
+Локализация (размещать в messages.csv)
+!LOC:
+[Tutorial.].Text - отображаемый текст страницы
+
+Где  — это имя секции в квадратных скобках (например, Page-1, Page-2).
+
+Как включить окно обучения
+Чтобы окно обучения открывалось автоматически после старта сценария, в Settings.ini (settings) установите параметр:
+
+!EXAMPLE:
+[Main]
+isTutorial=True
+
+По умолчанию False — окно не открывается.
+
+Секция [Main] — основные параметры
+CountPages [INT >0]: Число страниц в обучении. Должно совпадать с реальным количеством секций [Page-X]. Лимита сверху нет
+Face [PATH]: Путь к портрету персонажа в окне обучения (по умолчанию для всех страниц). Можно переопределить на каждой странице отдельно
+Img [PATH]: Путь к изображению на странице (по умолчанию для всех страниц). Если пусто или параметр отсутствует — изображения не будет. Можно переопределить на каждой странице отдельно
+
+Секции [Page-X] — страницы обучения
+По одной секции на каждую страницу. X — порядковый номер страницы (начинается с 1, без пропусков).
+
+Face [PATH]: Опционально. Переопределяет портрет персонажа для этой страницы. Если не указан — используется Face из [Main]
+Img [PATH]: Опционально. Переопределяет изображение для этой страницы. Если не указан — используется Img из [Main]. Если нужен пустой фон на конкретной странице — укажите Img= (пусто)
+
+!WARN: Текст страницы — только через локализацию. Сам текст страницы не указывается в Tutorial.ini. Его нужно прописать в messages.csv ключом [Tutorial.Page-X].Text. Без локализации страница будет пустой.
+
+!EXAMPLE:
+; Файл: Tutorial.ini
+[Main]
+CountPages=3
+Face=gfx\tutorial\default_face.png
+Img=gfx\tutorial\default_background.png
+
+[Page-1]
+; Используем стандартный Face и Img из [Main]
+; Текст: [Tutorial.Page-1].Text в messages.csv
+
+[Page-2]
+; Переопределяем портрет (другой персонаж говорит)
+Face=gfx\tutorial\scientist_face.png
+Img=gfx\tutorial\psy_installation.png
+
+[Page-3]
+; Переопределяем оба параметра
+Face=gfx\tutorial\commander_face.png
+Img=gfx\tutorial\final_screen.png
+
+Соответствующие строки в messages.csv:
+
+!EXAMPLE:
+[Tutorial.Page-1].Text;Добро пожаловать в сценарий! В этом обучении вы узнаете основные механики игры.
+[Tutorial.Page-2].Text;Пси-излучатель — мощное оружие. Его можно включать и выключать через панель управления.
+[Tutorial.Page-3].Text;Удачи, сталкер! Зона ждёт своих героев.
+
+
+!NOTE: Практические советы.
+3–5 страниц — оптимальное количество. Больше — игрок устанет читать
+Короткий текст — 2–3 предложения на страницу. Длинные простыни никто не читает
+Разные персонажи — смена портрета между страницами делает обучение живым, как диалог нескольких персонажей
+Изображения — скриншоты интерфейса или схем помогают понять механику быстрее, чем текст
+
+# interface.html — Настройки игрового интерфейса (interface.ini)
+
+Общее
+Файл interface.ini отвечает за изображения кнопок, значков, фонов и звуков игрового интерфейса. Через него можно перерисовать практически всю графику UI под стиль своего сценария.
+
+Механизм наследования (главная особенность)
+!NOTE: Не копируйте весь файл! Для того чтобы изменить один значок в своём сценарии, нет необходимости полностью копировать файл к себе. Достаточно:
+Создать в папке своего сценария файл interface.ini
+Добавить в него только ту секцию и тот параметр, который хочется изменить
+Движок автоматически подгрузит остальные значения из data\default\interface.ini.
+
+!EXAMPLE:
+; Файл: МойСценарий\interface.ini
+[Graphics-In-game]
+BuyUnits-Fon=gfx\ui\myscenario\buyunits_background.png
+
+Всё! Остальные параметры фона, кнопок и звуков будут взяты из дефолтного файла.
+
+!EXAMPLE:
+; Файл: МойСценарий\interface.ini
+[Graphics-In-game]
+BuyUnits-Fon=gfx\ui\myscenario\buyunits.png
+Recruit-Fon=gfx\ui\my_scenario\recruit.png
+Diplomacy-Fon=gfx\ui\my_scenario\diplomacy.png
+
+[Graphics-BTN-Standart]
+Button-OK=gfx\ui\myscenario\btnok.png
+Button-Cancel=gfx\ui\myscenario\btncancel.png
+
+[Sounds]
+ClickButton=sfx\ui\my_click.wav
+
+Где находится полный список параметров
+Полный список всех доступных параметров и их дефолтных значений находится в файле: data\default\interface.ini. Откройте его в текстовом редакторе, чтобы увидеть все секции и параметры, которые можно переопределить в своём сценарии.
+
+Секции, актуальные для сценария
+Хотя в дефолтном файле много секций, для большинства сценариев важны только эти 6:
+
+[Graphics-In-game]: Фоны внутриигровых окон (меню найма бойцов, дипломатии, склада, разведки и т.д.), иконки ресурсов, элементов управления
+[MultiTexture]: Составные текстуры, атласы изображений, используемые в разных частях интерфейса
+[Graphics-BTN-Standart]: Изображения кнопок в обычном состоянии (без наведения)
+[Graphics-BTN-Active]: Изображения кнопок при наведении курсора
+[Graphics-RadioBTN]: Переключатели (radio buttons), чекбоксы и подобные элементы
+[Sounds]: Звуки интерфейса: клики кнопок, открытие/закрытие окон, уведомления
+
+
+Практические советы
+!WARN: Сохраняйте размеры оригиналов. Если оригинальная кнопка имеет размер 120×40 пикселей, ваша замена должна быть такого же размера. Иначе кнопка может: растянуться или сжаться; перекрыть соседние элементы; оставить пустые области вокруг.
+
+!NOTE: Единый стиль. При создании собственного UI придерживайтесь единой цветовой палитры и стиля. Смешение стилей (например, пиксель-арт рядом с фотореалистичными текстурами) выглядит неаккуратно.
+
+!NOTE: Используйте прозрачность. Формат PNG с альфа-каналом позволяет создавать элементы с прозрачным фоном — это особенно полезно для кнопок и иконок, которые должны органично вписываться в разные фоны.
+
+!NOTE: Не нашли нужный параметр? Если в справке нет описания конкретного параметра interface.ini, откройте дефолтный файл data\default\interface.ini — там все параметры с комментариями. Если всё равно непонятно
+
+Форматы изображений и звуков
+Изображения: png (рекомендуется, поддерживает прозрачность), jpg, bmp. Анимированный gif / agr поддерживается, но не для всех элементов. См. FAQ#8 (faq#faq-8)
+Звуки: wav, mp3, ogg

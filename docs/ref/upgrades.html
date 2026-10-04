@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Upgrades — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="upgrades">
+            <h2>⬆ Улучшения (upgrades)</h2>
+
+            <p>Папка <code>upgrades\</code> в сценарии состоит из ini-файлов, каждый из которых представляет одно улучшение.
+               <strong>Название файла — техническое название улучшения</strong>, которое используется в других конфигах.
+               Каждый файл содержит один блок <code>[Main]</code>.</p>
+
+            <div class="callout callout-info">
+                <div class="callout-title">📊 Как работают улучшения</div>
+                Улучшения дают глобальные бонусы группировке после их изучения.
+                Тип эффекта <strong>захардкожен в движке</strong>, но коэффициент <code>Bonus</code> можно менять.
+                Создать улучшение с новым типом эффекта <strong>нельзя</strong> — только использовать один из 15 доступных типов.
+            </div>
+
+            <h3>Локализация (размещать в messages.csv)</h3>
+<pre><code>[Upgrades.&lt;техническое название&gt;].Name   - название, отображаемое в игре
+[Upgrades.&lt;техническое название&gt;].Desc   - описание улучшения</code></pre>
+
+            <h3>Параметры</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Type</code></td><td>@@ВЫБОР</td><td>Тип улучшения (один из 15, см. таблицу ниже). <strong>Захардкожен</strong> — определяет, какой эффект даёт улучшение</td></tr>
+                        <tr><td><code>SortOrder</code></td><td>@@ЦЕЛОЕ</td><td>Порядок отображения в окне улучшений. Чем меньше значение, тем раньше иконка в списке</td></tr>
+                        <tr><td><code>Cost_Comands</code></td><td>@@ЦЕЛОЕ</td><td>Стоимость изучения в командных ресурсах (КР)</td></tr>
+                        <tr><td><code>Cost_Money</code></td><td>@@ЦЕЛОЕ</td><td>Стоимость изучения в деньгах</td></tr>
+                        <tr><td><code>Bonus</code></td><td>@@ЦЕЛОЕ</td><td>Коэффициент бонуса. Может быть положительным или отрицательным. Интерпретация зависит от типа улучшения</td></tr>
+                        <tr><td><code>Need</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название другого улучшения (имя файла без <code>.ini</code>), которое должно быть изучено перед этим</td></tr>
+                        <tr><td><code>Logo-NonActive</code></td><td>@@ПУТЬ</td><td>Путь к иконке улучшения (основное изображение)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Рудименты: <code>Logo-Active</code>, <code>Logo-Purchased</code>, <code>Logo-PurchasedActive</code></div>
+                Эти три параметра <strong>не нужно указывать</strong> в конфиге — движок автоматически подставит пути к изображениям
+                на основе <code>Logo-NonActive</code> и технического названия улучшения.
+            </div>
+
+            <h3>15 типов улучшений</h3>
+            <p>Типы улучшений захардкожены в движке. Создать новый тип <strong>нельзя</strong>.</p>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Тип</th><th>Эффект</th><th>Пример значения <code>Bonus</code></th></tr></thead>
+                    <tbody>
+                        <tr><td><code>UpRecruitsCountComming</code></td><td>Увеличивает ежедневный прирост рекрутов каждого ранга</td><td><code>Bonus=1</code> — +1 рекрут каждого ранга в день</td></tr>
+                        <tr><td><code>UpChanceSearchArtsCount</code></td><td>Увеличивает шанс поиска артефактов</td><td><code>Bonus=10</code> — +10% к шансу поиска</td></tr>
+                        <tr><td><code>UpCRCountComming</code></td><td>Увеличивает ежедневный прирост командных ресурсов</td><td><code>Bonus=4</code> — +4 КР в день</td></tr>
+                        <tr><td><code>UpPartCountAfterKillMutant</code></td><td>Увеличивает трофейные части мутантов после боя</td><td><code>Bonus=1</code> — +1 часть мутанта к базовому дропу</td></tr>
+                        <tr><td><code>UpCashCountAfterKillStalker</code></td><td>Увеличивает трофейные деньги после боя со сталкерами</td><td><code>Bonus=1</code> — +1 к деньгам к базовому дропу</td></tr>
+                        <tr><td><code>UpChanceCountForReconnaissance</code></td><td>Увеличивает шанс успеха разведчиков</td><td><code>Bonus=10</code> — +10% к шансу успеха разведки</td></tr>
+                        <tr><td><code>DownCountCRForKillMutants</code></td><td>Уменьшает стоимость зачистки мутантов в КР</td><td><code>Bonus=2</code> — −2 КР к стоимости зачистки</td></tr>
+                        <tr><td><code>DownCountCRForMoveAndBattle</code></td><td>Уменьшает стоимость передислокации и атак в КР</td><td><code>Bonus=1</code> — −1 КР к стоимости действий</td></tr>
+                        <tr><td><code>DownCountCRForReconnaissance</code></td><td>Уменьшает стоимость отправки разведчиков в КР</td><td><code>Bonus=2</code> — делит стоимость на 2 (или уменьшает на 50%)</td></tr>
+                        <tr><td><code>UpRecruitsCountLimit</code></td><td>Увеличивает максимальный лимит рекрутов каждого ранга</td><td><code>Bonus=1</code> — +1 к лимиту каждого ранга</td></tr>
+                        <tr><td><code>UpCRCountLimit</code></td><td>Увеличивает максимальный лимит командных ресурсов</td><td><code>Bonus=15</code> — +15 к лимиту КР</td></tr>
+                        <tr><td><code>ImprovementProductivityWorkshop</code></td><td>Увеличивает продуктивность мастерских</td><td><code>Bonus=2</code> — +2 к производительности мастерских</td></tr>
+                        <tr><td><code>IdeologyChangeBonus</code></td><td>Изменяет стоимость смены идеологии в КР</td><td><code>Bonus=-7</code> — −7 КР к стоимости смены идеологии</td></tr>
+                        <tr><td><code>RearmBonus</code></td><td>Изменяет стоимость перевооружения в КР</td><td><code>Bonus=-11</code> — −11 КР к стоимости перевооружения</td></tr>
+                        <tr><td><code>None</code></td><td>Не даёт никакого эффекта. Используется как «заглушка» для создания веток дерева технологий</td><td><code>Bonus=0</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Дерево технологий (параметр <code>Need</code>)</h3>
+            <p>Параметр <code>Need</code> создаёт зависимости между улучшениями. Если указано <code>Need=Upgrade-1</code>,
+               то улучшение <code>Upgrade-2</code> нельзя изучить, пока не изучено <code>Upgrade-1</code>.</p>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Пример дерева технологий</div>
+<pre><code>; Upgrade-1.ini — базовое улучшение (без требований)
+[Main]
+Type=UpRecruitsCountLimit
+SortOrder=10
+Cost_Comands=5
+Cost_Money=1000
+Bonus=1
+Logo-NonActive=gfx\icons\technologies\1.png
+
+; Upgrade-2.ini — требует Upgrade-1
+[Main]
+Type=UpRecruitsCountComming
+SortOrder=20
+Cost_Comands=8
+Cost_Money=1500
+Bonus=1
+Need=Upgrade-1
+Logo-NonActive=gfx\icons\technologies\2.png
+
+; Upgrade-3.ini — требует Upgrade-2
+[Main]
+Type=UpRecruitsCountLimit
+SortOrder=30
+Cost_Comands=10
+Cost_Money=2000
+Bonus=2
+Need=Upgrade-2
+Logo-NonActive=gfx\icons\technologies\3.png</code></pre>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">📌 Блокировка улучшений</div>
+                Улучшения можно полностью заблокировать в сценарии через параметр <code>ExcludedUpgrades</code>
+                в <a href="settings.html#Settings">Settings.ini</a>. Если заблокированное улучшение указать в <a href="ai.html#AI">AI.ini</a>,
+                игра выдаст ошибку на ходе бота.
+            </div>
+
+            <h3>Как добавить новое улучшение — чек-лист</h3>
+            <ol>
+                <li>Создайте ini-файл в папке <code>upgrades\</code> сценария. Имя файла = техническое название улучшения</li>
+                <li>Заполните блок <code>[Main]</code> с параметрами (<code>Type</code>, <code>SortOrder</code>, <code>Cost_Comands</code>, <code>Cost_Money</code>, <code>Bonus</code>)</li>
+                <li>Если нужно — укажите <code>Need</code> для создания зависимости</li>
+                <li>Укажите <code>Logo-NonActive</code> — путь к иконке</li>
+                <li>Создайте <strong>1 файл изображений</strong> с правильным именем:
+                    <ul>
+                        <li><code>&lt;имя&gt;.png</code> — основная иконка</li>
+                    </ul>
+                </li>
+                <li>Добавьте локализацию в <a href="messages.html#Messages">messages.csv</a></li>
+            </ol>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Пример полного файла улучшения</div>
+<pre><code>; Файл: upgrades\Upgrade-MyMod-1.ini
+[Main]
+Type=UpChanceSearchArtsCount
+SortOrder=500
+Cost_Comands=20
+Cost_Money=10000
+Bonus=15
+Need=Upgrade-10
+Logo-NonActive=gfx\icons\technologies\mymod_1.png</code></pre>
+                Не забудьте создать 1 файл изображения:
+                <code>mymod_1.png</code>.
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Где ещё используется</div>
+                <ul>
+                    <li><a href="main.html#Main">Main.ini</a> — <code>[Group-Upgrades]</code> (улучшения, купленные со старта)</li>
+                    <li><a href="ai.html#AI">AI.ini</a> — какие улучшения бот будет покупать</li>
+                    <li><a href="settings.html#Settings">Settings.ini</a> — <code>ExcludedUpgrades</code> (блокировка улучшений)</li>
+                    <li><a href="events-story.html#Events_Story">Events_Story.ini</a> — тип <code>ChangeStatusUpgrade</code>, параметр <code>TargetUpgradeIndex</code></li>
+                    <li><a href="random-events.html#RandomEvents">RandomEvents</a> — тип <code>ChangeStatusUpgrade</code>, параметр <code>TargetUpgradeIndex</code></li>
+                    <li><a href="messages.html#Messages">messages.csv</a> — ключи <code>[Upgrades.*]</code></li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

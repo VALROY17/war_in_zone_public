@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Файлы карты — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="map">
+            <h2>🗺 Файлы карты — обзор</h2>
+
+            <p>Карта сценария состоит из <strong>набора взаимосвязанных файлов</strong>, которые вместе
+               описывают географию игрового мира: изображение карты, территории, связи между ними,
+               расположение иконок и дополнительную информацию.</p>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Используйте встроенный редактор карт!</div>
+                Большинство файлов карты <strong>не нужно заполнять вручную</strong>.
+                В игре есть встроенный редактор карт, который сам создаёт все необходимые файлы
+                с правильной структурой. Редактировать вручную имеет смысл только
+                <code>settings.ini</code> и локализацию в <code>messages.csv</code>.
+            </div>
+
+            <h3>Сводная таблица файлов карты</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Файл</th><th>Назначение</th><th>Как создаётся</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>map.bmp</code> / <code>map.png</code> / <code>map.jpg</code></td>
+                            <td>Графическое изображение карты</td>
+                            <td>В любом графическом редакторе</td>
+                        </tr>
+                        <tr>
+                            <td><code>map.bt</code></td>
+                            <td>Технический файл — как движок выделяет территории</td>
+                            <td><strong>Только</strong> встроенный редактор</td>
+                        </tr>
+                        <tr>
+                            <td><code>settings.ini</code></td>
+                            <td>Формат карты и локализация</td>
+                            <td>Вручную</td>
+                        </tr>
+                        <tr>
+                            <td><code>Links.ini</code></td>
+                            <td>Связи между территориями (кто с кем граничит)</td>
+                            <td>Встроенный редактор</td>
+                        </tr>
+                        <tr>
+                            <td><code>Territories.ini</code></td>
+                            <td>Статичные параметры территорий (артефакты, рекруты)</td>
+                            <td>Встроенный редактор</td>
+                        </tr>
+                        <tr>
+                            <td><code>Territories_Icon_Coordinates.ini</code></td>
+                            <td>Координаты иконок группировок на территориях</td>
+                            <td>Встроенный редактор</td>
+                        </tr>
+                        <tr>
+                            <td><code>TerritoriesInfo.ini</code></td>
+                            <td>К какой локации относится территория, изображение в меню</td>
+                            <td>Встроенный редактор</td>
+                        </tr>
+                        <tr>
+                            <td><code>Locations/</code></td>
+                            <td>Папка с конфигами локаций (заготовка на будущее)</td>
+                            <td>Вручную</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">📁 Где должны лежать файлы карты для мода?</div>
+                Все файлы карты хранить в папке <code>map/</code> внутри папки сценария
+                (например, <code>data\campaigns\scs\1story\map\</code>).
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🎥 Видео-гайд по связям территорий</div>
+                Рекомендуемое видео о том, как работает <code>Links.ini</code>:
+                <a href="https://youtu.be/JQ2ixqeOpU8" target="_blank" rel="noopener">https://youtu.be/JQ2ixqeOpU8</a>
+                (из <a href="faq.html#faq-18">FAQ №18</a>).
+            </div>
+        </div>
+
+        <!-- ================================ MAP SETTINGS ================================ -->
+        <div class="section" id="mapSettings">
+            <h3>⚙ Конфигурационный файл карты (settings.ini)</h3>
+
+            <p>Небольшой файл с общими настройками карты. Находится в папке <code>map/</code> сценария.</p>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Не путать с Settings.ini сценария!</div>
+                Это <strong>разные файлы</strong>:
+                <ul>
+                    <li><code>map/settings.ini</code> — настройки карты (этот файл)</li>
+                    <li><code>Settings.ini</code> в корне сценария — настройки самого сценария
+                        (см. <a href="settings.html#Settings">Settings.ini</a>)</li>
+                </ul>
+            </div>
+
+            <h4>Параметры</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr>
+                            <td><code>MapFormat</code></td>
+                            <td>@@ВЫБОР</td>
+                            <td>Формат файла изображения карты. Возможные значения: <code>bmp</code>, <code>png</code>, <code>jpg</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>DefaultLocale</code></td>
+                            <td>@@ВЫБОР</td>
+                            <td>Какая локализация текста карты является изначальной.
+                                Значения: <code>ruRU</code>, <code>enUS</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>Пример файла</h4>
+<pre><code>; Файл: map\settings.ini
+[Main]
+MapFormat=bmp
+DefaultLocale=ruRU</code></pre>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🖼 Форматы изображения карты</div>
+                <ul>
+                    <li><strong>bmp</strong> — лучший формат. Движок грузит его быстрее остальных</li>
+                    <li><strong>png</strong> — грузится дольше, но несущественно. Поддерживает сжатие без потери качества</li>
+                    <li><strong>jpg</strong> — карта весит меньше всего, но грузится существенно дольше</li>
+                </ul>
+                <strong>Рекомендация:</strong> используйте <code>bmp</code> для малых и средних карт.
+            </div>
+        </div>
+
+        <!-- ================================ MAP LINKS ================================ -->
+        <div class="section" id="mapLinks">
+            <h3>🔗 Файл связей между территориями (Links.ini)</h3>
+
+            <p>Файл <code>Links.ini</code> описывает, <strong>какая территория с какой граничит</strong>.
+               Движок использует эту информацию для:</p>
+            <ul>
+                <li>Определения возможности атаки/передислокации между территориями</li>
+                <li>Расчёта маршрутов для ботов</li>
+                <li>Определения, является ли территория анклавом (изолированной)</li>
+            </ul>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Создаётся редактором</div>
+                Файл <strong>не нужно заполнять вручную</strong>. Используйте встроенный в игру редактор карт —
+                он автоматически создаст <code>Links.ini</code> на основе того, как вы нарисуете
+                границы территорий на карте.
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Ручное редактирование не рекомендуется</div>
+                При ручном редактировании легко нарушить связи, что приведёт к багам:
+                территории могут стать «отрезанными» от остальной карты, либо наоборот —
+                появятся проходы там, где их быть не должно.
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🎥 Видео-гайд</div>
+                Подробное видео о связях территорий:
+                <a href="https://youtu.be/JQ2ixqeOpU8" target="_blank" rel="noopener">https://youtu.be/JQ2ixqeOpU8</a>
+            </div>
+        </div>
+
+        <!-- ================================ MAP TERRITORIES ================================ -->
+        <div class="section" id="mapTerritories">
+            <h3>📍 Статичные параметры территорий (Territories.ini)</h3>
+
+            <p>Файл <code>Territories.ini</code> описывает <strong>статичные</strong> параметры каждой территории:
+               какие артефакты могут здесь появляться, сколько рекрутов генерируется и т.д.
+               Эти параметры не меняются в процессе игры (в отличие от динамических в
+               <a href="main.html#Main-ZonaX">Main.ini → [ZonaX]</a>).</p>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Создаётся редактором</div>
+                Файл <strong>не нужно заполнять вручную</strong>. Используйте встроенный в игру редактор карт —
+                он автоматически создаст <code>Territories.ini</code> с правильной структурой.
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">📌 Territories.ini vs Main.ini [ZonaX]</div>
+                <ul>
+                    <li><code>Territories.ini</code> (файл карты) — <strong>статичные</strong> параметры,
+                        общие для всех игр на этой карте</li>
+                    <li><code>Main.ini → [ZonaX]</code> — <strong>динамичное состояние</strong>
+                        на старте конкретного сценария (владелец, гарнизон, постройки, активность мутантов)</li>
+                </ul>
+                Индексы территорий в обоих файлах совпадают.
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Тип местности</div>
+                Каждая территория имеет тип местности, который задаёт её характеристики
+                (бонусы, вместимость построек). См. <a href="typelands.html#TypeLands">TypeLands</a>.
+            </div>
+        </div>
+
+        <!-- ================================ MAP LOCATIONS ================================ -->
+        <div class="section" id="mapLocations">
+            <h3>🗺 Папка с конфигами локаций (Locations/)</h3>
+
+            <p>Папка <code>Locations/</code> содержит по одному ini-файлу на каждую локацию карты
+               (группу территорий). Это <strong>заготовка на будущее</strong> — сейчас используется не полностью.</p>
+
+            <h4>Формат файла локации</h4>
+            <p>В каждом файле локации достаточно указать пустую секцию <code>[Main]</code>:</p>
+<pre><code>; Файл: Locations\Cordon.ini
+[Main]</code></pre>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Локализация обязательна</div>
+                Даже если сам конфиг локации пустой, <strong>строки локализации делать обязательно</strong>.
+                Без них название локации не будет отображаться в игре.
+            </div>
+
+            <h4>Локализация (размещать в messages.csv)</h4>
+<pre><code>[Locations.&lt;техническое название&gt;].Name   - название локации</code></pre>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Где размещать локализацию локаций</div>
+                Обычно мододелы используют <strong>файл сценария</strong>
+                (<code>messages.csv</code> в папке сценария), а не отдельный файл карты.
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Связь с TerritoriesInfo.ini</div>
+                Принадлежность территории к локации задаётся в
+                <a href="#mapTerritoriesInfo">TerritoriesInfo.ini</a>.
+            </div>
+        </div>
+
+        <!-- ================================ MAP TERRITORIES ICON COORDINATES ================================ -->
+        <div class="section" id="mapTerritories_Icon_Coordinates">
+            <h3>📐 Координаты иконок территорий (Territories_Icon_Coordinates.ini)</h3>
+
+            <p>Файл <code>Territories_Icon_Coordinates.ini</code> описывает, <strong>где именно на карте</strong>
+               отображать иконку группировки-владельца территории (логотип из параметра <code>IconMap</code> в
+               <a href="groups.html#Groups">Groups</a>).</p>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Создаётся редактором</div>
+                Файл <strong>не нужно заполнять вручную</strong>. Используйте встроенный в игру редактор карт —
+                при размещении территории на карте редактор автоматически сохраняет её координаты.
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">📌 Формат координат</div>
+                Координаты задаются в пикселях относительно левого верхнего угла изображения карты.
+                Ось <code>X</code> — горизонталь, <code>Y</code> — вертикаль.
+            </div>
+        </div>
+
+        <!-- ================================ MAP TERRITORIES INFO ================================ -->
+        <div class="section" id="mapTerritoriesInfo">
+            <h3>ℹ Дополнительная информация о территориях (TerritoriesInfo.ini)</h3>
+
+            <p>Файл <code>TerritoriesInfo.ini</code> содержит дополнительную информацию о каждой территории:</p>
+            <ul>
+                <li>К какой <strong>локации</strong> относится территория (связь с <code>Locations/</code>)</li>
+                <li>Какое <strong>изображение</strong> отображается в меню территории</li>
+            </ul>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Создаётся редактором</div>
+                Файл <strong>не нужно заполнять вручную</strong>. Используйте встроенный в игру редактор карт —
+                он автоматически создаст <code>TerritoriesInfo.ini</code> с правильной структурой.
+            </div>
+        </div>
+
+        <!-- ================================ MAP BT ================================ -->
+        <div class="section" id="mapBT">
+            <h3>🔧 Технический файл карты (map.bt)</h3>
+
+            <p>Файл <code>map.bt</code> — <strong>служебный бинарный файл</strong>, который говорит движку,
+               как выделять территории на карте при наведении курсора и клике.</p>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">☠ НЕ редактировать вручную!</div>
+                Файл <strong>создаётся только через встроенный в игру редактор карт</strong>.
+                Любое ручное редактирование приведёт к повреждению карты и ошибкам игры.
+                См. <a href="dont-touch.html">«Рудименты и не трогать»</a>.
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">📌 Как создаётся</div>
+                При сохранении карты в редакторе движок автоматически анализирует изображение
+                и границы территорий, создавая <code>map.bt</code> с информацией о «кликабельных»
+                областях каждой территории.
+            </div>
+        </div>
+
+        <!-- ================================ MAP IMAGE ================================ -->
+        <div class="section" id="mapImage">
+            <h3>🖼 Изображение карты (map.bmp / map.png / map.jpg)</h3>
+
+            <p>Основной графический файл карты — то, что игрок видит на экране во время игры.
+               Может быть в форматах <code>bmp</code>, <code>png</code> или <code>jpg</code>.</p>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🏆 Рекомендации по формату</div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr><th>Формат</th><th>Скорость загрузки</th><th>Размер файла</th><th>Когда использовать</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>bmp</strong></td>
+                                <td>🟢 Быстрее всех</td>
+                                <td>🔴 Больше всех</td>
+                                <td>Рекомендуется для малых и средних карт</td>
+                            </tr>
+                            <tr>
+                                <td><strong>png</strong></td>
+                                <td>🟡 Чуть дольше bmp</td>
+                                <td>🟡 Средний</td>
+                                <td>Если нужно сжатие без потерь</td>
+                            </tr>
+                            <tr>
+                                <td><strong>jpg</strong></td>
+                                <td>🔴 Существенно дольше</td>
+                                <td>🟢 Меньше всех</td>
+                                <td>Только если критичен размер мода</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Как связать изображение и файл настроек</div>
+                В <code>map/settings.ini</code> параметр <code>MapFormat</code> должен
+                <strong>точно соответствовать</strong> расширению вашего файла изображения:
+                <ul>
+                    <li>Если файл <code>map.bmp</code> → <code>MapFormat=bmp</code></li>
+                    <li>Если файл <code>map.png</code> → <code>MapFormat=png</code></li>
+                    <li>Если файл <code>map.jpg</code> → <code>MapFormat=jpg</code></li>
+                </ul>
+            </div>
+
+            <h3>Как создать свою карту — чек-лист</h3>
+            <div class="callout callout-tip">
+                <ol>
+                    <li>Нарисуйте изображение карты в графическом редакторе
+                        (сохраните как <code>map.bmp</code>, <code>map.png</code> или <code>map.jpg</code>)</li>
+                    <li>Создайте папку <code>map/</code> в папке вашего сценария</li>
+                    <li>Положите изображение в папку <code>map/</code></li>
+                    <li>Запустите игру и откройте встроенный редактор карт</li>
+                    <li>Загрузите ваше изображение в редакторе</li>
+                    <li>Нарисуйте границы территорий — редактор автоматически создаст:
+                        <code>map.bt</code>, <code>Links.ini</code>, <code>Territories.ini</code>,
+                        <code>Territories_Icon_Coordinates.ini</code>, <code>TerritoriesInfo.ini</code></li>
+                    <li>Сохраните карту в редакторе</li>
+                    <li>Создайте <code>map/settings.ini</code> с параметрами <code>MapFormat</code>
+                        и <code>DefaultLocale</code></li>
+                    <li>Создайте папку <code>Locations/</code> с конфигами локаций
+                        (по одному файлу на локацию, достаточно пустой секции <code>[Main]</code>)</li>
+                    <li>Добавьте локализацию локаций в <code>messages.csv</code>:
+                        <code>[Locations.&lt;тех.название&gt;].Name</code></li>
+                    <li>Настройте типы местности через <a href="typelands.html#TypeLands">TypeLands</a></li>
+                    <li>Пропишите владельцев и гарнизоны территорий в
+                        <a href="main.html#Main-ZonaX">Main.ini → [ZonaX]</a></li>
+                </ol>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Совет: начните с маленькой карты</div>
+                Перед созданием большой карты (сотни территорий) попробуйте сделать
+                маленькую — <strong>10–15 территорий на одной локации</strong>.
+                Так вы наступите на все типовые грабли и поймёте механику работы редактора,
+                прежде чем браться за серьёзный проект. См.
+                <a href="start.html#newbegining">«С чего начать мододелу?»</a> — 6-й уровень сложности модов.
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Связанные разделы</div>
+                <ul>
+                    <li><a href="settings.html#Settings">Settings.ini сценария</a> — параметр <code>Map</code>
+                        указывает на название папки с картой</li>
+                    <li><a href="main.html#Main">Main.ini</a> → <code>[ZonaX]</code> —
+                        динамические параметры территорий (владелец, гарнизон, постройки)</li>
+                    <li><a href="typelands.html#TypeLands">TypeLands</a> — типы местности территорий</li>
+                    <li><a href="groups.html#Groups">Groups</a> → <code>IconMap</code> —
+                        иконка группировки на карте</li>
+                    <li><a href="background-objects.html#BackgroundObjects">BackgroundObjects.ini</a> —
+                        декоративные иконки на карте</li>
+                    <li><a href="faq.html#faq-18">FAQ №18</a> — какие файлы отвечают за границы территорий</li>
+                    <li><a href="faq.html#faq-19">FAQ №19</a> — где прописывается число территорий</li>
+                    <li><a href="dont-touch.html">Рудименты и «не трогать»</a> — запрет ручного
+                        редактирования <code>map.bt</code></li>
+                    <li><a href="limits.html">Лимиты движка</a> — число территорий не ограничено</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Goods (Амуниция) — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="Goods">
+            <h2>📦 Амуниция, ресурсы, товары (Goods)</h2>
+
+            <p>Папка <code>Goods\</code> в сценарии состоит из ini-файлов, каждый из которых представляет один товар, ресурс или предмет экипировки.
+               <strong>Название файла — техническое название товара</strong>, которое используется в других конфигах.
+               Каждый файл содержит один блок <code>[Main]</code>.</p>
+
+            <h3>Локализация (размещать в messages.csv)</h3>
+<pre><code>[Goods.&lt;техническое название&gt;].Name   - название, отображаемое в игре
+[Goods.&lt;техническое название&gt;].Desc   - текстовое описание товара</code></pre>
+
+            <h3>Общие параметры (для всех типов товаров)</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Img</code></td><td>@@ПУТЬ</td><td>Путь к изображению товара (используется в торговле, на складе, в рецептах)</td></tr>
+                        <tr><td><code>Type</code></td><td>@@ВЫБОР</td><td>Тип товара. Возможные значения:<br>
+                            • <code>Weapon</code> — оружие<br>
+                            • <code>Armor</code> — броня<br>
+                            • <code>Resource</code> — ресурс/товар общего назначения</td></tr>
+                        <tr><td><code>Cost</code></td><td>@@ЦЕЛОЕ</td><td>Базовая денежная цена товара без учёта коэффициентов торговцев</td></tr>
+                        <tr><td><code>Category</code></td><td>@@ТЕКСТ</td><td>Категория товара для регулировки множителей цены у торговцев. Можно использовать стандартные или создавать собственные. См. <a href="traders.html#Traders">Traders.ini</a></td></tr>
+                        <tr><td><code>SortOrder</code></td><td>@@ЦЕЛОЕ</td><td>Порядок отображения в списках (чем меньше значение, тем выше в списке)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🏷 Стандартные категории</div>
+                В оригинальных конфигах используются следующие категории:
+                <code>Food</code>, <code>Medic</code>, <code>Supplies</code>, <code>Parts</code>,
+                <code>Arts</code>, <code>Weapon</code>, <code>Armor</code>,
+                <code>BuildingMaterials</code>, <code>AmmoComponents</code>.
+                Множители цен по категориям настраиваются в
+                <a href="traders.html#Traders">Traders.ini</a> (параметры <code>Coef-Sell-X</code>, <code>Coef-Buy-X</code>).
+            </div>
+
+            <h3>⚔ Параметры оружия (<code>Type=Weapon</code>)</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>PVP</code></td><td>@@ЦЕЛОЕ</td><td>Урон по другим сталкерам (базовое значение)</td></tr>
+                        <tr><td><code>PVM</code></td><td>@@ЦЕЛОЕ</td><td>Урон по мутантам (базовое значение)</td></tr>
+                        <tr><td><code>Range</code></td><td>@@ЦЕЛОЕ</td><td>Дальность атаки</td></tr>
+                        <tr><td><code>Consum</code></td><td>@@ЦЕЛОЕ</td><td>Расход боеприпасов <strong>за одну атаку</strong></td></tr>
+                        <tr><td><code>Level</code></td><td>@@ЦЕЛОЕ</td><td>Минимальный ранг бойца для использования этого оружия:<br>
+                            <code>1</code> = новичок, <code>2</code> = опытный, <code>3</code> = ветеран, <code>4</code> = мастер</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>🛡 Параметры брони (<code>Type=Armor</code>)</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>PVP</code></td><td>@@ЦЕЛОЕ</td><td>Защита от урона других сталкеров</td></tr>
+                        <tr><td><code>PVM</code></td><td>@@ЦЕЛОЕ</td><td>Защита от урона мутантов</td></tr>
+                        <tr><td><code>AntiRad</code></td><td>@@ЦЕЛОЕ</td><td>Защита от радиации, выброса и аномалий</td></tr>
+                        <tr><td><code>Mass</code></td><td>@@ЦЕЛОЕ</td><td>Вес брони (штраф к мобильности). Чем больше значение, тем сильнее снижается мобильность бойца</td></tr>
+                        <tr><td><code>Level</code></td><td>@@ЦЕЛОЕ</td><td>Минимальный ранг бойца для использования этой брони:<br>
+                            <code>1</code> = новичок, <code>2</code> = опытный, <code>3</code> = ветеран, <code>4</code> = мастер</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>💊 Параметры ресурсов (<code>Type=Resource</code>)</h3>
+            <p>У обычных ресурсов (еда, медикаменты, артефакты, части мутантов) обычно нет дополнительных параметров помимо общих.
+               Их эффекты задаются через другие системы:</p>
+            <ul>
+                <li><strong>Еда</strong> — параметр <code>FoodName</code> в <a href="settings.html#Settings">Settings.ini</a> указывает, какой товар считается едой</li>
+                <li><strong>Медикаменты</strong> — параметр <code>MedicName</code> в <a href="settings.html#Settings">Settings.ini</a></li>
+                <li><strong>Припасы</strong> — параметр <code>SuppliesName</code> в <a href="settings.html#Settings">Settings.ini</a></li>
+            </ul>
+
+            <h3>Как добавить новое оружие — чек-лист</h3>
+            <div class="callout callout-tip">
+                <ol>
+                    <li>Создайте ini-файл в папке <code>Goods\</code> сценария
+                        (если папки нет — создайте). Имя файла = техническое название оружия</li>
+                    <li>Заполните блок <code>[Main]</code>: общие параметры + параметры оружия</li>
+                    <li>Добавьте строки локализации в <a href="messages.html#Messages">messages.csv</a></li>
+                    <li>Пропишите стартовое количество на складе в
+                        <a href="main.html#Main">Main.ini</a> → <code>[Group-Resources]</code>
+                        (если = 0, то прописывать не обязательно)</li>
+                    <li>Назначьте оружие шаблону юнита в <a href="main.html#Main">Main.ini</a> →
+                        <code>[Units-About]</code> (<code>Шаблон-Weapon=ТехНазвание</code>)</li>
+                    <li><strong>Дайте торговцам возможность продавать это!</strong> —
+                        добавьте товар в <a href="tradergoods.html#TraderGoods">TraderGoods.ini</a></li>
+                </ol>
+            </div>
+
+            <h3>Стоимость найма юнита</h3>
+            <div class="callout callout-info">
+                <div class="callout-title">📊 Формула из Settings.ini</div>
+<pre><code>Цена юнита = цена оружия + цена брони + ранг × UnitCostModificator</code></pre>
+                Параметр <code>Cost</code> из этого конфига напрямую влияет на стоимость найма бойца.
+                <code>UnitCostModificator</code> настраивается в <a href="settings.html#Settings">Settings.ini</a>.
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Пример: создание нового оружия</div>
+<pre><code>; Файл: Goods\MyCustomRifle.ini
+[Main]
+Img=gfx\icons\goods\SVD.png
+Type=Weapon
+Cost=5000
+Category=Weapon
+SortOrder=100
+PVP=45
+PVM=30
+Range=8
+Consum=2
+Level=3</code></pre>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Где ещё используется</div>
+                <ul>
+                    <li><a href="main.html#Main">Main.ini</a> — <code>[Group-Resources]</code> (стартовые запасы), <code>[Units-About]</code> (экипировка юнитов)</li>
+                    <li><a href="tradergoods.html#TraderGoods">TraderGoods.ini</a> — ассортимент торговцев</li>
+                    <li><a href="traders.html#Traders">Traders.ini</a> — <code>Coef-Sell-X</code>/<code>Coef-Buy-X</code> по <code>Category</code></li>
+                    <li><a href="receipts.html#Receipts">Receipts</a> — модернизация через мастерскую</li>
+                    <li><a href="buildings.html#Buildings">Buildings</a> — <code>Custom-Resource</code>, <code>ProductionNameFrom/To</code></li>
+                    <li><a href="difficulty.html#Difficulty">Difficulty.ini</a> — стартовые артефакты и части мутантов</li>
+                    <li><a href="settings.html#Settings">Settings.ini</a> — <code>MedicName</code>, <code>SuppliesName</code>, <code>FoodName</code>, <code>UnitCostModificator</code></li>
+                    <li><a href="events-story.html#Events_Story">Events_Story.ini</a> — типы событий <code>AddWeapon</code>, <code>RemoveWeapon</code>, <code>AddArmor</code>, <code>RemoveArmor</code></li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

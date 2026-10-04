@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tutorial.ini — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="Tutorial">
+            <h2>📚 Приветственное окно после запуска сценария (Tutorial.ini)</h2>
+
+            <p>Файл <code>Tutorial.ini</code> описывает многостраничное окно обучения, которое
+               показывается игроку после старта сценария. В игре его можно увидеть в самом обучении
+               и в сценарии «Обрыв связи».</p>
+
+            <div class="callout callout-info">
+                <div class="callout-title">📋 Локализация (размещать в messages.csv)</div>
+<pre><code>[Tutorial.&lt;название_страницы&gt;].Text   - отображаемый текст страницы</code></pre>
+                <p>Где <code>&lt;название_страницы&gt;</code> — это имя секции в квадратных скобках
+                   (например, <code>Page-1</code>, <code>Page-2</code>).</p>
+            </div>
+
+            <h3>Как включить окно обучения</h3>
+            <p>Чтобы окно обучения открывалось автоматически после старта сценария,
+               в <a href="settings.html#Settings">Settings.ini</a> установите параметр:</p>
+<pre><code>[Main]
+isTutorial=True</code></pre>
+            <p>По умолчанию <code>False</code> — окно не открывается.</p>
+
+            <h3>Секция [Main] — основные параметры</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>CountPages</code></td><td>@@ЦЕЛОЕ &gt;0</td><td>
+                            Число страниц в обучении. Должно совпадать с реальным количеством
+                            секций <code>[Page-X]</code>. Лимита сверху нет</td></tr>
+                        <tr><td><code>Face</code></td><td>@@ПУТЬ</td><td>
+                            Путь к портрету персонажа в окне обучения (по умолчанию для всех страниц).
+                            Можно переопределить на каждой странице отдельно</td></tr>
+                        <tr><td><code>Img</code></td><td>@@ПУТЬ</td><td>
+                            Путь к изображению на странице (по умолчанию для всех страниц).
+                            Если пусто или параметр отсутствует — изображения не будет.
+                            Можно переопределить на каждой странице отдельно</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Секции [Page-X] — страницы обучения</h3>
+            <p>По одной секции на каждую страницу. <code>X</code> — порядковый номер страницы
+               (начинается с 1, без пропусков).</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Face</code></td><td>@@ПУТЬ</td><td>
+                            <strong>Опционально</strong>. Переопределяет портрет персонажа
+                            для этой страницы. Если не указан — используется <code>Face</code>
+                            из <code>[Main]</code></td></tr>
+                        <tr><td><code>Img</code></td><td>@@ПУТЬ</td><td>
+                            <strong>Опционально</strong>. Переопределяет изображение для этой страницы.
+                            Если не указан — используется <code>Img</code> из <code>[Main]</code>.
+                            Если нужен пустой фон на конкретной странице — укажите <code>Img=</code> (пусто)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Текст страницы — только через локализацию</div>
+                Сам текст страницы <strong>не указывается</strong> в <code>Tutorial.ini</code>.
+                Его нужно прописать в <code>messages.csv</code> ключом
+                <code>[Tutorial.Page-X].Text</code>. Без локализации страница будет пустой.
+            </div>
+
+            <h3>Пример полного файла Tutorial.ini</h3>
+<pre><code>; Файл: Tutorial.ini
+[Main]
+CountPages=3
+Face=gfx\tutorial\default_face.png
+Img=gfx\tutorial\default_background.png
+
+[Page-1]
+; Используем стандартный Face и Img из [Main]
+; Текст: [Tutorial.Page-1].Text в messages.csv
+
+[Page-2]
+; Переопределяем портрет (другой персонаж говорит)
+Face=gfx\tutorial\scientist_face.png
+Img=gfx\tutorial\psy_installation.png
+
+[Page-3]
+; Переопределяем оба параметра
+Face=gfx\tutorial\commander_face.png
+Img=gfx\tutorial\final_screen.png</code></pre>
+
+            <p>Соответствующие строки в <code>messages.csv</code>:</p>
+<pre><code>[Tutorial.Page-1].Text;Добро пожаловать в сценарий! В этом обучении вы узнаете основные механики игры.
+[Tutorial.Page-2].Text;Пси-излучатель — мощное оружие. Его можно включать и выключать через панель управления.
+[Tutorial.Page-3].Text;Удачи, сталкер! Зона ждёт своих героев.</code></pre>
+
+            <h3>Как создать своё окно обучения — чек-лист</h3>
+            <div class="callout callout-tip">
+                <ol>
+                    <li>Создайте файл <code>Tutorial.ini</code> в папке вашего сценария</li>
+                    <li>В секции <code>[Main]</code> укажите <code>CountPages</code> (число страниц)
+                        и базовые <code>Face</code> и <code>Img</code></li>
+                    <li>Добавьте секции <code>[Page-1]</code>, <code>[Page-2]</code>, … —
+                        по числу страниц. Переопределяйте <code>Face</code>/<code>Img</code> там, где нужно</li>
+                    <li>В <a href="messages.html#Messages">messages.csv</a> добавьте строки
+                        <code>[Tutorial.Page-1].Text</code>, <code>[Tutorial.Page-2].Text</code> и т.д.</li>
+                    <li>В <a href="settings.html#Settings">Settings.ini</a> установите
+                        <code>isTutorial=True</code></li>
+                    <li>Подготовьте графику: портреты персонажей и фоновые изображения страниц</li>
+                </ol>
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Практические советы</div>
+                <ul>
+                    <li><strong>3–5 страниц</strong> — оптимальное количество. Больше — игрок устанет читать</li>
+                    <li><strong>Короткий текст</strong> — 2–3 предложения на страницу. Длинные простыни никто не читает</li>
+                    <li><strong>Разные персонажи</strong> — смена портрета между страницами делает обучение живым,
+                        как диалог нескольких персонажей</li>
+                    <li><strong>Изображения</strong> — скриншоты интерфейса или схем помогают понять механику
+                        быстрее, чем текст</li>
+                </ul>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Связанные разделы</div>
+                <ul>
+                    <li><a href="settings.html#Settings">Settings.ini</a> — параметр <code>isTutorial</code>
+                        (включает показ окна после старта)</li>
+                    <li><a href="messages.html#Messages">messages.csv</a> — ключи <code>[Tutorial.Page-X].Text</code></li>
+                    <li><a href="start.html#filestypecode">Кодировка файлов</a> — UTF-8 с BOM
+                        (иначе кириллица будет кракозябрами)</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

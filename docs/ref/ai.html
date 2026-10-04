@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI.ini — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="AI">
+            <h2>🤖 ИИ компьютерных противников (AI.ini)</h2>
+
+            <p>Файл <code>AI.ini</code> определяет поведение ботов в сценарии. Каждая группировка использует
+               свой блок настроек ИИ, указанный в параметре <code>AI</code> файла <a href="groups.html#Groups">Groups</a>.</p>
+
+            <div class="callout callout-info">
+                <div class="callout-title">📊 Структура файла</div>
+                Файл содержит один или несколько блоков <code>[Название-ИИ]</code> (например, <code>[AI-Stalkers]</code>).
+                Каждый блок описывает логику поведения одной группировки.
+            </div>
+
+            <h3>Логическая последовательность (блоки действий)</h3>
+            <p>Поведение бота состоит из последовательности логических блоков, которые выполняются по порядку.</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>CountBlocks</code></td><td>@@ЦЕЛОЕ</td><td>Число логических блоков в последовательности</td></tr>
+                        <tr><td><code>BlockX</code></td><td>@@ВЫБОР</td><td>Тип блока действий. <code>X</code> — порядковый номер (от 1 до <code>CountBlocks</code>)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>18 типов блоков (BlockX)</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Блок</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Economic</code></td><td>Продажа/покупка амуниции, частей тел мутантов, артефактов</td></tr>
+                        <tr><td><code>BuyGarrison</code></td><td>Покупка гарнизона на всех территориях, где гарнизона не хватает для остановки роста % активности мутантов</td></tr>
+                        <tr><td><code>KillMutants</code></td><td>Зачистка территорий, если % активности выше указанного в <code>KillMutants-LimitActive</code></td></tr>
+                        <tr><td><code>BuyAtackArmy</code></td><td>Купить бойцов для атаки на пограничной территории</td></tr>
+                        <tr><td><code>Atack</code></td><td>Атаковать вражескую группировку, если есть такая на границе</td></tr>
+                        <tr><td><code>Diplomacy</code></td><td>Совершить дипломатическое действие раз в указанное число ходов (<code>Diplomacy-CanEveryStep</code>)</td></tr>
+                        <tr><td><code>Advisor</code></td><td>Назначить указанного заместителя группировки</td></tr>
+                        <tr><td><code>BrainControl</code></td><td>Вкл/выкл пси-излучатель и выжигатель мозгов</td></tr>
+                        <tr><td><code>DiplomacyMoney</code></td><td>Запросить деньги у союзника в случае необходимости</td></tr>
+                        <tr><td><code>BuyUpgrades</code></td><td>Покупать улучшения</td></tr>
+                        <tr><td><code>BuyBorderGuardForEnemy</code></td><td>Покупка бойцов на границе с противником для её охраны</td></tr>
+                        <tr><td><code>BuyBorderGuardForNeutral</code></td><td>Покупка бойцов на границе с нейтральным соседом для её охраны</td></tr>
+                        <tr><td><code>BuyBorderGuardForAllies</code></td><td>Покупка бойцов на границе с союзником для её охраны</td></tr>
+                        <tr><td><code>ChangeMainBase</code></td><td>Смена главной базы группировки</td></tr>
+                        <tr><td><code>BuyBaseGuard</code></td><td>Покупка бойцов для охраны главной базы группировки</td></tr>
+                        <tr><td><code>RelocationArmy</code></td><td>Передислокация бойцов</td></tr>
+                        <tr><td><code>Building</code></td><td>Сооружение построек</td></tr>
+                        <tr><td><code>Cheat</code></td><td>Плюс к ресурсам бота. Можно указывать несколько ресурсов</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Главная база группировки</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>MainBase-DeepLimit</code></td><td>@@ЦЕЛОЕ</td><td>Минимальное расстояние в количестве территорий до границы. Бот не будет переносить базу ближе к фронту</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Атака (блок <code>Atack</code>)</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Atack-AtackAnyWay</code></td><td>@@BOOL</td><td>Атакует даже если юнитов в исходящем гарнизоне меньше, чем в целевом</td></tr>
+                        <tr><td><code>Atack-UseConquest</code></td><td>@@BOOL</td><td>Использует режим атаки «Захват» (<code>True</code>), иначе будет использовать «Разведка боем» (<code>False</code>)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Чистка территорий от мутантов (блок <code>KillMutants</code>)</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>KillMutants-LimitActive</code></td><td>@@ЦЕЛОЕ 0-100</td><td>% активности мутантов на территории, с которого ИИ начинает зачистку</td></tr>
+                        <tr><td><code>KillMutants-AtackAnyWay</code></td><td>@@BOOL</td><td>Атаковать даже если число гарнизона меньше числа мутантов на подконтрольной территории</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Покупка юнитов — модификаторы количества</h3>
+            <p>Все значения в таблице ниже — <span class="vt-inline">@@ДРОБНОЕ</span>. Эти коэффициенты определяют,
+               сколько бойцов бот будет нанимать на различные территории.</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>BuyUnitForAtackMotivationModificator</code></td><td>Бот будет нанимать бойцов для атаки, пока у соседней вражеской территории войск больше (войско соседа × этот коэффициент)</td></tr>
+                        <tr><td><code>BuyBaseGuardBehindMotivationModificator</code></td><td>Бот будет покупать бойцов для главной базы в тылу (число для остановки роста % активности × этот модификатор)</td></tr>
+                        <tr><td><code>BuyBaseGuardFrontEnemyMotivationModificator</code></td><td>Бот будет нанимать бойцов на главную базу на границе с врагом, пока у соседа войск больше (войско соседа × коэффициент)</td></tr>
+                        <tr><td><code>BuyBaseGuardFrontNeutralMotivationModificator</code></td><td>То же для границы с нейтралом</td></tr>
+                        <tr><td><code>BuyBaseGuardFrontAlliesMotivationModificator</code></td><td>То же для границы с союзником</td></tr>
+                        <tr><td><code>BuyUnitForGarrisonMotivationModificator</code></td><td>Бот будет нанимать бойцов для достижения требования числа бойцов для остановки роста % активности (число × модификатор)</td></tr>
+                        <tr><td><code>BuyUnitForGuardBorderWithEnemyMotivationModificator</code></td><td>Бот будет нанимать бойцов на границу с врагом, пока у соседа войск больше (войско соседа × коэффициент)</td></tr>
+                        <tr><td><code>BuyUnitForGuardBorderWithNeutralMotivationModificator</code></td><td>То же для границы с нейтралом</td></tr>
+                        <tr><td><code>BuyUnitForGuardBorderWithAlliesMotivationModificator</code></td><td>То же для границы с союзником</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Покупка юнитов — приоритеты рангов</h3>
+            <p>Все значения в таблице ниже — <span class="vt-inline">@@ЧИСЛА 1-4</span>. Списки приоритета найма рангов
+               (1 = новичок, 2 = опытный, 3 = ветеран, 4 = мастер).</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>BuyBaseGuardFrontAllies-Priority</code></td><td>Приоритет найма рангов на базу, граничащую с союзником</td></tr>
+                        <tr><td><code>BuyBaseGuardFrontNeutral-Priority</code></td><td>Приоритет найма рангов на базу, граничащую с нейтралом</td></tr>
+                        <tr><td><code>BuyBaseGuardFrontEnemy-Priority</code></td><td>Приоритет найма рангов на базу, граничащую с врагом</td></tr>
+                        <tr><td><code>BuyBaseGuardBehind-Priority</code></td><td>Приоритет найма рангов на базу в тылу</td></tr>
+                        <tr><td><code>BuyUnitForAtack-Priority</code></td><td>Приоритет найма рангов для атаки. <strong>Если ранг не указан, он не нанимается!</strong></td></tr>
+                        <tr><td><code>BuyUnitForGuardBorderWithEnemy-Priority</code></td><td>Приоритет найма рангов на границу с врагом</td></tr>
+                        <tr><td><code>BuyUnitForGuardBorderWithNeutral-Priority</code></td><td>Приоритет найма рангов на границу с нейтралом</td></tr>
+                        <tr><td><code>BuyUnitForGuardBorderWithAllies-Priority</code></td><td>Приоритет найма рангов на границу с союзником</td></tr>
+                        <tr><td><code>BuyUnitForGarrison-Priority</code></td><td>Приоритет найма рангов в тыл. <strong>Если ранг не указан, он не нанимается!</strong></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Осторожно с приоритетами</div>
+                Если в списке приоритета отсутствует какой-то ранг (например, <code>1,2,3</code> без <code>4</code>),
+                бот <strong>никогда не наймёт</strong> мастеров для этого действия. Обычно рекомендуется указывать все 4 ранга:
+                <code>1,2,3,4</code>.
+            </div>
+
+            <h3>Экономика (блок <code>Economic</code>)</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Economic-CanSearchArts</code></td><td>@@BOOL</td><td>Может ли бот искать артефакты</td></tr>
+                        <tr><td><code>Economic-CountTargetSellResources</code></td><td>@@ЦЕЛОЕ</td><td>Число названий ресурсов для продажи</td></tr>
+                        <tr><td><code>Economic-TargetSellResource-X</code></td><td>@@НАЗВАНИЕ</td><td>Название ресурса для продажи (где <code>X</code> — номер от 1 до <code>CountTargetSellResources</code>)</td></tr>
+                        <tr><td><code>Economic-SellGoodsIfThisNotUseUnits</code></td><td>@@BOOL</td><td>Продавать товары, если они не используются для найма юнитов</td></tr>
+                        <tr><td><code>Economic-CanBuyResources</code></td><td>@@BOOL</td><td>Может ли бот покупать ресурсы</td></tr>
+                        <tr><td><code>Economic-CountTargetBuyResources</code></td><td>@@ЦЕЛОЕ</td><td>Число названий ресурсов для покупки</td></tr>
+                        <tr><td><code>Economic-TargetBuyResource-X</code></td><td>@@НАЗВАНИЕ</td><td>Название ресурса для покупки</td></tr>
+                        <tr><td><code>Economic-TargetBuyResource-X-CountModificator</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор, умножаемый на требуемое число ресурса (требуемое захардкожено). Если ресурсов меньше — бот докупает</td></tr>
+                        <tr><td><code>Economic-BuyGoodsIfThisUseUnits</code></td><td>@@BOOL</td><td>Покупает ли фракция товары, которые используются при покупке её юнитов</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Дипломатия (блок <code>Diplomacy</code>)</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Diplomacy-CanEveryStep</code></td><td>@@ЦЕЛОЕ</td><td>Может совершать дипломатические действия каждые указанные число ходов</td></tr>
+                        <tr><td><code>Diplomacy-CanDeclareMoreOneWar</code></td><td>@@BOOL</td><td>Может объявить войну, когда уже с кем-то воюет</td></tr>
+                        <tr><td><code>Diplomacy-DeclareWarIfNoBorder</code></td><td>@@BOOL</td><td>Может объявлять войну тем, с кем не граничит</td></tr>
+                        <tr><td><code>Diplomacy-BreakAllianceIfNoBorder</code></td><td>@@BOOL</td><td>Может разрывать союз с теми, с кем не граничит</td></tr>
+                        <tr><td><code>Diplomacy-ModificatorWithBorderForAlliance</code></td><td>@@ЦЕЛОЕ</td><td>Во сколько раз рейтинг армии одной группировки должен превышать рейтинг другой для согласия на союз (если граничат)</td></tr>
+                        <tr><td><code>Diplomacy-ModificatorWithoutBorderForAlliance</code></td><td>@@ЦЕЛОЕ</td><td>То же, если не граничат</td></tr>
+                        <tr><td><code>Diplomacy-ModificatorWithBorderForNeutral</code></td><td>@@ЦЕЛОЕ</td><td>Для согласия на нейтралитет (если граничат)</td></tr>
+                        <tr><td><code>Diplomacy-ModificatorWithoutBorderForNeutral</code></td><td>@@ЦЕЛОЕ</td><td>То же, если не граничат</td></tr>
+                        <tr><td><code>Diplomacy-ModificatorWithBorderForWar</code></td><td>@@ЦЕЛОЕ</td><td>Для объявления войны (если граничат)</td></tr>
+                        <tr><td><code>Diplomacy-ModificatorWithoutBorderForWar</code></td><td>@@ЦЕЛОЕ</td><td>Для объявления войны (если не граничат)</td></tr>
+                        <tr><td><code>Diplomacy-ModificatorWithBorderForBrokenAlliance</code></td><td>@@ЦЕЛОЕ</td><td>Для разрыва союза (если граничат)</td></tr>
+                        <tr><td><code>Diplomacy-ModificatorWithoutBorderForBrokenAlliance</code></td><td>@@ЦЕЛОЕ</td><td>Для разрыва союза (если не граничат)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Дипломатические запросы денег (блок <code>DiplomacyMoney</code>)</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>DiplomacyMoney-CanOrder</code></td><td>@@BOOL</td><td>Будет ли бот запрашивать деньги у других</td></tr>
+                        <tr><td><code>DiplomacyMoney-BalanceForOrder</code></td><td>@@ЦЕЛОЕ</td><td>Сумма ниже которой (≤) бот будет просить деньги у союзников</td></tr>
+                        <tr><td><code>DiplomacyMoney-PercentForOrder</code></td><td>@@ЦЕЛОЕ 0-100</td><td>Какой % от суммы союзника бот будет запрашивать</td></tr>
+                        <tr><td><code>DiplomacyMoney-CanGive</code></td><td>@@BOOL</td><td>Может ли принимать запросы на деньги (<code>False</code> = всегда отказывается)</td></tr>
+                        <tr><td><code>DiplomacyMoney-BalanceForGive</code></td><td>@@ЦЕЛОЕ</td><td>Сумма денег ниже которой бот откажется отправлять деньги (остаток после вычета запрошенной суммы)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Заместители (блок <code>Advisor</code>)</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Advisor-CanChange</code></td><td>@@BOOL</td><td>Может ли бот менять заместителя лидера группировки</td></tr>
+                        <tr><td><code>Advisor-TargetName</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название кандидата из <a href="advisors.html#Advisors">Advisors.ini</a>, которого бот будет назначать</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Пси-установки (блок <code>BrainControl</code>)</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>BrainControl-Psy-CanChange</code></td><td>@@BOOL</td><td>Может ли бот менять состояние пси-излучателя</td></tr>
+                        <tr><td><code>BrainControl-Mixer-CanChange</code></td><td>@@BOOL</td><td>Может ли бот менять состояние выжигателя мозгов</td></tr>
+                        <tr><td><code>BrainControl-Psy-TargetStatus</code></td><td>@@BOOL</td><td>Состояние пси-излучателя, которое бот установит при контроле территории с установкой</td></tr>
+                        <tr><td><code>BrainControl-Mixer-TargetStatus</code></td><td>@@BOOL</td><td>Состояние выжигателя мозгов, которое бот установит при контроле территории с установкой</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Покупка улучшений (блок <code>BuyUpgrades</code>)</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Upgrades-Index-Count</code></td><td>@@ЦЕЛОЕ</td><td>Сколько улучшений бот будет пытаться купить</td></tr>
+                        <tr><td><code>Upgrades-Index-X</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название улучшения (имя файла без <code>.ini</code>), которое бот будет покупать (где <code>X</code> — порядковый номер)</td></tr>
+                        <tr><td><code>Upgrades-LockPass</code></td><td>@@BOOL</td><td>Если <code>True</code>, бот не будет пытаться купить другое улучшение, если не хватает ресурсов на указанное в списке</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Заблокированные улучшения</div>
+                Если бот попытается купить улучшение из <code>ExcludedUpgrades</code> в <a href="settings.html#Settings">Settings.ini</a>,
+                игра выдаст ошибку на ходе бота. Убедитесь, что все улучшения в списке доступны.
+            </div>
+
+            <h3>Сооружение построек (блок <code>Building</code>)</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>MainBaseBuildings</code></td><td>@@НАЗВАНИЯ</td><td>Список построек для главной базы через запятую. Порядок определяет приоритет постройки</td></tr>
+                        <tr><td><code>BorderBuildings</code></td><td>@@НАЗВАНИЯ</td><td>Список построек для приграничных территорий</td></tr>
+                        <tr><td><code>MaxBuildingCount</code></td><td>@@ЦЕЛОЕ ≥0</td><td>Максимальное количество построек за один проход блока <code>Building</code>. Если <code>MaxBuildingCount=2</code>, бот построит до 2 построек за ход</td></tr>
+                    </tbody>
+                </table>
+            </div>
+			
+			<div class="callout callout-warning">
+                <div class="callout-title">⚠️ Заблокированные сооружения</div>
+                Если бот попытается купить сооружение из <code>ExcludedBuildings</code> в <a href="settings.html#Settings">Settings.ini</a>,
+                игра выдаст ошибку на ходе бота. Убедитесь, что все сооружения в списке доступны.
+            </div>
+
+            <h3>Читерство бота (блок <code>Cheat</code>)</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Cheat-CountResources</code></td><td>@@ЦЕЛОЕ ≥0</td><td>Число ресурсов, которые будут добавляться/убавляться блоком</td></tr>
+                        <tr><td><code>Cheat-ResourceX</code></td><td>@@НАЗВАНИЕ</td><td>Название ресурса (где <code>X</code> — номер от 1 до <code>Cheat-CountResources</code>)</td></tr>
+                        <tr><td><code>Cheat-ResourceCountX</code></td><td>@@ЦЕЛОЕ</td><td>Количество ресурса. Отрицательное значение = отнимается</td></tr>
+                        <tr><td><code>Cheat-CanEveryStepUseCheat</code></td><td>@@ЦЕЛОЕ ≥0</td><td>Может использовать чит каждые указанные число ходов</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Где ещё используется</div>
+                <ul>
+                    <li><a href="groups.html#Groups">Groups</a> → параметр <code>AI</code> — указывает, какой блок ИИ использует группировка</li>
+                    <li><a href="advisors.html#Advisors">Advisors.ini</a> — кандидаты для <code>Advisor-TargetName</code></li>
+                    <li><a href="buildings.html#Buildings">Buildings</a> — названия построек для <code>MainBaseBuildings</code>, <code>BorderBuildings</code></li>
+                    <li><a href="upgrades.html#upgrades">Upgrades</a> — названия улучшений для <code>Upgrades-Index-X</code></li>
+                    <li><a href="special-events.html#SpecialEvents">SpecialEvents</a> — блок <code>BrainControl</code> управляет пси-установками</li>
+                    <li><a href="settings.html#Settings">Settings.ini</a> — <code>ExcludedUpgrades</code>, <code>ExcludedBuildings</code> (блокировка)</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

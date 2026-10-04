@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>messages.csv — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="Messages">
+            <h2>🌐 Файл локализации (messages.csv)</h2>
+
+            <p>Файл <code>messages.csv</code> содержит <strong>все тексты</strong>, отображаемые в игре:
+               названия сценариев, группировок, лидеров, заместителей, товаров, событий и многое другое.
+               Каждый конфиг, имеющий отображаемое в игре название или описание, берёт текст именно отсюда.</p>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Чем открывать</div>
+                <ul>
+                    <li><strong>Для чтения</strong> — можно открывать через Excel (но осторожно с кодировкой)</li>
+                    <li><strong>Для редактирования</strong> — используйте <strong>Notepad++</strong> или обычный Блокнот Windows.
+                        Excel может испортить кодировку при сохранении</li>
+                </ul>
+            </div>
+
+            <h3>Кодировка файла</h3>
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Только UTF-8 с BOM</div>
+                Файл должен сохраняться строго в кодировке <strong>UTF-8 с BOM</strong>.
+                Без BOM кириллица в игре будет отображаться «кракозябрами».
+                Подробнее: <a href="start.html#filestypecode">Кодировка файлов</a>.
+            </div>
+
+            <h3>Формат строк</h3>
+            <p>Каждая строка файла имеет формат:</p>
+<pre><code>Ключ;Текст</code></pre>
+            <p>Разделителем выступает точка с запятой <code>;</code>.</p>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Символ <code>;</code> запрещён внутри текста</div>
+                Не используйте <code>;</code> внутри самого текста,
+                так как это разделитель между технической ссылкой и игровым текстом.
+                Если в тексте нужна точка с запятой — перепишите предложение или используйте запятую.
+            </div>
+
+            <h3>Структура ключей (тут не всё! Тут лишь часть, чтобы понять принцип)</h3>
+            <p>Ключи имеют формат <code>[Тип.ТехНазвание].Поле</code> или просто <code>НазваниеПоля</code>
+               для глобальных параметров сценария.</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Тип</th><th>Формат ключа</th><th>Пример</th></tr></thead>
+                    <tbody>
+                        <tr><td>Сценарий</td><td><code>КлючБезСкобок</code></td>
+                            <td><code>ScenarioName</code>, <code>ScenarioDescription</code></td></tr>
+                        <tr><td>Заместители</td><td><code>[Advisors.ТехНазвание].Поле</code></td>
+                            <td><code>[Advisors.Wolf].Name</code></td></tr>
+                        <tr><td>Группировки</td><td><code>[Groups.ТехНазвание.Идеология].Поле</code></td>
+                            <td><code>[Groups.Stalkers.:main].Name</code></td></tr>
+                        <tr><td>Лидеры</td><td><code>[Leaders.ТехНазвание].Поле</code></td>
+                            <td><code>[Leaders.Leader-1].Name</code></td></tr>
+                        <tr><td>Идеологии</td><td><code>[Ideologies.ТехНазвание].Поле</code></td>
+                            <td><code>[Ideologies.Stalkers].Name</code></td></tr>
+                        <tr><td>Товары</td><td><code>[Goods.ТехНазвание].Поле</code></td>
+                            <td><code>[Goods.PM].Name</code>, <code>[Goods.PM].Desc</code></td></tr>
+                        <tr><td>Постройки</td><td><code>[Buildings.ТехНазвание].Поле</code></td>
+                            <td><code>[Buildings.Workshop].Name</code></td></tr>
+                        <tr><td>Улучшения</td><td><code>[Upgrades.ТехНазвание].Поле</code></td>
+                            <td><code>[Upgrades.Upgrade-1].Name</code></td></tr>
+                        <tr><td>Правила</td><td><code>[Rules.ТехНазвание].Поле</code></td>
+                            <td><code>[Rules.Rule-1].Name</code></td></tr>
+                        <tr><td>Типы местности</td><td><code>[TypeLands.ТехНазвание].Поле</code></td>
+                            <td><code>[TypeLands.Cordon].Name</code></td></tr>
+                        <tr><td>Случайные события</td><td><code>[RandomEvents.ТехНазвание].Поле</code></td>
+                            <td><code>[RandomEvents.FindMoney].Desc-YES</code></td></tr>
+                        <tr><td>Сюжетные события</td><td><code>[Events_Story.ТехНазвание].Поле</code></td>
+                            <td><code>[Events_Story.Event-Cordon-5].Name</code></td></tr>
+                        <tr><td>Особые события</td><td><code>[SpecialEvents.ТехНазвание].Поле</code></td>
+                            <td><code>[SpecialEvents.Burst].Desc-Yes</code></td></tr>
+                        <tr><td>Торговцы</td><td><code>[Traders.ТехНазвание].Поле</code></td>
+                            <td><code>[Traders.Trader1].Name</code></td></tr>
+                        <tr><td>Обучение</td><td><code>[Tutorial.НазваниеСтраницы].Поле</code></td>
+                            <td><code>[Tutorial.Page-1].Text</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Специальные символы и форматирование</h3>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Символ</th><th>Назначение</th><th>Пример</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>%s</code></td><td>Простая подстановка значения (строка или число)</td>
+                            <td><code>Вы нашли %s рублей</code> → «Вы нашли 500 еды»</td></tr>
+                        <tr><td><code>%0:s</code>, <code>%1:s</code>, …</td><td>
+                            Подстановка значения по индексу (формат Delphi).
+                            <code>%0:s</code> — первый аргумент, <code>%1:s</code> — второй и т.д.
+                            Используется, когда нужно вставить несколько значений</td>
+                            <td><code>Сталкер %0:s на территории %1:s</code> → «Сталкер Меченый на территории Кордон»</td></tr>
+                        <tr><td><code>||</code></td><td>Перенос следующей части текста на новую строку
+                            (красная строка)</td>
+                            <td><code>Первая строка.||Вторая строка.</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Разница между <code>%s</code> и <code>%N:s</code></div>
+                <ul>
+                    <li><code>%s</code> — простая подстановка, значения вставляются по порядку</li>
+                    <li><code>%0:s</code>, <code>%1:s</code> — подстановка по индексу, можно менять порядок
+                        и использовать одно значение несколько раз:
+                        <code>%0:s атакует %1:s, а %1:s защищается</code></li>
+                </ul>
+                Используйте <code>%N:s</code>, когда в событии передаётся несколько аргументов.
+            </div>
+
+            <h3>Примеры строк файла</h3>
+<pre><code>; Глобальные параметры сценария
+ScenarioName;Обрыв связи
+ScenarioDescription;Классический сценарий.||Здесь вам предстоит выжить в условиях Зоны.
+ScenarioVictoryDescription;Захватите все территории Зоны.
+ScenarioLoseDescription;Потеряйте все свои территории.
+
+; Заместители
+[Advisors.Wolf].Name;Волк
+[Advisors.Sidorovich].Name;Сидорович
+
+; Группировки (общие строки и по идеологиям)
+[Groups.Stalkers.:main].Name;Одиночки
+[Groups.Stalkers.:main].Description;Одиночки, исследующие Зону.
+[Groups.Stalkers.Stalkers].Name;Одиночки-Сталкеры
+[Groups.Stalkers.AntiZone].Name;Одиночки-Антизон
+
+; Лидеры
+[Leaders.Leader-1].Name;Генерал Воронин
+[Leaders.Leader-2].Name;Доктор
+
+; Идеологии
+[Ideologies.Stalkers].Name;Сталкерство
+[Ideologies.AntiZone].Name;Анти-Зона
+
+; Товары
+[Goods.PM].Name;Пистолет Макарова
+[Goods.PM].Desc;Пистолет Макарова со следами ржавчины. Самое то для новичков.
+[Goods.Stalker-1].Name;Кожаная куртка
+[Goods.Stalker-1].Desc;Старая кожаная куртка. Почти не защищает, но лучше, чем ничего.
+
+; Постройки
+[Buildings.Workshop].Name;Мастерская
+[Buildings.Workshop].Desc;Позволяет модифицировать амуницию по рецептам.
+[Buildings.Barracks].Name;Казарма
+[Buildings.Barracks].Desc;Увеличивает лимит рекрутов.
+
+; Улучшения
+[Upgrades.Upgrade-1].Name;Тактика боя
+[Upgrades.Upgrade-1].Desc;Увеличивает урон в PvP-боях.
+
+; Правила
+[Rules.Rule-1].Name;Максимальная децентрализация
+[Rules.Rule-5].Name;Обычная децентрализация
+
+; Типы местности
+[TypeLands.Cordon].Name;Кордон
+[TypeLands.BarRostok].Name;Бар «Росток»
+
+; Случайные события (с Desc-YES и Desc-NO)
+[RandomEvents.FindMoney].Name;Находка тайника
+[RandomEvents.FindMoney].Desc-YES;Вы нашли тайник! В нём были спрятаны деньги!
+[RandomEvents.FindMoney].Desc-NO;Вы обыскали территорию, но ничего не нашли.
+
+; Сюжетные события
+[Events_Story.Event-Cordon-1].Name;Прибытие Меченого
+[Events_Story.Event-Cordon-1].Desc;На территории %0:s замечен сталкер Меченый.
+
+; Особые события
+[SpecialEvents.Burst].Name;Выброс
+[SpecialEvents.Burst].Desc-Yes;Над Зоной прошёл выброс! %0:s бойцов погибли.
+[SpecialEvents.Burst].Desc-No;Выброс миновал вашу территорию.
+
+; Торговцы
+[Traders.Trader1].Name;Сидорович
+[Traders.Trader1].NeedText;Требуется контроль территории «Кордон».
+
+; Обучение
+[Tutorial.Page-1].Text;Добро пожаловать в сценарий!
+[Tutorial.Page-2].Text;Используйте КР для найма бойцов и постройки зданий.</code></pre>
+
+            <h3>Как добавить локализацию для нового элемента — чек-лист</h3>
+            <div class="callout callout-tip">
+                <ol>
+                    <li>Определите тип элемента (товар, лидер, событие и т.д.)</li>
+                    <li>Откройте <code>messages.csv</code> в Notepad++ (или создайте его в папке сценария)</li>
+                    <li>Добавьте строки по формату <code>Ключ;Текст</code></li>
+                    <li>Убедитесь, что ключ <strong>точно совпадает</strong> с техническим названием
+                        из конфига (регистр важен!)</li>
+                    <li>Сохраните файл в кодировке <strong>UTF-8 с BOM</strong></li>
+                    <li>Проверьте, что в тексте нет символа <code>;</code></li>
+                </ol>
+            </div>
+
+            <h3>Типичные ошибки</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Ошибка</th><th>Последствия</th><th>Как исправить</th></tr></thead>
+                    <tbody>
+                        <tr><td>Файл сохранён без BOM</td><td>Кириллица отображается кракозябрами</td>
+                            <td>В Notepad++: <strong>Кодировки</strong> → <strong>Преобразовать в UTF-8-BOM</strong></td></tr>
+                        <tr><td>Символ <code>;</code> внутри текста</td>
+                            <td>Строка разбивается на части, текст обрезается</td>
+                            <td>Замените <code>;</code> на запятую или перепишите предложение</td></tr>
+                        <tr><td>Опечатка в ключе</td>
+                            <td>Текст не отображается, вместо него показывается техническое название</td>
+                            <td>Сверьте ключ с техническим названием в конфиге (регистр важен!)</td></tr>
+                        <tr><td>Забыли <code>.Name</code> или <code>.Desc</code></td>
+                            <td>Игра не найдёт нужную строку</td>
+                            <td>Проверьте формат: <code>[Тип.ТехНазвание].Поле</code></td></tr>
+                        <tr><td>Использование кавычек <code>"</code> как в настоящем CSV</td>
+                            <td>Кавычки отображаются как часть текста</td>
+                            <td>Не оборачивайте текст в кавычки — формат не классический CSV</td></tr>
+                        <tr><td>Комментарии через <code>#</code> или <code>;</code></td>
+                            <td>Строка считается обычной и ломает парсинг</td>
+                            <td>В <code>messages.csv</code> нет комментариев — удаляйте лишние строки</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Механизм наследования</h3>
+            <p>Как и с другими файлами, работает механизм наследования от <code>data\default\</code>:</p>
+            <ul>
+                <li>Если в вашем сценарии нет <code>messages.csv</code> — игра использует дефолтный файл</li>
+                <li>Если есть — игра берёт строки из вашего файла, а недостающие — из дефолтного</li>
+                <li>Если ключ есть в обоих файлах — <strong>ваша версия перезаписывает</strong> дефолтную</li>
+            </ul>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Перевод существующего сценария</div>
+                Чтобы перевести существующий сценарий на другой язык:
+                <ol>
+                    <li>Скопируйте <code>messages.csv</code> из сценария</li>
+                    <li>Переведите только текстовую часть (после <code>;</code>), не трогая ключи</li>
+                    <li>Сохраните как <code>messages.csv</code> в нужной кодировке</li>
+                    <li>В <a href="settings.html#Settings">Settings.ini</a> можно указать
+                        <code>DefaultLocale=enUS</code> для английской версии</li>
+                </ol>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Связанные разделы</div>
+                <ul>
+                    <li><a href="start.html#filestypecode">Кодировка файлов</a> — UTF-8 с BOM обязательно</li>
+                    <li>Почти все разделы справки — каждый конфиг требует своих ключей локализации:
+                        <a href="advisors.html#Advisors">Advisors</a>,
+                        <a href="buildings.html#Buildings">Buildings</a>,
+                        <a href="events-story.html#Events_Story">Events_Story</a>,
+                        <a href="goods.html#Goods">Goods</a>,
+                        <a href="groups.html#Groups">Groups</a>,
+                        <a href="ideologies.html#ideologies">Ideologies</a>,
+                        <a href="leaders.html#leaders">Leaders</a>,
+                        <a href="random-events.html#RandomEvents">RandomEvents</a>,
+                        <a href="rules.html#Rules">Rules</a>,
+                        <a href="special-events.html#SpecialEvents">SpecialEvents</a>,
+                        <a href="traders.html#Traders">Traders</a>,
+                        <a href="tradergoods.html#TraderGoods">TraderGoods</a>,
+                        <a href="tutorial.html#Tutorial">Tutorial</a>,
+                        <a href="typelands.html#TypeLands">TypeLands</a>,
+                        <a href="upgrades.html#upgrades">Upgrades</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

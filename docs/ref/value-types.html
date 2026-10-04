@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Обозначения типов значений — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section vt-legend" id="valuetypes">
+            <h2>🏷 Обозначения типов значений</h2>
+            <p>Бейдж в колонке «Тип значения» показывает, <em>что можно писать после знака <code>=</code></em>.
+               Наведите курсор — появится подсказка. Клик по бейджу вернёт вас на эту страницу.</p>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Дефолт — целое число</div>
+                Если явно не указано иное, числовые параметры принимают только целые значения (<a href="faq.html#faq-10">FAQ №10</a>).
+                Поэтому <code>@@ЦЕЛОЕ</code> — самый частый бейдж в справке.
+                Дробь допустима только там, где явно стоит <code>@@ДРОБНОЕ</code>.
+            </div>
+
+            <h3>Таблица типов значений</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Бейдж</th><th>Что писать после «=»</th><th>Пример из конфига</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>@@ТЕКСТ</td><td>Любой текст. Не требует записи в <code>messages.csv</code></td><td><code>Mutants1-Name=Слепой пёс</code></td></tr>
+                        <tr><td>@@НАЗВАНИЕ</td><td>Техническое название: из <code>[]</code> другого конфига, имя файла без расширения или уникальный ID</td><td><code>NewLeader=Leader-1-COP</code></td></tr>
+                        <tr><td>@@ЦЕЛОЕ</td><td>Только целое число</td><td><code>BaseUpCR=3</code></td></tr>
+                        <tr><td>@@ДРОБНОЕ</td><td>Целое или дробное. <strong>Дробь пишется строго через запятую</strong> (написание через точку вызовет ошибку)</td><td><code>BuyUnitForAtackMotivationModificator=1,5</code></td></tr>
+                        <tr><td>@@ЧИСЛА</td><td>Список целых чисел через запятую</td><td><code>BrainPsyAffectedZones=10, 11, 12</code></td></tr>
+                        <tr><td>@@НАЗВАНИЯ</td><td>Список технических названий через запятую</td><td><code>GroupsForPlayer=Stalkers,Duty,Zombie</code></td></tr>
+                        <tr><td>@@BOOL</td><td>Только <code>True</code> или <code>False</code></td><td><code>isTutorial=True</code></td></tr>
+                        <tr><td>@@ВЫБОР</td><td>Одно значение из фиксированного списка (перечень значений указывается в описании параметра)</td><td><code>Type=Workshop</code></td></tr>
+                        <tr><td>@@ПУТЬ</td><td>Относительный путь к файлу, обратные слэши</td><td><code>Img=gfx\icons\units\1.png</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Модификаторы типов</h3>
+            <p>К бейджу может дописываться ограничение, которое уточняет допустимые значения:</p>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Бейдж с модификатором</th><th>Что означает</th><th>Пример</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>@@ЦЕЛОЕ 1-4</code></td><td>Целое число от 1 до 4 включительно</td><td><code>Level=3</code> (ранг бойца)</td></tr>
+                        <tr><td><code>@@ЦЕЛОЕ ≥0</code></td><td>Целое число больше или равно нулю</td><td><code>Step=0</code> (ход события)</td></tr>
+                        <tr><td><code>@@ЦЕЛОЕ 0-100</code></td><td>Целое число от 0 до 100 включительно</td><td><code>MutantsActive=45</code> (процент активности)</td></tr>
+                        <tr><td><code>@@ЧИСЛА 1-5</code></td><td>Список целых чисел, каждое от 1 до 5</td><td><code>RulesBranchWithDisabledBuildingForEnemyEnclave=1,2</code></td></tr>
+                        <tr><td><code>@@ВЫБОР 0-2</code></td><td>Одно значение из списка: 0, 1 или 2</td><td><code>MoveAndAtackArmyThroughAllyDefault=1</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="callout callout-info">
+                <div class="callout-title">📌 Модификаторы дублируются в тултипе</div>
+                Когда вы наведёте курсор на бейдж с модификатором, в подсказке появится
+                информация о допустимых значениях.
+            </div>
+
+            <h3>Как работают бейджи в справке</h3>
+            <p class="vt-note">
+                Бейджи расставляются автоматически скриптом <code>assets/help.js</code>.
+                Чтобы в вашей странице бейджи появились, используйте маркер <code>@@ТИП</code>
+                прямо в тексте (в <code>&lt;td&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;li&gt;</code>).
+                Скрипт пропустит блоки <code>&lt;pre&gt;</code>, <code>&lt;code&gt;</code> и элементы
+                с классом <code>no-badges</code>.
+            </p>
+
+            <h4>Пример использования в HTML</h4>
+<pre><code>&lt;tr&gt;
+  &lt;td&gt;&lt;code&gt;BaseUpCR&lt;/code&gt;&lt;/td&gt;
+  &lt;td&gt;@@ЦЕЛОЕ&lt;/td&gt;
+  &lt;td&gt;Базовый прирост КР группировки&lt;/td&gt;
+&lt;/tr&gt;</code></pre>
+            <p>После загрузки страницы скрипт автоматически заменит <code>@@ЦЕЛОЕ</code> на бейдж
+               с иконкой 🔢 и подсказкой.</p>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Связанные разделы</div>
+                <ul>
+                    <li><a href="faq.html#faq-10">FAQ №10</a> — про дробные значения</li>
+                    <li><a href="start.html#filestypecode">Кодировка файлов</a> — UTF-8 с BOM</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

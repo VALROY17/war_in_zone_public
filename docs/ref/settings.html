@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Settings.ini — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="Settings">
+            <h2>🔧 Основной файл настроек сценария (Settings.ini)</h2>
+
+            <p>Файл <code>Settings.ini</code> находится в папке сценария и содержит <strong>статичные настройки</strong>,
+               которые определяют правила игры: условия победы, стоимости действий, экономику, мутантов,
+               пси-установки и многое другое. В отличие от <a href="main.html#Main">Main.ini</a>,
+               который хранит динамичное состояние мира, этот файл задаёт неизменяемые параметры сценария.</p>
+
+
+            <h3>Локализация (размещать в messages.csv)</h3>
+<pre><code>ScenarioName;Название сценария
+ScenarioDescription;Описание сценария
+ScenarioVictoryDescription;Описание условий победы
+ScenarioLoseDescription;Описание условий поражения</code></pre>
+            <p>Эти ключи размещаются в файле <a href="messages.html#Messages">messages.csv</a>.</p>
+
+            <h3>Секция [Main] — основные настройки</h3>
+
+            <h4>📋 Общие параметры</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>isTutorial</code></td><td>@@BOOL</td><td>Если <code>True</code>, то после старта сценария сразу открывается окно обучения. По умолчанию <code>False</code></td></tr>
+                        <tr><td><code>Map</code></td><td>@@НАЗВАНИЕ</td><td>Название папки с файлами глобальной карты (например, <code>map_sac1</code>). Папка должна находиться в <code>data\default\Map\</code> или в папке сценария</td></tr>
+                        <tr><td><code>DefaultLocale</code></td><td>@@ВЫБОР</td><td>Локализация по умолчанию для сценария. Значения: <code>ruRU</code> (русский), <code>enUS</code> (английский). Мододел может добавить собственные локализации</td></tr>
+                        <tr><td><code>GroupsForPlayer</code></td><td>@@НАЗВАНИЯ</td><td>Список группировок, за которые могут играть игроки. Перечислять технические названия через запятую (например, <code>Stalkers,Bandits,Duty</code>)</td></tr>
+                        <tr><td><code>MedicName</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название ресурса из <a href="goods.html#Goods">Goods</a>, используемого вместо медикаментов. По умолчанию <code>Medic</code></td></tr>
+                        <tr><td><code>SuppliesName</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название ресурса из <a href="goods.html#Goods">Goods</a>, используемого вместо боеприпасов. По умолчанию <code>Supplies</code></td></tr>
+                        <tr><td><code>FoodName</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название ресурса из <a href="goods.html#Goods">Goods</a>, используемого вместо еды. По умолчанию <code>Food</code></td></tr>
+                        <tr><td><code>ScenarioLogo-Standart</code></td><td>@@ПУТЬ</td><td>Путь к изображению логотипа сценария (отображается после выбора кампании)</td></tr>
+                        <tr><td><code>ScenarioLogo-Active</code></td><td>@@ПУТЬ</td><td>Путь к изображению логотипа сценария при наведении курсора мыши</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>🏆 Достижения</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Achievements</code></td><td>@@BOOL</td><td>Включены ли достижения в сценарии (<code>True</code> — включены, <code>False</code> — выключены)</td></tr>
+                        <tr><td><code>AchievementsCount</code></td><td>@@ЦЕЛОЕ</td><td>Число достижений в файле <a href="achievements.html#Achievements">Achievements.ini</a>. Должно совпадать с реальным количеством, иначе будут ошибки</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>🎲 События и выброс</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>EventsRandomDefault</code></td><td>@@BOOL</td><td>Состояние <a href="random-events.html#RandomEvents">случайных событий</a> по умолчанию в меню (<code>True</code> — включены)</td></tr>
+                        <tr><td><code>EventsRandomCanChange</code></td><td>@@BOOL</td><td>Может ли игрок включать/отключать случайные события перед запуском сценария</td></tr>
+                        <tr><td><code>EventsStoryDefault</code></td><td>@@BOOL</td><td>Состояние <a href="events-story.html#Events_Story">сюжетных событий</a> по умолчанию в меню (<code>True</code> — включены)</td></tr>
+                        <tr><td><code>EventsStoryCanChange</code></td><td>@@BOOL</td><td>Может ли игрок включать/отключать сюжетные события перед запуском сценария</td></tr>
+                        <tr><td><code>BurstDefault</code></td><td>@@BOOL</td><td>Включён ли выброс по умолчанию в меню настроек сценария</td></tr>
+                        <tr><td><code>BurstCanChange</code></td><td>@@BOOL</td><td>Может ли игрок изменять настройку выброса перед стартом</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>🏁 Условия победы и поражения</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>StandardWinCanChange</code></td><td>@@BOOL</td><td>Может ли игрок изменять настройки стандартной победы перед стартом</td></tr>
+                        <tr><td><code>StandardWinTypesDefault</code></td><td>@@ВЫБОР</td><td>Тип дополнительной победы по умолчанию. Значения:<br>
+                            <code>0</code> — выключено<br>
+                            <code>1</code> — частичная победа (захватить более половины территорий)<br>
+                            <code>2</code> — групповая победа (победить в составе альянса)<br>
+                            <code>3</code> — частично-групповая победа</td></tr>
+                        <tr><td><code>StandardWinPartyDisabled</code></td><td>@@BOOL</td><td>Отключить возможность победы союзным альянсом</td></tr>
+                        <tr><td><code>End-Standart-Victory</code></td><td>@@BOOL</td><td>Включена ли стандартная победа по захвату всех территорий Зоны</td></tr>
+                        <tr><td><code>End-Standart-Lose</code></td><td>@@BOOL</td><td>Включено ли стандартное поражение по потере всех территорий</td></tr>
+                        <tr><td><code>End-Step-Victory</code></td><td>@@BOOL</td><td>Включена ли победа, если игрок доживёт до хода, указанного в <code>EndStep</code></td></tr>
+                        <tr><td><code>End-Step-Lose</code></td><td>@@BOOL</td><td>Включено ли поражение, если игрок достигнет хода, указанного в <code>EndStep</code></td></tr>
+                        <tr><td><code>End-EventFlag-Victory</code></td><td>@@BOOL</td><td>Включена ли победа по ивент-флагу (в <a href="events-story.html#Events_Story">Events_Story.ini</a> использовать флаг <code>EndVictory</code>)</td></tr>
+                        <tr><td><code>End-EventFlag-Lose</code></td><td>@@BOOL</td><td>Включено ли поражение по ивент-флагу (в Events_Story.ini использовать флаг <code>EndLose</code>)</td></tr>
+                        <tr><td><code>EndStep</code></td><td>@@ЦЕЛОЕ</td><td>Номер хода, который считается финальным для <code>End-Step-Victory</code> и <code>End-Step-Lose</code></td></tr>
+                        <tr><td><code>MinimalControlToWin</code></td><td>@@ЦЕЛОЕ</td><td>Надбавка сверх половины территорий для частичной победы. Например, если на карте 99 территорий, то значение <code>1</code> означает необходимость захвата 50 территорий (99÷2=49, 49+1=50)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>🧟 Мутанты</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>ActiveMutantsEveryRound</code></td><td>@@BOOL</td><td>Включён ли ежеходный рост активности мутантов на всех территориях</td></tr>
+                        <tr><td><code>ActiveMutantAddEveryPercent</code></td><td>@@ЦЕЛОЕ</td><td>Каждые сколько % активности добавляется один мутант каждого типа</td></tr>
+                        <tr><td><code>ActiveMutantScaleForMutantUnit1</code></td><td>@@ЦЕЛОЕ 0-100</td><td>Минимальный % активности мутантов на территории, с которого начинают появляться <strong>собаки</strong></td></tr>
+                        <tr><td><code>ActiveMutantScaleForMutantUnit2</code></td><td>@@ЦЕЛОЕ 0-100</td><td>Минимальный % активности мутантов на территории, с которого начинают появляться <strong>кабаны</strong></td></tr>
+                        <tr><td><code>ActiveMutantScaleForMutantUnit3</code></td><td>@@ЦЕЛОЕ 0-100</td><td>Минимальный % активности мутантов на территории, с которого начинают появляться <strong>кровососы</strong></td></tr>
+                        <tr><td><code>ActiveMutantScaleForMutantUnit4</code></td><td>@@ЦЕЛОЕ 0-100</td><td>Минимальный % активности мутантов на территории, с которого начинают появляться <strong>контролёры</strong></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>💰 Ресурсы и экономика</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>EndRoundChangeResources</code></td><td>@@BOOL</td><td>Происходит ли ежеходное начисление и трата ресурсов (еда, боеприпасы, медикаменты)</td></tr>
+                        <tr><td><code>UnitCostModificator</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор стоимости юнитов. Формула цены найма: <code>цена оружия + цена брони + ранг × UnitCostModificator</code></td></tr>
+                        <tr><td><code>BasedCashBooty</code></td><td>@@ЦЕЛОЕ</td><td>Базовое значение трофейных денег с тел противников (не мутантов) в случае победы или ничьей</td></tr>
+                        <tr><td><code>BasedPercentLostResources</code></td><td>@@ЦЕЛОЕ 0-100</td><td>Процент потери ресурсов группировкой при захвате её главной базы. Например, <code>50</code> означает потерю половины ресурсов</td></tr>
+                        <tr><td><code>MoneyRequestLimit</code></td><td>@@ЦЕЛОЕ</td><td>Максимальная сумма денег, которую можно запросить через дипломатию. По умолчанию <code>50000</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>🕵 Разведка и артефакты</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>SpyCostCRModificator</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор стоимости отправки разведчиков в КР</td></tr>
+                        <tr><td><code>SpyBasedChanceCountForReconnaissance</code></td><td>@@ЦЕЛОЕ 0-100</td><td>Базовый шанс успеха разведки в %. К нему прибавляются все бонусы из <a href="matrix-bonus.html">Advisors</a>, <a href="ideologies.html#ideologies">Ideologies</a>, <a href="leaders.html#leaders">Leaders</a>, <a href="rules.html#Rules">Rules</a> и улучшений</td></tr>
+                        <tr><td><code>SpyBasedCostMoneyForReconnaissance</code></td><td>@@ЦЕЛОЕ</td><td>Базовая цена отправки разведки в деньгах. К ней прибавляются все бонусы</td></tr>
+                        <tr><td><code>BasedChanceForSearchArts</code></td><td>@@ЦЕЛОЕ 0-100</td><td>Базовый шанс поиска артефактов в %. К нему прибавляется <code>BonusSearchArts</code> из всех источников</td></tr>
+                        <tr><td><code>BasedChanceOfDeathForSearchArts</code></td><td>@@ЦЕЛОЕ 0-100</td><td>Базовый шанс смерти бойца при поиске артефакта в %</td></tr>
+                        <tr><td><code>MaxAutoArtsNameRule</code></td><td>@@ЦЕЛОЕ</td><td>Индекс правила из <a href="rules.html#Rules">Rules.ini</a>, которое включает полностью автоматический поиск артефактов (например, <code>6</code> для <code>Rule-6</code>)</td></tr>
+                        <tr><td><code>PartAutoArtsNameRule</code></td><td>@@ЦЕЛОЕ</td><td>Индекс правила из <a href="rules.html#Rules">Rules.ini</a>, которое включает частично автоматический поиск артефактов</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>🚫 Исключения и запреты</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>ExcludedUpgrades</code></td><td>@@НАЗВАНИЯ</td><td>Список технических названий улучшений через запятую, которые недоступны в сценарии. <strong>Полная блокировка</strong>: если в <a href="ai.html#AI">AI.ini</a> указать запрещённое улучшение, игра выдаст ошибку на ходе бота</td></tr>
+                        <tr><td><code>ExcludedBuildings</code></td><td>@@НАЗВАНИЯ</td><td>Список технических названий построек через запятую, которые недоступны в сценарии. <strong>Полная блокировка</strong>: если в AI.ini указать запрещённую постройку, игра выдаст ошибку</td></tr>
+                        <tr><td><code>NoBaseNeeded</code></td><td>@@НАЗВАНИЯ</td><td>Список технических названий группировок через запятую, которым не нужна главная база (например, мутанты, зомби)</td></tr>
+                        <tr><td><code>DisabledZonesForMainBase</code></td><td>@@ЧИСЛА</td><td>Список индексов территорий через запятую, на которых невозможно установить главную базу группировки</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>⚔ Действия и стоимости</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>BasedCostArmyMove</code></td><td>@@ЦЕЛОЕ</td><td>Базовая стоимость передислокации бойцов в КР</td></tr>
+                        <tr><td><code>BasedCostAtackType1</code></td><td>@@ЦЕЛОЕ</td><td>Базовая стоимость разведки боем в КР</td></tr>
+                        <tr><td><code>BasedCostAtackType2</code></td><td>@@ЦЕЛОЕ</td><td>Базовая стоимость захвата территории в КР</td></tr>
+                        <tr><td><code>BasedCostKillMutants</code></td><td>@@ЦЕЛОЕ</td><td>Базовая стоимость зачистки мутантов в КР</td></tr>
+                        <tr><td><code>BasedCostNewAdvisor</code></td><td>@@ЦЕЛОЕ</td><td>Базовая стоимость назначения нового заместителя в КР. К ней прибавляется <code>BonusForCostCPAdvisor</code></td></tr>
+                        <tr><td><code>BasedCostNewRule</code></td><td>@@ЦЕЛОЕ</td><td>Базовая стоимость смены внутреннего правила группировки в КР</td></tr>
+                        <tr><td><code>BasedCostDestroyBuildComands</code></td><td>@@ЦЕЛОЕ</td><td>Базовая стоимость разрушения постройки в КР</td></tr>
+                        <tr><td><code>BasedCostChangeMainZone</code></td><td>@@ЦЕЛОЕ</td><td>Базовая стоимость переноса главной базы группировки в КР. К ней прибавляется <code>BonusForCostCPMainBase</code></td></tr>
+                        <tr><td><code>BasedCostForLeaveZone</code></td><td>@@ЦЕЛОЕ</td><td>Базовая стоимость покидания территории в КР</td></tr>
+                        <tr><td><code>DiplomacyActionCost</code></td><td>@@ЦЕЛОЕ</td><td>Базовая стоимость дипломатического действия в КР</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>🤝 Движение через союзников</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>MoveAndAtackArmyThroughAllyDefault</code></td><td>@@ВЫБОР</td><td>Режим взаимодействия через территорию союзника по умолчанию. Значения:<br>
+                            <code>0</code> — выключено (нельзя проходить через территорию союзника)<br>
+                            <code>1</code> — можно передислоцироваться через территорию союзника<br>
+                            <code>2</code> — можно передислоцироваться и атаковать через территорию союзника</td></tr>
+                        <tr><td><code>MoveAndAtackArmyThroughAllyCanChange</code></td><td>@@ВЫБОР</td><td>Может ли игрок изменять режим движения через союзников. Значения те же: <code>0</code>, <code>1</code>, <code>2</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>🔧 Мастерская и производство</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>BasedCostForUpgradeAmmo-Money</code></td><td>@@ДРОБНОЕ</td><td>Базовый множитель цены на модификацию амуниции в деньгах. Можно указывать дробные значения через запятую (например, <code>1,5</code>)</td></tr>
+                        <tr><td><code>BasedCostForUpgradeAmmo-Comands</code></td><td>@@ЦЕЛОЕ</td><td>Базовая стоимость в КР на привлечение одной мастерской к модификации амуниции</td></tr>
+                        <tr><td><code>BasedImprovementProductivityWorkshop</code></td><td>@@ЦЕЛОЕ</td><td>Базовая продуктивность одной мастерской для модификации чего-либо в течение хода</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>🧠 Пси-излучатель и выжигатель мозгов</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>BrainPsy</code></td><td>@@BOOL</td><td>Включена ли установка пси-излучения в сценарии</td></tr>
+                        <tr><td><code>BrainMixer</code></td><td>@@BOOL</td><td>Включён ли выжигатель мозгов в сценарии</td></tr>
+                        <tr><td><code>BrainPsy-PlayerCanChangeStatus</code></td><td>@@BOOL</td><td>Может ли игрок включать/выключать установку пси-излучения</td></tr>
+                        <tr><td><code>BrainMixer-PlayerCanChangeStatus</code></td><td>@@BOOL</td><td>Может ли игрок включать/выключать выжигатель мозгов</td></tr>
+                        <tr><td><code>BrainPsyBasedZona</code></td><td>@@ЦЕЛОЕ</td><td>Индекс территории, где базируется пси-излучатель (управлять им можно только с этой территории)</td></tr>
+                        <tr><td><code>BrainMixerBasedZona</code></td><td>@@ЦЕЛОЕ</td><td>Индекс территории, где базируется выжигатель мозгов</td></tr>
+                        <tr><td><code>BrainPsyAffectedZones</code></td><td>@@ЧИСЛА</td><td>Список индексов территорий через запятую, на которые распространяется влияние пси-установки</td></tr>
+                        <tr><td><code>BrainMixerAffectedZones</code></td><td>@@ЧИСЛА</td><td>Список индексов территорий через запятую, на которые распространяется влияние выжигателя мозгов</td></tr>
+                        <tr><td><code>BrainControlChangeBasedCost</code></td><td>@@ЦЕЛОЕ</td><td>Базовая стоимость переключения состояния установки в КР</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>⚡ Особые события (SpecialEvents)</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>BurstNumEvent</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название ивента выброса из папки <a href="special-events.html#SpecialEvents">SpecialEvents</a></td></tr>
+                        <tr><td><code>NoFoodNumEvent</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название ивента нехватки еды из папки SpecialEvents</td></tr>
+                        <tr><td><code>BrainPsyWorkNumEvent</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название ивента последствий пси-излучателя из папки SpecialEvents</td></tr>
+                        <tr><td><code>BrainMixerWorkNumEvent</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название ивента последствий выжигателя мозгов из папки SpecialEvents</td></tr>
+                        <tr><td><code>BrainPsyAlarmNumEvent</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название ивента оповещения о переключении состояния пси-излучения из папки SpecialEvents</td></tr>
+                        <tr><td><code>BrainMixerAlarmNumEvent</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название ивента оповещения о переключении состояния выжигателя мозгов из папки SpecialEvents</td></tr>
+                        <tr><td><code>IdeologyLeaveUnitsNumEvent</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название ивента оповещения при уходе бойцов из-за идеологических разногласий из папки SpecialEvents</td></tr>
+                        <tr><td><code>AutoSearchMaxArtsNumEvent</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название ивента оповещения при полностью автоматическом поиске артефактов из папки SpecialEvents</td></tr>
+                        <tr><td><code>AutoSearchPartArtsNumEvent</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название ивента оповещения при частично автоматическом поиске артефактов из папки SpecialEvents</td></tr>
+                        <tr><td><code>MoveMoneyNumEvent</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название ивента, связанного с механикой передачи денег между фракциями из папки SpecialEvents</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>🌫 Прочее</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>AmbientSoundTimer</code></td><td>@@ЦЕЛОЕ</td><td>Интервал в миллисекундах между воспроизведением фоновых звуков</td></tr>
+                        <tr><td><code>MusicCheckTimer</code></td><td>@@ЦЕЛОЕ</td><td>Интервал в миллисекундах для проверки, закончилась ли предыдущая музыка</td></tr>
+                        <tr><td><code>OwnerFractionOfAbandonedZone</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название группировки, которая станет новым владельцем территории после того, как её покинет предыдущий владелец</td></tr>
+                        <tr><td><code>FogOfWar</code></td><td>@@BOOL</td><td>Туман войны (⚠️ бета-версия). Скрывает неисследованные территории и передвижение вражеских армий. <code>True</code> — включить, <code>False</code> — выключить</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Секция [Music]</h3>
+            <p>Список файлов музыки, используемой в сценарии. Каждый файл указывается на отдельной строке:</p>
+<pre><code>[Music]
+music\track1.ogg
+music\track2.ogg
+music\track3.ogg</code></pre>
+
+            <h3>Секция [AmbientSounds]</h3>
+            <p>Список файлов фоновых звуков в сценарии. Каждый файл указывается на отдельной строке:</p>
+<pre><code>[AmbientSounds]
+sfx\ambient\wind.ogg
+sfx\ambient\birds.ogg
+sfx\ambient\distant_explosion.ogg</code></pre>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Связанные разделы</div>
+                <ul>
+                    <li><a href="special-events.html#SpecialEvents">SpecialEvents</a> — конфиги особых событий</li>
+                    <li><a href="main.html#Main">Main.ini</a> — динамическое состояние мира (<code>[Scenario]</code>, <code>[PsyControl]</code>)</li>
+                    <li><a href="rules.html#Rules">Rules.ini</a> — индексы правил для автопоиска артефактов</li>
+                    <li><a href="achievements.html#Achievements">Achievements.ini</a> — достижения сценария</li>
+                    <li><a href="faq.html#faq-15">FAQ №15</a> — отличие Settings.ini сценария от Settings.ini в Документах</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

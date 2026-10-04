@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SpecialEvents — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="SpecialEvents">
+            <h2>⚡ Особые события (SpecialEvents)</h2>
+
+            <p>В папке <code>SpecialEvents\</code> сценария хранятся конфиги для глобальных механик:
+               <strong>Выброс, Нехватка еды, Пси-излучатель, Выжигатель мозгов,
+               Уход бойцов из-за идеологии, Автопоиск артефактов, Передача денег</strong>.
+               Имя файла задаётся в <a href="settings.html#Settings">Settings.ini</a>
+               (например, <code>BurstNumEvent</code>, <code>NoFoodNumEvent</code> и т.д.).
+               Каждый файл содержит один блок <code>[Main]</code>.</p>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Это не «события» в обычном смысле</div>
+                В отличие от <a href="random-events.html#RandomEvents">RandomEvents</a> и
+                <a href="events-story.html#Events_Story">Events_Story</a>, сюда нельзя просто
+                «добавить своё событие». Каждый файл-конфиг обслуживает
+                <strong>конкретную глобальную механику движка</strong>, а подключается к ней
+                через именованный параметр в <code>Settings.ini</code>.
+            </div>
+
+            <h3>🗺 Карта: механика → параметр в Settings.ini</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Механика</th><th>Параметр(ы) в <code>Settings.ini</code></th><th>Что подключает</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>💥 Выброс</td>
+                            <td><code>BurstNumEvent</code></td>
+                            <td>Конфиг выброса. Вкл/выкл — <code>BurstDefault</code>, <code>BurstCanChange</code></td>
+                        </tr>
+                        <tr>
+                            <td>🍞 Нехватка еды</td>
+                            <td><code>NoFoodNumEvent</code></td>
+                            <td>Конфиг последствий нехватки еды</td>
+                        </tr>
+                        <tr>
+                            <td>🧠 Работа пси-излучателя</td>
+                            <td><code>BrainPsyWorkNumEvent</code><br><code>BrainPsyAlarmNumEvent</code></td>
+                            <td>Последствия работы + оповещение о переключении состояния</td>
+                        </tr>
+                        <tr>
+                            <td>🔥 Выжигатель мозгов</td>
+                            <td><code>BrainMixerWorkNumEvent</code><br><code>BrainMixerAlarmNumEvent</code></td>
+                            <td>Последствия работы + оповещение о переключении состояния</td>
+                        </tr>
+                        <tr>
+                            <td>🚪 Уход бойцов из-за идеологии</td>
+                            <td><code>IdeologyLeaveUnitsNumEvent</code></td>
+                            <td>Оповещение при уходе бойцов из-за идеологических разногласий</td>
+                        </tr>
+                        <tr>
+                            <td>🔍 Автопоиск артефактов</td>
+                            <td><code>AutoSearchMaxArtsNumEvent</code><br><code>AutoSearchPartArtsNumEvent</code></td>
+                            <td>Полный и частичный автопоиск. Какое правило его включает —
+                                <code>MaxAutoArtsNameRule</code>, <code>PartAutoArtsNameRule</code>
+                                (<a href="faq.html#faq-24">FAQ №24</a>)</td>
+                        </tr>
+                        <tr>
+                            <td>💸 Передача денег между фракциями</td>
+                            <td><code>MoveMoneyNumEvent</code></td>
+                            <td>Оповещение при передаче денег через дипломатию</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔬 Biohazard — альтернативное оформление пси-механики</div>
+                В сценарии «Зов Припяти» для пси-излучателя используется конфиг
+                <code>Biohazard.ini</code> и <code>BiohazardStatus.ini</code> вместо стандартных
+                <code>BrainPsy.ini</code> и <code>BrainPsyStatus.ini</code>.
+                Параметры в <code>Settings.ini</code>: <code>BrainPsyWorkNumEvent=Biohazard</code> и
+                <code>BrainPsyAlarmNumEvent=BiohazardStatus</code>.<br><br>
+                Это <strong>та же механика пси-излучения</strong>, но с другим визуалом:
+                иконка биологической опасности вместо пси-волн, звук <code>Biohazard1.wav</code>
+                вместо стандартного. Параметры внутри конфига идентичны (<code>NewFractionOwner</code>,
+                <code>DeathChance</code>).<br><br>
+                <strong>Вывод:</strong> Biohazard — не отдельная механика, а вариант оформления пси.
+                Используйте его, если хотите «биологическую» тематику вместо «псионической».
+            </div>
+
+            <h3>Локализация (размещать в messages.csv)</h3>
+<pre><code>[SpecialEvents.&lt;техническое название&gt;].Name     - название события
+[SpecialEvents.&lt;техническое название&gt;].Desc-Yes - описание события у владельца территории
+                                                  или в случае положительного исхода
+[SpecialEvents.&lt;техническое название&gt;].Desc-No  - описание события у НЕ владельца территории
+                                                  или в случае отрицательного исхода</code></pre>
+
+            <h3>Общие параметры (для всех типов)</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>Img</code></td><td>@@ПУТЬ</td><td>Путь к изображению события</td></tr>
+                        <tr><td><code>TargetResourceImg</code></td><td>@@ПУТЬ</td><td>Путь к изображению ресурса (медикаменты, бойцы и т.д.)</td></tr>
+                        <tr><td><code>AddToGameLog</code></td><td>@@BOOL</td><td>Отображать сообщение в логе игровых событий</td></tr>
+                        <tr><td><code>SoundFXForOwner</code></td><td>@@BOOL</td><td>Воспроизводится ли звук у события у владельца территории</td></tr>
+                        <tr><td><code>SoundFXForOwnerFile</code></td><td>@@ПУТЬ</td><td>Путь к файлу звука события у владельца территории</td></tr>
+                        <tr><td><code>NotWorkFractionCount</code></td><td>@@ЦЕЛОЕ</td><td>Число фракций, игнорирующих событие (иммунитет)</td></tr>
+                        <tr><td><code>FractionX</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название фракции с иммунитетом. <code>X</code> — порядковый номер от 1 до значения <code>NotWorkFractionCount</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>Специфичные параметры для Выброса</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>BurstEverySteps</code></td><td>@@ЦЕЛОЕ</td><td>Число ходов, через которые выброс повторяется</td></tr>
+                        <tr><td><code>ActiveMutantUp</code></td><td>@@BOOL</td><td>Будет ли выброс повышать активность мутантов на территориях</td></tr>
+                        <tr><td><code>BurstActiveMutantUpCount</code></td><td>@@ЦЕЛОЕ</td><td>На сколько процентов повышает активность мутантов</td></tr>
+                        <tr><td><code>KillUnits</code></td><td>@@BOOL</td><td>Пытается ли выброс убить юнитов на территориях</td></tr>
+                        <tr><td><code>MedicCanSave</code></td><td>@@BOOL</td><td>Могут ли медикаменты спасти юнитов от выброса</td></tr>
+                        <tr><td><code>MedicForSaveCount</code></td><td>@@ЦЕЛОЕ</td><td>Сколько нужно медикаментов на спасение одного юнита</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>Специфичные параметры для пси-излучения / выжигателя мозгов / Biohazard</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>NewFractionOwner</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название группировки, которая станет новым владельцем территории после срабатывания события (например, <code>Zombie</code> или <code>Mutants</code>)</td></tr>
+                        <tr><td><code>DeathChance</code></td><td>@@ЦЕЛОЕ 0-100</td><td>Шанс смерти юнита при срабатывании события (в процентах)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Почему у большинства механик нет специфичных параметров</div>
+                Механики <strong>Нехватка еды</strong>, <strong>Уход из-за идеологии</strong>,
+                <strong>Автопоиск артефактов</strong>, <strong>Передача денег</strong> в конфигах
+                <code>SpecialEvents</code> используют <strong>только общие параметры</strong>
+                (<code>Img</code>, <code>SoundFX*</code>, <code>NotWorkFractionCount</code> и т.д.).<br><br>
+                Вся логика (сколько еды теряет группировка, сколько бойцов уходит, сколько артефактов
+                находится, сколько денег передаётся) — <strong>захардкожена в движке</strong>.
+                Конфиг задаёт только визуал (картинку, звук, лог) и иммунитет фракций.<br><br>
+                <strong>Пример:</strong> В файле <code>NoFood.ini</code> вы можете изменить картинку,
+                звук и добавить иммунитет для новой группировки, но не можете поменять, сколько бойцов
+                теряется при нехватке еды — это определяется движком.
+            </div>
+
+            <h3>Как дать группировке иммунитет к особому событию — чек-лист</h3>
+            <p>Чтобы группировка игнорировала Выброс (или нехватку еды, или пси-излучение), правится
+               <strong>не её собственный конфиг</strong>, а конфиг особого события:</p>
+            <div class="callout callout-tip">
+                <ol>
+                    <li>Откройте в папке <code>SpecialEvents\</code> файл нужного события
+                        (для Выброса — тот, что указан в <code>BurstNumEvent</code> в <a href="settings.html#Settings">Settings.ini</a>)</li>
+                    <li>Увеличьте <code>NotWorkFractionCount</code> на столько,
+                        насколько добавлено новых группировок с иммунитетом</li>
+                    <li>Добавьте строки <code>Fraction1</code>, <code>Fraction2</code>, …
+                        с техническими названиями группировок, которые должны игнорировать событие</li>
+                </ol>
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Пример: добавление иммунитета для новой группировки</div>
+                Допустим, вы добавили группировку <code>MyGroup</code> и хотите, чтобы она игнорировала выброс.
+                Откройте файл выброса (например, <code>Burst.ini</code>) и измените:
+<pre><code>[Main]
+; ... другие параметры ...
+NotWorkFractionCount=3
+Fraction1=Mutants
+Fraction2=Zombie
+Fraction3=MyGroup</code></pre>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ <code>NotWorkFractionCount</code> обязан совпадать</div>
+                Число в <code>NotWorkFractionCount</code> должно равняться реальному количеству
+                строк <code>FractionX</code>. Добавили новую группировку в сценарий —
+                проверьте <strong>все</strong> конфиги <code>SpecialEvents</code>, где есть иммунитет.
+                Тот же принцип у <a href="achievements.html#Achievements">Achievements.ini</a>.
+            </div>
+
+            <h3>🧠 Механика пси-излучения и выжигателя мозгов</h3>
+            <p>Параметры включения/выключения пси-установок, их стоимость, зоны влияния и возможность управления
+               задаются в <a href="settings.html#Settings">Settings.ini</a> (секция <code>[Main]</code>,
+               параметры <code>BrainPsy*</code> и <code>BrainMixer*</code>).</p>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Начальное состояние — в Main.ini</div>
+                Включены ли установки <strong>со старта сценария</strong> задаётся в
+                <a href="main.html#Main">Main.ini</a> → <code>[PsyControl]</code>:
+                <code>BrainPsy=True</code>, <code>BrainMixer=False</code>.
+                А <em>возможность</em> переключать их в процессе игры — в <code>Settings.ini</code>.
+                Это ровно тот пример разделения «динамичное / статичное»,
+                что описан в <a href="tips.html#helps">совете №8</a>.
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🤖 Бот тоже умеет управлять установками</div>
+                В <a href="ai.html#AI">AI.ini</a>: блок <code>BrainControl</code>,
+                параметры <code>BrainControl-Psy-CanChange</code>, <code>BrainControl-Mixer-CanChange</code>,
+                <code>BrainControl-Psy-TargetStatus</code>, <code>BrainControl-Mixer-TargetStatus</code>.
+                А переключить состояние принудительно могут
+                <a href="events-story.html#Events_Story">Events_Story</a>
+                (типы <code>ChangeStatusBrainPsy</code>, <code>ChangeStatusBrainMixer</code>) и
+                <a href="random-events.html#RandomEvents">RandomEvents</a> (те же типы).
+            </div>
+
+            <h3>Один конфиг на несколько механик?</h3>
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Технически возможно, но не рекомендуется</div>
+                В <code>Settings.ini</code> можно указать одно имя файла SpecialEvents для нескольких
+                параметров <code>*NumEvent</code>. Движок загрузит один конфиг для нескольких механик.<br><br>
+                Общие параметры (<code>Img</code>, <code>SoundFX*</code>, <code>NotWorkFractionCount</code>)
+                будут работать в обеих. Но:<br>
+                • Специфичные параметры одной механики будут проигнорированы другой<br>
+                • Локализация <code>Desc-Yes/No</code> должна подходить под обе<br>
+                • Сложнее понять, что один файл обслуживает несколько механик<br><br>
+                <strong>Рекомендация:</strong> один конфиг на одну механику для ясности.
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Пример полного файла выброса</div>
+<pre><code>; Файл: SpecialEvents\Burst.ini
+[Main]
+Img=gfx\icons\events\Burst.png
+TargetResourceImg=gfx\icons\goods\Medic.png
+BurstEverySteps=10
+ActiveMutantUp=True
+BurstActiveMutantUpCount=5
+KillUnits=True
+MedicCanSave=True
+MedicForSaveCount=1
+SoundFXForOwner=True
+SoundFXForOwnerFile=sfx\events\Burst.mp3
+AddToGameLog=True
+NotWorkFractionCount=2
+Fraction1=Mutants
+Fraction2=Zombie</code></pre>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Связанные разделы</div>
+                <ul>
+                    <li><a href="settings.html#Settings">Settings.ini</a> — все <code>*NumEvent</code>, пси-настройки, <code>BurstDefault</code></li>
+                    <li><a href="main.html#Main">Main.ini</a> — <code>[PsyControl]</code> (начальное состояние пси-установок)</li>
+                    <li><a href="ai.html#AI">AI.ini</a> — блок <code>BrainControl</code> (управление установками ботом)</li>
+                    <li><a href="random-events.html#RandomEvents">RandomEvents</a> · <a href="events-story.html#Events_Story">Events_Story.ini</a> — два других типа событий</li>
+                    <li><a href="faq.html#faq-20">FAQ №20</a> — иммунитет к Выбросу</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

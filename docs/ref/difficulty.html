@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Difficulty.ini — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="Difficulty">
+            <h2>🎯 Настройка сложности (Difficulty.ini)</h2>
+
+            <p>Файл <code>Difficulty.ini</code> определяет стартовые бонусы и штрафы для игрока и бота
+               в зависимости от выбранного уровня сложности. Файл содержит <strong>8 жёстко закодированных секций</strong>
+               (4 для игрока + 4 для бота).</p>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Названия секций — хардкод</div>
+                Технические названия в <code>[]</code> <strong>нельзя переименовывать</strong>,
+                так как они захардкожены в движке. Также <strong>нельзя добавлять новые секции</strong>.
+                Можно только изменять значения параметров внутри существующих секций.
+                См. <a href="limits.html">Лимиты движка</a>.
+            </div>
+
+            <h3>8 жёстко закодированных секций</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Секция</th><th>Для кого</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>[Novice-Player]</code></td><td>Игрок</td><td>Бонусы для новичка</td></tr>
+                        <tr><td><code>[Skilled-Player]</code></td><td>Игрок</td><td>Бонусы для опытного (обычно нулевые значения)</td></tr>
+                        <tr><td><code>[Veteran-Player]</code></td><td>Игрок</td><td>Штрафы для ветерана</td></tr>
+                        <tr><td><code>[Master-Player]</code></td><td>Игрок</td><td>Штрафы для мастера (обычно отрицательные значения)</td></tr>
+                        <tr><td><code>[Novice-AI]</code></td><td>Бот</td><td>Штрафы для бота-новичка (обычно отрицательные значения)</td></tr>
+                        <tr><td><code>[Skilled-AI]</code></td><td>Бот</td><td>Бонусы для опытного бота (обычно нулевые значения)</td></tr>
+                        <tr><td><code>[Veteran-AI]</code></td><td>Бот</td><td>Бонусы для бота-ветерана</td></tr>
+                        <tr><td><code>[Master-AI]</code></td><td>Бот</td><td>Бонусы для мастера-бота</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Параметры</h3>
+            <p>Все значения в таблице ниже — <span class="vt-inline">@@ЦЕЛОЕ</span>.
+               Могут быть <strong>положительными</strong> (бонусы) или <strong>отрицательными</strong> (штрафы).</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Описание</th><th>Пример из конфига</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>AddMoney</code></td><td>Деньги на старте</td><td><code>AddMoney=500</code> (новичок), <code>AddMoney=-250</code> (мастер)</td></tr>
+                        <tr><td><code>AddComands</code></td><td>Командные ресурсы (КР) на старте</td><td><code>AddComands=10</code> (новичок), <code>AddComands=-5</code> (мастер)</td></tr>
+                        <tr><td><code>AddSupplies</code></td><td>Боеприпасы на старте</td><td><code>AddSupplies=200</code></td></tr>
+                        <tr><td><code>AddMedic</code></td><td>Медикаменты на старте</td><td><code>AddMedic=20</code></td></tr>
+                        <tr><td><code>AddFood</code></td><td>Продукты на старте</td><td><code>AddFood=100</code></td></tr>
+                        <tr><td><code>AddLowArts</code></td><td>Дешёвые артефакты на старте</td><td><code>AddLowArts=2</code></td></tr>
+                        <tr><td><code>AddMediumArts</code></td><td>Дорогие артефакты на старте</td><td><code>AddMediumArts=1</code></td></tr>
+                        <tr><td><code>AddHighArts</code></td><td>Редкие артефакты на старте</td><td><code>AddHighArts=0</code></td></tr>
+                        <tr><td><code>AddLowParts</code></td><td>Дешёвые части тел мутантов на старте</td><td><code>AddLowParts=0</code></td></tr>
+                        <tr><td><code>AddMediumParts</code></td><td>Дорогие части тел мутантов на старте</td><td><code>AddMediumParts=0</code></td></tr>
+                        <tr><td><code>AddHighParts</code></td><td>Редкие части тел мутантов на старте</td><td><code>AddHighParts=0</code></td></tr>
+                        <tr><td><code>AddNovice</code></td><td>Рекруты-новички на старте</td><td><code>AddNovice=10</code></td></tr>
+                        <tr><td><code>AddSkilled</code></td><td>Опытные рекруты на старте</td><td><code>AddSkilled=5</code></td></tr>
+                        <tr><td><code>AddVeteran</code></td><td>Ветераны на старте</td><td><code>AddVeteran=2</code></td></tr>
+                        <tr><td><code>AddMaster</code></td><td>Мастера на старте</td><td><code>AddMaster=1</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Как это работает в игре</h3>
+            <p>При старте сценария игрок выбирает уровень сложности в меню. Движок берёт значения
+               из соответствующей секции:</p>
+            <ul>
+                <li>Для <strong>игрока</strong> — из секций <code>[Novice-Player]</code>, <code>[Skilled-Player]</code>,
+                    <code>[Veteran-Player]</code>, <code>[Master-Player]</code></li>
+                <li>Для <strong>ботов</strong> — из секций <code>[Novice-AI]</code>, <code>[Skilled-AI]</code>,
+                    <code>[Veteran-AI]</code>, <code>[Master-AI]</code></li>
+            </ul>
+            <p>Значения <strong>прибавляются</strong> к стартовым ресурсам группировки, заданным в
+               <a href="main.html#Main">Main.ini</a> → <code>[Group-Resources]</code>.</p>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Пример для игрока новичка</div>
+<pre><code>; Файл: Difficulty.ini
+[Novice-Player]
+AddMoney=500
+AddComands=10
+AddSupplies=200
+AddMedic=20
+AddFood=100
+AddLowArts=2
+AddMediumArts=1
+AddHighArts=0
+AddLowParts=0
+AddMediumParts=0
+AddHighParts=0
+AddNovice=10
+AddSkilled=5
+AddVeteran=2
+AddMaster=1
+</code></pre>
+            </div>
+
+            <h3>Как изменить сложность сценария — чек-лист</h3>
+            <ol>
+                <li>Скопируйте <code>Difficulty.ini</code> из <code>data\default\</code> в папку вашего сценария</li>
+                <li>Откройте файл и измените значения параметров в нужных секциях</li>
+                <li>Сохраните в кодировке <strong>UTF-8 с BOM</strong></li>
+                <li>Протестируйте сценарий на разных уровнях сложности</li>
+            </ol>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Не меняйте названия секций</div>
+                Если вы измените название секции (например, <code>[Novice-Player]</code> → <code>[Easy-Player]</code>),
+                движок не найдёт нужные значения и будет использовать нули.
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Совет по балансу</div>
+                <ul>
+                    <li><strong>Novice</strong> — щедрые бонусы для новичков (много денег, ресурсов, рекрутов)</li>
+                    <li><strong>Skilled</strong> — умеренные бонусы</li>
+                    <li><strong>Veteran</strong> — нейтральный уровень (все нули — стартовые ресурсы только из <a href="main.html#Main">Main.ini</a>)</li>
+                    <li><strong>Master</strong> — штрафы для опытных игроков (отрицательные значения)</li>
+                </ul>
+            </div>
+
+            <h3>Связь с достижениями</h3>
+            <p>В <a href="achievements.html#Achievements">Achievements.ini</a> параметр <code>DifficultyLevel</code>
+               позволяет требовать определённый уровень сложности для получения ачивки. Значения:
+               <code>Any</code>, <code>Novice</code>, <code>Skilled</code>, <code>Veteran</code>, <code>Master</code>.</p>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Связанные разделы</div>
+                <ul>
+                    <li><a href="main.html#Main">Main.ini</a> → <code>[Group-Resources]</code> — базовые стартовые ресурсы</li>
+                    <li><a href="achievements.html#Achievements">Achievements.ini</a> — <code>DifficultyLevel</code></li>
+                    <li><a href="limits.html">Лимиты движка</a> — 8 жёстко закодированных секций</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

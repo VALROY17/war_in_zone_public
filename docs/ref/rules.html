@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rules.ini — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="Rules">
+            <h2>📜 Внутренние правила группировок (Rules.ini)</h2>
+
+            <p>Файл <code>Rules.ini</code> описывает внутренние правила управления группировок.
+               Каждое правило даёт набор глобальных бонусов, которые складываются с бонусами от
+               <a href="leaders.html#leaders">лидера</a>, <a href="advisors.html#Advisors">заместителя</a>,
+               <a href="ideologies.html#ideologies">идеологии</a> и других источников
+               (см. <a href="matrix-bonus.html">Матрицу бонусов</a>).</p>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Названия секций — хардкод</div>
+                Технические названия в <code>[]</code> (<code>Rule-1</code>, <code>Rule-2</code>, …)
+                <strong>нельзя переименовывать</strong> и <strong>нельзя добавлять новые</strong>.
+                В движке жёстко зашито <strong>20 правил</strong>.
+                Можно только изменять значения бонусов внутри существующих секций.
+                См. <a href="limits.html">Лимиты движка</a>.
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">📋 Локализация (размещать в messages.csv)</div>
+<pre><code>[Rules.&lt;техническое название&gt;].Name   - название, отображаемое в игре
+                                        (например, «Максимальная децентрализация»)</code></pre>
+            </div>
+
+            <h3>20 правил и уровни централизации</h3>
+            <p>Правила сгруппированы по 5 уровням централизации (по 4 правила на уровень).
+               У каждой группировки может быть одновременно до 4 активных правил — они задаются
+               в <a href="main.html#Main">Main.ini</a> → <code>[Group-Rules]</code>.</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Уровень централизации</th><th>Правила</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><strong>1</strong> — максимальная децентрализация</td>
+                            <td><code>Rule-1</code>, <code>Rule-2</code>, <code>Rule-3</code>, <code>Rule-4</code></td>
+                            <td>Анклавы максимально автономны, многие действия разрешены</td></tr>
+                        <tr><td><strong>2</strong> — обычная децентрализация</td>
+                            <td><code>Rule-5</code>, <code>Rule-6</code>, <code>Rule-7</code>, <code>Rule-8</code></td>
+                            <td>Умеренная автономия анклавов</td></tr>
+                        <tr><td><strong>3</strong> — баланс</td>
+                            <td><code>Rule-9</code>, <code>Rule-10</code>, <code>Rule-11</code>, <code>Rule-12</code></td>
+                            <td>Сбалансированный контроль</td></tr>
+                        <tr><td><strong>4</strong> — обычная централизация</td>
+                            <td><code>Rule-13</code>, <code>Rule-14</code>, <code>Rule-15</code>, <code>Rule-16</code></td>
+                            <td>Анклавы имеют сокращенный список возможностей</td></tr>
+                        <tr><td><strong>5</strong> — максимальная централизация</td>
+                            <td><code>Rule-17</code>, <code>Rule-18</code>, <code>Rule-19</code>, <code>Rule-20</code></td>
+                            <td>На анклавах почти полностью запрещены многие действия</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Где задаются активные правила группировки</div>
+                В <a href="main.html#Main">Main.ini</a> → секция <code>[Group-Rules]</code>:
+<pre><code>[Group-Rules]
+Stalkers-Rule1=1      ; первый слот правил сталкеров использует Rule-1
+Stalkers-Rule2=6      ; второй слот — Rule-6
+Stalkers-Rule3=11      ; третий слот — Rule-11
+Stalkers-Rule4=16     ; четвёртый слот — Rule-16</code></pre>
+                Подробнее: <a href="main.html#Main-Group-Rules">Main.ini → [Group-Rules]</a>.
+            </div>
+
+            <h3>Параметры правил</h3>
+            <p>Все бонусы правил — <strong>глобальные (🌍)</strong>, действуют на всю группировку.
+               Значения складываются с бонусами от других источников.</p>
+
+            <h4>🖼 Оформление</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Img-Available</code></td><td>@@ПУТЬ</td><td>
+                            Путь к иконке правила в интерфейсе (основное изображение)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Рудименты: другие <code>Img-*</code></div>
+                Параметры типа <code>Img-Active</code>, <code>Img-Purchased</code>,
+                <code>Img-PurchasedActive</code> и т.п. <strong>не нужно указывать</strong> в конфиге —
+                движок автоматически подставит пути на основе <code>Img-Available</code>
+                и технического названия правила.<br><br>
+                <strong>НО</strong> сами файлы изображений с правильными именами <strong>строго обязательны</strong>!
+                Какие именно имена и в каких папках — смотрите любой дефолтный конфиг правила,
+                где рудименты прописаны для наглядности.
+                См. <a href="dont-touch.html">«Рудименты и не трогать»</a>.
+            </div>
+
+            <h4>🎖 Разведка и артефакты</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>BonusForSpy</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Модификатор шанса успеха <strong>своих</strong> разведчиков в %.
+                            Положительное = помощь, отрицательное = помеха</td></tr>
+                        <tr><td><code>BonusForEnemySpy</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Модификатор шанса успеха <strong>вражеских</strong> разведчиков в %.
+                            Положительное = помощь врагу, отрицательное = помеха врагу</td></tr>
+                        <tr><td><code>BonusSearchArts</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Модификатор к поиску артефактов в %</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>⚔ Боевые бонусы</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>BonusDamagePVPForAtackers</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Модификатор урона <strong>нападающим</strong> в PvP-боях %</td></tr>
+                        <tr><td><code>BonusDamagePVPForDefenders</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Модификатор урона <strong>обороняющимся</strong> в PvP-боях %</td></tr>
+                        <tr><td><code>BonusDamagePVMForAtackers</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Модификатор урона <strong>нападающим</strong> в PvM-боях (против мутантов) %</td></tr>
+                        <tr><td><code>BonusDamagePVMForDefenders</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Модификатор урона <strong>обороняющимся</strong> в PvM-боях %</td></tr>
+                        <tr><td><code>BonusRangeForAtackers</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Модификатор дальности атаки <strong>нападающим</strong> %</td></tr>
+                        <tr><td><code>BonusRangeForDefenders</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Модификатор дальности атаки <strong>обороняющимся</strong> %</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>👢 Рекруты и командные ресурсы (КР)</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Recruit-Novice</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Ежеходный прирост (отрицательный = убыль) новичков</td></tr>
+                        <tr><td><code>Recruit-Skilled</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Ежеходный прирост опытных</td></tr>
+                        <tr><td><code>Recruit-Veteran</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Ежеходный прирост ветеранов</td></tr>
+                        <tr><td><code>Recruit-Master</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Ежеходный прирост мастеров</td></tr>
+                        <tr><td><code>LimitRecruit-Novice</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Модификатор к максимальному лимиту новичков</td></tr>
+                        <tr><td><code>LimitRecruit-Skilled</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Модификатор к максимальному лимиту опытных</td></tr>
+                        <tr><td><code>LimitRecruit-Veteran</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Модификатор к максимальному лимиту ветеранов</td></tr>
+                        <tr><td><code>LimitRecruit-Master</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Модификатор к максимальному лимиту мастеров</td></tr>
+                        <tr><td><code>Comands</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Ежеходный прирост (отрицательный = убыль) командных ресурсов</td></tr>
+                        <tr><td><code>LimitComands</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Модификатор к максимальному лимиту КР</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>💰 Экономика и трофеи</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>BootyParts</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Абсолютная прибавка к трофейным частям мутантов после боя.
+                            Например, <code>BootyParts=5</code> даёт +5 частей к базовому дропу</td></tr>
+                        <tr><td><code>BootyCash</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Абсолютная прибавка к трофейным деньгам после боя.
+                            Например, <code>BootyCash=100</code> даёт +100 к деньгам</td></tr>
+                        <tr><td><code>BonusForCostCPSpy</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Модификатор стоимости отправки разведчиков в КР.
+                            Отрицательное = дешевле</td></tr>
+                        <tr><td><code>BonusForCostCPAdvisor</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Модификатор стоимости назначения заместителя в КР</td></tr>
+                        <tr><td><code>BonusForCostCPMainBase</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Модификатор стоимости смены главной базы в КР</td></tr>
+                        <tr><td><code>BonusPercentLostResources</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Модификатор % потери ресурсов при потере главной базы.
+                            Отрицательное = меньше теряется</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Сравнение с другими источниками бонусов</h3>
+            <p>Правила дают тот же набор из 25 бонусных параметров, что и другие источники.
+               Ключевые отличия:</p>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Особенность</th><th>Rules</th><th>Advisors / Leaders / Ideologies</th></tr></thead>
+                    <tbody>
+                        <tr><td>Область действия</td><td>🌍 Глобально</td><td>🌍 Глобально</td></tr>
+                        <tr><td>Можно добавлять новые</td><td>❌ Нет (хардкод 20 правил)</td><td>✅ Да (безлимитно)</td></tr>
+                        <tr><td>Можно переименовывать</td><td>❌ Нет</td><td>✅ Да</td></tr>
+                        <tr><td>Изображение</td><td><code>Img-Available</code></td><td><code>Img</code></td></tr>
+                        <tr><td>Привязка к фракции (<code>Fraction</code>)</td><td>❌ Нет</td><td>✅ Только у Advisors</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Как изменить существующее правило — чек-лист</h3>
+            <div class="callout callout-tip">
+                <ol>
+                    <li>Скопируйте <code>Rules.ini</code> из <code>data\default\</code> в папку вашего сценария</li>
+                    <li>Откройте файл и найдите нужную секцию (<code>[Rule-1]</code>, <code>[Rule-2]</code> и т.д.)</li>
+                    <li>Измените значения параметров (бонусы). <strong>Не меняйте</strong> название секции</li>
+                    <li>Если нужно — измените локализацию в <a href="messages.html#Messages">messages.csv</a>:
+                        <code>[Rules.Rule-X].Name</code></li>
+                    <li>Убедитесь, что файлы изображений с правильными именами лежат в нужных папках</li>
+                </ol>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Чего нельзя делать</div>
+                <ul>
+                    <li>❌ Добавлять новые секции <code>[Rule-21]</code>, <code>[Rule-22]</code> и т.д. — движок их проигнорирует</li>
+                    <li>❌ Переименовывать секции (например, <code>[Rule-1]</code> → <code>[MyRule]</code>) —
+                        игра не найдёт нужное правило</li>
+                    <li>❌ Забывать про изображения-рудименты (<code>Img-Active</code>, <code>Img-Purchased</code> и др.) —
+                        без файлов игра выдаст ошибку</li>
+                </ul>
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Практический совет по балансу</div>
+                Обычно правила с более высокой централизацией (Rule-5,10,15,20) дают:
+                <ul>
+                    <li>Больше бонусов к приросту КР и лимитов КР (центр эффективнее управляет ресурсами)</li>
+                    <li>Меньше бонусов к контрразведке и автономии (анклавы менее самостоятельны)</li>
+                </ul>
+                Правила с низкой централизацией (Rule-1,6,11,16) — наоборот: больше свободы анклавам,
+                но меньше общей эффективности.
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Где ещё используется</div>
+                <ul>
+                    <li><a href="main.html#Main">Main.ini</a> → <code>[Group-Rules]</code> —
+                        стартовые активные правила для каждой группировки</li>
+                    <li><a href="groups.html#Groups">Groups</a> → <code>RulesBranchWithDisabled*</code> —
+                        ограничения действий на анклавах в зависимости от уровня централизации</li>
+                    <li><a href="ideologies.html#ideologies">Ideologies</a> → <code>CanUseRule-Rule-X</code> —
+                        какие правила доступны при каждой идеологии</li>
+                    <li><a href="settings.html#Settings">Settings.ini</a> → <code>BasedCostNewRule</code> —
+                        стоимость смены правила в КР</li>
+                    <li><a href="settings.html#Settings">Settings.ini</a> → <code>MaxAutoArtsNameRule</code>,
+                        <code>PartAutoArtsNameRule</code> — правила, включающие автопоиск артефактов</li>
+                    <li><a href="matrix-bonus.html">Матрица бонусов</a> — как бонусы правил складываются
+                        с другими источниками</li>
+                    <li><a href="limits.html">Лимиты движка</a> — 20 правил захардкожены</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

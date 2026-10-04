@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Advisors.ini — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="Advisors">
+            <h2>👥 Кандидаты в заместители лидера группировки (Advisors.ini)</h2>
+
+            <p>Файл <code>Advisors.ini</code> находится в папке сценария и описывает всех кандидатов в заместители. Каждая секция <code>[Название]</code> — это один кандидат.</p>
+
+            <div class="callout callout-info">
+                <div class="callout-title">📊 Бонусы этого конфига</div>
+                Все бонусы заместителя — <strong>глобальные</strong>, действуют на всю группировку.
+                Как они складываются с бонусами построек, идеологий, лидеров, правил и местности —
+                в <a href="matrix-bonus.html">Матрице бонусов</a>.
+            </div>
+
+            <h3>Локализация (размещать в messages.csv)</h3>
+<pre><code>[Advisors.&lt;техническое название&gt;].Name   - название, отображаемое в игре</code></pre>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Про <code>[]</code></div>
+                <code>[]</code> — техническое название персонажа. Используйте только
+                <strong>неповторяющиеся английские названия</strong>.
+                В оригинальных файлах можно встретить формат <code>[Advisor-Stalkers-Wolf]</code>.
+                Это схема разработчика <code>[ТипПерсонажа-Группировка-Персонаж]</code>,
+                она не обязательна — это просто для удобства.
+            </div>
+
+            <h3>Параметры</h3>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Отрицательные значения</div>
+                Многие параметры принимают отрицательные числа. Отрицательное значение = штраф вместо бонуса.
+            </div>
+
+            <h4>🖼 Оформление</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Img</code></td><td>@@ПУТЬ</td><td>Путь к изображению персонажа в интерфейсе</td></tr>
+                        <tr><td><code>Fraction</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название фракции, к которой относится данный персонаж (например, <code>Stalkers</code>, <code>Bandits</code>)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>🎖 Разведка и артефакты</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>BonusForSpy</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор шанса успеха <strong>своих</strong> разведчиков в %. Положительное значение = помощь, отрицательное = помеха (например, <code>-15</code> снижает шанс успеха на 15%)</td></tr>
+                        <tr><td><code>BonusForEnemySpy</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор шанса успеха <strong>вражеских</strong> разведчиков в %. Положительное значение = помощь врагу, отрицательное = помеха врагу (например, <code>-15</code> снижает шанс успеха вражеских разведчиков)</td></tr>
+                        <tr><td><code>BonusSearchArts</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор к поиску артефактов в %. Положительное значение = больше находок, отрицательное = меньше</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>⚔ Боевые бонусы</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>BonusDamagePVPForAtackers</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор урона <strong>нападающим</strong> в PvP-боях %</td></tr>
+                        <tr><td><code>BonusDamagePVPForDefenders</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор урона <strong>обороняющимся</strong> в PvP-боях %</td></tr>
+                        <tr><td><code>BonusDamagePVMForAtackers</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор урона <strong>нападающим</strong> в PvM-боях (против мутантов) %</td></tr>
+                        <tr><td><code>BonusDamagePVMForDefenders</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор урона <strong>обороняющимся</strong> в PvM-боях %</td></tr>
+                        <tr><td><code>BonusRangeForAtackers</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор дальности атаки <strong>нападающим</strong> %</td></tr>
+                        <tr><td><code>BonusRangeForDefenders</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор дальности атаки <strong>обороняющимся</strong> %</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>👢 Рекруты и командные ресурсы (КР)</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Recruit-Novice</code></td><td>@@ЦЕЛОЕ</td><td>Ежеходный прирост (отрицательный = убыль) новичков</td></tr>
+                        <tr><td><code>Recruit-Skilled</code></td><td>@@ЦЕЛОЕ</td><td>Ежеходный прирост опытных</td></tr>
+                        <tr><td><code>Recruit-Veteran</code></td><td>@@ЦЕЛОЕ</td><td>Ежеходный прирост ветеранов</td></tr>
+                        <tr><td><code>Recruit-Master</code></td><td>@@ЦЕЛОЕ</td><td>Ежеходный прирост мастеров</td></tr>
+                        <tr><td><code>LimitRecruit-Novice</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор к максимальному лимиту новичков</td></tr>
+                        <tr><td><code>LimitRecruit-Skilled</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор к максимальному лимиту опытных</td></tr>
+                        <tr><td><code>LimitRecruit-Veteran</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор к максимальному лимиту ветеранов</td></tr>
+                        <tr><td><code>LimitRecruit-Master</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор к максимальному лимиту мастеров</td></tr>
+                        <tr><td><code>Comands</code></td><td>@@ЦЕЛОЕ</td><td>Ежеходный прирост (отрицательный = убыль) командных ресурсов</td></tr>
+                        <tr><td><code>LimitComands</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор к максимальному лимиту КР</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>💰 Экономика</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>BootyParts</code></td><td>@@ЦЕЛОЕ</td><td>Абсолютная прибавка к трофейным частям мутантов после боя. Например, <code>BootyParts=5</code> даёт ровно +5 частей к базовому дропу</td></tr>
+                        <tr><td><code>BootyCash</code></td><td>@@ЦЕЛОЕ</td><td>Абсолютная прибавка к трофейным деньгам после боя. Например, <code>BootyCash=1</code> даёт ровно +1 к деньгам к базовому дропу</td></tr>
+                        <tr><td><code>BonusForCostCPSpy</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор стоимости отправки разведчиков в КР. Положительное значение = дороже, отрицательное = дешевле (например, <code>-1</code> снижает стоимость на 1 КР)</td></tr>
+                        <tr><td><code>BonusForCostCPAdvisor</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор стоимости назначения именно этого заместителя в КР. Положительное значение = дороже, отрицательное = дешевле</td></tr>
+                        <tr><td><code>BonusForCostCPMainBase</code></td><td>@@ЦЕЛОЕ</td><td>Бонус в КР к цене по смене главной базы группировки</td></tr>
+                        <tr><td><code>BonusPercentLostResources</code></td><td>@@ЦЕЛОЕ</td><td>Бонус в % к потере ресурсов при потере главной базы</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>🏛 Идеология</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Ideology</code></td><td>@@НАЗВАНИЕ</td><td>Техническое наименование идеологии, которую продвигает заместитель (например, <code>Stalkers</code>, <code>Crime</code>, <code>AntiZone</code>)</td></tr>
+                        <tr><td><code>IdeologyBonus</code></td><td>@@ЦЕЛОЕ</td><td>Ежеходный прирост в <strong>процентных пунктах</strong> указанной идеологии. Например, <code>IdeologyBonus=5</code> даёт ровно +5% к доле этой идеологии в группировке каждый ход. Очень большие значения быстро вытесняют все остальные идеологии</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Advisors vs Leaders</div>
+                Набор параметров у заместителя и лидера почти идентичен.
+                <strong>Единственное отличие</strong> — у заместителя есть параметр <code>Fraction</code>
+                (привязка к фракции внутри конфига), у лидера привязка к фракции задаётся
+                через <a href="main.html#Main">Main.ini</a> в секции <code>[Group-Leaders]</code>.
+            </div>
+
+            <h3>Как добавить нового кандидата — 3 шага</h3>
+            <div class="callout callout-info">
+                <ol>
+                    <li>Добавьте секцию кандидата в <code>Advisors.ini</code> (этот файл)</li>
+                    <li>В <a href="main.html#Main">Main.ini</a> секция <code>[Advisors]</code> — укажите,
+                        доступен ли он со старта (<code>ТехНазвание=True/False</code>)</li>
+                    <li>Если нужно, чтобы ИИ сам его назначал — пропишите в
+                        <a href="ai.html#AI">AI.ini</a> параметр <code>Advisor-TargetName</code></li>
+                </ol>
+                Не забудьте строку локализации <code>[Advisors.&lt;название&gt;].Name</code> в
+                <a href="messages.html#Messages">messages.csv</a>.
+                Источник: <a href="faq.html#faq-28">FAQ №28</a>.
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Где ещё используется</div>
+                <ul>
+                    <li><a href="main.html#Main">Main.ini</a> — <code>[Advisors]</code> (доступность), <code>[Group-Advisor]</code> (кто назначен со старта)</li>
+                    <li><a href="ai.html#AI">AI.ini</a> — <code>Advisor-CanChange</code>, <code>Advisor-TargetName</code></li>
+                    <li><a href="events-story.html#Events_Story">Events_Story.ini</a> — типы <code>ChangeAdvisor</code>, <code>AvailableAdvisor</code></li>
+                    <li><a href="random-events.html#RandomEvents">RandomEvents</a> — тип <code>ChangeAdvisor</code></li>
+                    <li><a href="settings.html#Settings">Settings.ini</a> — <code>BasedCostNewAdvisor</code> (базовая стоимость назначения)</li>
+                    <li><a href="matrix-bonus.html">Матрица бонусов</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

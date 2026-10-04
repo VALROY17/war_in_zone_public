@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BackgroundObjects.ini — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="BackgroundObjects">
+            <h2>🖼 Фоновые иконки объектов на карте (BackgroundObjects.ini)</h2>
+
+            <p>Файл содержит список декоративных (некликабельных) объектов на глобальной карте сценария. Находится в папке сценария рядом с другими файлами карты.</p>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Что такое декоративный объект»</div>
+                Это чисто декоративная иконка на глобальной карте: она не является территорией,
+                не взаимодействует с игроком и ни на что не влияет в игровом процессе.
+                Подходит для визуальных отметок — например, знака радиации, аномалии,
+                руин или любого другого атмосферного элемента.
+            </div>
+
+            <h3>Параметры</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Секция / Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>[Main]</code> → <code>Count</code></td><td>@@ЦЕЛОЕ</td><td>Количество декоративных объектов в файле. Должно точно совпадать с числом блоков <code>[Element&lt;X&gt;]</code></td></tr>
+                        <tr><td><code>[Element&lt;X&gt;]</code> → <code>X</code></td><td>@@ЦЕЛОЕ</td><td>Горизонтальная координата объекта в пикселях (от левого края текстуры карты)</td></tr>
+                        <tr><td><code>[Element&lt;X&gt;]</code> → <code>Y</code></td><td>@@ЦЕЛОЕ</td><td>Вертикальная координата объекта в пикселях (от верхнего края текстуры карты)</td></tr>
+                        <tr><td><code>[Element&lt;X&gt;]</code> → <code>Name</code></td><td>@@ПУТЬ</td><td>Относительный путь к файлу изображения (PNG). Например, <code>gfx\Elements\GlobalMap\anomaliesVulkan.agr</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>Где <code>&lt;X&gt;</code> — порядковый индекс объекта (от 1 до значения <code>Count</code>).</p>
+
+            <h3>Пример структуры</h3>
+<pre><code>[Main]
+Count=2
+
+[Element1]
+X=120
+Y=340
+Name=gfx\Elements\GlobalMap\anomaliesVulkan.agr
+
+[Element2]
+X=880
+Y=210
+Name=gfx\Elements\GlobalMap\DarkRuins.png</code></pre>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Что будет, если <code>Count</code> не совпадёт</div>
+                <ul>
+                    <li>Если число в <code>Count</code> <strong>больше</strong> реального количества блоков <code>[Element&lt;X&gt;]</code> — игра <strong>выдаст ошибку</strong> при загрузке сценария</li>
+                    <li>Если число <strong>меньше</strong> реального — движок просто прочитает столько элементов, сколько указано в <code>Count</code>, остальные проигнорирует</li>
+                </ul>
+                Индексы элементов должны идти строго подряд, начиная с 1.
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Связанные разделы</div>
+                <ul>
+                    <li><a href="map.html">Файлы карты</a> — основные файлы глобальной карты</li>
+                    <li><a href="map.html#mapTerritories_Icon_Coordinates">Territories_Icon_Coordinates.ini</a> — координаты логотипов группировок на территориях</li>
+                    <li><a href="map.html#mapImage">Изображение карты</a> — текстура глобальной карты, относительно которой задаются координаты</li>
+                    <li><a href="start.html#filestypecode">Кодировка файлов</a> — UTF-8 с BOM</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

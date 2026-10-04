@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Гайд: Чек-лист релиза мода — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="checklist">
+            <h2>✅ Гайд: чек-лист релиза мода</h2>
+
+            <p>Перед тем как публиковать свой мод, пройдите по этому чек-листу.
+               Он составлен на основе типичных ошибок, которые допускают мододелы.
+               Большинство проблем из списка ниже — это <strong>1–2 минуты на исправление</strong>,
+               но они могут полностью сломать игру, если их пропустить.</p>
+
+            <h3>🎯 Что получится в итоге</h3>
+            <ul>
+                <li>Мод, который работает у других игроков так же, как у вас</li>
+                <li>Отсутствие «кракозябр», пропавших имён, вылетов и зависаний</li>
+                <li>Понятная инструкция для игроков (описание, версия, известные проблемы)</li>
+                <li>Минимум негативных отзывов вида «не работает» или «поломанный мод»</li>
+            </ul>
+
+            <h3>📝 Чек-лист релиза</h3>
+
+            <p>Проходите по пунктам сверху вниз. Отмечайте галочкой каждый пройденный пункт.
+               Если по какому-то пункту нашли проблему — исправьте и проверьте снова.</p>
+
+            <h4>🔤 1. Кодировка и формат файлов</h4>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Самая частая причина «кракозябр»</div>
+                Файлы должны быть в <strong>UTF-8 с BOM</strong>. Без BOM кириллица
+                отображается мусором.
+            </div>
+
+            <ul>
+                <li>☐ Все <code>.ini</code>-файлы сохранены в <strong>UTF-8 с BOM</strong>
+                    (проверяется в Notepad++: <strong>Кодировки</strong> → должно быть <strong>UTF-8-BOM</strong>)</li>
+                <li>☐ Файл <code>messages.csv</code> сохранён в <strong>UTF-8 с BOM</strong></li>
+                <li>☐ Файл <code>Settings.ini</code> сохранён в <strong>UTF-8 с BOM</strong></li>
+                <li>☐ В текстах <code>messages.csv</code> нет символа <code>;</code> — иначе строка обрывается</li>
+                <li>☐ В именах файлов и путях нет русских букв и пробелов</li>
+                <li>☐ В дробных значениях используется запятая, а не точка (например, <code>1,5</code>, не <code>1.5</code>)</li>
+            </ul>
+
+            <p>Подробнее: <a href="../ref/start.html#filestypecode">Кодировка файлов</a>,
+               <a href="../ref/messages.html#Messages">messages.csv</a>,
+               <a href="../ref/tips.html#helps">Советы по моддингу</a>.</p>
+
+            <h4>📂 2. Структура файлов и папок</h4>
+
+            <ul>
+                <li>☐ Все файлы лежат в правильных папках:
+                    <ul>
+                        <li><code>Groups/</code> — файлы группировок</li>
+                        <li><code>ideologies/</code> — идеологии</li>
+                        <li><code>leaders/</code> — лидеры</li>
+                        <li><code>upgrades/</code> — улучшения</li>
+                        <li><code>Buildings/</code> — постройки</li>
+                        <li><code>Goods/</code> — товары, оружие, броня</li>
+                        <li><code>Receipts/</code> — рецепты мастерской</li>
+                        <li><code>RandomEvents/</code> — случайные события</li>
+                        <li><code>SpecialEvents/</code> — особые события</li>
+                        <li><code>map/</code> — файлы карты</li>
+                    </ul>
+                </li>
+                <li>☐ Имена файлов без расширения совпадают с техническими названиями
+                    в квадратных скобках <code>[]</code> внутри файла</li>
+                <li>☐ Все файлы изображений существуют по указанным путям</li>
+                <li>☐ Иконки на карте <code>IconMap</code> — статичные изображения (<code>png</code>, <code>jpg</code>),
+                    а не <code>gif</code> (анимация не работает)</li>
+                <li>☐ Карта (<code>map.bmp</code> / <code>map.png</code> / <code>map.jpg</code>) существует,
+                    а <code>map.bt</code> создан <strong>редактором карт</strong>, а не вручную</li>
+            </ul>
+
+            <p>Подробнее: <a href="../ref/tips.html#scenario_structure">Структура сценария</a>,
+               <a href="../ref/faq.html#faq-8">FAQ №8</a> (форматы изображений).</p>
+
+            <h4>🔗 3. Связи между конфигами</h4>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Типичная ошибка — «сирота»</div>
+                Сущность прописана в одном файле, но не прописана в связанных.
+                Например, лидер существует, но не привязан к группировке.
+            </div>
+
+            <ul>
+                <li>☐ <strong>Группировки</strong> — прописаны во всех обязательных секциях:
+                    <ul>
+                        <li><code>[Group-UnitIndex]</code> — 4 шаблона юнитов</li>
+                        <li><code>[Group-Leaders]</code> — лидер</li>
+                        <li><code>[Group-Advisor]</code> — заместитель со старта</li>
+                        <li><code>[Group-Rules]</code> — 4 внутренних правила</li>
+                        <li><code>[Group-Ideology]</code> — стартовая идеология</li>
+                        <li><code>[Group-Ideology-Percent]</code> — проценты (сумма = 100)</li>
+                        <li><code>[MainZoneFraction]</code> — главная база</li>
+                        <li>Хотя бы одна <code>[ZonaX]</code> с <code>Owner=название</code></li>
+                        <li><code>[Diplomacy]</code> — симметричные отношения со всеми</li>
+                        <li><code>[Advisors]</code> — доступность заместителей</li>
+                    </ul>
+                </li>
+                <li>☐ <strong>Лидеры</strong>: файл есть + прописан в <code>[Group-Leaders]</code> + локализация <code>[Leaders.*].Name</code></li>
+                <li>☐ <strong>Заместители</strong>: секция в <code>Advisors.ini</code> + <code>Fraction=группировка</code> +
+                    строка <code>=True</code> в <code>[Advisors]</code> + локализация</li>
+                <li>☐ <strong>Идеологии</strong>: файл есть + секция <code>[Название]</code> в <strong>каждой</strong>
+                    группировке, где она может быть основной + процент в <code>[Group-Ideology-Percent]</code>
+                    + локализация <code>[Ideologies.*].Name</code></li>
+                <li>☐ <strong>Постройки и улучшения</strong>: файлы существуют + локализация <code>Name</code> и <code>Desc</code></li>
+                <li>☐ <strong>Товары</strong>: используются только существующие имена из <code>Goods/</code>
+                    в параметрах <code>NameResources</code>, <code>Custom-Resource</code>, <code>Name</code></li>
+                <li>☐ <strong>Дипломатические отношения</strong> — симметричны: если <code>A-B=1</code>,
+                    то <code>B-A=1</code></li>
+            </ul>
+
+            <p>Подробнее: <a href="../ref/groups.html#Groups">Groups</a> (таблица «Где ещё прописывается группировка»),
+               <a href="../ref/ideologies.html#ideologies">Ideologies</a>,
+               <a href="../ref/leaders.html#leaders">Leaders</a>,
+               <a href="../ref/advisors.html#Advisors">Advisors</a>.</p>
+
+            <h4>🎨 4. Графика и звуки</h4>
+
+            <ul>
+                <li>☐ Все файлы изображений из параметров <code>Img=</code>, <code>Logo-*=</code>,
+                    <code>IconMap=</code>, <code>*-Face=</code> существуют по указанным путям</li>
+                <li>☐ Для <strong>лидеров, заместителей, идеологий</strong> достаточно
+                    <strong>одного</strong> базового изображения (состояния движок делает сам)</li>
+                <li>☐ Для <strong>улучшений</strong> — достаточно одного <code>Logo-NonActive</code></li>
+                <li>☐ Для <strong>построек</strong> — достаточно одного <code>Logo-NonActive</code></li>
+                <li>☐ Иконки группировок на карте — <code>png</code> или <code>jpg</code>,
+                    не <code>gif</code></li>
+                <li>☐ Звуковые файлы (<code>SoundFXForOwnerFile=</code> и т.п.) существуют</li>
+                <li>☐ Папка идеологий называется <code>Idealogies</code> (с буквой <code>a</code>) —
+                    это историческая особенность движка</li>
+            </ul>
+
+            <h4>⚙ 5. Геймплей и баланс</h4>
+
+            <ul>
+                <li>☐ <strong>Условия победы достижимы</strong>: игрок может выиграть при разумной игре</li>
+                <li>☐ <strong>Условия поражения реальны</strong>: игрок может проиграть</li>
+                <li>☐ <strong>Группировки владеют территориями</strong> — нет «висящих в воздухе» фракций</li>
+                <li>☐ <strong>Бонусы не зашкаливают</strong>:
+                    <ul>
+                        <li><code>BonusForSpy</code>, <code>BonusDamage*</code> — разумные значения (±20% обычно достаточно)</li>
+                        <li><code>IdeologyBonus</code> у лидера/заместителя — не больше 5–10% за ход,
+                            иначе идеология вытеснит все остальные за 10 ходов</li>
+                    </ul>
+                </li>
+                <li>☐ <strong>Стоимость улучшений</strong> соответствует их силе</li>
+                <li>☐ <strong>Шансы разведки</strong> в сумме с бонусами не превышают 100% (иначе всегда успех)</li>
+                <li>☐ <strong>Шанс смерти при поиске артефакта</strong> — не слишком высокий,
+                    иначе игроки не будут искать</li>
+            </ul>
+
+            <h4>🤖 6. Поведение ИИ</h4>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Нельзя брать чужой блок ИИ</div>
+                Параметр <code>AI=</code> у новой группировки должен ссылаться
+                только на <code>Default</code>, <code>None</code> или собственный блок.
+                Чужой блок может содержать <code>Advisor-TargetName</code>,
+                который привязан к конкретной группировке, — это вызовет ошибку.
+            </div>
+
+            <ul>
+                <li>☐ У каждой группировки корректный параметр <code>AI=</code>
+                    в блоке <code>[:main]</code></li>
+                <li>☐ В <code>AI.ini</code> нет ссылок на заблокированные улучшения
+                    (те, что в <code>ExcludedUpgrades</code> из <code>Settings.ini</code>)</li>
+                <li>☐ В <code>AI.ini</code> нет ссылок на заблокированные постройки
+                    (те, что в <code>ExcludedBuildings</code>)</li>
+                <li>☐ ИИ-группировки не пытаются назначать заместителей других фракций</li>
+            </ul>
+
+            <p>Подробнее: <a href="../ref/ai.html#AI">AI.ini</a>,
+               <a href="../ref/settings.html#Settings">Settings.ini</a>.</p>
+
+            <h4>📖 7. События (Events)</h4>
+
+            <ul>
+                <li>☐ У каждого сюжетного события (<code>Events_Story.ini</code>) указан <code>Zona</code>
+                    — без этого событие не сработает</li>
+                <li>☐ В каждой секции события только <strong>один</strong> параметр <code>Type</code></li>
+                <li>☐ У случайных событий (<code>RandomEvents/</code>) <strong>нет</strong> параметра <code>Zona</code> —
+                    там всегда случайная территория</li>
+                <li>☐ У всех событий корректный <code>Type</code> (один из 35 сюжетных или 22 случайных)</li>
+                <li>☐ Для типа <code>ChangeIdeologyPercent</code> параметр <code>CountParam</code> —
+                    <strong>только положительный</strong></li>
+                <li>☐ Ивент-флаги используются правильно:
+                    <ul>
+                        <li>Зарезервированные <code>EndVictory</code> / <code>EndLose</code> не используются для своих нужд</li>
+                        <li>Проверки <code>EventFlagStatusNeed</code> совпадают с именами флагов в <code>EventFlagResult</code></li>
+                    </ul>
+                </li>
+                <li>☐ Локализация событий есть (<code>[Events_Story.*].Name</code>, <code>.Desc</code>,
+                    <code>[RandomEvents.*].Name</code>, <code>.Desc-YES</code>, <code>.Desc-NO</code>)</li>
+            </ul>
+
+            <p>Подробнее: <a href="../ref/events-story.html#Events_Story">Events_Story.ini</a>,
+               <a href="../ref/random-events.html#RandomEvents">RandomEvents</a>,
+               <a href="../ref/dont-touch.html">Рудименты и «не трогать»</a>.</p>
+
+            <h4>🌐 8. Локализация</h4>
+
+            <ul>
+                <li>☐ Все ключи <code>[Buildings.*].Name</code> и <code>.Desc</code> существуют</li>
+                <li>☐ Все ключи <code>[Upgrades.*].Name</code> и <code>.Desc</code> существуют</li>
+                <li>☐ Все ключи <code>[Leaders.*].Name</code> существуют</li>
+                <li>☐ Все ключи <code>[Advisors.*].Name</code> существуют</li>
+                <li>☐ Все ключи <code>[Ideologies.*].Name</code> существуют</li>
+                <li>☐ Все ключи <code>[Groups.*.:main].Name</code> и <code>.Description</code> существуют</li>
+                <li>☐ Все ключи <code>[Goods.*].Name</code> и <code>.Desc</code> существуют</li>
+                <li>☐ Ключи <code>ScenarioName</code>, <code>ScenarioDescription</code>,
+                    <code>ScenarioVictoryDescription</code>, <code>ScenarioLoseDescription</code>
+                    прописаны в <code>messages.csv</code></li>
+                <li>☐ В тексте нет запрещённых символов (<code>;</code> в тексте)</li>
+                <li>☐ Спецсимволы <code>%s</code>, <code>%0:s</code>, <code>||</code> используются правильно</li>
+            </ul>
+
+            <p>Подробнее: <a href="../ref/messages.html#Messages">messages.csv</a>.</p>
+
+            <h4>🎮 9. Тестирование</h4>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Минимум — пройти свой мод хотя бы раз</div>
+                Перед публикацией запустите сценарий, пройдите его за <strong>каждую доступную игроку
+                группировку</strong> хотя бы на 10–20 ходов. Большинство критических багов
+                находятся уже на этом этапе.
+            </div>
+
+            <ul>
+                <li>☐ Сценарий запускается без ошибок</li>
+                <li>☐ Список группировок отображается корректно (названия, логотипы)</li>
+                <li>☐ Игра за каждую доступную группировку работает</li>
+                <li>☐ Все окна (найм, строительство, дипломатия, улучшения) открываются без вылетов</li>
+                <li>☐ Сюжетные события срабатывают на нужных ходах</li>
+                <li>☐ Условия победы и поражения работают</li>
+                <li>☐ Боты ведут себя адекватно (не стоят на месте, строят, атакуют)</li>
+                <li>☐ Условие <code>End-EventFlag-Victory</code> / <code>End-EventFlag-Lose</code> (если используется) —
+                    реально достигается или обходится</li>
+                <li>☐ Нет вылетов при срабатывании особых событий (выброс, пси-излучение)</li>
+                <li>☐ Окно обучения (если включено) отображается корректно</li>
+            </ul>
+
+            <h4>📦 10. Подготовка к публикации</h4>
+
+            <ul>
+                <li>☐ Укажите <strong>версию мода</strong> (например, <code>1.0</code>, <code>1.1-beta</code>) —
+                    это поможет вам и игрокам понимать, какая версия установлена</li>
+                <li>☐ Напишите <strong>описание мода</strong> — кратко о чём, для какой версии игры,
+                    какие группировки, какие особенности</li>
+                <li>☐ Сделайте <strong>скриншоты</strong> карты, ключевых интерфейсов, логотипов группировок</li>
+                <li>☐ Составьте список <strong>известных проблем</strong> — то, что вы знаете,
+                    но ещё не починили. Игроки оценят честность</li>
+                <li>☐ Укажите <strong>контакты для обратной связи</strong> (Discord, почта, страница мода)</li>
+                <li>☐ Укажите <strong>совместимую версию игры</strong> (если мод может не работать
+                    в более новых/старых версиях)</li>
+                <li>☐ Приложите <strong>инструкцию по установке</strong> (куда положить папку сценария,
+                    какие настройки включить)</li>
+                <li>☐ Если мод основан на другом — <strong>укажите авторство оригинала</strong></li>
+            </ul>
+
+            <h3>⚠️ Вероятные ошибки при релизе</h3>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">Мод работает у меня, но не у других игроков</div>
+                <p>Самая частая причина — файлы сохранены <strong>не в UTF-8 с BOM</strong>.
+                   На вашем компьютере кодировка может подхватиться случайно, а у других — нет.</p>
+                <p>Решение: откройте каждый файл в Notepad++, <strong>Кодировки</strong> →
+                   <strong>Преобразовать в UTF-8-BOM</strong> → сохранить.</p>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">Вылет при запуске сценария</div>
+                <p>Возможные причины:</p>
+                <ul>
+                    <li>Отсутствует файл, на который ссылается параметр (изображение, другой конфиг)</li>
+                    <li>Группировка не владеет ни одной территорией и не указана в событиях <code>Invasion</code></li>
+                    <li>В <code>MainZoneFraction</code> указан несуществующий индекс территории</li>
+                    <li>В <code>AI.ini</code> ссылка на заблокированное улучшение или постройку</li>
+                    <li>Битая строка в <code>messages.csv</code> (например, <code>;</code> внутри текста)</li>
+                </ul>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">Вместо имён отображаются технические названия</div>
+                <p>Игра не нашла локализацию. Проверьте:</p>
+                <ul>
+                    <li>Ключи в <code>messages.csv</code> совпадают с именами секций/файлов</li>
+                    <li>Файл <code>messages.csv</code> в кодировке UTF-8 с BOM</li>
+                    <li>Разделитель — точка с запятой <code>;</code>, а не двоеточие</li>
+                </ul>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">Боты не действуют или вылетают на своём ходу</div>
+                <p>Проверьте:</p>
+                <ul>
+                    <li>Параметр <code>AI=</code> у группировки ссылается на существующий блок</li>
+                    <li>В блоке ИИ нет ссылок на заблокированные улучшения (<code>ExcludedUpgrades</code>)</li>
+                    <li>В блоке ИИ нет ссылок на заблокированные постройки (<code>ExcludedBuildings</code>)</li>
+                    <li>Бот не пытается назначать заместителей чужих фракций</li>
+                </ul>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Совет: тестируйте на чистом компьютере</div>
+                Если есть возможность — попросите друга установить ваш мод и попробовать сыграть.
+                Другой компьютер — другой набор файлов, другая версия игры, другой пользователь.
+                Многие «работает у меня» проблемы так находятся моментально.
+            </div>
+
+            <h3>🔗 Связанные разделы справки</h3>
+            <ul>
+                <li><a href="../ref/start.html#filestypecode">Кодировка файлов</a> — UTF-8 с BOM обязательно</li>
+                <li><a href="../ref/messages.html#Messages">messages.csv</a> — формат локализации</li>
+                <li><a href="../ref/tips.html#scenario_structure">Структура сценария</a> — типовая папка мода</li>
+                <li><a href="../ref/dont-touch.html">Рудименты и «не трогать»</a> — параметры, которые ломают игру</li>
+                <li><a href="../ref/limits.html">Лимиты движка</a> — что жёстко ограничено</li>
+                <li><a href="../ref/faq.html">FAQ</a> — 34 типичных вопроса</li>
+                <li><a href="../ref/groups.html#Groups">Groups</a> — все места, где нужно прописать группировку</li>
+                <li><a href="../ref/ai.html#AI">AI.ini</a> — поведение ботов</li>
+                <li><a href="../ref/events-story.html#Events_Story">Events_Story.ini</a> — сюжетные события</li>
+                <li><a href="../ref/random-events.html#RandomEvents">RandomEvents</a> — случайные события</li>
+            </ul>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Гайд: Случайное событие — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="L5-random-event">
+            <h2>🎲 Гайд: случайное событие</h2>
+
+            <p>В этом гайде мы добавим в игру новое случайное событие — <strong>«Находка боеприпасов»</strong>.
+               Событие будет добавлять группировке от 100 до 500 единиц боеприпасов
+               (случайное число в диапазоне) на случайной территории.</p>
+
+            <h3>🎯 Что получится в итоге</h3>
+            <ul>
+                <li>Новое случайное событие, которое может произойти в любой момент игры</li>
+                <li>Событие происходит на <strong>случайной территории</strong> (в отличие от сюжетных событий)</li>
+                <li>Добавляет группировке от 100 до 500 единиц боеприпасов (движок сам выбирает число в диапазоне)</li>
+                <li>Не срабатывает у Мутантов и Зомби (у них нет склада)</li>
+                <li>Отображается с иконкой события, иконкой ресурса и звуковым оповещением</li>
+            </ul>
+
+            <h3>📋 Что нужно подготовить</h3>
+            <ul>
+                <li>Одно изображение для иконки события (формат PNG, размер как у существующих —
+                    смотрите в <code>data\gfx\icons\events\</code>)</li>
+                <li>Одно изображение для иконки ресурса (в нашем случае — иконка боеприпасов,
+                    которая уже есть в <code>data\gfx\icons\goods\Supplies.png</code>)</li>
+                <li>Один звуковой файл (формат MP3 или OGG, опционально)</li>
+            </ul>
+
+            <h3>📝 Пошаговая инструкция</h3>
+
+            <h4>Шаг 1. Создайте файл события</h4>
+            <p>В папке вашего сценария создайте папку <code>RandomEvents/</code> (если её ещё нет),
+               а внутри — файл <code>FindSupplies.ini</code>. Имя файла без расширения = техническое
+               название события, которое используется в локализации.</p>
+
+            <p>За основу возьмём реальный конфиг <code>event2.ini</code> из стандартного сценария игры
+               (добавление дешёвых артефактов). Вот его точное содержимое:</p>
+
+<pre><code>[Main]
+Type=AddResources
+Img=gfx\icons\events\2.png
+TargetResourceImg=gfx\icons\goods\Arts1.png
+CountMin=1
+CountMax=5
+SoundFXForOwner=True
+SoundFXForOwnerFile=sfx\events\message.mp3
+NameResources=LowArts
+NotWorkFractions=Mutants,Zombie</code></pre>
+
+            <p>Скопируйте этот текст в свой новый файл <code>FindSupplies.ini</code> и внесите следующие изменения:</p>
+
+<pre><code>[Main]
+Type=AddResources
+Img=gfx\icons\events\find_supplies.png
+TargetResourceImg=gfx\icons\goods\Supplies.png
+CountMin=100
+CountMax=500
+SoundFXForOwner=True
+SoundFXForOwnerFile=sfx\events\message.mp3
+NameResources=Supplies
+NotWorkFractions=Mutants,Zombie</code></pre>
+
+            <div class="callout callout-info">
+                <div class="callout-title">📌 Что мы изменили по сравнению с прототипом</div>
+                <ul>
+                    <li><code>Img=gfx\icons\events\find_supplies.png</code> — путь к нашей иконке события</li>
+                    <li><code>TargetResourceImg=gfx\icons\goods\Supplies.png</code> — путь к иконке ресурса
+                        (боеприпасы, уже существует в стандартных конфигах)</li>
+                    <li><code>CountMin=100</code>, <code>CountMax=500</code> — диапазон: игра сама выберет
+                        случайное число от 100 до 500 при срабатывании события</li>
+                    <li><code>NameResources=Supplies</code> — техническое название ресурса из папки
+                        <code>Goods/</code> (уже существует в стандартном сценарии)</li>
+                    <li><code>NotWorkFractions=Mutants,Zombie</code> — событие не сработает у Мутантов
+                        и Зомби (у них нет склада)</li>
+                </ul>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Случайность значения</div>
+                <p>Параметры <code>CountMin</code> и <code>CountMax</code> задают диапазон.
+                   При срабатывании события движок <strong>сам выбирает случайное число</strong>
+                   внутри этого диапазона. Если хотите фиксированное число — укажите
+                   одинаковые значения: <code>CountMin=100</code> и <code>CountMax=100</code>.</p>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Событие происходит на случайной территории</div>
+                <p>У случайных событий <strong>нет</strong> параметра <code>Zona</code> — они всегда
+                   происходят на случайно выбранной территории. Это главное отличие от
+                   <a href="../ref/events-story.html#Events_Story">Events_Story.ini</a>,
+                   где каждое событие привязано к конкретной территории.</p>
+                <p>Если вам нужно событие на конкретной территории — используйте
+                   сюжетные события, а не случайные.</p>
+            </div>
+
+            <h4>Шаг 2. (Необязательно) Положите иконки</h4>
+            <p>Если хотите свою иконку события — поместите файл <code>find_supplies.png</code>
+               по пути <code>gfx\icons\events\find_supplies.png</code> в папке вашего сценария.</p>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Если своей иконки пока нет</div>
+                Можно временно использовать иконку существующего события. Например, укажите
+                <code>Img=gfx\icons\events\2.png</code> — движок возьмёт иконку из стандартного
+                набора событий.
+            </div>
+
+            <h4>Шаг 3. Добавьте локализацию в <code>messages.csv</code></h4>
+            <p>Откройте <code>messages.csv</code> вашего сценария и добавьте три строки —
+               название события и два варианта описания:</p>
+
+<pre><code>[RandomEvents.FindSupplies].Name;Находка боеприпасов
+[RandomEvents.FindSupplies].Desc-YES;Наши бойцы обнаружили тайник с боеприпасами! Найдено: %0:s единиц.
+[RandomEvents.FindSupplies].Desc-NO;Наши бойцы обыскали территорию, но не нашли ничего полезного.</code></pre>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Почему два варианта описания</div>
+                <p>Параметры <code>Desc-YES</code> и <code>Desc-NO</code> работают по условию:</p>
+                <ul>
+                    <li><strong><code>Desc-YES</code></strong> — срабатывает, когда событие <em>смогло</em> отработать.
+                        Например, если у группировки есть ресурсы, к которым обращено событие (находка, кража)</li>
+                    <li><strong><code>Desc-NO</code></strong> — срабатывает, когда событие <em>не смогло</em> отработать.
+                        Например, если ресурсов нет и красть нечего</li>
+                </ul>
+                <p>В нашем случае <code>Desc-YES</code> — когда боеприпасы действительно найдены,
+                   а <code>Desc-NO</code> — если по какой-то причине событие не сработало.</p>
+                <p>Спецсимвол <code>%0:s</code> в <code>Desc-YES</code> автоматически подставит число
+                   найденных боеприпасов (то, что выбрал движок в диапазоне 100–500).</p>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Формат ключа</div>
+                <p>Ключ в <code>messages.csv</code> должен совпадать с именем файла события без расширения.
+                   У нас файл называется <code>FindSupplies.ini</code>,
+                   значит ключ — <code>[RandomEvents.FindSupplies]</code>.</p>
+                <p>Регистр значения не имеет (<code>[RandomEvents.FindSupplies]</code> и
+                   <code>[RandomEvents.findsupplies]</code> работают одинаково), но рекомендуется
+                   писать так же, как имя файла — это упрощает поиск по файлу <code>messages.csv</code>.</p>
+                <p>Разделитель между ключом и текстом — точка с запятой <code>;</code>.
+                   Внутри самого текста символ <code>;</code> использовать нельзя — строка оборвётся.</p>
+            </div>
+
+            <h4>Шаг 4. Включите случайные события в <code>Settings.ini</code> (если нужно)</h4>
+            <p>Случайные события включаются и отключаются через <code>Settings.ini</code>
+               в параметрах:</p>
+
+<pre><code>[Main]
+; ...
+EventsRandomDefault=True        ; ← состояние по умолчанию в меню (True = включены)
+EventsRandomCanChange=True      ; ← может ли игрок отключить их перед стартом
+; ...</code></pre>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Обычно это уже настроено</div>
+                <p>В стандартном сценарии эти параметры уже установлены в <code>True</code>.
+                   Вам нужно их править только если вы хотите по умолчанию отключить
+                   случайные события или запретить игроку их включать.</p>
+            </div>
+
+            <h4>Шаг 5. Сохраните все файлы в правильной кодировке</h4>
+            <ul>
+                <li><code>RandomEvents/FindSupplies.ini</code> — <strong>UTF-8 с BOM</strong></li>
+                <li><code>messages.csv</code> — <strong>UTF-8 с BOM</strong></li>
+                <li><code>Settings.ini</code> (если правили) — <strong>UTF-8 с BOM</strong></li>
+            </ul>
+
+            <p>Подробнее про кодировку: <a href="../ref/start.html#filestypecode">«Кодировка файлов»</a>.</p>
+
+            <h3>✅ Проверка результата</h3>
+            <ol>
+                <li>Запустите игру и начните свой сценарий</li>
+                <li>Перед стартом убедитесь, что в меню настроек случайные события включены</li>
+                <li>Сыграйте несколько ходов — случайные события срабатывают не каждый ход,
+                    так что может потребоваться подождать</li>
+                <li>Когда событие сработает — убедитесь, что:</li>
+                <ul>
+                    <li>Отображается корректное название («Находка боеприпасов»)</li>
+                    <li>Показывается иконка события и иконка ресурса</li>
+                    <li>Текст описания содержит число найденных боеприпасов (100–500)</li>
+                    <li>Воспроизводится звук (если указан)</li>
+                    <li>На складе группировки действительно прибавились боеприпасы</li>
+                </ul>
+            </ol>
+
+            <h3>⚠️ Вероятные ошибки</h3>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">Событие не срабатывает никогда</div>
+                <ul>
+                    <li>Проверьте, что файл <code>FindSupplies.ini</code> лежит в папке
+                        <code>RandomEvents/</code></li>
+                    <li>Проверьте <code>Settings.ini</code> — параметр <code>EventsRandomDefault</code>
+                        должен быть <code>True</code></li>
+                    <li>Убедитесь, что игрок не отключил случайные события в меню перед стартом</li>
+                </ul>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">Вместо названия — техническое имя «FindSupplies»</div>
+                <p>Игра не нашла локализацию. Проверьте:</p>
+                <ul>
+                    <li>Ключ точно <code>[RandomEvents.FindSupplies].Name</code> (именно
+                        <code>RandomEvents</code>, а не <code>StoryEvents</code> — это разные типы событий)</li>
+                    <li>Разделитель — точка с запятой <code>;</code></li>
+                    <li>В тексте нет символа <code>;</code></li>
+                    <li><code>messages.csv</code> сохранён в <strong>UTF-8 с BOM</strong></li>
+                </ul>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">Событие срабатывает у Мутантов или Зомби</div>
+                <p>У этих группировок нет склада, поэтому событие добавления ресурсов
+                   у них не работает. Проверьте, что в конфиге указан параметр:</p>
+<pre><code>NotWorkFractions=Mutants,Zombie</code></pre>
+                <p>Если нужно исключить другие группировки — добавьте их через запятую.</p>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">Движок выдаёт ошибку на загрузке</div>
+                <ul>
+                    <li>Проверьте, что <code>Type</code> — один из 22 допустимых типов
+                        (см. <a href="../ref/random-events.html#RandomEvents">справку RandomEvents</a>)</li>
+                    <li>Проверьте, что все обязательные параметры для выбранного типа указаны.
+                        Для <code>AddResources</code> обязательны: <code>NameResources</code>,
+                        <code>CountMin</code>, <code>CountMax</code>, <code>TargetResourceImg</code></li>
+                    <li>Проверьте, что <code>NameResources</code> ссылается на существующий
+                        ресурс из папки <code>Goods/</code></li>
+                </ul>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Нюанс: 22 типа событий</div>
+                <p>Движок поддерживает ровно <strong>22 типа</strong> случайных событий —
+                   это жёсткий лимит. Создать новый тип нельзя, только использовать
+                   один из существующих: <code>AddResources</code>, <code>RemoveResources</code>,
+                   <code>AddUnits</code>, <code>Invasion</code>, <code>ChangeLeader</code>,
+                   <code>ChangeAdvisor</code>, <code>Build</code>, <code>Destroy</code> и другие.</p>
+                <p>Полный список и обязательные параметры для каждого типа:
+                   <a href="../ref/random-events.html#RandomEvents">справка RandomEvents</a>.</p>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Нюанс: случайные события vs сюжетные</div>
+                <p>Случайные события и сюжетные (<code>Events_Story.ini</code>) — это разные механики:</p>
+                <ul>
+                    <li><strong>Случайные</strong> — происходят на случайной территории, в случайное время,
+                        без привязки к ходу. Не имеют ивент-флагов</li>
+                    <li><strong>Сюжетные</strong> — привязаны к конкретной территории и ходу,
+                        поддерживают ивент-флаги и проверочные типы</li>
+                </ul>
+                <p>Если вам нужен сюжет с условиями и ветвлением — используйте
+                   <code>Events_Story.ini</code>, а не <code>RandomEvents</code>.</p>
+            </div>
+
+            <h3>🔗 Связанные разделы справки</h3>
+            <ul>
+                <li><a href="../ref/random-events.html#RandomEvents">RandomEvents</a> — полное описание всех параметров и 22 типов событий</li>
+                <li><a href="../ref/events-story.html#Events_Story">Events_Story.ini</a> — сюжетные события (35 типов, привязка к территории)</li>
+                <li><a href="../ref/special-events.html#SpecialEvents">SpecialEvents</a> — глобальные механики (выброс, пси-излучатель)</li>
+                <li><a href="../ref/settings.html#Settings">Settings.ini</a> — <code>EventsRandomDefault</code>, <code>EventsRandomCanChange</code></li>
+                <li><a href="../ref/messages.html#Messages">messages.csv</a> — формат локализации, спецсимволы <code>%s</code></li>
+                <li><a href="../ref/limits.html">Лимиты движка</a> — 22 типа захардкожены, добавить новый нельзя</li>
+                <li><a href="../ref/goods.html#Goods">Goods</a> — технические названия ресурсов для <code>NameResources</code></li>
+                <li><a href="../ref/start.html#filestypecode">Кодировка файлов</a> — UTF-8 с BOM</li>
+            </ul>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

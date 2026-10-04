@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TypeLands — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="TypeLands">
+            <h2>🗺 Типы местности территорий (TypeLands)</h2>
+
+            <p>Папка <code>TypeLands\</code> в сценарии содержит типы местности. <strong>Название файла — техническое название типа местности</strong>,
+               который используется в <a href="map.html#mapTerritories">Territories.ini</a>.
+               Каждый файл содержит один блок <code>[Main]</code>.</p>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">📍 Смешанная область действия</div>
+                В отличие от заместителей, идеологий, лидеров и правил (у которых все бонусы глобальные),
+                у типа местности <strong>часть бонусов территориальные (📍), а часть глобальные (🌍)</strong>.
+                См. таблицу ниже и <a href="matrix-bonus.html">Матрицу бонусов</a>.
+            </div>
+
+            <h3>Локализация (размещать в messages.csv)</h3>
+<pre><code>[TypeLands.&lt;техническое название&gt;].Name   - название, отображаемое в игре</code></pre>
+
+            <h3>Параметры</h3>
+            <p>Все значения в таблице ниже — <span class="vt-inline">@@ЦЕЛОЕ</span>. Отрицательные значения = штрафы вместо бонусов.</p>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Область</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>BonusForEnemySpy</code></td><td>📍</td><td>Модификатор шанса успеха вражеских разведчиков в %</td></tr>
+                        <tr><td><code>BonusSearchArts</code></td><td>📍</td><td>Модификатор к поиску артефактов в %</td></tr>
+                        <tr><td><code>BonusDamagePVPForAtackers</code></td><td>📍</td><td>Модификатор урона нападающим в PvP-боях %</td></tr>
+                        <tr><td><code>BonusDamagePVPForDefenders</code></td><td>📍</td><td>Модификатор урона обороняющимся в PvP-боях %</td></tr>
+                        <tr><td><code>BonusDamagePVMForAtackers</code></td><td>📍</td><td>Модификатор урона нападающим в PvM-боях (против мутантов) %</td></tr>
+                        <tr><td><code>BonusDamagePVMForDefenders</code></td><td>📍</td><td>Модификатор урона обороняющимся в PvM-боях %</td></tr>
+                        <tr><td><code>BonusRangeForAtackers</code></td><td>📍</td><td>Модификатор дальности атаки нападающим %</td></tr>
+                        <tr><td><code>BonusRangeForDefenders</code></td><td>📍</td><td>Модификатор дальности атаки обороняющимся %</td></tr>
+                        <tr><td><code>BootyParts</code></td><td>📍</td><td>Абсолютная прибавка к трофейным частям мутантов после боя на этой территории</td></tr>
+                        <tr><td><code>BootyCash</code></td><td>📍</td><td>Абсолютная прибавка к трофейным деньгам после боя на этой территории</td></tr>
+                        <tr><td><code>Recruit-Novice</code></td><td>📍</td><td>Ежеходный прирост новичков на этой территории</td></tr>
+                        <tr><td><code>Recruit-Skilled</code></td><td>📍</td><td>Ежеходный прирост опытных на этой территории</td></tr>
+                        <tr><td><code>Recruit-Veteran</code></td><td>📍</td><td>Ежеходный прирост ветеранов на этой территории</td></tr>
+                        <tr><td><code>Recruit-Master</code></td><td>📍</td><td>Ежеходный прирост мастеров на этой территории</td></tr>
+                        <tr><td><code>LimitRecruit-Novice</code></td><td>🌍</td><td>Глобальный бонус к максимальному лимиту новичков</td></tr>
+                        <tr><td><code>LimitRecruit-Skilled</code></td><td>🌍</td><td>Глобальный бонус к максимальному лимиту опытных</td></tr>
+                        <tr><td><code>LimitRecruit-Veteran</code></td><td>🌍</td><td>Глобальный бонус к максимальному лимиту ветеранов</td></tr>
+                        <tr><td><code>LimitRecruit-Master</code></td><td>🌍</td><td>Глобальный бонус к максимальному лимиту мастеров</td></tr>
+                        <tr><td><code>Comands</code></td><td>🌍</td><td>Глобальный ежедневный прирост КР</td></tr>
+                        <tr><td><code>LimitComands</code></td><td>🌍</td><td>Глобальный бонус к максимальному лимиту КР</td></tr>
+                        <tr><td><code>BonusForCostCPMainBase</code></td><td>📍</td><td>Модификатор стоимости смены главной базы в КР. Указывайте отрицательное число, если нужно уменьшить цену</td></tr>
+                        <tr><td><code>BonusPercentLostResources</code></td><td>📍</td><td>Модификатор % потери ресурсов при потере главной базы. Чем больше значение, тем больше теряется. Указывайте отрицательное число, если нужно уменьшить потери</td></tr>
+                        <tr><td><code>CountBuildings</code></td><td>—</td><td>Число построек, которые могут быть построены на этом типе местности (вместимость)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ <code>CountBuildings</code> — не бонус</div>
+                Это <strong>вместимость</strong> территории, а не бонус.
+                Он не суммируется ни с какими другими источниками и не участвует
+                в <a href="matrix-bonus.html">матрице бонусов</a>.
+            </div>
+
+            <h3>Чего у типа местности нет</h3>
+            <p>По сравнению с заместителями, идеологиями, лидерами и правилами, у TypeLands
+               <strong>отсутствуют</strong> следующие параметры:</p>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Группа параметров</th><th>Есть в TypeLands?</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>BonusForSpy</code></td><td>❌ нет</td></tr>
+                        <tr><td><code>BonusForCostCPSpy</code></td><td>❌ нет</td></tr>
+                        <tr><td><code>BonusForCostCPAdvisor</code></td><td>❌ нет</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Пример файла типа местности</div>
+<pre><code>; Файл: TypeLands\Cordon.ini
+[Main]
+CountBuildings=3
+BonusForEnemySpy=-5
+BonusSearchArts=10
+BonusDamagePVPForAtackers=5
+BonusDamagePVPForDefenders=5
+BonusDamagePVMForAtackers=0
+BonusDamagePVMForDefenders=0
+BonusRangeForAtackers=3
+BonusRangeForDefenders=3
+BootyParts=2
+BootyCash=50
+Recruit-Novice=1
+Recruit-Skilled=0
+Recruit-Veteran=0
+Recruit-Master=0
+LimitRecruit-Novice=5
+LimitRecruit-Skilled=3
+LimitRecruit-Veteran=2
+LimitRecruit-Master=1
+Comands=2
+LimitComands=10
+BonusForCostCPMainBase=-5
+BonusPercentLostResources=-10</code></pre>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Связанные разделы</div>
+                <ul>
+                    <li><a href="map.html#mapTerritories">Territories.ini</a> — где территории получают свой тип местности</li>
+                    <li><a href="buildings.html#Buildings">Buildings</a> — <code>CountBuildings</code> ограничивает число построек</li>
+                    <li><a href="matrix-bonus.html">Матрица бонусов</a> — полный разбор TypeLands</li>
+                    <li><a href="map.html">Файлы карты</a> — как создаётся карта встроенным редактором</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

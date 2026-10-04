@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RandomEvents — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="RandomEvents">
+            <h2>🎲 Случайные события (RandomEvents)</h2>
+
+            <p>Папка <code>RandomEvents\</code> в сценарии состоит из ini-файлов, каждый из которых представляет одно случайное событие.
+               Каждый файл содержит один блок <code>[Main]</code>.</p>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Нет привязки к территории</div>
+                Все случайные события <strong>не имеют параметра <code>Zona</code></strong>,
+                так как случайные события всегда происходят на случайной территории.
+                Это главное отличие от <a href="events-story.html#Events_Story">Events_Story.ini</a>,
+                где каждое событие привязано к конкретной территории.
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Случайность значения</div>
+                Числовые эффекты задаются <strong>диапазоном</strong>:
+                <code>CountMin</code> … <code>CountMax</code>.
+                Игра сама выбирает значение внутри диапазона при срабатывании события.
+            </div>
+
+            <h3>Локализация (размещать в messages.csv)</h3>
+<pre><code>[RandomEvents.&lt;техническое название&gt;].Name      - краткое название ивента
+[RandomEvents.&lt;техническое название&gt;].Desc-YES  - текст описания в случае, если ивент смог отработать
+[RandomEvents.&lt;техническое название&gt;].Desc-NO   - текст описания в случае, если ивент НЕ смог отработать</code></pre>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Логика Desc-Yes / Desc-No и SoundFXForOwner / SoundFXForNonOwner</div>
+                Эти параметры работают по условию. Если у фракции есть ресурс, на который направлено событие
+                (например, кража или находка), срабатывает <code>Desc-YES</code> и <code>SoundFXForOwner</code>.
+                Если ресурса нет — срабатывает <code>Desc-NO</code> и <code>SoundFXForNonOwner</code>.
+                <br><br>
+                <strong>Пример:</strong> Событие кражи артефактов. Если у фракции есть артефакты —
+                срабатывает «Owner» (кража успешна). Если артефактов нет — срабатывает «NonOwner» (украсть нечего).
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">📌 Включаются в Settings.ini</div>
+                <code>EventsRandomDefault</code> — состояние по умолчанию в меню,<br>
+                <code>EventsRandomCanChange</code> — может ли игрок их отключить перед стартом.
+                См. <a href="settings.html#Settings">Settings.ini</a>.
+            </div>
+
+            <h3 id="re-types">Типы ивентов (всего 22)</h3>
+            <p>Движок поддерживает ровно 22 типа случайных событий — это жёсткий лимит.
+               В дефолтном сценарии используется только 8 из них, остальные 14 доступны для мододелов.</p>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>AddResources</code></td><td>Добавить ресурсы</td></tr>
+                        <tr><td><code>RemoveResources</code></td><td>Отнять ресурсы</td></tr>
+                        <tr><td><code>AddWeapon</code></td><td>Добавить оружие, которое на вооружении указанного ранга</td></tr>
+                        <tr><td><code>RemoveWeapon</code></td><td>Отнять оружие, которое на вооружении указанного ранга</td></tr>
+                        <tr><td><code>AddArmor</code></td><td>Добавить броню, которая на вооружении указанного ранга</td></tr>
+                        <tr><td><code>RemoveArmor</code></td><td>Отнять броню, которая на вооружении указанного ранга</td></tr>
+                        <tr><td><code>AddUnits</code></td><td>Добавляет указанное число юнитов указанных рангов</td></tr>
+                        <tr><td><code>RemoveUnits</code></td><td>Убирает указанные числа юнитов</td></tr>
+                        <tr><td><code>AddMutants</code></td><td>Добавляет указанное число <strong>фоновых мутантов</strong> на территорию (не гарнизонных)</td></tr>
+                        <tr><td><code>RemoveMutants</code></td><td>Убирает указанное число <strong>фоновых мутантов</strong> с территории (не гарнизонных)</td></tr>
+                        <tr><td><code>AddMutantsActive</code></td><td>Поднять % активности мутантов на территории</td></tr>
+                        <tr><td><code>RemoveMutantsActive</code></td><td>Понизить % активности мутантов на территории</td></tr>
+                        <tr><td><code>Invasion</code></td><td>Из ниоткуда происходит вторжение указанного числа указанных рангов юнитов указанного владельца на территорию</td></tr>
+                        <tr><td><code>ChangeLeader</code></td><td>Сменить лидера группировки на указанного в <code>NewLeader</code></td></tr>
+                        <tr><td><code>ChangeAdvisor</code></td><td>Сменить заместителя на указанного в <code>NewAdvisor</code></td></tr>
+                        <tr><td><code>ChangeStatusUpgrade</code></td><td>Изучить бесплатно указанное в <code>TargetUpgradeIndex</code> улучшение</td></tr>
+                        <tr><td><code>ChangeStatusBrainPsy</code></td><td>Изменить состояние пси-излучателя вкл (<code>Status=True</code>) или выкл (<code>Status=False</code>)</td></tr>
+                        <tr><td><code>ChangeStatusBrainMixer</code></td><td>Изменить состояние выжигателя мозгов вкл (<code>Status=True</code>) или выкл (<code>Status=False</code>)</td></tr>
+                        <tr><td><code>ChangeIdeologyPercent</code></td><td>Добавить % какой-либо идеологии группировке. <strong>Понизить % идеологии нельзя</strong> — чтобы понизить другие идеологии, достаточно повысить какую-либо одну</td></tr>
+                        <tr><td><code>ChangeIdeology</code></td><td>Меняет идеологию владельцу территории на указанную в <code>IdeologyName</code></td></tr>
+                        <tr><td><code>Build</code></td><td>Строит бесплатно постройку из <code>BuildingName</code> на территории</td></tr>
+                        <tr><td><code>Destroy</code></td><td>Уничтожает бесплатно постройку из <code>BuildingName</code> на территории</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 id="re-params">Параметры ивентов</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Type</code></td><td>@@ВЫБОР</td><td>Тип события (один из 22). <strong>Может быть только один</strong> на событие</td></tr>
+                        <tr><td><code>Img</code></td><td>@@ПУТЬ</td><td>Путь к иконке события</td></tr>
+                        <tr><td><code>TargetResourceImg</code></td><td>@@ПУТЬ</td><td>Изображение ресурса/юнита, о котором идёт речь в ивенте</td></tr>
+                        <tr><td><code>CountMin</code></td><td>@@ЦЕЛОЕ</td><td>Минимальное число диапазона (движок выбирает случайное значение от <code>CountMin</code> до <code>CountMax</code>)</td></tr>
+                        <tr><td><code>CountMax</code></td><td>@@ЦЕЛОЕ</td><td>Максимальное число диапазона</td></tr>
+                        <tr><td><code>AddToGameLog</code></td><td>@@BOOL</td><td>Отображать сообщение в логе игровых событий</td></tr>
+                        <tr><td><code>ShowForOwner</code></td><td>@@BOOL</td><td>Показывать событие владельцу территории</td></tr>
+                        <tr><td><code>ShowForNonOwner</code></td><td>@@BOOL</td><td>Показывать событие не владельцу территории</td></tr>
+                        <tr><td><code>SoundFXForOwner</code></td><td>@@BOOL</td><td>Будет ли воспроизводиться звук у события владельца</td></tr>
+                        <tr><td><code>SoundFXForOwnerFile</code></td><td>@@ПУТЬ</td><td>Путь к файлу звука для владельца</td></tr>
+                        <tr><td><code>SoundFXForNonOwner</code></td><td>@@BOOL</td><td>Будет ли воспроизводиться звук у события не владельца</td></tr>
+                        <tr><td><code>SoundFXForNonOwnerFile</code></td><td>@@ПУТЬ</td><td>Путь к файлу звука для не владельца</td></tr>
+                        <tr><td><code>CountUnit1</code></td><td>@@ЦЕЛОЕ</td><td>Число новичков (если ивент связан с юнитами)</td></tr>
+                        <tr><td><code>CountUnit2</code></td><td>@@ЦЕЛОЕ</td><td>Число опытных</td></tr>
+                        <tr><td><code>CountUnit3</code></td><td>@@ЦЕЛОЕ</td><td>Число ветеранов</td></tr>
+                        <tr><td><code>CountUnit4</code></td><td>@@ЦЕЛОЕ</td><td>Число мастеров</td></tr>
+                        <tr><td><code>CountMutants1</code></td><td>@@ЦЕЛОЕ</td><td>Число собак (если ивент с добавлением/убиранием мутантов для владельца НЕ Мутанты)</td></tr>
+                        <tr><td><code>CountMutants2</code></td><td>@@ЦЕЛОЕ</td><td>Число кабанов</td></tr>
+                        <tr><td><code>CountMutants3</code></td><td>@@ЦЕЛОЕ</td><td>Число кровососов</td></tr>
+                        <tr><td><code>CountMutants4</code></td><td>@@ЦЕЛОЕ</td><td>Число контролёров</td></tr>
+                        <tr><td><code>InvasionUnit1</code></td><td>@@ЦЕЛОЕ</td><td>Число новичков вторженца (в случае вторжения)</td></tr>
+                        <tr><td><code>InvasionUnit2</code></td><td>@@ЦЕЛОЕ</td><td>Число опытных вторженца</td></tr>
+                        <tr><td><code>InvasionUnit3</code></td><td>@@ЦЕЛОЕ</td><td>Число ветеранов вторженца</td></tr>
+                        <tr><td><code>InvasionUnit4</code></td><td>@@ЦЕЛОЕ</td><td>Число мастеров вторженца</td></tr>
+                        <tr><td><code>InvasionOwner</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название владельца войск вторжения</td></tr>
+                        <tr><td><code>NewLeader</code></td><td>@@НАЗВАНИЕ</td><td>Техническое имя лидера из файлов <a href="leaders.html#leaders">leaders/</a> (имя файла без <code>.ini</code>)</td></tr>
+                        <tr><td><code>NewAdvisor</code></td><td>@@НАЗВАНИЕ</td><td>Техническое имя заместителя из файла <a href="advisors.html#Advisors">Advisors.ini</a> (из квадратных скобок <code>[]</code>)</td></tr>
+                        <tr><td><code>IdeologyName</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название идеологии из файлов <a href="ideologies.html#ideologies">ideologies/</a></td></tr>
+                        <tr><td><code>NotWorkFractions</code></td><td>@@НАЗВАНИЯ</td><td>Перечисление через запятую технических названий фракций. Если территория будет принадлежать кому-либо из этих фракций, то событие не произойдёт</td></tr>
+                        <tr><td><code>FromUnitType</code></td><td>@@ЦЕЛОЕ 1-4</td><td>Ранг юнита (цифра от 1 до 4) — оружие/броня которого используется в <code>AddArmor</code>, <code>AddWeapon</code>, <code>RemoveArmor</code>, <code>RemoveWeapon</code>. Движок сам определяет, что на вооружении у указанного ранга</td></tr>
+                        <tr><td><code>BuildingName</code></td><td>@@НАЗВАНИЕ</td><td>Техническое наименование постройки (имя файла без <code>.ini</code>) из папки <a href="buildings.html#Buildings">Buildings</a></td></tr>
+                        <tr><td><code>NameResources</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название ресурса из <a href="goods.html#Goods">Goods</a> (для <code>AddResources</code> / <code>RemoveResources</code>)</td></tr>
+                        <tr><td><code>Status</code></td><td>@@BOOL</td><td><code>True</code> или <code>False</code> (для <code>ChangeStatusBrainPsy</code>, <code>ChangeStatusBrainMixer</code>)</td></tr>
+                        <tr><td><code>TargetUpgradeIndex</code></td><td>@@ЦЕЛОЕ</td><td>Индекс улучшения (для <code>ChangeStatusUpgrade</code>)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 id="re-matrix">Какой тип какие параметры использует</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Тип</th><th>Обязательные параметры</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>AddResources</code> / <code>RemoveResources</code></td><td>✅ <code>NameResources</code>, <code>CountMin</code>, <code>CountMax</code>, <code>TargetResourceImg</code></td></tr>
+                        <tr><td><code>AddWeapon</code> / <code>RemoveWeapon</code><br><code>AddArmor</code> / <code>RemoveArmor</code></td><td>✅ <code>FromUnitType</code>, <code>CountMin</code>, <code>CountMax</code>. Параметр <code>NameResources</code> <strong>не нужен</strong> — движок сам определяет, что на вооружении у указанного ранга</td></tr>
+                        <tr><td><code>AddUnits</code> / <code>RemoveUnits</code></td><td>✅ <code>CountUnit1…4</code></td></tr>
+                        <tr><td><code>AddMutants</code> / <code>RemoveMutants</code></td><td>✅ <code>CountMutants1…4</code></td></tr>
+                        <tr><td><code>AddMutantsActive</code> / <code>RemoveMutantsActive</code></td><td>✅ <code>CountMin</code>, <code>CountMax</code> (величина % активности)</td></tr>
+                        <tr><td><code>Invasion</code></td><td>✅ <code>InvasionOwner</code>, <code>InvasionUnit1…4</code></td></tr>
+                        <tr><td><code>ChangeLeader</code></td><td>✅ <code>NewLeader</code></td></tr>
+                        <tr><td><code>ChangeAdvisor</code></td><td>✅ <code>NewAdvisor</code></td></tr>
+                        <tr><td><code>ChangeStatusUpgrade</code></td><td>✅ <code>TargetUpgradeIndex</code></td></tr>
+                        <tr><td><code>ChangeStatusBrainPsy</code> / <code>ChangeStatusBrainMixer</code></td><td>✅ <code>Status</code> (<code>True</code>/<code>False</code>)</td></tr>
+                        <tr><td><code>ChangeIdeologyPercent</code></td><td>✅ <code>IdeologyName</code>, <code>CountMin</code>, <code>CountMax</code> (величина %). <strong>Значения только положительные!</strong></td></tr>
+                        <tr><td><code>ChangeIdeology</code></td><td>✅ <code>IdeologyName</code></td></tr>
+                        <tr><td><code>Build</code> / <code>Destroy</code></td><td>✅ <code>BuildingName</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 id="re-compare">RandomEvents vs Events_Story</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Возможность</th><th>🎲 RandomEvents</th><th>📖 Events_Story</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Привязка к территории (<code>Zona</code>)</td><td>❌ нет — всегда случайная</td><td>✅ обязательна для каждого события</td></tr>
+                        <tr><td>Привязка к ходу (<code>Step</code>)</td><td>❌ нет</td><td>✅ есть (0 или пусто = вневременное)</td></tr>
+                        <tr><td>Повторяемость (<code>Repeatable</code>)</td><td>❌ нет</td><td>✅ есть (только при <code>Step=0</code>)</td></tr>
+                        <tr><td>Ивент-флаги</td><td>❌ нет</td><td>✅ <code>EventFlag</code>, <code>EventFlagResult</code> и др.</td></tr>
+                        <tr><td>Числовой эффект</td><td>🎲 часто диапазон <code>CountMin…CountMax</code></td><td>🔢 только точное значение</td></tr>
+                        <tr><td>Проверочные типы (<code>Check*</code>)</td><td>❌ нет</td><td>✅ 7 типов</td></tr>
+                        <tr><td>Типы с ГГ (<code>MCMove</code>, <code>MCAttack</code>)</td><td>❌ нет</td><td>✅ есть</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Связанные разделы</div>
+                <ul>
+                    <li><a href="events-story.html#Events_Story">Events_Story.ini</a> — сюжетные события (35 типов, флаги, привязка к территории)</li>
+                    <li><a href="special-events.html#SpecialEvents">SpecialEvents</a> — глобальные механики (Выброс, пси-излучение и т.д.)</li>
+                    <li><a href="settings.html#Settings">Settings.ini</a> — <code>EventsRandomDefault</code>, <code>EventsRandomCanChange</code></li>
+                    <li><a href="buildings.html#Buildings">Buildings</a> · <a href="leaders.html#leaders">Leaders</a> ·
+                        <a href="advisors.html#Advisors">Advisors.ini</a> · <a href="ideologies.html#ideologies">Ideologies</a> ·
+                        <a href="upgrades.html#upgrades">Upgrades</a> — цели для <code>BuildingName</code>, <code>NewLeader</code> и др.</li>
+                    <li><a href="messages.html#Messages">messages.csv</a> — ключи <code>[RandomEvents.*]</code></li>
+                    <li><a href="limits.html">Лимиты движка</a> — 22 типа захардкожены, добавить новый нельзя</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

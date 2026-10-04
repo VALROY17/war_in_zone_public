@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Receipts (Рецепты) — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="Receipts">
+            <h2>🔧 Рецепты модифицирования через мастерскую (Receipts)</h2>
+
+            <p>Папка <code>Receipts\</code> в сценарии состоит из ini-файлов, каждый из которых представляет один рецепт для мастерской.
+               Каждый файл содержит один блок <code>[Main]</code>.</p>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔩 Как это работает</div>
+                Рецепт описывает превращение: <strong>входные ресурсы → результат</strong>.
+                Игрок тратит входные ресурсы в мастерской и получает результат.
+                Это основной механизм <a href="start.html#newbegining">прокачки амуниции</a>.
+            </div>
+
+            <h3>Параметры</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Upgrade0-Resource</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название ресурса из <a href="goods.html#Goods">Goods</a>, которое требуется для улучшения (первый входной слот)</td></tr>
+                        <tr><td><code>Upgrade0-Quantity</code></td><td>@@ЦЕЛОЕ</td><td>Сколько нужно ресурса для улучшения. Можно не указывать, по умолчанию <code>1</code></td></tr>
+                        <tr><td><code>Upgrade1-Resource</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название второго ресурса (второй входной слот, <strong>опционален</strong>)</td></tr>
+                        <tr><td><code>Upgrade1-Quantity</code></td><td>@@ЦЕЛОЕ</td><td>Сколько нужно второго ресурса. Можно не указывать, по умолчанию <code>1</code></td></tr>
+                        <tr><td><code>Result-Resource</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название ресурса или предмета из <a href="goods.html#Goods">Goods</a>, в которое улучшается</td></tr>
+                        <tr><td><code>Result-Quantity</code></td><td>@@ЦЕЛОЕ</td><td>Сколько получится ресурса после улучшения. Можно не указывать, по умолчанию <code>1</code></td></tr>
+                        <tr><td><code>RequiredBuildings</code></td><td>@@НАЗВАНИЯ</td><td>Список построек из <a href="buildings.html#Buildings">Buildings</a> через запятую, необходимых для разблокировки рецепта</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Максимум 2 входных слота</div>
+                <code>Upgrade0-*</code> и <code>Upgrade1-*</code> — это <strong>жёсткий лимит движка</strong>.
+                Третьего входного ресурса в рецепте быть не может.
+                См. <a href="limits.html">Лимиты движка</a>.
+            </div>
+
+            <h3>Структура рецепта</h3>
+<pre><code>[Main]
+; Вход — слот 0 (обязательный)
+Upgrade0-Resource=PM
+Upgrade0-Quantity=1
+
+; Вход — слот 1 (опциональный, можно не указывать)
+Upgrade1-Resource=Supplies
+Upgrade1-Quantity=50
+
+; Результат
+Result-Resource=PM-Upgraded
+Result-Quantity=1
+
+; Какая постройка должна быть, чтобы рецепт открылся
+RequiredBuildings=Workshop</code></pre>
+            <p class="vt-note">⚠️ Имена <code>PM</code>, <code>Parts</code>, <code>PM-Upgraded</code>, <code>Workshop</code> в примере
+               — <strong>условные</strong>. Подставьте свои технические названия из папок
+               <a href="goods.html#Goods">Goods/</a> и <a href="buildings.html#Buildings">Buildings/</a>.</p>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Пример реального рецепта</div>
+                Вот как выглядит рецепт из дефолтного конфига (улучшение пистолета ПМ):
+<pre><code>[Main]
+Upgrade0-Resource=PM
+Upgrade0-Quantity=1
+Upgrade1-Resource=Parts
+Upgrade1-Quantity=3
+Result-Resource=PM-Upgraded
+Result-Quantity=1
+RequiredBuildings=Workshop</code></pre>
+                Этот рецепт требует 1 пистолет ПМ и 3 части мутантов для получения улучшенного ПМ.
+                Рецепт доступен только если на территории есть постройка <code>Workshop</code>.
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Локализация рецепта</div>
+                У рецепта нет собственного ключа в <code>messages.csv</code>.
+                Игра отображает названия которых берутся из <code>[Goods.*]</code>.
+            </div>
+
+            <h3>Стоимость и продуктивность модификации</h3>
+            <p>Цена модификации (в рамках мощности мастерских) считается не в рецепте, а в <a href="settings.html#Settings">Settings.ini</a>:</p>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Что делает</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>BasedCostForUpgradeAmmo-Money</code></td><td>@@ДРОБНОЕ</td><td>Базовый множитель цены на модификацию амуниции в деньгах (можно указывать дробные значения через запятую: <code>1,5</code>)</td></tr>
+                        <tr><td><code>BasedCostForUpgradeAmmo-Comands</code></td><td>@@ЦЕЛОЕ</td><td>Базовая стоимость в КР на привлечение одной мастерской к модификации амуниции</td></tr>
+                        <tr><td><code>BasedImprovementProductivityWorkshop</code></td><td>@@ЦЕЛОЕ</td><td>Базовая продуктивность одной мастерской для модификации чего-либо в течение хода</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Продуктивность можно поднять улучшением</div>
+                Тип улучшения <code>ImprovementProductivityWorkshop</code> из
+                <a href="upgrades.html#upgrades">upgrades/</a> даёт «+ к производительности мастерских».
+                Коэффициент задаётся в параметре <code>Bonus</code>.
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Связанные разделы</div>
+                <ul>
+                    <li><a href="goods.html#Goods">Goods</a> — исходные товары и результаты</li>
+                    <li><a href="buildings.html#Buildings">Buildings</a> — <code>Type=Workshop</code>, <code>RequiredBuildings</code></li>
+                    <li><a href="upgrades.html#upgrades">Upgrades</a> — <code>ImprovementProductivityWorkshop</code></li>
+                    <li><a href="settings.html#Settings">Settings.ini</a> — стоимость и продуктивность модификации</li>
+                    <li><a href="main.html#Main">Main.ini</a> — <code>[Group-Resources]</code> (склад), <code>[Units-About]</code> (что на вооружении)</li>
+                    <li><a href="main.html#Main">Main.ini</a> → <code>[ProcessedItemCount]</code> — произведённая амуниция на текущем ходу</li>
+                    <li><a href="limits.html">Лимиты движка</a> — 2 входных слота</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

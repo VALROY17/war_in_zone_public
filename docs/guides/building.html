@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Гайд: Новое здание — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="L1-building">
+            <h2>🏗 Гайд: новое здание</h2>
+
+            <p>В этом гайде мы добавим в игру новую постройку — <strong>«Противопехотные мины»</strong>.
+               Это простая оборонительная постройка, аналог колючей проволоки, но с другим балансом:
+               сильнее против атакующих бойцов, слабее против мутантов.</p>
+
+            <h3>🎯 Что получится в итоге</h3>
+            <ul>
+                <li>Новая постройка «Противопехотные мины» появится в меню строительства на любой территории</li>
+                <li>Постройка будет снижать урон атакующих в PvP на 15% и в PvM на 10%</li>
+                <li>Стоимость: 1 КР + 5 дешёвых стройматериалов, без требований к деньгам</li>
+                <li>Постройка будет отображаться в игре с названием, описанием и иконкой</li>
+            </ul>
+
+            <h3>📋 Что нужно подготовить</h3>
+            <ul>
+                <li>Одно изображение для иконки постройки (формат PNG, размер 100×100 пикселей —
+                    как у существующих построек)</li>
+                <li>Название ресурса <code>LowQualityBuildingMaterials</code> — должно существовать в папке <code>Goods/</code>
+                    (в стандартном сценарии он уже есть, трогать не нужно)</li>
+            </ul>
+
+            <h3>📝 Пошаговая инструкция</h3>
+
+            <h4>Шаг 1. Создайте файл постройки</h4>
+            <p>В папке вашего сценария создайте подпапку <code>Buildings/</code> (если её ещё нет),
+               а внутри — файл <code>Mines.ini</code>. Имя файла без расширения = техническое название постройки,
+               по которому на неё будут ссылаться другие конфиги.</p>
+
+            <p>За основу возьмём реальный конфиг <code>building2.ini</code> (колючая проволока) из стандартного
+               сценария игры. Вот его точное содержимое:</p>
+
+<pre><code>[Main]
+SortOrder=20
+Logo-NonActive=gfx\icons\buildings\2.png
+Type=None
+Need-Building=
+BonusForSpy=0
+BonusForEnemySpy=-5
+BonusSearchArts=0
+BonusDamagePVPForAtackers=-2
+BonusDamagePVPForDefenders=0
+BonusDamagePVMForAtackers=-20
+BonusDamagePVMForDefenders=0
+BonusRangeForAtackers=0
+BonusRangeForDefenders=0
+Recruit-Novice=0
+Recruit-Skilled=0
+Recruit-Veteran=0
+Recruit-Master=0
+LimitRecruit-Novice=0
+LimitRecruit-Skilled=0
+LimitRecruit-Veteran=0
+LimitRecruit-Master=0
+Comands=0
+LimitComands=0
+BootyParts=0
+BootyCash=0
+BonusForCostCPSpy=0
+BonusForCostCPAdvisor=0
+Custom-Resource=LowQualityBuildingMaterials
+Cost-Custom=1
+Cost-Money=0
+Cost-Comands=1</code></pre>
+
+            <p>Скопируйте этот текст в свой новый файл <code>Mines.ini</code> и внесите следующие изменения:</p>
+
+<pre><code>[Main]
+SortOrder=25
+Logo-NonActive=gfx\icons\buildings\mines.png
+Type=None
+Need-Building=
+BonusForSpy=0
+BonusForEnemySpy=0
+BonusSearchArts=0
+BonusDamagePVPForAtackers=-15
+BonusDamagePVPForDefenders=0
+BonusDamagePVMForAtackers=-10
+BonusDamagePVMForDefenders=0
+BonusRangeForAtackers=0
+BonusRangeForDefenders=0
+Recruit-Novice=0
+Recruit-Skilled=0
+Recruit-Veteran=0
+Recruit-Master=0
+LimitRecruit-Novice=0
+LimitRecruit-Skilled=0
+LimitRecruit-Veteran=0
+LimitRecruit-Master=0
+Comands=0
+LimitComands=0
+BootyParts=0
+BootyCash=0
+BonusForCostCPSpy=0
+BonusForCostCPAdvisor=0
+Custom-Resource=LowQualityBuildingMaterials
+Cost-Custom=5
+Cost-Money=0
+Cost-Comands=1</code></pre>
+
+            <div class="callout callout-info">
+                <div class="callout-title">📌 Что мы изменили по сравнению с прототипом</div>
+                <ul>
+                    <li><code>SortOrder=25</code> — чтобы иконка стояла после колючей проволоки (<code>20</code>),
+                        но до укреплённых огневых точек (<code>30</code>)</li>
+                    <li><code>Logo-NonActive=gfx\icons\buildings\mines.png</code> — путь к нашей иконке</li>
+                    <li><code>BonusForEnemySpy=0</code> — убрали бонус вражеской разведке (у проволоки было <code>-5</code>)</li>
+                    <li><code>BonusDamagePVPForAtackers=-15</code> — сильнее против PvP, чем проволока (<code>-2</code>)</li>
+                    <li><code>BonusDamagePVMForAtackers=-10</code> — слабее против мутантов, чем проволока (<code>-20</code>)</li>
+                    <li><code>Cost-Custom=5</code> — стоит дороже проволоки (<code>1</code>), но дешевле мешков с песком (<code>10</code>)</li>
+                </ul>
+            </div>
+
+            <h4>Шаг 2. Положите иконку</h4>
+            <p>Поместите файл <code>mines.png</code> (размер 100×100 пикселей) по пути
+               <code>gfx\icons\buildings\mines.png</code> в папке вашего сценария
+               (или в общей папке <code>data\gfx\</code> игры).</p>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Если своей иконки пока нет</div>
+                Можно временно скопировать иконку от существующей постройки. Например, скопируйте
+                <code>data\gfx\icons\buildings\2.png</code> и переименуйте в <code>mines.png</code>.
+                Это позволит проверить работу постройки в игре до того, как нарисуете свою.
+            </div>
+
+            <h4>Шаг 3. Добавьте локализацию</h4>
+            <p>Откройте <code>messages.csv</code> вашего сценария (или создайте его в корне сценария,
+               если его нет) и добавьте две строки:</p>
+
+<pre><code>[Buildings.Mines].Name;Противопехотные мины
+[Buildings.Mines].Desc;Простое оборонительное сооружение. Значительно снижает урон атакующих бойцов и немного помогает против мутантов.</code></pre>
+
+			<div class="callout callout-warning">
+				<div class="callout-title">⚠️ Формат ключа</div>
+				Ключ в <code>messages.csv</code> должен совпадать с именем файла
+				постройки без расширения. У нас файл называется <code>Mines.ini</code>,
+				значит ключ — <code>[Buildings.Mines]</code>.
+				<br><br>
+				Регистр значения не имеет (<code>[Buildings.Mines]</code> и <code>[Buildings.mines]</code>
+				работают одинаково), но рекомендуется писать так же, как имя файла —
+				это упрощает поиск по файлу <code>messages.csv</code>.
+				<br><br>
+				Разделитель между ключом и текстом — точка с запятой <code>;</code>.
+				Внутри самого текста символ <code>;</code> использовать нельзя —
+				строка оборвётся.
+			</div>
+
+            <h4>Шаг 4. Сохраните все файлы в правильной кодировке</h4>
+            <ul>
+                <li><code>Mines.ini</code> — в кодировке <strong>UTF-8 с BOM</strong></li>
+                <li><code>messages.csv</code> — в кодировке <strong>UTF-8 с BOM</strong></li>
+            </ul>
+
+            <p>Подробнее про кодировку: <a href="../ref/start.html#filestypecode">«Кодировка файлов»</a>.</p>
+
+            <h3>✅ Проверка результата</h3>
+            <ol>
+                <li>Запустите игру и начните свой сценарий</li>
+                <li>Выберите любую подконтрольную территорию и откройте меню «Постройки»</li>
+                <li>Убедитесь, что в списке появилась новая постройка «Противопехотные мины»
+                    с корректным названием, описанием и иконкой</li>
+                <li>Попробуйте построить её — проверьте, что списывается 1 КР и 5 дешёвых стройматериалов</li>
+                <li>После постройки — наведите курсор на территорию и убедитесь, что бонусы отображаются
+                    в подсказке (−15% к урону атакующих в PvP, −10% к урону атакующих в PvM)</li>
+                <li>Если у вас есть возможность — проведите тестовый бой на этой территории
+                    и проверьте, что бонусы реально применяются</li>
+            </ol>
+
+            <h3>⚠️ Вероятные ошибки</h3>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">Постройка не появляется в списке</div>
+                <ul>
+                    <li>Проверьте, что файл <code>Mines.ini</code> лежит в папке <code>Buildings/</code>
+                        вашего сценария (а не в корне сценария и не в другой папке)</li>
+                    <li>Убедитесь, что файл сохранён в кодировке <strong>UTF-8 с BOM</strong></li>
+                    <li>Проверьте, что блок называется точно <code>[Main]</code> (с большой буквы M)</li>
+                </ul>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">Постройка появляется, но вместо названия — техническое имя «Mines»</div>
+                <p>Это значит, что игра не нашла локализацию. Проверьте:</p>
+                <ul>
+                    <li>Ключ в <code>messages.csv</code> должен быть именно <code>[Buildings.Mines].Name</code></li>
+                    <li>Разделитель — точка с запятой <code>;</code>, а не двоеточие или запятая</li>
+                    <li>В самом тексте нет символа <code>;</code> — иначе строка оборвётся</li>
+                    <li><code>messages.csv</code> сохранён в <strong>UTF-8 с BOM</strong></li>
+                </ul>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Нюанс: параметр <code>BonusForSpy</code> не работает</div>
+                В нашем конфиге стоит <code>BonusForSpy=0</code>, но даже если вы укажете там положительное значение —
+                оно <strong>не будет использовано движком</strong>. Это известный рудимент.
+                Подробнее: <a href="../ref/buildings.html#Buildings">Buildings</a> и <a href="../ref/dont-touch.html">«Рудименты»</a>.
+                Если нужен бонус своей разведке — используйте заместителя, лидера, идеологию или правило.
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Нюанс: бонусы построек — территориальные</div>
+                Параметры <code>BonusDamagePVPForAtackers</code>, <code>BonusDamagePVMForAtackers</code> и другие боевые
+                бонусы построек работают <strong>только на той территории</strong>, где постройка стоит.
+                Потеряли территорию — потеряли бонус. Это отличие построек от лидеров, идеологий и заместителей,
+                у которых такие же бонусы глобальные.
+                Подробнее: <a href="../ref/matrix-bonus.html">Матрица бонусов</a>.
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Как настроить баланс по аналогии</div>
+                <p>В стандартном сценарии есть уже готовые простые оборонительные постройки, на которые
+                   можно ориентироваться по балансу:</p>
+                <ul>
+                    <li><strong>Мешки с песком</strong> (<code>building1</code>) — защита от PvP-атак (−10%), требует 10 стройматериалов</li>
+                    <li><strong>Колючая проволока</strong> (<code>building2</code>) — защита от мутантов (−20% PvM), но слабее против PvP (−2%), стоит дёшево (1 материал)</li>
+                    <li><strong>Укреплённые огневые точки</strong> (<code>building3</code>) — защита и от PvP (−10%), и от PvM (−10%), требует улучшения <code>upgrade-22</code></li>
+                    <li><strong>Ловушки против мутантов</strong> (<code>building4</code>) — сильная защита от PvM (+20% обороняющимся), требует улучшения <code>upgrade-22</code></li>
+                </ul>
+                <p>Придумывая новую постройку, отталкивайтесь от этих значений и старайтесь не делать
+                   её заметно сильнее существующих аналогов за ту же цену.</p>
+            </div>
+
+            <h3>🔗 Связанные разделы справки</h3>
+            <ul>
+                <li><a href="../ref/buildings.html#Buildings">Buildings</a> — полное описание всех параметров построек</li>
+                <li><a href="../ref/messages.html#Messages">messages.csv</a> — формат локализации</li>
+                <li><a href="../ref/matrix-bonus.html">Матрица бонусов</a> — какие бонусы построек глобальные, какие территориальные</li>
+                <li><a href="../ref/dont-touch.html">Рудименты и «не трогать»</a> — параметр <code>BonusForSpy</code></li>
+                <li><a href="../ref/start.html#filestypecode">Кодировка файлов</a> — UTF-8 с BOM</li>
+                <li><a href="../ref/typelands.html#TypeLands">TypeLands</a> — параметр <code>CountBuildings</code> ограничивает
+                    число построек на территории по типу местности</li>
+                <li><a href="../ref/ai.html#AI">AI.ini</a> — если хотите, чтобы бот тоже строил вашу постройку,
+                    добавьте её название в <code>MainBaseBuildings</code> или <code>BorderBuildings</code></li>
+            </ul>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

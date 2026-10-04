@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Traders.ini — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="Traders">
+            <h2>💰 Настройки параметров торговцев (Traders.ini)</h2>
+
+            <p>Файл <code>Traders.ini</code> описывает параметры торговцев сценария:
+               стоимость связи, шанс успеха, временные окна доступности и множители цен
+               по категориям товаров. Ассортимент (какие товары у кого продаются) задаётся
+               отдельно в <a href="tradergoods.html#TraderGoods">TraderGoods.ini</a>.</p>
+
+            <div class="callout callout-info">
+                <div class="callout-title">📋 Локализация (размещать в messages.csv)</div>
+<pre><code>[Traders.&lt;техническое название&gt;].Name      - название торговца (например, «Сидорович»)
+[Traders.&lt;техническое название&gt;].NeedText   - описание условий доступа к торговцу
+                                              (например, «Требуется контроль Бара»)</code></pre>
+            </div>
+
+            <h3>Типы торговцев (секции доступности)</h3>
+            <p>В игре есть 3 типа торговцев, каждый со своей секцией в файле:</p>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Секция</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>[YourGroup]</code></td><td>Торговец своей группировки (привязан к игроку).
+                            Параметр <code>Need</code> <strong>игнорируется</strong> —
+                            см. <a href="dont-touch.html">«Рудименты и не трогать»</a></td></tr>
+                        <tr><td><code>[OtherGroup]</code></td><td>Торговец другой группировки (привязан к конкретной фракции).
+                            Параметр <code>Need</code> <strong>игнорируется</strong> —
+                            см. <a href="dont-touch.html">«Рудименты и не трогать»</a></td></tr>
+                        <tr><td><code>[World]</code>, <code>[TraderX]</code></td><td>Нейтральные торговцы типа Сидоровича, Бармена и т.д.
+                            <code>X</code> — порядковый номер (<code>Trader1</code>, <code>Trader2</code>, и т.д.). Число торговцев данного типа можно добавлять сколько потребуется (лимита нет)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ YourGroup и OtherGroup — параметр <code>Need</code> не работает</div>
+                У торговцев группировок (<code>[YourGroup]</code> и <code>[OtherGroup]</code>)
+                движок <strong>автоматически привязывает</strong> торговца к его группировке
+                и игнорирует значение <code>Need</code>. Указывать его в этих секциях бессмысленно.
+                Подробнее: <a href="dont-touch.html">«Рудименты и не трогать»</a>.
+            </div>
+
+            <h3>Параметры торговца</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Need</code></td><td>@@ЦЕЛОЕ ≥0</td><td>
+                            Индекс территории, которой необходимо владеть для доступа к торговцу.
+                            <code>0</code> — торговец доступен при владении любой территорией.
+                            <strong>Работает только в секциях <code>[World]</code>/<code>[TraderX]</code></strong></td></tr>
+                        <tr><td><code>Cost</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Стоимость попытки установить связь с торговцем в КР.
+                            <code>0</code> — бесплатно</td></tr>
+                        <tr><td><code>Chance</code></td><td>@@ЦЕЛОЕ 1-100</td><td>
+                            Шанс успеха попытки установить связь в %.
+                            <code>100</code> — гарантированный успех, <code>50</code> — 50/50</td></tr>
+                        <tr><td><code>StartStep</code></td><td>@@ЦЕЛОЕ ≥0</td><td>
+                            Номер хода, с которого торговец становится доступен.
+                            <code>0</code> — доступен с самого начала игры</td></tr>
+                        <tr><td><code>EndStep</code></td><td>@@ЦЕЛОЕ ≥0</td><td>
+                            Номер хода, после которого торговец становится недоступен.
+                            <code>0</code> — торговец не отключается никогда</td></tr>
+                        <tr><td><code>Coef-Sell-X</code></td><td>@@ДРОБНОЕ</td><td>
+                            Множитель цены <strong>продажи</strong> игроком товаров категории <code>X</code>.
+                            <code>1,0</code> = 100% цены, <code>0,5</code> = 50% цены (торговец даёт меньше денег).
+                            Задаётся отдельно для каждой категории</td></tr>
+                        <tr><td><code>Coef-Buy-X</code></td><td>@@ДРОБНОЕ</td><td>
+                            Множитель цены <strong>покупки</strong> игроком товаров категории <code>X</code>.
+                            <code>1,0</code> = 100% цены, <code>1,5</code> = 150% цены (торговец продаёт дороже).
+                            Задаётся отдельно для каждой категории</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Категории товаров</h3>
+            <p>Множители <code>Coef-Sell-X</code> и <code>Coef-Buy-X</code> настраиваются по категориям товаров.
+               Категория товара задаётся в его конфиге параметром <code>Category</code>
+               (см. <a href="goods.html#Goods">Goods</a>).</p>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🏷 9 стандартных категорий</div>
+                <ul>
+                    <li><code>Food</code> — еда</li>
+                    <li><code>Medic</code> — медикаменты</li>
+                    <li><code>Supplies</code> — боеприпасы</li>
+                    <li><code>Parts</code> — части тел мутантов</li>
+                    <li><code>Arts</code> — артефакты</li>
+                    <li><code>Weapon</code> — оружие</li>
+                    <li><code>Armor</code> — броня</li>
+                    <li><code>BuildingMaterials</code> — строительные материалы</li>
+                    <li><code>AmmoComponents</code> — компоненты боеприпасов</li>
+                </ul>
+                <p><strong>Можно создавать свои категории</strong> — просто укажите новое имя
+                   в <code>Category</code> товара и добавьте соответствующий <code>Coef-Sell-NewCategory</code>
+                   в <code>Traders.ini</code>.</p>
+            </div>
+
+            <h3>Как добавить нового торговца — чек-лист</h3>
+            <div class="callout callout-tip">
+                <ol>
+                    <li>Откройте <code>Traders.ini</code> в папке вашего сценария
+                        (или скопируйте из <code>data\default\</code>)</li>
+                    <li>Добавьте секцию <code>[TraderN]</code> (где N — следующий свободный номер)</li>
+                    <li>Заполните параметры: <code>Need</code>, <code>Cost</code>, <code>Chance</code>,
+                        <code>StartStep</code>, <code>EndStep</code></li>
+                    <li>Добавьте множители <code>Coef-Sell-X</code> и <code>Coef-Buy-X</code>
+                        для нужных категорий товаров</li>
+                    <li>Добавьте строки локализации в <a href="messages.html#Messages">messages.csv</a>:
+                        <code>[Traders.TraderN].Name</code> и <code>[Traders.TraderN].NeedText</code></li>
+                    <li>Откройте <a href="tradergoods.html#TraderGoods">TraderGoods.ini</a> и укажите,
+                        какие товары продаёт этот торговец (<code>TraderN=True</code> в блоках товаров)</li>
+                </ol>
+            </div>
+
+            <h3>Как работает торговля — логика</h3>
+            <p>Когда игрок пытается открыть магазин торговца, игра выполняет проверку:</p>
+            <ol>
+                <li><strong>Доступен ли торговец по времени?</strong> — проверяется <code>StartStep</code> и <code>EndStep</code></li>
+                <li><strong>Владеет ли игрок нужной территорией?</strong> — проверяется <code>Need</code>
+                    (для <code>[World]</code> и <code>[TraderX]</code>)</li>
+                <li><strong>Достаточно ли КР?</strong> — списывается <code>Cost</code></li>
+                <li><strong>Бросок на успех</strong> — случайное число от 1 до 100 сравнивается с <code>Chance</code>.
+                    При успехе магазин открывается, при неудаче — игрок теряет КР впустую</li>
+                <li><strong>Проверка дипломатии</strong> — для <code>[OtherGroup]</code> проверяется
+                    <code>CanTradeIf*</code> в <a href="groups.html#Groups">Groups</a></li>
+            </ol>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Совет по балансу множителей</div>
+                <ul>
+                    <li><strong>Coef-Sell</strong> (игрок продаёт): чем меньше значение, тем невыгоднее продавать.
+                        Обычно 0,4–0,8</li>
+                    <li><strong>Coef-Buy</strong> (игрок покупает): чем больше значение, тем дороже покупка.
+                        Обычно 1,2–2,0</li>
+                    <li>Разница между Sell и Buy создаёт прибыль торговца и дефицит игрока —
+                        это основа экономики</li>
+                </ul>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Где ещё используется</div>
+                <ul>
+                    <li><a href="tradergoods.html#TraderGoods">TraderGoods.ini</a> — ассортимент торговцев (какие товары у кого)</li>
+                    <li><a href="goods.html#Goods">Goods</a> — параметр <code>Category</code> у товаров определяет,
+                        к какой категории относится товар</li>
+                    <li><a href="groups.html#Groups">Groups</a> → <code>CanTradeIf*</code> — доступность торговли с другими группировками</li>
+                    <li><a href="dont-touch.html">Рудименты</a> — <code>Need</code> не работает в <code>[YourGroup]</code>/<code>[OtherGroup]</code></li>
+                    <li><a href="messages.html#Messages">messages.csv</a> — ключи <code>[Traders.*]</code></li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Groups (Группировки) — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="Groups">
+            <h2>⚔ Группировки (Groups)</h2>
+
+            <p>Папка <code>Groups\</code> в сценарии состоит из ini-файлов, каждый из которых представляет одну группировку.
+               <strong>Название файла — техническое название группировки</strong>, которое используется в других конфигах.</p>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Секции в файле</div>
+                Каждый файл содержит секцию <code>[:main]</code> (основные параметры) плюс <strong>по одной секции на каждую идеологию</strong>
+                (<code>[Stalkers]</code>, <code>[AntiZone]</code>, <code>[Crime]</code> и т.д.).
+                Добавили новую идеологию — придётся дописать секцию в <em>каждой</em> группировке, где она может стать основной.
+            </div>
+
+            <h3>Локализация (размещать в messages.csv)</h3>
+<pre><code>[Groups.&lt;техническое название&gt;.:main].Name              - общее название группировки
+[Groups.&lt;техническое название&gt;.:main].Description       - общее описание
+[Groups.&lt;техническое название&gt;.&lt;идеология&gt;].Name        - название при этой идеологии
+[Groups.&lt;техническое название&gt;.&lt;идеология&gt;].Description - описание при этой идеологии</code></pre>
+
+            <h3 id="groups-diplomacy-text">📜 Тексты дипломатии (размещать в messages.csv)</h3>
+            <p>Все значения в таблице ниже — <span class="vt-inline">@@ТЕКСТ</span>. Эти строки отображаются в диалогах дипломатии.</p>
+
+            <h4>Ответы группировки на действия игрока</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>DiplomacyText-Ans-0-Down</code></td><td>Ответ группировки при объявлении ей войны</td></tr>
+                        <tr><td><code>DiplomacyText-Ans-1-Yes</code></td><td>Ответ группировки, если она согласилась на перемирие от игрока</td></tr>
+                        <tr><td><code>DiplomacyText-Ans-1-No</code></td><td>Ответ группировки, если она отказалась от перемирия, которое предложил ей игрок</td></tr>
+                        <tr><td><code>DiplomacyText-Ans-2-Yes</code></td><td>Ответ группировки, если она согласилась на союз от игрока</td></tr>
+                        <tr><td><code>DiplomacyText-Ans-2-No</code></td><td>Ответ группировки, если она отказалась от союза, который ей предложил игрок</td></tr>
+                        <tr><td><code>DiplomacyText-Ans-1-Down</code></td><td>Ответ группировки, если игрок разорвал с ней союз</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>Фразы и реакции группировки</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>DiplomacyText-Question-War</code></td><td>Фраза группировки, когда она объявила войну игроку</td></tr>
+                        <tr><td><code>DiplomacyText-Question-Neutral</code></td><td>Фраза группировки, когда она предлагает перемирие игроку</td></tr>
+                        <tr><td><code>DiplomacyText-Question-Alliance</code></td><td>Фраза группировки, когда она предлагает союз игроку</td></tr>
+                        <tr><td><code>DiplomacyText-Question-BreakAlliance</code></td><td>Фраза группировки, когда она разрывает союз с игроком</td></tr>
+                        <tr><td><code>DiplomacyText-Question-Neutral-Yes</code></td><td>Реакция группировки, когда игрок согласился на её предложение перемирия</td></tr>
+                        <tr><td><code>DiplomacyText-Question-Neutral-No</code></td><td>Реакция группировки, когда игрок отказался от её предложения перемирия</td></tr>
+                        <tr><td><code>DiplomacyText-Question-Alliance-Yes</code></td><td>Реакция группировки, когда игрок согласился на её предложение союза</td></tr>
+                        <tr><td><code>DiplomacyText-Question-Alliance-No</code></td><td>Реакция группировки, когда игрок отказался от её предложения союза</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>Запросы денег</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>DiplomacyText-RequestMoney-Ask</code></td><td>Фраза группировки, когда она запрашивает у игрока деньги</td></tr>
+                        <tr><td><code>DiplomacyText-RequestMoney-Ans-Yes</code></td><td>Ответ группировки, когда она соглашается на запрос денег игроком</td></tr>
+                        <tr><td><code>DiplomacyText-RequestMoney-Ans-No</code></td><td>Ответ группировки, когда она отказывается от запроса денег игроком</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>Тексты экранов победы и поражения</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Text-End-Standart-Victory</code></td><td>Текст в окне победы при захвате всех территорий</td></tr>
+                        <tr><td><code>Text-End-PartialStandard-Victory</code></td><td>Текст в окне победы при захвате части территорий</td></tr>
+                        <tr><td><code>Text-End-PartyStandard-Victory</code></td><td>Текст в окне победы при захвате территорий союзным альянсом</td></tr>
+                        <tr><td><code>Text-End-Step-Victory</code></td><td>Текст в окне победы, если группировка дожила до определённого хода</td></tr>
+                        <tr><td><code>Text-End-EventFlag-Victory</code></td><td>Текст в окне победы, если победила по ивент-флагу</td></tr>
+                        <tr><td><code>Text-End-Standart-Lose</code></td><td>Текст в окне поражения при потере всех территорий</td></tr>
+                        <tr><td><code>Text-End-PartialStandard-Lose</code></td><td>Текст в окне поражения при потере части территорий</td></tr>
+                        <tr><td><code>Text-End-PartyStandard-Lose</code></td><td>Текст в окне поражения, если территории захватил вражеский альянс</td></tr>
+                        <tr><td><code>Text-End-Step-Lose</code></td><td>Текст в окне поражения, если не смогла выполнить условия победы к определённому ходу</td></tr>
+                        <tr><td><code>Text-End-EventFlag-Lose</code></td><td>Текст в окне поражения, если получила поражение по ивент-флагу</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="callout callout-info">
+                <div class="callout-title">🖼 К этим текстам нужны изображения</div>
+                Каждому <code>Text-End-*</code> соответствует свой <code>Img-End-*</code>
+                в разделе «Параметры идеологии» ниже. Пути указываются в конфиге,
+                сами строки — в <code>messages.csv</code> не нужны.
+            </div>
+
+            <h3 id="groups-main">Категория [:main] — основные настройки группировки</h3>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">📌 Примечание</div>
+                В блоке <code>[:main]</code> указаны базовые параметры группировки,
+                которые <strong>заменяют</strong> параметры из <code>[Название_идеологии]</code>.
+                В блоке <code>[Название_идеологии]</code> указанные параметры работают
+                только в рамках этой идеологии.
+            </div>
+
+            <h4>🛡 Ресурсы и бойцы</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>LockedResources</code></td><td>@@НАЗВАНИЯ</td><td>Список ресурсов через запятую, которые группировка не потеряет в случае захвата её главной базы. Они <strong>остаются у группировки</strong> и могут быть потрачены — не переходят захватчику и не исчезают</td></tr>
+                        <tr><td><code>UnitWayFace</code></td><td>@@ПУТЬ</td><td>Путь к папке, где хранятся изображения юнитов группировки (используется для отображения в интерфейсе)</td></tr>
+                        <tr><td><code>Spy1-Face</code></td><td>@@ПУТЬ</td><td>Путь к изображению разведчика первого ранга (новичок)</td></tr>
+                        <tr><td><code>Spy2-Face</code></td><td>@@ПУТЬ</td><td>Путь к изображению разведчика второго ранга (опытный)</td></tr>
+                        <tr><td><code>Spy3-Face</code></td><td>@@ПУТЬ</td><td>Путь к изображению разведчика третьего ранга (ветеран)</td></tr>
+                        <tr><td><code>Spy4-Face</code></td><td>@@ПУТЬ</td><td>Путь к изображению разведчика четвёртого ранга (мастер)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>💰 Экономика и дипломатия</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>CanGiveDiplomacyMoney</code></td><td>@@BOOL</td><td>Может ли группировка давать деньги другим группировкам через дипломатию</td></tr>
+                        <tr><td><code>CanOrderDiplomacyMoney</code></td><td>@@BOOL</td><td>Может ли группировка запрашивать деньги у других группировок</td></tr>
+                        <tr><td><code>BaseUpCR</code></td><td>@@ЦЕЛОЕ</td><td>Базовый ежедневный прирост командных ресурсов (КР)</td></tr>
+                        <tr><td><code>BaseLimit-Comands</code></td><td>@@ЦЕЛОЕ</td><td>Базовый максимальный лимит КР</td></tr>
+                        <tr><td><code>BaseLimit-Novice</code></td><td>@@ЦЕЛОЕ</td><td>Базовый лимит рекрутов ранга новичок</td></tr>
+                        <tr><td><code>BaseLimit-Skilled</code></td><td>@@ЦЕЛОЕ</td><td>Базовый лимит рекрутов ранга опытный</td></tr>
+                        <tr><td><code>BaseLimit-Veteran</code></td><td>@@ЦЕЛОЕ</td><td>Базовый лимит рекрутов ранга ветеран</td></tr>
+                        <tr><td><code>BaseLimit-Master</code></td><td>@@ЦЕЛОЕ</td><td>Базовый лимит рекрутов ранга мастер</td></tr>
+                        <tr><td><code>TypeBooty</code></td><td>@@ВЫБОР</td><td>Тип трофеев с трупов бойцов этой группировки: <code>Cash</code> — деньги, <code>Parts</code> — части тел мутантов</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Разница «Base…» и «Bonus…»</div>
+                <code>BaseUpCR</code> и <code>BaseLimit-*</code> здесь — это <strong>основа</strong> группировки.
+                А <code>Comands</code> / <code>LimitComands</code> / <code>LimitRecruit-*</code> из
+                <a href="advisors.html#Advisors">Advisors</a>, <a href="buildings.html#Buildings">Buildings</a>,
+                <a href="ideologies.html#ideologies">Ideologies</a>, <a href="leaders.html#leaders">Leaders</a>
+                и <a href="rules.html#Rules">Rules</a> — это <strong>бонусы</strong>, которые к основе прибавляются.
+                См. <a href="matrix-bonus.html">Матрицу бонусов</a>.
+            </div>
+
+            <h4>⚙ Прочее</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>RatingShow</code></td><td>@@BOOL</td><td>Показывать ли группировку в рейтинге группировок (таблица лидеров)</td></tr>
+                        <tr><td><code>ImmunityForMutantsRampage</code></td><td>@@BOOL</td><td>Мутанты не будут буйствовать на территориях группировки (игнорируют событие "Буйство мутантов")</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4 id="groups-rulesbranch">🏝 Ограничения действий на анклавах</h4>
+            <p>Группа из 18 параметров, управляющих тем, что разрешено делать на <strong>анклавах</strong>
+               (изолированных территориях, не имеющих связи с основной территорией группировки)
+               в зависимости от действующего <a href="rules.html#Rules">внутреннего правила централизации</a>.</p>
+            
+            <p>Тип значения у всех: <span class="vt-inline">@@ЧИСЛА 1-5</span> —
+               перечень индексов правил (1 = максимальная децентрализация, 5 = максимальная централизация),
+               при которых действие <strong>отключается</strong>.</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ограничиваемое действие</th>
+                            <th>Анклавы в тылу <strong>врага</strong><br><small>…ForEnemyEnclave</small></th>
+                            <th>Анклавы в тылу <strong>нейтрала</strong><br><small>…ForNeutralEnclave</small></th>
+                            <th>Анклавы в тылу <strong>союзника</strong><br><small>…ForSemiEnclave</small></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Автопоиск артефактов</td>
+                            <td><code>RulesBranchWithDisabledAutoSearchForEnemyEnclave</code></td>
+                            <td><code>RulesBranchWithDisabledAutoSearchForNeutralEnclave</code></td>
+                            <td><code>RulesBranchWithDisabledAutoSearchForSemiEnclave</code></td>
+                        </tr>
+                        <tr>
+                            <td>Ручной поиск артефактов</td>
+                            <td><code>RulesBranchWithDisabledManualSearchForEnemyEnclave</code></td>
+                            <td><code>RulesBranchWithDisabledManualSearchForNeutralEnclave</code></td>
+                            <td><code>RulesBranchWithDisabledManualSearchForSemiEnclave</code></td>
+                        </tr>
+                        <tr>
+                            <td>Найм бойцов</td>
+                            <td><code>RulesBranchWithDisabledRecruitingForEnemyEnclave</code></td>
+                            <td><code>RulesBranchWithDisabledRecruitingForNeutralEnclave</code></td>
+                            <td><code>RulesBranchWithDisabledRecruitingForSemiEnclave</code></td>
+                        </tr>
+                        <tr>
+                            <td>Возможность строить</td>
+                            <td><code>RulesBranchWithDisabledBuildingForEnemyEnclave</code></td>
+                            <td><code>RulesBranchWithDisabledBuildingForNeutralEnclave</code></td>
+                            <td><code>RulesBranchWithDisabledBuildingForSemiEnclave</code></td>
+                        </tr>
+                        <tr>
+                            <td>Возможность атаковать <em>с</em> анклава</td>
+                            <td><code>RulesBranchWithDisabledAttackingFromForEnemyEnclave</code></td>
+                            <td><code>RulesBranchWithDisabledAttackingFromForNeutralEnclave</code></td>
+                            <td><code>RulesBranchWithDisabledAttackingFromForSemiEnclave</code></td>
+                        </tr>
+                        <tr>
+                            <td>Передислокация</td>
+                            <td><code>RulesBranchWithDisabledArmyMoveForEnemyEnclave</code></td>
+                            <td><code>RulesBranchWithDisabledArmyMoveForNeutralEnclave</code></td>
+                            <td><code>RulesBranchWithDisabledArmyMoveForSemiEnclave</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Пример</div>
+                <code>RulesBranchWithDisabledBuildingForEnemyEnclave=1,2</code> —
+                при правилах максимальной и обычной децентрализации строить на своих анклавах в тылу врага нельзя.
+                При правилах 3, 4, 5 — можно.<br><br>
+                Чтобы отключить действие для <strong>всех</strong> правил централизации,
+                укажите полный перечень: <code>1,2,3,4,5</code>.
+            </div>
+
+            <h3 id="groups-ideology-params">Параметры идеологии</h3>
+            <p>Могут быть указаны как в <code>[:main]</code>, так и в секции конкретной <code>[идеологии]</code>.
+               Если параметр задан в обоих местах, приоритет имеет значение из секции идеологии.</p>
+
+            <h4>🤖 Поведение</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>AI</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название блока поведения ИИ из <a href="ai.html#AI">AI.ini</a> (например, <code>AI-Stalkers</code>). ИИ будет использовать этот блок для управления группировкой</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>🔊 Озвучка дипломатии (<code>DiplomacyVoice-*</code>)</h4>
+            <p>Все значения в таблице ниже — <span class="vt-inline">@@ПУТЬ</span>.
+               Названия параметров зеркалят текстовые <code>DiplomacyText-*</code> из
+               <a href="#groups-diplomacy-text">раздела выше</a>.</p>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>DiplomacyVoice-Ans-0-Down</code></td><td>Голосовой ответ при объявлении войны</td></tr>
+                        <tr><td><code>DiplomacyVoice-Ans-1-Yes</code></td><td>Согласие на перемирие от игрока</td></tr>
+                        <tr><td><code>DiplomacyVoice-Ans-1-No</code></td><td>Отказ от перемирия, предложенного игроком</td></tr>
+                        <tr><td><code>DiplomacyVoice-Ans-2-Yes</code></td><td>Согласие на союз от игрока</td></tr>
+                        <tr><td><code>DiplomacyVoice-Ans-2-No</code></td><td>Отказ от союза, предложенного игроком</td></tr>
+                        <tr><td><code>DiplomacyVoice-Ans-1-Down</code></td><td>Реакция на разрыв союза игроком</td></tr>
+                        <tr><td><code>DiplomacyVoice-Question-War</code></td><td>Объявление войны игроку</td></tr>
+                        <tr><td><code>DiplomacyVoice-Question-Neutral</code></td><td>Предложение перемирия игроку</td></tr>
+                        <tr><td><code>DiplomacyVoice-Question-Alliance</code></td><td>Предложение союза игроку</td></tr>
+                        <tr><td><code>DiplomacyVoice-Question-BreakAlliance</code></td><td>Разрыв союза с игроком</td></tr>
+                        <tr><td><code>DiplomacyVoice-Question-Neutral-Yes</code></td><td>Реакция на согласие игрока на перемирие</td></tr>
+                        <tr><td><code>DiplomacyVoice-Question-Neutral-No</code></td><td>Реакция на отказ игрока от перемирия</td></tr>
+                        <tr><td><code>DiplomacyVoice-Question-Alliance-Yes</code></td><td>Реакция на согласие игрока на союз</td></tr>
+                        <tr><td><code>DiplomacyVoice-Question-Alliance-No</code></td><td>Реакция на отказ игрока от союза</td></tr>
+                        <tr><td><code>DiplomacyVoice-RequestMoney-Ask</code></td><td>Запрос денег у игрока</td></tr>
+                        <tr><td><code>DiplomacyVoice-RequestMoney-Ans-Yes</code></td><td>Согласие на запрос денег игроком</td></tr>
+                        <tr><td><code>DiplomacyVoice-RequestMoney-Ans-No</code></td><td>Отказ от запроса денег игроком</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Озвучка не обязательна</div>
+                Если прописан текст <code>DiplomacyText-*</code>, но не прописан
+                соответствующий <code>DiplomacyVoice-*</code> — игра <strong>не вылетит</strong>.
+                Диалог будет показан как «немое кино»: текст на экране, без звука.
+            </div>
+
+            <h4>🖼 Логотипы и оформление</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Logo-Standart</code></td><td>@@ПУТЬ</td><td>Логотип группировки (используется в окне чата, дипломатии и других интерфейсах)</td></tr>
+                        <tr><td><code>IconMap</code></td><td>@@ПУТЬ</td><td>Значок группировки на глобальной карте</td></tr>
+                        <tr><td><code>Trader</code></td><td>@@ПУТЬ</td><td>Изображение торговца группировки</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ <code>IconMap</code> не анимируется</div>
+                Значки группировок на глобальной карте <strong>не могут</strong> быть анимированы
+                через <code>gif</code>. Используйте статичные изображения (png, jpg). См. <a href="faq.html#faq-8">FAQ №8</a>.
+            </div>
+
+            <h4>🏁 Изображения экранов победы и поражения</h4>
+            <p>Все значения в таблице ниже — <span class="vt-inline">@@ПУТЬ</span></p>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Img-End-Standart-Victory</code></td><td>Изображение при победе через захват всех территорий</td></tr>
+                        <tr><td><code>Img-End-PartialStandard-Victory</code></td><td>Изображение при победе через захват части территорий</td></tr>
+                        <tr><td><code>Img-End-PartyStandard-Victory</code></td><td>Изображение при победе через захват территорий союзным альянсом</td></tr>
+                        <tr><td><code>Img-End-Step-Victory</code></td><td>Изображение при победе через выживание до определённого хода</td></tr>
+                        <tr><td><code>Img-End-EventFlag-Victory</code></td><td>Изображение при победе через ивент-флаг</td></tr>
+                        <tr><td><code>Img-End-Standart-Lose</code></td><td>Изображение при поражении через потерю всех территорий</td></tr>
+                        <tr><td><code>Img-End-PartialStandard-Lose</code></td><td>Изображение при поражении через потерю части территорий</td></tr>
+                        <tr><td><code>Img-End-PartyStandard-Lose</code></td><td>Изображение при поражении через потерю территорий союзного альянса</td></tr>
+                        <tr><td><code>Img-End-Step-Lose</code></td><td>Изображение при поражении через невыполнение условий победы к определённому ходу</td></tr>
+                        <tr><td><code>Img-End-EventFlag-Lose</code></td><td>Изображение при поражении через ивент-флаг</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>🗂 Где ещё прописывается группировка</h3>
+
+            <h4>✅ Обязательные места (чтобы группировка была определена)</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Что нужно задать</th><th>Файл / секция</th></tr></thead>
+                    <tbody>
+                        <tr><td>Параметры самой группировки</td><td>Файл <code>Groups/&lt;название&gt;.ini</code></td></tr>
+                        <tr><td>Доступность заместителей</td><td><a href="main.html#Main">Main.ini</a> → <code>[Advisors]</code></td></tr>
+                        <tr><td>Шаблоны юнитов (4 ранга)</td><td><a href="main.html#Main">Main.ini</a> → <code>[Group-UnitIndex]</code></td></tr>
+                        <tr><td>Лидер</td><td><a href="main.html#Main">Main.ini</a> → <code>[Group-Leaders]</code></td></tr>
+                        <tr><td>Заместитель со старта</td><td><a href="main.html#Main">Main.ini</a> → <code>[Group-Advisor]</code></td></tr>
+                        <tr><td>Стартовые внутренние правила</td><td><a href="main.html#Main">Main.ini</a> → <code>[Group-Rules]</code></td></tr>
+                        <tr><td>Стартовая идеология</td><td><a href="main.html#Main">Main.ini</a> → <code>[Group-Ideology]</code></td></tr>
+                        <tr><td>Распределение идеологий</td><td><a href="main.html#Main">Main.ini</a> → <code>[Group-Ideology-Percent]</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>🎮 Чтобы появилась в игре (нужно хотя бы одно)</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Вариант</th><th>Где задать</th></tr></thead>
+                    <tbody>
+                        <tr>
+                            <td>Владение территорией</td>
+                            <td><a href="main.html#Main">Main.ini</a> → <code>[MainZoneFraction]</code> (главная база) + <code>[ZonaX]</code> → <code>Owner</code> (владение территориями)</td>
+                        </tr>
+                        <tr>
+                            <td>Событие, где она вторгается «из ниоткуда»</td>
+                            <td><a href="events-story.html#Events_Story">Events_Story.ini</a> или <a href="random-events.html#RandomEvents">RandomEvents/</a> → тип <code>Invasion</code> с <code>InvasionOwner=&lt;название_группировки&gt;</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>⚙ Опциональные места (не обязательны)</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Что можно задать</th><th>Файл / секция</th></tr></thead>
+                    <tbody>
+                        <tr><td>Стартовые ресурсы и склад</td><td><a href="main.html#Main">Main.ini</a> → <code>[Group-Resources]</code></td></tr>
+                        <tr><td>Конфигурация шаблонов юнитов (броня, оружие, имя)</td><td><a href="main.html#Main">Main.ini</a> → <code>[Units-About]</code></td></tr>
+                        <tr><td>Поведение бота</td><td><a href="ai.html#AI">AI.ini</a> → блок, названный в параметре <code>AI</code> (только если бот играет за группировку)</td></tr>
+                        <tr><td>Доступность игроку</td><td><a href="settings.html#Settings">Settings.ini</a> → <code>GroupsForPlayer</code> (только если игрок может играть за неё)</td></tr>
+                        <tr><td>Ассортимент торговца группировки</td><td><a href="traders.html#Traders">Traders.ini</a> + <a href="tradergoods.html#TraderGoods">TraderGoods.ini</a></td></tr>
+                        <tr><td>Все тексты и описания</td><td><a href="messages.html#Messages">messages.csv</a> → <code>[Groups.*]</code></td></tr>
+                        <tr><td>Иммунитет к особым событиям</td><td><a href="special-events.html#SpecialEvents">SpecialEvents/</a> → <code>NotWorkFractionCount</code> + <code>FractionX</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Связанные разделы</div>
+                <ul>
+                    <li><a href="ideologies.html#ideologies">Ideologies</a> — идеологии, под которые нужны секции</li>
+                    <li><a href="leaders.html#leaders">Leaders</a> · <a href="advisors.html#Advisors">Advisors.ini</a></li>
+                    <li><a href="rules.html#Rules">Rules.ini</a> — индексы для <code>RulesBranchWithDisabled*</code></li>
+                    <li><a href="ai.html#AI">AI.ini</a> — блок поведения</li>
+                    <li><a href="special-events.html#SpecialEvents">SpecialEvents</a> — <code>NotWorkFractionCount</code> нужно увеличить при добавлении группировки (<a href="faq.html#faq-20">FAQ №20</a>)</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

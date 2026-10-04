@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ (34 вопроса) — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="faq">
+            <h2>❓ FAQ — 34 частых вопроса по моддингу</h2>
+
+            <div class="callout callout-info">
+                <div class="callout-title">📏 Лимиты одной таблицей</div>
+                Все ответы про ограничения движка собраны на отдельной странице
+                <a href="limits.html">«Лимиты движка»</a>.
+            </div>
+
+            <h3>📚 Основы моддинга</h3>
+
+            <div class="faq-item" id="faq-1">
+                <div class="faq-question">Вопрос №1: Можно ли в игру добавлять собственные сценарии?</div>
+                <div class="faq-answer">
+                    <p>Да, в кампании может быть неограниченное число сценариев. Папку сценария необходимо размещать по пути:
+                       <code>data\campaigns\Название_кампании\</code>.</p>
+                    <p><strong>Рекомендуется</strong> класть свои сценарии в папку модов в документах:
+                       <code>Документы\war in zone\campaigns\Название_вашего_сценария</code>.
+                       Так вы не потеряете свои моды при обновлении игры.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-2">
+                <div class="faq-question">Вопрос №2: Можно ли редактировать существующие сценарии?</div>
+                <div class="faq-answer">
+                    <p>Да, можно. Они находятся по пути <code>data\campaigns\Название_кампании\</code>.
+                       Но лучше скопировать сценарий в папку модов и редактировать копию.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-3">
+                <div class="faq-question">Вопрос №3: Как понять какой файл за что отвечает?</div>
+                <div class="faq-answer">
+                    <p>Используйте меню слева (группа «Файлы настроек») или поиск по сайдбару.
+                       В разделе <a href="../index.html">«Что вы хотите сделать?»</a> на главной странице
+                       есть карточки с кратким описанием каждого файла.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-9">
+                <div class="faq-question">Вопрос №9: Нужно ли знать какие-то скриптовые языки для модифицирования игры?</div>
+                <div class="faq-answer">
+                    <p>Нет, совсем. Новый сценарий с нуля можно сделать с помощью блокнота (редактирование .ini файлов)
+                       и Paint (графика). Этого достаточно. Каких-либо специфичных навыков программирования не требуется.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-11">
+                <div class="faq-question">Вопрос №11: В игре нет такого-то параметра или я не понимаю как работает другой параметр. Что делать?</div>
+                <div class="faq-answer">
+                    <p>Обратиться к разработчику игры в Discord. Попасть туда можно через соответствующий значок
+                       в верхнем правом углу главного окна игры.</p>
+                </div>
+            </div>
+
+            <h3>📁 Структура файлов</h3>
+
+            <div class="faq-item" id="faq-7">
+                <div class="faq-question">Вопрос №7: Обязательно ли моему сценарию хранить графику в той же папке, что и мой сценарий?</div>
+                <div class="faq-answer">
+                    <p>Нет. Посмотрите ini-файлы сценария «Зов Припяти». Только та графика, которая добавлена в ЗП,
+                       лежит в папке ЗП, всё остальное лежит в изначальной папке <code>data\gfx</code>.
+                       В ini-файлах можно указывать пути к необходимым вам файлам относительно корня данных.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-8">
+                <div class="faq-question">Вопрос №8: Какие графические форматы поддерживает игра?</div>
+                <div class="faq-answer">
+                    <p>Поддерживаются стандартные изображения: <strong>bmp, jpg, png</strong>, а также анимированный формат <strong>gif</strong>.
+                       Значки группировок на глобальной карте не могут быть анимированы с помощью gif.</p>
+                    <p>Также в игре есть специфический формат для анимирования любого изображения
+                       (даже png и bmp) — это собственный формат <code>.agr</code>
+                       (открывается блокнотом). Подробнее про работу формата можно узнать в папках
+                       <code>data\gfx\Elements\GlobalMap</code>.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-17">
+                <div class="faq-question">Вопрос №17: Можно ли как-то менять существующие улучшения?</div>
+                <div class="faq-answer">
+                    <p>Можно. Каждое улучшение имеет соответствующий тип. Список типов прописан
+                       в папке <code>data\default\upgrades\</code>. Для изменения улучшений
+                       необходимо скопировать файл с улучшением в папку <code>upgrades</code> своего сценария.
+                       Если этой папки нет — создайте её. Подробнее: <a href="upgrades.html#upgrades">Upgrades</a>.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-19">
+                <div class="faq-question">Вопрос №19: Где прописывается число территорий в сценарии?</div>
+                <div class="faq-answer">
+                    <p>Нигде. Игра автоматически подсчитывает нарисованное число территорий в редакторе карт.
+                       Подробнее: <a href="map.html">Файлы карты</a>.</p>
+                </div>
+            </div>
+
+            <h3>⚙ Конфиги и параметры</h3>
+
+            <div class="faq-item" id="faq-10">
+                <div class="faq-question">Вопрос №10: Допустим, есть числовой параметр в конфиге в виде = 1. Могу я указать дробное значение, например, 0.5?</div>
+                <div class="faq-answer">
+                    <p>Нет. Внимательно смотрите тип значения в справке. Только у параметров с бейджем
+                       <span class="vt-inline">@@ДРОБНОЕ</span> можно указывать дробь (через запятую: <code>1,5</code>).
+                       У всех параметров с бейджем <span class="vt-inline">@@ЦЕЛОЕ</span> — только целые числа!</p>
+                    <p>Подробнее: <a href="value-types.html#valuetypes">«Обозначения типов»</a>.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-13">
+                <div class="faq-question">Вопрос №13: Мне требуется подробный вывод информации о том, что происходит при нажатии кнопки «Конец хода».</div>
+                <div class="faq-answer">
+                    <p>В опциях игры выставите «Подробный вывод в игровой лог состояние» — <strong>Включено</strong>. После этого
+                       в игровой лог (который отображается после нажатия на кнопку «Конец хода») будет выводиться
+                       вся информация.</p>
+                    <p>Если нужна ещё и отладочная информация для дебага, дополнительно включите параметр
+                       <code>Debug=1</code> в <code>Settings.ini</code>, который находится в папке
+                       <code>Документы\War in zone\</code>.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-15">
+                <div class="faq-question">Вопрос №15: В чём принципиальное отличие Settings.ini сценария и Settings.ini в папке Документы?</div>
+                <div class="faq-answer">
+                    <p><code>Settings.ini</code> в папке Документы — это настройки движка, они распространяются на все сценарии
+                       без исключений. А <code>Settings.ini</code> сценария влияет только на тот сценарий,
+                       к которому относится, и может переопределять некоторые глобальные настройки.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-24">
+                <div class="faq-question">Вопрос №24: Как изменить какое правило отвечает за автопоиск артефактов?</div>
+                <div class="faq-answer">
+                    <p>В файле <code>Settings.ini</code> сценария есть параметры <code>MaxAutoArtsNameRule</code>
+                       и <code>PartAutoArtsNameRule</code>. В них указывается цифровой индекс из
+                       <code>Rules.ini</code>. Например, если техническое правило называется <code>Rule-6</code>,
+                       то указывайте цифру <code>6</code>.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-25">
+                <div class="faq-question">Вопрос №25: В каком файле указывается текущий % идеологий у группировок?</div>
+                <div class="faq-answer">
+                    <p>В файле <a href="main.html#Main"><code>Main.ini</code></a> сценария, в секциях территорий <code>[ZonaX]</code>.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-26">
+                <div class="faq-question">Вопрос №26: В каком файле указывается, какой группировке какая территория принадлежит?</div>
+                <div class="faq-answer">
+                    <p>В файле <a href="main.html#Main"><code>Main.ini</code></a> сценария, в секциях территорий <code>[ZonaX]</code> через параметр <code>Owner</code>.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-28">
+                <div class="faq-question">Вопрос №28: Как добавить своего нового кандидата в заместители в какой-либо сценарий?</div>
+                <div class="faq-answer">
+                    <p>Необходимо:</p>
+                    <ol>
+                        <li>Добавить кандидата в файл <a href="advisors.html#Advisors"><code>Advisors.ini</code></a></li>
+                        <li>В файле <a href="main.html#Main"><code>Main.ini</code></a> в секции <code>[Advisors]</code> указать, доступен ли он в текущем сценарии со старта (<code>ТехНазвание=True/False</code>)</li>
+                        <li>Если необходимо, чтобы бот сам назначал себе этого заместителя, укажите это в <a href="ai.html#AI"><code>AI.ini</code></a></li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-31">
+                <div class="faq-question">Вопрос №31: Можно ли как-то самому упорядочить отображение зданий/улучшений в окне списка?</div>
+                <div class="faq-answer">
+                    <p>Да, у каждого здания/улучшения в конфиге есть параметр <code>SortOrder</code>.
+                       Чем меньше значение, тем выше элемент в списке.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-32">
+                <div class="faq-question">Вопрос №32: Где и как прописываются главные базы группировок?</div>
+                <div class="faq-answer">
+                    <p>В файле <a href="main.html#Main"><code>Main.ini</code></a> сценария, в секции <code>[MainZoneFraction]</code>.
+                       В столбик пишется техническое название группировки, затем знак =, далее индекс территории.
+                       Например: <code>Stalkers=99</code>.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-33">
+                <div class="faq-question">Вопрос №33: Где прописать, что группировке не нужна главная база?</div>
+                <div class="faq-answer">
+                    <p>В файле <a href="settings.html#Settings"><code>Settings.ini</code></a> сценария есть параметр <code>NoBaseNeeded</code>.
+                       После знака = просто перечислите через запятую технические названия группировок.
+                       Например: <code>NoBaseNeeded=Mutants,Zombie</code>.</p>
+                </div>
+            </div>
+
+            <h3>👥 Группировки, юниты и лидеры</h3>
+
+            <div class="faq-item" id="faq-4">
+                <div class="faq-question">Вопрос №4: Сколько всего группировок может быть на карте одновременно?</div>
+                <div class="faq-answer"><p>Лимита нет.</p></div>
+            </div>
+
+            <div class="faq-item" id="faq-5">
+                <div class="faq-question">Вопрос №5: Можно ли больше 4 типов бойцов иметь?</div>
+                <div class="faq-answer">
+                    <p><strong>Нет.</strong> Максимум 4 типа бойцов (ранга) у любой группировки. Это жёсткий лимит движка.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-6">
+                <div class="faq-question">Вопрос №6: Можно ли добавить новое оружие и броню? И сколько максимум может быть?</div>
+                <div class="faq-answer">
+                    <p>Да, можно. Для этого надо добавить товар (оружие/броню/предмет) в папку <code>Goods</code>
+                       (если её нет — создать) вашего сценария и прописать каждой группировке стартовое
+                       количество на складе в <a href="main.html#Main"><code>Main.ini</code></a>
+                       (если = 0, то прописывать не обязательно).</p>
+                    <p>Число товаров в сценарии не ограничено. Подробнее: <a href="goods.html#Goods">Goods</a>.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-12">
+                <div class="faq-question">Вопрос №12: Как мне зайти за Зомбированных и Мутантов?</div>
+                <div class="faq-answer">
+                    <p>Для активации возможности игры за Мутантов и Зомбированных необходимо в файле
+                       <a href="settings.html#Settings"><code>Settings.ini</code></a>, который находится в папке сценария,
+                       в параметре <code>GroupsForPlayer</code> в конце строчки добавить через запятую:
+                       <code>Zombie, Mutants</code>.</p>
+                    <p>Пример: <code>GroupsForPlayer=Stalkers,Bandits,Soldiers,Duty,Freedom,Monolith,Mercenaries,Scientists,Zombie,Mutants</code></p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-20">
+                <div class="faq-question">Вопрос №20: Как дать группировке иммунитет к Выбросу? И к уходу бойцов из-за нехватки еды?</div>
+                <div class="faq-answer">
+                    <p>В папке <code>SpecialEvents</code> есть файл, посвящённый выбросу (обычно <code>Burst.ini</code>).
+                       В нём необходимо:</p>
+                    <ol>
+                        <li>Увеличить число параметра <code>NotWorkFractionCount</code> на количество добавляемых группировок</li>
+                        <li>Добавить строки <code>FractionX=ТехНазвание</code> для каждой группировки (где X — порядковый номер)</li>
+                    </ol>
+                    <p>Пример: <code>NotWorkFractionCount=4</code>, <code>Fraction1=Mutants</code>, <code>Fraction2=Zombie</code>, <code>Fraction3=MyGroup1</code>, <code>Fraction4=MyGroup2</code>.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-21">
+                <div class="faq-question">Вопрос №21: Сколько максимум в игре может быть идеологий?</div>
+                <div class="faq-answer"><p>Число не ограничено. Подробнее: <a href="ideologies.html#ideologies">Ideologies</a>.</p></div>
+            </div>
+
+            <div class="faq-item" id="faq-22">
+                <div class="faq-question">Вопрос №22: Сколько максимум может быть кандидатов для заместителя группировки?</div>
+                <div class="faq-answer"><p>Лимита нет. Подробнее: <a href="advisors.html#Advisors">Advisors</a>.</p></div>
+            </div>
+
+            <div class="faq-item" id="faq-23">
+                <div class="faq-question">Вопрос №23: Можно ли увеличить число внутренних правил для группировок?</div>
+                <div class="faq-answer">
+                    <p><strong>Нет.</strong> Число правил захардкожено в движке. Но можно менять бонусы, которые дают текущие правила,
+                       в файле <a href="rules.html#Rules"><code>Rules.ini</code></a> (скопируйте файл из <code>data\default\</code> в папку вашего сценария).</p>
+                </div>
+            </div>
+
+            <h3>🛒 Торговцы и экономика</h3>
+
+            <div class="faq-item" id="faq-14">
+                <div class="faq-question">Вопрос №14: Как добавить своё оружие в игру?</div>
+                <div class="faq-answer">
+                    <p>Есть видео, где это демонстрируется:
+                       <a href="https://youtu.be/COaKZjuCXlg" target="_blank" rel="noopener">https://youtu.be/COaKZjuCXlg</a></p>
+                    <p>Или смотрите раздел <a href="goods.html#Goods">Goods (Амуниция)</a>.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-16">
+                <div class="faq-question">Вопрос №16: Можно ли добавить своего торговца в игру? И сколько их максимум может быть?</div>
+                <div class="faq-answer">
+                    <p>Добавить можно. Число торговцев неограниченно (по типу Сидоровича, Бармена, Внешнего мира и т.д.).</p>
+                    <p>Также есть торговцы других группировок и торговец своей группировки — их клонировать,
+                       как Внешний мир/Сидорович, уже не получится, так как в отличие от любых других они привязаны
+                       к группировкам, а не к какой-либо территории. Подробнее: <a href="traders.html#Traders">Traders</a>.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-34">
+                <div class="faq-question">Вопрос №34: Сколько максимум торговцев может быть в сценарии?</div>
+                <div class="faq-answer"><p>Лимита нет.</p></div>
+            </div>
+
+            <h3>🗺 Карта и территории</h3>
+
+            <div class="faq-item" id="faq-18">
+                <div class="faq-question">Вопрос №18: Какие файлы отвечают за то, какие территории с какими граничат?</div>
+                <div class="faq-answer">
+                    <p>За границы территорий отвечает файл <code>Links.ini</code>. Рекомендуется к просмотру видео:
+                       <a href="https://youtu.be/JQ2ixqeOpU8" target="_blank" rel="noopener">https://youtu.be/JQ2ixqeOpU8</a></p>
+                    <p>Подробнее: <a href="map.html#mapLinks">Links.ini</a>.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-27">
+                <div class="faq-question">Вопрос №27: Можно ли добавить в свой сценарий собственный шрифт для текста?</div>
+                <div class="faq-answer">
+                    <p><strong>Нет, нельзя.</strong> Шрифт общий для всей игры и захардкожен в движке.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-29">
+                <div class="faq-question">Вопрос №29: Сколько максимум может быть улучшений в сценарии?</div>
+                <div class="faq-answer"><p>Лимита нет. Подробнее: <a href="upgrades.html#upgrades">Upgrades</a>.</p></div>
+            </div>
+
+            <div class="faq-item" id="faq-30">
+                <div class="faq-question">Вопрос №30: Сколько максимум может быть построек в сценарии?</div>
+                <div class="faq-answer"><p>Лимита нет. Подробнее: <a href="buildings.html#Buildings">Buildings</a>.</p></div>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💬 Не нашли ответ?</div>
+                Спрашивайте в Discord-сообществе игры, канал «обмен опытом».
+                Вход — через значок Discord в правом верхнем углу главного окна игры.
+            </div>
+
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

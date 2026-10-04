@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Achievements.ini — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="Achievements">
+            <h2>🏆 Достижения (Achievements.ini)</h2>
+            
+            <p>Файл <code>Achievements.ini</code> находится в папке каждого сценария (например, <code>data/campaigns/shoc/1story/Achievements.ini</code>) и описывает достижения, которые игрок может получить в этом сценарии.</p>
+
+            <h3>Локализация (размещать в messages.csv)</h3>
+<pre><code>[Achievements.&lt;Название&gt;].Name        - название ачивки
+[Achievements.&lt;Название&gt;].Desc        - полное описание для окна события
+[Achievements.&lt;Название&gt;].Desc-Logo   - описание в окне выбора сценария</code></pre>
+            <p>«Название» — это техническое название секции ачивки из <code>[Achiv-X]</code>.</p>
+
+            <h3>Параметры ачивки</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>ID</code></td><td>@@НАЗВАНИЕ</td><td><strong>Обязательный.</strong> Уникальный идентификатор для сохранения. Должен отличаться от всех ID других ачивок во всех файлах <code>Achievements.ini</code> игры. Рекомендуемый формат: <code>ID = modNameYourModX</code>, где <code>NameYourMod</code> — название мода без пробелов, а <code>X</code> — двухзначный номер (например, 01, 02, 03)</td></tr>
+                        <tr><td><code>Type</code></td><td>@@ВЫБОР</td><td>Тип условия получения ачивки. Возможные значения: <code>ZonaControl</code>, <code>KillFraction</code>, <code>Conquest</code>, <code>IdeologyOnly</code>, <code>EventFlag</code>. См. таблицу ниже</td></tr>
+                        <tr><td><code>DifficultyLevel</code></td><td>@@ВЫБОР</td><td>Требуемый уровень сложности. Значения: <code>Any</code> (любой), <code>Novice</code> (новичок), <code>Skilled</code> (опытный), <code>Veteran</code> (ветеран), <code>Master</code> (мастер)</td></tr>
+                        <tr><td><code>Img</code></td><td>@@ПУТЬ</td><td>Путь к изображению ачивки для окна события при её получении</td></tr>
+                        <tr><td><code>ImgLogoEnabled</code></td><td>@@ПУТЬ</td><td>Путь к изображению ачивки для окна выбора сценария (когда ачивка уже получена). Для неполученных ачивок движок автоматически делает это изображение чёрно-белым</td></tr>
+                        <tr><td><code>SoundFX</code></td><td>@@BOOL</td><td>Воспроизводить ли звук при получении ачивки (<code>True</code> или <code>False</code>)</td></tr>
+                        <tr><td><code>SoundFXWayFile</code></td><td>@@ПУТЬ</td><td>Путь к звуковому файлу, который воспроизводится при получении ачивки</td></tr>
+                        <tr><td><code>StartStep</code></td><td>@@ЦЕЛОЕ</td><td>Ход, с которого начинается проверка условия ачивки (включительно). Значение <code>0</code> означает «с самого начала игры»</td></tr>
+                        <tr><td><code>LimitStep</code></td><td>@@ЦЕЛОЕ</td><td>Ход, до которого проверяется условие ачивки (включительно). Значение <code>0</code> означает «без ограничения по ходам»</td></tr>
+                        <tr><td><code>NotWorkFractionCount</code></td><td>@@ЦЕЛОЕ</td><td>Количество фракций, которые <strong>не учитываются</strong> при проверке ачивки (обычно это нейтральные или неигровые фракции)</td></tr>
+                        <tr><td><code>FractionX</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название фракции, которая игнорируется. <code>X</code> — порядковый номер от 1 до значения <code>NotWorkFractionCount</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Параметры для конкретных типов ачивок</h3>
+            
+            <h4>Тип: <code>ZonaControl</code> (Контроль территорий)</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>CountNeedZona</code></td><td>@@ЦЕЛОЕ</td><td>Количество территорий, которые нужно контролировать</td></tr>
+                        <tr><td><code>Zona-X</code></td><td>@@ЦЕЛОЕ</td><td>Номер территории, которую нужно контролировать. <code>X</code> — порядковый номер от 1 до значения <code>CountNeedZona</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>Тип: <code>KillFraction</code> (Пережить уничтожение фракции)</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>TargetKillFraction</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название фракции, уничтожение которой нужно пережить</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>Тип: <code>Conquest</code> (Захват всей Зоны)</h4>
+            <p>Не требует дополнительных параметров. Ачивка выдаётся, когда игрок захватывает все территории на карте.</p>
+
+            <h4>Тип: <code>IdeologyOnly</code> (Смена идеологии)</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>TargetIdeology</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название идеологии, которую должна принять фракция игрока</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>Тип: <code>EventFlag</code> (Активация ивент-флага)</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>TargetFlag</code></td><td>@@НАЗВАНИЕ</td><td>Техническое наименование ивент-флага, который должен быть активирован в событии из <code>Events_Story.ini</code>. Движок отслеживает результат выполнения ивента по системе, схожей с ивент-флагами</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Типы ачивок (сводная таблица)</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Тип</th><th>Описание</th><th>Дополнительные параметры</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>ZonaControl</code></td><td>Контролировать указанные территории</td><td><code>CountNeedZona</code>, <code>Zona-X</code></td></tr>
+                        <tr><td><code>KillFraction</code></td><td>Пережить уничтожение указанной фракции</td><td><code>TargetKillFraction</code></td></tr>
+                        <tr><td><code>Conquest</code></td><td>Захватить всю Зону</td><td>—</td></tr>
+                        <tr><td><code>IdeologyOnly</code></td><td>Сменить идеологию группировки на указанную</td><td><code>TargetIdeology</code></td></tr>
+                        <tr><td><code>EventFlag</code></td><td>Активировать указанный ивент-флаг в событии</td><td><code>TargetFlag</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Не забудьте включить ачивки в сценарии</div>
+                Достижения работают только если в <a href="settings.html#Settings">Settings.ini</a> задано <code>Achievements=True</code> и параметр <code>AchievementsCount</code> совпадает с реальным числом ачивок в файле.
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Лимит ачивок</div>
+                Максимальное число ачивок в одном сценарии = <strong>16</strong>
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Пример полной секции ачивки</div>
+<pre><code>[Achiv-1]
+ID=myMod01
+Type=ZonaControl
+DifficultyLevel=Any
+Img=gfx\icons\achievements_SHOC\Taked.png
+ImgLogoEnabled=gfx\icons\achievements_SHOC\unlock\1.png
+SoundFX=True
+SoundFXWayFile=sfx\achiv.wav
+StartStep=0
+LimitStep=0
+CountNeedZona=3
+Zona-1=85
+Zona-2=108
+Zona-3=191
+NotWorkFractionCount=2
+Fraction1=Mutants
+Fraction2=Zombie</code></pre>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Где ещё используется</div>
+                <ul>
+                    <li><a href="settings.html#Settings">Settings.ini</a> — параметры <code>Achievements</code> и <code>AchievementsCount</code></li>
+                    <li><a href="events-story.html#Events_Story">Events_Story.ini</a> — ивент-флаги для типа <code>EventFlag</code></li>
+                    <li><a href="difficulty.html#Difficulty">Difficulty.ini</a> — уровни сложности для параметра <code>DifficultyLevel</code></li>
+                    <li><a href="messages.html#Messages">messages.csv</a> — ключи локализации <code>[Achievements.*]</code></li>
+                    <li><a href="faq.html#faq-1">FAQ №1</a> — куда класть свой сценарий</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

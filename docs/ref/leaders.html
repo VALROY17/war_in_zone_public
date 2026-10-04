@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leaders — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="leaders">
+            <h2>👑 Лидеры (leaders)</h2>
+
+            <p>Папка <code>leaders\</code> в сценарии состоит из ini-файлов, каждый из которых представляет одного лидера.
+               <strong>Название файла — техническое название лидера</strong>, которое используется в других конфигах.
+               Каждый файл содержит один блок <code>[Main]</code>.</p>
+
+            <div class="callout callout-info">
+                <div class="callout-title">📊 Бонусы этого конфига</div>
+                Все бонусы лидера — <strong>глобальные</strong>, действуют на всю группировку.
+                См. <a href="matrix-bonus.html">Матрицу бонусов</a>.
+            </div>
+
+            <h3>Локализация (размещать в messages.csv)</h3>
+<pre><code>[Leaders.&lt;техническое название&gt;].Name   - название, отображаемое в игре</code></pre>
+
+            <h3>Параметры</h3>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Отрицательные значения</div>
+                Многие параметры принимают отрицательные числа. Отрицательное значение = штраф вместо бонуса.
+            </div>
+
+            <h4>🖼 Оформление</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Img</code></td><td>@@ПУТЬ</td><td>Путь к изображению лидера для интерфейса</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>🎖 Разведка и артефакты</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>BonusForSpy</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор шанса успеха <strong>своих</strong> разведчиков в %. Положительное значение = помощь, отрицательное = помеха</td></tr>
+                        <tr><td><code>BonusForEnemySpy</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор шанса успеха <strong>вражеских</strong> разведчиков в %. Положительное значение = помощь врагу, отрицательное = помеха врагу</td></tr>
+                        <tr><td><code>BonusSearchArts</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор к поиску артефактов в %. Положительное значение = больше находок, отрицательное = меньше</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>⚔ Боевые бонусы</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>BonusDamagePVPForAtackers</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор урона <strong>нападающим</strong> в PvP-боях %</td></tr>
+                        <tr><td><code>BonusDamagePVPForDefenders</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор урона <strong>обороняющимся</strong> в PvP-боях %</td></tr>
+                        <tr><td><code>BonusDamagePVMForAtackers</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор урона <strong>нападающим</strong> в PvM-боях (против мутантов) %</td></tr>
+                        <tr><td><code>BonusDamagePVMForDefenders</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор урона <strong>обороняющимся</strong> в PvM-боях %</td></tr>
+                        <tr><td><code>BonusRangeForAtackers</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор дальности атаки <strong>нападающим</strong> %</td></tr>
+                        <tr><td><code>BonusRangeForDefenders</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор дальности атаки <strong>обороняющимся</strong> %</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>👢 Рекруты и командные ресурсы (КР)</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Recruit-Novice</code></td><td>@@ЦЕЛОЕ</td><td>Ежеходный прирост (отрицательный = убыль) новичков</td></tr>
+                        <tr><td><code>Recruit-Skilled</code></td><td>@@ЦЕЛОЕ</td><td>Ежеходный прирост опытных</td></tr>
+                        <tr><td><code>Recruit-Veteran</code></td><td>@@ЦЕЛОЕ</td><td>Ежеходный прирост ветеранов</td></tr>
+                        <tr><td><code>Recruit-Master</code></td><td>@@ЦЕЛОЕ</td><td>Ежеходный прирост мастеров</td></tr>
+                        <tr><td><code>LimitRecruit-Novice</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор к максимальному лимиту новичков</td></tr>
+                        <tr><td><code>LimitRecruit-Skilled</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор к максимальному лимиту опытных</td></tr>
+                        <tr><td><code>LimitRecruit-Veteran</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор к максимальному лимиту ветеранов</td></tr>
+                        <tr><td><code>LimitRecruit-Master</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор к максимальному лимиту мастеров</td></tr>
+                        <tr><td><code>Comands</code></td><td>@@ЦЕЛОЕ</td><td>Ежеходный прирост (отрицательный = убыль) командных ресурсов</td></tr>
+                        <tr><td><code>LimitComands</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор к максимальному лимиту КР</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>💰 Экономика</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>BootyParts</code></td><td>@@ЦЕЛОЕ</td><td>Абсолютная прибавка к трофейным частям мутантов после боя. Например, <code>BootyParts=5</code> даёт ровно +5 частей к базовому дропу</td></tr>
+                        <tr><td><code>BootyCash</code></td><td>@@ЦЕЛОЕ</td><td>Абсолютная прибавка к трофейным деньгам после боя. Например, <code>BootyCash=100</code> даёт ровно +100 к деньгам к базовому дропу</td></tr>
+                        <tr><td><code>BonusForCostCPSpy</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор стоимости отправки разведчиков в КР. Положительное значение = дороже, отрицательное = дешевле</td></tr>
+                        <tr><td><code>BonusForCostCPAdvisor</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор стоимости назначения заместителя в КР. Положительное значение = дороже, отрицательное = дешевле</td></tr>
+                        <tr><td><code>BonusForCostCPMainBase</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор стоимости смены главной базы в КР</td></tr>
+                        <tr><td><code>BonusPercentLostResources</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор % потери ресурсов при потере главной базы</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>🏛 Идеология</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Ideology</code></td><td>@@НАЗВАНИЕ</td><td>Техническое наименование идеологии, которую продвигает лидер (например, <code>Stalkers</code>, <code>Crime</code>, <code>AntiZone</code>)</td></tr>
+                        <tr><td><code>IdeologyBonus</code></td><td>@@ЦЕЛОЕ</td><td>Ежеходный прирост в <strong>процентных пунктах</strong> указанной идеологии. Например, <code>IdeologyBonus=5</code> даёт ровно +5% к доле этой идеологии в группировке каждый ход. Очень большие значения быстро вытесняют все остальные идеологии</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Сравнение «бонусной цепочки»</h3>
+            <p>Лидер, заместитель, идеология и внутреннее правило дают почти один и тот же набор бонусов.
+               Основные различия:</p>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Параметр</th><th>👥 Advisors</th><th>👑 Leaders</th><th>🏛 Ideologies</th><th>📜 Rules</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Бонусный блок (25 параметров)</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+                        <tr><td><code>Img</code></td><td>✅</td><td>✅</td><td>✅</td><td><code>Img-Available</code></td></tr>
+                        <tr><td><code>Ideology</code> / <code>IdeologyBonus</code></td><td>✅</td><td>✅</td><td>—</td><td>—</td></tr>
+                        <tr><td><code>Fraction</code></td><td>✅</td><td>—</td><td>—</td><td>—</td></tr>
+                        <tr><td><code>CanUseRule-Rule-1…5</code></td><td>—</td><td>—</td><td>✅</td><td>—</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Advisors vs Leaders</div>
+                Набор параметров у лидера и заместителя почти идентичен.
+                <strong>Единственное отличие</strong> — у заместителя есть параметр <code>Fraction</code>
+                (привязка к фракции внутри конфига), у лидера привязка к фракции задаётся
+                через <a href="main.html#Main">Main.ini</a> в секции <code>[Group-Leaders]</code>.
+            </div>
+
+            <h3>Как добавить нового лидера — чек-лист</h3>
+            <div class="callout callout-tip">
+                <ol>
+                    <li>Создайте ini-файл в папке <code>leaders\</code> сценария. Имя файла = техническое название лидера</li>
+                    <li>Заполните блок <code>[Main]</code> с параметрами бонусов</li>
+                    <li>Добавьте строку локализации в <a href="messages.html#Messages">messages.csv</a></li>
+                    <li>Привяжите лидера к группировке в <a href="main.html#Main">Main.ini</a> → <code>[Group-Leaders]</code> (формат: <code>Группировка=ТехНазвание_лидера</code>)</li>
+                    <li>Создайте изображение лидера (портрет)</li>
+                </ol>
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Пример полного файла лидера</div>
+<pre><code>; Файл: leaders\MyLeader.ini
+[Main]
+Img=gfx\icons\leaders\my_leader.png
+BonusForSpy=10
+BonusForEnemySpy=-10
+BonusSearchArts=15
+BonusDamagePVPForAtackers=10
+BonusDamagePVPForDefenders=5
+BonusDamagePVMForAtackers=-5
+BonusDamagePVMForDefenders=10
+BonusRangeForAtackers=5
+BonusRangeForDefenders=0
+Recruit-Novice=3
+Recruit-Skilled=2
+Recruit-Veteran=1
+Recruit-Master=0
+LimitRecruit-Novice=10
+LimitRecruit-Skilled=8
+LimitRecruit-Veteran=5
+LimitRecruit-Master=3
+Comands=5
+LimitComands=30
+BootyParts=3
+BootyCash=150
+BonusForCostCPSpy=-2
+BonusForCostCPAdvisor=-3
+BonusForCostCPMainBase=-5
+BonusPercentLostResources=-15
+Ideology=Stalkers
+IdeologyBonus=8</code></pre>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Где ещё используется</div>
+                <ul>
+                    <li><a href="main.html#Main">Main.ini</a> — <code>[Group-Leaders]</code> (привязка лидера к группировке, формат: <code>Группировка=ТехНазвание_лидера</code>)</li>
+                    <li><a href="events-story.html#Events_Story">Events_Story.ini</a> — тип события <code>ChangeLeader</code>, параметр <code>NewLeader</code></li>
+                    <li><a href="random-events.html#RandomEvents">RandomEvents</a> — тип события <code>ChangeLeader</code>, параметр <code>NewLeader</code></li>
+                    <li><a href="messages.html#Messages">messages.csv</a> — ключи локализации <code>[Leaders.*]</code></li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

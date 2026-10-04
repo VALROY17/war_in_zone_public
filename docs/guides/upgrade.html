@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Гайд: Новое улучшение — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="L1-upgrade">
+            <h2>⬆ Гайд: новое улучшение</h2>
+
+            <p>В этом гайде мы добавим в игру новое улучшение — <strong>«Тактика разведки»</strong>.
+               Это улучшение будет увеличивать шанс успеха разведчиков на 10%.
+               Пример простой: один файл, одна иконка, одна пара строк локализации.</p>
+
+            <h3>🎯 Что получится в итоге</h3>
+            <ul>
+                <li>Новое улучшение «Тактика разведки» появится в окне улучшений группировки</li>
+                <li>После изучения все разведчики группировки получат +10% к шансу успеха</li>
+                <li>Стоимость изучения: 5 КР + 1500 денег</li>
+                <li>Улучшение будет отображаться с названием, описанием и иконкой</li>
+            </ul>
+
+            <h3>📋 Что нужно подготовить</h3>
+            <ul>
+                <li>Одно изображение для иконки улучшения (формат PNG, размер как у существующих
+                    улучшений — смотрите в папке <code>data\gfx\icons\technologies\</code>)</li>
+            </ul>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Достаточно одной иконки</div>
+                Создавать нужно <strong>только один</strong> файл изображения — основную иконку.
+                Остальные состояния (при наведении, после изучения) движок сделает сам:
+                наложит обводку при наведении и галочку после изучения.
+                Подробнее: <a href="../ref/upgrades.html#upgrades">справка Upgrades</a>,
+                блок «Рудименты: <code>Logo-Active</code>, <code>Logo-Purchased</code>, <code>Logo-PurchasedActive</code>».
+            </div>
+
+            <h3>📝 Пошаговая инструкция</h3>
+
+            <h4>Шаг 1. Создайте файл улучшения</h4>
+            <p>В папке вашего сценария создайте подпапку <code>upgrades/</code> (если её ещё нет),
+               а внутри — файл <code>Upgrade-MyMod-1.ini</code>. Имя файла без расширения = техническое
+               название улучшения, по которому на него будут ссылаться другие конфиги.</p>
+
+            <p>За основу возьмём реальный конфиг <code>Upgrade-1.ini</code> из стандартного сценария игры.
+               Вот его содержимое:</p>
+
+<pre><code>[Main]
+SortOrder=10
+Type=UpRecruitsCountLimit
+Cost_Comands=5
+Cost_Money=1000
+Bonus=1
+Logo-NonActive=gfx\icons\technologies\1.png
+Logo-Active=gfx\icons\technologies\1-Active.png
+Logo-Purchased=gfx\icons\technologies\1-Purchased.png
+Logo-PurchasedActive=gfx\icons\technologies\1-PurchasedActive.png</code></pre>
+
+            <p>Скопируйте этот текст в свой новый файл <code>Upgrade-MyMod-1.ini</code> и внесите следующие изменения:</p>
+
+<pre><code>[Main]
+SortOrder=15
+Type=UpChanceCountForReconnaissance
+Cost_Comands=5
+Cost_Money=1500
+Bonus=10
+Logo-NonActive=gfx\icons\technologies\mymod_1.png</code></pre>
+
+            <div class="callout callout-info">
+                <div class="callout-title">📌 Что мы изменили по сравнению с прототипом</div>
+                <ul>
+                    <li><code>SortOrder=15</code> — чтобы иконка стояла после базового улучшения (<code>10</code>)</li>
+                    <li><code>Type=UpChanceCountForReconnaissance</code> — тип, который увеличивает шанс успеха разведчиков</li>
+                    <li><code>Cost_Money=1500</code> — немного дороже базового улучшения (1000), так как эффект более специфичный</li>
+                    <li><code>Bonus=10</code> — даёт +10% к шансу успеха разведчиков</li>
+                    <li><code>Logo-NonActive</code> — путь к нашей иконке</li>
+                    <li>Убрали строки <code>Logo-Active</code>, <code>Logo-Purchased</code>, <code>Logo-PurchasedActive</code> —
+                        это рудименты, указывать их не нужно</li>
+                </ul>
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Почему именно <code>UpChanceCountForReconnaissance</code>?</div>
+                В движке захардкожено 15 типов улучшений. Тип <code>UpChanceCountForReconnaissance</code>
+                увеличивает шанс успеха разведчиков — именно то, что нам нужно.
+                Полный список типов — в справке <a href="../ref/upgrades.html#upgrades">Upgrades</a>,
+                таблица «15 типов улучшений». Создать новый тип нельзя — только использовать существующие.
+            </div>
+
+            <h4>Шаг 2. Положите иконку</h4>
+            <p>Поместите файл <code>mymod_1.png</code> по пути <code>gfx\icons\technologies\mymod_1.png</code>
+               в папке вашего сценария (или в общей папке <code>data\gfx\</code> игры).
+               Это <strong>единственный</strong> файл изображения, который нужен — остальные состояния
+               (наведение, изучено) движок нарисует сам.</p>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Если своей иконки пока нет</div>
+                Можно временно скопировать иконку от существующего улучшения. Например, скопируйте
+                <code>data\gfx\icons\technologies\1.png</code> и переименуйте в <code>mymod_1.png</code>.
+                Это позволит проверить работу улучшения в игре до того, как нарисуете свою.
+            </div>
+
+            <h4>Шаг 3. Добавьте локализацию</h4>
+            <p>Откройте <code>messages.csv</code> вашего сценария (или создайте его в корне сценария,
+               если его нет) и добавьте две строки:</p>
+
+<pre><code>[Upgrades.Upgrade-MyMod-1].Name;Тактика разведки
+[Upgrades.Upgrade-MyMod-1].Desc;Улучшает подготовку разведчиков. Увеличивает шанс успеха разведывательных операций.</code></pre>
+
+			<div class="callout callout-warning">
+				<div class="callout-title">⚠️ Формат ключа</div>
+				Ключ в <code>messages.csv</code> должен совпадать с именем файла
+				улучшения без расширения. У нас файл называется <code>Upgrade-MyMod-1.ini</code>,
+				значит ключ — <code>[Upgrades.Upgrade-MyMod-1]</code>.
+				<br><br>
+				Регистр значения не имеет (<code>[Upgrades.Upgrade-MyMod-1]</code> и
+				<code>[Upgrades.upgrade-mymod-1]</code> работают одинаково), но рекомендуется
+				писать так же, как имя файла — это упрощает поиск по файлу <code>messages.csv</code>.
+				<br><br>
+				Разделитель между ключом и текстом — точка с запятой <code>;</code>.
+				Внутри самого текста символ <code>;</code> использовать нельзя —
+				строка оборвётся.
+			</div>
+
+            <h4>Шаг 4. Сохраните все файлы в правильной кодировке</h4>
+            <ul>
+                <li><code>Upgrade-MyMod-1.ini</code> — в кодировке <strong>UTF-8 с BOM</strong></li>
+                <li><code>messages.csv</code> — в кодировке <strong>UTF-8 с BOM</strong></li>
+            </ul>
+
+            <p>Подробнее про кодировку: <a href="../ref/start.html#filestypecode">«Кодировка файлов»</a>.</p>
+
+            <h3>✅ Проверка результата</h3>
+            <ol>
+                <li>Запустите игру и начните свой сценарий</li>
+                <li>Откройте окно улучшений группировки</li>
+                <li>Убедитесь, что в списке появилось новое улучшение «Тактика разведки»
+                    с корректным названием, описанием и иконкой</li>
+                <li>Проверьте, что стоимость улучшения отображается правильно (5 КР + 1500 денег)</li>
+                <li>Если у вас достаточно ресурсов — попробуйте изучить улучшение</li>
+                <li>После изучения — откройте меню разведки и убедитесь, что шанс успеха
+                    увеличился по сравнению с тем, что было до изучения</li>
+            </ol>
+
+            <h3>⚠️ Вероятные ошибки</h3>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">Улучшение не появляется в списке</div>
+                <ul>
+                    <li>Проверьте, что файл <code>Upgrade-MyMod-1.ini</code> лежит в папке <code>upgrades/</code>
+                        вашего сценария (а не в корне сценария и не в другой папке)</li>
+                    <li>Убедитесь, что файл сохранён в кодировке <strong>UTF-8 с BOM</strong></li>
+                    <li>Проверьте, что блок называется точно <code>[Main]</code></li>
+                </ul>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">Улучшение появляется, но вместо названия — техническое имя «Upgrade-MyMod-1»</div>
+                <p>Это значит, что игра не нашла локализацию. Проверьте:</p>
+                <ul>
+                    <li>Ключ в <code>messages.csv</code> должен быть именно <code>[Upgrades.Upgrade-MyMod-1].Name</code></li>
+                    <li>Разделитель — точка с запятой <code>;</code>, а не двоеточие или запятая</li>
+                    <li>В самом тексте нет символа <code>;</code> — иначе строка оборвётся</li>
+                    <li><code>messages.csv</code> сохранён в <strong>UTF-8 с BOM</strong></li>
+                </ul>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">Улучшение не даёт эффекта после изучения</div>
+                <p>Проверьте, что вы указали правильный тип улучшения в параметре <code>Type</code>.
+                   В нашем примере это <code>UpChanceCountForReconnaissance</code>. Типы улучшений захардкожены
+                   в движке — создать новый тип нельзя, только использовать один из 15 существующих.
+                   Полный список типов: <a href="../ref/upgrades.html#upgrades">справка Upgrades</a>.</p>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Нюанс: не нужны отдельные изображения для состояний</div>
+                В старых конфигах можно встретить строки <code>Logo-Active</code>, <code>Logo-Purchased</code>,
+                <code>Logo-PurchasedActive</code>. Указывать их в новом конфиге <strong>не нужно</strong> —
+                это рудименты. Движок сам подставит состояния на основе <code>Logo-NonActive</code>:
+                наложит обводку при наведении и галочку после изучения.
+                Создавать нужно только <strong>один</strong> файл изображения.
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Нюанс: параметр <code>Need</code> (дерево технологий)</div>
+                Если вы хотите, чтобы ваше улучшение можно было изучить только после другого улучшения,
+                добавьте параметр <code>Need</code>. Например:
+<pre><code>[Main]
+SortOrder=15
+Type=UpChanceCountForReconnaissance
+Cost_Comands=5
+Cost_Money=1500
+Bonus=10
+Need=Upgrade-1
+Logo-NonActive=gfx\icons\technologies\mymod_1.png</code></pre>
+                В этом случае «Тактика разведки» станет доступной только после изучения <code>Upgrade-1</code>.
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Нюанс: бонусы улучшений — глобальные</div>
+                В отличие от построек, у которых боевые бонусы работают только на своей территории,
+                бонусы улучшений действуют <strong>глобально на всю группировку</strong>.
+                Изучили улучшение — эффект работает везде. Подробнее:
+                <a href="../ref/matrix-bonus.html">Матрица бонусов</a>.
+            </div>
+
+            <h3>🔗 Связанные разделы справки</h3>
+            <ul>
+                <li><a href="../ref/upgrades.html#upgrades">Upgrades</a> — полное описание всех параметров улучшений и 15 типов</li>
+                <li><a href="../ref/messages.html#Messages">messages.csv</a> — формат локализации</li>
+                <li><a href="../ref/matrix-bonus.html">Матрица бонусов</a> — как бонусы улучшений складываются с другими источниками</li>
+                <li><a href="../ref/main.html#Main-Group-Upgrades">Main.ini → [Group-Upgrades]</a> — если хотите дать улучшение группировке со старта</li>
+                <li><a href="../ref/ai.html#AI">AI.ini</a> — если хотите, чтобы бот тоже покупал ваше улучшение</li>
+                <li><a href="../ref/settings.html#Settings">Settings.ini</a> → <code>ExcludedUpgrades</code> — если нужно заблокировать улучшение в сценарии</li>
+                <li><a href="../ref/start.html#filestypecode">Кодировка файлов</a> — UTF-8 с BOM</li>
+            </ul>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

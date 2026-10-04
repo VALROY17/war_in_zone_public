@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>interface.ini — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="interface">
+            <h2>🎨 Настройки игрового интерфейса (interface.ini)</h2>
+
+            <p>Файл <code>interface.ini</code> отвечает за изображения кнопок, значков, фонов и звуков
+               игрового интерфейса. Через него можно перерисовать практически всю графику UI под стиль
+               своего сценария.</p>
+
+            <h3>Механизм наследования (главная особенность)</h3>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Не копируйте весь файл!</div>
+                Для того чтобы изменить <strong>один значок</strong> в своём сценарии,
+                <strong>нет необходимости</strong> полностью копировать файл к себе.
+                Достаточно:
+                <ol>
+                    <li>Создать в папке своего сценария файл <code>interface.ini</code></li>
+                    <li>Добавить в него только ту секцию и тот параметр, который хочется изменить</li>
+                </ol>
+                Движок автоматически подгрузит остальные значения из <code>data\default\interface.ini</code>.
+            </div>
+
+            <h4>Пример: замена фона меню найма бойцов</h4>
+<pre><code>; Файл: МойСценарий\interface.ini
+[Graphics-In-game]
+BuyUnits-Fon=gfx\ui\my_scenario\buy_units_background.png</code></pre>
+            <p>Всё! Остальные параметры фона, кнопок и звуков будут взяты из дефолтного файла.</p>
+
+            <h4>Пример: замена нескольких элементов</h4>
+<pre><code>; Файл: МойСценарий\interface.ini
+[Graphics-In-game]
+BuyUnits-Fon=gfx\ui\my_scenario\buy_units.png
+Recruit-Fon=gfx\ui\my_scenario\recruit.png
+Diplomacy-Fon=gfx\ui\my_scenario\diplomacy.png
+
+[Graphics-BTN-Standart]
+Button-OK=gfx\ui\my_scenario\btn_ok.png
+Button-Cancel=gfx\ui\my_scenario\btn_cancel.png
+
+[Sounds]
+ClickButton=sfx\ui\my_click.wav</code></pre>
+
+            <h3>Где находится полный список параметров</h3>
+            <p>Полный список всех доступных параметров и их дефолтных значений находится в файле:</p>
+<pre><code>data\default\interface.ini</code></pre>
+            <p>Откройте его в текстовом редакторе, чтобы увидеть все секции и параметры,
+               которые можно переопределить в своём сценарии.</p>
+
+            <h3>Секции, актуальные для сценария</h3>
+            <p>Хотя в дефолтном файле много секций, для большинства сценариев важны только эти 6:</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Секция</th><th>Что содержит</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>[Graphics-In-game]</code></td><td>
+                            Фоны внутриигровых окон (меню найма бойцов, дипломатии, склада, разведки и т.д.),
+                            иконки ресурсов, элементов управления</td></tr>
+                        <tr><td><code>[MultiTexture]</code></td><td>
+                            Составные текстуры, атласы изображений, используемые в разных частях интерфейса</td></tr>
+                        <tr><td><code>[Graphics-BTN-Standart]</code></td><td>
+                            Изображения кнопок в обычном состоянии (без наведения)</td></tr>
+                        <tr><td><code>[Graphics-BTN-Active]</code></td><td>
+                            Изображения кнопок при наведении курсора</td></tr>
+                        <tr><td><code>[Graphics-RadioBTN]</code></td><td>
+                            Переключатели (radio buttons), чекбоксы и подобные элементы</td></tr>
+                        <tr><td><code>[Sounds]</code></td><td>
+                            Звуки интерфейса: клики кнопок, открытие/закрытие окон, уведомления</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Как перерисовать интерфейс — чек-лист</h3>
+            <div class="callout callout-tip">
+                <ol>
+                    <li>Откройте <code>data\default\interface.ini</code> и изучите, какие параметры отвечают
+                        за нужные элементы интерфейса</li>
+                    <li>Найдите в <code>data\default\gfx\</code> оригинальные изображения — по ним можно понять
+                        требуемые размеры и стиль</li>
+                    <li>Создайте свои изображения, соблюдая размеры оригиналов
+                        (иначе элементы интерфейса «поедут»)</li>
+                    <li>Создайте файл <code>interface.ini</code> в папке своего сценария</li>
+                    <li>Укажите только те секции и параметры, которые нужно переопределить</li>
+                    <li>Разместите свои изображения в папке <code>gfx\</code> вашего сценария
+                        (или в общей <code>data\gfx\</code>)</li>
+                    <li>Протестируйте сценарий — убедитесь, что элементы интерфейса отображаются корректно</li>
+                </ol>
+            </div>
+
+            <h3>Практические советы</h3>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Сохраняйте размеры оригиналов</div>
+                Если оригинальная кнопка имеет размер 120×40 пикселей, ваша замена должна быть
+                <strong>такого же размера</strong>. Иначе кнопка может:
+                <ul>
+                    <li>Растянуться или сжаться</li>
+                    <li>Перекрыть соседние элементы</li>
+                    <li>Оставить пустые области вокруг</li>
+                </ul>
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Единый стиль</div>
+                При создании собственного UI придерживайтесь единой цветовой палитры и стиля.
+                Смешение стилей (например, пиксель-арт рядом с фотореалистичными текстурами)
+                выглядит неаккуратно.
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Используйте прозрачность</div>
+                Формат <strong>PNG</strong> с альфа-каналом позволяет создавать элементы
+                с прозрачным фоном — это особенно полезно для кнопок и иконок,
+                которые должны органично вписываться в разные фоны.
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💬 Не нашли нужный параметр?</div>
+                Если в справке нет описания конкретного параметра <code>interface.ini</code>,
+                откройте дефолтный файл <code>data\default\interface.ini</code> — там все параметры
+                с комментариями. Если всё равно непонятно — спрашивайте в Discord-сообществе игры.
+            </div>
+
+            <h3>Форматы изображений и звуков</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Тип ресурса</th><th>Поддерживаемые форматы</th></tr></thead>
+                    <tbody>
+                        <tr><td>Изображения</td><td>
+                            <code>png</code> (рекомендуется, поддерживает прозрачность),
+                            <code>jpg</code>, <code>bmp</code>.
+                            Анимированный <code>gif</code>/<code>agr</code> поддерживается, но не для всех элементов.
+                            См. <a href="faq.html#faq-8">FAQ №8</a></td></tr>
+                        <tr><td>Звуки</td><td>
+                            <code>wav</code>, <code>mp3</code>, <code>ogg</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Связанные разделы</div>
+                <ul>
+                    <li><a href="faq.html#faq-8">FAQ №8</a> — какие графические форматы поддерживает игра</li>
+                    <li><a href="start.html#filestypecode">Кодировка файлов</a> — UTF-8 с BOM
+                        для самого <code>interface.ini</code></li>
+                    <li><a href="dont-touch.html">Рудименты и «не трогать»</a> —
+                        совет не копировать файл целиком, а только нужные параметры</li>
+                    <li><a href="tips.html#scenario_structure">Структура сценария</a> —
+                        где размещать файлы <code>gfx/</code> и <code>sfx/</code></li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buildings — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="Buildings">
+            <h2>🏗 Постройки (Buildings)</h2>
+
+            <p>Папка <code>Buildings\</code> в сценарии состоит из ini-файлов, каждый из которых представляет одну постройку.
+               <strong>Название файла — техническое название постройки</strong>, которое используется
+               в других файлах, например, в <code>Main.ini</code> сценария.
+               Каждый файл содержит один блок <code>[Main]</code>.</p>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Единственный конфиг со смешанной областью бонусов</div>
+                У постройки <strong>лимиты рекрутов и КР — глобальные</strong> (🌍),
+                а <strong>прирост, боевые, разведка, трофеи и экономика — только на своей территории</strong> (📍).
+                Полная таблица — в <a href="matrix-bonus.html">Матрице бонусов</a>.
+                Глобальные бонусы действуют, пока группировка владеет территорией с постройкой.
+            </div>
+
+            <h3>Локализация (размещать в messages.csv)</h3>
+<pre><code>[Buildings.&lt;техническое название&gt;].Name   - название, отображаемое в игре
+[Buildings.&lt;техническое название&gt;].Desc   - описание постройки</code></pre>
+
+            <h3>Параметры</h3>
+
+            <h4>⚙ Основные</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>CanBeDestroyed</code></td><td>@@BOOL</td><td>Разрешён ли снос постройки (<code>True</code> или <code>False</code>). По умолчанию <code>True</code></td></tr>
+                        <tr><td><code>Logo-NonActive</code></td><td>@@ПУТЬ</td><td>Путь к изображению постройки (единственное изображение, отдельного "активного" состояния у построек нет)</td></tr>
+                        <tr><td><code>Type</code></td><td>@@ВЫБОР</td><td>Тип постройки. Возможные значения:<br>
+                            • <code>None</code> — обычная постройка (большинство зданий)<br>
+                            • <code>Workshop</code> — мастерская для модификации амуниции через рецепты<br>
+                            • <code>Production</code> — производит один ресурс из другого (или "из воздуха")</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>🎖 Разведка и артефакты</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Область</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>BonusForSpy</code></td><td>@@ЦЕЛОЕ</td><td>⚠️</td><td>Бонус своим разведчикам в %. <strong>Не работает!</strong> См. предупреждение ниже</td></tr>
+                        <tr><td><code>BonusForEnemySpy</code></td><td>@@ЦЕЛОЕ</td><td>📍</td><td>Бонус вражеским разведчикам в % (положительное значение = помощь врагу)</td></tr>
+                        <tr><td><code>BonusSearchArts</code></td><td>@@ЦЕЛОЕ</td><td>📍</td><td>Бонус к поиску артефактов в %</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ ВНИМАНИЕ! <code>BonusForSpy</code> не работает</div>
+                Данный параметр <strong>не используется движком игры</strong>.
+                Если нужен бонус своим разведчикам — используйте заместителя, идеологию,
+                лидера или внутреннее правило.
+                См. <a href="dont-touch.html">Рудименты и «не трогать»</a>.
+            </div>
+
+            <h4>⚔ Боевые бонусы — все 📍 территориальные</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>BonusDamagePVPForAtackers</code></td><td>@@ЦЕЛОЕ</td><td>Бонус к урону нападающим в PvP-боях %</td></tr>
+                        <tr><td><code>BonusDamagePVPForDefenders</code></td><td>@@ЦЕЛОЕ</td><td>Бонус к урону обороняющимся в PvP-боях %</td></tr>
+                        <tr><td><code>BonusDamagePVMForAtackers</code></td><td>@@ЦЕЛОЕ</td><td>Бонус к урону нападающим в PvM-боях (против мутантов) %</td></tr>
+                        <tr><td><code>BonusDamagePVMForDefenders</code></td><td>@@ЦЕЛОЕ</td><td>Бонус к урону обороняющимся в PvM-боях %</td></tr>
+                        <tr><td><code>BonusRangeForAtackers</code></td><td>@@ЦЕЛОЕ</td><td>Бонус к дальности атаки нападающим %</td></tr>
+                        <tr><td><code>BonusRangeForDefenders</code></td><td>@@ЦЕЛОЕ</td><td>Бонус к дальности атаки обороняющимся %</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>👢 Рекруты и КР — здесь область действия различается!</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Область</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Recruit-Novice</code></td><td>@@ЦЕЛОЕ</td><td>📍</td><td>Ежеходный прирост новичков на этой территории</td></tr>
+                        <tr><td><code>Recruit-Skilled</code></td><td>@@ЦЕЛОЕ</td><td>📍</td><td>Ежеходный прирост опытных на этой территории</td></tr>
+                        <tr><td><code>Recruit-Veteran</code></td><td>@@ЦЕЛОЕ</td><td>📍</td><td>Ежеходный прирост ветеранов на этой территории</td></tr>
+                        <tr><td><code>Recruit-Master</code></td><td>@@ЦЕЛОЕ</td><td>📍</td><td>Ежеходный прирост мастеров на этой территории</td></tr>
+                        <tr><td><code>LimitRecruit-Novice</code></td><td>@@ЦЕЛОЕ</td><td>🌍</td><td>Глобальный бонус к максимальному лимиту новичков</td></tr>
+                        <tr><td><code>LimitRecruit-Skilled</code></td><td>@@ЦЕЛОЕ</td><td>🌍</td><td>Глобальный бонус к максимальному лимиту опытных</td></tr>
+                        <tr><td><code>LimitRecruit-Veteran</code></td><td>@@ЦЕЛОЕ</td><td>🌍</td><td>Глобальный бонус к максимальному лимиту ветеранов</td></tr>
+                        <tr><td><code>LimitRecruit-Master</code></td><td>@@ЦЕЛОЕ</td><td>🌍</td><td>Глобальный бонус к максимальному лимиту мастеров</td></tr>
+                        <tr><td><code>Comands</code></td><td>@@ЦЕЛОЕ</td><td>🌍</td><td>Глобальный ежедневный прирост КР</td></tr>
+                        <tr><td><code>LimitComands</code></td><td>@@ЦЕЛОЕ</td><td>🌍</td><td>Глобальный бонус к максимальному лимиту КР</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>💰 Экономика — все 📍 территориальные</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>BootyParts</code></td><td>@@ЦЕЛОЕ</td><td>Абсолютная прибавка к трофейным частям мутантов после боя на этой территории (например, <code>BootyParts=5</code> даёт ровно +5 частей)</td></tr>
+                        <tr><td><code>BootyCash</code></td><td>@@ЦЕЛОЕ</td><td>Абсолютная прибавка к трофейным деньгам после боя на этой территории (например, <code>BootyCash=100</code> даёт ровно +100 к деньгам)</td></tr>
+                        <tr><td><code>BonusForCostCPSpy</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор стоимости отправки разведчиков в КР</td></tr>
+                        <tr><td><code>BonusForCostCPAdvisor</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор стоимости назначения заместителя в КР</td></tr>
+                        <tr><td><code>BonusForCostCPMainBase</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор стоимости смены главной базы в КР</td></tr>
+                        <tr><td><code>BonusPercentLostResources</code></td><td>@@ЦЕЛОЕ</td><td>Модификатор % потери ресурсов при потере главной базы</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ <code>BootyParts</code> и <code>BootyCash</code> у построек</div>
+                В отличие от лидеров, заместителей и идеологий (у которых эти бонусы глобальные),
+                у построек они <strong>работают только на территории, где стоит постройка</strong>.
+                И это всегда <strong>абсолютное значение</strong>, а не множитель!
+            </div>
+
+            <h4>🏗 Стоимость постройки</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Custom-Resource</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название ресурса/товара, которое требуется для постройки. Если дополнительный ресурс не нужен — оставьте пустым</td></tr>
+                        <tr><td><code>Cost-Custom</code></td><td>@@ЦЕЛОЕ</td><td>Количество ресурса из <code>Custom-Resource</code>, требуемое для постройки</td></tr>
+                        <tr><td><code>Cost-Money</code></td><td>@@ЦЕЛОЕ</td><td>Стоимость постройки в деньгах</td></tr>
+                        <tr><td><code>Cost-Comands</code></td><td>@@ЦЕЛОЕ</td><td>Стоимость постройки в КР</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>🔗 Требования для постройки</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Need-UpgradeIndex</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название улучшения, которое должно быть исследовано перед постройкой. Если требования нет — оставьте пустым</td></tr>
+                        <tr><td><code>Need-Building</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название другой постройки, которая должна быть построена на этой территории перед текущей. Если требования нет — оставьте пустым</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>🏭 Производство (только для <code>Type=Production</code>)</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>ProductionNameFrom</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название ресурса/товара, которое потребляет постройка. Если производит "из воздуха" — оставьте пустым</td></tr>
+                        <tr><td><code>ProductionCountFrom</code></td><td>@@ЦЕЛОЕ</td><td>Сколько потребляет постройка. Укажите <code>0</code>, если производит "из воздуха"</td></tr>
+                        <tr><td><code>ProductionNameTo</code></td><td>@@НАЗВАНИЕ</td><td>Техническое название ресурса/товара, которое производится</td></tr>
+                        <tr><td><code>ProductionCountTo</code></td><td>@@ЦЕЛОЕ</td><td>Сколько производится за ход</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Пример: производство "из воздуха"</div>
+                Если постройка производит ресурс без потребления другого (например, генерирует деньги из ничего):<br>
+                <code>ProductionNameFrom=</code> (пусто)<br>
+                <code>ProductionCountFrom=0</code><br>
+                <code>ProductionNameTo=Money</code><br>
+                <code>ProductionCountTo=10</code>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Где ещё используется</div>
+                <ul>
+                    <li><a href="main.html#Main">Main.ini</a> — <code>[ZonaX] Buildings-Count</code> (список построек на территории)</li>
+                    <li><a href="typelands.html#TypeLands">TypeLands</a> — <code>CountBuildings</code> (вместимость территории по постройкам)</li>
+                    <li><a href="ai.html#AI">AI.ini</a> — <code>MainBaseBuildings</code>, <code>BorderBuildings</code>, <code>MaxBuildingCount</code> (стратегия ИИ по застройке)</li>
+                    <li><a href="settings.html#Settings">Settings.ini</a> — <code>ExcludedBuildings</code>, <code>BasedCostDestroyBuildComands</code>, <code>BasedImprovementProductivityWorkshop</code></li>
+                    <li><a href="receipts.html#Receipts">Receipts</a> — <code>RequiredBuildings</code> (постройка-мастерская через рецепты изготавливает товары)</li>
+                    <li><a href="events-story.html#Events_Story">Events_Story.ini</a> — типы событий <code>CheckBuilding</code>, <code>Build</code>, <code>Destroy</code></li>
+                    <li><a href="random-events.html#RandomEvents">RandomEvents</a> — типы <code>Build</code>, <code>Destroy</code></li>
+                    <li><a href="upgrades.html#upgrades">Upgrades</a> — <code>ImprovementProductivityWorkshop</code> (улучшение продуктивности мастерских)</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

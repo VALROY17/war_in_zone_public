@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Events_Story.ini — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="Events_Story">
+            <h2>📖 Сюжетные события (Events_Story.ini)</h2>
+
+            <p>Файл содержит <strong>сюжетные события</strong> сценария — основной инструмент
+               для создания сюжетных модов. Каждое событие привязано к конкретной
+               территории и (опционально) к конкретному ходу, что позволяет выстраивать
+               сложные сюжетные цепочки.</p>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🎲 Events_Story vs RandomEvents</div>
+                <ul>
+                    <li><strong>Привязка к территории</strong> — здесь обязательна (<code>Zona=X</code>),
+                        у случайных событий — всегда случайная.</li>
+                    <li><strong>Привязка к ходу</strong> — здесь обычно есть (<code>Step=X</code>),
+                        у случайных — нет.</li>
+                    <li><strong>Ивент-флаги</strong> — только здесь можно создавать ветвящийся сюжет
+                        через флаги.</li>
+                    <li><strong>Типов событий</strong> — здесь 35, у случайных 22.</li>
+                    <li><strong>Проверочные типы</strong> (<code>Check*</code>) — только здесь.</li>
+                    <li><strong>События главного героя</strong> (<code>MCMove</code>, <code>MCAttack</code>) — только здесь.</li>
+                    <li><strong>Числовые эффекты</strong> — здесь всегда точное значение (например, через <code>CountParam</code>, <code>CountUnitX</code> или <code>CountResources</code>), у случайных — часто диапазон <code>CountMin…CountMax</code>.</li>
+                </ul>
+                Полная сравнительная таблица — в
+                <a href="random-events.html#RandomEvents">RandomEvents</a>.
+            </div>
+
+            <h3>📐 Структура одного события</h3>
+            <p>Каждое событие — это отдельная секция <code>[Название_события]</code>.
+               Название секции само по себе является <strong>флагом</strong>: если событие сработало,
+               флаг с таким именем автоматически устанавливается в <code>True</code>.</p>
+
+<pre><code>[Event-Cordon-1]
+Step=1
+Zona=191
+Type=MCMove
+Img=gfx\icons\story_SHOC\0.png
+TargetResourceImg=gfx\old\NoData_100x100.png
+ShowForOwner=True
+ShowForNonOwner=True
+AddToGameLog=True
+SoundFXForOwner=True
+SoundFXForOwnerFile=sfx\events\message.mp3
+SoundFXForNonOwner=True
+SoundFXForNonOwnerFile=sfx\events\message.mp3
+NotWorkFractions=Mutants,Bandits,Soldiers,Monolith,Mercenaries,Zombie</code></pre>
+
+            <h4>Основные параметры события</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Type</code></td><td>@@ВЫБОР</td><td>
+                            Тип события (один из 35, см. ниже).
+                            <strong>Может быть только один</strong> на событие</td></tr>
+                        <tr><td><code>Zona</code></td><td>@@ЦЕЛОЕ</td><td>
+                            <strong>Обязательный</strong>. Индекс территории, к которой привязано событие.
+                            Даже чисто информационные события требуют территорию</td></tr>
+                        <tr><td><code>Step</code></td><td>@@ЦЕЛОЕ ≥0</td><td>
+                            Ход, на котором сработает событие.
+                            <code>0</code> или пустое значение = <strong>вневременное событие</strong>
+                            (проверяется каждый ход и срабатывает при выполнении условий)</td></tr>
+                        <tr><td><code>Repeatable</code></td><td>@@BOOL</td><td>
+                            Может ли событие повторяться. Работает <strong>только</strong> при <code>Step=0</code>.
+                            Если <code>True</code> — событие будет срабатывать каждый ход при выполнении условий</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Только один тип на событие</div>
+                В одном блоке <code>[Event-XXX]</code> может быть <strong>только один</strong>
+                параметр <code>Type</code>. Если нужно сделать несколько действий —
+                создайте несколько событий с одинаковым <code>Step</code> и <code>Zona</code>,
+                либо используйте ивент-флаги для связывания.
+            </div>
+
+            <h3>🏷 35 типов событий</h3>
+
+            <h4>👤 События главного героя (MC = Main Character)</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Тип</th><th>Описание</th><th>Доп. параметры</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>MCMove</code></td><td>Передвижение ГГ на указанную территорию</td>
+                            <td>—</td></tr>
+                        <tr><td><code>MCAttack</code></td><td>Передвижение с атакой ГГ на гарнизон территории</td>
+                            <td><code>CountUnit1…4</code> — сколько гарнизонных бойцов каждого ранга погибнет от рук ГГ</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>📢 Информационные и управленческие</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Тип</th><th>Описание</th><th>Доп. параметры</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Info</code></td><td>Просто показать сообщение. Часто используется как
+                            «триггер» для установки ивент-флага</td>
+                            <td><code>EventFlag</code>, <code>EventFlagStatusNeed</code>,
+                                <code>EventFlagResult</code>, <code>EventFlagStatusSet</code></td></tr>
+                        <tr><td><code>ChangeZonaOwner</code></td><td>Сменить владельца территории</td>
+                            <td><code>NewOwner</code> — тех.название фракции</td></tr>
+                        <tr><td><code>ChangeLeader</code></td><td>Сменить лидера фракции-владельца</td>
+                            <td><code>NewLeader</code> — тех.название из <a href="leaders.html#leaders">leaders/</a></td></tr>
+                        <tr><td><code>ChangeAdvisor</code></td><td>Сменить заместителя фракции-владельца</td>
+                            <td><code>NewAdvisor</code> — тех.название из <a href="advisors.html#Advisors">Advisors.ini</a></td></tr>
+                        <tr><td><code>AvailableAdvisor</code></td><td>Сделать кандидата доступным/недоступным
+                            в меню назначения</td>
+                            <td><code>TargetAdvisor</code>, <code>StatusAdvisor</code> (True/False)</td></tr>
+                        <tr><td><code>ChangeDiplomacy</code></td><td>Изменить дипломатические отношения между двумя фракциями</td>
+                            <td><code>Fraction1</code>, <code>Fraction2</code> — тех.названия фракций.<br>
+                                <code>DiplomacyStatus</code> — новый статус отношений (число от -1 до 3):<br>
+                                <code>-1</code> = вечная война<br>
+                                <code>0</code> = война<br>
+                                <code>1</code> = нейтралитет<br>
+                                <code>2</code> = союз<br>
+                                <code>3</code> = нерушимый союз</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>👥 Юниты и мутанты</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Тип</th><th>Описание</th><th>Доп. параметры</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>AddUnits</code></td><td>Добавить юнитов владельцу территории</td>
+                            <td><code>CountUnit1…4</code></td></tr>
+                        <tr><td><code>RemoveUnits</code></td><td>Убрать юнитов у владельца</td>
+                            <td><code>CountUnit1…4</code></td></tr>
+                        <tr><td><code>Invasion</code></td><td>Вторжение «из ниоткуда» —
+                            чужая группировка пытается захватить территорию</td>
+                            <td><code>InvasionOwner</code>, <code>InvasionUnit1…4</code></td></tr>
+                        <tr><td><code>AddMutants</code></td><td>Добавить фоновых мутантов</td>
+                            <td><code>CountMutants1…4</code> (собаки, кабаны, кровососы, контролёры)</td></tr>
+                        <tr><td><code>RemoveMutants</code></td><td>Убрать фоновых мутантов</td>
+                            <td><code>CountMutants1…4</code></td></tr>
+                        <tr><td><code>AddMutantsActive</code></td><td>Поднять % активности мутантов</td>
+                            <td><code>CountParam</code> — точное значение в %</td></tr>
+                        <tr><td><code>RemoveMutantsActive</code></td><td>Понизить % активности мутантов</td>
+                            <td><code>CountParam</code> — точное значение в %</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>💰 Ресурсы и экипировка</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Тип</th><th>Описание</th><th>Доп. параметры</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>AddResources</code></td><td>Добавить ресурс владельцу</td>
+                            <td><code>NameResources</code>, <code>CountResources</code></td></tr>
+                        <tr><td><code>RemoveResources</code></td><td>Отнять ресурс у владельца</td>
+                            <td><code>NameResources</code>, <code>CountResources</code></td></tr>
+                        <tr><td><code>AddWeapon</code></td><td>Добавить оружие на склад того же типа, что и состоит на вооружении указанного ранга</td>
+                            <td><code>FromUnitType</code> (1–4), <code>NameResources</code></td></tr>
+                        <tr><td><code>RemoveWeapon</code></td><td>Убрать оружие со склада того же типа, что и состоит на вооружении указанного ранга</td>
+                            <td><code>FromUnitType</code>, <code>NameResources</code></td></tr>
+                        <tr><td><code>AddArmor</code></td><td>Добавить броню на склад того же типа, что и состоит на вооружении указанного ранга</td>
+                            <td><code>FromUnitType</code>, <code>NameResources</code></td></tr>
+                        <tr><td><code>RemoveArmor</code></td><td>Убрать броню со склада того же типа, что и состоит на вооружении указанного ранга</td>
+                            <td><code>FromUnitType</code>, <code>NameResources</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>🏗 Постройки и улучшения</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Тип</th><th>Описание</th><th>Доп. параметры</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Build</code></td><td>Бесплатно построить здание на территории</td>
+                            <td><code>BuildingName</code> — тех.название из <a href="buildings.html#Buildings">Buildings</a></td></tr>
+                        <tr><td><code>Destroy</code></td><td>Бесплатно уничтожить здание</td>
+                            <td><code>BuildingName</code></td></tr>
+                        <tr><td><code>ChangeStatusUpgrade</code></td><td>Бесплатно изучить/забыть улучшение</td>
+                            <td><code>TargetUpgradeIndex</code> — индекс из <a href="upgrades.html#upgrades">upgrades/</a></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>🏛 Идеологии</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Тип</th><th>Описание</th><th>Доп. параметры</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>ChangeIdeology</code></td><td>Сменить идеологию владельцу территории</td>
+                            <td><code>IdeologyName</code> — тех.название из <a href="ideologies.html#ideologies">ideologies/</a></td></tr>
+                        <tr><td><code>ChangeIdeologyPercent</code></td><td>Добавить % идеологии группировке</td>
+                            <td><code>IdeologyName</code>, <code>CountParam</code>
+                                <span style="color:#e05252">⚠ только положительное число!</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">☠ КРИТИЧНО: <code>ChangeIdeologyPercent</code></div>
+                Параметр <code>CountParam</code> для этого типа <strong>запрещено делать отрицательным</strong>.
+                Отрицательное значение приведёт к непредсказуемому поведению.
+                См. <a href="dont-touch.html">«Рудименты и не трогать»</a>.
+            </div>
+
+            <h4>🧠 Пси-установки</h4>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Тип</th><th>Описание</th><th>Доп. параметры</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>ChangeStatusBrainPsy</code></td><td>Включить/выключить пси-излучатель</td>
+                            <td><code>Status</code> (True/False)</td></tr>
+                        <tr><td><code>ChangeStatusBrainMixer</code></td><td>Включить/выключить выжигатель мозгов</td>
+                            <td><code>Status</code> (True/False)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>🔍 Проверочные типы (Check*)</h4>
+            <p>Эти типы <strong>не выполняют действие</strong>, а только проверяют условие.
+               Если условие не выполнено — событие не произойдёт. Можно комбинировать с параметром <code>Repeatable=True</code> (событие будет происходить хоть каждый ход, пока выполняется условие) или с <code>Step=0</code>, если надо, чтобы произошло один раз за игру в любой ход (как только будут выполнены все условия).</p>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Тип</th><th>Что проверяет</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>CheckBuilding</code></td><td>Построено ли указанное здание (<code>BuildingName</code>)</td></tr>
+                        <tr><td><code>CheckUnits</code></td><td>Есть ли нужное число юнитов (<code>CountUnit1…4</code>)</td></tr>
+                        <tr><td><code>CheckResources</code></td><td>Есть ли нужное число ресурса (<code>NameResources</code>, <code>CountResources</code>)</td></tr>
+                        <tr><td><code>CheckOwner</code></td><td>Владеет ли указанная группировка территорией</td></tr>
+                        <tr><td><code>CheckIdeology</code></td><td>Принята ли указанная идеология</td></tr>
+                        <tr><td><code>CheckUpgrade</code></td><td>Изучено ли указанное улучшение</td></tr>
+                        <tr><td><code>CheckEventFlag</code></td><td>Установлен ли указанный ивент-флаг</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Зачем нужны Check-типы</div>
+                Они позволяют создавать события, которые срабатывают <strong>по условию</strong>,
+                а не только по ходу. Например: «когда игрок построит мастерскую в Деревне новичков на Кордоне — дать ему
+                1000 денег и показать диалог». Событие будет вневременным (<code>Step=0</code>)
+                с типом <code>CheckBuilding</code> и каждый ход будет проверять, построена ли мастерская.
+            </div>
+
+            <h3>🚩 Система ивент-флагов</h3>
+            <p>Ивент-флаги — это «переменные» сюжета. Они позволяют создавать ветвящиеся цепочки
+               событий, где последующие события зависят от того, какие предыдущие уже сработали.</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>EventFlag</code></td><td>@@НАЗВАНИЕ</td><td>
+                            Имя флага, состояние которого требует это событие для срабатывания</td></tr>
+                        <tr><td><code>EventFlagStatusNeed</code></td><td>@@BOOL</td><td>
+                            Какое состояние флага из <code>EventFlag</code> должно быть, чтобы событие сработало.
+                            <code>True</code> — флаг должен быть установлен,
+                            <code>False</code> — не установлен</td></tr>
+                        <tr><td><code>EventFlagResult</code></td><td>@@НАЗВАНИЕ</td><td>
+                            Имя флага, которое будет изменено после успешного срабатывания события</td></tr>
+                        <tr><td><code>EventFlagStatusSet</code></td><td>@@BOOL</td><td>
+                            Какое состояние установить флагу из <code>EventFlagResult</code> после срабатывания события</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>Пример ветвления через флаги</h4>
+<pre><code>; Событие 1: устанавливаем Flag1 (невидимо для игрока)
+[Event-SetFlag1]
+Step=10
+Zona=85
+Type=Info
+EventFlag=Flag1
+EventFlagStatusNeed=False     ; только если Flag1 ещё не установлен
+EventFlagResult=Flag1
+EventFlagStatusSet=True       ; устанавливаем его
+ShowForOwner=False
+ShowForNonOwner=False
+AddToGameLog=False
+
+; Событие 2: сработает только если Flag1 установлен
+[Event-AfterFlag1]
+Step=15
+Zona=85
+Type=AddResources
+NameResources=Comands
+CountResources=10
+EventFlag=Flag1
+EventFlagStatusNeed=True      ; требовать установленный Flag1
+EventFlagResult=Flag1
+EventFlagStatusSet=False      ; отключить Flag1, так как больше не нужен</code></pre>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🏁 Зарезервированные флаги</div>
+                <ul>
+                    <li><code>EndVictory</code> — при установке этого флага сценарий завершается
+                        победой (если в <a href="settings.html#Settings">Settings.ini</a> включено
+                        <code>End-EventFlag-Victory=True</code>)</li>
+                    <li><code>EndLose</code> — при установке сценарий завершается поражением
+                        (если <code>End-EventFlag-Lose=True</code>)</li>
+                </ul>
+                Все ивент-флаги при старте сценария движок сбрасывает в <code>False</code>.
+                Поэтому их <strong>не нужно</strong> прописывать в
+                <a href="main.html#Main">Main.ini</a> → <code>[EventFlag]</code>.
+            </div>
+
+            <h3>🎨 Отображение и звуки</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Img</code></td><td>@@ПУТЬ</td><td>Иконка события в диалоге</td></tr>
+                        <tr><td><code>TargetResourceImg</code></td><td>@@ПУТЬ</td><td>Изображение связанного ресурса/юнита (если применимо)</td></tr>
+                        <tr><td><code>ShowForOwner</code></td><td>@@BOOL</td><td>Показывать событие владельцу территории</td></tr>
+                        <tr><td><code>ShowForNonOwner</code></td><td>@@BOOL</td><td>Показывать событие НЕ-владельцу</td></tr>
+                        <tr><td><code>AddToGameLog</code></td><td>@@BOOL</td><td>Добавлять в лог игровых событий</td></tr>
+                        <tr><td><code>SoundFXForOwner</code></td><td>@@BOOL</td><td>Будет ли звук для владельца</td></tr>
+                        <tr><td><code>SoundFXForOwnerFile</code></td><td>@@ПУТЬ</td><td>Путь к файлу звука для владельца</td></tr>
+                        <tr><td><code>SoundFXForNonOwner</code></td><td>@@BOOL</td><td>Будет ли звук для не-владельца</td></tr>
+                        <tr><td><code>SoundFXForNonOwnerFile</code></td><td>@@ПУТЬ</td><td>Путь к файлу звука для не-владельца</td></tr>
+                        <tr><td><code>NotWorkFractions</code></td><td>@@НАЗВАНИЯ</td><td>
+                            Список фракций через запятую, для которых событие <strong>не сработает</strong>.
+                            Позволяет делать события «только для сталкеров» или «для всех, кроме мутантов»</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 «Невидимые» служебные события</div>
+                Если поставить <code>ShowForOwner=False</code>, <code>ShowForNonOwner=False</code>,
+                <code>AddToGameLog=False</code> — событие сработает «за кадром», без единого упоминания.
+                Это часто используется для установки ивент-флагов или для служебных действий
+                (например, автоматическая смена лидера).
+            </div>
+
+            <h3>📋 Локализация (messages.csv)</h3>
+<pre><code>[Events_Story.&lt;название_события&gt;].Name      - краткое название события
+[Events_Story.&lt;название_события&gt;].Desc       - основной текст описания события</code></pre>
+            <p>«Название события» — это имя секции в квадратных скобках (например,
+               <code>Event-Cordon-1</code>).</p>
+
+            <h3>⚙ Включение/выключение в меню</h3>
+            <p>Игрок может включать/выключать сюжетные события перед стартом сценария.
+               Настраивается в <a href="settings.html#Settings">Settings.ini</a>:</p>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>EventsStoryDefault</code></td><td>Состояние по умолчанию в меню (True/False)</td></tr>
+                        <tr><td><code>EventsStoryCanChange</code></td><td>Может ли игрок переключать</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>🧩 Особенности и подводные камни</h3>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Ситуация</th><th>Почему так</th></tr></thead>
+                    <tbody>
+                        <tr><td>Событие с <code>Step=0</code></td>
+                            <td>Такое событие считается <strong>вневременным</strong> и может
+                            сработать на любом ходе при выполнении условий</td></tr>
+                        <tr><td>Одноразовое событие не срабатывает повторно</td>
+                            <td>Названия сюжетных событий сами считаются флагами.
+                            Если событие выполнилось — флаг с его именем установлен.
+                            Чтобы выполнить снова — нужно сбросить флаг или использовать <code>Repeatable=True</code> (работает только при <code>Step=0</code>)</td></tr>
+                        <tr><td>Любое событие требует территорию</td>
+                            <td><strong>Каждое</strong> событие привязано к территории.
+                            Не только вторжение или ресурсы, но и чисто <code>Info</code>,
+                            и даже смена лидера</td></tr>
+                        <tr><td>Флаг устанавливается «сам собой» при выполнении события</td>
+                            <td>Имя секции события = имя флага. Если событие выполнилось —
+                            флаг с этим именем автоматически устанавливается в <code>True</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>🎬 Практический пример: цепочка из 4 событий</h3>
+            <p>Классический сюжетный приём «вертолёты прилетели, высадили десант, зачистили территорию»:</p>
+<pre><code>; 1. Вертолёт прилетает (информация + установка флага)
+[Event-Agroprom-Helicopter-1]
+Step=21
+Zona=147
+Type=Info
+EventFlag=Flag1
+EventFlagStatusNeed=False
+EventFlagResult=Flag1
+EventFlagStatusSet=True
+Img=gfx\icons\story_SHOC\hel1.png
+ShowForOwner=True
+ShowForNonOwner=False
+AddToGameLog=True
+SoundFXForOwner=True
+SoundFXForOwnerFile=sfx\events\Helicopter.mp3
+NotWorkFractions=Mutants,Soldiers,Duty,Scientists
+
+; 2. Вертолёт обстреливает территорию (если Flag1 установлен)
+[Event-Agroprom-Helicopter-2]
+Step=23
+Zona=147
+Type=RemoveUnits
+EventFlag=Flag1
+EventFlagStatusNeed=True
+CountUnit1=3
+CountUnit2=3
+CountUnit3=2
+CountUnit4=0
+Img=gfx\icons\story_SHOC\raid1.png
+NotWorkFractions=Soldiers,Duty,Scientists
+
+; 3. Десант высаживается (если Flag1 установлен)
+[Event-Agroprom-Invasion-1]
+Step=23
+Zona=147
+Type=Invasion
+InvasionOwner=Soldiers
+InvasionUnit1=4
+InvasionUnit2=4
+InvasionUnit3=0
+InvasionUnit4=0
+EventFlag=Flag1
+EventFlagStatusNeed=True
+EventFlagResult=Flag1
+EventFlagStatusSet=False
+Img=gfx\icons\story_SHOC\inv4.png
+NotWorkFractions=Soldiers,Duty,Scientists
+
+; 4. Сброс флага (завершение цепочки)
+[Event-Agroprom-SetFlag1-2]
+Step=23
+Zona=166
+Type=Info
+EventFlag=Flag1
+EventFlagStatusNeed=True
+EventFlagResult=Flag1
+EventFlagStatusSet=False
+ShowForOwner=False
+ShowForNonOwner=False
+AddToGameLog=False</code></pre>
+
+            <h3>🗂 Где ещё используется</h3>
+            <div class="callout callout-info">
+                <ul>
+                    <li><a href="main.html#Main">Main.ini</a> — <code>[EventFlag]</code> (рудимент, не трогать), <code>[ZonaX]</code> (индексы территорий)</li>
+                    <li><a href="settings.html#Settings">Settings.ini</a> — <code>EventsStoryDefault</code>, <code>EventsStoryCanChange</code>,
+                        <code>End-EventFlag-Victory</code>, <code>End-EventFlag-Lose</code></li>
+                    <li><a href="achievements.html#Achievements">Achievements.ini</a> — <code>Type=EventFlag</code>, <code>TargetFlag</code></li>
+                    <li><a href="random-events.html#RandomEvents">RandomEvents</a> — «младший брат» с 22 типами без ивент-флагов</li>
+                    <li><a href="special-events.html#SpecialEvents">SpecialEvents</a> — глобальные механики (Выброс, Пси-излучение)</li>
+                    <li><a href="messages.html#Messages">messages.csv</a> — ключи <code>[Events_Story.*]</code></li>
+                    <li><a href="limits.html">Лимиты движка</a> — 35 типов захардкожены, добавить новый нельзя</li>
+                    <li><a href="dont-touch.html">Рудименты и «не трогать»</a> — запрет отрицательного <code>CountParam</code></li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Main.ini — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="Main">
+            <h2>⚙ Главный конфиг сценария (Main.ini)</h2>
+
+            <p>Файл <code>Main.ini</code> — центральный конфиг сценария. Здесь задаётся
+               <strong>состояние игрового мира на старте</strong>: кто чем владеет,
+               какие у группировок лидеры, заместители, идеологии, ресурсы, бойцы,
+               дипломатия и состояние территорий.</p>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Динамика vs статика</div>
+                <code>Main.ini</code> хранит <strong>динамичные</strong> параметры —
+                те, что меняются в процессе игры (владелец территории, число бойцов,
+                активность мутантов).<br>
+                <strong>Статичные</strong> настройки (можно ли игроку переключать пси-установку,
+                стоимость действий, условия победы) живут в
+                <a href="settings.html#Settings">Settings.ini</a>.
+                Это разделение подробно описано в
+                <a href="tips.html#helps">совете №8</a>.
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Наследование от <code>data\default\</code></div>
+                Если в вашем сценарии нет <code>Main.ini</code> —
+                игра подгрузит дефолтный файл из <code>data\default\Main.ini</code>.
+                См. <a href="tips.html#scenario_structure">Структура сценария</a>.
+            </div>
+
+            <h3>🚫 Секции, которые трогать НЕ надо</h3>
+            <p>Следующие секции либо перезаписываются движком при старте, либо не имеют смысла
+               для редактирования. Подробности — в
+               <a href="dont-touch.html">«Рудименты и «не трогать»»</a>.</p>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Секция</th><th>Почему не трогаем</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>[Scenario]</code></td><td>Все параметры (<code>ActivePlayerIndex</code>,
+                            <code>BurstEnabled</code>, <code>RandomEventsEnabled</code>, <code>StoryEventsEnabled</code>,
+                            <code>MoveArmyThroughAllyEnabled</code> и др.) движок
+                            <strong>перезаписывает при старте</strong> на основе настроек из
+                            <a href="settings.html#Settings">Settings.ini</a> и того, что выберет игрок в окне настроек сценария в игре</td></tr>
+                        <tr><td><code>[EventFlag]</code></td><td>Все ивент-флаги движок сам
+                            сбрасывает в <code>False</code> при старте сценария.
+                            Сами флаги задаются в <a href="events-story.html#Events_Story">Events_Story.ini</a></td></tr>
+                        <tr><td><code>[ProcessedItemCount]</code></td><td>Число произведённой
+                            амуниции в рамках текущего хода. Трогать только если нужно ограничить
+                            производство на <strong>первом</strong> ходу</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 id="Main-PsyControl">🧠 [PsyControl] — состояние пси-установок на старте</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>BrainPsy</code></td><td>@@BOOL</td><td>Включён ли пси-излучатель
+                            <strong>на старте сценария</strong>. Возможность им управлять в процессе игры —
+                            в <a href="settings.html#Settings">Settings.ini</a> → <code>BrainPsy-PlayerCanChangeStatus</code></td></tr>
+                        <tr><td><code>BrainMixer</code></td><td>@@BOOL</td><td>Включён ли выжигатель мозгов
+                            <strong>на старте сценария</strong>. Аналогично — управление через Settings.ini</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Это старт, а не возможность</div>
+                <code>BrainPsy=True</code> здесь значит «установка работает со старта».
+                Но сможет ли игрок её включать/выключать в процессе игры —
+                задаётся в Settings.ini (<code>BrainPsy-PlayerCanChangeStatus</code>,
+                <code>BrainControlChangeBasedCost</code>, список зон влияния и т.д.), а у бота — в его <a href="ai.html#AI">AI.ini</a>.
+                См. <a href="special-events.html#se-psy">Механика пси-излучения</a>.
+            </div>
+
+            <h3 id="Main-MainZoneFraction">🏰 [MainZoneFraction] — главные базы группировок</h3>
+            <p>У каждой группировки есть <strong>одна</strong> главная база. Её потеря приводит
+               к потере части ресурсов (<code>BasedPercentLostResources</code> +
+               <code>BonusPercentLostResources</code>), кроме <code>LockedResources</code>.</p>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>&lt;Группировка&gt;</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Индекс территории, которая является главной базой этой группировки.
+                            Формат: <code>Stalkers=85</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+<pre><code>[MainZoneFraction]
+Stalkers=85
+Bandits=112
+Soldiers=166
+Duty=79
+Freedom=71
+Monolith=7
+Mercenaries=84
+Scientists=108
+Zombie=63</code></pre>
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Индекс территории</div>
+                Индекс соответствует номеру секции <code>[ZonaX]</code> ниже.
+                Индекс <strong>не обязан</strong> совпадать с номером территории на карте —
+                это внутренний идентификатор, который использует движок.
+            </div>
+
+            <h3 id="Main-Advisors">👥 [Advisors] — доступность заместителей в сценарии</h3>
+            <p>Список всех кандидатов из <a href="advisors.html#Advisors">Advisors.ini</a>,
+               которые доступны в этом сценарии со старта.</p>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>&lt;ТехНазвание&gt;</code></td><td>@@BOOL</td><td>
+                            <code>True</code> — заместитель доступен в меню назначения,
+                            <code>False</code> — скрыт. Формат: <code>Advisor-Stalkers-Wolf=True</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Доступен ≠ назначен</div>
+                Этот блок только делает кандидата <em>видимым</em> в меню.
+                Кто <strong>реально назначен</strong> заместителем со старта —
+                задаётся в секции <a href="#Main-Group-Advisor">[Group-Advisor]</a> ниже.
+            </div>
+
+            <h3 id="Main-Diplomacy">🤝 [Diplomacy] — отношения между группировками</h3>
+            <p>Пары «группировка-группировка» со значениями от <code>-1</code> до <code>3</code>.</p>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Значение</th><th>Статус</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>-1</code></td><td>🔴 Вечная война (нельзя заключить мир)</td></tr>
+                        <tr><td><code>0</code></td><td>⚔ Война</td></tr>
+                        <tr><td><code>1</code></td><td>🕊 Нейтралитет</td></tr>
+                        <tr><td><code>2</code></td><td>🤝 Союз</td></tr>
+                        <tr><td><code>3</code></td><td>💎 Нерушимый союз (нельзя разорвать)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+<pre><code>[Diplomacy]
+Mutants-Stalkers=-1
+Stalkers-Bandits=0
+Soldiers-Scientists=2
+Monolith-Zombie=2
+...</code></pre>
+            <div class="callout callout-info">
+                <div class="callout-title">📌 Формат ключа</div>
+                Ключ — <strong>пара через дефис</strong>: <code>GroupA-GroupB=значение</code>.
+                Техническое название группировки — из
+                <a href="groups.html#Groups">файла Groups</a> (имя файла без <code>.ini</code>).
+            </div>
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Дипломатия симметрична</div>
+                Движок считает отношения двусторонними: если задать <code>Stalkers-Bandits=0</code>,
+                то и <code>Bandits-Stalkers</code> автоматически считается равным 0.
+                Достаточно прописать одну строку для каждой пары.
+                Но в дефолтном <code>Main.ini</code> для наглядности прописаны обе —
+                это не ошибка, а стиль разработчика.
+            </div>
+
+            <h3 id="Main-Group-UnitIndex">🎖 [Group-UnitIndex] — шаблоны юнитов</h3>
+            <p>Привязка рангов бойцов к техническим названиям шаблонов.
+               <strong>Жёсткий лимит движка:</strong> ровно 4 ранга на группировку.</p>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>&lt;Группировка&gt;-&lt;Ранг&gt;</code></td><td>@@НАЗВАНИЕ</td><td>
+                            Техническое название шаблона юнита.
+                            Формат: <code>Stalkers-1=Stalkers1</code> (где <code>1</code> — новичок)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="callout callout-info">
+                <div class="callout-title">🎯 Ранги</div>
+                <code>1</code> = новичок, <code>2</code> = опытный, <code>3</code> = ветеран,
+                <code>4</code> = мастер. Это же используется в
+                <a href="goods.html#Goods">Goods</a> → параметр <code>Level</code>.
+            </div>
+
+            <h3 id="Main-Group-Leaders">👑 [Group-Leaders] — лидеры группировок</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>&lt;Группировка&gt;</code></td><td>@@НАЗВАНИЕ</td><td>
+                            Техническое имя лидера из файлов
+                            <a href="leaders.html#leaders">leaders/</a> (имя файла без <code>.ini</code>).
+                            Формат: <code>Stalkers=Leader-1</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 id="Main-Group-Advisor">👥 [Group-Advisor] — кто назначен со старта</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>&lt;Группировка&gt;</code></td><td>@@НАЗВАНИЕ</td><td>
+                            Техническое имя заместителя из
+                            <a href="advisors.html#Advisors">Advisors.ini</a>
+                            (из квадратных скобок <code>[]</code>).
+                            Этот кандидат должен быть <code>True</code> в
+                            <a href="#Main-Advisors">[Advisors]</a>.
+                            Формат: <code>Stalkers=Advisor-Stalkers-1</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 id="Main-Group-Rules">📜 [Group-Rules] — внутренние правила группировок</h3>
+            <p>У каждой группировки есть <strong>ровно 4 слота правил</strong>
+               (<code>Rule1</code>, <code>Rule2</code>, <code>Rule3</code>, <code>Rule4</code>).
+               В каждый слот записывается индекс правила из
+               <a href="rules.html#Rules">Rules.ini</a>.</p>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>&lt;Группировка&gt;-Rule&lt;N&gt;</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Формат: <code>Stalkers-Rule1=2</code>, <code>Stalkers-Rule2=6</code>,
+                            <code>Stalkers-Rule3=12</code>, <code>Stalkers-Rule4=17</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 id="Main-Group-Ideology">🏛 [Group-Ideology] — стартовая идеология</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>&lt;Группировка&gt;</code></td><td>@@НАЗВАНИЕ</td><td>
+                            Техническое название идеологии из файлов
+                            <a href="ideologies.html#ideologies">ideologies/</a>.
+                            Формат: <code>Stalkers=Stalkers</code>, <code>Duty=AntiZone</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 id="Main-Group-Ideology-Percent">📊 [Group-Ideology-Percent] — распределение идеологий</h3>
+            <p>Процент бойцов группировки, исповедующих каждую идеологию.
+               <strong>Сумма по одной группировке должна быть 100.</strong></p>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>&lt;Группировка&gt;-&lt;Идеология&gt;</code></td><td>@@ЦЕЛОЕ 0-100</td><td>
+                            Процент. Формат: <code>Stalkers-Stalkers=55</code>,
+                            <code>Stalkers-Crime=15</code> и т.д.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+<pre><code>[Group-Ideology-Percent]
+Stalkers-Stalkers=55
+Stalkers-Crime=15
+Stalkers-Control=5
+Stalkers-AntiZone=5
+Stalkers-Anarchy=5
+Stalkers-Sectarianism=1
+Stalkers-Mercenary=5
+Stalkers-Exploring=5
+Stalkers-Stability=4
+; Сумма = 100</code></pre>
+
+            <h3 id="Main-Group-Resources">📦 [Group-Resources] — стартовые ресурсы и склад</h3>
+            <p>Что лежит на складе группировки в момент старта сценария.</p>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>&lt;Группировка&gt;-Money</code></td><td>@@ЦЕЛОЕ</td><td>Деньги</td></tr>
+                        <tr><td><code>&lt;Группировка&gt;-Comands</code></td><td>@@ЦЕЛОЕ</td><td>Командные ресурсы</td></tr>
+                        <tr><td><code>&lt;Группировка&gt;-Supplies</code></td><td>@@ЦЕЛОЕ</td><td>Боеприпасы</td></tr>
+                        <tr><td><code>&lt;Группировка&gt;-Medic</code></td><td>@@ЦЕЛОЕ</td><td>Медикаменты</td></tr>
+                        <tr><td><code>&lt;Группировка&gt;-Food</code></td><td>@@ЦЕЛОЕ</td><td>Еда</td></tr>
+                        <tr><td><code>&lt;Группировка&gt;-Novice</code></td><td>@@ЦЕЛОЕ</td><td>Число новичков на складе</td></tr>
+                        <tr><td><code>&lt;Группировка&gt;-Skilled</code></td><td>@@ЦЕЛОЕ</td><td>Число опытных</td></tr>
+                        <tr><td><code>&lt;Группировка&gt;-Veteran</code></td><td>@@ЦЕЛОЕ</td><td>Число ветеранов</td></tr>
+                        <tr><td><code>&lt;Группировка&gt;-Master</code></td><td>@@ЦЕЛОЕ</td><td>Число мастеров</td></tr>
+                        <tr><td><code>&lt;Группировка&gt;-&lt;ТехНазваниеТовара&gt;</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Любое количество любого товара из <a href="goods.html#Goods">Goods/</a>:
+                            <code>Stalkers-PM=8</code>, <code>Stalkers-LowArts=1</code> и т.д.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Не прописывайте нули</div>
+                Если у группировки нет какого-то ресурса — эту строку можно не писать.
+                Движок сам подставит 0.
+            </div>
+            <div class="callout callout-info">
+                <div class="callout-title">🔒 LockedResources</div>
+                Ресурсы из параметра <code>LockedResources</code> в
+                <a href="groups.html#Groups">файле группировки</a> не теряются
+                при захвате главной базы. Они остаются у группировки.
+            </div>
+
+            <h3 id="Main-Units-About">🎨 [Units-About] — конфигурация шаблонов юнитов</h3>
+            <p>Описание внешнего вида и экипировки каждого шаблона юнита,
+               заданного в <a href="#Main-Group-UnitIndex">[Group-UnitIndex]</a>.</p>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>&lt;Шаблон&gt;-Armor</code></td><td>@@НАЗВАНИЕ</td><td>
+                            Тех.название брони из <a href="goods.html#Goods">Goods/</a></td></tr>
+                        <tr><td><code>&lt;Шаблон&gt;-Weapon</code></td><td>@@НАЗВАНИЕ</td><td>
+                            Тех.название оружия из <a href="goods.html#Goods">Goods/</a></td></tr>
+                        <tr><td><code>&lt;Шаблон&gt;-Img</code></td><td>@@ПУТЬ</td><td>
+                            Путь к иконке юнита</td></tr>
+                        <tr><td><code>&lt;Шаблон&gt;-Name</code></td><td>@@ТЕКСТ</td><td>
+                            Отображаемое имя ранга (например, «Новичок», «Ветеран»)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+<pre><code>[Units-About]
+Stalkers1-Armor=Stalker-1
+Stalkers1-Img=gfx\icons\units\Stalkers\Novice_4.png
+Stalkers1-Name=Новичок
+Stalkers1-Weapon=PM
+
+Stalkers2-Armor=Stalker-2
+Stalkers2-Img=gfx\icons\units\Stalkers\Veteran_1.png
+Stalkers2-Name=Опытный
+Stalkers2-Weapon=Gun</code></pre>
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Стоимость юнита</div>
+                Цена найма считается из <code>Cost</code> оружия, <code>Cost</code> брони
+                и ранга × <code>UnitCostModificator</code> из
+                <a href="settings.html#Settings">Settings.ini</a>.
+                См. <a href="goods.html#Goods">Goods</a> → «Стоимость юнита».
+            </div>
+
+            <h3 id="Main-Group-Upgrades">⬆ [Group-Upgrades] — улучшения, купленные со старта</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>&lt;Группировка&gt;</code></td><td>@@НАЗВАНИЯ</td><td>
+                            Список <strong>технических названий файлов улучшений</strong>
+                            (имя файла без <code>.ini</code>) из папки
+                            <a href="upgrades.html#upgrades">upgrades/</a>,
+                            разделённых запятыми.
+                            Формат: <code>Stalkers=Upgrade-6,Upgrade-11</code> —
+                            значит, на старте у сталкеров уже куплены улучшения
+                            из файлов <code>Upgrade-6.ini</code> и <code>Upgrade-11.ini</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 id="Main-ZonaX">🗺 [ZonaX] — параметры территорий</h3>
+            <p>По одной секции на каждую территорию карты. <code>X</code> — индекс территории
+               (тот самый, что используется в <a href="#Main-MainZoneFraction">[MainZoneFraction]</a>
+               и в <a href="settings.html#Settings">Settings.ini</a>).</p>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Параметр</th><th>Тип</th><th>Описание</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>Owner</code></td><td>@@НАЗВАНИЕ</td><td>Тех.название группировки-владельца. <strong>Обязательный параметр</strong> для каждой территории</td></tr>
+                        <tr><td><code>Buildings-Count</code></td><td>@@ЦЕЛОЕ</td><td>Число построек на территории</td></tr>
+                        <tr><td><code>Unit1</code></td><td>@@ЦЕЛОЕ</td><td>Число новичков гарнизона</td></tr>
+                        <tr><td><code>Unit2</code></td><td>@@ЦЕЛОЕ</td><td>Число опытных</td></tr>
+                        <tr><td><code>Unit3</code></td><td>@@ЦЕЛОЕ</td><td>Число ветеранов</td></tr>
+                        <tr><td><code>Unit4</code></td><td>@@ЦЕЛОЕ</td><td>Число мастеров</td></tr>
+                        <tr><td><code>Mutant1</code></td><td>@@ЦЕЛОЕ</td><td>Число фоновых собак</td></tr>
+                        <tr><td><code>Mutant2</code></td><td>@@ЦЕЛОЕ</td><td>Число фоновых кабанов</td></tr>
+                        <tr><td><code>Mutant3</code></td><td>@@ЦЕЛОЕ</td><td>Число фоновых кровососов</td></tr>
+                        <tr><td><code>Mutant4</code></td><td>@@ЦЕЛОЕ</td><td>Число фоновых контролёров</td></tr>
+                        <tr><td><code>MutantsActive</code></td><td>@@ЦЕЛОЕ 0-100</td><td>
+                            % активности мутантов на территории.
+                            Когда превышает <code>ActiveMutantScaleForMutantUnitX</code> из
+                            <a href="settings.html#Settings">Settings.ini</a> —
+                            мутанты соответствующего типа начинают появляться</td></tr>
+                        <tr><td><code>NeedUnitsForBlockUpActiveMutants</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Число бойцов гарнизона, необходимое, чтобы активность мутантов
+                            на территории перестала расти</td></tr>
+                        <tr><td><code>NumStepAfterSearchArts</code></td><td>@@ЦЕЛОЕ</td><td>
+                            Число ходов с последнего найденного артефакта на этой территории.
+                            </td></tr>
+                    </tbody>
+                </table>
+            </div>
+<pre><code>[Zona85]
+Owner=stalkers
+Buildings-Count=0
+Unit1=4
+MutantsActive=0
+NeedUnitsForBlockUpActiveMutants=3
+Unit2=2
+Unit3=2</code></pre>
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Пропусков в индексах быть не должно</div>
+                Секции территорий должны идти <strong>строго подряд</strong>:
+                <code>[Zona1]</code>, <code>[Zona2]</code>, <code>[Zona3]</code>, …, <code>[ZonaN]</code>.
+                Если на карте 194 территории — должно быть ровно 194 секции без «дыр».
+                В каждой секции обязательно должен быть хотя бы параметр <code>Owner</code>.
+                Остальные параметры (юниты, мутанты, постройки) можно не указывать —
+                движок подставит нули.
+            </div>
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Фоновые мутанты ≠ гарнизонные</div>
+                <code>Mutant1…4</code> — это <strong>фоновые</strong> мутанты,
+                которые появляются при росте активности. Их нельзя победить обычным способом.
+                Для гарнизонных мутантов (например, у группировки <code>Mutants</code>)
+                используются <code>Unit1…4</code>.
+            </div>
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Порядок параметров не важен</div>
+                В примере видно, что строки идут в произвольном порядке (<code>Unit1</code>,
+                потом <code>MutantsActive</code>, потом снова <code>Unit2</code>).
+                Движок читает их по именам, а не по порядку.
+                Но для читаемости лучше группировать: <code>Owner</code>, затем <code>Unit*</code>,
+                затем <code>Mutant*</code>, затем остальное.
+            </div>
+
+            <h3>🗂 Список секций Main.ini</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Что настраивается</th><th>Секция</th></tr></thead>
+                    <tbody>
+                        <tr><td>Главные базы</td><td><a href="#Main-MainZoneFraction">[MainZoneFraction]</a></td></tr>
+                        <tr><td>Доступность заместителей</td><td><a href="#Main-Advisors">[Advisors]</a></td></tr>
+                        <tr><td>Заместитель со старта</td><td><a href="#Main-Group-Advisor">[Group-Advisor]</a></td></tr>
+                        <tr><td>Лидер</td><td><a href="#Main-Group-Leaders">[Group-Leaders]</a></td></tr>
+                        <tr><td>Шаблоны юнитов (4 ранга)</td><td><a href="#Main-Group-UnitIndex">[Group-UnitIndex]</a></td></tr>
+                        <tr><td>Конфигурация шаблонов (броня, оружие, имя)</td><td><a href="#Main-Units-About">[Units-About]</a></td></tr>
+                        <tr><td>Стартовые правила</td><td><a href="#Main-Group-Rules">[Group-Rules]</a></td></tr>
+                        <tr><td>Стартовая идеология</td><td><a href="#Main-Group-Ideology">[Group-Ideology]</a></td></tr>
+                        <tr><td>Распределение идеологий</td><td><a href="#Main-Group-Ideology-Percent">[Group-Ideology-Percent]</a></td></tr>
+                        <tr><td>Стартовый склад</td><td><a href="#Main-Group-Resources">[Group-Resources]</a></td></tr>
+                        <tr><td>Купленные улучшения</td><td><a href="#Main-Group-Upgrades">[Group-Upgrades]</a></td></tr>
+                        <tr><td>Параметры территорий</td><td><a href="#Main-ZonaX">[ZonaX]</a></td></tr>
+                        <tr><td>Дипломатия между группировками</td><td><a href="#Main-Diplomacy">[Diplomacy]</a></td></tr>
+                        <tr><td>Пси-установки на старте</td><td><a href="#Main-PsyControl">[PsyControl]</a></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Связанные разделы</div>
+                <ul>
+                    <li><a href="settings.html#Settings">Settings.ini</a> — статичные настройки сценария (условия победы, цены, лимиты)</li>
+                    <li><a href="groups.html#Groups">Groups</a> — параметры самих группировок</li>
+                    <li><a href="leaders.html#leaders">Leaders</a> · <a href="advisors.html#Advisors">Advisors.ini</a> · <a href="ideologies.html#ideologies">Ideologies</a></li>
+                    <li><a href="rules.html#Rules">Rules.ini</a> — внутренние правила</li>
+                    <li><a href="goods.html#Goods">Goods</a> — товары для склада и экипировки</li>
+                    <li><a href="upgrades.html#upgrades">Upgrades</a> — улучшения для <code>[Group-Upgrades]</code></li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

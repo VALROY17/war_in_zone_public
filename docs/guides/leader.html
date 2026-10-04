@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Гайд: Новый лидер — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="L4-leader">
+            <h2>👑 Гайд: новый лидер</h2>
+
+            <p>В этом гайде мы добавим в игру нового лидера для группировки Одиночки — <strong>«Медведь»</strong>.
+               Это опытный командир, который усиливает разведку и защищает территории группировки.</p>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Почему это «сложно», а не «очень легко»</div>
+                Лидер — это не просто файл с бонусами. Нужно:
+                <ul>
+                    <li>Создать файл лидера в папке <code>leaders/</code></li>
+                    <li>Привязать лидера к группировке через <code>Main.ini → [Group-Leaders]</code></li>
+                    <li>Добавить локализацию в <code>messages.csv</code></li>
+                    <li>Создать портрет лидера</li>
+                </ul>
+                В отличие от заместителя (у которого привязка к фракции через параметр <code>Fraction</code>),
+                у лидера привязка задаётся через <code>Main.ini</code>.
+            </div>
+
+            <h3>🎯 Что получится в итоге</h3>
+            <ul>
+                <li>Новый лидер «Медведь» станет доступен для группировки Одиночки</li>
+                <li>Даёт +10% к успеху своей разведки и −5% к успеху вражеской</li>
+                <li>Продвигает идеологию Сталкерство (+3% каждый ход)</li>
+                <li>Увеличивает шанс поиска артефактов на 5%</li>
+            </ul>
+
+            <h3>📋 Что нужно подготовить</h3>
+            <ul>
+                <li>Одно изображение для портрета лидера (формат PNG или GIF, размер как у существующих —
+                    смотрите в <code>data\gfx\icons\leaders\</code>)</li>
+            </ul>
+
+            <h3>📝 Пошаговая инструкция</h3>
+
+            <h4>Шаг 1. Создайте файл лидера</h4>
+            <p>В папке вашего сценария создайте подпапку <code>leaders/</code> (если её ещё нет),
+               а внутри — файл <code>Leader-Medved.ini</code>. Имя файла без расширения = техническое название лидера.</p>
+
+            <p>За основу возьмём реальный конфиг <code>Leader-1-COP.ini</code> из стандартного сценария игры.
+               Вот его точное содержимое:</p>
+
+<pre><code>[main]
+Img=gfx\icons\leaders\Stalkers-COP.gif
+BonusForSpy=0
+BonusForEnemySpy=0
+BonusSearchArts=5
+BonusDamagePVPForAtackers=0
+BonusDamagePVPForDefenders=0
+BonusDamagePVMForAtackers=0
+BonusDamagePVMForDefenders=0
+BonusRangeForAtackers=0
+BonusRangeForDefenders=0
+Recruit-Novice=0
+Recruit-Skilled=0
+Recruit-Veteran=0
+Recruit-Master=0
+LimitRecruit-Novice=0
+LimitRecruit-Skilled=0
+LimitRecruit-Veteran=0
+LimitRecruit-Master=0
+Comands=0
+LimitComands=0
+BootyParts=0
+BootyCash=0
+BonusForCostCPSpy=0
+BonusForCostCPAdvisor=0
+Ideology=Stalkers
+IdeologyBonus=1</code></pre>
+
+            <p>Скопируйте этот текст в свой новый файл <code>Leader-Medved.ini</code> и внесите следующие изменения:</p>
+
+<pre><code>[main]
+Img=gfx\icons\leaders\Medved.png
+BonusForSpy=10
+BonusForEnemySpy=-5
+BonusSearchArts=5
+BonusDamagePVPForAtackers=0
+BonusDamagePVPForDefenders=0
+BonusDamagePVMForAtackers=0
+BonusDamagePVMForDefenders=0
+BonusRangeForAtackers=0
+BonusRangeForDefenders=0
+Recruit-Novice=0
+Recruit-Skilled=0
+Recruit-Veteran=0
+Recruit-Master=0
+LimitRecruit-Novice=0
+LimitRecruit-Skilled=0
+LimitRecruit-Veteran=0
+LimitRecruit-Master=0
+Comands=0
+LimitComands=0
+BootyParts=0
+BootyCash=0
+BonusForCostCPSpy=0
+BonusForCostCPAdvisor=0
+Ideology=Stalkers
+IdeologyBonus=3</code></pre>
+
+            <div class="callout callout-info">
+                <div class="callout-title">📌 Что мы изменили по сравнению с прототипом</div>
+                <ul>
+                    <li><code>Img=gfx\icons\leaders\Medved.png</code> — путь к нашему портрету</li>
+                    <li><code>BonusForSpy=10</code> — +10% к успеху <strong>своих</strong> разведчиков (было 0)</li>
+                    <li><code>BonusForEnemySpy=-5</code> — −5% к успеху <strong>вражеских</strong> разведчиков (было 0)</li>
+                    <li><code>IdeologyBonus=3</code> — продвижение идеологии Сталкерство на 3% каждый ход (было 1%)</li>
+                </ul>
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Секция <code>[main]</code> с маленькой буквы</div>
+                В реальных конфигах лидеров секция называется <code>[main]</code> (с маленькой буквы).
+                Это работает благодаря регистронезависимости движка.
+            </div>
+
+            <h4>Шаг 2. Создайте портрет лидера</h4>
+            <p>Поместите файл <code>Medved.png</code> (или <code>.gif</code>) по пути
+               <code>gfx\icons\leaders\Medved.png</code> в папке вашего сценария
+               (или в общей папке <code>data\gfx\</code> игры).</p>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Если своего портрета пока нет</div>
+                Можно временно скопировать портрет от существующего лидера. Например, скопируйте
+                <code>data\gfx\icons\leaders\Stalkers-COP.gif</code> и переименуйте в <code>Medved.png</code>.
+                Это позволит проверить работу лидера в игре до того, как нарисуете свой.
+            </div>
+
+            <h4>Шаг 3. Привяжите лидера к группировке в <code>Main.ini</code></h4>
+            <p>Откройте <code>Main.ini</code> вашего сценария и найдите секцию <code>[Group-Leaders]</code>.
+               Добавьте строку с привязкой нового лидера к группировке:</p>
+
+<pre><code>[Group-Leaders]
+Mutants=Leader-0
+Stalkers=Leader-Medved    ; ← добавили нашего нового лидера
+; ... остальные строки ...</code></pre>
+
+            <div class="callout callout-info">
+                <div class="callout-title">📌 Формат привязки</div>
+                Формат: <code>Группировка=ТехНазвание_лидера</code>.
+                В нашем примере: <code>Stalkers=Leader-Medved</code>.
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Только один лидер на группировку</div>
+                В секции <code>[Group-Leaders]</code> для каждой группировки может быть указан
+                <strong>только один</strong> лидер. Если вы напишете две строки для одной группировки,
+                игра использует последнюю.
+            </div>
+
+            <h4>Шаг 4. Добавьте локализацию</h4>
+            <p>Откройте <code>messages.csv</code> вашего сценария и добавьте одну строку:</p>
+
+<pre><code>[Leaders.Leader-Medved].Name;Медведь</code></pre>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ У лидеров только <code>.Name</code>, без <code>.Desc</code></div>
+                В отличие от построек и улучшений, у лидеров <strong>нет</strong> поля описания.
+                Только имя. Если добавить <code>[Leaders.Leader-Medved].Desc;...</code> —
+                движок её проигнорирует.
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Формат ключа</div>
+                Ключ в <code>messages.csv</code> должен совпадать с именем файла лидера без расширения.
+                У нас файл называется <code>Leader-Medved.ini</code>,
+                значит ключ — <code>[Leaders.Leader-Medved].Name</code>.
+                <br><br>
+                Регистр значения не имеет (<code>[Leaders.Leader-Medved]</code> и <code>[Leaders.leader-medved]</code>
+                работают одинаково), но рекомендуется писать так же, как имя файла —
+                это упрощает поиск по файлу <code>messages.csv</code>.
+                <br><br>
+                Разделитель между ключом и текстом — точка с запятой <code>;</code>.
+                Внутри самого текста символ <code>;</code> использовать нельзя — строка оборвётся.
+            </div>
+
+            <h4>Шаг 5. Сохраните все файлы в правильной кодировке</h4>
+            <ul>
+                <li><code>leaders/Leader-Medved.ini</code> — <strong>UTF-8 с BOM</strong></li>
+                <li><code>Main.ini</code> — <strong>UTF-8 с BOM</strong></li>
+                <li><code>messages.csv</code> — <strong>UTF-8 с BOM</strong></li>
+            </ul>
+
+            <p>Подробнее про кодировку: <a href="../ref/start.html#filestypecode">«Кодировка файлов»</a>.</p>
+
+            <h3>✅ Проверка результата</h3>
+            <ol>
+                <li>Запустите игру и начните свой сценарий</li>
+                <li>Выберите группировку Одиночки и откройте информацию о лидере</li>
+                <li>Убедитесь, что отображается новый лидер «Медведь» с корректным именем и портретом</li>
+                <li>Проверьте, что отображаются правильные бонусы (+10% своей разведке, −5% вражеской)</li>
+                <li>Подождите несколько ходов — убедитесь, что идеология «Сталкерство» продвигается
+                    примерно на 3% за ход</li>
+                <li>Отправьте разведчика — проверьте, что шанс успеха действительно выше, чем
+                    был без лидера</li>
+            </ol>
+
+            <h3>⚠️ Вероятные ошибки</h3>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">Лидер не отображается в игре</div>
+                <ul>
+                    <li>Проверьте, что файл <code>Leader-Medved.ini</code> лежит в папке <code>leaders/</code>
+                        вашего сценария</li>
+                    <li>Убедитесь, что в <code>Main.ini → [Group-Leaders]</code> добавлена строка
+                        <code>Stalkers=Leader-Medved</code></li>
+                    <li>Проверьте, что все файлы сохранены в <strong>UTF-8 с BOM</strong></li>
+                </ul>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">Вместо имени отображается техническое «Leader-Medved»</div>
+                <p>Это значит, что игра не нашла локализацию. Проверьте:</p>
+                <ul>
+                    <li>Ключ в <code>messages.csv</code> точно <code>[Leaders.Leader-Medved].Name</code></li>
+                    <li>Разделитель — точка с запятой <code>;</code></li>
+                    <li>В тексте нет символа <code>;</code></li>
+                    <li><code>messages.csv</code> сохранён в <strong>UTF-8 с BOM</strong></li>
+                </ul>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Нюанс: лидер vs заместитель</div>
+                <p>Набор бонусных параметров у лидера и заместителя почти идентичен.
+                   Единственное отличие — у заместителя есть параметр <code>Fraction</code>
+                   (привязка к фракции внутри конфига), а у лидера привязка задаётся
+                   через <code>Main.ini → [Group-Leaders]</code>.</p>
+                <p>Подробнее: <a href="../ref/leaders.html#leaders">справка Leaders</a>,
+                   <a href="../ref/advisors.html#Advisors">справка Advisors</a>.</p>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Нюанс: смена лидера через события</div>
+                <p>Если вы хотите, чтобы лидер менялся в процессе игры (например, по сюжету),
+                   используйте тип события <code>ChangeLeader</code> в <code>Events_Story.ini</code>
+                   или <code>RandomEvents</code> с параметром <code>NewLeader=Leader-Medved</code>.</p>
+                <p>Подробнее: <a href="../ref/events-story.html#Events_Story">Events_Story.ini</a>,
+                   <a href="../ref/random-events.html#RandomEvents">RandomEvents</a>.</p>
+            </div>
+
+            <h3>🔗 Связанные разделы справки</h3>
+            <ul>
+                <li><a href="../ref/leaders.html#leaders">Leaders</a> — полное описание всех параметров лидеров</li>
+                <li><a href="../ref/advisors.html#Advisors">Advisors.ini</a> — сравнение лидера и заместителя</li>
+                <li><a href="../ref/main.html#Main-Group-Leaders">Main.ini → [Group-Leaders]</a> — привязка лидера к группировке</li>
+                <li><a href="../ref/messages.html#Messages">messages.csv</a> — формат локализации</li>
+                <li><a href="../ref/events-story.html#Events_Story">Events_Story.ini</a> — тип события <code>ChangeLeader</code></li>
+                <li><a href="../ref/random-events.html#RandomEvents">RandomEvents</a> — тип события <code>ChangeLeader</code></li>
+                <li><a href="../ref/matrix-bonus.html">Матрица бонусов</a> — как бонусы лидера складываются с другими источниками</li>
+                <li><a href="../ref/start.html#filestypecode">Кодировка файлов</a> — UTF-8 с BOM</li>
+            </ul>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

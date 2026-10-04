@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Гайд: Новая группировка — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="L4-faction">
+            <h2>🚩 Гайд: новая группировка</h2>
+
+            <p>В этом гайде мы добавим в игру новую группировку — <strong>«Искатели»</strong>.
+               Это небольшой отряд наёмников-исследователей, специализирующийся на поиске артефактов и разведке.</p>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Почему это самый сложный гайд</div>
+                Группировка — это не просто файл с параметрами. Это <strong>связка из множества изменений</strong>
+                в разных файлах сценария. Вам нужно:
+                <ul>
+                    <li>Создать файл группировки в папке <code>groups/</code></li>
+                    <li>Добавить привязки в <strong>нескольких секциях</strong> <code>Main.ini</code></li>
+                    <li>Создать шаблоны юнитов (4 ранга) и их конфигурацию</li>
+                    <li>Добавить стартовые ресурсы</li>
+                    <li>Прописать отношения с другими группировками</li>
+                    <li>Добавить доступность заместителей</li>
+                    <li>Прописать главную базу и владение территориями</li>
+                    <li>Добавить локализацию</li>
+                    <li>Создать логотипы, иконки юнитов, иконки разведчиков</li>
+                </ul>
+                Пропустите один из этих шагов — и группировка либо не появится, либо будет неиграбельной.
+            </div>
+
+            <h3>🎯 Что получится в итоге</h3>
+            <ul>
+                <li>Новая группировка «Искатели» со своей фракцией <code>Seekers</code></li>
+                <li>4 ранга юнитов с оружием и бронёй</li>
+                <li>Собственный лидер, заместитель, набор идеологий</li>
+                <li>Стартовые ресурсы, территории и отношения с другими группировками</li>
+            </ul>
+
+            <h3>📋 Что нужно подготовить</h3>
+            <ul>
+                <li>Логотипы группировки для каждой идеологии:
+                    <code>Seekers-Stalkers.png</code>, <code>Seekers-Crime.png</code>, …
+                    (размер как у существующих — смотрите в <code>data\gfx\icons\groups\</code>)</li>
+                <li>Иконки на глобальной карте: <code>Seekers-Stalkers-Neutral.png</code>, …
+                    (смотрите в <code>data\gfx\icons\map\</code>)</li>
+                <li>Изображения юнитов 4 рангов (формат PNG или GIF) в папке <code>Seekers\</code></li>
+                <li>Изображения разведчиков 4 рангов (формат PNG или GIF)</li>
+                <li>Изображение торговца группировки (необязательно)</li>
+                <li>Изображения экранов победы/поражения (необязательно, можно использовать дефолтные)</li>
+                <li>Озвучка дипломатии (необязательно)</li>
+            </ul>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Минимальный набор графики для теста</div>
+                Для проверки работы группировки можно временно использовать графику другой группировки.
+                Например, скопируйте все файлы из <code>data\gfx\icons\groups\Stalkers-*.png</code>
+                и переименуйте их в <code>Seekers-*.png</code>. Аналогично для юнитов и разведчиков.
+            </div>
+
+            <h3>📝 Пошаговая инструкция</h3>
+
+            <h4>Шаг 1. Создайте файл группировки</h4>
+            <p>В папке вашего сценария создайте папку <code>groups/</code> (если её ещё нет),
+               а внутри — файл <code>Seekers.ini</code>.</p>
+
+            <p>За основу возьмём реальный конфиг <code>Stalkers.ini</code> из стандартного сценария игры.
+               Вот его блок <code>[:main]</code> (основные параметры):</p>
+
+<pre><code>[:main]
+LockedResources=Comands, Money, Novice, Skilled, Veteran, Master
+UnitWayFace=gfx\icons\units\Stalkers\
+Spy1-Face=gfx\icons\units\Stalkers\Novice_3.gif
+Spy2-Face=gfx\icons\units\Stalkers\Skilled_2.gif
+Spy3-Face=gfx\icons\units\Stalkers\Veteran_2.gif
+Spy4-Face=gfx\icons\units\Stalkers\Master_3.png
+CanGiveDiplomacyMoney=True
+CanOrderDiplomacyMoney=True
+BaseUpCR=5
+BaseLimit-Comands=25
+BaseLimit-Novice=6
+BaseLimit-Skilled=5
+BaseLimit-Veteran=3
+BaseLimit-Master=2
+AI=Stalkers
+RatingShow=True
+ImmunityForMutantsRampage=False
+TypeBooty=Cash
+RulesBranchWithDisabledAutoSearchForEnemyEnclave=2,3,4,5
+RulesBranchWithDisabledManualSearchForEnemyEnclave=3,4,5
+RulesBranchWithDisabledRecruitingForEnemyEnclave=1,2,3,4,5
+RulesBranchWithDisabledBuildingForEnemyEnclave=1,2,3,4,5
+RulesBranchWithDisabledAttackingFromForEnemyEnclave=4,5
+RulesBranchWithDisabledArmyMoveForEnemyEnclave=4,5
+RulesBranchWithDisabledAutoSearchForNeutralEnclave=4,5
+RulesBranchWithDisabledManualSearchForNeutralEnclave=5
+RulesBranchWithDisabledRecruitingForNeutralEnclave=2,3,4,5
+RulesBranchWithDisabledBuildingForNeutralEnclave=2,3,4,5
+RulesBranchWithDisabledAttackingFromForNeutralEnclave=5
+RulesBranchWithDisabledArmyMoveForNeutralEnclave=5
+RulesBranchWithDisabledRecruitingForSemiEnclave=3,4,5
+RulesBranchWithDisabledBuildingForSemiEnclave=3,4,5
+CanTradeWithOther=True
+CanTradeIfWar=False
+CanTradeIfNeutral=True
+CanTradeIfAlliance=True
+Logo-Standart=gfx\icons\groups\Stalkers-Stalkers.png
+IconMap=gfx\icons\map\Stalkers-Stalkers-Neutral.png
+Trader=gfx\icons\traders\1.gif</code></pre>
+
+            <p>Скопируйте этот текст в свой новый файл <code>Seekers.ini</code> и внесите следующие изменения:</p>
+
+<pre><code>[:main]
+LockedResources=Comands, Money, Novice, Skilled, Veteran, Master
+UnitWayFace=gfx\icons\units\Seekers\
+Spy1-Face=gfx\icons\units\Seekers\Spy1.png
+Spy2-Face=gfx\icons\units\Seekers\Spy2.png
+Spy3-Face=gfx\icons\units\Seekers\Spy3.png
+Spy4-Face=gfx\icons\units\Seekers\Spy4.png
+CanGiveDiplomacyMoney=True
+CanOrderDiplomacyMoney=True
+BaseUpCR=7
+BaseLimit-Comands=20
+BaseLimit-Novice=4
+BaseLimit-Skilled=4
+BaseLimit-Veteran=2
+BaseLimit-Master=1
+AI=Default
+RatingShow=True
+ImmunityForMutantsRampage=False
+TypeBooty=Cash
+RulesBranchWithDisabledAutoSearchForEnemyEnclave=2,3,4,5
+RulesBranchWithDisabledManualSearchForEnemyEnclave=3,4,5
+RulesBranchWithDisabledRecruitingForEnemyEnclave=1,2,3,4,5
+RulesBranchWithDisabledBuildingForEnemyEnclave=1,2,3,4,5
+RulesBranchWithDisabledAttackingFromForEnemyEnclave=4,5
+RulesBranchWithDisabledArmyMoveForEnemyEnclave=4,5
+RulesBranchWithDisabledAutoSearchForNeutralEnclave=4,5
+RulesBranchWithDisabledManualSearchForNeutralEnclave=5
+RulesBranchWithDisabledRecruitingForNeutralEnclave=2,3,4,5
+RulesBranchWithDisabledBuildingForNeutralEnclave=2,3,4,5
+RulesBranchWithDisabledAttackingFromForNeutralEnclave=5
+RulesBranchWithDisabledArmyMoveForNeutralEnclave=5
+RulesBranchWithDisabledRecruitingForSemiEnclave=3,4,5
+RulesBranchWithDisabledBuildingForSemiEnclave=3,4,5
+CanTradeWithOther=True
+CanTradeIfWar=False
+CanTradeIfNeutral=True
+CanTradeIfAlliance=True
+Logo-Standart=gfx\icons\groups\Seekers-Exploring.png
+IconMap=gfx\icons\map\Seekers-Exploring-Neutral.png
+Trader=gfx\icons\traders\seekers.gif
+
+[Stalkers]
+Logo-Standart=gfx\icons\groups\Seekers-Stalkers.png
+IconMap=gfx\icons\map\Seekers-Stalkers-Neutral.png
+
+[Crime]
+Logo-Standart=gfx\icons\groups\Seekers-Crime.png
+IconMap=gfx\icons\map\Seekers-Crime-Neutral.png
+
+[Exploring]
+Logo-Standart=gfx\icons\groups\Seekers-Exploring.png
+IconMap=gfx\icons\map\Seekers-Exploring-Neutral.png
+
+[Mercenary]
+Logo-Standart=gfx\icons\groups\Seekers-Mercenary.png
+IconMap=gfx\icons\map\Seekers-Mercenary-Neutral.png</code></pre>
+
+            <div class="callout callout-info">
+                <div class="callout-title">📌 Что мы изменили по сравнению с прототипом</div>
+                <ul>
+                    <li><code>UnitWayFace=gfx\icons\units\Seekers\</code> — папка с юнитами нашей группировки</li>
+                    <li><code>Spy*-Face=...</code> — изображения разведчиков (путь к <code>Seekers\</code>)</li>
+                    <li><code>BaseUpCR=7</code> — прирост КР выше, чем у Сталкеров (5), так как мы отряд разведчиков</li>
+                    <li><code>BaseLimit-*=...</code> — лимиты чуть меньше, чем у Сталкеров (маленькая группировка)</li>
+                    <li><code>AI=Default</code> — нейтральный блок поведения ИИ (подробнее в Шаге 9)</li>
+                    <li><code>Logo-Standart</code> и <code>IconMap</code> — пути к нашим логотипам</li>
+                    <li>Секции идеологий: мы добавили только те идеологии, которые будут доступны Искателям</li>
+                </ul>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Секции идеологий внутри файла группировки</div>
+                <p>После блока <code>[:main]</code> обязательно идут секции идеологий, которые доступны группировке.
+                   В нашем случае Искателям доступны 4 идеологии: <code>Stalkers</code>, <code>Crime</code>,
+                   <code>Exploring</code> и <code>Mercenary</code>. Для каждой идеологии указываются только:</p>
+                <ul>
+                    <li><code>Logo-Standart</code> — логотип группировки при этой идеологии</li>
+                    <li><code>IconMap</code> — иконка на карте при этой идеологии</li>
+                </ul>
+                <p>Состояния <code>Logo-Active</code>, <code>Logo-Selected</code>, <code>Logo-SelectedActive</code>
+                   <strong>указывать не нужно</strong> — движок формирует их сам методом накладывания.</p>
+            </div>
+
+            <h4>Шаг 2. Добавьте привязки в <code>Main.ini</code></h4>
+            <p>Откройте <code>Main.ini</code> вашего сценария и добавьте строки для новой группировки
+               в обязательные секции. Для каждой секции показан пример реального формата
+               из стандартного сценария и то, что нужно добавить для Искателей.</p>
+
+            <h5>2.1. Шаблоны юнитов <code>[Group-UnitIndex]</code></h5>
+<pre><code>[Group-UnitIndex]
+; ... существующие строки ...
+ClearSky-4=ClearSky4
+Zombie-1=Zombie1
+; ...
+Seekers-1=Seekers1    ; ← добавить
+Seekers-2=Seekers2
+Seekers-3=Seekers3
+Seekers-4=Seekers4</code></pre>
+
+            <h5>2.2. Лидер <code>[Group-Leaders]</code></h5>
+<pre><code>[Group-Leaders]
+; ... существующие строки ...
+Zombie=Leader-17
+Seekers=Leader-Seekers    ; ← добавить</code></pre>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Лидер должен существовать</div>
+                Техническое имя <code>Leader-Seekers</code> должно ссылаться на файл
+                <code>leaders/Leader-Seekers.ini</code>. Если его нет — создайте,
+                используя <a href="leader.html">гайд по лидеру</a>.
+            </div>
+
+            <h5>2.3. Заместитель со старта <code>[Group-Advisor]</code></h5>
+<pre><code>[Group-Advisor]
+; ... существующие строки ...
+Zombie=Advisor-Zombie-1
+Seekers=Advisor-Seekers-1    ; ← добавить</code></pre>
+
+            <h5>2.4. Внутренние правила <code>[Group-Rules]</code></h5>
+<pre><code>[Group-Rules]
+; ... существующие строки ...
+Zombie-Rule4=3
+Seekers-Rule1=3    ; ← добавить
+Seekers-Rule2=3
+Seekers-Rule3=3
+Seekers-Rule4=3</code></pre>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Что означают значения 3</div>
+                Число — это индекс правила из <code>Rules.ini</code>:
+                <ul>
+                    <li><code>3</code> = правило баланса (средний уровень централизации)</li>
+                    <li>Можно использовать <code>1</code> (максимальная децентрализация) до <code>5</code> (максимальная централизация)</li>
+                </ul>
+                Подробнее: <a href="../ref/rules.html#Rules">Rules.ini</a>.
+            </div>
+
+            <h5>2.5. Стартовая идеология <code>[Group-Ideology]</code></h5>
+<pre><code>[Group-Ideology]
+; ... существующие строки ...
+Zombie=Zombie
+Seekers=Exploring    ; ← добавить (стартовая идеология — Исследование)</code></pre>
+
+            <h5>2.6. Проценты идеологий <code>[Group-Ideology-Percent]</code></h5>
+<pre><code>[Group-Ideology-Percent]
+; ... существующие строки ...
+Zombie-Zombie=100
+Seekers-Stalkers=10     ; ← добавить
+Seekers-Crime=10
+Seekers-Exploring=60    ; основная идеология
+Seekers-Mercenary=20</code></pre>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Сумма должна быть 100!</div>
+                Для каждой группировки сумма процентов идеологий должна быть равна 100.
+                В нашем случае: 10 + 10 + 60 + 20 = 100 ✅
+            </div>
+
+            <h5>2.7. Стартовые ресурсы <code>[Group-Resources]</code></h5>
+            <p>Здесь прописываются <strong>только стартовые ресурсы и склад</strong> группировки.
+               Формат: <code>Seekers-НазваниеРесурса=Число</code>. Можно указывать любые существующие
+               товары из <code>Goods/</code>.</p>
+
+<pre><code>[Group-Resources]
+; ... существующие строки ...
+Zombie-Abakan=4
+; Стартовые ресурсы Искателей
+Seekers-Money=20000
+Seekers-Comands=20
+Seekers-Supplies=15000
+Seekers-Medic=80
+Seekers-Food=200
+Seekers-LowArts=3
+Seekers-MediumArts=2
+Seekers-LowParts=3
+Seekers-MediumParts=3
+Seekers-Novice=3
+Seekers-Skilled=2
+Seekers-PM=4
+Seekers-Gun=2
+Seekers-MP5=1
+Seekers-AKM=2
+Seekers-Seekers-1=3
+Seekers-Seekers-2=2
+Seekers-Seekers-3A=1
+Seekers-Seekers-4=1</code></pre>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Не путайте с конфигурацией юнитов</div>
+                В этой секции — <strong>только количество ресурсов на складе</strong>
+                (деньги, КР, боеприпасы, число юнитов каждого ранга и т.д.).
+                Конфигурация шаблонов юнитов (какая броня, какое оружие, какое изображение)
+                прописывается <strong>отдельно</strong> в секции <code>[Units-About]</code> — см. Шаг 3.
+            </div>
+
+            <h5>2.8. Главная база <code>[MainZoneFraction]</code></h5>
+<pre><code>[MainZoneFraction]
+; ... существующие строки ...
+ClearSky=248
+Seekers=159    ; ← добавить (индекс территории — см. Шаг 4)</code></pre>
+
+            <h4>Шаг 3. Конфигурация шаблонов юнитов <code>[Units-About]</code></h4>
+            <p>В секции <code>[Units-About]</code> в <code>Main.ini</code> прописывается, какая броня,
+               оружие и изображение у каждого шаблона юнита. Имена шаблонов (<code>Seekers1</code>, <code>Seekers2</code>, …)
+               должны совпадать с тем, что указано в <code>[Group-UnitIndex]</code>.</p>
+
+<pre><code>[Units-About]
+; ... существующие строки ...
+Seekers1-Armor=Seekers-1
+Seekers1-Weapon=PM
+Seekers1-Img=gfx\icons\units\Seekers\1.gif
+Seekers1-Name=Новичок
+Seekers2-Armor=Seekers-2
+Seekers2-Weapon=Gun
+Seekers2-Img=gfx\icons\units\Seekers\2.png
+Seekers2-Name=Опытный
+Seekers3-Armor=Seekers-3A
+Seekers3-Weapon=AKM
+Seekers3-Img=gfx\icons\units\Seekers\3.gif
+Seekers3-Name=Ветеран
+Seekers4-Armor=Seekers-4
+Seekers4-Weapon=FN
+Seekers4-Img=gfx\icons\units\Seekers\4.png
+Seekers4-Name=Мастер</code></pre>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Связь <code>[Group-UnitIndex]</code> и <code>[Units-About]</code></div>
+                <ul>
+                    <li><code>[Group-UnitIndex]</code> связывает группировку и ранг с именем шаблона:
+                        <code>Seekers-1=Seekers1</code></li>
+                    <li><code>[Units-About]</code> описывает сам шаблон: <code>Seekers1-Armor=...</code></li>
+                </ul>
+            </div>
+
+            <h4>Шаг 4. Добавьте владение территориями в <code>[ZonaX]</code></h4>
+            <p>Группировка должна владеть хотя бы одной территорией, иначе она не будет «жить»
+               в игре. Откройте <code>Main.ini</code> и добавьте или измените несколько секций территорий,
+               указав нашу группировку как владельца:</p>
+
+<pre><code>[Zona159]
+Owner=Seekers                 ; ← наша группировка
+Buildings-Count=0
+NeedUnitsForBlockUpActiveMutants=3
+MutantsActive=0
+Unit1=4
+Unit2=2
+Unit3=1
+
+[Zona160]
+Owner=Seekers
+Buildings-Count=0
+NeedUnitsForBlockUpActiveMutants=2
+MutantsActive=0
+Unit1=3
+Unit2=2</code></pre>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Альтернатива: вторжение из ниоткуда</div>
+                Если вы не хотите давать группировке территории на старте, можно сделать её появление
+                через сюжетное событие — тип <code>Invasion</code> с параметром <code>InvasionOwner=Seekers</code>
+                в <a href="../ref/events-story.html#Events_Story">Events_Story.ini</a> или
+                <a href="../ref/random-events.html#RandomEvents">RandomEvents</a>.
+            </div>
+
+            <h4>Шаг 5. Добавьте отношения с другими группировками</h4>
+            <p>В секции <code>[Diplomacy]</code> добавьте отношения нашей группировки со всеми остальными.
+               Значения: <code>-1</code> = вечная война, <code>0</code> = война, <code>1</code> = нейтралитет,
+               <code>2</code> = союз, <code>3</code> = нерушимый союз.</p>
+
+<pre><code>[Diplomacy]
+; ... существующие строки ...
+Seekers-Mutants=-1
+Seekers-Stalkers=1
+Seekers-Bandits=0
+Seekers-Soldiers=0
+Seekers-Duty=0
+Seekers-Freedom=0
+Seekers-Monolith=-1
+Seekers-Mercenaries=0
+Seekers-Scientists=1
+Seekers-Renegats=0
+Seekers-ClearSky=0
+Seekers-Zombie=-1
+Mutants-Seekers=-1
+Stalkers-Seekers=1
+Bandits-Seekers=0
+Soldiers-Seekers=0
+Duty-Seekers=0
+Freedom-Seekers=0
+Monolith-Seekers=-1
+Mercenaries-Seekers=0
+Scientists-Seekers=1
+Renegats-Seekers=0
+ClearSky-Seekers=0
+Zombie-Seekers=-1</code></pre>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Отношения должны быть симметричны</div>
+                Если <code>Seekers-Stalkers=1</code> (Искатели нейтральны к Сталкерам),
+                то <code>Stalkers-Seekers=1</code> (Сталкеры нейтральны к Искателям).
+            </div>
+
+            <h4>Шаг 6. Добавьте доступность заместителей в <code>[Advisors]</code></h4>
+<pre><code>[Advisors]
+; ... существующие строки ...
+Advisor-Zombie-Controler=True
+Advisor-Seekers-1=True    ; ← добавить</code></pre>
+
+            <h4>Шаг 7. Добавьте локализацию в <code>messages.csv</code></h4>
+<pre><code>[Groups.Seekers.:main].Name;Искатели
+[Groups.Seekers.:main].Description;Небольшой отряд наёмников, специализирующийся на поиске артефактов и разведке в Зоне.
+[Leaders.Leader-Seekers].Name;Капитан Орлов
+[Advisors.Advisor-Seekers-1].Name;Штурман</code></pre>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Формат ключа с <code>.:main</code></div>
+                Обратите внимание на двоеточие: <code>[Groups.Seekers.:main].Name</code>.
+                Это формат, который отделяет общее название группировки
+                от названий при разных идеологиях. Для минимальной работы достаточно только ключа с <code>.:main</code>.
+                <br><br>
+                Регистр значения не имеет, но рекомендуется писать техническое имя так же, как имя файла группировки —
+                это упрощает поиск по файлу <code>messages.csv</code>.
+                <br><br>
+                Разделитель между ключом и текстом — точка с запятой <code>;</code>.
+                Внутри самого текста символ <code>;</code> использовать нельзя — строка оборвётся.
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Не путайте с переименованием группировки по идеологии</div>
+                В <code>messages.csv</code> можно встретить строки вида
+                <code>[Groups.сталкеры.идеология].Name</code> и <code>.Description</code>.
+                Это <strong>отдельная необязательная механика</strong> — переименование группировки
+                в зависимости от её текущей идеологии. К добавлению группировки эти строки
+                <strong>не относятся</strong> и для её работы не нужны.
+            </div>
+
+            <h4>Шаг 8. Создайте графику</h4>
+            <p>Создайте следующие файлы изображений (или скопируйте существующие и переименуйте):</p>
+            <ul>
+                <li><strong>Логотипы группировки</strong> (по одному на каждую доступную идеологию):
+                    <ul>
+                        <li><code>gfx\icons\groups\Seekers-Stalkers.png</code></li>
+                        <li><code>gfx\icons\groups\Seekers-Crime.png</code></li>
+                        <li><code>gfx\icons\groups\Seekers-Exploring.png</code></li>
+                        <li><code>gfx\icons\groups\Seekers-Mercenary.png</code></li>
+                    </ul>
+                </li>
+                <li><strong>Иконки на карте</strong>:
+                    <ul>
+                        <li><code>gfx\icons\map\Seekers-Stalkers-Neutral.png</code></li>
+                        <li>… и так далее для каждой идеологии</li>
+                    </ul>
+                </li>
+                <li><strong>Юниты 4 рангов</strong> в <code>gfx\icons\units\Seekers\</code>:
+                    <ul>
+                        <li><code>1.gif</code> — новичок</li>
+                        <li><code>2.png</code> — опытный</li>
+                        <li><code>3.gif</code> — ветеран</li>
+                        <li><code>4.png</code> — мастер</li>
+                    </ul>
+                </li>
+                <li><strong>Разведчики 4 рангов</strong> в <code>gfx\icons\units\Seekers\</code>:
+                    <ul>
+                        <li><code>Spy1.png</code> — новичок</li>
+                        <li><code>Spy2.png</code> — опытный</li>
+                        <li><code>Spy3.png</code> — ветеран</li>
+                        <li><code>Spy4.png</code> — мастер</li>
+                    </ul>
+                </li>
+                <li><strong>Торговец</strong> (необязательно):
+                    <code>gfx\icons\traders\seekers.gif</code></li>
+            </ul>
+
+            <h4>Шаг 9. Поведение ИИ</h4>
+            <p>В параметре <code>AI</code> блока <code>[:main]</code> указывается, какой блок поведения
+               из <code>AI.ini</code> будет управлять группировкой. В нашем примере мы указали
+               <code>AI=Default</code> — нейтральный блок, который не привязан к чужим заместителям
+               и настройкам.</p>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Нельзя брать блок ИИ другой группировки</div>
+                Может показаться удобным временно использовать чужой блок, например <code>AI=Stalkers</code>.
+                <strong>Так делать нельзя.</strong> В блоке ИИ может быть параметр
+                <code>Advisor-TargetName</code>, указывающий на конкретного заместителя.
+                А заместители привязаны к конкретным группировкам через параметр <code>Fraction</code>.
+                Если бот одной фракции попытается назначить заместителя другой группировки — будет ошибка.
+                Используйте только нейтральные блоки (<code>Default</code> или <code>None</code>)
+                либо создайте собственный блок ИИ.
+            </div>
+
+            <p>Если хотите уникальное поведение — создайте собственный блок в <code>AI.ini</code>,
+               используя <a href="../ref/ai.html#AI">справку по AI</a>.</p>
+
+            <h4>Шаг 10. Сделайте группировку доступной игроку (опционально)</h4>
+            <p>Если вы хотите, чтобы игрок мог играть за новую группировку,
+               найдите в <code>Settings.ini</code> параметр <code>GroupsForPlayer</code>
+               и добавьте её в список:</p>
+
+<pre><code>[Main]
+; ...
+GroupsForPlayer=Stalkers,Bandits,Duty,Freedom,Seekers    ; ← добавили Seekers
+; ...</code></pre>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Если группировка только для ботов</div>
+                Если вы создаёте NPC-группировку, за которую игрок не должен играть —
+                <strong>пропустите этот шаг</strong>. Просто не добавляйте её в <code>GroupsForPlayer</code>.
+                Такие группировки также стоит включить в <code>NoBaseNeeded</code> в том же
+                <code>Settings.ini</code>, если у них не должно быть главной базы.
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Другие опциональные настройки в Settings.ini</div>
+                <ul>
+                    <li><code>GroupsForPlayer</code> — доступность группировки игроку</li>
+                    <li><code>NoBaseNeeded</code> — группировки без главной базы (мутанты, зомби)</li>
+                    <li><code>DisabledZonesForMainBase</code> — территории, на которых нельзя ставить главную базу</li>
+                </ul>
+                Подробнее: <a href="../ref/settings.html#Settings">Settings.ini</a>.
+            </div>
+
+            <h4>Шаг 11. Сохраните все файлы в правильной кодировке</h4>
+            <ul>
+                <li><code>groups/Seekers.ini</code> — <strong>UTF-8 с BOM</strong></li>
+                <li><code>Main.ini</code> — <strong>UTF-8 с BOM</strong></li>
+                <li><code>Settings.ini</code> (если правили) — <strong>UTF-8 с BOM</strong></li>
+                <li><code>messages.csv</code> — <strong>UTF-8 с BOM</strong></li>
+                <li>Все файлы лидеров, заместителей, брони, оружия — <strong>UTF-8 с BOM</strong></li>
+            </ul>
+
+            <h3>✅ Проверка результата</h3>
+            <ol>
+                <li>Запустите игру и начните свой сценарий</li>
+                <li>В списке группировок (при выборе стороны) должна появиться «Искатели»
+                    с корректным названием, описанием и логотипом</li>
+                <li>Выберите Искателей и убедитесь, что отображается правильный лидер, заместитель,
+                    идеология</li>
+                <li>На глобальной карте должны быть видны территории Искателей с их иконкой</li>
+                <li>Откройте меню найма бойцов — должны отображаться 4 ранга с уникальными
+                    именами и изображениями</li>
+                <li>Попробуйте отправить разведчика — проверьте, что используются изображения
+                    разведчиков Искателей</li>
+                <li>Проверьте дипломатию — должны работать все отношения с другими группировками</li>
+                <li>Проведите тестовый бой — убедитесь, что юниты отображаются с правильной
+                    бронёй и оружием</li>
+            </ol>
+
+            <h3>⚠️ Вероятные ошибки</h3>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">Группировка не появляется в списке</div>
+                <ul>
+                    <li>Проверьте, что файл <code>Seekers.ini</code> лежит в папке <code>groups/</code></li>
+                    <li>Убедитесь, что в <code>Main.ini</code> добавлены строки во все обязательные секции</li>
+                    <li>Проверьте, что группировка владеет хотя бы одной территорией (<code>Owner=Seekers</code>
+                        в <code>[ZonaX]</code>)</li>
+                    <li>Проверьте <code>MainZoneFraction</code> — указана ли главная база</li>
+                    <li>Если играете за неё — проверьте <code>Settings.ini → GroupsForPlayer</code></li>
+                </ul>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">В списке отображается техническое имя «Seekers» вместо «Искатели»</div>
+                <p>Игра не нашла локализацию. Проверьте:</p>
+                <ul>
+                    <li>Ключ точно <code>[Groups.Seekers.:main].Name</code> (с двоеточием и <code>main</code>)</li>
+                    <li>Разделитель — точка с запятой <code>;</code></li>
+                    <li>В тексте нет символа <code>;</code></li>
+                    <li><code>messages.csv</code> сохранён в <strong>UTF-8 с BOM</strong></li>
+                </ul>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">Юниты отображаются с неправильной графикой</div>
+                <p>Проверьте, что:</p>
+                <ul>
+                    <li>Путь <code>UnitWayFace</code> в <code>[:main]</code> указывает на правильную папку</li>
+                    <li>В <code>[Units-About]</code> параметр <code>SeekersX-Img</code> указывает на существующий файл</li>
+                    <li>Имена шаблонов (<code>Seekers1</code>, <code>Seekers2</code>, …) совпадают между
+                        <code>[Group-UnitIndex]</code> и <code>[Units-About]</code></li>
+                </ul>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">Юниты не нанимаются или отображаются как «Неизвестно»</div>
+                <p>Возможные причины:</p>
+                <ul>
+                    <li>Не указана броня (<code>SeekersX-Armor</code>) или оружие (<code>SeekersX-Weapon</code>)
+                        в <code>[Units-About]</code></li>
+                    <li>Указанная броня или оружие не существуют в папке <code>Goods/</code></li>
+                    <li>Не прописана локализация брони (например, <code>[Goods.Seekers-1].Name</code>)</li>
+                </ul>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">Дипломатия работает некорректно</div>
+                <p>Проверьте, что отношения <strong>симметричны</strong>: если <code>Seekers-Stalkers=1</code>,
+                   то должно быть и <code>Stalkers-Seekers=1</code>.</p>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Нюанс: Иммунитет к особым событиям</div>
+                <p>Если вы хотите, чтобы Искатели были иммунны к определённым особым событиям
+                   (например, уход бойцов из-за идеологии), нужно добавить их в
+                   <code>SpecialEvents</code> → <code>NotWorkFractionCount</code> и <code>FractionX</code>.</p>
+                <p>Подробнее: <a href="../ref/special-events.html#SpecialEvents">SpecialEvents</a>,
+                   <a href="../ref/faq.html#faq-20">FAQ №20</a>.</p>
+            </div>
+
+            <h3>🔗 Связанные разделы справки</h3>
+            <ul>
+                <li><a href="../ref/groups.html#Groups">Groups</a> — полное описание всех параметров группировок</li>
+                <li><a href="../ref/main.html#Main">Main.ini</a> — все секции, связанные с группировками</li>
+                <li><a href="../ref/leaders.html#leaders">Leaders</a> — лидер группировки</li>
+                <li><a href="../ref/advisors.html#Advisors">Advisors.ini</a> — заместители</li>
+                <li><a href="../ref/ideologies.html#ideologies">Ideologies</a> — идеологии, доступные группировке</li>
+                <li><a href="../ref/rules.html#Rules">Rules.ini</a> — внутренние правила</li>
+                <li><a href="../ref/ai.html#AI">AI.ini</a> — поведение ИИ</li>
+                <li><a href="../ref/settings.html#Settings">Settings.ini</a> — <code>GroupsForPlayer</code> (доступность игроку),
+                    <code>NoBaseNeeded</code> (группировки без базы)</li>
+                <li><a href="../ref/messages.html#Messages">messages.csv</a> — локализация</li>
+                <li><a href="../ref/goods.html#Goods">Goods</a> — броня и оружие для юнитов</li>
+                <li><a href="../ref/matrix-bonus.html">Матрица бонусов</a> — как складываются бонусы группировки</li>
+                <li><a href="../ref/faq.html#faq-20">FAQ №20</a> — иммунитет к особым событиям</li>
+                <li><a href="../ref/start.html#filestypecode">Кодировка файлов</a> — UTF-8 с BOM</li>
+            </ul>
+
+            <h3>📋 Чек-лист создания группировки</h3>
+            <ol>
+                <li>☐ Создан файл <code>groups/Seekers.ini</code> с секцией <code>[:main]</code>
+                    и секциями идеологий</li>
+                <li>☐ В <code>Main.ini → [Group-UnitIndex]</code> добавлены 4 шаблона юнитов</li>
+                <li>☐ В <code>Main.ini → [Group-Leaders]</code> добавлена строка <code>Seekers=Leader-...</code></li>
+                <li>☐ В <code>Main.ini → [Group-Advisor]</code> добавлена строка с заместителем со старта</li>
+                <li>☐ В <code>Main.ini → [Group-Rules]</code> добавлены 4 строки правил</li>
+                <li>☐ В <code>Main.ini → [Group-Ideology]</code> указана стартовая идеология</li>
+                <li>☐ В <code>Main.ini → [Group-Ideology-Percent]</code> прописаны проценты (сумма = 100)</li>
+                <li>☐ В <code>Main.ini → [Group-Resources]</code> прописаны только стартовые ресурсы и склад</li>
+                <li>☐ В <code>Main.ini → [Units-About]</code> прописана конфигурация шаблонов юнитов
+                    (броня, оружие, изображение)</li>
+                <li>☐ В <code>Main.ini → [MainZoneFraction]</code> указана главная база</li>
+                <li>☐ В <code>Main.ini → [ZonaX]</code> хотя бы одна территория с <code>Owner=Seekers</code></li>
+                <li>☐ В <code>Main.ini → [Diplomacy]</code> добавлены симметричные отношения со всеми группировками</li>
+                <li>☐ В <code>Main.ini → [Advisors]</code> добавлены доступные заместители</li>
+                <li>☐ В <code>messages.csv</code> добавлены строки:
+                    <code>[Groups.Seekers.:main].Name</code>, <code>[Groups.Seekers.:main].Description</code>,
+                    <code>[Leaders.Leader-Seekers].Name</code>, <code>[Advisors.Advisor-Seekers-1].Name</code></li>
+                <li>☐ Созданы логотипы группировки для каждой идеологии</li>
+                <li>☐ Созданы иконки на карте для каждой идеологии</li>
+                <li>☐ Созданы изображения юнитов 4 рангов</li>
+                <li>☐ Созданы изображения разведчиков 4 рангов</li>
+                <li>☐ Создан файл лидера (или используется существующий)</li>
+                <li>☐ Создан файл заместителя (или используется существующий)</li>
+                <li>☐ Созданы файлы брони (или используются существующие)</li>
+                <li>☐ Параметр <code>AI</code> в <code>[:main]</code> — <code>Default</code>, <code>None</code> или собственный блок</li>
+                <li>☐ Если группировка доступна игроку — добавлена в <code>Settings.ini → GroupsForPlayer</code></li>
+                <li>☐ Все файлы сохранены в <strong>UTF-8 с BOM</strong></li>
+            </ol>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

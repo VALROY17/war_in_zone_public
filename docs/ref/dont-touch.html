@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Рудименты и «не трогать» — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="dont-touch">
+            <h2>🚫 Рудименты и «не трогать»</h2>
+            <p>В игре есть параметры, которые выглядят рабочими, но на деле не используются движком,
+               перезаписываются при старте сценария или являются пережитком прошлых версий.
+               Здесь они собраны в одном месте — <strong>проверьте этот список, прежде чем
+               искать баг в своём моде</strong>.</p>
+
+            <div class="callout callout-info">
+                <div class="callout-title">📖 Легенда</div>
+                <ul>
+                    <li>⚠️ <strong>Рудимент</strong> — параметр не используется движком, но связанные с ним файлы могут быть обязательны</li>
+                    <li>🚫 <strong>Перезапишется</strong> — движок затрёт ваше значение при старте сценария</li>
+                    <li>☠ <strong>Запрещено</strong> — приведёт к ошибке или непредсказуемому поведению</li>
+                    <li>🧱 <strong>Хардкод</strong> — значение зашито в движок, менять бессмысленно</li>
+                </ul>
+            </div>
+
+            <h3>⚠️ Рудименты</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Где</th><th>Параметр</th><th>Что важно знать</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="buildings.html#Buildings">Buildings</a></td>
+                            <td><code>BonusForSpy</code></td>
+                            <td>⚠️ <strong>Не работает.</strong> Данный параметр не используется движком игры.
+                                Бонус своим разведчикам от постройки дать нельзя —
+                                используйте заместителя, идеологию, лидера или внутреннее правило.</td>
+                        </tr>
+                        <tr>
+                            <td><a href="upgrades.html#upgrades">Upgrades</a></td>
+                            <td>Все <code>Logo-*</code>, кроме <code>Logo-NonActive</code></td>
+                            <td>⚠️ Указывать эти параметры в конфиге <strong>не требуется</strong> — движок автоматически подставляет пути к изображениям на основе технического названия улучшения.<br>
+                                ☠ <strong>НО</strong> соответствующие изображения с правильными названиями в нужных папках <strong>строго обязательны</strong>.
+                                Формат путей и названий смотрите в любом дефолтном конфиге улучшения.</td>
+                        </tr>
+                        <tr>
+                            <td><a href="rules.html#Rules">Rules.ini</a></td>
+                            <td>Все <code>Img-*</code>, кроме <code>Img-Available</code></td>
+                            <td>⚠️ Указывать эти параметры в конфиге правила <strong>не требуется</strong> — движок автоматически подставляет пути.<br>
+                                ☠ <strong>НО</strong> соответствующие изображения с правильными названиями в нужных папках <strong>строго обязательны</strong>.
+                                Формат путей и названий смотрите в любом дефолтном конфиге правила.</td>
+                        </tr>
+                        <tr>
+                            <td><a href="map.html#mapLocations">Locations/</a></td>
+                            <td>Все файлы локаций</td>
+                            <td>⚠️ Заготовка на будущее, которая сейчас используется не полностью.
+                                В каждом файле достаточно указать пустую секцию <code>[Main]</code> (без параметров внутри).<br>
+                                ☠ <strong>НО</strong> строки локализации делать обязательно:
+                                <code>[Locations.&lt;тех.название&gt;].Name</code></td>
+                        </tr>
+                        <tr>
+                            <td><a href="traders.html#Traders">Traders.ini</a></td>
+                            <td><code>Need</code> в секциях <code>[YourGroup]</code> и <code>[OtherGroup]</code></td>
+                            <td>⚠️ Движок не учитывает этот параметр — идёт автоматическая привязка к группировке.
+                                Параметр имеет смысл только у торговцев, не привязанных к группировкам (нейтральных).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>🚫 Движок перезапишет при старте сценария</h3>
+
+            <h4><code>Main.ini</code> → секция <code>[Scenario]</code></h4>
+            <p>Следующие параметры перезаписываются движком при старте сценария, поэтому их изменение в конфиге не имеет смысла:</p>
+<pre><code>ActivePlayerIndex
+AtackArmyThroughtAllyEnabled
+BurstEnabled
+MoveArmyThroughAllyEnabled
+PlayerGroup-X
+PlayersCount
+RandomEventsEnabled
+StoryEventsEnabled</code></pre>
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Чем управлять вместо этого</div>
+                Включение/выключение выброса, случайных и сюжетных событий настраивается
+                в <a href="settings.html#Settings">Settings.ini</a>:<br>
+                • Выброс: <code>BurstDefault</code> / <code>BurstCanChange</code><br>
+                • Случайные события: <code>EventsRandomDefault</code> / <code>EventsRandomCanChange</code><br>
+                • Сюжетные события: <code>EventsStoryDefault</code> / <code>EventsStoryCanChange</code>
+            </div>
+
+            <h4><code>Main.ini</code> → секция <code>[EventFlag]</code></h4>
+            <p>🚫 Все ивент-флаги из этого раздела при старте сценария автоматически сбрасываются в состояние <code>False</code>. Менять их значения в конфиге бессмысленно.</p>
+
+            <h4><code>Main.ini</code> → секция <code>[ProcessedItemCount]</code></h4>
+            <p>🚫 Не трогать, <strong>если не надо ограничить число производимой амуниции на первом ходу</strong>.
+               Это единственная осмысленная причина её править.</p>
+
+            <h3>☠ Запрещено</h3>
+            <div class="callout callout-warning">
+                <div class="callout-title">☠ <code>Events_Story.ini</code> → <code>CountParam</code> у типа <code>ChangeIdeologyPercent</code></div>
+                <strong>НЕ ИСПОЛЬЗОВАТЬ ОТРИЦАТЕЛЬНЫЕ ЧИСЛА!!!</strong><br>
+                Тип <code>ChangeIdeologyPercent</code> добавляет % идеологии группировке.
+                Отрицательное значение в <code>CountParam</code> для этого типа запрещено и может привести к непредсказуемому поведению.
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Где</th><th>Что запрещено</th><th>Почему</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="messages.html#Messages">messages.csv</a></td>
+                            <td>Использовать символ <code>;</code> внутри текста</td>
+                            <td>Это разделитель между техническим ключом и игровым текстом. Символ <code>;</code> в тексте сломает парсинг файла</td>
+                        </tr>
+                        <tr>
+                            <td>Любой конфиг</td>
+                            <td>Писать дробь там, где указан тип <span class="vt-inline">@@ЦЕЛОЕ</span></td>
+                            <td>Дробные значения допустимы только у параметров с типом <span class="vt-inline">@@ДРОБНОЕ</span>.
+                                См. <a href="faq.html#faq-10">FAQ №10</a></td>
+                        </tr>
+                        <tr>
+                            <td>Любой текстовый файл</td>
+                            <td>Сохранять не в кодировке <strong>UTF-8 с BOM</strong></td>
+                            <td>Сломается отображение кириллицы в игре. См. <a href="start.html#filestypecode">Кодировка файлов</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="map.html#mapBT">map.bt</a></td>
+                            <td>Редактировать вручную в текстовом редакторе</td>
+                            <td>Файл создаётся и редактируется только встроенным в игру редактором карт</td>
+                        </tr>
+                        <tr>
+                            <td><a href="groups.html#Groups">Groups</a></td>
+                            <td>Больше 4 типов бойцов у группировки</td>
+                            <td>Жёсткий лимит движка. См. <a href="faq.html#faq-5">FAQ №5</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="rules.html#Rules">Rules.ini</a></td>
+                            <td>Добавлять новые правила</td>
+                            <td>Можно менять только бонусы существующих правил. Добавление новых невозможно без модификации движка.
+                                См. <a href="faq.html#faq-23">FAQ №23</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>🧱 Хардкод — значения зашиты в движок</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Где</th><th>Что</th><th>Уточнение</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="difficulty.html#Difficulty">Difficulty.ini</a></td>
+                            <td>Технические названия секций <code>[]</code></td>
+                            <td>Не трогать — названия захардкожены в движке.
+                                Допустимые секции: <code>[Novice-Player]</code>, <code>[Skilled-Player]</code>,
+                                <code>[Veteran-Player]</code>, <code>[Master-Player]</code>,
+                                <code>[Novice-AI]</code>, <code>[Skilled-AI]</code>,
+                                <code>[Veteran-AI]</code>, <code>[Master-AI]</code></td>
+                        </tr>
+                        <tr>
+                            <td><a href="rules.html#Rules">Rules.ini</a></td>
+                            <td>Технические названия секций <code>[]</code></td>
+                            <td>Названия правил фиксированы и захардкожены. Менять можно только значения параметров внутри секций</td>
+                        </tr>
+                        <tr>
+                            <td><a href="upgrades.html#upgrades">Upgrades</a></td>
+                            <td><code>Bonus</code> — тип бонуса</td>
+                            <td>Список допустимых типов бонусов захардкожен в движке, но значение самого бонуса можно менять</td>
+                        </tr>
+                        <tr>
+                            <td><a href="ai.html#AI">AI.ini</a></td>
+                            <td><code>Economic-TargetBuyResource-X-CountModificator</code></td>
+                            <td>Требуемое количество ресурса для покупки ИИ захардкожено — модификатор лишь умножается на это базовое значение</td>
+                        </tr>
+                        <tr>
+                            <td><a href="special-events.html#SpecialEvents">SpecialEvents</a></td>
+                            <td>Часть механик особых событий</td>
+                            <td>Часть параметров вынесена в <code>Settings.ini</code>, но многие нюансы логики захардкожены в движке</td>
+                        </tr>
+                        <tr>
+                            <td>Движок</td>
+                            <td>Шрифт текста</td>
+                            <td>Свой шрифт добавить нельзя — используется общий шрифт для всей игры.
+                                См. <a href="faq.html#faq-27">FAQ №27</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>🧩 Особенности, которые легко принять за баг</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Ситуация</th><th>Почему так происходит</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Сюжетное событие срабатывает на «случайном» ходе</td>
+                            <td>Если параметр <code>Step</code> не задан или равен <code>0</code>, событие считается
+                                <strong>вневременным</strong> и может сработать на любом ходе при выполнении всех условий</td>
+                        </tr>
+                        <tr>
+                            <td>Одноразовое событие не срабатывает повторно</td>
+                            <td><strong>Названия сюжетных событий автоматически работают как ивент-флаги.</strong>
+                                Если событие выполнилось, флаг с его названием устанавливается в <code>True</code>.
+                                Чтобы событие сработало снова — сбросьте соответствующий флаг</td>
+                        </tr>
+                        <tr>
+                            <td>Любое событие требует территорию</td>
+                            <td><strong>Каждое</strong> событие в игре привязано к территории.
+                                Это касается не только вторжений или ресурсов, но и чисто информационных событий (<code>Type=Info</code>),
+                                и даже смены лидера</td>
+                        </tr>
+                        <tr>
+                            <td>Случайное событие нельзя привязать к конкретной территории</td>
+                            <td>У <code>RandomEvents</code> нет параметра <code>Zona</code> —
+                                они всегда происходят на случайной территории, контролируемой игроком</td>
+                        </tr>
+                        <tr>
+                            <td>Бонус постройки «пропал»</td>
+                            <td>Территориальные бонусы (📍) действуют только пока вы владеете территорией с постройкой.
+                                Потеряли территорию — потеряли бонус. См. <a href="matrix-bonus.html">Матрицу бонусов</a></td>
+                        </tr>
+                        <tr>
+                            <td>Неполученная ачивка выглядит чёрно-белой, хотя я задал цветное изображение</td>
+                            <td>Изображение неполученной ачивки движок создаёт <strong>автоматически</strong>,
+                                обесцвечивая ваше изображение из <code>ImgLogoEnabled</code>. Это нормальное поведение</td>
+                        </tr>
+                        <tr>
+                            <td>В справке <code>interface.ini</code> описаны не все параметры</td>
+                            <td>Полный список параметров — в дефолтном файле <code>data\default\interface.ini</code>.
+                                Для конкретного сценария обычно актуальны только секции: <code>[Graphics-In-game]</code>,
+                                <code>[MultiTexture]</code>, <code>[Graphics-BTN-Standart]</code>,
+                                <code>[Graphics-BTN-Active]</code>, <code>[Graphics-RadioBTN]</code>, <code>[Sounds]</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Совет по <code>interface.ini</code></div>
+                Чтобы изменить один значок или параметр, <strong>не копируйте файл целиком</strong>.
+                Создайте в папке сценария файл <code>interface.ini</code> и укажите в нужной секции
+                только изменяемый параметр. Например:<br>
+<pre><code>[Graphics-In-game]
+BuyUnits-Fon=gfx\custom\my_buy_units.png</code></pre>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💬 Не нашли свой случай?</div>
+                Если параметр ведёт себя странно, а его нет в этом списке —
+                спросите в Discord-сообществе игры, канал «обмен опытом».
+                Вход — через значок Discord в правом верхнем углу главного окна игры.
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Связанные разделы</div>
+                <ul>
+                    <li><a href="limits.html">Лимиты движка</a> — что ограничено жёстко</li>
+                    <li><a href="matrix-bonus.html">Матрица бонусов</a> — где какой бонус работает и как они складываются</li>
+                    <li><a href="main.html#Main">Main.ini</a> — секции <code>[Scenario]</code>, <code>[EventFlag]</code>, <code>[ProcessedItemCount]</code></li>
+                    <li><a href="events-story.html#Events_Story">Events_Story.ini</a> — ивент-флаги и их особенности</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

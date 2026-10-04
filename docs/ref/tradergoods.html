@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TraderGoods.ini — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="TraderGoods">
+            <h2>🛒 Настройки ассортимента торговцев (TraderGoods.ini)</h2>
+
+            <p>В данном файле определяется, у какого торговца продаётся ресурс/товар/предмет.
+               Каждый блок <code>[ТехническоеНазваниеРесурса]</code> описывает один товар,
+               а внутри перечисляются торговцы и группировки, у которых он доступен.</p>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Формат ключей: <code>Группировка-Идеология</code></div>
+                Ключи вида <code>Stalkers-Crime</code>, <code>Duty-AntiZone</code> — это
+                <strong>техническое название группировки + дефис + техническое название идеологии</strong>.
+            </div>
+			
+            <h3>Формат файла</h3>
+<pre><code>[ТехническоеНазваниеРесурса]
+World = True/False
+TraderX = True/False
+GroupX-IdeologyY = True/False</code></pre>
+
+            <h3>Параметры</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Ключ</th><th>Описание</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>World</code></td>
+                            <td>Торговец «Внешний мир». Если <code>True</code>, то у торговца «Внешний мир» появляется данный товар.
+                                Этот торговец доступен всем группировкам и нет требований к владению какой-либо территорий</td>
+                        </tr>
+                        <tr>
+                            <td><code>TraderX</code></td>
+                            <td>Торговец из <a href="traders.html#Traders">Traders.ini</a>.
+                                X — номер торговца (например, <code>Trader1</code>, <code>Trader2</code>).
+                                Соответствует секциям <code>[Trader1]</code>, <code>[Trader2]</code> в Traders.ini</td>
+                        </tr>
+                        <tr>
+                            <td><code>GroupX-IdeologyY</code></td>
+                            <td>Торговец группировки X с идеологией Y.
+                                <strong>X</strong> — техническое название группировки из <a href="groups.html#Groups">Groups/</a>
+                                (например, <code>Stalkers</code>, <code>Duty</code>, <code>Freedom</code>).<br>
+                                <strong>Y</strong> — техническое название идеологии из <a href="ideologies.html#ideologies">ideologies/</a>
+                                (например, <code>Crime</code>, <code>AntiZone</code>, <code>Anarchy</code>, <code>Stalkers</code>, <code>Unknow</code>)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Торговцев с False можно не указывать</div>
+                Если торговец не должен продавать товар (значение <code>False</code>),
+                эту строку можно просто не писать. Движок по умолчанию считает <code>False</code>.
+            </div>
+
+            <h3>Как добавить новый товар в ассортимент — чек-лист</h3>
+            <ol>
+                <li>Создайте файл товара в <a href="goods.html#Goods"><code>Goods/</code></a> (например, <code>MyWeapon.ini</code>)</li>
+                <li>Откройте <code>TraderGoods.ini</code> в вашем сценарии (или скопируйте из <code>data\default\</code>)</li>
+                <li>Добавьте блок с техническим названием товара: <code>[MyWeapon]</code></li>
+                <li>Укажите, у каких торговцев он доступен (<code>World=True</code>, <code>Trader1=True</code>, <code>Stalkers-Crime=True</code> и т.д.)</li>
+                <li>Добавьте локализацию в <a href="messages.html#Messages"><code>messages.csv</code></a>: <code>[Goods.MyWeapon].Name</code> и <code>Desc</code></li>
+            </ol>
+
+            <h3>Примеры</h3>
+
+            <h4>Базовые ресурсы (доступны всем)</h4>
+<pre><code>[Supplies]
+; Доступен у торговца "Внешний мир"
+World=True
+; Доступен у всех трёх торговцев из Traders.ini
+Trader1=True
+Trader2=True
+Trader3=True
+; Доступен у торговцев группировки Stalkers при любой идеологии
+Stalkers-Unknow=True
+Stalkers-Growth=True
+Stalkers-Stalkers=True
+Stalkers-Crime=True
+Stalkers-Control=True
+Stalkers-AntiZone=True
+Stalkers-Anarchy=True
+Stalkers-Sectarianism=True
+Stalkers-Mercenary=True
+Stalkers-Exploring=True
+Stalkers-Stability=True
+Stalkers-Zombie=True
+; То же самое для Bandits
+Bandits-Unknow=True
+Bandits-Growth=True
+... (все идеологии для всех группировок)</code></pre>
+
+            <h4>Оружие (доступно не всем идеологиям)</h4>
+<pre><code>[PM]
+; Пистолет Макарова доступен у всех идеологий Stalkers
+Stalkers-Anarchy=True
+Stalkers-AntiZone=True
+Stalkers-Crime=True
+Stalkers-Growth=True
+Stalkers-Sectarianism=True
+Stalkers-Stability=True
+Stalkers-Stalkers=True
+Stalkers-Unknow=True
+Stalkers-Zombie=True
+; И у всех идеологий Bandits
+Bandits-Anarchy=True
+Bandits-AntiZone=True
+...
+; И у всех торговцев
+Trader1=True
+Trader2=True
+Trader3=True</code></pre>
+
+            <h4>Специфичное оружие (только определённым идеологиям)</h4>
+<pre><code>[Fora]
+; Доступен у торговцев
+Trader1=True
+Trader2=True
+Trader3=True
+; У Stalkers только определённым идеологиям (не анархистам и не сектантам)
+Stalkers-Control=True
+Stalkers-AntiZone=True
+Stalkers-Exploring=True
+; У Bandits те же идеологии
+Bandits-Control=True
+Bandits-AntiZone=True
+Bandits-Exploring=True
+; У Soldiers только базовая идеология
+Soldiers-Unknow=True
+...
+; У Duty только определённым идеологиям
+Duty-Unknow=True
+Duty-Growth=True
+Duty-Stalkers=True
+...
+; У Freedom те же идеологии, что и у Stalkers
+Freedom-Control=True
+Freedom-AntiZone=True
+Freedom-Exploring=True
+...
+; У Monolith те же идеологии
+Monolith-Control=True
+Monolith-AntiZone=True
+Monolith-Exploring=True</code></pre>
+
+            <h3>Идеология «Unknow»</h3>
+            <div class="callout callout-info">
+                <div class="callout-title">🔍 Что означает <code>Unknow</code></div>
+                В файлах часто встречается ключ <code>GroupX-Unknow</code>
+                (например, <code>Stalkers-Unknow</code>, <code>Bandits-Unknow</code>).<br><br>
+                Это <strong>«неизвестная идеология»</strong> — используется для группировок,
+                у которых идеология не определена явно, или для начального состояния до смены идеологии.
+                Если в вашем моде все группировки имеют чёткую идеологию, можете игнорировать
+                <code>Unknow</code>-варианты.
+            </div>
+
+            <h3>Стандартные идеологии</h3>
+            <p>В оригинальной игре встречаются обычно следующие идеологии:</p>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Идеология</th><th>Описание (из контекста)</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>Unknow</code></td><td>Неизвестная / неопределённая идеология</td></tr>
+                        <tr><td><code>Growth</code></td><td>Рост / развитие</td></tr>
+                        <tr><td><code>Stalkers</code></td><td>Идеология сталкеров (одноимённая группировке)</td></tr>
+                        <tr><td><code>Crime</code></td><td>Криминал</td></tr>
+                        <tr><td><code>Control</code></td><td>Контроль / порядок</td></tr>
+                        <tr><td><code>AntiZone</code></td><td>Против Зоны</td></tr>
+                        <tr><td><code>Anarchy</code></td><td>Анархия</td></tr>
+                        <tr><td><code>Sectarianism</code></td><td>Сектантство</td></tr>
+                        <tr><td><code>Mercenary</code></td><td>Наёмничество</td></tr>
+                        <tr><td><code>Exploring</code></td><td>Исследование</td></tr>
+                        <tr><td><code>Stability</code></td><td>Стабильность</td></tr>
+                        <tr><td><code>Zombie</code></td><td>Зомби (для группировки Zombie)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Частые ошибки</h3>
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Типичные проблемы</div>
+                <ul>
+                    <li><strong>Товар не появляется в магазине</strong> — проверьте, что он указан в <code>TraderGoods.ini</code>
+                        с правильным техническим названием (совпадает 1:1 с именем файла в <code>Goods/</code>)</li>
+                    <li><strong>Опечатка в названии группировки или идеологии</strong> — используйте точные названия
+                        из файлов <code>Groups/</code> и <code>ideologies/</code></li>
+                    <li><strong>Забыли добавить локализацию</strong> — без записей в <code>messages.csv</code>
+                        товар будет отображаться как техническое название</li>
+                    <li><strong>Торговец недоступен игроку</strong> — проверьте параметры торговца</li>
+                </ul>
+            </div>
+
+            <h3>Связь с другими файлами</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Файл</th><th>Связь</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="goods.html#Goods">Goods/</a></td>
+                            <td>Технические названия ресурсов в блоках <code>[...]</code> берутся отсюда.
+                                Название блока должно <strong>точно совпадать</strong> с именем файла в <code>Goods/</code></td>
+                        </tr>
+                        <tr>
+                            <td><a href="traders.html#Traders">Traders.ini</a></td>
+                            <td>Номера торговцев <code>Trader1</code>, <code>Trader2</code> соответствуют
+                                секциям <code>[Trader1]</code>, <code>[Trader2]</code> в Traders.ini.
+                                Параметры <code>Coef-Sell-X</code>, <code>Coef-Buy-X</code> определяют наценку/скидку</td>
+                        </tr>
+                        <tr>
+                            <td><a href="groups.html#Groups">Groups/</a></td>
+                            <td>Технические названия группировок (<code>Stalkers</code>, <code>Duty</code> и т.д.).
+                                Параметры <code>CanTradeIf*</code> определяют, может ли группировка торговать</td>
+                        </tr>
+                        <tr>
+                            <td><a href="ideologies.html#Ideologies">ideologies/</a></td>
+                            <td>Технические названия идеологий (<code>Crime</code>, <code>AntiZone</code> и т.д.)</td>
+                        </tr>
+                        <tr>
+                            <td><a href="main.html#Main">Main.ini</a></td>
+                            <td><code>[Group-Ideology]</code> — стартовая идеология группировки,
+                                <code>[Group-Ideology-Percent]</code> — распределение идеологий</td>
+                        </tr>
+                        <tr>
+                            <td><a href="messages.html#Messages">messages.csv</a></td>
+                            <td>Локализация товаров: <code>[Goods.ТехНазвание].Name</code> и <code>Desc</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">🔗 Связанные разделы</div>
+                <ul>
+                    <li><a href="goods.html#Goods">Goods</a> — технические названия товаров</li>
+                    <li><a href="traders.html#Traders">Traders.ini</a> — параметры торговцев</li>
+                    <li><a href="groups.html#Groups">Groups</a> — технические названия группировок</li>
+                    <li><a href="ideologies.html#Ideologies">Ideologies</a> — технические названия идеологий</li>
+                    <li><a href="main.html#Main">Main.ini</a> — <code>[Group-Ideology]</code>, <code>[Group-Ideology-Percent]</code></li>
+                    <li><a href="messages.html#Messages">messages.csv</a> — локализация товаров</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>

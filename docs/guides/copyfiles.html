@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Гайд: Создание папки мода — Справка мододела War In Zone</title>
+<link rel="stylesheet" href="../assets/help.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content">
+
+        <div class="section" id="getting-started">
+            <h2>📁 Гайд: создание папки мода</h2>
+
+            <p>Прежде чем добавлять постройку, лидера или идеологию, нужно создать саму папку мода
+               и понять, как игра ищет файлы. Этот гайд — <strong>база для всех остальных</strong>.
+               Без него инструкции из других гайдов будут непонятны.</p>
+
+            <h3>🎯 Что получится в итоге</h3>
+            <ul>
+                <li>Понимание, где физически лежит папка вашего мода</li>
+                <li>Минимальный рабочий сценарий, который запускается в игре</li>
+                <li>Понимание механизма наследования: когда файл кладётся целиком,
+                    а когда — только нужные параметры</li>
+                <li>Знание, какие файлы есть в дефолте, а какие нужно брать из других сценариев</li>
+            </ul>
+
+            <h3>📋 Что нужно подготовить</h3>
+            <ul>
+                <li>Установленную игру <strong>War In Zone</strong></li>
+                <li>Название вашего будущего мода (например, <code>MyFirstMod</code>)</li>
+                <li>Доступ к папке существующего сценария (например, <code>1story</code>) —
+                    из него вы будете копировать файлы, которых нет в дефолте</li>
+            </ul>
+
+            <h3>📝 Пошаговая инструкция</h3>
+
+            <h4>Шаг 1. Найдите папку модов</h4>
+            <p>Все пользовательские сценарии лежат в папке документов:</p>
+
+<pre><code>Документы\War in zone\campaigns\</code></pre>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Где это физически</div>
+                <p>Полный путь зависит от имени пользователя, например:</p>
+<pre><code>C:\Users\Вася\Documents\War in zone\campaigns\</code></pre>
+                <p>Быстрый способ открыть: нажмите <strong>Win+R</strong> и введите:</p>
+<pre><code>%USERPROFILE%\Documents\War in zone\campaigns</code></pre>
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Альтернатива: папка игры</div>
+                <p>Сценарий также можно разместить в папке установки игры:</p>
+<pre><code>data\campaigns\Название_кампании\</code></pre>
+                <p>Но рекомендуется класть моды в <strong>Документы</strong> — так вы не потеряете
+                   свои моды при обновлении игры и не создадите конфликтов с другими модами.</p>
+            </div>
+
+            <h4>Шаг 2. Создайте папку своего мода</h4>
+            <p>Внутри <code>campaigns\</code> создайте папку с именем вашего мода:</p>
+
+<pre><code>Документы\War in zone\campaigns\MyFirstMod\</code></pre>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Регистр и символы</div>
+                <ul>
+                    <li>Название папки регистронезависимо: <code>MyFirstMod</code> = <code>myfirstmod</code></li>
+                    <li>Избегайте пробелов и кириллицы в названии — используйте английские буквы,
+                        цифры и дефисы: <code>my-first-mod</code>, <code>zone-story</code></li>
+                </ul>
+            </div>
+
+            <h4>Шаг 3. Поймите механизм наследования</h4>
+            <p>Это <strong>самое важное правило</strong> моддинга в War In Zone:</p>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Движок смотрит на файл ЦЕЛИКОМ</div>
+                <p>Если вы кладёте файл в папку мода — нужно класть его <strong>полностью</strong>,
+                   даже если вы хотите заменить одну строчку или одну цифру.</p>
+                <p>Например, если вам нужно изменить один параметр в <code>Traders.ini</code> —
+                   вы копируете <strong>весь файл целиком</strong> из другого сценария,
+                   кладёте к себе и правите нужную строку.</p>
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Исключения: <code>interface.ini</code> и <code>messages.csv</code></div>
+                <p>Эти два файла работают по-другому — они <strong>дополняют</strong> дефолт:</p>
+                <ul>
+                    <li><strong><code>interface.ini</code></strong> — можно указать только ту секцию и тот параметр,
+                        который хотите изменить. Остальные значения подгрузятся из дефолта
+                        (см. <a href="../ref/interface.html">interface.ini</a>)</li>
+                    <li><strong><code>messages.csv</code></strong> — можно указать только нужные строки.
+                        Строки из вашего файла добавляются к дефолтным, а совпадающие ключи
+                        перезаписывают дефолтный текст (см. <a href="../ref/messages.html">messages.csv</a>)</li>
+                </ul>
+            </div>
+
+            <h4>Шаг 4. Что есть в папке дефолта</h4>
+            <p>Движок использует папку <code>data\default\</code> как «базу». Если файла нет
+               в вашем моде — игра ищет его там. Вот что реально лежит в дефолте:</p>
+
+            <h5>Папки:</h5>
+            <ul>
+                <li><code>Buildings\</code> — постройки</li>
+                <li><code>Goods\</code> — товары, оружие, броня</li>
+                <li><code>Groups\</code> — группировки</li>
+                <li><code>Ideologies\</code> — идеологии</li>
+                <li><code>Leaders\</code> — лидеры</li>
+                <li><code>Map\</code> — файлы карты</li>
+                <li><code>RandomEvents\</code> — случайные события</li>
+                <li><code>Receipts\</code> — рецепты мастерской</li>
+                <li><code>SpecialEvents\</code> — особые события</li>
+                <li><code>Upgrades\</code> — улучшения</li>
+            </ul>
+
+            <h5>Файлы:</h5>
+            <ul>
+                <li><code>AI.ini</code></li>
+                <li><code>Difficulty.ini</code></li>
+                <li><code>Interface.ini</code></li>
+                <li><code>Main.ini</code></li>
+                <li><code>Rules.ini</code></li>
+            </ul>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Чего НЕТ в дефолте</div>
+                <p>Следующих файлов в <code>data\default\</code> <strong>нет</strong>.
+                   Если они нужны вашему сценарию — их необходимо взять из существующего сценария
+                   (например, из <code>1story</code>) и положить в папку вашего мода:</p>
+                <ul>
+                    <li><code>Settings.ini</code> — настройки сценария</li>
+                    <li><code>messages.csv</code> — локализация</li>
+                    <li><code>Advisors.ini</code> — заместители</li>
+                    <li><code>Traders.ini</code> — торговцы</li>
+                    <li><code>TraderGoods.ini</code> — ассортимент торговцев</li>
+                    <li><code>Achievements.ini</code> — достижения</li>
+                    <li><code>Events_Story.ini</code> — сюжетные события</li>
+                    <li><code>Tutorial.ini</code> — обучение</li>
+                </ul>
+            </div>
+
+            <h4>Шаг 5. Соберите минимальный рабочий сценарий</h4>
+            <p>Чтобы сценарий появился в списке и запустился, нужен минимальный набор файлов.
+               Рассмотрим каждый:</p>
+
+            <h5>5.1. <code>Main.ini</code> — состояние мира на старте</h5>
+            <p><strong>Есть в дефолте.</strong> Если вы не кладёте его в папку мода —
+               игра использует дефолтный мир. Если хотите свой мир (другие владельцы территорий,
+               другой баланс) — скопируйте <code>Main.ini</code> из существующего сценария
+               (например, <code>1story</code>) и правьте.</p>
+
+            <h5>5.2. <code>Settings.ini</code> — настройки сценария</h5>
+            <p><strong>НЕТ в дефолте.</strong> Обязательный файл. Скопируйте его из существующего
+               сценария (например, <code>1story</code>) и положите в папку вашего мода.
+               Затем правьте под свой сценарий.</p>
+
+            <h5>5.3. <code>messages.csv</code> — локализация</h5>
+            <p><strong>НЕТ в дефолте.</strong> Обязательный файл — без него у сценария не будет названия.
+               Скопируйте из существующего сценария и правьте. Как минимум, замените строку
+               <code>ScenarioName;...</code> на название вашего мода.</p>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">⚠️ Кодировка <code>messages.csv</code></div>
+                <p>Файл должен быть сохранён строго в <strong>UTF-8 с BOM</strong>.
+                   Без BOM кириллица отображается кракозябрами.
+                   В Notepad++: <strong>Кодировки</strong> → <strong>Преобразовать в UTF-8-BOM</strong>.</p>
+            </div>
+
+            <h5>5.4. <code>Achievements.ini</code> — достижения (опционально)</h5>
+            <p><strong>НЕТ в дефолте.</strong> Файл нужен <strong>только</strong> если в <code>Settings.ini</code>
+               указан параметр <code>Achievements=True</code>. Если ачивки выключены
+               (<code>Achievements=False</code> или параметр не указан) — файл не нужен.</p>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Если хотите ачивки</div>
+                <p>Скопируйте <code>Achievements.ini</code> из существующего сценария,
+                   положите в папку мода и правьте. Убедитесь, что в <code>Settings.ini</code>
+                   стоит <code>Achievements=True</code>, а <code>AchievementsCount</code> совпадает
+                   с реальным числом ачивок в файле. Максимум 16 ачивок на сценарий.</p>
+                <p>Подробнее: <a href="../ref/achievements.html">Achievements.ini</a>.</p>
+            </div>
+
+            <h4>Шаг 6. Итоговая минимальная структура папки мода</h4>
+
+<pre><code>Документы\War in zone\campaigns\MyFirstMod\
+│
+├── Main.ini              ← из другого сценария (или не класть — возьмётся из дефолта)
+├── Settings.ini          ← из другого сценария (обязательно)
+└── messages.csv          ← из другого сценария (обязательно, править название)</code></pre>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Что подгрузится автоматически из дефолта</div>
+                <p>Все папки и файлы, которые вы не положили в папку мода, подгрузятся
+                   из <code>data\default\</code>: постройки, товары, группировки, идеологии, лидеры,
+                   случайные события, рецепты, особые события, улучшения, а также
+                   <code>AI.ini</code>, <code>Difficulty.ini</code>, <code>Rules.ini</code>, <code>Interface.ini</code>.</p>
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">💡 Не копируйте всё из дефолта!</div>
+                <p>Кладите в свой мод только те конфиги, которые вы реально планируете изменять.
+                   Это сделает ваш мод легче, чище и избавит от конфликтов при обновлениях игры.</p>
+            </div>
+
+            <h4>Шаг 7. Проверьте, что мод запускается</h4>
+            <ol>
+                <li>Запустите игру</li>
+                <li>Перейдите в кампанию <strong>«Модификации»</strong></li>
+                <li>В списке сценариев должен появиться ваш мод (по названию из <code>ScenarioName</code>)</li>
+                <li>Выберите его и попробуйте начать игру</li>
+            </ol>
+
+            <h3>✅ Проверка результата</h3>
+            <ol>
+                <li>Папка мода создана по пути <code>Документы\War in zone\campaigns\MyFirstMod\</code></li>
+                <li>В ней лежат <code>Settings.ini</code> и <code>messages.csv</code>
+                    (скопированные из другого сценария)</li>
+                <li><code>messages.csv</code> сохранён в <strong>UTF-8 с BOM</strong></li>
+                <li>В <code>messages.csv</code> строка <code>ScenarioName;...</code> заменена на название вашего мода</li>
+                <li>В списке кампании «Модификации» появился ваш сценарий</li>
+                <li>Название сценария отображается корректно (не кракозябрами)</li>
+                <li>Игра запускает сценарий без вылета</li>
+            </ol>
+
+            <h3>⚠️ Вероятные ошибки</h3>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">Мод не появляется в списке кампании «Модификации»</div>
+                <ul>
+                    <li>Проверьте, что папка мода лежит именно в
+                        <code>Документы\War in zone\campaigns\</code></li>
+                    <li>Убедитесь, что в папке есть <code>Settings.ini</code> и <code>messages.csv</code></li>
+                    <li>Проверьте, что в <code>messages.csv</code> есть строка <code>ScenarioName;...</code></li>
+                    <li>Проверьте имена файлов — <code>Settings.ini</code>, а не <code>settings.txt</code></li>
+                </ul>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">Название сценария отображается как «ScenarioName»</div>
+                <p>Игра не нашла строку <code>ScenarioName;...</code> в <code>messages.csv</code>. Проверьте:</p>
+                <ul>
+                    <li>Ключ — именно <code>ScenarioName</code> (без скобок, без префикса)</li>
+                    <li>Разделитель — точка с запятой <code>;</code></li>
+                    <li>Файл сохранён в <strong>UTF-8 с BOM</strong></li>
+                </ul>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">Кракозябры вместо русского текста</div>
+                <p>Файл сохранён в неправильной кодировке. Откройте в Notepad++ и выберите
+                   <strong>Кодировки → Преобразовать в UTF-8-BOM</strong>, затем сохраните.
+                   Это касается всех текстовых файлов: <code>.ini</code>, <code>.csv</code>.</p>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">Вы положили только часть файла — и всё сломалось</div>
+                <p>Запомните: движок смотрит на файл <strong>целиком</strong>. Если вы положили
+                   <code>Traders.ini</code> с одной секцией — игра видит <strong>только эту секцию</strong>,
+                   а остальные торговцы из дефолта исчезнут.</p>
+                <p><strong>Правильно:</strong> скопируйте весь файл из другого сценария и правьте нужное.</p>
+                <p><strong>Исключение:</strong> <code>interface.ini</code> и <code>messages.csv</code> —
+                   эти два файла можно класть частично.</p>
+            </div>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">Ачивки не работают</div>
+                <p>Проверьте три вещи:</p>
+                <ul>
+                    <li>В <code>Settings.ini</code> стоит <code>Achievements=True</code></li>
+                    <li>Параметр <code>AchievementsCount</code> совпадает с реальным числом ачивок в файле</li>
+                    <li>Файл <code>Achievements.ini</code> лежит в папке мода (в дефолте его нет)</li>
+                </ul>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Нюанс: регистронезависимость</div>
+                <p>В .ini-файлах имена секций и ключей <strong>регистронезависимы</strong>.
+                   <code>[Main]</code> = <code>[main]</code> = <code>[MAIN]</code>.
+                   Но рекомендуется сохранять оригинальное написание — так проще ориентироваться.</p>
+                <p>В <code>messages.csv</code> ключи должны совпадать точно.</p>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">💡 Нюанс: комментарии в .ini</div>
+                <p>В <code>.ini</code>-файлах можно использовать комментарии, начинающиеся
+                   с точки с запятой <code>;</code> в начале строки:</p>
+<pre><code>[Main]
+; Это комментарий
+BaseUpCR=5</code></pre>
+                <p>Но <strong>внутри значения</strong> (после <code>=</code>) символ <code>;</code>
+                   использовать нельзя.</p>
+            </div>
+
+            <h3>🔗 Связанные разделы справки</h3>
+            <ul>
+                <li><a href="../ref/start.html#filestypecode">Кодировка файлов</a> — UTF-8 с BOM обязательно</li>
+                <li><a href="../ref/start.html#programs">Программы</a> — минимальный набор софта</li>
+                <li><a href="../ref/tips.html#scenario_structure">Структура сценария</a> — типовая папка мода</li>
+                <li><a href="../ref/settings.html">Settings.ini</a> — настройки сценария</li>
+                <li><a href="../ref/main.html">Main.ini</a> — состояние мира на старте</li>
+                <li><a href="../ref/messages.html">messages.csv</a> — локализация</li>
+                <li><a href="../ref/interface.html">interface.ini</a> — пример частичного наследования</li>
+                <li><a href="../ref/achievements.html">Achievements.ini</a> — достижения</li>
+                <li><a href="checklist.html">Чек-лист релиза мода</a> — что проверить перед публикацией</li>
+            </ul>
+
+            <h3>🎓 Что делать дальше</h3>
+            <p>Теперь, когда у вас есть рабочая папка мода, выбирайте следующий гайд:</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Хочу добавить…</th><th>Гайд</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Новую постройку</td><td><a href="building.html">Новое здание</a></td></tr>
+                        <tr><td>Новое улучшение</td><td><a href="upgrade.html">Новое улучшение</a></td></tr>
+                        <tr><td>Нового заместителя</td><td><a href="advisor.html">Новый заместитель</a></td></tr>
+                        <tr><td>Новую идеологию</td><td><a href="ideology.html">Новая идеология</a></td></tr>
+                        <tr><td>Нового лидера</td><td><a href="leader.html">Новый лидер</a></td></tr>
+                        <tr><td>Новую группировку</td><td><a href="faction.html">Новая группировка</a></td></tr>
+                        <tr><td>Случайное событие</td><td><a href="random-event.html">Случайное событие</a></td></tr>
+                        <tr><td>Сюжетное событие</td><td><a href="story-event.html">Сюжетное событие</a></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/nav.js"></script>
+<script src="../assets/help.js"></script>
+</body>
+</html>
